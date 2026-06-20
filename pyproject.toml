@@ -13,7 +13,7 @@ dependencies = [
     "requests>=2.31.0",
     "scenedetect>=0.6",
     "trafilatura>=2.0.0",
-    "yt-dlp>=2026.02.21",
+    "yt-dlp>=2026.6.9",
     "yt-dlp-ejs>=0.8",
 ]
 
