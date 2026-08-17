@@ -1,7 +1,7 @@
 ---
 id: "01"
 title: "Evaluate CrisperWhisper against current Whisper pipeline"
-status: in_progress
+status: done
 blocked_by: []
 priority: high
 ---
@@ -38,15 +38,19 @@ Our existing work includes:
 
 ## Acceptance criteria
 
-- [ ] CrisperWhisper cloned to `.references/CrisperWhisper/`
-- [ ] Architecture and capabilities documented in `.scratch/research/crisper-whisper.md`
-- [ ] Benchmark design doc written to `.scratch/research/crisper-whisper-benchmark.md`
-- [ ] Benchmark includes: test corpus selection, metrics, methodology, expected outcomes
-- [ ] At least 3 videos identified from existing work as baseline test cases
-- [ ] Integration path assessed (drop-in replacement? adapter needed? API differences?)
+- [x] CrisperWhisper cloned to `.references/CrisperWhisper/`
+- [x] Architecture and capabilities documented in `.scratch/research/crisper-whisper.md`
+- [x] Benchmark design doc written to `.scratch/research/crisper-whisper-benchmark.md`
+- [x] Benchmark includes: test corpus selection, metrics, methodology, expected outcomes
+- [x] At least 3 videos identified from existing work as baseline test cases
+- [x] Integration path assessed (drop-in replacement? adapter needed? API differences?)
 
 ## Validation criteria
 
 - Research doc cites actual source code / README from the cloned repo
 - Benchmark design is executable (specific commands, specific files, measurable outputs)
 - Test corpus includes at least one short (<5 min), one medium (10-20 min), and one long (>30 min) video
+
+## Resolution (2026-08-17)
+
+Completed research and benchmark design. CrisperWhisper offers word-level timestamps (30ms MAE vs segment-only), verbatim mode, hallucination detection, and speculative decoding. Benchmark proposes 5-video corpus with WER/timestamp/speed/memory metrics. Integration via isolated venv backend. Ready for Phase 1 execution.
