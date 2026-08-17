@@ -1,7 +1,7 @@
 ---
 id: "01"
 title: "Evaluate CrisperWhisper against current Whisper pipeline"
-status: open
+status: in_progress
 blocked_by: []
 priority: high
 ---
