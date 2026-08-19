@@ -43,3 +43,34 @@ Research findings (`.scratch/research/whisper-ecosystem.md`, `.scratch/research/
 - Transcript output includes `words` array with `start`, `end`, `text`, `confidence` per word
 - Processing time within 2x of raw faster-whisper on same hardware
 - At least one test video transcribed with word timestamps verified manually (spot-check 10 words)
+
+## Implementation Notes (from research)
+
+### API Pattern (3-step with memory management)
+```python
+model = whisperx.load_model("large-v2", device, compute_type=compute_type)
+result = model.transcribe(audio, batch_size=batch_size)
+del model; gc.collect(); torch.cuda.empty_cache()
+
+model_a, metadata = whisperx.load_align_model(language_code=result["language"], device=device)
+result = whisperx.align(result["segments"], model_a, metadata, audio, device)
+del model_a; gc.collect(); torch.cuda.empty_cache()
+
+# Optional diarization (requires HF_TOKEN)
+diarize_model = DiarizationPipeline(token=HF_TOKEN, device=device)
+diarize_segments = diarize_model(audio)
+result = whisperx.assign_word_speakers(diarize_segments, result)
+```
+
+### Known Gotchas
+- PyTorch 2.6+ breaks torch.load — needs `weights_only=False` patch
+- `huggingface_hub` renamed `use_auth_token` → `token`
+- faster-whisper has memory leak in long-running processes (restart between large batches)
+- `batch_size` must be tuned to VRAM (16 for 8GB, 8 for 6GB)
+- Must explicitly `del model` + `gc.collect()` between pipeline stages
+- Diarization requires accepting gated model licenses on HuggingFace (pyannote/speaker-diarization-3.1)
+
+### Output maps to our schema v2 as:
+- `result["segments"][i]["words"]` → `segments[i].words` (add confidence from alignment metadata)
+- `result["segments"][i]["speaker"]` → `segments[i].speaker`
+- Word format: `{word, start, end, speaker}` → remap to `{text, start, end, confidence, speaker}`

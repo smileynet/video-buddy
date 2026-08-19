@@ -69,3 +69,28 @@ consumers (the render, correlate, and agent-fill steps all read transcripts).
 - Round-trip test: write v2 JSON, read back, verify all fields preserved
 - Backward compat test: v1 JSON still works in render/correlate/agent-fill
 - At least one full pipeline run with v2 output (ingest → render → finalize)
+
+## Implementation Notes (from research)
+
+### Prior Art Survey
+No industry standard exists, but common fields are consistent across:
+- **Whisper native:** `segments[].words[].{word, start, end, probability}`
+- **WhisperX:** `segments[].{speaker, words[].{word, start, end, speaker}}`
+- **AssemblyAI:** milliseconds, `utterances[]`, letter-based speaker labels
+- **Deepgram:** channel/alternative nesting, integer speaker IDs
+- **STJ (v0.6.1):** MIT-licensed superset standard attempting unification
+
+### Design Decisions
+1. **Time unit:** Seconds as float (matches Whisper/WhisperX, easier math than ms)
+2. **Word field name:** `text` not `word` (consistent with our segment format)
+3. **Confidence:** 0.0-1.0 float (from token probability or alignment score)
+4. **Speaker:** `SPEAKER_00` string labels (WhisperX convention, human-readable)
+5. **Disfluency flag:** `is_disfluency: bool` per word (CrisperWhisper-specific)
+6. **Backward compat:** v1 format (`[{start, duration, text}]`) detected by absence of
+   `schema_version` key — treat as v1, wrap in segments array internally
+
+### Schema Evolution Strategy
+- v1: flat array (current) — no version field
+- v2: object with `schema_version`, `metadata`, `segments` — auto-detected by type (object vs array)
+- Reader checks: `isinstance(data, list)` → v1; `isinstance(data, dict)` → v2
+- Never break v1 readers — all existing code continues to work on the `segments` array
