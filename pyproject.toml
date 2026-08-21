@@ -20,6 +20,7 @@ dependencies = [
 [project.optional-dependencies]
 gpu-ocr = ["easyocr>=1.7"]
 ocr-cpu = ["pytesseract>=0.3.10"]
+whisperx = ["whisperx>=3.8.4"]
 dev = [
     "pytest>=8.0.0",
     "ruff>=0.6",

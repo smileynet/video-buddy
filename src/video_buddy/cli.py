@@ -8,6 +8,7 @@ from typing import Any
 
 from . import __version__
 from .batch_digest import (
+    _find_breakdown,
     compile_digest,
     fetch_digest_urls,
     load_urls,
@@ -67,6 +68,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--video-json", help="Transcribe a workspace-external video JSON file."
     )
     transcribe_parser.add_argument("--whisper-model", help="Override Whisper model.")
+    transcribe_parser.add_argument(
+        "--whisper-engine",
+        choices=["faster-whisper", "whisperx"],
+        help="Transcription engine.",
+    )
     transcribe_parser.add_argument(
         "--device", choices=["auto", "cpu", "cuda"], help="Execution device."
     )
@@ -162,6 +168,11 @@ def build_parser() -> argparse.ArgumentParser:
     )
     ingest_parser.add_argument("--whisper-model", help="Override Whisper model.")
     ingest_parser.add_argument(
+        "--whisper-engine",
+        choices=["faster-whisper", "whisperx"],
+        help="Transcription engine.",
+    )
+    ingest_parser.add_argument(
         "--device", choices=["auto", "cpu", "cuda"], help="Execution device."
     )
     ingest_parser.add_argument(
@@ -221,6 +232,11 @@ def build_parser() -> argparse.ArgumentParser:
     digest_transcribe.add_argument("manifest", help="Digest manifest JSON path.")
     digest_transcribe.add_argument("--whisper-model", help="Override Whisper model.")
     digest_transcribe.add_argument(
+        "--whisper-engine",
+        choices=["faster-whisper", "whisperx"],
+        help="Transcription engine.",
+    )
+    digest_transcribe.add_argument(
         "--device", choices=["auto", "cpu", "cuda"], help="Execution device."
     )
     digest_transcribe.add_argument(
@@ -241,11 +257,10 @@ def build_parser() -> argparse.ArgumentParser:
     digest_compile.set_defaults(handler=_handle_digest_compile)
 
     digest_run = digest_subparsers.add_parser(
-        "run", help="Run digest fetch, transcribe, and compile in one command."
+        "run", help="Run digest fetch and transcribe in one command."
     )
     _add_workspace_args(digest_run, include_backend=True)
     digest_run.add_argument("input", help="URL list file path or - for stdin.")
-    digest_run.add_argument("--date", required=True, help="Digest date (YYYY-MM-DD).")
     digest_run.add_argument(
         "--delay", type=float, default=0.0, help="Delay between fetches."
     )
@@ -254,6 +269,11 @@ def build_parser() -> argparse.ArgumentParser:
         help="Browser profile name for authenticated YouTube fetches.",
     )
     digest_run.add_argument("--whisper-model", help="Override Whisper model.")
+    digest_run.add_argument(
+        "--whisper-engine",
+        choices=["faster-whisper", "whisperx"],
+        help="Transcription engine.",
+    )
     digest_run.add_argument(
         "--device", choices=["auto", "cpu", "cuda"], help="Execution device."
     )
@@ -578,6 +598,10 @@ def _handle_ingest(args: argparse.Namespace) -> int:
             steps.append(
                 {"verb": "transcribe", "scope": video_id, "path": str(transcript_path)}
             )
+
+        # Check for existing digest breakdown — enrichment path
+        existing_breakdown = _find_breakdown(context.workspace, "", video_id)
+
         if not args.no_frames:
             metadata = capture_video_frames(
                 video_id,
@@ -607,6 +631,23 @@ def _handle_ingest(args: argparse.Namespace) -> int:
             steps.append(
                 {"verb": "correlate", "scope": video_id, "path": str(metadata_path)}
             )
+
+        if existing_breakdown:
+            # Enrichment path: breakdown already exists, skip render/finalize
+            payload_out = {
+                "schema_version": "1.0",
+                "verb": "ingest",
+                "scope": scope,
+                "path": str(existing_breakdown),
+                "warnings": [],
+                "steps": steps,
+                "needs_agent_fill": True,
+                "enrichment": True,
+                "breakdown_path": str(existing_breakdown),
+            }
+            _emit_payload(args, payload_out)
+            return 0
+
         render_payload = _load_render_payload(video_id, source_path, context.workspace)
         note_path = context.workspace.draft_note(video_id)
         note_path.write_text(
@@ -721,23 +762,13 @@ def _handle_digest_run(args: argparse.Namespace) -> int:
         workspace=context.workspace,
         transcribe_fn=lambda path: _transcribe_path(args, context, path),
     )
-    result, digest_path = compile_digest(
-        manifest_path, workspace=context.workspace, day=args.date
+    _emit_success(
+        args,
+        verb="digest.run",
+        scope=str(manifest_path),
+        path=str(manifest_path),
+        extra={"counts": manifest.get("counts", {})},
     )
-    payload = {
-        "schema_version": "1.0",
-        "verb": "digest",
-        "scope": args.date,
-        "path": str(digest_path),
-        "warnings": [f"missing summaries: {', '.join(result['missing_summaries'])}"]
-        if result.get("missing_summaries")
-        else [],
-        "manifest": str(manifest_path),
-        "digest_path": str(digest_path),
-        "counts": manifest.get("counts", {}),
-        **result,
-    }
-    _emit_payload(args, payload)
     return 0
 
 
@@ -951,9 +982,11 @@ def _load_render_payload(source_id: str, source_json_path: Path, workspace) -> d
     if "video_id" in payload:
         transcript_path = workspace.transcript_json(source_id)
         if transcript_path.exists():
+            from .transcribe.pipeline import read_transcript
+
             payload = {
                 **payload,
-                "captions": json.loads(transcript_path.read_text(encoding="utf-8")),
+                "captions": read_transcript(transcript_path),
             }
         frames_meta_path = workspace.frames_meta(source_id)
         if frames_meta_path.exists():
@@ -1013,11 +1046,24 @@ def _resolve_backend(args: argparse.Namespace, context: ResolvedContext):
 
 def _transcribe_path(
     args: argparse.Namespace, context: ResolvedContext, video_json_path: Path
-) -> list[dict]:
+) -> list[dict] | dict:
     backend = _resolve_backend(args, context)
+    engine = getattr(args, "whisper_engine", None) or context.config.whisper.engine
     model = args.whisper_model or _none_if_auto(context.config.whisper.model)
     device = args.device or context.config.whisper.device
     compute_type = args.compute_type or context.config.whisper.compute_type
+
+    if engine == "whisperx" and backend is None:
+        from .transcribe.pipeline import transcribe_video_json_whisperx
+
+        return transcribe_video_json_whisperx(
+            video_json_path,
+            model_name=model,
+            device=device,
+            compute_type=compute_type,
+            model_cache=context.workspace.model_cache,
+        )
+
     if backend is None:
         return transcribe_video_json(
             video_json_path,

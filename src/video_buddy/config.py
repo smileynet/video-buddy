@@ -19,7 +19,7 @@ _VALID_SECTION_KEYS: dict[str, set[str]] = {
         "templates",
     },
     "notes": {"group_by", "template"},
-    "whisper": {"model", "device", "compute_type"},
+    "whisper": {"model", "device", "compute_type", "engine"},
     "frames": {"max_per_video", "scene_detection_max_duration_s", "ocr"},
     "agent": {"harness"},
     "youtube": {"cookies_from_browser", "caption_retry_max"},
@@ -39,6 +39,7 @@ class WhisperConfig:
     model: str = "auto"
     device: str = "auto"
     compute_type: str = "auto"
+    engine: str = "faster-whisper"
 
 
 @dataclass(frozen=True, slots=True)
@@ -296,6 +297,7 @@ def _app_from_sections(sections: dict[str, dict[str, Any]]) -> AppConfig:
             model=str(whisper_data.get("model") or "auto"),
             device=str(whisper_data.get("device") or "auto"),
             compute_type=str(whisper_data.get("compute_type") or "auto"),
+            engine=str(whisper_data.get("engine") or "faster-whisper"),
         ),
         frames=FramesConfig(
             max_per_video=int(frames_data.get("max_per_video") or 15),
