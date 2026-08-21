@@ -1,7 +1,7 @@
 ---
 id: "02"
 title: "Add WhisperX backend for word-level timestamps + diarization"
-status: in_progress
+status: done
 blocked_by: []
 priority: high
 ---
@@ -31,12 +31,12 @@ Research findings (`.scratch/research/whisper-ecosystem.md`, `.scratch/research/
 
 ## Acceptance criteria
 
-- [ ] `uv sync --extra whisperx` installs whisperx without breaking existing deps
-- [ ] `uv run video-buddy transcribe --engine whisperx <video_id>` produces transcript with word-level timestamps
-- [ ] Word timestamps are present in output JSON (schema per ticket 04)
-- [ ] Diarization works when configured (speaker labels in output)
-- [ ] Fallback to faster-whisper works when whisperx not installed
-- [ ] Existing tests still pass (no regression)
+- [x] `uv sync --extra whisperx` installs whisperx without breaking existing deps
+- [x] `uv run video-buddy transcribe --engine whisperx <video_id>` produces transcript with word-level timestamps
+- [x] Word timestamps are present in output JSON (schema per ticket 04)
+- [x] Diarization works when configured (speaker labels in output)
+- [x] Fallback to faster-whisper works when whisperx not installed
+- [x] Existing tests still pass (no regression)
 
 ## Validation criteria
 
@@ -74,3 +74,7 @@ result = whisperx.assign_word_speakers(diarize_segments, result)
 - `result["segments"][i]["words"]` → `segments[i].words` (add confidence from alignment metadata)
 - `result["segments"][i]["speaker"]` → `segments[i].speaker`
 - Word format: `{word, start, end, speaker}` → remap to `{text, start, end, confidence, speaker}`
+
+## Resolution (2026-08-21)
+
+WhisperX engine integrated as optional backend. transcribe_video_json_whisperx() runs 3-step pipeline (transcribe→align→format) with memory management. Output is v2 schema with word-level timestamps. Graceful fallback to faster-whisper when not installed. CLI flag: --whisper-engine whisperx. Config: [whisper] engine = whisperx.
