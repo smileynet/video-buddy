@@ -17,10 +17,15 @@ class SshBackendConfig:
     capabilities: tuple[str, ...]
     ssh_opts: tuple[str, ...] = ()
     python: str | None = None
+    crisperwhisper_python: str | None = None
 
     @property
     def remote_python(self) -> str:
         return self.python or f"{self.worker_root}/.venv/bin/python3"
+
+    @property
+    def remote_crisperwhisper_python(self) -> str:
+        return self.crisperwhisper_python or f"{self.worker_root}/.venvs/crisperwhisper/bin/python3"
 
 
 @dataclass(frozen=True, slots=True)
@@ -55,6 +60,12 @@ class SshBackend:
             )
         if "gpu" in self.config.capabilities:
             checks.append("command -v nvidia-smi >/dev/null 2>&1")
+        if "crisperwhisper" in self.config.capabilities:
+            checks.append(
+                f"test -x {shlex.quote(self.config.remote_crisperwhisper_python)}"
+                f" && {shlex.quote(self.config.remote_crisperwhisper_python)}"
+                f" -c {shlex.quote('import crisperwhisper')}"
+            )
         try:
             self._ssh([" && ".join(checks)], timeout=30, shell=True)
         except subprocess.SubprocessError as exc:
@@ -75,6 +86,13 @@ class SshBackend:
             f"{self.config.worker_root}/transcribe_worker.py",
             timeout=60,
         )
+        crisperwhisper_worker = workers_dir / "crisperwhisper_worker.py"
+        if crisperwhisper_worker.exists():
+            self._scp_to(
+                crisperwhisper_worker,
+                f"{self.config.worker_root}/crisperwhisper_worker.py",
+                timeout=60,
+            )
         return self.probe()
 
     def run_whisper(
@@ -101,6 +119,37 @@ class SshBackend:
                 )
                 self._ssh([command], timeout=1200, shell=True)
                 local_output = local_tmp / "captions.json"
+                self._scp_from(remote_output, local_output, timeout=120)
+                return json.loads(local_output.read_text(encoding="utf-8"))
+            finally:
+                self._cleanup_remote_dir(remote_dir)
+
+    def run_crisperwhisper(
+        self,
+        audio_path: Path,
+        *,
+        model: str,
+        device: str,
+        compute_type: str,
+        mode: str = "verbatim",
+    ) -> dict:
+        with tempfile.TemporaryDirectory(prefix="video-buddy-ssh-") as tmp:
+            local_tmp = Path(tmp)
+            remote_dir = self._make_remote_tempdir("video-buddy-crisper")
+            remote_audio = f"{remote_dir}/audio{audio_path.suffix or '.bin'}"
+            remote_output = f"{remote_dir}/transcript.json"
+            try:
+                self._scp_to(audio_path, remote_audio, timeout=120)
+                command = (
+                    f"{shlex.quote(self.config.remote_crisperwhisper_python)} "
+                    f"{shlex.quote(self.config.worker_root + '/crisperwhisper_worker.py')} "
+                    f"{shlex.quote(remote_audio)} --output {shlex.quote(remote_output)} "
+                    f"--model {shlex.quote(model)} --device {shlex.quote(device)} "
+                    f"--compute-type {shlex.quote(compute_type)} "
+                    f"--mode {shlex.quote(mode)}"
+                )
+                self._ssh([command], timeout=1200, shell=True)
+                local_output = local_tmp / "transcript.json"
                 self._scp_from(remote_output, local_output, timeout=120)
                 return json.loads(local_output.read_text(encoding="utf-8"))
             finally:

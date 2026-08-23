@@ -39,6 +39,9 @@ def build_registry(compute_entries: list[dict]) -> BackendRegistry:
                     ),
                     ssh_opts=tuple(str(item) for item in entry.get("ssh_opts") or []),
                     python=str(entry.get("python")) if entry.get("python") else None,
+                    crisperwhisper_python=str(entry.get("crisperwhisper_python"))
+                    if entry.get("crisperwhisper_python")
+                    else None,
                 )
             )
         )

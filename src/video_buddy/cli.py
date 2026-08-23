@@ -70,7 +70,7 @@ def build_parser() -> argparse.ArgumentParser:
     transcribe_parser.add_argument("--whisper-model", help="Override Whisper model.")
     transcribe_parser.add_argument(
         "--whisper-engine",
-        choices=["faster-whisper", "whisperx"],
+        choices=["faster-whisper", "whisperx", "crisperwhisper"],
         help="Transcription engine.",
     )
     transcribe_parser.add_argument(
@@ -169,7 +169,7 @@ def build_parser() -> argparse.ArgumentParser:
     ingest_parser.add_argument("--whisper-model", help="Override Whisper model.")
     ingest_parser.add_argument(
         "--whisper-engine",
-        choices=["faster-whisper", "whisperx"],
+        choices=["faster-whisper", "whisperx", "crisperwhisper"],
         help="Transcription engine.",
     )
     ingest_parser.add_argument(
@@ -233,7 +233,7 @@ def build_parser() -> argparse.ArgumentParser:
     digest_transcribe.add_argument("--whisper-model", help="Override Whisper model.")
     digest_transcribe.add_argument(
         "--whisper-engine",
-        choices=["faster-whisper", "whisperx"],
+        choices=["faster-whisper", "whisperx", "crisperwhisper"],
         help="Transcription engine.",
     )
     digest_transcribe.add_argument(
@@ -271,7 +271,7 @@ def build_parser() -> argparse.ArgumentParser:
     digest_run.add_argument("--whisper-model", help="Override Whisper model.")
     digest_run.add_argument(
         "--whisper-engine",
-        choices=["faster-whisper", "whisperx"],
+        choices=["faster-whisper", "whisperx", "crisperwhisper"],
         help="Transcription engine.",
     )
     digest_run.add_argument(
@@ -1102,6 +1102,13 @@ def _transcribe_path(
             Path(tmp_dir),
             cookies_from_browser=payload.get("cookies_from_browser") or None,
         )
+        if engine == "crisperwhisper" and hasattr(backend, "run_crisperwhisper"):
+            return backend.run_crisperwhisper(
+                audio_path,
+                model=resolved_model,
+                device=resolved_device,
+                compute_type=resolved_compute_type,
+            )
         return backend.run_whisper(
             audio_path,
             model=resolved_model,
