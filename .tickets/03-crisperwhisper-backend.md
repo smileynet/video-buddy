@@ -6,102 +6,115 @@ blocked_by: ["02"]
 priority: high
 ---
 
-# Add CrisperWhisper isolated backend for verbatim + hallucination detection
+# Add CrisperWhisper as Default Transcription Engine (via monolith GPU)
 
 ## Context
 
-CrisperWhisper requires an isolated venv due to its forked ctranslate2 package conflicting with
-faster-whisper. It offers unique capabilities: verbatim transcription (87.8% disfluency F1 vs
-Whisper's 12%), 3-tier hallucination detection, 30ms word-level timestamps, and dual-mode
-transcription (verbatim + intended simultaneously).
+**Spike results (2026-08-23) changed the architecture decision:**
 
-Research findings (`.scratch/research/crisper-whisper.md`, `.scratch/research/verbatim-transcription.md`):
-- `ctranslate2-crisperwhisper` occupies same namespace as upstream — MUST be isolated
-- The subprocess/isolated-venv pattern matches our existing SSH remote backend approach
-- `transcribe_dual()` gives both verbatim and cleaned versions in one pass
-- `verbatimize()` can retrofit existing transcripts with actual disfluencies from audio
+| | faster-whisper (CPU) | CrisperWhisper (GPU, monolith) |
+|---|---|---|
+| 33 min audio | 5.6 min | **25 seconds** |
+| RTF | 5.93x | **80x** |
+| Hallucinations | 17 repeats | **0** |
+| Word timestamps | No | **Yes (5154 words)** |
+| Verbatim | No | **Yes** |
+
+CrisperWhisper on monolith's RTX 3070 is 13x faster than faster-whisper on local CPU,
+produces zero hallucinations, and provides word-level timestamps. It should be the
+**default engine**, not an optional premium backend.
+
+Monolith is already configured as a compute backend (`monolith-wifi.lan`, RTX 3070 8GB,
+CUDA 12.4, CrisperWhisper 2.0.2 installed at `~/.venvs/crisperwhisper/`).
 
 ## What to build
 
-1. Create isolated venv at `.venvs/crisperwhisper/` with `crisperwhisper[ct2]`
-2. Create `src/video_buddy/crisperwhisper_backend.py` — subprocess-based adapter
-3. Runner script at `scripts/crisperwhisper_worker.py` (runs inside isolated venv)
-4. Worker accepts audio path + config via JSON stdin, outputs transcript JSON to stdout
-5. When `engine = "crisperwhisper"` in config, spawns subprocess in isolated venv
-6. Support verbatim mode, dual mode, and standard mode via config
-7. Integrate hallucination detection (report hallucination count in metadata)
+1. Create `workers/crisperwhisper_worker.py` — remote worker (same contract as transcribe_worker.py)
+2. Add `run_crisperwhisper()` method to `SshBackend` class
+3. Update `_transcribe_path()` in cli.py to route to CrisperWhisper on SSH backend when available
+4. Deploy worker to monolith
+5. Make CrisperWhisper the default when monolith is available; fall back to faster-whisper when not
 
 ## Acceptance criteria
 
-- [ ] `.venvs/crisperwhisper/` created with working CrisperWhisper installation
-- [ ] `uv run video-buddy transcribe --engine crisperwhisper <video_id>` produces transcript
-- [ ] Verbatim mode preserves fillers (uh, um) and false starts in output
-- [ ] Dual mode produces both `verbatim_text` and `intended_text` fields
-- [ ] Hallucination detection metadata present (count of detected/mitigated hallucinations)
-- [ ] Word-level timestamps at ≤50ms granularity in output
-- [ ] Subprocess isolation verified (no import conflicts in main venv)
-- [ ] Existing faster-whisper pipeline unaffected
+- [ ] `workers/crisperwhisper_worker.py` follows existing worker contract (args + --output file)
+- [ ] `SshBackend.run_crisperwhisper()` method mirrors `run_whisper()` lifecycle
+- [ ] `uv run video-buddy transcribe --backend monolith --whisper-engine crisperwhisper <id>` works
+- [ ] Word-level timestamps present in v2 output JSON
+- [ ] Verbatim mode preserves fillers and false starts
+- [ ] Falls back to faster-whisper when monolith unavailable
+- [ ] Existing tests pass (no regression)
+- [ ] Worker deployed to monolith and probe passes
 
 ## Validation criteria
 
-- Run on a 60+ min video — verify no hallucinated repeated segments
-- Compare verbatim output against manual spot-check (5 segments with audible fillers)
-- Verify word timestamps against frame correlation data on at least one video
-- Processing speed measured and documented
+- Transcribe a 30+ min video via monolith in under 30 seconds
+- Output contains word timestamps at sub-second granularity
+- Zero hallucinated repeated segments in output
+- End-to-end: ingest a video using CrisperWhisper → render note → verify timestamps in note
+## Implementation Notes (from spike)
 
-## Implementation Notes (from research)
+### Architecture: SSH Remote Worker (same as existing transcribe_worker.py)
 
-### Subprocess Isolation Pattern
+No local subprocess isolation needed. CrisperWhisper runs on monolith via SSH,
+same lifecycle as `run_whisper()`:
+
+1. Upload audio to monolith temp dir
+2. SSH execute: `~/.venvs/crisperwhisper/bin/python ~/video-buddy-worker/crisperwhisper_worker.py <audio> --output <path> --model turbo --mode verbatim`
+3. Download result JSON
+4. Cleanup remote temp dir
+
+### Worker Script Contract (matches transcribe_worker.py)
+
 ```python
-# Parent process (in main venv) — no activation needed
-CRISPER_PYTHON = Path(".venvs/crisperwhisper/bin/python")
-
-def transcribe_crisperwhisper(audio_path: str, config: dict) -> dict:
-    payload = json.dumps({"audio": audio_path, **config})
-    result = subprocess.run(
-        [str(CRISPER_PYTHON), "scripts/crisperwhisper_worker.py"],
-        input=payload, capture_output=True, text=True,
-        timeout=config.get("timeout", 3600),
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"CrisperWhisper failed: {result.stderr}")
-    return json.loads(result.stdout)
+# workers/crisperwhisper_worker.py
+# Args: audio_path --output <path> --model turbo --device auto --mode verbatim
+# Output: v2 JSON to --output path
+# Exit: 0 success, 1 failure (stderr for errors)
 ```
 
-### Worker Script (runs in isolated venv)
-```python
-#!/usr/bin/env python3
-"""scripts/crisperwhisper_worker.py — runs inside .venvs/crisperwhisper/"""
-import json, sys
-from crisperwhisper import CrisperWhisperModel
+### Output Format (v2 schema with words)
 
-config = json.loads(sys.stdin.read())
-model = CrisperWhisperModel(config.get("model", "nyrahealth/CrisperWhisper_turbo"))
-result = model.transcribe(config["audio"], word_timestamps=True)
-# Convert to our schema v2 format
-output = {"segments": [...], "metadata": {...}}
-json.dump(output, sys.stdout)
+```json
+{
+  "schema_version": "2.0",
+  "metadata": {"engine": "crisperwhisper", "model": "turbo", "mode": "verbatim",
+               "processing_time": 24.9, "audio_duration": 1990.0},
+  "segments": [
+    {"start": 0.34, "duration": 5.36, "text": "This is a sine wave...",
+     "words": [{"start": 0.34, "end": 0.42, "text": "This"}, ...]}
+  ]
+}
 ```
 
-### Key Design Decisions
-- Use venv's Python binary directly — no shell activation needed
-- JSON over stdin/stdout for IPC (stderr for logs/diagnostics)
-- Timeout per-video based on duration (audio_seconds * 5 for CPU, * 2 for GPU)
-- Process group kill on timeout (os.killpg for clean cleanup)
-- Health check: verify venv exists + model downloadable at startup
-- Consider `uv run --isolated` if we want uv to manage the venv lifecycle
+### SshBackend.run_crisperwhisper()
 
-### CrisperWhisper API Mapping
 ```python
-# Standard transcription (word timestamps)
-result = model.transcribe(audio, word_timestamps=True)
-# → result.words: list[WordTimestamp] with .start, .end, .text
-
-# Dual mode (verbatim + intended)
-dual = model.transcribe_dual(audio)
-# → dual.verbatim_words, dual.intended_words
-
-# Verbatimize (retrofit existing transcript)
-verbatim = model.verbatimize(audio, "existing clean text")
-# → adds fillers/stutters from audio into the text
+def run_crisperwhisper(self, audio_path: Path, *, model: str, device: str,
+                       compute_type: str, mode: str = "verbatim") -> dict:
+    # Same pattern as run_whisper() but:
+    # - Uses ~/.venvs/crisperwhisper/bin/python instead of .venv/bin/python
+    # - Calls crisperwhisper_worker.py instead of transcribe_worker.py
+    # - Returns dict (v2) instead of list (v1)
+    # - Adds --mode flag
 ```
+
+### Engine Routing in _transcribe_path()
+
+```python
+if engine == "crisperwhisper" and backend is not None:
+    result = backend.run_crisperwhisper(audio_path, model=model, device=device,
+                                         compute_type=compute_type, mode=mode)
+    return result  # v2 dict
+elif engine == "crisperwhisper" and backend is None:
+    # Local fallback: use isolated venv subprocess (if available)
+    # OR fall back to faster-whisper with warning
+```
+
+### Monolith Setup (already done in spike)
+
+- Host: `sam@monolith-wifi.lan`
+- GPU: RTX 3070 8GB, CUDA 12.4
+- Venv: `~/.venvs/crisperwhisper/` with crisperwhisper[ct2,convert] 2.0.2
+- Worker dir: `~/video-buddy-worker/`
+- Validated: 80x realtime on 33-min audio
