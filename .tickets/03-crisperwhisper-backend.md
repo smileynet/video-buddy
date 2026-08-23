@@ -1,7 +1,7 @@
 ---
 id: "03"
 title: "Add CrisperWhisper isolated backend for verbatim + hallucination detection"
-status: in_progress
+status: done
 blocked_by: ["02"]
 priority: high
 ---
@@ -37,14 +37,14 @@ CUDA 12.4, CrisperWhisper 2.0.2 installed at `~/.venvs/crisperwhisper/`).
 
 ## Acceptance criteria
 
-- [ ] `workers/crisperwhisper_worker.py` follows existing worker contract (args + --output file)
-- [ ] `SshBackend.run_crisperwhisper()` method mirrors `run_whisper()` lifecycle
-- [ ] `uv run video-buddy transcribe --backend monolith --whisper-engine crisperwhisper <id>` works
-- [ ] Word-level timestamps present in v2 output JSON
-- [ ] Verbatim mode preserves fillers and false starts
-- [ ] Falls back to faster-whisper when monolith unavailable
-- [ ] Existing tests pass (no regression)
-- [ ] Worker deployed to monolith and probe passes
+- [x] `workers/crisperwhisper_worker.py` follows existing worker contract (args + --output file)
+- [x] `SshBackend.run_crisperwhisper()` method mirrors `run_whisper()` lifecycle
+- [x] `uv run video-buddy transcribe --backend monolith --whisper-engine crisperwhisper <id>` works
+- [x] Word-level timestamps present in v2 output JSON
+- [x] Verbatim mode preserves fillers and false starts
+- [x] Falls back to faster-whisper when monolith unavailable
+- [x] Existing tests pass (no regression)
+- [x] Worker deployed to monolith and probe passes
 
 ## Validation criteria
 
@@ -118,3 +118,7 @@ elif engine == "crisperwhisper" and backend is None:
 - Venv: `~/.venvs/crisperwhisper/` with crisperwhisper[ct2,convert] 2.0.2
 - Worker dir: `~/video-buddy-worker/`
 - Validated: 80x realtime on 33-min audio
+
+## Resolution (2026-08-23)
+
+CrisperWhisper integrated as SSH remote backend. Worker mirrors transcribe_worker.py contract. SshBackend.run_crisperwhisper() method follows run_whisper() lifecycle. Routing in _transcribe_path dispatches to CrisperWhisper when engine+backend match. Monolith configured with capability + python path.
