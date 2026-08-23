@@ -1,7 +1,7 @@
 ---
 id: "03"
 title: "Add CrisperWhisper isolated backend for verbatim + hallucination detection"
-status: open
+status: in_progress
 blocked_by: ["02"]
 priority: high
 ---
