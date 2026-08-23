@@ -1,0 +1,2734 @@
+{
+  "engine": "crisperwhisper",
+  "model": "turbo",
+  "mode": "verbatim",
+  "device": "cpu",
+  "audio_duration": 1990.4,
+  "load_time_s": 6.46,
+  "transcribe_time_s": 2517.49,
+  "total_time_s": 2523.95,
+  "rtf": 0.79,
+  "processing_time_reported": 2517.468,
+  "segment_count": 352,
+  "word_count": 5113,
+  "full_text_length": 27759,
+  "mode_reported": "verbatim",
+  "segments": [
+    {
+      "start": 0.34,
+      "end": 5.5,
+      "duration": 5.16,
+      "text": "This is a sine wave, and when you combine a bunch of them, they can make any image,",
+      "word_count": 18
+    },
+    {
+      "start": 5.7,
+      "end": 10.78,
+      "duration": 5.08,
+      "text": "any sound, and any motion. So can I make a video game that doesn't have a single image file",
+      "word_count": 19
+    },
+    {
+      "start": 10.78,
+      "end": 15.84,
+      "duration": 5.06,
+      "text": "or MP three, no assets, but generates them all in real time using just sine waves?",
+      "word_count": 16
+    },
+    {
+      "start": 16.44,
+      "end": 21.59,
+      "duration": 5.15,
+      "text": "For this project, I'm going to code tools, write a custom audio engine, and over-engineer pretty much",
+      "word_count": 17
+    },
+    {
+      "start": 21.59,
+      "end": 26.74,
+      "duration": 5.15,
+      "text": "everything to make the art, fonts, sound effects, music, and gameplay using",
+      "word_count": 12
+    },
+    {
+      "start": 26.88,
+      "end": 32.98,
+      "duration": 6.1,
+      "text": "sine. Because sine waves are underrated, and I want to honor them to the fullest degree. [breath]",
+      "word_count": 17
+    },
+    {
+      "start": 34.88,
+      "end": 40.02,
+      "duration": 5.14,
+      "text": "All right, to make this game with sine waves, we'll need to create a few things. We need a new way to draw",
+      "word_count": 23
+    },
+    {
+      "start": 40.02,
+      "end": 45.18,
+      "duration": 5.16,
+      "text": "all the graphics and animations, including the fonts and the interface. We need to g- generate",
+      "word_count": 16
+    },
+    {
+      "start": 45.18,
+      "end": 50.68,
+      "duration": 5.5,
+      "text": "all the sound effects and music, and then maybe we could package it all in an absurd way? I don't know. So",
+      "word_count": 22
+    },
+    {
+      "start": 50.68,
+      "end": 55.94,
+      "duration": 5.26,
+      "text": "yeah, to understand why sine waves are powerful, let's start with sound real quick, since",
+      "word_count": 15
+    },
+    {
+      "start": 56.16,
+      "end": 61.66,
+      "duration": 5.5,
+      "text": "it's simple enough. This is what a single sine wave sounds like. Yeah, just one perfect",
+      "word_count": 16
+    },
+    {
+      "start": 61.86,
+      "end": 67.11,
+      "duration": 5.25,
+      "text": "smooth tone. It can be played faster, slower, louder and",
+      "word_count": 10
+    },
+    {
+      "start": 67.11,
+      "end": 72.34,
+      "duration": 5.23,
+      "text": "quieter, but something cool happens when we add a bunch of them together. If we align",
+      "word_count": 16
+    },
+    {
+      "start": 72.34,
+      "end": 77.72,
+      "duration": 5.38,
+      "text": "the sine waves just right, we get a sawtooth wave. Neat. Or",
+      "word_count": 12
+    },
+    {
+      "start": 77.72,
+      "end": 82.87,
+      "duration": 5.15,
+      "text": "if you combine only half of them, we end up with a square wave. Or if you combine them in",
+      "word_count": 20
+    },
+    {
+      "start": 82.87,
+      "end": 88.41,
+      "duration": 5.54,
+      "text": "this way, you get a triangle wave. Turns out, you could create literally any waveform",
+      "word_count": 15
+    },
+    {
+      "start": 88.41,
+      "end": 93.52,
+      "duration": 5.11,
+      "text": "just by combining sine waves. We'll use this and more techniques to make the sound effects",
+      "word_count": 16
+    },
+    {
+      "start": 93.64,
+      "end": 99.08,
+      "duration": 5.44,
+      "text": "and music in this experiment. But a similar idea can be used in two dimensions. If",
+      "word_count": 16
+    },
+    {
+      "start": 99.08,
+      "end": 104.26,
+      "duration": 5.18,
+      "text": "we control how high up or down this dot is by fixing it to a sine wave, then we control how far",
+      "word_count": 22
+    },
+    {
+      "start": 104.26,
+      "end": 109.28,
+      "duration": 5.02,
+      "text": "left and right it is by fixing it to a copy of the sine wave, then as long we offset one side",
+      "word_count": 22
+    },
+    {
+      "start": 109.28,
+      "end": 114.31,
+      "duration": 5.03,
+      "text": "by a quarter turn, the dot goes in a perfect circle. Just like before, we can add in",
+      "word_count": 18
+    },
+    {
+      "start": 114.31,
+      "end": 119.4,
+      "duration": 5.09,
+      "text": "a higher frequency sign, and in this case it makes like a cloud or some loops.",
+      "word_count": 16
+    },
+    {
+      "start": 120.14,
+      "end": 125.28,
+      "duration": 5.14,
+      "text": "But what's mind-blowing is if we combine the right set of these sine waves, we can create a square",
+      "word_count": 19
+    },
+    {
+      "start": 126.98,
+      "end": 132.36,
+      "duration": 5.38,
+      "text": "or a triangle or a a duck. You",
+      "word_count": 8
+    },
+    {
+      "start": 132.36,
+      "end": 138.08,
+      "duration": 5.72,
+      "text": "could make any shape with just basically one set of sine waves. One",
+      "word_count": 13
+    },
+    {
+      "start": 138.08,
+      "end": 143.36,
+      "duration": 5.28,
+      "text": "common way to picture the same thing is by connecting a chain of rotating circles together.",
+      "word_count": 16
+    },
+    {
+      "start": 145.76,
+      "end": 151.48,
+      "duration": 5.72,
+      "text": "Higher pitched sine waves spin faster, and louder sine waves are larger. When",
+      "word_count": 13
+    },
+    {
+      "start": 151.48,
+      "end": 156.58,
+      "duration": 5.1,
+      "text": "you trace the path that the last circle makes, we get our desired shape. It's",
+      "word_count": 15
+    },
+    {
+      "start": 156.92,
+      "end": 162.08,
+      "duration": 5.16,
+      "text": "approximately magic. But whether we're combining waves to create sound or combining circles",
+      "word_count": 13
+    },
+    {
+      "start": 162.22,
+      "end": 167.7,
+      "duration": 5.48,
+      "text": "to create shapes, in the end we're just adding different frequencies of sine waves together. And",
+      "word_count": 16
+    },
+    {
+      "start": 167.7,
+      "end": 173.04,
+      "duration": 5.34,
+      "text": "I know this idea as the Foyer transform or using a Foyer series, because Joseph Foyer",
+      "word_count": 16
+    },
+    {
+      "start": 173.32,
+      "end": 178.6,
+      "duration": 5.28,
+      "text": "believed in the power of sign, as do I. Okay, what's the goal",
+      "word_count": 13
+    },
+    {
+      "start": 178.6,
+      "end": 183.84,
+      "duration": 5.24,
+      "text": "of the game that we're making about sine waves? You wave sines? Sine wavers?",
+      "word_count": 14
+    },
+    {
+      "start": 184.16,
+      "end": 189.34,
+      "duration": 5.18,
+      "text": "Saver wines? Well, yes, we'll be waving signs, sort of. But to",
+      "word_count": 12
+    },
+    {
+      "start": 189.58,
+      "end": 194.68,
+      "duration": 5.1,
+      "text": "make this game, we first need to make the universe, of course [UH] I can create a planet",
+      "word_count": 18
+    },
+    {
+      "start": 195.02,
+      "end": 200.24,
+      "duration": 5.22,
+      "text": "by just combining like a low frequency high amplitude circle with smaller high frequency",
+      "word_count": 14
+    },
+    {
+      "start": 200.24,
+      "end": 205.44,
+      "duration": 5.2,
+      "text": "bumps, which I can randomize [UH] if we reduce the high frequencies each time, now",
+      "word_count": 15
+    },
+    {
+      "start": 205.44,
+      "end": 210.7,
+      "duration": 5.26,
+      "text": "we have a cool depth effect. I'll get to grass and wind physics",
+      "word_count": 13
+    },
+    {
+      "start": 210.7,
+      "end": 216.21,
+      "duration": 5.51,
+      "text": "in a bit, but yeah, circles are boring. To make more complicated, more recognizable",
+      "word_count": 14
+    },
+    {
+      "start": 216.21,
+      "end": 221.32,
+      "duration": 5.11,
+      "text": "shapes like the duck from earlier, I really have to be able to draw the shape and then",
+      "word_count": 18
+    },
+    {
+      "start": 221.32,
+      "end": 226.36,
+      "duration": 5.04,
+      "text": "convert it to all the right sine wave frequencies. You know, I can't just guess. So I built",
+      "word_count": 18
+    },
+    {
+      "start": 226.36,
+      "end": 231.5,
+      "duration": 5.14,
+      "text": "a simple tool. On the left side, I can draw any shape I want, and behind the scenes",
+      "word_count": 18
+    },
+    {
+      "start": 231.5,
+      "end": 236.58,
+      "duration": 5.08,
+      "text": "it just transforms it into the frequency domain using a Fourier transform. So it becomes a bunch",
+      "word_count": 17
+    },
+    {
+      "start": 236.58,
+      "end": 241.68,
+      "duration": 5.1,
+      "text": "of sine waves. I wrote a slow version of the Fourier transform, but that's",
+      "word_count": 14
+    },
+    {
+      "start": 241.68,
+      "end": 246.96,
+      "duration": 5.28,
+      "text": "totally fine for this use case. It's only used for creating the assets, not actually displaying them in the final",
+      "word_count": 20
+    },
+    {
+      "start": 246.96,
+      "end": 251.98,
+      "duration": 5.02,
+      "text": "game. To display all the frequencies as a shape again on the right, it",
+      "word_count": 14
+    },
+    {
+      "start": 251.98,
+      "end": 257.24,
+      "duration": 5.26,
+      "text": "just has to combine all the sine waves again. And that's basically how my game will render out the shapes,",
+      "word_count": 20
+    },
+    {
+      "start": 257.56,
+      "end": 262.66,
+      "duration": 5.1,
+      "text": "never storing the original drawing, just sine waves. The absurdity and effort",
+      "word_count": 12
+    },
+    {
+      "start": 262.66,
+      "end": 267.68,
+      "duration": 5.02,
+      "text": "that goes into all of this makes me need to answer the question, are there any practical",
+      "word_count": 17
+    },
+    {
+      "start": 267.68,
+      "end": 272.86,
+      "duration": 5.18,
+      "text": "reasons to use Fourier transforms in a game like this? Well, first of all, I",
+      "word_count": 15
+    },
+    {
+      "start": 272.86,
+      "end": 278.17,
+      "duration": 5.31,
+      "text": "was surprised [UH] this tool is definitely not as intuitive to use as I would have thought [UH]",
+      "word_count": 18
+    },
+    {
+      "start": 278.17,
+      "end": 283.52,
+      "duration": 5.35,
+      "text": "because we're drawing it back out more detailed and smooth than the original input shape is, sometimes",
+      "word_count": 17
+    },
+    {
+      "start": 283.52,
+      "end": 289.13,
+      "duration": 5.61,
+      "text": "a high-frequency artifact will ripple through the whole output, making it look extra wiggly. [UH]",
+      "word_count": 15
+    },
+    {
+      "start": 289.13,
+      "end": 294.22,
+      "duration": 5.09,
+      "text": "usually I could nudge the points around to smooth things out, and in some cases I might also wanna just remove",
+      "word_count": 21
+    },
+    {
+      "start": 294.54,
+      "end": 299.74,
+      "duration": 5.2,
+      "text": "all the tiny, less important sine waves altogether. And that's what this slider is for.",
+      "word_count": 15
+    },
+    {
+      "start": 300.34,
+      "end": 306.12,
+      "duration": 5.78,
+      "text": "If I slide it all the way down, it renders out just one pair of sine waves. A good old circle. And",
+      "word_count": 22
+    },
+    {
+      "start": 306.12,
+      "end": 311.58,
+      "duration": 5.46,
+      "text": "if I keep sliding it up, it adds more and more frequencies until it's, you know, maximum detail.",
+      "word_count": 18
+    },
+    {
+      "start": 312.1,
+      "end": 317.2,
+      "duration": 5.1,
+      "text": "And that is a form of compression. I can remove all the",
+      "word_count": 12
+    },
+    {
+      "start": 317.2,
+      "end": 322.42,
+      "duration": 5.22,
+      "text": "unimportant frequencies and end up with the similar-looking shape, which saves data and processing",
+      "word_count": 14
+    },
+    {
+      "start": 322.42,
+      "end": 327.62,
+      "duration": 5.2,
+      "text": "power. That's a huge reason to use Fourier transforms. The video you're watching",
+      "word_count": 13
+    },
+    {
+      "start": 327.62,
+      "end": 332.72,
+      "duration": 5.1,
+      "text": "right now, hi, is compressed using variations of this algorithm called",
+      "word_count": 11
+    },
+    {
+      "start": 332.88,
+      "end": 339.24,
+      "duration": 6.36,
+      "text": "asymmetric discrete sine transform and discrete cosine transform. MP",
+      "word_count": 9
+    },
+    {
+      "start": 339.36,
+      "end": 344.56,
+      "duration": 5.2,
+      "text": "three's, JPEGs, and MP fours use these algorithms, and it helps compress stuff to a smaller",
+      "word_count": 16
+    },
+    {
+      "start": 344.56,
+      "end": 349.64,
+      "duration": 5.08,
+      "text": "file size without losing too much quality. This is [UH] what causes that bubbly sound",
+      "word_count": 15
+    },
+    {
+      "start": 349.88,
+      "end": 354.96,
+      "duration": 5.08,
+      "text": "of a super-compressed MP three audio file. It's the beeps of the sine waves",
+      "word_count": 14
+    },
+    {
+      "start": 355.14,
+      "end": 360.6,
+      "duration": 5.46,
+      "text": "blipping in and out real quickly [UH] This is also why if you zoom into a super-compressed",
+      "word_count": 17
+    },
+    {
+      "start": 360.98,
+      "end": 366.04,
+      "duration": 5.06,
+      "text": "deep-fried video or JPEG, you can see little ripple patterns. You're seeing the",
+      "word_count": 13
+    },
+    {
+      "start": 366.04,
+      "end": 371.1,
+      "duration": 5.06,
+      "text": "sine waves that make up the image. I'll play around with JPEG compression as a real-time effect in the",
+      "word_count": 19
+    },
+    {
+      "start": 371.1,
+      "end": 376.12,
+      "duration": 5.02,
+      "text": "game later. So because of sine compression, the",
+      "word_count": 8
+    },
+    {
+      "start": 376.12,
+      "end": 381.44,
+      "duration": 5.32,
+      "text": "duck is around half the file size of an SVG file. Mostly because an SVG",
+      "word_count": 15
+    },
+    {
+      "start": 381.44,
+      "end": 386.48,
+      "duration": 5.04,
+      "text": "file includes curve information, whereas sine waves are naturally curvy, and a",
+      "word_count": 12
+    },
+    {
+      "start": 386.48,
+      "end": 391.78,
+      "duration": 5.3,
+      "text": "PNG file is even bigger. So at the end of this project, I wanna see how much smaller this game is",
+      "word_count": 21
+    },
+    {
+      "start": 392.08,
+      "end": 397.2,
+      "duration": 5.12,
+      "text": "thanks to sine waves. By the way, I added a way to morph between the shapes by fading",
+      "word_count": 18
+    },
+    {
+      "start": 397.2,
+      "end": 402.38,
+      "duration": 5.18,
+      "text": "between the frequencies that make up each keyframe. For example, here I have a duck,",
+      "word_count": 15
+    },
+    {
+      "start": 402.66,
+      "end": 408.44,
+      "duration": 5.78,
+      "text": "a crow, and a goose. So in between, I guess we have a a doe and",
+      "word_count": 16
+    },
+    {
+      "start": 408.44,
+      "end": 413.78,
+      "duration": 5.34,
+      "text": "a cruise and perhaps a goose circle. Anyway, I'll take the crow",
+      "word_count": 12
+    },
+    {
+      "start": 413.78,
+      "end": 419.12,
+      "duration": 5.34,
+      "text": "as our main character and give it a goofy little walk cycle. So",
+      "word_count": 13
+    },
+    {
+      "start": 419.3,
+      "end": 424.34,
+      "duration": 5.04,
+      "text": "[UH] we've got our planet made out of sine waves, and we've got our crow, a mere combination",
+      "word_count": 18
+    },
+    {
+      "start": 424.34,
+      "end": 429.44,
+      "duration": 5.1,
+      "text": "of harmonics, and by changing the starting rotation of all the harmonics, we can rotate the",
+      "word_count": 16
+    },
+    {
+      "start": 429.58,
+      "end": 434.64,
+      "duration": 5.06,
+      "text": "crow to stand on the planet and walk around. I call it crotation. Okay,",
+      "word_count": 14
+    },
+    {
+      "start": 434.64,
+      "end": 439.94,
+      "duration": 5.3,
+      "text": "now let's give the crow the ability to fly. So I gave it an airplane. The",
+      "word_count": 16
+    },
+    {
+      "start": 439.94,
+      "end": 445.2,
+      "duration": 5.26,
+      "text": "airplane is made out of thirty-two animated harmonics, a propeller that I created by hand so",
+      "word_count": 16
+    },
+    {
+      "start": 445.2,
+      "end": 450.71,
+      "duration": 5.51,
+      "text": "I can make it spin convincingly, and two circles for the landing wheels. Making",
+      "word_count": 14
+    },
+    {
+      "start": 450.71,
+      "end": 455.74,
+      "duration": 5.03,
+      "text": "the propeller by hand was not at all intuitive to me for some reason. Like, it's",
+      "word_count": 16
+    },
+    {
+      "start": 455.74,
+      "end": 461.04,
+      "duration": 5.3,
+      "text": "weird that the harmonic frequency of two gives three propeller blades, but",
+      "word_count": 12
+    },
+    {
+      "start": 461.22,
+      "end": 466.68,
+      "duration": 5.46,
+      "text": "like you can't easily make two blades, and being slightly off anywhere gives totally wrong",
+      "word_count": 15
+    },
+    {
+      "start": 466.68,
+      "end": 474.92,
+      "duration": 8.24,
+      "text": "results. All I'm saying is I'm glad that I made the drawing tool for more complicated shapes. Finally,",
+      "word_count": 18
+    },
+    {
+      "start": 474.92,
+      "end": 480.48,
+      "duration": 5.56,
+      "text": "here's where I'm going with the game idea. So you're a crow and your business is sign-waving,",
+      "word_count": 17
+    },
+    {
+      "start": 480.64,
+      "end": 485.88,
+      "duration": 5.24,
+      "text": "right? So you get tasks from your neighbors about what messages they want you to fly high in the sky.",
+      "word_count": 20
+    },
+    {
+      "start": 486.64,
+      "end": 491.98,
+      "duration": 5.34,
+      "text": "So you collect letters to form their message and fly it over the people below. Because no business",
+      "word_count": 18
+    },
+    {
+      "start": 492.22,
+      "end": 497.58,
+      "duration": 5.36,
+      "text": "can run without signs. Clearly, we need a way to display text in the game, so",
+      "word_count": 16
+    },
+    {
+      "start": 498.02,
+      "end": 503.26,
+      "duration": 5.24,
+      "text": "we need to encode a font as sine waves. Dare I call it? Sign",
+      "word_count": 14
+    },
+    {
+      "start": 503.26,
+      "end": 508.38,
+      "duration": 5.12,
+      "text": "language? [laughter] I think cursive is a great starting point, so I used my drawing",
+      "word_count": 15
+    },
+    {
+      "start": 508.38,
+      "end": 513.82,
+      "duration": 5.44,
+      "text": "tool to design twenty-six letters. Then I have them connect",
+      "word_count": 10
+    },
+    {
+      "start": 514.18,
+      "end": 519.46,
+      "duration": 5.28,
+      "text": "together between words and cursive. It's not super easy to read,",
+      "word_count": 11
+    },
+    {
+      "start": 519.46,
+      "end": 525.44,
+      "duration": 5.98,
+      "text": "I admit, but it's really cool that you could animate the harmonics to make the text wiggle. And",
+      "word_count": 18
+    },
+    {
+      "start": 525.56,
+      "end": 530.64,
+      "duration": 5.08,
+      "text": "we can have it draw in and out by fading the harmonics slowly. Try doing",
+      "word_count": 15
+    },
+    {
+      "start": 530.78,
+      "end": 536.32,
+      "duration": 5.54,
+      "text": "that with your your Times New Romans or your Comic Sanses. And",
+      "word_count": 12
+    },
+    {
+      "start": 536.32,
+      "end": 546.26,
+      "duration": 9.94,
+      "text": "that's not enough for me, so I I'm gonna make another font. Bubble",
+      "word_count": 13
+    },
+    {
+      "start": 546.26,
+      "end": 552.14,
+      "duration": 5.88,
+      "text": "letters. And they're much more legible. Now",
+      "word_count": 7
+    },
+    {
+      "start": 552.14,
+      "end": 558.74,
+      "duration": 6.6,
+      "text": "we can see what NPCs have to say. Once",
+      "word_count": 9
+    },
+    {
+      "start": 558.74,
+      "end": 563.96,
+      "duration": 5.22,
+      "text": "you're assigned a task, it'll show up in your spiral notebook. The only kind of notebook featuring a sine",
+      "word_count": 19
+    },
+    {
+      "start": 563.96,
+      "end": 570.2,
+      "duration": 6.24,
+      "text": "wave, of course. Then you collect letters by finding them in the sky in balloons. Yeah,",
+      "word_count": 16
+    },
+    {
+      "start": 570.2,
+      "end": 575.5,
+      "duration": 5.3,
+      "text": "I just need to add a banner still. But [UH] there are two ways that I'm thinking to arrange the balloons in",
+      "word_count": 22
+    },
+    {
+      "start": 575.68,
+      "end": 581.09,
+      "duration": 5.41,
+      "text": "space. The first way is by placing them in different rings. If the distance",
+      "word_count": 14
+    },
+    {
+      "start": 581.09,
+      "end": 586.1,
+      "duration": 5.01,
+      "text": "between rings is the same as the distance between balloons on the rings, then they",
+      "word_count": 15
+    },
+    {
+      "start": 586.1,
+      "end": 591.58,
+      "duration": 5.48,
+      "text": "all appear equally spaced apart, which is good. This is how strongholds are positioned",
+      "word_count": 14
+    },
+    {
+      "start": 591.58,
+      "end": 596.84,
+      "duration": 5.26,
+      "text": "in Minecraft. I guess it's because it's like so easy to calculate roughly how close the nearest",
+      "word_count": 17
+    },
+    {
+      "start": 596.96,
+      "end": 602.1,
+      "duration": 5.14,
+      "text": "stronghold is at any location. Just which ring are you in and which section are you",
+      "word_count": 16
+    },
+    {
+      "start": 602.1,
+      "end": 607.17,
+      "duration": 5.07,
+      "text": "in [UH] One time I took this concept to the extreme when I designed the island",
+      "word_count": 16
+    },
+    {
+      "start": 607.17,
+      "end": 612.52,
+      "duration": 5.35,
+      "text": "generator for another game I'm working on. It can create islands anywhere, indefinitely,",
+      "word_count": 13
+    },
+    {
+      "start": 612.82,
+      "end": 618.52,
+      "duration": 5.7,
+      "text": "deterministically, because it's just rings. The",
+      "word_count": 6
+    },
+    {
+      "start": 618.52,
+      "end": 623.88,
+      "duration": 5.36,
+      "text": "second way to place balloons is by placing them in a spiral. This is a parabolic spiral.",
+      "word_count": 17
+    },
+    {
+      "start": 624.46,
+      "end": 629.59,
+      "duration": 5.13,
+      "text": "If you separate the items on it by just the right value, you get Fogel's Spiral, a spiral you",
+      "word_count": 19
+    },
+    {
+      "start": 629.59,
+      "end": 634.6,
+      "duration": 5.01,
+      "text": "probably recognize from seeds and petals and leaves. It's the golden",
+      "word_count": 11
+    },
+    {
+      "start": 634.6,
+      "end": 640.0,
+      "duration": 5.4,
+      "text": "angle, calculated with this. Wait, we can calculate it with sign instead.",
+      "word_count": 12
+    },
+    {
+      "start": 642.44,
+      "end": 647.7,
+      "duration": 5.26,
+      "text": "Okay, we can use the ring system for the balloons, since it's speedy, and then we'll use the spiral",
+      "word_count": 19
+    },
+    {
+      "start": 647.7,
+      "end": 653.04,
+      "duration": 5.34,
+      "text": "system for planet placement. That's right, you can fly from one planet to the next in",
+      "word_count": 16
+    },
+    {
+      "start": 653.06,
+      "end": 658.11,
+      "duration": 5.05,
+      "text": "a plane. Game logic, yeah. [laughter] For the grass, I distribute it across",
+      "word_count": 13
+    },
+    {
+      "start": 658.11,
+      "end": 663.14,
+      "duration": 5.03,
+      "text": "the surface of the planet and they're little sine waves and they blow in the wind. The",
+      "word_count": 17
+    },
+    {
+      "start": 663.14,
+      "end": 668.24,
+      "duration": 5.1,
+      "text": "wind simulation is b- basically like a bunch of small connected springs. And just",
+      "word_count": 14
+    },
+    {
+      "start": 668.24,
+      "end": 673.26,
+      "duration": 5.02,
+      "text": "like how gravitational attraction makes a sort of sinusoidal motion, spring attraction",
+      "word_count": 12
+    },
+    {
+      "start": 673.26,
+      "end": 678.4,
+      "duration": 5.14,
+      "text": "makes it too, so I just had to include it. Also, I I can just swap it out with",
+      "word_count": 19
+    },
+    {
+      "start": 678.4,
+      "end": 683.48,
+      "duration": 5.08,
+      "text": "water waves and really it's the exact same thing. Now,",
+      "word_count": 10
+    },
+    {
+      "start": 683.48,
+      "end": 693.44,
+      "duration": 9.96,
+      "text": "of course, we can't have a game with signs without adding signs. Okay,",
+      "word_count": 13
+    },
+    {
+      "start": 693.7,
+      "end": 699.2,
+      "duration": 5.5,
+      "text": "one last thing before I create sounds and music. I want a mini-map. So",
+      "word_count": 14
+    },
+    {
+      "start": 699.2,
+      "end": 704.36,
+      "duration": 5.16,
+      "text": "I drew some plans for a heads-up display for the plane. It's got an altimeter to show how far",
+      "word_count": 19
+    },
+    {
+      "start": 704.36,
+      "end": 709.76,
+      "duration": 5.4,
+      "text": "up from the ground you are, a speedometer, and a map. Maybe it's an analogy",
+      "word_count": 15
+    },
+    {
+      "start": 709.76,
+      "end": 715.38,
+      "duration": 5.62,
+      "text": "for amplitude, frequency, and offset of a sine wave. It's kind of poetic. The",
+      "word_count": 14
+    },
+    {
+      "start": 715.38,
+      "end": 720.66,
+      "duration": 5.28,
+      "text": "speedometer was easy. I just had to draw the dial hand with harmonics, and the rest is pretty straightforward.",
+      "word_count": 19
+    },
+    {
+      "start": 721.12,
+      "end": 726.2,
+      "duration": 5.08,
+      "text": "For the altimeter and map, I want it to feel like a three D spinning dial. I can map it",
+      "word_count": 20
+    },
+    {
+      "start": 726.2,
+      "end": 732.04,
+      "duration": 5.84,
+      "text": "using a simple sine curve, and it looks decent, but I want it to be more dramatic. I",
+      "word_count": 18
+    },
+    {
+      "start": 732.04,
+      "end": 737.52,
+      "duration": 5.48,
+      "text": "was thinking something more along the lines of that super cool hyperbolic art that M. C. Escher made. I",
+      "word_count": 19
+    },
+    {
+      "start": 737.66,
+      "end": 742.85,
+      "duration": 5.19,
+      "text": "was M. C. Escher once, by the way. I'm Martin Cornelius Escher. So yeah, Escher's",
+      "word_count": 15
+    },
+    {
+      "start": 742.85,
+      "end": 748.42,
+      "duration": 5.57,
+      "text": "hyperbolic drawings inspired me to use hyperbolic tangent to get a similarly infinitely squished",
+      "word_count": 14
+    },
+    {
+      "start": 748.42,
+      "end": 753.44,
+      "duration": 5.02,
+      "text": "effect. And since hyperbolic tangent is just like tangent rotated in",
+      "word_count": 11
+    },
+    {
+      "start": 753.44,
+      "end": 758.76,
+      "duration": 5.32,
+      "text": "the complex plane, don't worry about that, and tangent is just sine over cosine, and cosine",
+      "word_count": 16
+    },
+    {
+      "start": 758.76,
+      "end": 764.02,
+      "duration": 5.26,
+      "text": "is just shifted sine. Yeah, we're still honoring sine, right? [throatclearing]",
+      "word_count": 11
+    },
+    {
+      "start": 764.18,
+      "end": 770.24,
+      "duration": 6.06,
+      "text": "Anyway, this background is also just part of a sine wave. Simple stuff. Now,",
+      "word_count": 14
+    },
+    {
+      "start": 770.24,
+      "end": 775.32,
+      "duration": 5.08,
+      "text": "we just need to make sound effects and music with sine waves. The pitter-patter of",
+      "word_count": 15
+    },
+    {
+      "start": 775.32,
+      "end": 780.56,
+      "duration": 5.24,
+      "text": "walking around, jumping, landing, entering the plane, the engine sound, popping balloons",
+      "word_count": 12
+    },
+    {
+      "start": 780.78,
+      "end": 785.98,
+      "duration": 5.2,
+      "text": "and stuff. Theoretically, I could just r- find or record these sounds, use",
+      "word_count": 13
+    },
+    {
+      "start": 785.98,
+      "end": 791.16,
+      "duration": 5.18,
+      "text": "a Fourier transform to convert it to sine waves, and then play it back in the game. But that's",
+      "word_count": 19
+    },
+    {
+      "start": 791.34,
+      "end": 797.22,
+      "duration": 5.88,
+      "text": "almost the exact same as just including an MP three in the files, which would defeat the point. Instead,",
+      "word_count": 19
+    },
+    {
+      "start": 797.44,
+      "end": 802.51,
+      "duration": 5.07,
+      "text": "we will be synthesizing the sounds from scratch. This is how the architecture works",
+      "word_count": 14
+    },
+    {
+      "start": 802.51,
+      "end": 807.68,
+      "duration": 5.17,
+      "text": "for this part. I'll be using audio worklets in the browser. They're little programs that",
+      "word_count": 15
+    },
+    {
+      "start": 807.68,
+      "end": 812.96,
+      "duration": 5.28,
+      "text": "can process audio [UH] for a simple sine wave, I can have parameters for its volume",
+      "word_count": 16
+    },
+    {
+      "start": 813.34,
+      "end": 818.66,
+      "duration": 5.32,
+      "text": "and its pitch, which we can change over time. Layered on top of that is some code that can",
+      "word_count": 19
+    },
+    {
+      "start": 818.78,
+      "end": 824.37,
+      "duration": 5.59,
+      "text": "manage these parameters, so we can change its pitch based on a note on the piano or something. And",
+      "word_count": 19
+    },
+    {
+      "start": 824.37,
+      "end": 829.86,
+      "duration": 5.49,
+      "text": "then finally, I have an audio manager, which simplifies all that down to some easy-to-use functions called",
+      "word_count": 17
+    },
+    {
+      "start": 830.28,
+      "end": 835.46,
+      "duration": 5.18,
+      "text": "beep or something. Let's start with the sound effect for popping a balloon. For",
+      "word_count": 14
+    },
+    {
+      "start": 835.46,
+      "end": 844.62,
+      "duration": 9.16,
+      "text": "this one, let's get some reference material. [breath]",
+      "word_count": 8
+    },
+    {
+      "start": 845.76,
+      "end": 850.86,
+      "duration": 5.1,
+      "text": "It's a really short sound, like point zero five seconds. It looks like",
+      "word_count": 13
+    },
+    {
+      "start": 850.86,
+      "end": 855.92,
+      "duration": 5.06,
+      "text": "a sine wave, like this, but it's got this kind of shape to it, where it ramps up quickly",
+      "word_count": 19
+    },
+    {
+      "start": 855.92,
+      "end": 860.98,
+      "duration": 5.06,
+      "text": "then decreases in volume. I'll control this with an ADSR envelope. That's",
+      "word_count": 12
+    },
+    {
+      "start": 861.02,
+      "end": 866.04,
+      "duration": 5.02,
+      "text": "attack, decay, sustain and release. ADSR. That terminology",
+      "word_count": 8
+    },
+    {
+      "start": 866.04,
+      "end": 871.09,
+      "duration": 5.05,
+      "text": "makes a little bit more sense with music instruments, but that's okay. I'm just keeping the convention here. Another",
+      "word_count": 19
+    },
+    {
+      "start": 871.09,
+      "end": 876.38,
+      "duration": 5.29,
+      "text": "thing to notice is that the sine wave speeds up during the pop sound. And that's because",
+      "word_count": 17
+    },
+    {
+      "start": 876.38,
+      "end": 881.7,
+      "duration": 5.32,
+      "text": "the pitch is increasing over time. So I've added pitch shifting. In this case, the pop sound over doubled",
+      "word_count": 19
+    },
+    {
+      "start": 881.98,
+      "end": 887.36,
+      "duration": 5.38,
+      "text": "in frequency, meaning the note went up a whole octave on the scale. It seemed to go up fourteen",
+      "word_count": 19
+    },
+    {
+      "start": 887.66,
+      "end": 892.72,
+      "duration": 5.06,
+      "text": "point five notes, specifically. [laughter] That sounds so close",
+      "word_count": 9
+    },
+    {
+      "start": 892.72,
+      "end": 897.74,
+      "duration": 5.02,
+      "text": "now, but it's missing something really subtle, but important. Do you see how the sine wave gets",
+      "word_count": 17
+    },
+    {
+      "start": 897.74,
+      "end": 903.0,
+      "duration": 5.26,
+      "text": "all jagged at the start? Let me introduce you to Sine's greatest weakness. It's",
+      "word_count": 14
+    },
+    {
+      "start": 903.0,
+      "end": 908.12,
+      "duration": 5.12,
+      "text": "archenemy, if it had one. Random noise. If we look at the",
+      "word_count": 12
+    },
+    {
+      "start": 908.12,
+      "end": 913.42,
+      "duration": 5.3,
+      "text": "frequency spectrogram, you'll see the main sine wave going up in pitch, but at the start there's",
+      "word_count": 17
+    },
+    {
+      "start": 913.62,
+      "end": 919.48,
+      "duration": 5.86,
+      "text": "every sine wave being active. This is basically white noise. Sine",
+      "word_count": 11
+    },
+    {
+      "start": 919.48,
+      "end": 924.52,
+      "duration": 5.04,
+      "text": "waves are one single pure tone that repeats perfectly. And white noise,",
+      "word_count": 12
+    },
+    {
+      "start": 924.52,
+      "end": 929.64,
+      "duration": 5.12,
+      "text": "on the other hand, has no tone, it's all frequencies happening at random, never repeating, and that's kind",
+      "word_count": 18
+    },
+    {
+      "start": 929.64,
+      "end": 934.96,
+      "duration": 5.32,
+      "text": "of why I think of them as cosmic opposites. But I refuse to admit defeat to random noise. We",
+      "word_count": 19
+    },
+    {
+      "start": 934.96,
+      "end": 940.24,
+      "duration": 5.28,
+      "text": "conquered it last video, and by golly I'll do it again today. So here is how I approximate a noise",
+      "word_count": 20
+    },
+    {
+      "start": 940.24,
+      "end": 945.56,
+      "duration": 5.32,
+      "text": "generator using just three sine waves. It's simple. We do frequency modulation,",
+      "word_count": 12
+    },
+    {
+      "start": 946.26,
+      "end": 951.46,
+      "duration": 5.2,
+      "text": "fm synthesis. You know, the stuff that made iconic bass lines.",
+      "word_count": 11
+    },
+    {
+      "start": 953.0,
+      "end": 958.68,
+      "duration": 5.68,
+      "text": "It's the hallmark of Sega Genesis instruments. And",
+      "word_count": 8
+    },
+    {
+      "start": 958.68,
+      "end": 963.76,
+      "duration": 5.08,
+      "text": "it's hiding pretty much everywhere in sound design. By modulating the pitch of",
+      "word_count": 13
+    },
+    {
+      "start": 963.76,
+      "end": 969.0,
+      "duration": 5.24,
+      "text": "one sign using another, [breath] we can introduce all sorts of harmonics",
+      "word_count": 12
+    },
+    {
+      "start": 969.0,
+      "end": 974.12,
+      "duration": 5.12,
+      "text": "with very little effort. [breath] And by modulating the modulation, [breath] oh yeah, now",
+      "word_count": 14
+    },
+    {
+      "start": 974.12,
+      "end": 979.18,
+      "duration": 5.06,
+      "text": "we could add so much complexity that it gets close to random noise. [lipsmack] So yeah,",
+      "word_count": 16
+    },
+    {
+      "start": 979.18,
+      "end": 985.62,
+      "duration": 6.44,
+      "text": "now I can add [UH] seven milliseconds of that to the pop sound. [lipsmack] Yeah,",
+      "word_count": 15
+    },
+    {
+      "start": 985.62,
+      "end": 990.92,
+      "duration": 5.3,
+      "text": "that sounds better. [lipsmack] But for real though, I'm going to use this method",
+      "word_count": 14
+    },
+    {
+      "start": 990.92,
+      "end": 996.16,
+      "duration": 5.24,
+      "text": "to add texture in all sorts of sounds, like the walking sounds. I can add more layers",
+      "word_count": 17
+    },
+    {
+      "start": 996.16,
+      "end": 1001.78,
+      "duration": 5.62,
+      "text": "to the noise, sending some to the left speaker and some to the right speaker. Then we have jumping and",
+      "word_count": 20
+    },
+    {
+      "start": 1001.78,
+      "end": 1007.08,
+      "duration": 5.3,
+      "text": "landing. [breath] For the door sound,",
+      "word_count": 6
+    },
+    {
+      "start": 1007.2,
+      "end": 1012.5,
+      "duration": 5.3,
+      "text": "I w- wanted to make that squeak of the hinge using a saw wave, which,",
+      "word_count": 15
+    },
+    {
+      "start": 1012.72,
+      "end": 1017.74,
+      "duration": 5.02,
+      "text": "you know, is made of sine waves. And I added the k- ch- click sound with a",
+      "word_count": 17
+    },
+    {
+      "start": 1017.74,
+      "end": 1023.01,
+      "duration": 5.27,
+      "text": "square wave with fm applied. [breath] When",
+      "word_count": 7
+    },
+    {
+      "start": 1023.01,
+      "end": 1028.68,
+      "duration": 5.67,
+      "text": "the plane rolls on the ground, I went for some wide, low-frequency noise. [breath] It's",
+      "word_count": 15
+    },
+    {
+      "start": 1028.68,
+      "end": 1034.8,
+      "duration": 6.12,
+      "text": "hard to do l- low-frequency noise with f- f- m, so it'll definitely sound a bit bubbly. [breath] And",
+      "word_count": 19
+    },
+    {
+      "start": 1034.8,
+      "end": 1040.1,
+      "duration": 5.3,
+      "text": "of course, we have our engine sound. It's a short saw wave and noise sound,",
+      "word_count": 15
+    },
+    {
+      "start": 1040.32,
+      "end": 1045.64,
+      "duration": 5.32,
+      "text": "played like twenty times a second. [breath] The pitch alternates between the two notes and is linked to",
+      "word_count": 18
+    },
+    {
+      "start": 1045.64,
+      "end": 1050.72,
+      "duration": 5.08,
+      "text": "the plane's speed. [breath] Collecting a letter",
+      "word_count": 7
+    },
+    {
+      "start": 1050.72,
+      "end": 1055.84,
+      "duration": 5.12,
+      "text": "plays a jingle on a triangle wave. Collecting a second one, transposes it",
+      "word_count": 13
+    },
+    {
+      "start": 1055.84,
+      "end": 1061.78,
+      "duration": 5.94,
+      "text": "up a note, and so on. [laughter] And we can't forget the NPCs,",
+      "word_count": 13
+    },
+    {
+      "start": 1061.78,
+      "end": 1066.88,
+      "duration": 5.1,
+      "text": "they need a voice, right? I want each character to have a unique waveform that represents it,",
+      "word_count": 17
+    },
+    {
+      "start": 1067.42,
+      "end": 1072.52,
+      "duration": 5.1,
+      "text": "but like, literally represents it. Yeah, I was thinking the sine wave frequencies that are",
+      "word_count": 15
+    },
+    {
+      "start": 1072.52,
+      "end": 1077.64,
+      "duration": 5.12,
+      "text": "used to generate the shape of the character can be the exact same sine wave frequencies that make up",
+      "word_count": 19
+    },
+    {
+      "start": 1077.64,
+      "end": 1083.18,
+      "duration": 5.54,
+      "text": "its voice. [laughter] I thought that was cool. I",
+      "word_count": 9
+    },
+    {
+      "start": 1083.18,
+      "end": 1088.26,
+      "duration": 5.08,
+      "text": "asked my Patreon members to give me NPC ideas. So, we've got a ghost pig who",
+      "word_count": 16
+    },
+    {
+      "start": 1088.26,
+      "end": 1093.32,
+      "duration": 5.06,
+      "text": "likes pink mushrooms, a fat cat who prefers a wet food, a",
+      "word_count": 12
+    },
+    {
+      "start": 1093.32,
+      "end": 1098.44,
+      "duration": 5.12,
+      "text": "gorilla with a top hat, [laughter] and we even have a real pie. Yeah, my patron",
+      "word_count": 16
+    },
+    {
+      "start": 1098.44,
+      "end": 1103.5,
+      "duration": 5.06,
+      "text": "submitted random stuff I'd never have come up with myself, and I love him for it. [laughter] By the way, you",
+      "word_count": 21
+    },
+    {
+      "start": 1103.5,
+      "end": 1108.72,
+      "duration": 5.22,
+      "text": "should join. Okay, you're ready to program some music? We can make a kick drum by",
+      "word_count": 16
+    },
+    {
+      "start": 1108.72,
+      "end": 1115.18,
+      "duration": 6.46,
+      "text": "really quickly pitching a waveform down and adding a little impact noise at the start. A snare",
+      "word_count": 17
+    },
+    {
+      "start": 1115.18,
+      "end": 1120.24,
+      "duration": 5.06,
+      "text": "drum has a bit of a tonal sound to it and a lot of noise. It uses five whole audio",
+      "word_count": 20
+    },
+    {
+      "start": 1120.24,
+      "end": 1125.72,
+      "duration": 5.48,
+      "text": "threads. How greedy. Hi-hats are just noise. And",
+      "word_count": 8
+    },
+    {
+      "start": 1125.72,
+      "end": 1130.84,
+      "duration": 5.12,
+      "text": "together we have drums. Nice. Since we",
+      "word_count": 7
+    },
+    {
+      "start": 1130.84,
+      "end": 1136.3,
+      "duration": 5.46,
+      "text": "can form saw waves with sines, that means we can make a really nice, really vintage synthesizer",
+      "word_count": 17
+    },
+    {
+      "start": 1136.3,
+      "end": 1142.02,
+      "duration": 5.72,
+      "text": "sound called the super saw. It's multiple saw waves, but each one is slightly detuned,",
+      "word_count": 15
+    },
+    {
+      "start": 1142.02,
+      "end": 1147.46,
+      "duration": 5.44,
+      "text": "so they create a phasing sound. By fading out the higher frequency sine waves, we can create a lowpass",
+      "word_count": 19
+    },
+    {
+      "start": 1148.0,
+      "end": 1153.02,
+      "duration": 5.02,
+      "text": "or a pluck sound. I'll use this as the bass sound. And",
+      "word_count": 12
+    },
+    {
+      "start": 1153.02,
+      "end": 1158.06,
+      "duration": 5.04,
+      "text": "finally, I'll make a sort of fake wind instrument using a triangle wave layered with",
+      "word_count": 15
+    },
+    {
+      "start": 1158.06,
+      "end": 1163.2,
+      "duration": 5.14,
+      "text": "a little bit of noise for the air blowing. We can modulate the pitch with the low frequency",
+      "word_count": 18
+    },
+    {
+      "start": 1163.2,
+      "end": 1169.48,
+      "duration": 6.28,
+      "text": "sine wave to add vibrato as a note is held down. Okay,",
+      "word_count": 12
+    },
+    {
+      "start": 1169.48,
+      "end": 1175.62,
+      "duration": 6.14,
+      "text": "now we just add it together and we have background music. With",
+      "word_count": 12
+    },
+    {
+      "start": 1175.62,
+      "end": 1180.65,
+      "duration": 5.03,
+      "text": "randomized loops for variation. I would love to do so much more with this, this is",
+      "word_count": 16
+    },
+    {
+      "start": 1180.65,
+      "end": 1185.96,
+      "duration": 5.31,
+      "text": "totally up my alley, but maybe later I could revive my music program from twenty fifteen to",
+      "word_count": 17
+    },
+    {
+      "start": 1185.96,
+      "end": 1191.37,
+      "duration": 5.41,
+      "text": "add all these features to it. I mean there are certainly easier ways to make music, of course, but just",
+      "word_count": 20
+    },
+    {
+      "start": 1191.37,
+      "end": 1196.7,
+      "duration": 5.33,
+      "text": "like there are easier ways to make art or using a font. But, you know, doing things in weird ways",
+      "word_count": 20
+    },
+    {
+      "start": 1196.7,
+      "end": 1201.74,
+      "duration": 5.04,
+      "text": "is how I ended up making my favorite projects, so I'll never regret challenging myself. All",
+      "word_count": 16
+    },
+    {
+      "start": 1202.12,
+      "end": 1207.54,
+      "duration": 5.42,
+      "text": "right, I have a couple more surprises left to code, and then I'll send it off to some friends to see what they think of my new game,",
+      "word_count": 28
+    },
+    {
+      "start": 1208.2,
+      "end": 1213.96,
+      "duration": 5.76,
+      "text": "all made using sine waves. I'm here with my friend, Sumran Dev, again.",
+      "word_count": 13
+    },
+    {
+      "start": 1213.96,
+      "end": 1219.16,
+      "duration": 5.2,
+      "text": "And I'm here with Leah Stray. Hi, I'm Leah Stray. I have a new game to show",
+      "word_count": 17
+    },
+    {
+      "start": 1219.16,
+      "end": 1224.32,
+      "duration": 5.16,
+      "text": "you. I love games. Welcome to CroSign. By Zanzlans. That's",
+      "word_count": 10
+    },
+    {
+      "start": 1224.44,
+      "end": 1230.12,
+      "duration": 5.68,
+      "text": "me. Oh my goodness. Oh my gosh, this is cute. So this game is",
+      "word_count": 14
+    },
+    {
+      "start": 1230.68,
+      "end": 1235.94,
+      "duration": 5.26,
+      "text": "a game without any assets. It is just made with sine waves. All the [UH]",
+      "word_count": 15
+    },
+    {
+      "start": 1235.94,
+      "end": 1241.14,
+      "duration": 5.2,
+      "text": "graphics, all the audio, the music that you hear. Okay. So that's what makes this game unique. The",
+      "word_count": 18
+    },
+    {
+      "start": 1241.24,
+      "end": 1250.4,
+      "duration": 9.16,
+      "text": "music. Okay,",
+      "word_count": 2
+    },
+    {
+      "start": 1250.64,
+      "end": 1255.92,
+      "duration": 5.28,
+      "text": "okay, I'm here. I'm a crow, I'm a sign crow. Oh my god, I'm a little crow. [laughter]",
+      "word_count": 18
+    },
+    {
+      "start": 1256.88,
+      "end": 1263.24,
+      "duration": 6.36,
+      "text": "Oh my goodness. See duck for the key. We're off to get the key. Oh,",
+      "word_count": 15
+    },
+    {
+      "start": 1263.72,
+      "end": 1268.98,
+      "duration": 5.26,
+      "text": "there is. [noise]. There is. [noise]. Talk to duck. [laughter] Congratulations, my dear crow. You",
+      "word_count": 15
+    },
+    {
+      "start": 1268.98,
+      "end": 1274.04,
+      "duration": 5.06,
+      "text": "passed flight training. You mastered the alphabet. And you're ready to start your new business. I",
+      "word_count": 16
+    },
+    {
+      "start": 1274.44,
+      "end": 1279.65,
+      "duration": 5.21,
+      "text": "love that. Crow sign. [laughter] To celebrate, I will sponsor free signs",
+      "word_count": 12
+    },
+    {
+      "start": 1279.65,
+      "end": 1285.02,
+      "duration": 5.37,
+      "text": "for everyone today. My treat. And for your first quest, fly",
+      "word_count": 11
+    },
+    {
+      "start": 1285.02,
+      "end": 1290.56,
+      "duration": 5.54,
+      "text": "a sign for me that says party. Hereby gift you the key to your plane. [laughter] Godspeed,",
+      "word_count": 17
+    },
+    {
+      "start": 1290.74,
+      "end": 1295.84,
+      "duration": 5.1,
+      "text": "crow sign. [laughter] You're so good at reading cursive. I love the way the text",
+      "word_count": 15
+    },
+    {
+      "start": 1296.2,
+      "end": 1301.4,
+      "duration": 5.2,
+      "text": "goes from like like a little like n- you know just a little tiny scribble to coherent text. I",
+      "word_count": 19
+    },
+    {
+      "start": 1301.4,
+      "end": 1306.68,
+      "duration": 5.28,
+      "text": "mean as coherent as cursive could be. Oh yeah, look at the E, it like turns into goes from like a moon",
+      "word_count": 22
+    },
+    {
+      "start": 1306.68,
+      "end": 1311.82,
+      "duration": 5.14,
+      "text": "to an E. Alright, I'm getting in the plane. Even though I'm a crow, I feel like I should be able to fly",
+      "word_count": 23
+    },
+    {
+      "start": 1311.82,
+      "end": 1317.59,
+      "duration": 5.77,
+      "text": "without a plane, but. Let's hop into this plane. I'm all of a sudden scared. Oh",
+      "word_count": 16
+    },
+    {
+      "start": 1317.59,
+      "end": 1322.6,
+      "duration": 5.01,
+      "text": "my God, I don't wanna run over a duck. Oh, it's just truly go. It's just trust the system and",
+      "word_count": 20
+    },
+    {
+      "start": 1322.6,
+      "end": 1328.22,
+      "duration": 5.62,
+      "text": "go. Okay. Oh, there you go. [noise] Oh my God. Yo,",
+      "word_count": 11
+    },
+    {
+      "start": 1328.48,
+      "end": 1333.63,
+      "duration": 5.15,
+      "text": "the way it tilts is so sick. Yeah, you're in gravity. Oh, oh, okay. Those",
+      "word_count": 15
+    },
+    {
+      "start": 1333.63,
+      "end": 1338.66,
+      "duration": 5.03,
+      "text": "w- we need, oh no, I already messed up. I need to make, what was it, party? There's no P. You",
+      "word_count": 21
+    },
+    {
+      "start": 1338.66,
+      "end": 1343.82,
+      "duration": 5.16,
+      "text": "deleted. Oh, wow. Okay. Okay. Okay, I'm",
+      "word_count": 7
+    },
+    {
+      "start": 1343.82,
+      "end": 1349.33,
+      "duration": 5.51,
+      "text": "gonna avoid that bad boy. Woah. Woah, is that intentional? Is there creepypasta",
+      "word_count": 13
+    },
+    {
+      "start": 1349.33,
+      "end": 1354.54,
+      "duration": 5.21,
+      "text": "in this game? What is that? [laughter] All",
+      "word_count": 8
+    },
+    {
+      "start": 1354.66,
+      "end": 1362.88,
+      "duration": 8.22,
+      "text": "right. [laughter] B. Okay [UM] A. [noise].",
+      "word_count": 7
+    },
+    {
+      "start": 1363.08,
+      "end": 1368.14,
+      "duration": 5.06,
+      "text": "Woo, you did it. I know. Look at how cute it is. I don't know what fly",
+      "word_count": 17
+    },
+    {
+      "start": 1368.3,
+      "end": 1373.66,
+      "duration": 5.36,
+      "text": "over three others means. There's more than duck? There is more than duck.",
+      "word_count": 13
+    },
+    {
+      "start": 1374.14,
+      "end": 1379.4,
+      "duration": 5.26,
+      "text": "There's more than duck. Okay. Yeah, so",
+      "word_count": 7
+    },
+    {
+      "start": 1379.4,
+      "end": 1384.86,
+      "duration": 5.46,
+      "text": "you can go from planet to planet, it captures your gravity. Woah woah woah woah woah woah woah woah. Yo,",
+      "word_count": 20
+    },
+    {
+      "start": 1385.44,
+      "end": 1390.5,
+      "duration": 5.06,
+      "text": "Nettie the second. Oh, what a warm surprise. A certified aerial",
+      "word_count": 11
+    },
+    {
+      "start": 1390.5,
+      "end": 1395.56,
+      "duration": 5.06,
+      "text": "banner pilot. May my free banner inspire togetherness.",
+      "word_count": 8
+    },
+    {
+      "start": 1395.56,
+      "end": 1401.02,
+      "duration": 5.46,
+      "text": "Meet all the alright, I did it. I met one of the neighbors. Go meet them. A",
+      "word_count": 17
+    },
+    {
+      "start": 1401.02,
+      "end": 1406.32,
+      "duration": 5.3,
+      "text": "sign maker always carries a dictionary around. One time I misplaced my dictionary. I",
+      "word_count": 14
+    },
+    {
+      "start": 1406.32,
+      "end": 1411.56,
+      "duration": 5.24,
+      "text": "was at a loss of for words. [laughter] Oh. [laughter] Alright.",
+      "word_count": 11
+    },
+    {
+      "start": 1411.72,
+      "end": 1416.76,
+      "duration": 5.04,
+      "text": "Oh, we're getting in the plane. Great. You do have another task to",
+      "word_count": 13
+    },
+    {
+      "start": 1416.76,
+      "end": 1421.78,
+      "duration": 5.02,
+      "text": "complete once you find a couple more people. Oh, I just noticed the mini-map. Okay, so there's another",
+      "word_count": 18
+    },
+    {
+      "start": 1421.78,
+      "end": 1426.95,
+      "duration": 5.17,
+      "text": "thing up here. Oh, true. Your sign. Oh, that's so",
+      "word_count": 10
+    },
+    {
+      "start": 1426.95,
+      "end": 1432.0,
+      "duration": 5.05,
+      "text": "cool. Wait, wait, that's you put way too much work into this. There's like mechanics for",
+      "word_count": 16
+    },
+    {
+      "start": 1432.0,
+      "end": 1439.08,
+      "duration": 7.08,
+      "text": "people seeing your signs. Well, I gotta talk to them now. Kyber? Kyber,",
+      "word_count": 13
+    },
+    {
+      "start": 1439.08,
+      "end": 1444.29,
+      "duration": 5.21,
+      "text": "I'm so sorry. So sorry to interrupt. Oh my gosh. You have a free",
+      "word_count": 14
+    },
+    {
+      "start": 1444.29,
+      "end": 1449.63,
+      "duration": 5.34,
+      "text": "sign? I must be dreaming still. Well then. Let my sign say,",
+      "word_count": 12
+    },
+    {
+      "start": 1449.63,
+      "end": 1454.8,
+      "duration": 5.17,
+      "text": "wet food, please. But if you don't mind, I'm continuing my map. That is so",
+      "word_count": 15
+    },
+    {
+      "start": 1454.8,
+      "end": 1459.84,
+      "duration": 5.04,
+      "text": "Ferb. Enter photo Ferb here. [laughter] Oh yeah.",
+      "word_count": 8
+    },
+    {
+      "start": 1460.18,
+      "end": 1465.5,
+      "duration": 5.32,
+      "text": "That is so Ferb. Another cat. They're all like outdoor critters",
+      "word_count": 11
+    },
+    {
+      "start": 1465.5,
+      "end": 1472.12,
+      "duration": 6.62,
+      "text": "you would see in the like your local neighborhood. I, Magi, am in the business of eating fishies.",
+      "word_count": 18
+    },
+    {
+      "start": 1473.02,
+      "end": 1478.24,
+      "duration": 5.22,
+      "text": "Fishies for Magi. [UH] What do you say? Do we have a deal? What do I get? This",
+      "word_count": 18
+    },
+    {
+      "start": 1478.24,
+      "end": 1483.58,
+      "duration": 5.34,
+      "text": "is only fishy business here. That's. Hey. It's only fishy business here. Okay.",
+      "word_count": 13
+    },
+    {
+      "start": 1484.76,
+      "end": 1489.96,
+      "duration": 5.2,
+      "text": "Gary. Gary. Just chilling.",
+      "word_count": 4
+    },
+    {
+      "start": 1493.16,
+      "end": 1499.16,
+      "duration": 6.0,
+      "text": "Just. How convenient. Oh. [UM]",
+      "word_count": 5
+    },
+    {
+      "start": 1500.22,
+      "end": 1505.74,
+      "duration": 5.52,
+      "text": "I thought we were done with that. I thought I I'm currently",
+      "word_count": 12
+    },
+    {
+      "start": 1505.74,
+      "end": 1511.0,
+      "duration": 5.26,
+      "text": "making a sign, so I feel like that's not something I should dance with at the moment. I'm really busy.",
+      "word_count": 20
+    },
+    {
+      "start": 1512.98,
+      "end": 1518.07,
+      "duration": 5.09,
+      "text": "Woo! It's a gorilla with a top hat. It is. Please make",
+      "word_count": 12
+    },
+    {
+      "start": 1518.07,
+      "end": 1523.08,
+      "duration": 5.01,
+      "text": "my sign say Sokatoa. It's a mnemonic device to remember trigonometry.",
+      "word_count": 11
+    },
+    {
+      "start": 1523.8,
+      "end": 1528.96,
+      "duration": 5.16,
+      "text": "Sign is the opposite over hypotenuse. Cosign is adjacent over hypotenuse. And then I",
+      "word_count": 14
+    },
+    {
+      "start": 1528.96,
+      "end": 1534.04,
+      "duration": 5.08,
+      "text": "know this, tan is the other two. It sure is. It's so true.",
+      "word_count": 13
+    },
+    {
+      "start": 1534.68,
+      "end": 1539.86,
+      "duration": 5.18,
+      "text": "Le Sokatoa. Le Sokatoa. It's educational. We're learning.",
+      "word_count": 8
+    },
+    {
+      "start": 1540.98,
+      "end": 1546.0,
+      "duration": 5.02,
+      "text": "Who is this? PP thirtythree. It's a ghost. Oh, oh my god. Sad story.",
+      "word_count": 14
+    },
+    {
+      "start": 1546.86,
+      "end": 1552.18,
+      "duration": 5.32,
+      "text": "Yeah, what happened to you, PP? Me was a good pig and no me a ghost, but",
+      "word_count": 17
+    },
+    {
+      "start": 1552.18,
+      "end": 1557.42,
+      "duration": 5.24,
+      "text": "lived good life full of happy. For me love pink mushrooms.",
+      "word_count": 11
+    },
+    {
+      "start": 1558.1,
+      "end": 1563.16,
+      "duration": 5.06,
+      "text": "Oh my god, they're everywhere. Help me die? Help me die. [laughter]",
+      "word_count": 12
+    },
+    {
+      "start": 1563.36,
+      "end": 1568.48,
+      "duration": 5.12,
+      "text": "You think pink mushrooms poison me? No, not. [laughter] Me test this many",
+      "word_count": 13
+    },
+    {
+      "start": 1568.6,
+      "end": 1574.22,
+      "duration": 5.62,
+      "text": "times in life. [laughter] Many, many times. This is also so Ferb. [laughter]",
+      "word_count": 13
+    },
+    {
+      "start": 1574.34,
+      "end": 1579.4,
+      "duration": 5.06,
+      "text": "Picture a Ferb. [laughter] It is green mushrooms that are deadly. [laughter] Me test this.",
+      "word_count": 15
+    },
+    {
+      "start": 1580.04,
+      "end": 1585.08,
+      "duration": 5.04,
+      "text": "What is this? [laughter] Okay. [laughter] Peepy. Please share",
+      "word_count": 9
+    },
+    {
+      "start": 1585.08,
+      "end": 1590.22,
+      "duration": 5.14,
+      "text": "a final message so m- me ascend to heavens. Pink mushrooms!",
+      "word_count": 11
+    },
+    {
+      "start": 1590.58,
+      "end": 1595.72,
+      "duration": 5.14,
+      "text": "[laughter] Pink mushrooms! Pink mushrooms! [laughter] You know what? Let's",
+      "word_count": 10
+    },
+    {
+      "start": 1595.72,
+      "end": 1601.3,
+      "duration": 5.58,
+      "text": "do it. [laughter]",
+      "word_count": 3
+    },
+    {
+      "start": 1601.48,
+      "end": 1606.68,
+      "duration": 5.2,
+      "text": "Pink mushrooms! At this point you might be wondering why it's so repetitive.",
+      "word_count": 13
+    },
+    {
+      "start": 1607.4,
+      "end": 1612.74,
+      "duration": 5.34,
+      "text": "Let me introduce to you the gameplay loop. [laughter] I intentionally designed",
+      "word_count": 12
+    },
+    {
+      "start": 1612.74,
+      "end": 1617.96,
+      "duration": 5.22,
+      "text": "this game to feel like a sine wave. You meet a character, get a task, make their sign, fly",
+      "word_count": 19
+    },
+    {
+      "start": 1617.96,
+      "end": 1622.98,
+      "duration": 5.02,
+      "text": "it around, and then meet the next character over and over again. While",
+      "word_count": 13
+    },
+    {
+      "start": 1622.98,
+      "end": 1628.18,
+      "duration": 5.2,
+      "text": "most games have players making decisions or have a way to fail or something, Crowsign's",
+      "word_count": 15
+    },
+    {
+      "start": 1628.18,
+      "end": 1633.55,
+      "duration": 5.37,
+      "text": "gameplay loop only moves in one direction, inspired by a sine wave. The peak is definitely",
+      "word_count": 16
+    },
+    {
+      "start": 1633.55,
+      "end": 1638.66,
+      "duration": 5.11,
+      "text": "s- talking to the NPC. Oh my god, I can't look. Oh my god,",
+      "word_count": 14
+    },
+    {
+      "start": 1639.02,
+      "end": 1644.48,
+      "duration": 5.46,
+      "text": "that's poor pig. Alright, hey, hey, I I spread the word. What's up? Are",
+      "word_count": 14
+    },
+    {
+      "start": 1644.48,
+      "end": 1649.5,
+      "duration": 5.02,
+      "text": "you okay, PeePee? Thank you so much. Cross sign, you",
+      "word_count": 10
+    },
+    {
+      "start": 1649.74,
+      "end": 1655.6,
+      "duration": 5.86,
+      "text": "good like pig mushroom. Give me set three. Wee! [laughter] Goodbye.",
+      "word_count": 11
+    },
+    {
+      "start": 1656.6,
+      "end": 1661.72,
+      "duration": 5.12,
+      "text": "Wee! Oh no. Oh, I'm not gonna cry. Have I spoken to",
+      "word_count": 12
+    },
+    {
+      "start": 1661.72,
+      "end": 1666.99,
+      "duration": 5.27,
+      "text": "this cat? It's moving. Look at that animation. Look",
+      "word_count": 9
+    },
+    {
+      "start": 1666.99,
+      "end": 1672.23,
+      "duration": 5.24,
+      "text": "at it go. It's like modern art. Look at those sine waves go. I will say,",
+      "word_count": 16
+    },
+    {
+      "start": 1672.23,
+      "end": 1677.36,
+      "duration": 5.13,
+      "text": "Crystal's pace is pretty much verbs. Hi, every nyan.",
+      "word_count": 9
+    },
+    {
+      "start": 1678.3,
+      "end": 1684.38,
+      "duration": 6.08,
+      "text": "Oh, I know th- I know the reference. Hello, every nyan. Oh my god. Let's",
+      "word_count": 15
+    },
+    {
+      "start": 1684.38,
+      "end": 1689.46,
+      "duration": 5.08,
+      "text": "go meet Lindsey here. Lindsey's good. Hi, Lindsey. I promise",
+      "word_count": 10
+    },
+    {
+      "start": 1689.84,
+      "end": 1694.96,
+      "duration": 5.12,
+      "text": "to make you some bibimbap. Bip- bi- bibimbap? Bibimbap?",
+      "word_count": 9
+    },
+    {
+      "start": 1695.24,
+      "end": 1700.69,
+      "duration": 5.45,
+      "text": "Bibimbap? Bibimbap. Bipimbap. Bibbombap. Bibimbap? Bibimbap. Bibimbap. Bibimbap. Bibimbap. Bibimbap. Bibimbap. Bibimbap.",
+      "word_count": 12
+    },
+    {
+      "start": 1700.69,
+      "end": 1713.68,
+      "duration": 12.99,
+      "text": "Bibimbap. Bibimbap.",
+      "word_count": 2
+    },
+    {
+      "start": 1713.8,
+      "end": 1719.92,
+      "duration": 6.12,
+      "text": "Bibimbap. Bibimbap. Oh my god. I'm",
+      "word_count": 6
+    },
+    {
+      "start": 1722.32,
+      "end": 1727.34,
+      "duration": 5.02,
+      "text": "gonna talk to Pi. I I I can't scream.",
+      "word_count": 9
+    },
+    {
+      "start": 1728.06,
+      "end": 1733.83,
+      "duration": 5.77,
+      "text": "[laughter] Oh yeah, I do that. Sorry, sorry. [laughter] I'm",
+      "word_count": 10
+    },
+    {
+      "start": 1733.83,
+      "end": 1746.68,
+      "duration": 12.85,
+      "text": "just like so excited right now. Can you fly a swing that says [UH] Hey.",
+      "word_count": 15
+    },
+    {
+      "start": 1746.68,
+      "end": 1752.22,
+      "duration": 5.54,
+      "text": "Lots of hey. Hey. Hey. Whoa, this one's like a really deep water one. It",
+      "word_count": 15
+    },
+    {
+      "start": 1752.22,
+      "end": 1757.26,
+      "duration": 5.04,
+      "text": "is. Alright. Yo, that is such a cool effect. It's",
+      "word_count": 10
+    },
+    {
+      "start": 1757.26,
+      "end": 1762.48,
+      "duration": 5.22,
+      "text": "a shark. Oh my god, I have a friend who loves sharks. I'm underwater. You",
+      "word_count": 15
+    },
+    {
+      "start": 1762.48,
+      "end": 1767.78,
+      "duration": 5.3,
+      "text": "are. Can crows do that? Hi, Tyler. Oh my god, hey, Tyler.",
+      "word_count": 12
+    },
+    {
+      "start": 1767.92,
+      "end": 1773.33,
+      "duration": 5.41,
+      "text": "Woah. Make waves. Make waves. Oh my god, I love the shark so much. Also,",
+      "word_count": 15
+    },
+    {
+      "start": 1773.33,
+      "end": 1778.5,
+      "duration": 5.17,
+      "text": "your plane is really cool. Thank you. Make a big wave on your way out. You",
+      "word_count": 16
+    },
+    {
+      "start": 1779.02,
+      "end": 1784.06,
+      "duration": 5.04,
+      "text": "you freaking bet I will. Woo. Oh",
+      "word_count": 7
+    },
+    {
+      "start": 1785.18,
+      "end": 1791.2,
+      "duration": 6.02,
+      "text": "boy. You did it. You completed the game. Woo,",
+      "word_count": 9
+    },
+    {
+      "start": 1791.3,
+      "end": 1797.1,
+      "duration": 5.8,
+      "text": "what a day. [breath] Me and Doug at it again. [breath] [breath] It's",
+      "word_count": 13
+    },
+    {
+      "start": 1797.32,
+      "end": 1802.8,
+      "duration": 5.48,
+      "text": "is it gonna be everywhere except for PeePee? Congratulations, you finished CroSide. Hooray!",
+      "word_count": 13
+    },
+    {
+      "start": 1802.96,
+      "end": 1808.12,
+      "duration": 5.16,
+      "text": "I gotta say, there's a lot of gameplay for a game that just has a sine wave. I wonder",
+      "word_count": 19
+    },
+    {
+      "start": 1808.12,
+      "end": 1813.16,
+      "duration": 5.04,
+      "text": "why it took me seven months to make. Are you able to make a binary that's super super",
+      "word_count": 18
+    },
+    {
+      "start": 1813.3,
+      "end": 1818.35,
+      "duration": 5.05,
+      "text": "tiny because all the graphics are just math? Yeah, I wanted to see, like, how much smaller the game would",
+      "word_count": 20
+    },
+    {
+      "start": 1818.35,
+      "end": 1823.74,
+      "duration": 5.39,
+      "text": "be. My fonts were roughly half the size of similar true-type fonts. The",
+      "word_count": 13
+    },
+    {
+      "start": 1823.78,
+      "end": 1828.8,
+      "duration": 5.02,
+      "text": "way I did sprites also led to half the file size compared to SVG files, or like",
+      "word_count": 17
+    },
+    {
+      "start": 1828.8,
+      "end": 1834.02,
+      "duration": 5.22,
+      "text": "a seventh the size compared to PNG files, which I would normally use to make a two-D game. The",
+      "word_count": 19
+    },
+    {
+      "start": 1834.02,
+      "end": 1839.64,
+      "duration": 5.62,
+      "text": "sound effects are thirty-seven times smaller than if I used MP three's instead, and",
+      "word_count": 14
+    },
+    {
+      "start": 1839.76,
+      "end": 1844.94,
+      "duration": 5.18,
+      "text": "that's mostly because of the NPC voice variations. Without those, it's like six and a half",
+      "word_count": 16
+    },
+    {
+      "start": 1844.94,
+      "end": 1850.56,
+      "duration": 5.62,
+      "text": "times smaller. But the music? Generating it with SineWaves saved",
+      "word_count": 10
+    },
+    {
+      "start": 1850.56,
+      "end": 1855.88,
+      "duration": 5.32,
+      "text": "over five hundred times the space compared to using MP three loops. Obviously,",
+      "word_count": 13
+    },
+    {
+      "start": 1855.88,
+      "end": 1861.2,
+      "duration": 5.32,
+      "text": "this is a silly comparison. Can SineWave suddenly solve triple-A titles having a",
+      "word_count": 13
+    },
+    {
+      "start": 1861.2,
+      "end": 1866.21,
+      "duration": 5.01,
+      "text": "hundred gigabyte releases? No. I wish it were that easy. But hey,",
+      "word_count": 12
+    },
+    {
+      "start": 1866.21,
+      "end": 1871.38,
+      "duration": 5.17,
+      "text": "at least CroSine is about eleven times smaller because of it. Four hundred and fifty-five",
+      "word_count": 15
+    },
+    {
+      "start": 1871.78,
+      "end": 1877.5,
+      "duration": 5.72,
+      "text": "kilobytes. [lipsmack] Alright, let's fly into a wormhole, shall we? I'm",
+      "word_count": 11
+    },
+    {
+      "start": 1877.5,
+      "end": 1883.14,
+      "duration": 5.64,
+      "text": "really nervous. Alright, yup, this is the wormhole in the center of the universe. Behold.",
+      "word_count": 15
+    },
+    {
+      "start": 1884.38,
+      "end": 1889.66,
+      "duration": 5.28,
+      "text": "And that's not video compression you're seeing, that's the in-game JPEG shader. Each",
+      "word_count": 13
+    },
+    {
+      "start": 1889.66,
+      "end": 1894.8,
+      "duration": 5.14,
+      "text": "group of pixels is first converted to sine waves using the DCT algorithm, then more",
+      "word_count": 15
+    },
+    {
+      "start": 1894.8,
+      "end": 1900.9,
+      "duration": 6.1,
+      "text": "and more sine waves are discarded the closer you are to the wormhole, even on the plane itself. The",
+      "word_count": 19
+    },
+    {
+      "start": 1900.9,
+      "end": 1907.28,
+      "duration": 6.38,
+      "text": "wormhole eats sine waves. Oh my goodness. [laughter] Okay.",
+      "word_count": 9
+    },
+    {
+      "start": 1908.1,
+      "end": 1913.3,
+      "duration": 5.2,
+      "text": "When you fly through the wormhole, none of your progress is lost. No, you just go to a parallel universe where",
+      "word_count": 21
+    },
+    {
+      "start": 1913.3,
+      "end": 1918.42,
+      "duration": 5.12,
+      "text": "the balloons are reset. So if you somehow run out of letters, it's not the end.",
+      "word_count": 16
+    },
+    {
+      "start": 1919.3,
+      "end": 1924.68,
+      "duration": 5.38,
+      "text": "It's actually the beginning. It's a pretty smart game. It's",
+      "word_count": 10
+    },
+    {
+      "start": 1924.68,
+      "end": 1929.7,
+      "duration": 5.02,
+      "text": "a pretty smart game. Now, to avoid any allegations that this game",
+      "word_count": 12
+    },
+    {
+      "start": 1929.7,
+      "end": 1934.72,
+      "duration": 5.02,
+      "text": "isn't made with enough sine waves, I've created a program that can convert any text to a",
+      "word_count": 17
+    },
+    {
+      "start": 1934.72,
+      "end": 1939.82,
+      "duration": 5.1,
+      "text": "set of sine wave signals. And if I record those sine waves again, it'll decode",
+      "word_count": 15
+    },
+    {
+      "start": 1939.82,
+      "end": 1945.24,
+      "duration": 5.42,
+      "text": "my message. I shall now send this chocolate bar from one end of the room to",
+      "word_count": 16
+    },
+    {
+      "start": 1945.24,
+      "end": 1950.48,
+      "duration": 5.24,
+      "text": "the other. It worked. Therefore, I can do this conversion with the game's code and say",
+      "word_count": 16
+    },
+    {
+      "start": 1950.48,
+      "end": 1962.3,
+      "duration": 11.82,
+      "text": "for sure the entire game is now made with just sine waves. [breath]",
+      "word_count": 13
+    },
+    {
+      "start": 1962.3,
+      "end": 1967.48,
+      "duration": 5.18,
+      "text": "But yeah, this is a way slower than even the earliest dial-up internet modems or fax machines, so",
+      "word_count": 18
+    },
+    {
+      "start": 1967.7,
+      "end": 1972.84,
+      "duration": 5.14,
+      "text": "[breath] maybe I finally took this project too far. This is Zanz Land s-",
+      "word_count": 14
+    },
+    {
+      "start": 1973.04,
+      "end": 1977.88,
+      "duration": 4.84,
+      "text": "s- signing off. Subscribe to see my next video. And thanks to all my patrons.",
+      "word_count": 15
+    }
+  ],
+  "words_sample": [
+    {
+      "start": 0.34,
+      "end": 0.42,
+      "text": "This"
+    },
+    {
+      "start": 0.86,
+      "end": 0.98,
+      "text": "is"
+    },
+    {
+      "start": 0.98,
+      "end": 1.08,
+      "text": "a"
+    },
+    {
+      "start": 1.22,
+      "end": 1.52,
+      "text": "sine"
+    },
+    {
+      "start": 2.28,
+      "end": 2.28,
+      "text": "wave,"
+    },
+    {
+      "start": 2.58,
+      "end": 2.72,
+      "text": "and"
+    },
+    {
+      "start": 2.72,
+      "end": 2.9,
+      "text": "when"
+    },
+    {
+      "start": 2.9,
+      "end": 3.0,
+      "text": "you"
+    },
+    {
+      "start": 3.0,
+      "end": 3.34,
+      "text": "combine"
+    },
+    {
+      "start": 3.34,
+      "end": 3.42,
+      "text": "a"
+    },
+    {
+      "start": 3.42,
+      "end": 3.6,
+      "text": "bunch"
+    },
+    {
+      "start": 3.6,
+      "end": 3.82,
+      "text": "of"
+    },
+    {
+      "start": 3.82,
+      "end": 4.02,
+      "text": "them,"
+    },
+    {
+      "start": 4.34,
+      "end": 4.42,
+      "text": "they"
+    },
+    {
+      "start": 4.42,
+      "end": 4.54,
+      "text": "can"
+    },
+    {
+      "start": 4.54,
+      "end": 4.75,
+      "text": "make"
+    },
+    {
+      "start": 4.75,
+      "end": 4.98,
+      "text": "any"
+    },
+    {
+      "start": 4.98,
+      "end": 5.5,
+      "text": "image,"
+    },
+    {
+      "start": 5.7,
+      "end": 5.88,
+      "text": "any"
+    },
+    {
+      "start": 5.88,
+      "end": 6.41,
+      "text": "sound,"
+    },
+    {
+      "start": 6.41,
+      "end": 6.59,
+      "text": "and"
+    },
+    {
+      "start": 6.59,
+      "end": 6.84,
+      "text": "any"
+    },
+    {
+      "start": 7.14,
+      "end": 7.28,
+      "text": "motion."
+    },
+    {
+      "start": 7.86,
+      "end": 8.01,
+      "text": "So"
+    },
+    {
+      "start": 8.01,
+      "end": 8.2,
+      "text": "can"
+    },
+    {
+      "start": 8.2,
+      "end": 8.34,
+      "text": "I"
+    },
+    {
+      "start": 8.34,
+      "end": 8.47,
+      "text": "make"
+    },
+    {
+      "start": 8.47,
+      "end": 8.58,
+      "text": "a"
+    },
+    {
+      "start": 8.58,
+      "end": 8.84,
+      "text": "video"
+    },
+    {
+      "start": 8.84,
+      "end": 9.13,
+      "text": "game"
+    },
+    {
+      "start": 9.13,
+      "end": 9.26,
+      "text": "that"
+    },
+    {
+      "start": 9.26,
+      "end": 9.54,
+      "text": "doesn't"
+    },
+    {
+      "start": 9.54,
+      "end": 9.68,
+      "text": "have"
+    },
+    {
+      "start": 9.68,
+      "end": 9.78,
+      "text": "a"
+    },
+    {
+      "start": 9.78,
+      "end": 10.16,
+      "text": "single"
+    },
+    {
+      "start": 10.16,
+      "end": 10.52,
+      "text": "image"
+    },
+    {
+      "start": 10.52,
+      "end": 10.78,
+      "text": "file"
+    },
+    {
+      "start": 10.78,
+      "end": 10.9,
+      "text": "or"
+    },
+    {
+      "start": 10.9,
+      "end": 11.06,
+      "text": "MP"
+    },
+    {
+      "start": 11.3,
+      "end": 11.42,
+      "text": "three,"
+    },
+    {
+      "start": 11.84,
+      "end": 12.04,
+      "text": "no"
+    },
+    {
+      "start": 12.04,
+      "end": 12.52,
+      "text": "assets,"
+    },
+    {
+      "start": 12.96,
+      "end": 13.08,
+      "text": "but"
+    },
+    {
+      "start": 13.08,
+      "end": 13.46,
+      "text": "generates"
+    },
+    {
+      "start": 13.46,
+      "end": 13.58,
+      "text": "them"
+    },
+    {
+      "start": 13.58,
+      "end": 13.74,
+      "text": "all"
+    },
+    {
+      "start": 13.74,
+      "end": 13.86,
+      "text": "in"
+    },
+    {
+      "start": 13.86,
+      "end": 14.13,
+      "text": "real"
+    },
+    {
+      "start": 14.13,
+      "end": 14.48,
+      "text": "time"
+    },
+    {
+      "start": 14.72,
+      "end": 14.92,
+      "text": "using"
+    }
+  ]
+}

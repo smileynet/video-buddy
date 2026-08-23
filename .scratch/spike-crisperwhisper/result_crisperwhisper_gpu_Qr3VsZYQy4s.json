@@ -1,0 +1,116 @@
+{
+  "engine": "crisperwhisper",
+  "model": "turbo",
+  "device": "cuda",
+  "compute_type": "float16",
+  "audio_duration": 1990.4,
+  "load_time_s": 126.96,
+  "transcribe_time_s": 24.88,
+  "rtf": 79.99,
+  "word_count": 5154,
+  "text_length": 28040,
+  "mode": "verbatim",
+  "first_20_words": [
+    {
+      "start": 0.34,
+      "end": 0.42,
+      "text": "This"
+    },
+    {
+      "start": 0.86,
+      "end": 0.98,
+      "text": "is"
+    },
+    {
+      "start": 0.98,
+      "end": 1.08,
+      "text": "a"
+    },
+    {
+      "start": 1.22,
+      "end": 1.52,
+      "text": "sine"
+    },
+    {
+      "start": 2.28,
+      "end": 2.28,
+      "text": "wave,"
+    },
+    {
+      "start": 2.58,
+      "end": 2.72,
+      "text": "and"
+    },
+    {
+      "start": 2.72,
+      "end": 2.9,
+      "text": "when"
+    },
+    {
+      "start": 2.9,
+      "end": 3.0,
+      "text": "you"
+    },
+    {
+      "start": 3.0,
+      "end": 3.34,
+      "text": "combine"
+    },
+    {
+      "start": 3.34,
+      "end": 3.42,
+      "text": "a"
+    },
+    {
+      "start": 3.42,
+      "end": 3.6,
+      "text": "bunch"
+    },
+    {
+      "start": 3.6,
+      "end": 3.82,
+      "text": "of"
+    },
+    {
+      "start": 3.82,
+      "end": 4.02,
+      "text": "them,"
+    },
+    {
+      "start": 4.34,
+      "end": 4.42,
+      "text": "they"
+    },
+    {
+      "start": 4.42,
+      "end": 4.52,
+      "text": "can"
+    },
+    {
+      "start": 4.52,
+      "end": 4.75,
+      "text": "make"
+    },
+    {
+      "start": 4.75,
+      "end": 4.98,
+      "text": "any"
+    },
+    {
+      "start": 4.98,
+      "end": 5.5,
+      "text": "image,"
+    },
+    {
+      "start": 5.7,
+      "end": 5.88,
+      "text": "any"
+    },
+    {
+      "start": 5.88,
+      "end": 6.41,
+      "text": "sound,"
+    }
+  ],
+  "text_sample": "This is a sine wave, and when you combine a bunch of them, they can make any image, any sound, and any motion. So can I make a video game that doesn't have a single image file or MP three, no assets, but generates them all in real time using just sine waves? For this project, I'm going to code tools, write a custom audio engine, and over-engineer pretty much everything to make the art, fonts, sound effects, music, and gameplay using sine. Because sine waves are underrated, and I want to honor th"
+}

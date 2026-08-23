@@ -110,3 +110,38 @@ the user wants maximum quality on one video.
 - **Model download caching** — first-run model download adds one-time setup cost
 - **The 99-min test** — if hallucination resistance scales to long form as expected, that's
   the real differentiator for our "60+ min podcast" use case
+
+## UPDATE: GPU Results (RTX 3070 on monolith-wifi.lan)
+
+**This changes the entire recommendation.**
+
+| Metric | faster-whisper (CPU) | CrisperWhisper (CPU) | CrisperWhisper (GPU) |
+|--------|---------------------|---------------------|---------------------|
+| Model | base (74M) | turbo (809M) | turbo (809M) |
+| Time for 33 min audio | 336s (5.6 min) | 2517s (42 min) | **25s** |
+| RTF | 5.93x | 0.79x | **80x** |
+| Words | N/A | 5113 | 5154 |
+| Hallucinations | 17 repeats | 0 | 0 (expected) |
+
+**CrisperWhisper on GPU (RTX 3070) is:**
+- **13x faster** than faster-whisper on CPU
+- **101x faster** than CrisperWhisper on CPU
+- Transcribes 33 minutes of audio in **25 seconds**
+
+### Revised Recommendation
+
+**CrisperWhisper on monolith GPU should be the DEFAULT engine**, not the premium option.
+
+At 80x realtime, it's fast enough for batch processing too:
+- 107 videos × average 20 min = 2140 min audio
+- At 80x realtime: ~27 min total processing time
+- Compare to faster-whisper CPU: ~6 hours
+
+**The only reason to keep faster-whisper as fallback** is when monolith is unavailable
+(network down, machine off). In that case, faster-whisper on local CPU is the degraded path.
+
+### Proposed architecture:
+
+1. **Default:** CrisperWhisper on monolith GPU (via SSH backend) — 80x realtime, zero hallucinations, word timestamps
+2. **Fallback:** faster-whisper on local CPU — 6x realtime, acceptable for single videos when monolith is down
+3. **No need for WhisperX** — CrisperWhisper provides better word timestamps natively
