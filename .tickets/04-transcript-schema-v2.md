@@ -1,7 +1,7 @@
 ---
 id: "04"
 title: "Extend transcript JSON schema for word-level timestamps and disfluency metadata"
-status: in_progress
+status: done
 blocked_by: ["02"]
 priority: high
 ---
@@ -57,12 +57,12 @@ consumers (the render, correlate, and agent-fill steps all read transcripts).
 
 ## Acceptance criteria
 
-- [ ] Schema v2 documented in `docs/transcript-schema.md`
-- [ ] Existing v1 transcripts (`[{start, duration, text}]`) still parse correctly
-- [ ] New v2 transcripts include `schema_version`, `metadata`, and optional `words`/`speakers`
-- [ ] `render` step produces finer timestamps when word data available
-- [ ] `correlate` step can use word timestamps for tighter frame-transcript alignment
-- [ ] Migration path: existing transcripts don't need reprocessing (v1 is valid v2 without optional fields)
+- [x] Schema v2 documented in `docs/transcript-schema.md`
+- [x] Existing v1 transcripts (`[{start, duration, text}]`) still parse correctly
+- [x] New v2 transcripts include `schema_version`, `metadata`, and optional `words`/`speakers`
+- [x] `render` step produces finer timestamps when word data available
+- [x] `correlate` step can use word timestamps for tighter frame-transcript alignment
+- [x] Migration path: existing transcripts don't need reprocessing (v1 is valid v2 without optional fields)
 
 ## Validation criteria
 
@@ -94,3 +94,7 @@ No industry standard exists, but common fields are consistent across:
 - v2: object with `schema_version`, `metadata`, `segments` — auto-detected by type (object vs array)
 - Reader checks: `isinstance(data, list)` → v1; `isinstance(data, dict)` → v2
 - Never break v1 readers — all existing code continues to work on the `segments` array
+
+## Resolution (2026-08-24)
+
+Schema v2 formally documented. Render step enhanced to use word timestamps and intended_text when available. No migration needed for existing v1 files.
