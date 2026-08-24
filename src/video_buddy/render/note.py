@@ -207,7 +207,7 @@ def _build_transcript(captions: list[dict]) -> str:
     deduped: list[dict] = []
     prev_text = None
     for cap in real_captions:
-        text = str(cap.get("text", "")).split("\n")[0]
+        text = str(cap.get("intended_text") or cap.get("text", "")).split("\n")[0]
         if text != prev_text:
             deduped.append({**cap, "text": text})
             prev_text = text
@@ -229,6 +229,9 @@ def _build_timestamps(captions: list[dict]) -> str:
     last_start = None
     for cap in captions:
         start = float(cap.get("start", 0.0))
+        words = cap.get("words")
+        if words and words[0].get("start") is not None:
+            start = float(words[0]["start"])
         text = str(cap.get("text", "")).strip().replace("\n", " ")
         if not text:
             continue

@@ -132,3 +132,64 @@ def test_render_command_accepts_custom_template(tmp_path: Path) -> None:
     assert "# Article Title" in (intermediate / "note_web-abc123def456.md").read_text(
         encoding="utf-8"
     )
+
+
+def test_build_timestamps_uses_word_start_when_available() -> None:
+    from video_buddy.render.note import _build_timestamps
+
+    captions = [
+        {
+            "start": 0.0,
+            "duration": 5.0,
+            "text": "Hello world",
+            "words": [{"start": 0.34, "end": 0.5, "text": "Hello"}],
+        },
+        {
+            "start": 65.0,
+            "duration": 4.0,
+            "text": "Second segment",
+            "words": [{"start": 65.7, "end": 66.0, "text": "Second"}],
+        },
+    ]
+    result = _build_timestamps(captions)
+    # Should use word start times (0.34 → 0:00, 65.7 → 1:05)
+    assert "0:00" in result
+    assert "1:05" in result
+
+
+def test_build_timestamps_falls_back_to_segment_start_without_words() -> None:
+    from video_buddy.render.note import _build_timestamps
+
+    captions = [
+        {"start": 2.5, "duration": 3.0, "text": "No words here"},
+        {"start": 70.0, "duration": 3.0, "text": "Also no words"},
+    ]
+    result = _build_timestamps(captions)
+    assert "0:02" in result
+    assert "1:10" in result
+
+
+def test_build_transcript_prefers_intended_text() -> None:
+    from video_buddy.render.note import _build_transcript
+
+    captions = [
+        {
+            "start": 0.0,
+            "duration": 5.0,
+            "text": "Uh hello and um welcome",
+            "intended_text": "Hello and welcome",
+        },
+    ]
+    result = _build_transcript(captions)
+    assert "Hello and welcome" in result
+    assert "Uh" not in result
+
+
+def test_build_transcript_uses_text_when_no_intended() -> None:
+    from video_buddy.render.note import _build_transcript
+
+    captions = [
+        {"start": 0.0, "duration": 5.0, "text": "Regular transcript text"},
+    ]
+    result = _build_transcript(captions)
+    assert "Regular transcript text" in result
