@@ -1,7 +1,7 @@
 ---
 id: "04"
 title: "Extend transcript JSON schema for word-level timestamps and disfluency metadata"
-status: open
+status: in_progress
 blocked_by: ["02"]
 priority: high
 ---
