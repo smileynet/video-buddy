@@ -1,7 +1,7 @@
 ---
 id: "05"
 title: "Execute ASR benchmark: faster-whisper vs WhisperX vs CrisperWhisper on test corpus"
-status: open
+status: in_progress
 blocked_by: ["02", "03"]
 priority: high
 ---
