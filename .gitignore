@@ -38,3 +38,4 @@ Thumbs.db
 # Workspace artifacts when someone uses the repo root as a workspace by mistake
 vb-workspace/
 .references/
+benchmark/audio/

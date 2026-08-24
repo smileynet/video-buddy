@@ -1,0 +1,620 @@
+{
+  "engine": "faster-whisper",
+  "model": "base",
+  "device": "cpu",
+  "video_id": "BcKQk0NeBV0",
+  "audio_duration": 635.2166875,
+  "transcribe_time": 93.58,
+  "rtf": 6.79,
+  "segment_count": 101,
+  "hallucination_repeats": 0,
+  "full_text": "Liang Wenfeng founded Deepseek, the Chinese lab whose R1 model hit number one on the US App Store last year, and whose V4 now trades blows with Claude and GPT-5 at a fraction of the price. Deepseek is a household name. Liang is not. He has given two real interviews, ever. No podcasts, no keynotes, no essays. The man behind the company is basically invisible. And in May, he got on a call with his investors, closed-door, and talked for almost four hours. About everything. This week, a 34,000-word transcript hit WeChat. The original was taken down within a day. Copies are everywhere now. Deepseek hasn't confirmed it, that's how leaks work, but the meeting was independently corroborated, and the voice matches those two interviews exactly. It's the longest unguarded look at this man anyone has ever had. So who is he? The public record is thin, but telling. In 2002, he got the top score on the college entrance exam in his home city of Zhangjiang, and went to Zhijian University for engineering. Then he founded High Flyer, a quant fund that trades the markets with machine learning, and built it into one of China's biggest. Along the way, the fund kept buying GPUs long before anyone knew what for. 100 cards in 2015, a thousand in 2019, 10,000 by 2021. He says it was curiosity. In 2023, the research team became deepseek. That path should sound familiar. Jeff Bezos spent four years at a quant fund, D.E. Sure, before leaving to start Amazon. Liang went from a quant fund to AI. And it shows, in this transcript, he talks about AI the way a retailer talks about goods, cost, price, margin, discipline. Everything deepseek does makes more sense heard in that language. So let's go through it. Start with the pricing rule because it's one sentence. By a batch of servers, price the API so they pay for themselves in 10 months. Service run three to five years, so 10 month payback works out to roughly six times the hardware cost over a server's life. His words we only earn six-fold profit. Someone on the call pushed back. That's too profitable. He agreed and said there's room to cut. But at this price, demand no longer moves, so he leaves it. Same instinct, second story. One of their models launched with a high price on purpose, they were worried about too much demand. The team hated it. He cut the price to a quarter, and the company chat erupted in cheers. The point of the model for them was people using it. Not the revenue line. This is a known playbook. Costco has capped its markup at about 14% for decades, and the cap is exactly why people trust the store. Keep margins low on purpose, and anyone who wants to undercut you has to live in territory you've already made your home. Deepseek is running that playbook on AI tokens. And the same lens explains open source. Giving away the weights doesn't kill the business he argues because the weights are the recipe, not the restaurant. Serving a frontier model cheaply is the hard part, the kernels, the clusters, the utilization. Arrival can download the model tomorrow and still serve it at multiples of his cost. At Deepseek's price, competing with Deepseek using Deepseek's own model loses money. Open source only threatens you he says if you're charging a hundred fold. He was also direct about the version question. The open model is the deployed model. Same weights, not a weaker public release, and he says he wants thousands of companies built on top of Deepseek. Each one makes the ecosystem a little more Deepseek shaped. The same discipline explains what Deepseek refuses to do. When R1 went viral last year, millions of consumer users showed up overnight and the company did almost nothing to keep them. No retention push, no monetization. His words, we really couldn't chase them away. The API runs with a few maintainers, no sales team, no customer service. In his metaphor, the app and the API are sesame seeds. AGI is the watermelon. You pick up seeds on your way, you don't stop for them. Same answer for whole product categories. Video generation, a good business, he says, and not on the road to AGI, so no. World models? Not the bottleneck right now. Even vision, Deepseek is famously text first, and his reason is that multimodality is a component. Useful, the way search is useful. It isn't intelligence itself. One more consequence of refusing work. Deepseek doesn't do overtime in an industry famous for brutal hours. His explanation, research needs relaxed people, and they refuse so much work that there isn't that much work. Product ship imperfect and stay imperfect. Quote, we don't need to work overtime, because it's just not that hard. Now the main line itself, his foundational bet goes back to that 2023 interview. Human intelligence might fundamentally be language, thinking might be the brain weaving words. If that's true, a language model is the seed of general intelligence. From there, his staircase, chain of thought last year, agents this year, and the next step, continual learning. His example of what's missing is concrete. A new employee spends two months learning the company, who's who, how things work. Then you say, go get Shao Wang, and they just know. An AI needs all of that spelled out. Every time, who Shao Wang is, where he sits, how to approach him, Liang's claim, with complete context, AI already beats the human. But you can never supply complete context. So the next model has to learn continuously, the way the employee did. Asked where the human tastes still matters, he said AI already has taste and intuition, what it lacks is continual learning. And the next model's first job in his telling is to be useful to Deepseek itself. A model that helps its own researchers build the one after it, AI accelerating AI research, which is why he expects progress to compound, not arrive in a single moment. Two honest caveats belong here. First, nobody has a working method for continual learning. He says so himself. Inside Deepseek, this kind of research is called Moor Zhang, feeling for the prize. Lottery tickets, cheap to try, anyone can think about it, nobody knows who wins. Second, serious people bet the other way. Yang Le Kun argues language models alone won't reach human level intelligence. You need world models that predict what actions do. Liang is betting against that, with the whole company. And robotics sits last on his staircase precisely because it's labor intensive. Solve learning first, then let AI do the bitter work. Meanwhile, the unglamorous present. Half of Deepseek, he says, including half the core researchers, is labeling data by hand. High-end labeling costs the same in China as in America. There's no cheap labor shortcut. Carpathi coined the frame for this years ago. Software 2.0. The data set is the source code, and the people labeling it are the programmers. Back to the businessmen lens, applied to hardware. The plan for the billions raised. Turn them into GPUs, as many as possible as fast as possible, a premium is fine. His reasoning. Cash in the bank earns 2%. A GPU pays back in 10 months. If I could spend it all in six months, he says that would be wonderful. The urgency is real. He puts Deepseek at 20,000 H-equivalence, the China market in video chip. While the biggest American models run around 800 billion active parameters against Deepseek's 49. Training at that scale would take by his estimate 50,000 next-gen chips. His conclusion, the gap with the US is compute, and even the talent gap is downstream of it, because fewer chips means fewer experiments. And yet, in the same meeting, Nvidia, he says, is digging its own grave. Cuda's moat is software nobody wants to rewrite, but AI writes code now. Deepseek builds tilelang, a high-level language that rewrites GPU kernels in a fraction of the effort, and uses AI to write tilelang itself. Every card Nvidia sells trains better AI, and better AI ports the ecosystem faster. The escape is real, but unfinished. V3 trained on Nvidia, down to hand-tuned Nvidia instructions. V3.2 shipped kernels in both Cuda and tilelang. V4 got day zero support on Huawei's ascend chips, and Deepseek's own tile kernels library still requires Cuda today. His prediction, within a year, the domestic chip software problem is solved, and the bottleneck that remains is Huawei's production capacity. Asked for his one non-negotiable, he didn't say compute, or the models, he said the team. If the team stays, we achieve AGI. Everything else is just time. It's backed by behavior. They've lost key researchers to rivals, and the funding round reportedly came with one condition for every investor. No poaching Deepseek staff, no funding spinouts. Inside, no KPI's, and engineers get half their time for self-directed research. He also admits the loose structure is straining. Real hierarchy is being built right now. That's the picture 4 hours leave behind. A quants discipline applied to intelligence itself. Cap the margin, cut the cost, open the recipe, refuse everything off the main line, and spend the difference on one bet. It also comes with a promise you can check. He said the strongest model they build will always be released open. The same one they run themselves. We'll see.",
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 5.94,
+      "duration": 5.92,
+      "text": "Liang Wenfeng founded Deepseek, the Chinese lab whose R1 model hit number one on the US"
+    },
+    {
+      "start": 5.94,
+      "end": 11.82,
+      "duration": 5.88,
+      "text": "App Store last year, and whose V4 now trades blows with Claude and GPT-5 at a fraction"
+    },
+    {
+      "start": 11.82,
+      "end": 19.06,
+      "duration": 7.24,
+      "text": "of the price. Deepseek is a household name. Liang is not. He has given two real interviews,"
+    },
+    {
+      "start": 19.06,
+      "end": 26.42,
+      "duration": 7.36,
+      "text": "ever. No podcasts, no keynotes, no essays. The man behind the company is basically invisible."
+    },
+    {
+      "start": 26.42,
+      "end": 33.14,
+      "duration": 6.72,
+      "text": "And in May, he got on a call with his investors, closed-door, and talked for almost four hours."
+    },
+    {
+      "start": 33.14,
+      "end": 40.98,
+      "duration": 7.84,
+      "text": "About everything. This week, a 34,000-word transcript hit WeChat. The original was taken down"
+    },
+    {
+      "start": 40.98,
+      "end": 47.46,
+      "duration": 6.48,
+      "text": "within a day. Copies are everywhere now. Deepseek hasn't confirmed it, that's how leaks work,"
+    },
+    {
+      "start": 47.46,
+      "end": 53.38,
+      "duration": 5.92,
+      "text": "but the meeting was independently corroborated, and the voice matches those two interviews exactly."
+    },
+    {
+      "start": 53.38,
+      "end": 57.06,
+      "duration": 3.68,
+      "text": "It's the longest unguarded look at this man anyone has ever had."
+    },
+    {
+      "start": 57.7,
+      "end": 64.9,
+      "duration": 7.2,
+      "text": "So who is he? The public record is thin, but telling. In 2002, he got the top score on the"
+    },
+    {
+      "start": 64.9,
+      "end": 70.34,
+      "duration": 5.44,
+      "text": "college entrance exam in his home city of Zhangjiang, and went to Zhijian University for engineering."
+    },
+    {
+      "start": 70.98,
+      "end": 76.02,
+      "duration": 5.04,
+      "text": "Then he founded High Flyer, a quant fund that trades the markets with machine learning,"
+    },
+    {
+      "start": 76.02,
+      "end": 81.94,
+      "duration": 5.92,
+      "text": "and built it into one of China's biggest. Along the way, the fund kept buying GPUs"
+    },
+    {
+      "start": 81.94,
+      "end": 90.18,
+      "duration": 8.24,
+      "text": "long before anyone knew what for. 100 cards in 2015, a thousand in 2019, 10,000 by 2021."
+    },
+    {
+      "start": 90.74,
+      "end": 96.34,
+      "duration": 5.6,
+      "text": "He says it was curiosity. In 2023, the research team became deepseek."
+    },
+    {
+      "start": 97.06,
+      "end": 103.06,
+      "duration": 6.0,
+      "text": "That path should sound familiar. Jeff Bezos spent four years at a quant fund, D.E. Sure,"
+    },
+    {
+      "start": 103.06,
+      "end": 108.9,
+      "duration": 5.84,
+      "text": "before leaving to start Amazon. Liang went from a quant fund to AI. And it shows,"
+    },
+    {
+      "start": 108.9,
+      "end": 113.46,
+      "duration": 4.56,
+      "text": "in this transcript, he talks about AI the way a retailer talks about goods,"
+    },
+    {
+      "start": 113.46,
+      "end": 120.34,
+      "duration": 6.88,
+      "text": "cost, price, margin, discipline. Everything deepseek does makes more sense heard in that language."
+    },
+    {
+      "start": 120.34,
+      "end": 125.14,
+      "duration": 4.8,
+      "text": "So let's go through it. Start with the pricing rule because it's one sentence."
+    },
+    {
+      "start": 125.14,
+      "end": 129.86,
+      "duration": 4.72,
+      "text": "By a batch of servers, price the API so they pay for themselves in 10 months."
+    },
+    {
+      "start": 129.86,
+      "end": 135.14,
+      "duration": 5.28,
+      "text": "Service run three to five years, so 10 month payback works out to roughly six times the hardware"
+    },
+    {
+      "start": 135.22,
+      "end": 141.86,
+      "duration": 6.64,
+      "text": "cost over a server's life. His words we only earn six-fold profit. Someone on the call pushed back."
+    },
+    {
+      "start": 141.86,
+      "end": 148.74,
+      "duration": 6.88,
+      "text": "That's too profitable. He agreed and said there's room to cut. But at this price, demand no longer moves,"
+    },
+    {
+      "start": 148.74,
+      "end": 155.7,
+      "duration": 6.96,
+      "text": "so he leaves it. Same instinct, second story. One of their models launched with a high price on purpose,"
+    },
+    {
+      "start": 155.7,
+      "end": 161.86,
+      "duration": 6.16,
+      "text": "they were worried about too much demand. The team hated it. He cut the price to a quarter,"
+    },
+    {
+      "start": 161.86,
+      "end": 167.86,
+      "duration": 6.0,
+      "text": "and the company chat erupted in cheers. The point of the model for them was people using it."
+    },
+    {
+      "start": 167.86,
+      "end": 174.98,
+      "duration": 7.12,
+      "text": "Not the revenue line. This is a known playbook. Costco has capped its markup at about 14% for"
+    },
+    {
+      "start": 174.98,
+      "end": 181.38,
+      "duration": 6.4,
+      "text": "decades, and the cap is exactly why people trust the store. Keep margins low on purpose,"
+    },
+    {
+      "start": 181.38,
+      "end": 186.02,
+      "duration": 4.64,
+      "text": "and anyone who wants to undercut you has to live in territory you've already made your home."
+    },
+    {
+      "start": 186.58,
+      "end": 191.54,
+      "duration": 4.96,
+      "text": "Deepseek is running that playbook on AI tokens. And the same lens explains"
+    },
+    {
+      "start": 191.54,
+      "end": 196.66,
+      "duration": 5.12,
+      "text": "open source. Giving away the weights doesn't kill the business he argues because the weights are"
+    },
+    {
+      "start": 196.66,
+      "end": 202.5,
+      "duration": 5.84,
+      "text": "the recipe, not the restaurant. Serving a frontier model cheaply is the hard part, the kernels,"
+    },
+    {
+      "start": 202.5,
+      "end": 208.74,
+      "duration": 6.24,
+      "text": "the clusters, the utilization. Arrival can download the model tomorrow and still serve it at multiples"
+    },
+    {
+      "start": 208.74,
+      "end": 214.9,
+      "duration": 6.16,
+      "text": "of his cost. At Deepseek's price, competing with Deepseek using Deepseek's own model loses money."
+    },
+    {
+      "start": 215.46,
+      "end": 219.06,
+      "duration": 3.6,
+      "text": "Open source only threatens you he says if you're charging a hundred fold."
+    },
+    {
+      "start": 219.62,
+      "end": 225.06,
+      "duration": 5.44,
+      "text": "He was also direct about the version question. The open model is the deployed model."
+    },
+    {
+      "start": 225.06,
+      "end": 230.5,
+      "duration": 5.44,
+      "text": "Same weights, not a weaker public release, and he says he wants thousands of companies built on"
+    },
+    {
+      "start": 230.5,
+      "end": 235.14,
+      "duration": 4.64,
+      "text": "top of Deepseek. Each one makes the ecosystem a little more Deepseek shaped."
+    },
+    {
+      "start": 235.78,
+      "end": 241.94,
+      "duration": 6.16,
+      "text": "The same discipline explains what Deepseek refuses to do. When R1 went viral last year,"
+    },
+    {
+      "start": 241.94,
+      "end": 247.3,
+      "duration": 5.36,
+      "text": "millions of consumer users showed up overnight and the company did almost nothing to keep them."
+    },
+    {
+      "start": 247.3,
+      "end": 252.74,
+      "duration": 5.44,
+      "text": "No retention push, no monetization. His words, we really couldn't chase them away."
+    },
+    {
+      "start": 253.3,
+      "end": 257.62,
+      "duration": 4.32,
+      "text": "The API runs with a few maintainers, no sales team, no customer service."
+    },
+    {
+      "start": 258.18,
+      "end": 265.14,
+      "duration": 6.96,
+      "text": "In his metaphor, the app and the API are sesame seeds. AGI is the watermelon. You pick up seeds on your"
+    },
+    {
+      "start": 265.14,
+      "end": 271.3,
+      "duration": 6.16,
+      "text": "way, you don't stop for them. Same answer for whole product categories. Video generation,"
+    },
+    {
+      "start": 271.3,
+      "end": 278.42,
+      "duration": 7.12,
+      "text": "a good business, he says, and not on the road to AGI, so no. World models? Not the bottleneck right"
+    },
+    {
+      "start": 278.42,
+      "end": 285.46,
+      "duration": 7.04,
+      "text": "now. Even vision, Deepseek is famously text first, and his reason is that multimodality is a"
+    },
+    {
+      "start": 285.46,
+      "end": 292.82,
+      "duration": 7.36,
+      "text": "component. Useful, the way search is useful. It isn't intelligence itself. One more consequence of"
+    },
+    {
+      "start": 292.82,
+      "end": 300.18,
+      "duration": 7.36,
+      "text": "refusing work. Deepseek doesn't do overtime in an industry famous for brutal hours. His explanation,"
+    },
+    {
+      "start": 300.74,
+      "end": 306.02,
+      "duration": 5.28,
+      "text": "research needs relaxed people, and they refuse so much work that there isn't that much work."
+    },
+    {
+      "start": 306.74,
+      "end": 314.02,
+      "duration": 7.28,
+      "text": "Product ship imperfect and stay imperfect. Quote, we don't need to work overtime, because it's just"
+    },
+    {
+      "start": 314.02,
+      "end": 321.62,
+      "duration": 7.6,
+      "text": "not that hard. Now the main line itself, his foundational bet goes back to that 2023 interview."
+    },
+    {
+      "start": 322.26,
+      "end": 329.14,
+      "duration": 6.88,
+      "text": "Human intelligence might fundamentally be language, thinking might be the brain weaving words."
+    },
+    {
+      "start": 329.7,
+      "end": 336.02,
+      "duration": 6.32,
+      "text": "If that's true, a language model is the seed of general intelligence. From there, his staircase,"
+    },
+    {
+      "start": 336.02,
+      "end": 342.98,
+      "duration": 6.96,
+      "text": "chain of thought last year, agents this year, and the next step, continual learning. His example"
+    },
+    {
+      "start": 342.98,
+      "end": 348.66,
+      "duration": 5.68,
+      "text": "of what's missing is concrete. A new employee spends two months learning the company,"
+    },
+    {
+      "start": 348.66,
+      "end": 354.1,
+      "duration": 5.44,
+      "text": "who's who, how things work. Then you say, go get Shao Wang, and they just know."
+    },
+    {
+      "start": 354.74,
+      "end": 361.22,
+      "duration": 6.48,
+      "text": "An AI needs all of that spelled out. Every time, who Shao Wang is, where he sits, how to approach him,"
+    },
+    {
+      "start": 361.94,
+      "end": 369.22,
+      "duration": 7.28,
+      "text": "Liang's claim, with complete context, AI already beats the human. But you can never supply complete"
+    },
+    {
+      "start": 369.22,
+      "end": 374.02,
+      "duration": 4.8,
+      "text": "context. So the next model has to learn continuously, the way the employee did."
+    },
+    {
+      "start": 374.58,
+      "end": 380.66,
+      "duration": 6.08,
+      "text": "Asked where the human tastes still matters, he said AI already has taste and intuition,"
+    },
+    {
+      "start": 380.74,
+      "end": 386.34,
+      "duration": 5.6,
+      "text": "what it lacks is continual learning. And the next model's first job in his telling is to be"
+    },
+    {
+      "start": 386.34,
+      "end": 391.94,
+      "duration": 5.6,
+      "text": "useful to Deepseek itself. A model that helps its own researchers build the one after it,"
+    },
+    {
+      "start": 392.5,
+      "end": 399.38,
+      "duration": 6.88,
+      "text": "AI accelerating AI research, which is why he expects progress to compound, not arrive in a single"
+    },
+    {
+      "start": 399.38,
+      "end": 406.58,
+      "duration": 7.2,
+      "text": "moment. Two honest caveats belong here. First, nobody has a working method for continual learning."
+    },
+    {
+      "start": 406.58,
+      "end": 412.58,
+      "duration": 6.0,
+      "text": "He says so himself. Inside Deepseek, this kind of research is called Moor Zhang, feeling for the"
+    },
+    {
+      "start": 412.58,
+      "end": 419.86,
+      "duration": 7.28,
+      "text": "prize. Lottery tickets, cheap to try, anyone can think about it, nobody knows who wins. Second,"
+    },
+    {
+      "start": 419.86,
+      "end": 425.62,
+      "duration": 5.76,
+      "text": "serious people bet the other way. Yang Le Kun argues language models alone won't reach human"
+    },
+    {
+      "start": 425.62,
+      "end": 431.86,
+      "duration": 6.24,
+      "text": "level intelligence. You need world models that predict what actions do. Liang is betting against that,"
+    },
+    {
+      "start": 431.86,
+      "end": 437.46,
+      "duration": 5.6,
+      "text": "with the whole company. And robotics sits last on his staircase precisely because it's labor"
+    },
+    {
+      "start": 437.46,
+      "end": 444.82,
+      "duration": 7.36,
+      "text": "intensive. Solve learning first, then let AI do the bitter work. Meanwhile, the unglamorous present."
+    },
+    {
+      "start": 445.54,
+      "end": 451.7,
+      "duration": 6.16,
+      "text": "Half of Deepseek, he says, including half the core researchers, is labeling data by hand."
+    },
+    {
+      "start": 452.42,
+      "end": 457.38,
+      "duration": 4.96,
+      "text": "High-end labeling costs the same in China as in America. There's no cheap labor shortcut."
+    },
+    {
+      "start": 458.1,
+      "end": 464.98,
+      "duration": 6.88,
+      "text": "Carpathi coined the frame for this years ago. Software 2.0. The data set is the source code,"
+    },
+    {
+      "start": 464.98,
+      "end": 470.74,
+      "duration": 5.76,
+      "text": "and the people labeling it are the programmers. Back to the businessmen lens, applied to hardware."
+    },
+    {
+      "start": 470.74,
+      "end": 477.06,
+      "duration": 6.32,
+      "text": "The plan for the billions raised. Turn them into GPUs, as many as possible as fast as possible,"
+    },
+    {
+      "start": 477.06,
+      "end": 484.74,
+      "duration": 7.68,
+      "text": "a premium is fine. His reasoning. Cash in the bank earns 2%. A GPU pays back in 10 months."
+    },
+    {
+      "start": 484.74,
+      "end": 488.74,
+      "duration": 4.0,
+      "text": "If I could spend it all in six months, he says that would be wonderful."
+    },
+    {
+      "start": 489.3,
+      "end": 496.58,
+      "duration": 7.28,
+      "text": "The urgency is real. He puts Deepseek at 20,000 H-equivalence, the China market in video chip."
+    },
+    {
+      "start": 496.58,
+      "end": 502.66,
+      "duration": 6.08,
+      "text": "While the biggest American models run around 800 billion active parameters against Deepseek's 49."
+    },
+    {
+      "start": 503.54,
+      "end": 509.94,
+      "duration": 6.4,
+      "text": "Training at that scale would take by his estimate 50,000 next-gen chips. His conclusion,"
+    },
+    {
+      "start": 509.94,
+      "end": 514.5,
+      "duration": 4.56,
+      "text": "the gap with the US is compute, and even the talent gap is downstream of it,"
+    },
+    {
+      "start": 514.5,
+      "end": 519.54,
+      "duration": 5.04,
+      "text": "because fewer chips means fewer experiments. And yet, in the same meeting,"
+    },
+    {
+      "start": 519.54,
+      "end": 526.5,
+      "duration": 6.96,
+      "text": "Nvidia, he says, is digging its own grave. Cuda's moat is software nobody wants to rewrite,"
+    },
+    {
+      "start": 526.5,
+      "end": 533.78,
+      "duration": 7.28,
+      "text": "but AI writes code now. Deepseek builds tilelang, a high-level language that rewrites GPU kernels"
+    },
+    {
+      "start": 533.78,
+      "end": 540.98,
+      "duration": 7.2,
+      "text": "in a fraction of the effort, and uses AI to write tilelang itself. Every card Nvidia sells trains"
+    },
+    {
+      "start": 540.98,
+      "end": 548.26,
+      "duration": 7.28,
+      "text": "better AI, and better AI ports the ecosystem faster. The escape is real, but unfinished."
+    },
+    {
+      "start": 548.9,
+      "end": 557.22,
+      "duration": 8.32,
+      "text": "V3 trained on Nvidia, down to hand-tuned Nvidia instructions. V3.2 shipped kernels in both Cuda and"
+    },
+    {
+      "start": 557.22,
+      "end": 564.34,
+      "duration": 7.12,
+      "text": "tilelang. V4 got day zero support on Huawei's ascend chips, and Deepseek's own tile kernels"
+    },
+    {
+      "start": 564.34,
+      "end": 570.74,
+      "duration": 6.4,
+      "text": "library still requires Cuda today. His prediction, within a year, the domestic chip software problem"
+    },
+    {
+      "start": 570.74,
+      "end": 574.9,
+      "duration": 4.16,
+      "text": "is solved, and the bottleneck that remains is Huawei's production capacity."
+    },
+    {
+      "start": 575.54,
+      "end": 582.02,
+      "duration": 6.48,
+      "text": "Asked for his one non-negotiable, he didn't say compute, or the models, he said the team."
+    },
+    {
+      "start": 582.1,
+      "end": 588.66,
+      "duration": 6.56,
+      "text": "If the team stays, we achieve AGI. Everything else is just time. It's backed by behavior."
+    },
+    {
+      "start": 588.66,
+      "end": 594.1,
+      "duration": 5.44,
+      "text": "They've lost key researchers to rivals, and the funding round reportedly came with one condition"
+    },
+    {
+      "start": 594.1,
+      "end": 601.78,
+      "duration": 7.68,
+      "text": "for every investor. No poaching Deepseek staff, no funding spinouts. Inside, no KPI's, and engineers"
+    },
+    {
+      "start": 601.78,
+      "end": 607.94,
+      "duration": 6.16,
+      "text": "get half their time for self-directed research. He also admits the loose structure is straining."
+    },
+    {
+      "start": 607.94,
+      "end": 613.7,
+      "duration": 5.76,
+      "text": "Real hierarchy is being built right now. That's the picture 4 hours leave behind."
+    },
+    {
+      "start": 613.7,
+      "end": 619.3,
+      "duration": 5.6,
+      "text": "A quants discipline applied to intelligence itself. Cap the margin, cut the cost,"
+    },
+    {
+      "start": 619.3,
+      "end": 625.06,
+      "duration": 5.76,
+      "text": "open the recipe, refuse everything off the main line, and spend the difference on one bet."
+    },
+    {
+      "start": 625.7,
+      "end": 630.98,
+      "duration": 5.28,
+      "text": "It also comes with a promise you can check. He said the strongest model they build will always"
+    },
+    {
+      "start": 630.98,
+      "end": 640.98,
+      "duration": 10.0,
+      "text": "be released open. The same one they run themselves. We'll see."
+    }
+  ]
+}

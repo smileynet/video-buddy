@@ -1,0 +1,8773 @@
+{
+  "engine": "crisperwhisper",
+  "model": "turbo",
+  "device": "cuda",
+  "video_id": "BcKQk0NeBV0",
+  "audio_duration": 635.22,
+  "transcribe_time": 8.38,
+  "rtf": 75.78,
+  "segment_count": 99,
+  "word_count": 1613,
+  "hallucination_repeats": 0,
+  "full_text": "Liang Wenfeng founded DeepSeek, the Chinese lab whose Rone model hit number one on the U.S. App Store last year and whose V four now trades blows with Claude and GPT-five at a fraction of the price. DeepSeek is a household name. Liang is not. He has given two real interviews, ever. No podcasts, no keynotes, no essays. The man behind the company is basically invisible. Then in May, he got on a call with his investors, closed door, and talked for almost four hours about everything. This week, a thirty-four thousand word transcript of that call hit WeChat. The original was taken down within a day. Copies are everywhere now. Deepseek hasn't confirmed it. That's how leaks work. But the meeting was independently corroborated, and the voice matches those two interviews exactly. It's the longest unguarded look at this man anyone has ever had. So who is he? The public record is thin but telling. In two thousand and two, he got the top score on the college entrance exam in his home city of Xinjiang and went to Zhejiang University for engineering. Then he founded High Flyer, a quant fund that trades the markets with machine learning and built it into one of China's biggest. Along the way, the fund kept buying GPUs long before anyone knew what for. A hundred cards in twenty fifteen, a thousand in twenty nineteen, ten thousand by twenty twenty-one. He says it was curiosity. In twenty twenty-three, the research team became DeepSeek. That path should sound familiar. Jeff Bezos spent four years at a quant fund, D E Shaw, before leaving to start Amazon. Liang went from a quant fund to AI. And it shows. In this transcript, he talks about AI the way a retailer talks about goods. Cost, price, margin, discipline. Everything Deepsea does makes more sense heard in that language. So let's go through it. Start with the pricing rule because it's one sentence. Buy a batch of servers, price the API so they pay for themselves in ten months. Servers run three to five years, so ten month payback works out to roughly six times the hardware cost over a server's life. His words, we only earn sixfold profit. Someone on the call pushed back. That's too profitable. He agreed and said there's room to cut, but at this price demand no longer moves, so he leaves it. Same instinct, second story. One of their models launched with a high price, on purpose. They were worried about too much demand. The team hated it. He cut the price to a quarter and the company chat erupted in cheers. The point of the model for them was people using it, not the revenue line. This is a known playbook. Costco has capped its markup at about fourteen percent for decades, and the cap is exactly why people trust the store. Keep margins low on purpose, and anyone who wants to undercut you has to live in territory you've already made your home. DeepSeek is running that playbook on AI tokens. And the same lens explains open source. Giving away the weights doesn't kill the business, he argues, because the weights are the recipe, not the restaurant. Serving a frontier model cheaply is the hard part, the kernels, the clusters, the utilization. Arrival can download the model tomorrow and still serve it at multiples of his cost. At DeepSeek's price, competing with DeepSeek using DeepSeek's own model loses money. Open source only threatens you, he says, if you're charging a hundredfold. He was also direct about the version question. The open model is the deployed model. Same weights, not a weaker public release. And he says he wants thousands of companies built on top of DeepSeek. Each one makes the ecosystem a little more DeepSeek shaped. The same discipline explains what DeepSeek refuses to do. When Rone went viral last year, millions of consumer users showed up overnight, and the company did almost nothing to keep them. No retention push, no monetization. His words, we really couldn't chase them away. The API runs with a few maintainers, no sales team, no customer service. In his metaphor, the app and the API are sesame seeds. AGI is the watermelon. You pick up seeds on your way, you don't stop for them. Same answer for whole product categories. Video generation, a good business, he says, and not on the road to AGI, so no. World models, not the bottleneck right now. Even vision. Deepseek is famously text-first, and his reason is that multimodality is a component, useful, the way search is useful. It isn't intelligence itself. One more consequence of refusing work, Deepseek doesn't do overtime in an industry famous for brutal hours. His explanation? Research needs relaxed people, and they refuse so much work that there isn't that much work. Products ship imperfect and stay imperfect. Quote, we don't need to work overtime because it's just not that hard. Now the main line itself. His foundational bet goes back to that twenty twenty-three interview. Human intelligence might fundamentally be language. Thinking might be the brain weaving words. If that's true, a language model is the seed of general intelligence. From there, his staircase, chain of thought last year, agents this year, and the next step, continual learning. His example of what's missing is concrete. A new employee spends two months learning the company, who's who, how things work. Then you say, go get Xiao Wang, and they just know. And AI needs all of that spelled out every time, who Xiao Wang is, where he sits, how to approach him. Liang's claim, with complete context, AI already beats the human. But you can never supply complete context. So the next model has to learn continuously, the way the employee did. Asked whether human taste still matters, he said AI already has taste and intuition. What it lacks is continual learning. And the next model's first job, in his telling, is to be useful to deep seek itself, a model that helps its own researchers build the one after it, AI accelerating AI research, which is why he expects progress to compound, not arrive in a single moment. Two honest caveats belong here. First, nobody has a working method for continual learning. He says so himself. Inside DeepSeek, this kind of research is called Mojang, feeling for the prize, lottery tickets, cheap to try, anyone can think about it, nobody knows who wins. Second, serious people bet the other way. Yan Lecun argues language models alone won't reach human level intelligence. You need world models that predict what actions do. Liang is betting against that, with the whole company. And robotics sits last on his staircase precisely because it's labor intensive. Solve learning first, then let AI do the bitter work. Meanwhile, the unglamorous present. Half of DeepSeek, he says, including half the core researchers, is labeling data by hand. High-end labeling costs the same in China as in America. There's no cheap labor shortcut. Carpathie coined the frame for this years ago. Software two point O. The data set is the source code, and the people labeling it are the programmers. Back to the businessmen lens applied to hardware. The plan for the billions raised. Turn them into GPUs. As many as possible, as fast as possible, a premium is fine. His reasoning, cash in the bank earns two percent. A GPU pays back in ten months. If I could spend it all in six months, he says, that would be wonderful. The urgency is real. He puts DeepSeek at twenty thousand H equivalents, the China market Nvidia chip, while the biggest American models run around eight hundred billion active parameters against DeepSeek's forty-nine. Training at that scale would take, by his estimate, fifty thousand next-gen chips. His conclusion? The gap with the U.S. is compute, and even the talent gap is downstream of it because fewer chips means fewer experiments. And yet, in the same meeting, Nvidia, he says, is digging its own grave. Cuda's moat is software nobody wants to rewrite, but AI writes code now. DeepSeek built TileLang, a high-level language that rewrites GPU kernels in a fraction of the effort, and uses AI to write TileLang itself. Every card Nvidia sells trains better AI, and better AI ports the ecosystem faster. The escape is real, but unfinished. V three trains on Nvidia down to hand-tuned Nvidia instructions. V three point two shipped kernels in both CUDA and TIL-Lang. V four got day zero support on Huawei's Ascend chips. And DeepSeek's own Tile kernels library still requires CUDA today. His prediction? Within a year, the domestic chip software problem is solved, and the bottleneck that remains is Huawei's production capacity. Asked for his one non-negotiable, he didn't say compute or the models, he said the team. If the team stays, we achieve AGI. Everything else is just time. It's backed by behavior. They've lost key researchers to rivals, and the funding round reportedly came with one condition for every investor. No poaching deep seek staff, no funding spin outs. Inside, no KPIs, and engineers get half their time for self-directed research. He also admits the loose structure is straining. Real hierarchy is being built right now. That's the picture four hours leave behind. A quant's discipline applied to intelligence itself. Cap the margin, cut the cost, open the recipe, refuse everything off the main line, and spend the difference on one bet. It also comes with a promise you can check. He said the strongest model they build will always be released open, the same one they run themselves. We'll see.",
+  "segments": [
+    {
+      "start": 0.42,
+      "end": 6.12,
+      "text": "Liang Wenfeng founded DeepSeek, the Chinese lab whose Rone model hit number one on the U.S.",
+      "words": [
+        {
+          "start": 0.42,
+          "end": 0.72,
+          "text": "Liang"
+        },
+        {
+          "start": 0.72,
+          "end": 1.2,
+          "text": "Wenfeng"
+        },
+        {
+          "start": 1.2,
+          "end": 1.6,
+          "text": "founded"
+        },
+        {
+          "start": 1.78,
+          "end": 2.32,
+          "text": "DeepSeek,"
+        },
+        {
+          "start": 2.56,
+          "end": 2.62,
+          "text": "the"
+        },
+        {
+          "start": 2.62,
+          "end": 2.97,
+          "text": "Chinese"
+        },
+        {
+          "start": 2.97,
+          "end": 3.4,
+          "text": "lab"
+        },
+        {
+          "start": 3.4,
+          "end": 3.52,
+          "text": "whose"
+        },
+        {
+          "start": 3.52,
+          "end": 3.8,
+          "text": "Rone"
+        },
+        {
+          "start": 4.02,
+          "end": 4.37,
+          "text": "model"
+        },
+        {
+          "start": 4.37,
+          "end": 4.58,
+          "text": "hit"
+        },
+        {
+          "start": 4.58,
+          "end": 4.92,
+          "text": "number"
+        },
+        {
+          "start": 5.08,
+          "end": 5.32,
+          "text": "one"
+        },
+        {
+          "start": 5.32,
+          "end": 5.52,
+          "text": "on"
+        },
+        {
+          "start": 5.52,
+          "end": 5.6,
+          "text": "the"
+        },
+        {
+          "start": 5.6,
+          "end": 6.12,
+          "text": "U.S."
+        }
+      ]
+    },
+    {
+      "start": 6.12,
+      "end": 12.4,
+      "text": "App Store last year and whose V four now trades blows with Claude and GPT-five at a fraction of the price.",
+      "words": [
+        {
+          "start": 6.12,
+          "end": 6.16,
+          "text": "App"
+        },
+        {
+          "start": 6.16,
+          "end": 6.34,
+          "text": "Store"
+        },
+        {
+          "start": 6.34,
+          "end": 6.68,
+          "text": "last"
+        },
+        {
+          "start": 6.68,
+          "end": 6.88,
+          "text": "year"
+        },
+        {
+          "start": 7.34,
+          "end": 7.42,
+          "text": "and"
+        },
+        {
+          "start": 7.42,
+          "end": 7.56,
+          "text": "whose"
+        },
+        {
+          "start": 7.56,
+          "end": 7.88,
+          "text": "V"
+        },
+        {
+          "start": 7.88,
+          "end": 7.98,
+          "text": "four"
+        },
+        {
+          "start": 8.2,
+          "end": 8.44,
+          "text": "now"
+        },
+        {
+          "start": 8.44,
+          "end": 8.82,
+          "text": "trades"
+        },
+        {
+          "start": 8.82,
+          "end": 9.04,
+          "text": "blows"
+        },
+        {
+          "start": 9.2,
+          "end": 9.38,
+          "text": "with"
+        },
+        {
+          "start": 9.38,
+          "end": 9.66,
+          "text": "Claude"
+        },
+        {
+          "start": 9.78,
+          "end": 9.88,
+          "text": "and"
+        },
+        {
+          "start": 9.88,
+          "end": 10.54,
+          "text": "GPT-five"
+        },
+        {
+          "start": 11.14,
+          "end": 11.24,
+          "text": "at"
+        },
+        {
+          "start": 11.24,
+          "end": 11.28,
+          "text": "a"
+        },
+        {
+          "start": 11.38,
+          "end": 11.78,
+          "text": "fraction"
+        },
+        {
+          "start": 11.78,
+          "end": 11.9,
+          "text": "of"
+        },
+        {
+          "start": 11.9,
+          "end": 11.98,
+          "text": "the"
+        },
+        {
+          "start": 11.98,
+          "end": 12.4,
+          "text": "price."
+        }
+      ]
+    },
+    {
+      "start": 13.0,
+      "end": 16.2,
+      "text": "DeepSeek is a household name. Liang is not.",
+      "words": [
+        {
+          "start": 13.0,
+          "end": 13.47,
+          "text": "DeepSeek"
+        },
+        {
+          "start": 13.47,
+          "end": 13.6,
+          "text": "is"
+        },
+        {
+          "start": 13.6,
+          "end": 13.68,
+          "text": "a"
+        },
+        {
+          "start": 13.68,
+          "end": 14.24,
+          "text": "household"
+        },
+        {
+          "start": 14.24,
+          "end": 14.44,
+          "text": "name."
+        },
+        {
+          "start": 15.12,
+          "end": 15.3,
+          "text": "Liang"
+        },
+        {
+          "start": 15.62,
+          "end": 15.79,
+          "text": "is"
+        },
+        {
+          "start": 15.79,
+          "end": 16.2,
+          "text": "not."
+        }
+      ]
+    },
+    {
+      "start": 16.64,
+      "end": 22.08,
+      "text": "He has given two real interviews, ever. No podcasts, no keynotes, no essays.",
+      "words": [
+        {
+          "start": 16.64,
+          "end": 16.74,
+          "text": "He"
+        },
+        {
+          "start": 16.74,
+          "end": 16.82,
+          "text": "has"
+        },
+        {
+          "start": 16.82,
+          "end": 17.08,
+          "text": "given"
+        },
+        {
+          "start": 17.24,
+          "end": 17.42,
+          "text": "two"
+        },
+        {
+          "start": 17.6,
+          "end": 18.0,
+          "text": "real"
+        },
+        {
+          "start": 18.16,
+          "end": 18.66,
+          "text": "interviews,"
+        },
+        {
+          "start": 18.92,
+          "end": 19.24,
+          "text": "ever."
+        },
+        {
+          "start": 19.74,
+          "end": 19.86,
+          "text": "No"
+        },
+        {
+          "start": 19.96,
+          "end": 20.28,
+          "text": "podcasts,"
+        },
+        {
+          "start": 20.66,
+          "end": 20.82,
+          "text": "no"
+        },
+        {
+          "start": 20.92,
+          "end": 21.28,
+          "text": "keynotes,"
+        },
+        {
+          "start": 21.52,
+          "end": 21.66,
+          "text": "no"
+        },
+        {
+          "start": 21.8,
+          "end": 22.08,
+          "text": "essays."
+        }
+      ]
+    },
+    {
+      "start": 22.76,
+      "end": 32.82,
+      "text": "The man behind the company is basically invisible. Then in May, he got on a call with his investors, closed door, and talked for almost four hours",
+      "words": [
+        {
+          "start": 22.76,
+          "end": 22.84,
+          "text": "The"
+        },
+        {
+          "start": 22.84,
+          "end": 23.04,
+          "text": "man"
+        },
+        {
+          "start": 23.04,
+          "end": 23.44,
+          "text": "behind"
+        },
+        {
+          "start": 23.44,
+          "end": 23.54,
+          "text": "the"
+        },
+        {
+          "start": 23.54,
+          "end": 23.9,
+          "text": "company"
+        },
+        {
+          "start": 24.1,
+          "end": 24.2,
+          "text": "is"
+        },
+        {
+          "start": 24.4,
+          "end": 24.8,
+          "text": "basically"
+        },
+        {
+          "start": 25.14,
+          "end": 25.4,
+          "text": "invisible."
+        },
+        {
+          "start": 26.18,
+          "end": 26.36,
+          "text": "Then"
+        },
+        {
+          "start": 26.46,
+          "end": 26.7,
+          "text": "in"
+        },
+        {
+          "start": 26.8,
+          "end": 27.08,
+          "text": "May,"
+        },
+        {
+          "start": 27.54,
+          "end": 27.62,
+          "text": "he"
+        },
+        {
+          "start": 27.62,
+          "end": 27.74,
+          "text": "got"
+        },
+        {
+          "start": 27.74,
+          "end": 27.84,
+          "text": "on"
+        },
+        {
+          "start": 27.84,
+          "end": 27.94,
+          "text": "a"
+        },
+        {
+          "start": 27.94,
+          "end": 28.11,
+          "text": "call"
+        },
+        {
+          "start": 28.11,
+          "end": 28.26,
+          "text": "with"
+        },
+        {
+          "start": 28.26,
+          "end": 28.4,
+          "text": "his"
+        },
+        {
+          "start": 28.6,
+          "end": 29.2,
+          "text": "investors,"
+        },
+        {
+          "start": 29.44,
+          "end": 29.79,
+          "text": "closed"
+        },
+        {
+          "start": 29.79,
+          "end": 29.94,
+          "text": "door,"
+        },
+        {
+          "start": 30.46,
+          "end": 30.59,
+          "text": "and"
+        },
+        {
+          "start": 30.59,
+          "end": 30.8,
+          "text": "talked"
+        },
+        {
+          "start": 30.9,
+          "end": 31.09,
+          "text": "for"
+        },
+        {
+          "start": 31.09,
+          "end": 31.34,
+          "text": "almost"
+        },
+        {
+          "start": 31.82,
+          "end": 31.98,
+          "text": "four"
+        },
+        {
+          "start": 32.4,
+          "end": 32.82,
+          "text": "hours"
+        }
+      ]
+    },
+    {
+      "start": 33.22,
+      "end": 39.1,
+      "text": "about everything. This week, a thirty-four thousand word transcript of that call hit WeChat.",
+      "words": [
+        {
+          "start": 33.22,
+          "end": 33.36,
+          "text": "about"
+        },
+        {
+          "start": 33.6,
+          "end": 34.0,
+          "text": "everything."
+        },
+        {
+          "start": 34.88,
+          "end": 35.06,
+          "text": "This"
+        },
+        {
+          "start": 35.06,
+          "end": 35.4,
+          "text": "week,"
+        },
+        {
+          "start": 35.52,
+          "end": 35.6,
+          "text": "a"
+        },
+        {
+          "start": 35.76,
+          "end": 36.08,
+          "text": "thirty-four"
+        },
+        {
+          "start": 36.6,
+          "end": 36.7,
+          "text": "thousand"
+        },
+        {
+          "start": 36.94,
+          "end": 37.36,
+          "text": "word"
+        },
+        {
+          "start": 37.36,
+          "end": 37.84,
+          "text": "transcript"
+        },
+        {
+          "start": 37.84,
+          "end": 37.98,
+          "text": "of"
+        },
+        {
+          "start": 37.98,
+          "end": 38.12,
+          "text": "that"
+        },
+        {
+          "start": 38.12,
+          "end": 38.33,
+          "text": "call"
+        },
+        {
+          "start": 38.33,
+          "end": 38.64,
+          "text": "hit"
+        },
+        {
+          "start": 38.78,
+          "end": 39.1,
+          "text": "WeChat."
+        }
+      ]
+    },
+    {
+      "start": 39.82,
+      "end": 43.74,
+      "text": "The original was taken down within a day. Copies are everywhere now.",
+      "words": [
+        {
+          "start": 39.82,
+          "end": 39.92,
+          "text": "The"
+        },
+        {
+          "start": 39.92,
+          "end": 40.33,
+          "text": "original"
+        },
+        {
+          "start": 40.33,
+          "end": 40.5,
+          "text": "was"
+        },
+        {
+          "start": 40.5,
+          "end": 40.78,
+          "text": "taken"
+        },
+        {
+          "start": 40.78,
+          "end": 41.0,
+          "text": "down"
+        },
+        {
+          "start": 41.0,
+          "end": 41.24,
+          "text": "within"
+        },
+        {
+          "start": 41.24,
+          "end": 41.34,
+          "text": "a"
+        },
+        {
+          "start": 41.5,
+          "end": 41.72,
+          "text": "day."
+        },
+        {
+          "start": 42.24,
+          "end": 42.67,
+          "text": "Copies"
+        },
+        {
+          "start": 42.67,
+          "end": 42.84,
+          "text": "are"
+        },
+        {
+          "start": 43.04,
+          "end": 43.34,
+          "text": "everywhere"
+        },
+        {
+          "start": 43.46,
+          "end": 43.74,
+          "text": "now."
+        }
+      ]
+    },
+    {
+      "start": 44.46,
+      "end": 52.62,
+      "text": "Deepseek hasn't confirmed it. That's how leaks work. But the meeting was independently corroborated, and the voice matches those two interviews exactly.",
+      "words": [
+        {
+          "start": 44.46,
+          "end": 44.88,
+          "text": "Deepseek"
+        },
+        {
+          "start": 44.88,
+          "end": 45.22,
+          "text": "hasn't"
+        },
+        {
+          "start": 45.22,
+          "end": 45.66,
+          "text": "confirmed"
+        },
+        {
+          "start": 45.66,
+          "end": 45.94,
+          "text": "it."
+        },
+        {
+          "start": 46.18,
+          "end": 46.34,
+          "text": "That's"
+        },
+        {
+          "start": 46.34,
+          "end": 46.46,
+          "text": "how"
+        },
+        {
+          "start": 46.46,
+          "end": 46.66,
+          "text": "leaks"
+        },
+        {
+          "start": 46.66,
+          "end": 47.2,
+          "text": "work."
+        },
+        {
+          "start": 47.62,
+          "end": 47.74,
+          "text": "But"
+        },
+        {
+          "start": 47.74,
+          "end": 47.84,
+          "text": "the"
+        },
+        {
+          "start": 47.84,
+          "end": 48.2,
+          "text": "meeting"
+        },
+        {
+          "start": 48.2,
+          "end": 48.36,
+          "text": "was"
+        },
+        {
+          "start": 48.84,
+          "end": 49.1,
+          "text": "independently"
+        },
+        {
+          "start": 49.32,
+          "end": 49.88,
+          "text": "corroborated,"
+        },
+        {
+          "start": 50.26,
+          "end": 50.36,
+          "text": "and"
+        },
+        {
+          "start": 50.36,
+          "end": 50.47,
+          "text": "the"
+        },
+        {
+          "start": 50.47,
+          "end": 50.72,
+          "text": "voice"
+        },
+        {
+          "start": 50.72,
+          "end": 51.3,
+          "text": "matches"
+        },
+        {
+          "start": 51.3,
+          "end": 51.48,
+          "text": "those"
+        },
+        {
+          "start": 51.48,
+          "end": 51.68,
+          "text": "two"
+        },
+        {
+          "start": 51.86,
+          "end": 52.16,
+          "text": "interviews"
+        },
+        {
+          "start": 52.48,
+          "end": 52.62,
+          "text": "exactly."
+        }
+      ]
+    },
+    {
+      "start": 53.52,
+      "end": 57.2,
+      "text": "It's the longest unguarded look at this man anyone has ever had.",
+      "words": [
+        {
+          "start": 53.52,
+          "end": 53.68,
+          "text": "It's"
+        },
+        {
+          "start": 53.68,
+          "end": 53.8,
+          "text": "the"
+        },
+        {
+          "start": 53.8,
+          "end": 54.28,
+          "text": "longest"
+        },
+        {
+          "start": 54.28,
+          "end": 55.07,
+          "text": "unguarded"
+        },
+        {
+          "start": 55.07,
+          "end": 55.24,
+          "text": "look"
+        },
+        {
+          "start": 55.24,
+          "end": 55.34,
+          "text": "at"
+        },
+        {
+          "start": 55.36,
+          "end": 55.5,
+          "text": "this"
+        },
+        {
+          "start": 55.5,
+          "end": 55.7,
+          "text": "man"
+        },
+        {
+          "start": 55.96,
+          "end": 56.14,
+          "text": "anyone"
+        },
+        {
+          "start": 56.32,
+          "end": 56.48,
+          "text": "has"
+        },
+        {
+          "start": 56.64,
+          "end": 56.86,
+          "text": "ever"
+        },
+        {
+          "start": 56.86,
+          "end": 57.2,
+          "text": "had."
+        }
+      ]
+    },
+    {
+      "start": 57.76,
+      "end": 61.84,
+      "text": "So who is he? The public record is thin but telling.",
+      "words": [
+        {
+          "start": 57.76,
+          "end": 58.02,
+          "text": "So"
+        },
+        {
+          "start": 58.22,
+          "end": 58.4,
+          "text": "who"
+        },
+        {
+          "start": 58.4,
+          "end": 58.6,
+          "text": "is"
+        },
+        {
+          "start": 58.6,
+          "end": 58.86,
+          "text": "he?"
+        },
+        {
+          "start": 59.5,
+          "end": 59.63,
+          "text": "The"
+        },
+        {
+          "start": 59.63,
+          "end": 59.96,
+          "text": "public"
+        },
+        {
+          "start": 59.96,
+          "end": 60.38,
+          "text": "record"
+        },
+        {
+          "start": 60.38,
+          "end": 60.56,
+          "text": "is"
+        },
+        {
+          "start": 60.7,
+          "end": 60.98,
+          "text": "thin"
+        },
+        {
+          "start": 61.3,
+          "end": 61.42,
+          "text": "but"
+        },
+        {
+          "start": 61.56,
+          "end": 61.84,
+          "text": "telling."
+        }
+      ]
+    },
+    {
+      "start": 62.58,
+      "end": 70.44,
+      "text": "In two thousand and two, he got the top score on the college entrance exam in his home city of Xinjiang and went to Zhejiang University for engineering.",
+      "words": [
+        {
+          "start": 62.58,
+          "end": 62.72,
+          "text": "In"
+        },
+        {
+          "start": 62.72,
+          "end": 62.8,
+          "text": "two"
+        },
+        {
+          "start": 62.92,
+          "end": 63.04,
+          "text": "thousand"
+        },
+        {
+          "start": 63.04,
+          "end": 63.29,
+          "text": "and"
+        },
+        {
+          "start": 63.29,
+          "end": 63.62,
+          "text": "two,"
+        },
+        {
+          "start": 63.62,
+          "end": 63.74,
+          "text": "he"
+        },
+        {
+          "start": 63.74,
+          "end": 63.9,
+          "text": "got"
+        },
+        {
+          "start": 63.9,
+          "end": 64.03,
+          "text": "the"
+        },
+        {
+          "start": 64.03,
+          "end": 64.27,
+          "text": "top"
+        },
+        {
+          "start": 64.27,
+          "end": 64.58,
+          "text": "score"
+        },
+        {
+          "start": 64.74,
+          "end": 64.84,
+          "text": "on"
+        },
+        {
+          "start": 64.84,
+          "end": 64.93,
+          "text": "the"
+        },
+        {
+          "start": 64.93,
+          "end": 65.34,
+          "text": "college"
+        },
+        {
+          "start": 65.34,
+          "end": 65.68,
+          "text": "entrance"
+        },
+        {
+          "start": 65.68,
+          "end": 66.15,
+          "text": "exam"
+        },
+        {
+          "start": 66.15,
+          "end": 66.26,
+          "text": "in"
+        },
+        {
+          "start": 66.26,
+          "end": 66.38,
+          "text": "his"
+        },
+        {
+          "start": 66.38,
+          "end": 66.58,
+          "text": "home"
+        },
+        {
+          "start": 66.58,
+          "end": 66.96,
+          "text": "city"
+        },
+        {
+          "start": 66.96,
+          "end": 67.06,
+          "text": "of"
+        },
+        {
+          "start": 67.06,
+          "end": 67.6,
+          "text": "Xinjiang"
+        },
+        {
+          "start": 68.14,
+          "end": 68.24,
+          "text": "and"
+        },
+        {
+          "start": 68.24,
+          "end": 68.38,
+          "text": "went"
+        },
+        {
+          "start": 68.38,
+          "end": 68.5,
+          "text": "to"
+        },
+        {
+          "start": 68.5,
+          "end": 68.78,
+          "text": "Zhejiang"
+        },
+        {
+          "start": 68.78,
+          "end": 69.4,
+          "text": "University"
+        },
+        {
+          "start": 69.7,
+          "end": 69.86,
+          "text": "for"
+        },
+        {
+          "start": 69.86,
+          "end": 70.44,
+          "text": "engineering."
+        }
+      ]
+    },
+    {
+      "start": 71.08,
+      "end": 78.36,
+      "text": "Then he founded High Flyer, a quant fund that trades the markets with machine learning and built it into one of China's biggest.",
+      "words": [
+        {
+          "start": 71.08,
+          "end": 71.28,
+          "text": "Then"
+        },
+        {
+          "start": 71.28,
+          "end": 71.5,
+          "text": "he"
+        },
+        {
+          "start": 71.5,
+          "end": 71.85,
+          "text": "founded"
+        },
+        {
+          "start": 71.85,
+          "end": 72.25,
+          "text": "High"
+        },
+        {
+          "start": 72.25,
+          "end": 72.68,
+          "text": "Flyer,"
+        },
+        {
+          "start": 72.98,
+          "end": 73.04,
+          "text": "a"
+        },
+        {
+          "start": 73.14,
+          "end": 73.37,
+          "text": "quant"
+        },
+        {
+          "start": 73.37,
+          "end": 73.58,
+          "text": "fund"
+        },
+        {
+          "start": 73.82,
+          "end": 73.92,
+          "text": "that"
+        },
+        {
+          "start": 73.92,
+          "end": 74.31,
+          "text": "trades"
+        },
+        {
+          "start": 74.31,
+          "end": 74.38,
+          "text": "the"
+        },
+        {
+          "start": 74.38,
+          "end": 74.89,
+          "text": "markets"
+        },
+        {
+          "start": 74.89,
+          "end": 75.02,
+          "text": "with"
+        },
+        {
+          "start": 75.02,
+          "end": 75.32,
+          "text": "machine"
+        },
+        {
+          "start": 75.44,
+          "end": 75.8,
+          "text": "learning"
+        },
+        {
+          "start": 76.2,
+          "end": 76.3,
+          "text": "and"
+        },
+        {
+          "start": 76.4,
+          "end": 76.62,
+          "text": "built"
+        },
+        {
+          "start": 76.62,
+          "end": 76.76,
+          "text": "it"
+        },
+        {
+          "start": 76.76,
+          "end": 76.98,
+          "text": "into"
+        },
+        {
+          "start": 76.98,
+          "end": 77.14,
+          "text": "one"
+        },
+        {
+          "start": 77.14,
+          "end": 77.27,
+          "text": "of"
+        },
+        {
+          "start": 77.27,
+          "end": 77.78,
+          "text": "China's"
+        },
+        {
+          "start": 77.92,
+          "end": 78.36,
+          "text": "biggest."
+        }
+      ]
+    },
+    {
+      "start": 79.06,
+      "end": 83.56,
+      "text": "Along the way, the fund kept buying GPUs long before anyone knew what for.",
+      "words": [
+        {
+          "start": 79.06,
+          "end": 79.26,
+          "text": "Along"
+        },
+        {
+          "start": 79.26,
+          "end": 79.38,
+          "text": "the"
+        },
+        {
+          "start": 79.38,
+          "end": 79.77,
+          "text": "way,"
+        },
+        {
+          "start": 79.77,
+          "end": 79.9,
+          "text": "the"
+        },
+        {
+          "start": 79.9,
+          "end": 80.13,
+          "text": "fund"
+        },
+        {
+          "start": 80.13,
+          "end": 80.32,
+          "text": "kept"
+        },
+        {
+          "start": 80.42,
+          "end": 80.73,
+          "text": "buying"
+        },
+        {
+          "start": 80.73,
+          "end": 80.98,
+          "text": "GPUs"
+        },
+        {
+          "start": 82.04,
+          "end": 82.18,
+          "text": "long"
+        },
+        {
+          "start": 82.28,
+          "end": 82.48,
+          "text": "before"
+        },
+        {
+          "start": 82.6,
+          "end": 82.95,
+          "text": "anyone"
+        },
+        {
+          "start": 82.95,
+          "end": 83.18,
+          "text": "knew"
+        },
+        {
+          "start": 83.18,
+          "end": 83.35,
+          "text": "what"
+        },
+        {
+          "start": 83.35,
+          "end": 83.56,
+          "text": "for."
+        }
+      ]
+    },
+    {
+      "start": 84.3,
+      "end": 90.26,
+      "text": "A hundred cards in twenty fifteen, a thousand in twenty nineteen, ten thousand by twenty twenty-one.",
+      "words": [
+        {
+          "start": 84.3,
+          "end": 84.38,
+          "text": "A"
+        },
+        {
+          "start": 84.38,
+          "end": 84.57,
+          "text": "hundred"
+        },
+        {
+          "start": 84.57,
+          "end": 85.12,
+          "text": "cards"
+        },
+        {
+          "start": 85.12,
+          "end": 85.26,
+          "text": "in"
+        },
+        {
+          "start": 85.26,
+          "end": 85.42,
+          "text": "twenty"
+        },
+        {
+          "start": 85.42,
+          "end": 85.82,
+          "text": "fifteen,"
+        },
+        {
+          "start": 86.38,
+          "end": 86.42,
+          "text": "a"
+        },
+        {
+          "start": 86.58,
+          "end": 86.94,
+          "text": "thousand"
+        },
+        {
+          "start": 87.08,
+          "end": 87.22,
+          "text": "in"
+        },
+        {
+          "start": 87.22,
+          "end": 87.39,
+          "text": "twenty"
+        },
+        {
+          "start": 87.39,
+          "end": 87.7,
+          "text": "nineteen,"
+        },
+        {
+          "start": 88.4,
+          "end": 88.54,
+          "text": "ten"
+        },
+        {
+          "start": 88.7,
+          "end": 89.04,
+          "text": "thousand"
+        },
+        {
+          "start": 89.18,
+          "end": 89.36,
+          "text": "by"
+        },
+        {
+          "start": 89.36,
+          "end": 89.54,
+          "text": "twenty"
+        },
+        {
+          "start": 89.54,
+          "end": 90.26,
+          "text": "twenty-one."
+        }
+      ]
+    },
+    {
+      "start": 90.92,
+      "end": 96.28,
+      "text": "He says it was curiosity. In twenty twenty-three, the research team became DeepSeek.",
+      "words": [
+        {
+          "start": 90.92,
+          "end": 91.04,
+          "text": "He"
+        },
+        {
+          "start": 91.04,
+          "end": 91.38,
+          "text": "says"
+        },
+        {
+          "start": 91.38,
+          "end": 91.54,
+          "text": "it"
+        },
+        {
+          "start": 91.54,
+          "end": 91.72,
+          "text": "was"
+        },
+        {
+          "start": 91.72,
+          "end": 92.42,
+          "text": "curiosity."
+        },
+        {
+          "start": 93.12,
+          "end": 93.22,
+          "text": "In"
+        },
+        {
+          "start": 93.22,
+          "end": 93.38,
+          "text": "twenty"
+        },
+        {
+          "start": 93.38,
+          "end": 94.0,
+          "text": "twenty-three,"
+        },
+        {
+          "start": 94.5,
+          "end": 94.58,
+          "text": "the"
+        },
+        {
+          "start": 94.58,
+          "end": 94.95,
+          "text": "research"
+        },
+        {
+          "start": 94.95,
+          "end": 95.16,
+          "text": "team"
+        },
+        {
+          "start": 95.3,
+          "end": 95.56,
+          "text": "became"
+        },
+        {
+          "start": 96.14,
+          "end": 96.28,
+          "text": "DeepSeek."
+        }
+      ]
+    },
+    {
+      "start": 97.2,
+      "end": 104.62,
+      "text": "That path should sound familiar. Jeff Bezos spent four years at a quant fund, D E Shaw, before leaving to start Amazon.",
+      "words": [
+        {
+          "start": 97.2,
+          "end": 97.43,
+          "text": "That"
+        },
+        {
+          "start": 97.43,
+          "end": 97.74,
+          "text": "path"
+        },
+        {
+          "start": 97.74,
+          "end": 97.96,
+          "text": "should"
+        },
+        {
+          "start": 97.96,
+          "end": 98.26,
+          "text": "sound"
+        },
+        {
+          "start": 98.26,
+          "end": 98.8,
+          "text": "familiar."
+        },
+        {
+          "start": 99.32,
+          "end": 99.44,
+          "text": "Jeff"
+        },
+        {
+          "start": 99.44,
+          "end": 99.96,
+          "text": "Bezos"
+        },
+        {
+          "start": 99.96,
+          "end": 100.28,
+          "text": "spent"
+        },
+        {
+          "start": 100.28,
+          "end": 100.54,
+          "text": "four"
+        },
+        {
+          "start": 100.64,
+          "end": 101.04,
+          "text": "years"
+        },
+        {
+          "start": 101.04,
+          "end": 101.18,
+          "text": "at"
+        },
+        {
+          "start": 101.18,
+          "end": 101.22,
+          "text": "a"
+        },
+        {
+          "start": 101.22,
+          "end": 101.45,
+          "text": "quant"
+        },
+        {
+          "start": 101.45,
+          "end": 101.66,
+          "text": "fund,"
+        },
+        {
+          "start": 102.08,
+          "end": 102.18,
+          "text": "D"
+        },
+        {
+          "start": 102.32,
+          "end": 102.41,
+          "text": "E"
+        },
+        {
+          "start": 102.41,
+          "end": 102.7,
+          "text": "Shaw,"
+        },
+        {
+          "start": 103.22,
+          "end": 103.39,
+          "text": "before"
+        },
+        {
+          "start": 103.39,
+          "end": 103.81,
+          "text": "leaving"
+        },
+        {
+          "start": 103.81,
+          "end": 103.98,
+          "text": "to"
+        },
+        {
+          "start": 103.98,
+          "end": 104.22,
+          "text": "start"
+        },
+        {
+          "start": 104.22,
+          "end": 104.62,
+          "text": "Amazon."
+        }
+      ]
+    },
+    {
+      "start": 105.26,
+      "end": 108.7,
+      "text": "Liang went from a quant fund to AI. And it shows.",
+      "words": [
+        {
+          "start": 105.26,
+          "end": 105.48,
+          "text": "Liang"
+        },
+        {
+          "start": 105.48,
+          "end": 105.9,
+          "text": "went"
+        },
+        {
+          "start": 105.9,
+          "end": 106.08,
+          "text": "from"
+        },
+        {
+          "start": 106.08,
+          "end": 106.16,
+          "text": "a"
+        },
+        {
+          "start": 106.16,
+          "end": 106.34,
+          "text": "quant"
+        },
+        {
+          "start": 106.44,
+          "end": 106.64,
+          "text": "fund"
+        },
+        {
+          "start": 106.98,
+          "end": 107.06,
+          "text": "to"
+        },
+        {
+          "start": 107.06,
+          "end": 107.46,
+          "text": "AI."
+        },
+        {
+          "start": 107.96,
+          "end": 108.08,
+          "text": "And"
+        },
+        {
+          "start": 108.08,
+          "end": 108.16,
+          "text": "it"
+        },
+        {
+          "start": 108.16,
+          "end": 108.7,
+          "text": "shows."
+        }
+      ]
+    },
+    {
+      "start": 109.08,
+      "end": 113.18,
+      "text": "In this transcript, he talks about AI the way a retailer talks about goods.",
+      "words": [
+        {
+          "start": 109.08,
+          "end": 109.18,
+          "text": "In"
+        },
+        {
+          "start": 109.18,
+          "end": 109.35,
+          "text": "this"
+        },
+        {
+          "start": 109.35,
+          "end": 110.0,
+          "text": "transcript,"
+        },
+        {
+          "start": 110.0,
+          "end": 110.14,
+          "text": "he"
+        },
+        {
+          "start": 110.14,
+          "end": 110.42,
+          "text": "talks"
+        },
+        {
+          "start": 110.42,
+          "end": 110.64,
+          "text": "about"
+        },
+        {
+          "start": 110.64,
+          "end": 111.09,
+          "text": "AI"
+        },
+        {
+          "start": 111.09,
+          "end": 111.26,
+          "text": "the"
+        },
+        {
+          "start": 111.26,
+          "end": 111.44,
+          "text": "way"
+        },
+        {
+          "start": 111.44,
+          "end": 111.6,
+          "text": "a"
+        },
+        {
+          "start": 111.6,
+          "end": 112.2,
+          "text": "retailer"
+        },
+        {
+          "start": 112.3,
+          "end": 112.52,
+          "text": "talks"
+        },
+        {
+          "start": 112.52,
+          "end": 112.73,
+          "text": "about"
+        },
+        {
+          "start": 112.73,
+          "end": 113.18,
+          "text": "goods."
+        }
+      ]
+    },
+    {
+      "start": 113.54,
+      "end": 120.18,
+      "text": "Cost, price, margin, discipline. Everything Deepsea does makes more sense heard in that language.",
+      "words": [
+        {
+          "start": 113.54,
+          "end": 114.06,
+          "text": "Cost,"
+        },
+        {
+          "start": 114.18,
+          "end": 114.72,
+          "text": "price,"
+        },
+        {
+          "start": 114.9,
+          "end": 115.46,
+          "text": "margin,"
+        },
+        {
+          "start": 115.74,
+          "end": 116.3,
+          "text": "discipline."
+        },
+        {
+          "start": 116.88,
+          "end": 117.32,
+          "text": "Everything"
+        },
+        {
+          "start": 117.32,
+          "end": 117.72,
+          "text": "Deepsea"
+        },
+        {
+          "start": 117.84,
+          "end": 118.1,
+          "text": "does"
+        },
+        {
+          "start": 118.1,
+          "end": 118.31,
+          "text": "makes"
+        },
+        {
+          "start": 118.31,
+          "end": 118.59,
+          "text": "more"
+        },
+        {
+          "start": 118.59,
+          "end": 118.86,
+          "text": "sense"
+        },
+        {
+          "start": 119.02,
+          "end": 119.3,
+          "text": "heard"
+        },
+        {
+          "start": 119.3,
+          "end": 119.46,
+          "text": "in"
+        },
+        {
+          "start": 119.46,
+          "end": 119.62,
+          "text": "that"
+        },
+        {
+          "start": 119.62,
+          "end": 120.18,
+          "text": "language."
+        }
+      ]
+    },
+    {
+      "start": 120.48,
+      "end": 124.84,
+      "text": "So let's go through it. Start with the pricing rule because it's one sentence.",
+      "words": [
+        {
+          "start": 120.48,
+          "end": 120.64,
+          "text": "So"
+        },
+        {
+          "start": 120.64,
+          "end": 120.9,
+          "text": "let's"
+        },
+        {
+          "start": 120.9,
+          "end": 121.02,
+          "text": "go"
+        },
+        {
+          "start": 121.02,
+          "end": 121.25,
+          "text": "through"
+        },
+        {
+          "start": 121.25,
+          "end": 121.38,
+          "text": "it."
+        },
+        {
+          "start": 122.0,
+          "end": 122.26,
+          "text": "Start"
+        },
+        {
+          "start": 122.44,
+          "end": 122.54,
+          "text": "with"
+        },
+        {
+          "start": 122.54,
+          "end": 122.64,
+          "text": "the"
+        },
+        {
+          "start": 122.76,
+          "end": 123.18,
+          "text": "pricing"
+        },
+        {
+          "start": 123.18,
+          "end": 123.36,
+          "text": "rule"
+        },
+        {
+          "start": 123.66,
+          "end": 123.82,
+          "text": "because"
+        },
+        {
+          "start": 123.82,
+          "end": 123.98,
+          "text": "it's"
+        },
+        {
+          "start": 124.08,
+          "end": 124.28,
+          "text": "one"
+        },
+        {
+          "start": 124.28,
+          "end": 124.84,
+          "text": "sentence."
+        }
+      ]
+    },
+    {
+      "start": 125.3,
+      "end": 129.56,
+      "text": "Buy a batch of servers, price the API so they pay for themselves in ten months.",
+      "words": [
+        {
+          "start": 125.3,
+          "end": 125.46,
+          "text": "Buy"
+        },
+        {
+          "start": 125.46,
+          "end": 125.54,
+          "text": "a"
+        },
+        {
+          "start": 125.54,
+          "end": 125.74,
+          "text": "batch"
+        },
+        {
+          "start": 125.74,
+          "end": 125.82,
+          "text": "of"
+        },
+        {
+          "start": 125.82,
+          "end": 126.28,
+          "text": "servers,"
+        },
+        {
+          "start": 126.64,
+          "end": 126.9,
+          "text": "price"
+        },
+        {
+          "start": 126.9,
+          "end": 127.0,
+          "text": "the"
+        },
+        {
+          "start": 127.0,
+          "end": 127.14,
+          "text": "API"
+        },
+        {
+          "start": 127.54,
+          "end": 127.7,
+          "text": "so"
+        },
+        {
+          "start": 127.7,
+          "end": 127.82,
+          "text": "they"
+        },
+        {
+          "start": 127.82,
+          "end": 128.12,
+          "text": "pay"
+        },
+        {
+          "start": 128.12,
+          "end": 128.24,
+          "text": "for"
+        },
+        {
+          "start": 128.24,
+          "end": 128.56,
+          "text": "themselves"
+        },
+        {
+          "start": 128.72,
+          "end": 128.86,
+          "text": "in"
+        },
+        {
+          "start": 128.86,
+          "end": 129.12,
+          "text": "ten"
+        },
+        {
+          "start": 129.12,
+          "end": 129.56,
+          "text": "months."
+        }
+      ]
+    },
+    {
+      "start": 130.04,
+      "end": 136.54,
+      "text": "Servers run three to five years, so ten month payback works out to roughly six times the hardware cost over a server's life.",
+      "words": [
+        {
+          "start": 130.04,
+          "end": 130.32,
+          "text": "Servers"
+        },
+        {
+          "start": 130.32,
+          "end": 130.56,
+          "text": "run"
+        },
+        {
+          "start": 130.56,
+          "end": 130.78,
+          "text": "three"
+        },
+        {
+          "start": 130.78,
+          "end": 130.9,
+          "text": "to"
+        },
+        {
+          "start": 130.9,
+          "end": 131.09,
+          "text": "five"
+        },
+        {
+          "start": 131.09,
+          "end": 131.48,
+          "text": "years,"
+        },
+        {
+          "start": 131.62,
+          "end": 131.81,
+          "text": "so"
+        },
+        {
+          "start": 131.81,
+          "end": 132.06,
+          "text": "ten"
+        },
+        {
+          "start": 132.06,
+          "end": 132.26,
+          "text": "month"
+        },
+        {
+          "start": 132.26,
+          "end": 132.78,
+          "text": "payback"
+        },
+        {
+          "start": 132.78,
+          "end": 133.06,
+          "text": "works"
+        },
+        {
+          "start": 133.06,
+          "end": 133.3,
+          "text": "out"
+        },
+        {
+          "start": 133.32,
+          "end": 133.46,
+          "text": "to"
+        },
+        {
+          "start": 133.46,
+          "end": 133.66,
+          "text": "roughly"
+        },
+        {
+          "start": 133.98,
+          "end": 134.1,
+          "text": "six"
+        },
+        {
+          "start": 134.22,
+          "end": 134.44,
+          "text": "times"
+        },
+        {
+          "start": 134.66,
+          "end": 134.8,
+          "text": "the"
+        },
+        {
+          "start": 134.8,
+          "end": 135.2,
+          "text": "hardware"
+        },
+        {
+          "start": 135.2,
+          "end": 135.54,
+          "text": "cost"
+        },
+        {
+          "start": 135.54,
+          "end": 135.78,
+          "text": "over"
+        },
+        {
+          "start": 135.78,
+          "end": 135.88,
+          "text": "a"
+        },
+        {
+          "start": 135.88,
+          "end": 136.18,
+          "text": "server's"
+        },
+        {
+          "start": 136.18,
+          "end": 136.54,
+          "text": "life."
+        }
+      ]
+    },
+    {
+      "start": 137.12,
+      "end": 141.68,
+      "text": "His words, we only earn sixfold profit. Someone on the call pushed back.",
+      "words": [
+        {
+          "start": 137.12,
+          "end": 137.28,
+          "text": "His"
+        },
+        {
+          "start": 137.28,
+          "end": 137.72,
+          "text": "words,"
+        },
+        {
+          "start": 137.84,
+          "end": 137.98,
+          "text": "we"
+        },
+        {
+          "start": 137.98,
+          "end": 138.27,
+          "text": "only"
+        },
+        {
+          "start": 138.27,
+          "end": 138.72,
+          "text": "earn"
+        },
+        {
+          "start": 138.72,
+          "end": 139.42,
+          "text": "sixfold"
+        },
+        {
+          "start": 139.42,
+          "end": 139.84,
+          "text": "profit."
+        },
+        {
+          "start": 140.46,
+          "end": 140.72,
+          "text": "Someone"
+        },
+        {
+          "start": 140.72,
+          "end": 140.82,
+          "text": "on"
+        },
+        {
+          "start": 140.82,
+          "end": 140.88,
+          "text": "the"
+        },
+        {
+          "start": 140.88,
+          "end": 141.08,
+          "text": "call"
+        },
+        {
+          "start": 141.08,
+          "end": 141.34,
+          "text": "pushed"
+        },
+        {
+          "start": 141.34,
+          "end": 141.68,
+          "text": "back."
+        }
+      ]
+    },
+    {
+      "start": 141.98,
+      "end": 149.52,
+      "text": "That's too profitable. He agreed and said there's room to cut, but at this price demand no longer moves, so he leaves it.",
+      "words": [
+        {
+          "start": 141.98,
+          "end": 142.29,
+          "text": "That's"
+        },
+        {
+          "start": 142.29,
+          "end": 142.52,
+          "text": "too"
+        },
+        {
+          "start": 142.7,
+          "end": 143.14,
+          "text": "profitable."
+        },
+        {
+          "start": 143.8,
+          "end": 143.94,
+          "text": "He"
+        },
+        {
+          "start": 143.94,
+          "end": 144.4,
+          "text": "agreed"
+        },
+        {
+          "start": 144.56,
+          "end": 144.66,
+          "text": "and"
+        },
+        {
+          "start": 144.66,
+          "end": 144.9,
+          "text": "said"
+        },
+        {
+          "start": 145.02,
+          "end": 145.25,
+          "text": "there's"
+        },
+        {
+          "start": 145.25,
+          "end": 145.5,
+          "text": "room"
+        },
+        {
+          "start": 145.5,
+          "end": 145.64,
+          "text": "to"
+        },
+        {
+          "start": 145.64,
+          "end": 146.1,
+          "text": "cut,"
+        },
+        {
+          "start": 146.46,
+          "end": 146.56,
+          "text": "but"
+        },
+        {
+          "start": 146.56,
+          "end": 146.66,
+          "text": "at"
+        },
+        {
+          "start": 146.66,
+          "end": 146.88,
+          "text": "this"
+        },
+        {
+          "start": 146.88,
+          "end": 147.2,
+          "text": "price"
+        },
+        {
+          "start": 147.2,
+          "end": 147.42,
+          "text": "demand"
+        },
+        {
+          "start": 147.74,
+          "end": 148.0,
+          "text": "no"
+        },
+        {
+          "start": 148.0,
+          "end": 148.3,
+          "text": "longer"
+        },
+        {
+          "start": 148.3,
+          "end": 148.83,
+          "text": "moves,"
+        },
+        {
+          "start": 148.83,
+          "end": 149.0,
+          "text": "so"
+        },
+        {
+          "start": 149.0,
+          "end": 149.08,
+          "text": "he"
+        },
+        {
+          "start": 149.08,
+          "end": 149.32,
+          "text": "leaves"
+        },
+        {
+          "start": 149.32,
+          "end": 149.52,
+          "text": "it."
+        }
+      ]
+    },
+    {
+      "start": 150.12,
+      "end": 155.46,
+      "text": "Same instinct, second story. One of their models launched with a high price, on purpose.",
+      "words": [
+        {
+          "start": 150.12,
+          "end": 150.44,
+          "text": "Same"
+        },
+        {
+          "start": 150.44,
+          "end": 150.94,
+          "text": "instinct,"
+        },
+        {
+          "start": 151.08,
+          "end": 151.42,
+          "text": "second"
+        },
+        {
+          "start": 151.42,
+          "end": 151.94,
+          "text": "story."
+        },
+        {
+          "start": 152.5,
+          "end": 152.66,
+          "text": "One"
+        },
+        {
+          "start": 152.66,
+          "end": 152.74,
+          "text": "of"
+        },
+        {
+          "start": 152.74,
+          "end": 152.9,
+          "text": "their"
+        },
+        {
+          "start": 152.9,
+          "end": 153.24,
+          "text": "models"
+        },
+        {
+          "start": 153.24,
+          "end": 153.62,
+          "text": "launched"
+        },
+        {
+          "start": 153.62,
+          "end": 153.72,
+          "text": "with"
+        },
+        {
+          "start": 153.72,
+          "end": 153.8,
+          "text": "a"
+        },
+        {
+          "start": 153.8,
+          "end": 154.15,
+          "text": "high"
+        },
+        {
+          "start": 154.15,
+          "end": 154.68,
+          "text": "price,"
+        },
+        {
+          "start": 154.68,
+          "end": 154.8,
+          "text": "on"
+        },
+        {
+          "start": 154.9,
+          "end": 155.46,
+          "text": "purpose."
+        }
+      ]
+    },
+    {
+      "start": 155.84,
+      "end": 159.62,
+      "text": "They were worried about too much demand. The team hated it.",
+      "words": [
+        {
+          "start": 155.84,
+          "end": 155.96,
+          "text": "They"
+        },
+        {
+          "start": 155.96,
+          "end": 156.06,
+          "text": "were"
+        },
+        {
+          "start": 156.06,
+          "end": 156.44,
+          "text": "worried"
+        },
+        {
+          "start": 156.44,
+          "end": 156.62,
+          "text": "about"
+        },
+        {
+          "start": 156.74,
+          "end": 156.92,
+          "text": "too"
+        },
+        {
+          "start": 156.92,
+          "end": 157.11,
+          "text": "much"
+        },
+        {
+          "start": 157.11,
+          "end": 157.7,
+          "text": "demand."
+        },
+        {
+          "start": 158.3,
+          "end": 158.4,
+          "text": "The"
+        },
+        {
+          "start": 158.4,
+          "end": 158.64,
+          "text": "team"
+        },
+        {
+          "start": 158.74,
+          "end": 159.34,
+          "text": "hated"
+        },
+        {
+          "start": 159.34,
+          "end": 159.62,
+          "text": "it."
+        }
+      ]
+    },
+    {
+      "start": 160.14,
+      "end": 164.24,
+      "text": "He cut the price to a quarter and the company chat erupted in cheers.",
+      "words": [
+        {
+          "start": 160.14,
+          "end": 160.28,
+          "text": "He"
+        },
+        {
+          "start": 160.28,
+          "end": 160.53,
+          "text": "cut"
+        },
+        {
+          "start": 160.53,
+          "end": 160.65,
+          "text": "the"
+        },
+        {
+          "start": 160.65,
+          "end": 160.94,
+          "text": "price"
+        },
+        {
+          "start": 160.94,
+          "end": 161.04,
+          "text": "to"
+        },
+        {
+          "start": 161.04,
+          "end": 161.15,
+          "text": "a"
+        },
+        {
+          "start": 161.15,
+          "end": 161.64,
+          "text": "quarter"
+        },
+        {
+          "start": 161.98,
+          "end": 162.08,
+          "text": "and"
+        },
+        {
+          "start": 162.08,
+          "end": 162.17,
+          "text": "the"
+        },
+        {
+          "start": 162.17,
+          "end": 162.63,
+          "text": "company"
+        },
+        {
+          "start": 162.63,
+          "end": 162.92,
+          "text": "chat"
+        },
+        {
+          "start": 163.06,
+          "end": 163.64,
+          "text": "erupted"
+        },
+        {
+          "start": 163.64,
+          "end": 163.78,
+          "text": "in"
+        },
+        {
+          "start": 163.78,
+          "end": 164.24,
+          "text": "cheers."
+        }
+      ]
+    },
+    {
+      "start": 164.82,
+      "end": 168.84,
+      "text": "The point of the model for them was people using it, not the revenue line.",
+      "words": [
+        {
+          "start": 164.82,
+          "end": 164.92,
+          "text": "The"
+        },
+        {
+          "start": 164.92,
+          "end": 165.18,
+          "text": "point"
+        },
+        {
+          "start": 165.18,
+          "end": 165.28,
+          "text": "of"
+        },
+        {
+          "start": 165.28,
+          "end": 165.36,
+          "text": "the"
+        },
+        {
+          "start": 165.36,
+          "end": 165.63,
+          "text": "model"
+        },
+        {
+          "start": 165.63,
+          "end": 165.84,
+          "text": "for"
+        },
+        {
+          "start": 165.84,
+          "end": 166.06,
+          "text": "them"
+        },
+        {
+          "start": 166.48,
+          "end": 166.63,
+          "text": "was"
+        },
+        {
+          "start": 166.63,
+          "end": 166.76,
+          "text": "people"
+        },
+        {
+          "start": 166.96,
+          "end": 167.48,
+          "text": "using"
+        },
+        {
+          "start": 167.48,
+          "end": 167.7,
+          "text": "it,"
+        },
+        {
+          "start": 168.0,
+          "end": 168.15,
+          "text": "not"
+        },
+        {
+          "start": 168.15,
+          "end": 168.28,
+          "text": "the"
+        },
+        {
+          "start": 168.28,
+          "end": 168.66,
+          "text": "revenue"
+        },
+        {
+          "start": 168.66,
+          "end": 168.84,
+          "text": "line."
+        }
+      ]
+    },
+    {
+      "start": 169.58,
+      "end": 178.86,
+      "text": "This is a known playbook. Costco has capped its markup at about fourteen percent for decades, and the cap is exactly why people trust the store.",
+      "words": [
+        {
+          "start": 169.58,
+          "end": 169.86,
+          "text": "This"
+        },
+        {
+          "start": 169.86,
+          "end": 170.08,
+          "text": "is"
+        },
+        {
+          "start": 170.08,
+          "end": 170.22,
+          "text": "a"
+        },
+        {
+          "start": 170.22,
+          "end": 170.42,
+          "text": "known"
+        },
+        {
+          "start": 170.62,
+          "end": 171.28,
+          "text": "playbook."
+        },
+        {
+          "start": 171.68,
+          "end": 172.06,
+          "text": "Costco"
+        },
+        {
+          "start": 172.16,
+          "end": 172.38,
+          "text": "has"
+        },
+        {
+          "start": 172.38,
+          "end": 172.54,
+          "text": "capped"
+        },
+        {
+          "start": 172.7,
+          "end": 172.82,
+          "text": "its"
+        },
+        {
+          "start": 172.82,
+          "end": 173.32,
+          "text": "markup"
+        },
+        {
+          "start": 173.32,
+          "end": 173.44,
+          "text": "at"
+        },
+        {
+          "start": 173.44,
+          "end": 173.62,
+          "text": "about"
+        },
+        {
+          "start": 174.08,
+          "end": 174.12,
+          "text": "fourteen"
+        },
+        {
+          "start": 174.26,
+          "end": 174.58,
+          "text": "percent"
+        },
+        {
+          "start": 174.78,
+          "end": 174.9,
+          "text": "for"
+        },
+        {
+          "start": 175.1,
+          "end": 175.42,
+          "text": "decades,"
+        },
+        {
+          "start": 175.98,
+          "end": 176.06,
+          "text": "and"
+        },
+        {
+          "start": 176.06,
+          "end": 176.17,
+          "text": "the"
+        },
+        {
+          "start": 176.17,
+          "end": 176.4,
+          "text": "cap"
+        },
+        {
+          "start": 176.56,
+          "end": 176.68,
+          "text": "is"
+        },
+        {
+          "start": 176.9,
+          "end": 177.04,
+          "text": "exactly"
+        },
+        {
+          "start": 177.36,
+          "end": 177.58,
+          "text": "why"
+        },
+        {
+          "start": 177.58,
+          "end": 177.9,
+          "text": "people"
+        },
+        {
+          "start": 178.08,
+          "end": 178.36,
+          "text": "trust"
+        },
+        {
+          "start": 178.46,
+          "end": 178.52,
+          "text": "the"
+        },
+        {
+          "start": 178.52,
+          "end": 178.86,
+          "text": "store."
+        }
+      ]
+    },
+    {
+      "start": 179.46,
+      "end": 186.08,
+      "text": "Keep margins low on purpose, and anyone who wants to undercut you has to live in territory you've already made your home.",
+      "words": [
+        {
+          "start": 179.46,
+          "end": 179.63,
+          "text": "Keep"
+        },
+        {
+          "start": 179.63,
+          "end": 180.04,
+          "text": "margins"
+        },
+        {
+          "start": 180.04,
+          "end": 180.3,
+          "text": "low"
+        },
+        {
+          "start": 180.42,
+          "end": 180.56,
+          "text": "on"
+        },
+        {
+          "start": 180.7,
+          "end": 181.3,
+          "text": "purpose,"
+        },
+        {
+          "start": 181.52,
+          "end": 181.66,
+          "text": "and"
+        },
+        {
+          "start": 181.66,
+          "end": 181.88,
+          "text": "anyone"
+        },
+        {
+          "start": 182.04,
+          "end": 182.12,
+          "text": "who"
+        },
+        {
+          "start": 182.12,
+          "end": 182.36,
+          "text": "wants"
+        },
+        {
+          "start": 182.36,
+          "end": 182.49,
+          "text": "to"
+        },
+        {
+          "start": 182.49,
+          "end": 182.94,
+          "text": "undercut"
+        },
+        {
+          "start": 182.94,
+          "end": 183.1,
+          "text": "you"
+        },
+        {
+          "start": 183.26,
+          "end": 183.46,
+          "text": "has"
+        },
+        {
+          "start": 183.46,
+          "end": 183.62,
+          "text": "to"
+        },
+        {
+          "start": 183.62,
+          "end": 183.77,
+          "text": "live"
+        },
+        {
+          "start": 183.77,
+          "end": 183.9,
+          "text": "in"
+        },
+        {
+          "start": 183.9,
+          "end": 184.34,
+          "text": "territory"
+        },
+        {
+          "start": 184.56,
+          "end": 184.72,
+          "text": "you've"
+        },
+        {
+          "start": 185.06,
+          "end": 185.3,
+          "text": "already"
+        },
+        {
+          "start": 185.3,
+          "end": 185.5,
+          "text": "made"
+        },
+        {
+          "start": 185.62,
+          "end": 185.74,
+          "text": "your"
+        },
+        {
+          "start": 185.74,
+          "end": 186.08,
+          "text": "home."
+        }
+      ]
+    },
+    {
+      "start": 186.72,
+      "end": 192.34,
+      "text": "DeepSeek is running that playbook on AI tokens. And the same lens explains open source.",
+      "words": [
+        {
+          "start": 186.72,
+          "end": 187.14,
+          "text": "DeepSeek"
+        },
+        {
+          "start": 187.26,
+          "end": 187.38,
+          "text": "is"
+        },
+        {
+          "start": 187.48,
+          "end": 187.75,
+          "text": "running"
+        },
+        {
+          "start": 187.75,
+          "end": 187.95,
+          "text": "that"
+        },
+        {
+          "start": 187.95,
+          "end": 188.34,
+          "text": "playbook"
+        },
+        {
+          "start": 188.34,
+          "end": 188.65,
+          "text": "on"
+        },
+        {
+          "start": 188.65,
+          "end": 188.8,
+          "text": "AI"
+        },
+        {
+          "start": 188.8,
+          "end": 189.26,
+          "text": "tokens."
+        },
+        {
+          "start": 190.14,
+          "end": 190.26,
+          "text": "And"
+        },
+        {
+          "start": 190.26,
+          "end": 190.38,
+          "text": "the"
+        },
+        {
+          "start": 190.38,
+          "end": 190.7,
+          "text": "same"
+        },
+        {
+          "start": 190.7,
+          "end": 190.88,
+          "text": "lens"
+        },
+        {
+          "start": 191.0,
+          "end": 191.61,
+          "text": "explains"
+        },
+        {
+          "start": 191.61,
+          "end": 191.72,
+          "text": "open"
+        },
+        {
+          "start": 191.92,
+          "end": 192.34,
+          "text": "source."
+        }
+      ]
+    },
+    {
+      "start": 192.84,
+      "end": 198.48,
+      "text": "Giving away the weights doesn't kill the business, he argues, because the weights are the recipe, not the restaurant.",
+      "words": [
+        {
+          "start": 192.84,
+          "end": 193.03,
+          "text": "Giving"
+        },
+        {
+          "start": 193.03,
+          "end": 193.24,
+          "text": "away"
+        },
+        {
+          "start": 193.24,
+          "end": 193.38,
+          "text": "the"
+        },
+        {
+          "start": 193.38,
+          "end": 193.6,
+          "text": "weights"
+        },
+        {
+          "start": 193.74,
+          "end": 194.12,
+          "text": "doesn't"
+        },
+        {
+          "start": 194.26,
+          "end": 194.52,
+          "text": "kill"
+        },
+        {
+          "start": 194.52,
+          "end": 194.64,
+          "text": "the"
+        },
+        {
+          "start": 194.64,
+          "end": 195.14,
+          "text": "business,"
+        },
+        {
+          "start": 195.14,
+          "end": 195.2,
+          "text": "he"
+        },
+        {
+          "start": 195.2,
+          "end": 195.74,
+          "text": "argues,"
+        },
+        {
+          "start": 195.92,
+          "end": 196.12,
+          "text": "because"
+        },
+        {
+          "start": 196.12,
+          "end": 196.26,
+          "text": "the"
+        },
+        {
+          "start": 196.26,
+          "end": 196.65,
+          "text": "weights"
+        },
+        {
+          "start": 196.65,
+          "end": 196.78,
+          "text": "are"
+        },
+        {
+          "start": 196.78,
+          "end": 196.84,
+          "text": "the"
+        },
+        {
+          "start": 196.98,
+          "end": 197.38,
+          "text": "recipe,"
+        },
+        {
+          "start": 197.62,
+          "end": 197.76,
+          "text": "not"
+        },
+        {
+          "start": 197.76,
+          "end": 197.91,
+          "text": "the"
+        },
+        {
+          "start": 197.91,
+          "end": 198.48,
+          "text": "restaurant."
+        }
+      ]
+    },
+    {
+      "start": 199.02,
+      "end": 204.1,
+      "text": "Serving a frontier model cheaply is the hard part, the kernels, the clusters, the utilization.",
+      "words": [
+        {
+          "start": 199.02,
+          "end": 199.36,
+          "text": "Serving"
+        },
+        {
+          "start": 199.36,
+          "end": 199.48,
+          "text": "a"
+        },
+        {
+          "start": 199.48,
+          "end": 199.92,
+          "text": "frontier"
+        },
+        {
+          "start": 199.92,
+          "end": 200.14,
+          "text": "model"
+        },
+        {
+          "start": 200.14,
+          "end": 200.68,
+          "text": "cheaply"
+        },
+        {
+          "start": 200.88,
+          "end": 201.0,
+          "text": "is"
+        },
+        {
+          "start": 201.0,
+          "end": 201.08,
+          "text": "the"
+        },
+        {
+          "start": 201.08,
+          "end": 201.36,
+          "text": "hard"
+        },
+        {
+          "start": 201.36,
+          "end": 201.74,
+          "text": "part,"
+        },
+        {
+          "start": 201.94,
+          "end": 202.04,
+          "text": "the"
+        },
+        {
+          "start": 202.04,
+          "end": 202.46,
+          "text": "kernels,"
+        },
+        {
+          "start": 202.64,
+          "end": 202.73,
+          "text": "the"
+        },
+        {
+          "start": 202.73,
+          "end": 203.32,
+          "text": "clusters,"
+        },
+        {
+          "start": 203.32,
+          "end": 203.42,
+          "text": "the"
+        },
+        {
+          "start": 203.42,
+          "end": 204.1,
+          "text": "utilization."
+        }
+      ]
+    },
+    {
+      "start": 204.78,
+      "end": 209.54,
+      "text": "Arrival can download the model tomorrow and still serve it at multiples of his cost.",
+      "words": [
+        {
+          "start": 204.78,
+          "end": 205.21,
+          "text": "Arrival"
+        },
+        {
+          "start": 205.21,
+          "end": 205.38,
+          "text": "can"
+        },
+        {
+          "start": 205.38,
+          "end": 205.8,
+          "text": "download"
+        },
+        {
+          "start": 205.9,
+          "end": 205.96,
+          "text": "the"
+        },
+        {
+          "start": 205.96,
+          "end": 206.16,
+          "text": "model"
+        },
+        {
+          "start": 206.16,
+          "end": 206.46,
+          "text": "tomorrow"
+        },
+        {
+          "start": 206.92,
+          "end": 207.02,
+          "text": "and"
+        },
+        {
+          "start": 207.02,
+          "end": 207.3,
+          "text": "still"
+        },
+        {
+          "start": 207.42,
+          "end": 207.66,
+          "text": "serve"
+        },
+        {
+          "start": 207.76,
+          "end": 207.84,
+          "text": "it"
+        },
+        {
+          "start": 207.84,
+          "end": 208.0,
+          "text": "at"
+        },
+        {
+          "start": 208.32,
+          "end": 208.6,
+          "text": "multiples"
+        },
+        {
+          "start": 208.86,
+          "end": 208.96,
+          "text": "of"
+        },
+        {
+          "start": 208.96,
+          "end": 209.16,
+          "text": "his"
+        },
+        {
+          "start": 209.16,
+          "end": 209.54,
+          "text": "cost."
+        }
+      ]
+    },
+    {
+      "start": 210.14,
+      "end": 214.9,
+      "text": "At DeepSeek's price, competing with DeepSeek using DeepSeek's own model loses money.",
+      "words": [
+        {
+          "start": 210.14,
+          "end": 210.22,
+          "text": "At"
+        },
+        {
+          "start": 210.36,
+          "end": 210.81,
+          "text": "DeepSeek's"
+        },
+        {
+          "start": 210.81,
+          "end": 211.22,
+          "text": "price,"
+        },
+        {
+          "start": 211.6,
+          "end": 211.9,
+          "text": "competing"
+        },
+        {
+          "start": 211.9,
+          "end": 212.07,
+          "text": "with"
+        },
+        {
+          "start": 212.07,
+          "end": 212.51,
+          "text": "DeepSeek"
+        },
+        {
+          "start": 212.51,
+          "end": 212.56,
+          "text": "using"
+        },
+        {
+          "start": 212.84,
+          "end": 213.47,
+          "text": "DeepSeek's"
+        },
+        {
+          "start": 213.47,
+          "end": 213.68,
+          "text": "own"
+        },
+        {
+          "start": 213.68,
+          "end": 213.98,
+          "text": "model"
+        },
+        {
+          "start": 214.22,
+          "end": 214.6,
+          "text": "loses"
+        },
+        {
+          "start": 214.6,
+          "end": 214.9,
+          "text": "money."
+        }
+      ]
+    },
+    {
+      "start": 215.58,
+      "end": 218.94,
+      "text": "Open source only threatens you, he says, if you're charging a hundredfold.",
+      "words": [
+        {
+          "start": 215.58,
+          "end": 215.7,
+          "text": "Open"
+        },
+        {
+          "start": 215.7,
+          "end": 215.98,
+          "text": "source"
+        },
+        {
+          "start": 215.98,
+          "end": 216.32,
+          "text": "only"
+        },
+        {
+          "start": 216.5,
+          "end": 216.84,
+          "text": "threatens"
+        },
+        {
+          "start": 216.84,
+          "end": 217.0,
+          "text": "you,"
+        },
+        {
+          "start": 217.0,
+          "end": 217.14,
+          "text": "he"
+        },
+        {
+          "start": 217.14,
+          "end": 217.44,
+          "text": "says,"
+        },
+        {
+          "start": 217.54,
+          "end": 217.62,
+          "text": "if"
+        },
+        {
+          "start": 217.62,
+          "end": 217.78,
+          "text": "you're"
+        },
+        {
+          "start": 217.78,
+          "end": 218.14,
+          "text": "charging"
+        },
+        {
+          "start": 218.28,
+          "end": 218.38,
+          "text": "a"
+        },
+        {
+          "start": 218.38,
+          "end": 218.94,
+          "text": "hundredfold."
+        }
+      ]
+    },
+    {
+      "start": 219.76,
+      "end": 224.84,
+      "text": "He was also direct about the version question. The open model is the deployed model.",
+      "words": [
+        {
+          "start": 219.76,
+          "end": 219.88,
+          "text": "He"
+        },
+        {
+          "start": 219.88,
+          "end": 220.04,
+          "text": "was"
+        },
+        {
+          "start": 220.04,
+          "end": 220.14,
+          "text": "also"
+        },
+        {
+          "start": 220.14,
+          "end": 220.78,
+          "text": "direct"
+        },
+        {
+          "start": 220.98,
+          "end": 221.19,
+          "text": "about"
+        },
+        {
+          "start": 221.19,
+          "end": 221.34,
+          "text": "the"
+        },
+        {
+          "start": 221.34,
+          "end": 221.78,
+          "text": "version"
+        },
+        {
+          "start": 221.78,
+          "end": 222.2,
+          "text": "question."
+        },
+        {
+          "start": 222.82,
+          "end": 222.92,
+          "text": "The"
+        },
+        {
+          "start": 222.92,
+          "end": 223.02,
+          "text": "open"
+        },
+        {
+          "start": 223.12,
+          "end": 223.52,
+          "text": "model"
+        },
+        {
+          "start": 223.68,
+          "end": 223.88,
+          "text": "is"
+        },
+        {
+          "start": 223.88,
+          "end": 224.08,
+          "text": "the"
+        },
+        {
+          "start": 224.08,
+          "end": 224.48,
+          "text": "deployed"
+        },
+        {
+          "start": 224.48,
+          "end": 224.84,
+          "text": "model."
+        }
+      ]
+    },
+    {
+      "start": 225.16,
+      "end": 231.58,
+      "text": "Same weights, not a weaker public release. And he says he wants thousands of companies built on top of DeepSeek.",
+      "words": [
+        {
+          "start": 225.16,
+          "end": 225.42,
+          "text": "Same"
+        },
+        {
+          "start": 225.42,
+          "end": 225.58,
+          "text": "weights,"
+        },
+        {
+          "start": 226.02,
+          "end": 226.16,
+          "text": "not"
+        },
+        {
+          "start": 226.16,
+          "end": 226.26,
+          "text": "a"
+        },
+        {
+          "start": 226.26,
+          "end": 226.51,
+          "text": "weaker"
+        },
+        {
+          "start": 226.51,
+          "end": 227.04,
+          "text": "public"
+        },
+        {
+          "start": 227.04,
+          "end": 227.56,
+          "text": "release."
+        },
+        {
+          "start": 228.1,
+          "end": 228.2,
+          "text": "And"
+        },
+        {
+          "start": 228.2,
+          "end": 228.24,
+          "text": "he"
+        },
+        {
+          "start": 228.24,
+          "end": 228.46,
+          "text": "says"
+        },
+        {
+          "start": 228.46,
+          "end": 228.54,
+          "text": "he"
+        },
+        {
+          "start": 228.54,
+          "end": 228.78,
+          "text": "wants"
+        },
+        {
+          "start": 228.96,
+          "end": 229.12,
+          "text": "thousands"
+        },
+        {
+          "start": 229.48,
+          "end": 229.58,
+          "text": "of"
+        },
+        {
+          "start": 229.58,
+          "end": 229.72,
+          "text": "companies"
+        },
+        {
+          "start": 230.08,
+          "end": 230.36,
+          "text": "built"
+        },
+        {
+          "start": 230.36,
+          "end": 230.48,
+          "text": "on"
+        },
+        {
+          "start": 230.48,
+          "end": 230.72,
+          "text": "top"
+        },
+        {
+          "start": 230.84,
+          "end": 230.98,
+          "text": "of"
+        },
+        {
+          "start": 230.98,
+          "end": 231.58,
+          "text": "DeepSeek."
+        }
+      ]
+    },
+    {
+      "start": 231.98,
+      "end": 235.28,
+      "text": "Each one makes the ecosystem a little more DeepSeek shaped.",
+      "words": [
+        {
+          "start": 231.98,
+          "end": 232.1,
+          "text": "Each"
+        },
+        {
+          "start": 232.1,
+          "end": 232.42,
+          "text": "one"
+        },
+        {
+          "start": 232.42,
+          "end": 232.74,
+          "text": "makes"
+        },
+        {
+          "start": 232.74,
+          "end": 232.84,
+          "text": "the"
+        },
+        {
+          "start": 232.84,
+          "end": 233.26,
+          "text": "ecosystem"
+        },
+        {
+          "start": 233.68,
+          "end": 233.74,
+          "text": "a"
+        },
+        {
+          "start": 233.74,
+          "end": 234.04,
+          "text": "little"
+        },
+        {
+          "start": 234.04,
+          "end": 234.28,
+          "text": "more"
+        },
+        {
+          "start": 234.42,
+          "end": 234.85,
+          "text": "DeepSeek"
+        },
+        {
+          "start": 234.85,
+          "end": 235.28,
+          "text": "shaped."
+        }
+      ]
+    },
+    {
+      "start": 235.92,
+      "end": 239.24,
+      "text": "The same discipline explains what DeepSeek refuses to do.",
+      "words": [
+        {
+          "start": 235.92,
+          "end": 236.04,
+          "text": "The"
+        },
+        {
+          "start": 236.04,
+          "end": 236.28,
+          "text": "same"
+        },
+        {
+          "start": 236.4,
+          "end": 236.93,
+          "text": "discipline"
+        },
+        {
+          "start": 236.93,
+          "end": 237.06,
+          "text": "explains"
+        },
+        {
+          "start": 237.44,
+          "end": 237.58,
+          "text": "what"
+        },
+        {
+          "start": 237.7,
+          "end": 238.1,
+          "text": "DeepSeek"
+        },
+        {
+          "start": 238.1,
+          "end": 238.28,
+          "text": "refuses"
+        },
+        {
+          "start": 238.84,
+          "end": 239.03,
+          "text": "to"
+        },
+        {
+          "start": 239.03,
+          "end": 239.24,
+          "text": "do."
+        }
+      ]
+    },
+    {
+      "start": 239.92,
+      "end": 247.02,
+      "text": "When Rone went viral last year, millions of consumer users showed up overnight, and the company did almost nothing to keep them.",
+      "words": [
+        {
+          "start": 239.92,
+          "end": 240.04,
+          "text": "When"
+        },
+        {
+          "start": 240.04,
+          "end": 240.38,
+          "text": "Rone"
+        },
+        {
+          "start": 240.38,
+          "end": 240.64,
+          "text": "went"
+        },
+        {
+          "start": 240.64,
+          "end": 241.06,
+          "text": "viral"
+        },
+        {
+          "start": 241.06,
+          "end": 241.24,
+          "text": "last"
+        },
+        {
+          "start": 241.38,
+          "end": 241.68,
+          "text": "year,"
+        },
+        {
+          "start": 242.02,
+          "end": 242.5,
+          "text": "millions"
+        },
+        {
+          "start": 242.5,
+          "end": 242.62,
+          "text": "of"
+        },
+        {
+          "start": 242.62,
+          "end": 243.08,
+          "text": "consumer"
+        },
+        {
+          "start": 243.08,
+          "end": 243.42,
+          "text": "users"
+        },
+        {
+          "start": 243.42,
+          "end": 243.64,
+          "text": "showed"
+        },
+        {
+          "start": 243.64,
+          "end": 243.8,
+          "text": "up"
+        },
+        {
+          "start": 243.92,
+          "end": 244.36,
+          "text": "overnight,"
+        },
+        {
+          "start": 244.92,
+          "end": 245.04,
+          "text": "and"
+        },
+        {
+          "start": 245.04,
+          "end": 245.12,
+          "text": "the"
+        },
+        {
+          "start": 245.12,
+          "end": 245.48,
+          "text": "company"
+        },
+        {
+          "start": 245.48,
+          "end": 245.64,
+          "text": "did"
+        },
+        {
+          "start": 245.64,
+          "end": 245.84,
+          "text": "almost"
+        },
+        {
+          "start": 246.12,
+          "end": 246.46,
+          "text": "nothing"
+        },
+        {
+          "start": 246.46,
+          "end": 246.6,
+          "text": "to"
+        },
+        {
+          "start": 246.6,
+          "end": 246.8,
+          "text": "keep"
+        },
+        {
+          "start": 246.8,
+          "end": 247.02,
+          "text": "them."
+        }
+      ]
+    },
+    {
+      "start": 247.46,
+      "end": 252.78,
+      "text": "No retention push, no monetization. His words, we really couldn't chase them away.",
+      "words": [
+        {
+          "start": 247.46,
+          "end": 247.6,
+          "text": "No"
+        },
+        {
+          "start": 247.6,
+          "end": 248.04,
+          "text": "retention"
+        },
+        {
+          "start": 248.04,
+          "end": 248.62,
+          "text": "push,"
+        },
+        {
+          "start": 248.62,
+          "end": 248.74,
+          "text": "no"
+        },
+        {
+          "start": 248.74,
+          "end": 249.7,
+          "text": "monetization."
+        },
+        {
+          "start": 250.12,
+          "end": 250.28,
+          "text": "His"
+        },
+        {
+          "start": 250.28,
+          "end": 250.7,
+          "text": "words,"
+        },
+        {
+          "start": 251.08,
+          "end": 251.2,
+          "text": "we"
+        },
+        {
+          "start": 251.2,
+          "end": 251.56,
+          "text": "really"
+        },
+        {
+          "start": 251.68,
+          "end": 251.97,
+          "text": "couldn't"
+        },
+        {
+          "start": 251.97,
+          "end": 252.34,
+          "text": "chase"
+        },
+        {
+          "start": 252.34,
+          "end": 252.46,
+          "text": "them"
+        },
+        {
+          "start": 252.46,
+          "end": 252.78,
+          "text": "away."
+        }
+      ]
+    },
+    {
+      "start": 253.54,
+      "end": 257.86,
+      "text": "The API runs with a few maintainers, no sales team, no customer service.",
+      "words": [
+        {
+          "start": 253.54,
+          "end": 253.6,
+          "text": "The"
+        },
+        {
+          "start": 253.6,
+          "end": 253.86,
+          "text": "API"
+        },
+        {
+          "start": 253.86,
+          "end": 254.38,
+          "text": "runs"
+        },
+        {
+          "start": 254.38,
+          "end": 254.46,
+          "text": "with"
+        },
+        {
+          "start": 254.46,
+          "end": 254.57,
+          "text": "a"
+        },
+        {
+          "start": 254.57,
+          "end": 254.78,
+          "text": "few"
+        },
+        {
+          "start": 254.78,
+          "end": 255.63,
+          "text": "maintainers,"
+        },
+        {
+          "start": 255.63,
+          "end": 255.83,
+          "text": "no"
+        },
+        {
+          "start": 255.83,
+          "end": 256.34,
+          "text": "sales"
+        },
+        {
+          "start": 256.34,
+          "end": 256.5,
+          "text": "team,"
+        },
+        {
+          "start": 256.66,
+          "end": 256.84,
+          "text": "no"
+        },
+        {
+          "start": 256.84,
+          "end": 257.24,
+          "text": "customer"
+        },
+        {
+          "start": 257.24,
+          "end": 257.86,
+          "text": "service."
+        }
+      ]
+    },
+    {
+      "start": 258.36,
+      "end": 261.8,
+      "text": "In his metaphor, the app and the API are sesame seeds.",
+      "words": [
+        {
+          "start": 258.36,
+          "end": 258.46,
+          "text": "In"
+        },
+        {
+          "start": 258.46,
+          "end": 258.62,
+          "text": "his"
+        },
+        {
+          "start": 258.62,
+          "end": 259.16,
+          "text": "metaphor,"
+        },
+        {
+          "start": 259.38,
+          "end": 259.46,
+          "text": "the"
+        },
+        {
+          "start": 259.58,
+          "end": 259.74,
+          "text": "app"
+        },
+        {
+          "start": 259.9,
+          "end": 259.98,
+          "text": "and"
+        },
+        {
+          "start": 259.98,
+          "end": 260.08,
+          "text": "the"
+        },
+        {
+          "start": 260.08,
+          "end": 260.56,
+          "text": "API"
+        },
+        {
+          "start": 260.7,
+          "end": 260.84,
+          "text": "are"
+        },
+        {
+          "start": 261.0,
+          "end": 261.32,
+          "text": "sesame"
+        },
+        {
+          "start": 261.32,
+          "end": 261.8,
+          "text": "seeds."
+        }
+      ]
+    },
+    {
+      "start": 262.16,
+      "end": 266.76,
+      "text": "AGI is the watermelon. You pick up seeds on your way, you don't stop for them.",
+      "words": [
+        {
+          "start": 262.16,
+          "end": 262.52,
+          "text": "AGI"
+        },
+        {
+          "start": 262.88,
+          "end": 262.98,
+          "text": "is"
+        },
+        {
+          "start": 262.98,
+          "end": 263.08,
+          "text": "the"
+        },
+        {
+          "start": 263.36,
+          "end": 263.64,
+          "text": "watermelon."
+        },
+        {
+          "start": 264.28,
+          "end": 264.38,
+          "text": "You"
+        },
+        {
+          "start": 264.38,
+          "end": 264.53,
+          "text": "pick"
+        },
+        {
+          "start": 264.53,
+          "end": 264.65,
+          "text": "up"
+        },
+        {
+          "start": 264.65,
+          "end": 264.84,
+          "text": "seeds"
+        },
+        {
+          "start": 264.94,
+          "end": 265.02,
+          "text": "on"
+        },
+        {
+          "start": 265.02,
+          "end": 265.16,
+          "text": "your"
+        },
+        {
+          "start": 265.16,
+          "end": 265.48,
+          "text": "way,"
+        },
+        {
+          "start": 265.8,
+          "end": 265.96,
+          "text": "you"
+        },
+        {
+          "start": 265.96,
+          "end": 266.12,
+          "text": "don't"
+        },
+        {
+          "start": 266.12,
+          "end": 266.4,
+          "text": "stop"
+        },
+        {
+          "start": 266.4,
+          "end": 266.6,
+          "text": "for"
+        },
+        {
+          "start": 266.6,
+          "end": 266.76,
+          "text": "them."
+        }
+      ]
+    },
+    {
+      "start": 267.32,
+      "end": 275.54,
+      "text": "Same answer for whole product categories. Video generation, a good business, he says, and not on the road to AGI, so no.",
+      "words": [
+        {
+          "start": 267.32,
+          "end": 267.64,
+          "text": "Same"
+        },
+        {
+          "start": 267.64,
+          "end": 268.04,
+          "text": "answer"
+        },
+        {
+          "start": 268.04,
+          "end": 268.22,
+          "text": "for"
+        },
+        {
+          "start": 268.22,
+          "end": 268.44,
+          "text": "whole"
+        },
+        {
+          "start": 268.6,
+          "end": 268.94,
+          "text": "product"
+        },
+        {
+          "start": 268.94,
+          "end": 269.7,
+          "text": "categories."
+        },
+        {
+          "start": 270.1,
+          "end": 270.32,
+          "text": "Video"
+        },
+        {
+          "start": 270.32,
+          "end": 270.98,
+          "text": "generation,"
+        },
+        {
+          "start": 271.4,
+          "end": 271.48,
+          "text": "a"
+        },
+        {
+          "start": 271.48,
+          "end": 271.65,
+          "text": "good"
+        },
+        {
+          "start": 271.65,
+          "end": 272.14,
+          "text": "business,"
+        },
+        {
+          "start": 272.14,
+          "end": 272.24,
+          "text": "he"
+        },
+        {
+          "start": 272.24,
+          "end": 272.54,
+          "text": "says,"
+        },
+        {
+          "start": 272.92,
+          "end": 273.06,
+          "text": "and"
+        },
+        {
+          "start": 273.06,
+          "end": 273.47,
+          "text": "not"
+        },
+        {
+          "start": 273.47,
+          "end": 273.6,
+          "text": "on"
+        },
+        {
+          "start": 273.6,
+          "end": 273.75,
+          "text": "the"
+        },
+        {
+          "start": 273.75,
+          "end": 273.94,
+          "text": "road"
+        },
+        {
+          "start": 273.94,
+          "end": 274.11,
+          "text": "to"
+        },
+        {
+          "start": 274.11,
+          "end": 274.52,
+          "text": "AGI,"
+        },
+        {
+          "start": 274.9,
+          "end": 275.06,
+          "text": "so"
+        },
+        {
+          "start": 275.3,
+          "end": 275.54,
+          "text": "no."
+        }
+      ]
+    },
+    {
+      "start": 276.3,
+      "end": 279.98,
+      "text": "World models, not the bottleneck right now. Even vision.",
+      "words": [
+        {
+          "start": 276.3,
+          "end": 276.63,
+          "text": "World"
+        },
+        {
+          "start": 276.63,
+          "end": 276.86,
+          "text": "models,"
+        },
+        {
+          "start": 277.48,
+          "end": 277.63,
+          "text": "not"
+        },
+        {
+          "start": 277.63,
+          "end": 277.8,
+          "text": "the"
+        },
+        {
+          "start": 277.8,
+          "end": 278.26,
+          "text": "bottleneck"
+        },
+        {
+          "start": 278.26,
+          "end": 278.49,
+          "text": "right"
+        },
+        {
+          "start": 278.49,
+          "end": 278.66,
+          "text": "now."
+        },
+        {
+          "start": 279.3,
+          "end": 279.48,
+          "text": "Even"
+        },
+        {
+          "start": 279.64,
+          "end": 279.98,
+          "text": "vision."
+        }
+      ]
+    },
+    {
+      "start": 280.54,
+      "end": 288.44,
+      "text": "Deepseek is famously text-first, and his reason is that multimodality is a component, useful, the way search is useful.",
+      "words": [
+        {
+          "start": 280.54,
+          "end": 280.98,
+          "text": "Deepseek"
+        },
+        {
+          "start": 280.98,
+          "end": 281.12,
+          "text": "is"
+        },
+        {
+          "start": 281.26,
+          "end": 281.66,
+          "text": "famously"
+        },
+        {
+          "start": 281.86,
+          "end": 282.52,
+          "text": "text-first,"
+        },
+        {
+          "start": 283.14,
+          "end": 283.22,
+          "text": "and"
+        },
+        {
+          "start": 283.22,
+          "end": 283.42,
+          "text": "his"
+        },
+        {
+          "start": 283.42,
+          "end": 283.8,
+          "text": "reason"
+        },
+        {
+          "start": 283.94,
+          "end": 284.02,
+          "text": "is"
+        },
+        {
+          "start": 284.02,
+          "end": 284.1,
+          "text": "that"
+        },
+        {
+          "start": 284.44,
+          "end": 285.12,
+          "text": "multimodality"
+        },
+        {
+          "start": 285.3,
+          "end": 285.36,
+          "text": "is"
+        },
+        {
+          "start": 285.36,
+          "end": 285.46,
+          "text": "a"
+        },
+        {
+          "start": 285.46,
+          "end": 285.62,
+          "text": "component,"
+        },
+        {
+          "start": 286.66,
+          "end": 287.0,
+          "text": "useful,"
+        },
+        {
+          "start": 287.46,
+          "end": 287.54,
+          "text": "the"
+        },
+        {
+          "start": 287.54,
+          "end": 287.64,
+          "text": "way"
+        },
+        {
+          "start": 287.64,
+          "end": 287.97,
+          "text": "search"
+        },
+        {
+          "start": 287.97,
+          "end": 288.16,
+          "text": "is"
+        },
+        {
+          "start": 288.16,
+          "end": 288.44,
+          "text": "useful."
+        }
+      ]
+    },
+    {
+      "start": 289.0,
+      "end": 298.78,
+      "text": "It isn't intelligence itself. One more consequence of refusing work, Deepseek doesn't do overtime in an industry famous for brutal hours.",
+      "words": [
+        {
+          "start": 289.0,
+          "end": 289.12,
+          "text": "It"
+        },
+        {
+          "start": 289.26,
+          "end": 289.58,
+          "text": "isn't"
+        },
+        {
+          "start": 289.82,
+          "end": 290.26,
+          "text": "intelligence"
+        },
+        {
+          "start": 290.26,
+          "end": 290.78,
+          "text": "itself."
+        },
+        {
+          "start": 291.6,
+          "end": 291.8,
+          "text": "One"
+        },
+        {
+          "start": 291.8,
+          "end": 292.11,
+          "text": "more"
+        },
+        {
+          "start": 292.11,
+          "end": 292.74,
+          "text": "consequence"
+        },
+        {
+          "start": 292.74,
+          "end": 292.86,
+          "text": "of"
+        },
+        {
+          "start": 292.86,
+          "end": 293.33,
+          "text": "refusing"
+        },
+        {
+          "start": 293.33,
+          "end": 293.82,
+          "text": "work,"
+        },
+        {
+          "start": 294.3,
+          "end": 294.72,
+          "text": "Deepseek"
+        },
+        {
+          "start": 294.86,
+          "end": 295.17,
+          "text": "doesn't"
+        },
+        {
+          "start": 295.17,
+          "end": 295.32,
+          "text": "do"
+        },
+        {
+          "start": 295.48,
+          "end": 296.08,
+          "text": "overtime"
+        },
+        {
+          "start": 296.5,
+          "end": 296.56,
+          "text": "in"
+        },
+        {
+          "start": 296.56,
+          "end": 296.66,
+          "text": "an"
+        },
+        {
+          "start": 296.66,
+          "end": 297.0,
+          "text": "industry"
+        },
+        {
+          "start": 297.0,
+          "end": 297.56,
+          "text": "famous"
+        },
+        {
+          "start": 297.56,
+          "end": 297.72,
+          "text": "for"
+        },
+        {
+          "start": 297.84,
+          "end": 298.21,
+          "text": "brutal"
+        },
+        {
+          "start": 298.21,
+          "end": 298.78,
+          "text": "hours."
+        }
+      ]
+    },
+    {
+      "start": 299.34,
+      "end": 306.2,
+      "text": "His explanation? Research needs relaxed people, and they refuse so much work that there isn't that much work.",
+      "words": [
+        {
+          "start": 299.34,
+          "end": 299.56,
+          "text": "His"
+        },
+        {
+          "start": 299.56,
+          "end": 300.12,
+          "text": "explanation?"
+        },
+        {
+          "start": 300.8,
+          "end": 301.27,
+          "text": "Research"
+        },
+        {
+          "start": 301.27,
+          "end": 301.54,
+          "text": "needs"
+        },
+        {
+          "start": 301.54,
+          "end": 302.19,
+          "text": "relaxed"
+        },
+        {
+          "start": 302.19,
+          "end": 302.32,
+          "text": "people,"
+        },
+        {
+          "start": 302.94,
+          "end": 303.04,
+          "text": "and"
+        },
+        {
+          "start": 303.04,
+          "end": 303.14,
+          "text": "they"
+        },
+        {
+          "start": 303.14,
+          "end": 303.52,
+          "text": "refuse"
+        },
+        {
+          "start": 303.52,
+          "end": 303.82,
+          "text": "so"
+        },
+        {
+          "start": 303.82,
+          "end": 304.12,
+          "text": "much"
+        },
+        {
+          "start": 304.12,
+          "end": 304.52,
+          "text": "work"
+        },
+        {
+          "start": 304.52,
+          "end": 304.64,
+          "text": "that"
+        },
+        {
+          "start": 304.64,
+          "end": 304.76,
+          "text": "there"
+        },
+        {
+          "start": 304.88,
+          "end": 305.22,
+          "text": "isn't"
+        },
+        {
+          "start": 305.22,
+          "end": 305.4,
+          "text": "that"
+        },
+        {
+          "start": 305.4,
+          "end": 305.6,
+          "text": "much"
+        },
+        {
+          "start": 305.6,
+          "end": 306.2,
+          "text": "work."
+        }
+      ]
+    },
+    {
+      "start": 306.9,
+      "end": 314.68,
+      "text": "Products ship imperfect and stay imperfect. Quote, we don't need to work overtime because it's just not that hard.",
+      "words": [
+        {
+          "start": 306.9,
+          "end": 307.16,
+          "text": "Products"
+        },
+        {
+          "start": 307.16,
+          "end": 307.44,
+          "text": "ship"
+        },
+        {
+          "start": 307.58,
+          "end": 308.1,
+          "text": "imperfect"
+        },
+        {
+          "start": 308.26,
+          "end": 308.52,
+          "text": "and"
+        },
+        {
+          "start": 308.52,
+          "end": 308.84,
+          "text": "stay"
+        },
+        {
+          "start": 309.08,
+          "end": 309.78,
+          "text": "imperfect."
+        },
+        {
+          "start": 310.4,
+          "end": 310.66,
+          "text": "Quote,"
+        },
+        {
+          "start": 311.18,
+          "end": 311.3,
+          "text": "we"
+        },
+        {
+          "start": 311.3,
+          "end": 311.5,
+          "text": "don't"
+        },
+        {
+          "start": 311.5,
+          "end": 311.72,
+          "text": "need"
+        },
+        {
+          "start": 311.9,
+          "end": 311.98,
+          "text": "to"
+        },
+        {
+          "start": 311.98,
+          "end": 312.18,
+          "text": "work"
+        },
+        {
+          "start": 312.18,
+          "end": 312.58,
+          "text": "overtime"
+        },
+        {
+          "start": 313.1,
+          "end": 313.26,
+          "text": "because"
+        },
+        {
+          "start": 313.46,
+          "end": 313.7,
+          "text": "it's"
+        },
+        {
+          "start": 313.7,
+          "end": 313.86,
+          "text": "just"
+        },
+        {
+          "start": 314.04,
+          "end": 314.2,
+          "text": "not"
+        },
+        {
+          "start": 314.38,
+          "end": 314.5,
+          "text": "that"
+        },
+        {
+          "start": 314.54,
+          "end": 314.68,
+          "text": "hard."
+        }
+      ]
+    },
+    {
+      "start": 315.64,
+      "end": 321.74,
+      "text": "Now the main line itself. His foundational bet goes back to that twenty twenty-three interview.",
+      "words": [
+        {
+          "start": 315.64,
+          "end": 315.89,
+          "text": "Now"
+        },
+        {
+          "start": 315.89,
+          "end": 316.18,
+          "text": "the"
+        },
+        {
+          "start": 316.18,
+          "end": 316.56,
+          "text": "main"
+        },
+        {
+          "start": 316.56,
+          "end": 316.94,
+          "text": "line"
+        },
+        {
+          "start": 316.94,
+          "end": 317.28,
+          "text": "itself."
+        },
+        {
+          "start": 318.02,
+          "end": 318.24,
+          "text": "His"
+        },
+        {
+          "start": 318.24,
+          "end": 318.98,
+          "text": "foundational"
+        },
+        {
+          "start": 319.14,
+          "end": 319.3,
+          "text": "bet"
+        },
+        {
+          "start": 319.4,
+          "end": 319.64,
+          "text": "goes"
+        },
+        {
+          "start": 319.64,
+          "end": 319.86,
+          "text": "back"
+        },
+        {
+          "start": 319.86,
+          "end": 320.0,
+          "text": "to"
+        },
+        {
+          "start": 320.0,
+          "end": 320.1,
+          "text": "that"
+        },
+        {
+          "start": 320.24,
+          "end": 320.36,
+          "text": "twenty"
+        },
+        {
+          "start": 320.5,
+          "end": 321.05,
+          "text": "twenty-three"
+        },
+        {
+          "start": 321.05,
+          "end": 321.74,
+          "text": "interview."
+        }
+      ]
+    },
+    {
+      "start": 322.2,
+      "end": 325.9,
+      "text": "Human intelligence might fundamentally be language.",
+      "words": [
+        {
+          "start": 322.2,
+          "end": 322.44,
+          "text": "Human"
+        },
+        {
+          "start": 322.98,
+          "end": 323.38,
+          "text": "intelligence"
+        },
+        {
+          "start": 323.74,
+          "end": 323.88,
+          "text": "might"
+        },
+        {
+          "start": 324.16,
+          "end": 324.9,
+          "text": "fundamentally"
+        },
+        {
+          "start": 324.9,
+          "end": 325.08,
+          "text": "be"
+        },
+        {
+          "start": 325.08,
+          "end": 325.9,
+          "text": "language."
+        }
+      ]
+    },
+    {
+      "start": 326.4,
+      "end": 333.86,
+      "text": "Thinking might be the brain weaving words. If that's true, a language model is the seed of general intelligence.",
+      "words": [
+        {
+          "start": 326.4,
+          "end": 326.58,
+          "text": "Thinking"
+        },
+        {
+          "start": 326.96,
+          "end": 327.24,
+          "text": "might"
+        },
+        {
+          "start": 327.24,
+          "end": 327.42,
+          "text": "be"
+        },
+        {
+          "start": 327.42,
+          "end": 327.54,
+          "text": "the"
+        },
+        {
+          "start": 327.66,
+          "end": 327.86,
+          "text": "brain"
+        },
+        {
+          "start": 328.46,
+          "end": 328.54,
+          "text": "weaving"
+        },
+        {
+          "start": 328.66,
+          "end": 329.24,
+          "text": "words."
+        },
+        {
+          "start": 329.84,
+          "end": 329.98,
+          "text": "If"
+        },
+        {
+          "start": 329.98,
+          "end": 330.2,
+          "text": "that's"
+        },
+        {
+          "start": 330.2,
+          "end": 330.44,
+          "text": "true,"
+        },
+        {
+          "start": 330.76,
+          "end": 330.86,
+          "text": "a"
+        },
+        {
+          "start": 330.86,
+          "end": 331.08,
+          "text": "language"
+        },
+        {
+          "start": 331.3,
+          "end": 331.6,
+          "text": "model"
+        },
+        {
+          "start": 331.78,
+          "end": 331.9,
+          "text": "is"
+        },
+        {
+          "start": 331.9,
+          "end": 332.02,
+          "text": "the"
+        },
+        {
+          "start": 332.14,
+          "end": 332.28,
+          "text": "seed"
+        },
+        {
+          "start": 332.6,
+          "end": 332.72,
+          "text": "of"
+        },
+        {
+          "start": 332.72,
+          "end": 333.05,
+          "text": "general"
+        },
+        {
+          "start": 333.05,
+          "end": 333.86,
+          "text": "intelligence."
+        }
+      ]
+    },
+    {
+      "start": 334.34,
+      "end": 341.5,
+      "text": "From there, his staircase, chain of thought last year, agents this year, and the next step, continual learning.",
+      "words": [
+        {
+          "start": 334.34,
+          "end": 334.48,
+          "text": "From"
+        },
+        {
+          "start": 334.48,
+          "end": 334.7,
+          "text": "there,"
+        },
+        {
+          "start": 334.84,
+          "end": 335.02,
+          "text": "his"
+        },
+        {
+          "start": 335.02,
+          "end": 335.7,
+          "text": "staircase,"
+        },
+        {
+          "start": 336.1,
+          "end": 336.28,
+          "text": "chain"
+        },
+        {
+          "start": 336.44,
+          "end": 336.56,
+          "text": "of"
+        },
+        {
+          "start": 336.56,
+          "end": 336.72,
+          "text": "thought"
+        },
+        {
+          "start": 336.84,
+          "end": 337.05,
+          "text": "last"
+        },
+        {
+          "start": 337.05,
+          "end": 337.6,
+          "text": "year,"
+        },
+        {
+          "start": 337.76,
+          "end": 338.16,
+          "text": "agents"
+        },
+        {
+          "start": 338.26,
+          "end": 338.5,
+          "text": "this"
+        },
+        {
+          "start": 338.5,
+          "end": 338.96,
+          "text": "year,"
+        },
+        {
+          "start": 339.14,
+          "end": 339.24,
+          "text": "and"
+        },
+        {
+          "start": 339.24,
+          "end": 339.32,
+          "text": "the"
+        },
+        {
+          "start": 339.32,
+          "end": 339.56,
+          "text": "next"
+        },
+        {
+          "start": 339.56,
+          "end": 340.0,
+          "text": "step,"
+        },
+        {
+          "start": 340.5,
+          "end": 340.58,
+          "text": "continual"
+        },
+        {
+          "start": 341.04,
+          "end": 341.5,
+          "text": "learning."
+        }
+      ]
+    },
+    {
+      "start": 342.02,
+      "end": 350.5,
+      "text": "His example of what's missing is concrete. A new employee spends two months learning the company, who's who, how things work.",
+      "words": [
+        {
+          "start": 342.02,
+          "end": 342.29,
+          "text": "His"
+        },
+        {
+          "start": 342.29,
+          "end": 342.86,
+          "text": "example"
+        },
+        {
+          "start": 343.1,
+          "end": 343.2,
+          "text": "of"
+        },
+        {
+          "start": 343.2,
+          "end": 343.44,
+          "text": "what's"
+        },
+        {
+          "start": 343.44,
+          "end": 343.86,
+          "text": "missing"
+        },
+        {
+          "start": 344.02,
+          "end": 344.18,
+          "text": "is"
+        },
+        {
+          "start": 344.32,
+          "end": 344.66,
+          "text": "concrete."
+        },
+        {
+          "start": 345.46,
+          "end": 345.56,
+          "text": "A"
+        },
+        {
+          "start": 345.56,
+          "end": 345.8,
+          "text": "new"
+        },
+        {
+          "start": 345.8,
+          "end": 346.26,
+          "text": "employee"
+        },
+        {
+          "start": 346.26,
+          "end": 346.72,
+          "text": "spends"
+        },
+        {
+          "start": 346.86,
+          "end": 347.04,
+          "text": "two"
+        },
+        {
+          "start": 347.04,
+          "end": 347.5,
+          "text": "months"
+        },
+        {
+          "start": 347.5,
+          "end": 347.88,
+          "text": "learning"
+        },
+        {
+          "start": 347.88,
+          "end": 348.0,
+          "text": "the"
+        },
+        {
+          "start": 348.0,
+          "end": 348.44,
+          "text": "company,"
+        },
+        {
+          "start": 348.78,
+          "end": 349.02,
+          "text": "who's"
+        },
+        {
+          "start": 349.02,
+          "end": 349.24,
+          "text": "who,"
+        },
+        {
+          "start": 349.54,
+          "end": 349.74,
+          "text": "how"
+        },
+        {
+          "start": 349.74,
+          "end": 349.88,
+          "text": "things"
+        },
+        {
+          "start": 350.0,
+          "end": 350.5,
+          "text": "work."
+        }
+      ]
+    },
+    {
+      "start": 351.02,
+      "end": 354.1,
+      "text": "Then you say, go get Xiao Wang, and they just know.",
+      "words": [
+        {
+          "start": 351.02,
+          "end": 351.17,
+          "text": "Then"
+        },
+        {
+          "start": 351.17,
+          "end": 351.28,
+          "text": "you"
+        },
+        {
+          "start": 351.28,
+          "end": 351.62,
+          "text": "say,"
+        },
+        {
+          "start": 351.82,
+          "end": 352.0,
+          "text": "go"
+        },
+        {
+          "start": 352.0,
+          "end": 352.18,
+          "text": "get"
+        },
+        {
+          "start": 352.18,
+          "end": 352.4,
+          "text": "Xiao"
+        },
+        {
+          "start": 352.4,
+          "end": 352.58,
+          "text": "Wang,"
+        },
+        {
+          "start": 353.0,
+          "end": 353.1,
+          "text": "and"
+        },
+        {
+          "start": 353.1,
+          "end": 353.2,
+          "text": "they"
+        },
+        {
+          "start": 353.34,
+          "end": 353.48,
+          "text": "just"
+        },
+        {
+          "start": 353.92,
+          "end": 354.1,
+          "text": "know."
+        }
+      ]
+    },
+    {
+      "start": 354.9,
+      "end": 361.36,
+      "text": "And AI needs all of that spelled out every time, who Xiao Wang is, where he sits, how to approach him.",
+      "words": [
+        {
+          "start": 354.9,
+          "end": 354.98,
+          "text": "And"
+        },
+        {
+          "start": 354.98,
+          "end": 355.22,
+          "text": "AI"
+        },
+        {
+          "start": 355.32,
+          "end": 355.72,
+          "text": "needs"
+        },
+        {
+          "start": 355.92,
+          "end": 356.08,
+          "text": "all"
+        },
+        {
+          "start": 356.26,
+          "end": 356.34,
+          "text": "of"
+        },
+        {
+          "start": 356.34,
+          "end": 356.5,
+          "text": "that"
+        },
+        {
+          "start": 356.5,
+          "end": 356.82,
+          "text": "spelled"
+        },
+        {
+          "start": 356.82,
+          "end": 357.02,
+          "text": "out"
+        },
+        {
+          "start": 357.46,
+          "end": 357.64,
+          "text": "every"
+        },
+        {
+          "start": 357.76,
+          "end": 358.08,
+          "text": "time,"
+        },
+        {
+          "start": 358.46,
+          "end": 358.56,
+          "text": "who"
+        },
+        {
+          "start": 358.56,
+          "end": 358.72,
+          "text": "Xiao"
+        },
+        {
+          "start": 358.84,
+          "end": 359.06,
+          "text": "Wang"
+        },
+        {
+          "start": 359.06,
+          "end": 359.58,
+          "text": "is,"
+        },
+        {
+          "start": 359.58,
+          "end": 359.72,
+          "text": "where"
+        },
+        {
+          "start": 359.72,
+          "end": 359.82,
+          "text": "he"
+        },
+        {
+          "start": 359.82,
+          "end": 360.48,
+          "text": "sits,"
+        },
+        {
+          "start": 360.48,
+          "end": 360.58,
+          "text": "how"
+        },
+        {
+          "start": 360.58,
+          "end": 360.68,
+          "text": "to"
+        },
+        {
+          "start": 360.68,
+          "end": 361.1,
+          "text": "approach"
+        },
+        {
+          "start": 361.1,
+          "end": 361.36,
+          "text": "him."
+        }
+      ]
+    },
+    {
+      "start": 362.06,
+      "end": 366.5,
+      "text": "Liang's claim, with complete context, AI already beats the human.",
+      "words": [
+        {
+          "start": 362.06,
+          "end": 362.48,
+          "text": "Liang's"
+        },
+        {
+          "start": 362.48,
+          "end": 362.68,
+          "text": "claim,"
+        },
+        {
+          "start": 363.22,
+          "end": 363.36,
+          "text": "with"
+        },
+        {
+          "start": 363.36,
+          "end": 363.52,
+          "text": "complete"
+        },
+        {
+          "start": 363.92,
+          "end": 364.62,
+          "text": "context,"
+        },
+        {
+          "start": 364.9,
+          "end": 365.04,
+          "text": "AI"
+        },
+        {
+          "start": 365.04,
+          "end": 365.12,
+          "text": "already"
+        },
+        {
+          "start": 365.98,
+          "end": 366.06,
+          "text": "beats"
+        },
+        {
+          "start": 366.18,
+          "end": 366.34,
+          "text": "the"
+        },
+        {
+          "start": 366.34,
+          "end": 366.5,
+          "text": "human."
+        }
+      ]
+    },
+    {
+      "start": 367.38,
+      "end": 374.12,
+      "text": "But you can never supply complete context. So the next model has to learn continuously, the way the employee did.",
+      "words": [
+        {
+          "start": 367.38,
+          "end": 367.48,
+          "text": "But"
+        },
+        {
+          "start": 367.48,
+          "end": 367.6,
+          "text": "you"
+        },
+        {
+          "start": 367.62,
+          "end": 367.76,
+          "text": "can"
+        },
+        {
+          "start": 367.9,
+          "end": 368.16,
+          "text": "never"
+        },
+        {
+          "start": 368.16,
+          "end": 368.59,
+          "text": "supply"
+        },
+        {
+          "start": 368.59,
+          "end": 368.96,
+          "text": "complete"
+        },
+        {
+          "start": 369.22,
+          "end": 369.88,
+          "text": "context."
+        },
+        {
+          "start": 370.26,
+          "end": 370.4,
+          "text": "So"
+        },
+        {
+          "start": 370.54,
+          "end": 370.62,
+          "text": "the"
+        },
+        {
+          "start": 370.62,
+          "end": 370.88,
+          "text": "next"
+        },
+        {
+          "start": 370.88,
+          "end": 371.14,
+          "text": "model"
+        },
+        {
+          "start": 371.14,
+          "end": 371.47,
+          "text": "has"
+        },
+        {
+          "start": 371.47,
+          "end": 371.64,
+          "text": "to"
+        },
+        {
+          "start": 371.64,
+          "end": 371.94,
+          "text": "learn"
+        },
+        {
+          "start": 372.24,
+          "end": 372.8,
+          "text": "continuously,"
+        },
+        {
+          "start": 373.2,
+          "end": 373.26,
+          "text": "the"
+        },
+        {
+          "start": 373.26,
+          "end": 373.38,
+          "text": "way"
+        },
+        {
+          "start": 373.38,
+          "end": 373.48,
+          "text": "the"
+        },
+        {
+          "start": 373.48,
+          "end": 373.84,
+          "text": "employee"
+        },
+        {
+          "start": 373.84,
+          "end": 374.12,
+          "text": "did."
+        }
+      ]
+    },
+    {
+      "start": 374.68,
+      "end": 380.38,
+      "text": "Asked whether human taste still matters, he said AI already has taste and intuition.",
+      "words": [
+        {
+          "start": 374.68,
+          "end": 375.08,
+          "text": "Asked"
+        },
+        {
+          "start": 375.08,
+          "end": 375.23,
+          "text": "whether"
+        },
+        {
+          "start": 375.23,
+          "end": 375.71,
+          "text": "human"
+        },
+        {
+          "start": 375.71,
+          "end": 376.27,
+          "text": "taste"
+        },
+        {
+          "start": 376.27,
+          "end": 376.54,
+          "text": "still"
+        },
+        {
+          "start": 376.54,
+          "end": 377.12,
+          "text": "matters,"
+        },
+        {
+          "start": 377.44,
+          "end": 377.52,
+          "text": "he"
+        },
+        {
+          "start": 377.52,
+          "end": 377.76,
+          "text": "said"
+        },
+        {
+          "start": 377.76,
+          "end": 378.04,
+          "text": "AI"
+        },
+        {
+          "start": 378.04,
+          "end": 378.68,
+          "text": "already"
+        },
+        {
+          "start": 378.82,
+          "end": 379.25,
+          "text": "has"
+        },
+        {
+          "start": 379.25,
+          "end": 379.72,
+          "text": "taste"
+        },
+        {
+          "start": 379.72,
+          "end": 379.84,
+          "text": "and"
+        },
+        {
+          "start": 379.84,
+          "end": 380.38,
+          "text": "intuition."
+        }
+      ]
+    },
+    {
+      "start": 380.88,
+      "end": 391.06,
+      "text": "What it lacks is continual learning. And the next model's first job, in his telling, is to be useful to deep seek itself, a model that helps its own researchers build the",
+      "words": [
+        {
+          "start": 380.88,
+          "end": 380.98,
+          "text": "What"
+        },
+        {
+          "start": 380.98,
+          "end": 381.08,
+          "text": "it"
+        },
+        {
+          "start": 381.08,
+          "end": 381.5,
+          "text": "lacks"
+        },
+        {
+          "start": 381.6,
+          "end": 381.68,
+          "text": "is"
+        },
+        {
+          "start": 381.96,
+          "end": 382.38,
+          "text": "continual"
+        },
+        {
+          "start": 382.6,
+          "end": 382.92,
+          "text": "learning."
+        },
+        {
+          "start": 383.54,
+          "end": 383.64,
+          "text": "And"
+        },
+        {
+          "start": 383.64,
+          "end": 383.72,
+          "text": "the"
+        },
+        {
+          "start": 383.82,
+          "end": 384.05,
+          "text": "next"
+        },
+        {
+          "start": 384.05,
+          "end": 384.31,
+          "text": "model's"
+        },
+        {
+          "start": 384.31,
+          "end": 384.68,
+          "text": "first"
+        },
+        {
+          "start": 384.68,
+          "end": 385.02,
+          "text": "job,"
+        },
+        {
+          "start": 385.02,
+          "end": 385.16,
+          "text": "in"
+        },
+        {
+          "start": 385.16,
+          "end": 385.38,
+          "text": "his"
+        },
+        {
+          "start": 385.38,
+          "end": 385.76,
+          "text": "telling,"
+        },
+        {
+          "start": 386.04,
+          "end": 386.14,
+          "text": "is"
+        },
+        {
+          "start": 386.14,
+          "end": 386.2,
+          "text": "to"
+        },
+        {
+          "start": 386.2,
+          "end": 386.34,
+          "text": "be"
+        },
+        {
+          "start": 386.58,
+          "end": 386.72,
+          "text": "useful"
+        },
+        {
+          "start": 386.9,
+          "end": 386.98,
+          "text": "to"
+        },
+        {
+          "start": 387.1,
+          "end": 387.18,
+          "text": "deep"
+        },
+        {
+          "start": 387.3,
+          "end": 387.44,
+          "text": "seek"
+        },
+        {
+          "start": 387.56,
+          "end": 387.98,
+          "text": "itself,"
+        },
+        {
+          "start": 388.6,
+          "end": 388.62,
+          "text": "a"
+        },
+        {
+          "start": 388.62,
+          "end": 388.98,
+          "text": "model"
+        },
+        {
+          "start": 388.98,
+          "end": 389.14,
+          "text": "that"
+        },
+        {
+          "start": 389.14,
+          "end": 389.48,
+          "text": "helps"
+        },
+        {
+          "start": 389.48,
+          "end": 389.62,
+          "text": "its"
+        },
+        {
+          "start": 389.76,
+          "end": 389.92,
+          "text": "own"
+        },
+        {
+          "start": 390.26,
+          "end": 390.68,
+          "text": "researchers"
+        },
+        {
+          "start": 390.68,
+          "end": 390.86,
+          "text": "build"
+        },
+        {
+          "start": 390.98,
+          "end": 391.06,
+          "text": "the"
+        }
+      ]
+    },
+    {
+      "start": 391.06,
+      "end": 399.82,
+      "text": "one after it, AI accelerating AI research, which is why he expects progress to compound, not arrive in a single moment.",
+      "words": [
+        {
+          "start": 391.06,
+          "end": 391.3,
+          "text": "one"
+        },
+        {
+          "start": 391.48,
+          "end": 391.84,
+          "text": "after"
+        },
+        {
+          "start": 391.84,
+          "end": 392.12,
+          "text": "it,"
+        },
+        {
+          "start": 392.56,
+          "end": 392.71,
+          "text": "AI"
+        },
+        {
+          "start": 392.71,
+          "end": 393.52,
+          "text": "accelerating"
+        },
+        {
+          "start": 394.06,
+          "end": 394.28,
+          "text": "AI"
+        },
+        {
+          "start": 394.28,
+          "end": 395.08,
+          "text": "research,"
+        },
+        {
+          "start": 395.4,
+          "end": 395.5,
+          "text": "which"
+        },
+        {
+          "start": 395.5,
+          "end": 395.66,
+          "text": "is"
+        },
+        {
+          "start": 395.66,
+          "end": 395.92,
+          "text": "why"
+        },
+        {
+          "start": 395.92,
+          "end": 396.15,
+          "text": "he"
+        },
+        {
+          "start": 396.15,
+          "end": 396.63,
+          "text": "expects"
+        },
+        {
+          "start": 396.63,
+          "end": 397.03,
+          "text": "progress"
+        },
+        {
+          "start": 397.03,
+          "end": 397.16,
+          "text": "to"
+        },
+        {
+          "start": 397.16,
+          "end": 397.7,
+          "text": "compound,"
+        },
+        {
+          "start": 398.12,
+          "end": 398.28,
+          "text": "not"
+        },
+        {
+          "start": 398.28,
+          "end": 398.44,
+          "text": "arrive"
+        },
+        {
+          "start": 398.76,
+          "end": 398.84,
+          "text": "in"
+        },
+        {
+          "start": 398.84,
+          "end": 398.94,
+          "text": "a"
+        },
+        {
+          "start": 398.94,
+          "end": 399.42,
+          "text": "single"
+        },
+        {
+          "start": 399.42,
+          "end": 399.82,
+          "text": "moment."
+        }
+      ]
+    },
+    {
+      "start": 400.58,
+      "end": 406.38,
+      "text": "Two honest caveats belong here. First, nobody has a working method for continual learning.",
+      "words": [
+        {
+          "start": 400.58,
+          "end": 400.79,
+          "text": "Two"
+        },
+        {
+          "start": 400.79,
+          "end": 401.26,
+          "text": "honest"
+        },
+        {
+          "start": 401.26,
+          "end": 401.75,
+          "text": "caveats"
+        },
+        {
+          "start": 401.75,
+          "end": 402.12,
+          "text": "belong"
+        },
+        {
+          "start": 402.12,
+          "end": 402.42,
+          "text": "here."
+        },
+        {
+          "start": 402.84,
+          "end": 403.38,
+          "text": "First,"
+        },
+        {
+          "start": 403.66,
+          "end": 404.04,
+          "text": "nobody"
+        },
+        {
+          "start": 404.04,
+          "end": 404.24,
+          "text": "has"
+        },
+        {
+          "start": 404.24,
+          "end": 404.34,
+          "text": "a"
+        },
+        {
+          "start": 404.34,
+          "end": 404.8,
+          "text": "working"
+        },
+        {
+          "start": 404.8,
+          "end": 405.16,
+          "text": "method"
+        },
+        {
+          "start": 405.16,
+          "end": 405.34,
+          "text": "for"
+        },
+        {
+          "start": 405.34,
+          "end": 406.01,
+          "text": "continual"
+        },
+        {
+          "start": 406.01,
+          "end": 406.38,
+          "text": "learning."
+        }
+      ]
+    },
+    {
+      "start": 406.72,
+      "end": 416.78,
+      "text": "He says so himself. Inside DeepSeek, this kind of research is called Mojang, feeling for the prize, lottery tickets, cheap to try, anyone can think about it,",
+      "words": [
+        {
+          "start": 406.72,
+          "end": 406.8,
+          "text": "He"
+        },
+        {
+          "start": 406.8,
+          "end": 407.02,
+          "text": "says"
+        },
+        {
+          "start": 407.02,
+          "end": 407.16,
+          "text": "so"
+        },
+        {
+          "start": 407.16,
+          "end": 407.64,
+          "text": "himself."
+        },
+        {
+          "start": 408.14,
+          "end": 408.38,
+          "text": "Inside"
+        },
+        {
+          "start": 408.66,
+          "end": 409.17,
+          "text": "DeepSeek,"
+        },
+        {
+          "start": 409.17,
+          "end": 409.4,
+          "text": "this"
+        },
+        {
+          "start": 409.4,
+          "end": 409.58,
+          "text": "kind"
+        },
+        {
+          "start": 409.58,
+          "end": 409.68,
+          "text": "of"
+        },
+        {
+          "start": 409.68,
+          "end": 410.2,
+          "text": "research"
+        },
+        {
+          "start": 410.2,
+          "end": 410.34,
+          "text": "is"
+        },
+        {
+          "start": 410.34,
+          "end": 410.5,
+          "text": "called"
+        },
+        {
+          "start": 410.76,
+          "end": 411.32,
+          "text": "Mojang,"
+        },
+        {
+          "start": 411.94,
+          "end": 412.32,
+          "text": "feeling"
+        },
+        {
+          "start": 412.32,
+          "end": 412.5,
+          "text": "for"
+        },
+        {
+          "start": 412.5,
+          "end": 412.6,
+          "text": "the"
+        },
+        {
+          "start": 412.6,
+          "end": 413.16,
+          "text": "prize,"
+        },
+        {
+          "start": 413.56,
+          "end": 413.84,
+          "text": "lottery"
+        },
+        {
+          "start": 413.84,
+          "end": 414.32,
+          "text": "tickets,"
+        },
+        {
+          "start": 414.64,
+          "end": 414.81,
+          "text": "cheap"
+        },
+        {
+          "start": 414.81,
+          "end": 414.94,
+          "text": "to"
+        },
+        {
+          "start": 414.94,
+          "end": 415.53,
+          "text": "try,"
+        },
+        {
+          "start": 415.53,
+          "end": 415.83,
+          "text": "anyone"
+        },
+        {
+          "start": 415.83,
+          "end": 415.98,
+          "text": "can"
+        },
+        {
+          "start": 415.98,
+          "end": 416.2,
+          "text": "think"
+        },
+        {
+          "start": 416.2,
+          "end": 416.48,
+          "text": "about"
+        },
+        {
+          "start": 416.48,
+          "end": 416.78,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 417.06,
+      "end": 421.76,
+      "text": "nobody knows who wins. Second, serious people bet the other way.",
+      "words": [
+        {
+          "start": 417.06,
+          "end": 417.45,
+          "text": "nobody"
+        },
+        {
+          "start": 417.45,
+          "end": 417.76,
+          "text": "knows"
+        },
+        {
+          "start": 417.76,
+          "end": 417.95,
+          "text": "who"
+        },
+        {
+          "start": 417.95,
+          "end": 418.38,
+          "text": "wins."
+        },
+        {
+          "start": 419.0,
+          "end": 419.54,
+          "text": "Second,"
+        },
+        {
+          "start": 419.82,
+          "end": 420.39,
+          "text": "serious"
+        },
+        {
+          "start": 420.39,
+          "end": 420.52,
+          "text": "people"
+        },
+        {
+          "start": 420.84,
+          "end": 421.02,
+          "text": "bet"
+        },
+        {
+          "start": 421.02,
+          "end": 421.14,
+          "text": "the"
+        },
+        {
+          "start": 421.24,
+          "end": 421.49,
+          "text": "other"
+        },
+        {
+          "start": 421.49,
+          "end": 421.76,
+          "text": "way."
+        }
+      ]
+    },
+    {
+      "start": 422.24,
+      "end": 426.58,
+      "text": "Yan Lecun argues language models alone won't reach human level intelligence.",
+      "words": [
+        {
+          "start": 422.24,
+          "end": 422.46,
+          "text": "Yan"
+        },
+        {
+          "start": 422.46,
+          "end": 422.82,
+          "text": "Lecun"
+        },
+        {
+          "start": 422.82,
+          "end": 423.18,
+          "text": "argues"
+        },
+        {
+          "start": 423.28,
+          "end": 423.54,
+          "text": "language"
+        },
+        {
+          "start": 423.72,
+          "end": 424.0,
+          "text": "models"
+        },
+        {
+          "start": 424.0,
+          "end": 424.34,
+          "text": "alone"
+        },
+        {
+          "start": 424.52,
+          "end": 424.92,
+          "text": "won't"
+        },
+        {
+          "start": 424.92,
+          "end": 425.14,
+          "text": "reach"
+        },
+        {
+          "start": 425.26,
+          "end": 425.62,
+          "text": "human"
+        },
+        {
+          "start": 425.62,
+          "end": 425.86,
+          "text": "level"
+        },
+        {
+          "start": 425.86,
+          "end": 426.58,
+          "text": "intelligence."
+        }
+      ]
+    },
+    {
+      "start": 426.84,
+      "end": 432.86,
+      "text": "You need world models that predict what actions do. Liang is betting against that, with the whole company.",
+      "words": [
+        {
+          "start": 426.84,
+          "end": 426.97,
+          "text": "You"
+        },
+        {
+          "start": 426.97,
+          "end": 427.14,
+          "text": "need"
+        },
+        {
+          "start": 427.26,
+          "end": 427.6,
+          "text": "world"
+        },
+        {
+          "start": 427.6,
+          "end": 427.82,
+          "text": "models"
+        },
+        {
+          "start": 428.02,
+          "end": 428.16,
+          "text": "that"
+        },
+        {
+          "start": 428.16,
+          "end": 428.6,
+          "text": "predict"
+        },
+        {
+          "start": 428.6,
+          "end": 428.7,
+          "text": "what"
+        },
+        {
+          "start": 428.7,
+          "end": 429.03,
+          "text": "actions"
+        },
+        {
+          "start": 429.03,
+          "end": 429.38,
+          "text": "do."
+        },
+        {
+          "start": 430.04,
+          "end": 430.34,
+          "text": "Liang"
+        },
+        {
+          "start": 430.54,
+          "end": 430.7,
+          "text": "is"
+        },
+        {
+          "start": 430.7,
+          "end": 430.94,
+          "text": "betting"
+        },
+        {
+          "start": 431.06,
+          "end": 431.34,
+          "text": "against"
+        },
+        {
+          "start": 431.56,
+          "end": 431.8,
+          "text": "that,"
+        },
+        {
+          "start": 432.04,
+          "end": 432.1,
+          "text": "with"
+        },
+        {
+          "start": 432.1,
+          "end": 432.22,
+          "text": "the"
+        },
+        {
+          "start": 432.22,
+          "end": 432.44,
+          "text": "whole"
+        },
+        {
+          "start": 432.6,
+          "end": 432.86,
+          "text": "company."
+        }
+      ]
+    },
+    {
+      "start": 433.58,
+      "end": 437.78,
+      "text": "And robotics sits last on his staircase precisely because it's labor intensive.",
+      "words": [
+        {
+          "start": 433.58,
+          "end": 433.68,
+          "text": "And"
+        },
+        {
+          "start": 433.68,
+          "end": 434.15,
+          "text": "robotics"
+        },
+        {
+          "start": 434.15,
+          "end": 434.56,
+          "text": "sits"
+        },
+        {
+          "start": 434.56,
+          "end": 434.88,
+          "text": "last"
+        },
+        {
+          "start": 435.1,
+          "end": 435.18,
+          "text": "on"
+        },
+        {
+          "start": 435.18,
+          "end": 435.32,
+          "text": "his"
+        },
+        {
+          "start": 435.32,
+          "end": 435.84,
+          "text": "staircase"
+        },
+        {
+          "start": 436.14,
+          "end": 436.32,
+          "text": "precisely"
+        },
+        {
+          "start": 436.64,
+          "end": 436.9,
+          "text": "because"
+        },
+        {
+          "start": 436.9,
+          "end": 437.13,
+          "text": "it's"
+        },
+        {
+          "start": 437.13,
+          "end": 437.26,
+          "text": "labor"
+        },
+        {
+          "start": 437.42,
+          "end": 437.78,
+          "text": "intensive."
+        }
+      ]
+    },
+    {
+      "start": 438.58,
+      "end": 441.88,
+      "text": "Solve learning first, then let AI do the bitter work.",
+      "words": [
+        {
+          "start": 438.58,
+          "end": 438.82,
+          "text": "Solve"
+        },
+        {
+          "start": 438.82,
+          "end": 439.22,
+          "text": "learning"
+        },
+        {
+          "start": 439.22,
+          "end": 439.74,
+          "text": "first,"
+        },
+        {
+          "start": 440.04,
+          "end": 440.24,
+          "text": "then"
+        },
+        {
+          "start": 440.24,
+          "end": 440.52,
+          "text": "let"
+        },
+        {
+          "start": 440.52,
+          "end": 440.76,
+          "text": "AI"
+        },
+        {
+          "start": 441.04,
+          "end": 441.12,
+          "text": "do"
+        },
+        {
+          "start": 441.12,
+          "end": 441.2,
+          "text": "the"
+        },
+        {
+          "start": 441.3,
+          "end": 441.52,
+          "text": "bitter"
+        },
+        {
+          "start": 441.52,
+          "end": 441.88,
+          "text": "work."
+        }
+      ]
+    },
+    {
+      "start": 442.48,
+      "end": 451.88,
+      "text": "Meanwhile, the unglamorous present. Half of DeepSeek, he says, including half the core researchers, is labeling data by hand.",
+      "words": [
+        {
+          "start": 442.48,
+          "end": 442.96,
+          "text": "Meanwhile,"
+        },
+        {
+          "start": 443.26,
+          "end": 443.38,
+          "text": "the"
+        },
+        {
+          "start": 443.66,
+          "end": 444.37,
+          "text": "unglamorous"
+        },
+        {
+          "start": 444.56,
+          "end": 444.74,
+          "text": "present."
+        },
+        {
+          "start": 445.52,
+          "end": 445.8,
+          "text": "Half"
+        },
+        {
+          "start": 446.0,
+          "end": 446.1,
+          "text": "of"
+        },
+        {
+          "start": 446.1,
+          "end": 446.62,
+          "text": "DeepSeek,"
+        },
+        {
+          "start": 446.62,
+          "end": 446.76,
+          "text": "he"
+        },
+        {
+          "start": 446.76,
+          "end": 447.12,
+          "text": "says,"
+        },
+        {
+          "start": 447.5,
+          "end": 447.88,
+          "text": "including"
+        },
+        {
+          "start": 447.88,
+          "end": 448.24,
+          "text": "half"
+        },
+        {
+          "start": 448.44,
+          "end": 448.54,
+          "text": "the"
+        },
+        {
+          "start": 448.66,
+          "end": 448.82,
+          "text": "core"
+        },
+        {
+          "start": 449.22,
+          "end": 449.68,
+          "text": "researchers,"
+        },
+        {
+          "start": 450.1,
+          "end": 450.24,
+          "text": "is"
+        },
+        {
+          "start": 450.24,
+          "end": 450.64,
+          "text": "labeling"
+        },
+        {
+          "start": 450.64,
+          "end": 450.88,
+          "text": "data"
+        },
+        {
+          "start": 451.0,
+          "end": 451.26,
+          "text": "by"
+        },
+        {
+          "start": 451.26,
+          "end": 451.88,
+          "text": "hand."
+        }
+      ]
+    },
+    {
+      "start": 452.46,
+      "end": 457.52,
+      "text": "High-end labeling costs the same in China as in America. There's no cheap labor shortcut.",
+      "words": [
+        {
+          "start": 452.46,
+          "end": 452.9,
+          "text": "High-end"
+        },
+        {
+          "start": 452.9,
+          "end": 453.36,
+          "text": "labeling"
+        },
+        {
+          "start": 453.36,
+          "end": 453.7,
+          "text": "costs"
+        },
+        {
+          "start": 453.82,
+          "end": 453.96,
+          "text": "the"
+        },
+        {
+          "start": 453.96,
+          "end": 454.26,
+          "text": "same"
+        },
+        {
+          "start": 454.26,
+          "end": 454.36,
+          "text": "in"
+        },
+        {
+          "start": 454.36,
+          "end": 454.79,
+          "text": "China"
+        },
+        {
+          "start": 454.79,
+          "end": 454.92,
+          "text": "as"
+        },
+        {
+          "start": 454.92,
+          "end": 455.0,
+          "text": "in"
+        },
+        {
+          "start": 455.0,
+          "end": 455.4,
+          "text": "America."
+        },
+        {
+          "start": 455.92,
+          "end": 456.04,
+          "text": "There's"
+        },
+        {
+          "start": 456.04,
+          "end": 456.14,
+          "text": "no"
+        },
+        {
+          "start": 456.32,
+          "end": 456.46,
+          "text": "cheap"
+        },
+        {
+          "start": 456.6,
+          "end": 456.76,
+          "text": "labor"
+        },
+        {
+          "start": 456.9,
+          "end": 457.52,
+          "text": "shortcut."
+        }
+      ]
+    },
+    {
+      "start": 458.3,
+      "end": 462.24,
+      "text": "Carpathie coined the frame for this years ago. Software two point O.",
+      "words": [
+        {
+          "start": 458.3,
+          "end": 458.84,
+          "text": "Carpathie"
+        },
+        {
+          "start": 458.84,
+          "end": 459.1,
+          "text": "coined"
+        },
+        {
+          "start": 459.1,
+          "end": 459.2,
+          "text": "the"
+        },
+        {
+          "start": 459.2,
+          "end": 459.4,
+          "text": "frame"
+        },
+        {
+          "start": 459.4,
+          "end": 459.56,
+          "text": "for"
+        },
+        {
+          "start": 459.56,
+          "end": 459.7,
+          "text": "this"
+        },
+        {
+          "start": 459.7,
+          "end": 460.1,
+          "text": "years"
+        },
+        {
+          "start": 460.1,
+          "end": 460.44,
+          "text": "ago."
+        },
+        {
+          "start": 460.94,
+          "end": 461.44,
+          "text": "Software"
+        },
+        {
+          "start": 461.58,
+          "end": 461.7,
+          "text": "two"
+        },
+        {
+          "start": 461.86,
+          "end": 461.95,
+          "text": "point"
+        },
+        {
+          "start": 461.95,
+          "end": 462.24,
+          "text": "O."
+        }
+      ]
+    },
+    {
+      "start": 462.9,
+      "end": 467.18,
+      "text": "The data set is the source code, and the people labeling it are the programmers.",
+      "words": [
+        {
+          "start": 462.9,
+          "end": 462.98,
+          "text": "The"
+        },
+        {
+          "start": 463.08,
+          "end": 463.3,
+          "text": "data"
+        },
+        {
+          "start": 463.3,
+          "end": 463.52,
+          "text": "set"
+        },
+        {
+          "start": 463.8,
+          "end": 463.88,
+          "text": "is"
+        },
+        {
+          "start": 464.0,
+          "end": 464.16,
+          "text": "the"
+        },
+        {
+          "start": 464.16,
+          "end": 464.36,
+          "text": "source"
+        },
+        {
+          "start": 464.36,
+          "end": 464.6,
+          "text": "code,"
+        },
+        {
+          "start": 465.18,
+          "end": 465.24,
+          "text": "and"
+        },
+        {
+          "start": 465.24,
+          "end": 465.32,
+          "text": "the"
+        },
+        {
+          "start": 465.32,
+          "end": 465.58,
+          "text": "people"
+        },
+        {
+          "start": 465.58,
+          "end": 465.99,
+          "text": "labeling"
+        },
+        {
+          "start": 465.99,
+          "end": 466.22,
+          "text": "it"
+        },
+        {
+          "start": 466.4,
+          "end": 466.46,
+          "text": "are"
+        },
+        {
+          "start": 466.46,
+          "end": 466.57,
+          "text": "the"
+        },
+        {
+          "start": 466.57,
+          "end": 467.18,
+          "text": "programmers."
+        }
+      ]
+    },
+    {
+      "start": 467.72,
+      "end": 472.2,
+      "text": "Back to the businessmen lens applied to hardware. The plan for the billions raised.",
+      "words": [
+        {
+          "start": 467.72,
+          "end": 467.9,
+          "text": "Back"
+        },
+        {
+          "start": 467.9,
+          "end": 468.08,
+          "text": "to"
+        },
+        {
+          "start": 468.08,
+          "end": 468.16,
+          "text": "the"
+        },
+        {
+          "start": 468.3,
+          "end": 468.82,
+          "text": "businessmen"
+        },
+        {
+          "start": 468.82,
+          "end": 468.98,
+          "text": "lens"
+        },
+        {
+          "start": 469.4,
+          "end": 469.69,
+          "text": "applied"
+        },
+        {
+          "start": 469.69,
+          "end": 469.82,
+          "text": "to"
+        },
+        {
+          "start": 469.82,
+          "end": 470.36,
+          "text": "hardware."
+        },
+        {
+          "start": 470.92,
+          "end": 471.0,
+          "text": "The"
+        },
+        {
+          "start": 471.0,
+          "end": 471.22,
+          "text": "plan"
+        },
+        {
+          "start": 471.22,
+          "end": 471.36,
+          "text": "for"
+        },
+        {
+          "start": 471.36,
+          "end": 471.42,
+          "text": "the"
+        },
+        {
+          "start": 471.6,
+          "end": 471.9,
+          "text": "billions"
+        },
+        {
+          "start": 472.02,
+          "end": 472.2,
+          "text": "raised."
+        }
+      ]
+    },
+    {
+      "start": 472.74,
+      "end": 478.5,
+      "text": "Turn them into GPUs. As many as possible, as fast as possible, a premium is fine.",
+      "words": [
+        {
+          "start": 472.74,
+          "end": 472.98,
+          "text": "Turn"
+        },
+        {
+          "start": 472.98,
+          "end": 473.1,
+          "text": "them"
+        },
+        {
+          "start": 473.28,
+          "end": 473.52,
+          "text": "into"
+        },
+        {
+          "start": 473.66,
+          "end": 473.78,
+          "text": "GPUs."
+        },
+        {
+          "start": 474.78,
+          "end": 474.88,
+          "text": "As"
+        },
+        {
+          "start": 475.08,
+          "end": 475.28,
+          "text": "many"
+        },
+        {
+          "start": 475.28,
+          "end": 475.42,
+          "text": "as"
+        },
+        {
+          "start": 475.42,
+          "end": 475.86,
+          "text": "possible,"
+        },
+        {
+          "start": 475.86,
+          "end": 476.0,
+          "text": "as"
+        },
+        {
+          "start": 476.16,
+          "end": 476.48,
+          "text": "fast"
+        },
+        {
+          "start": 476.48,
+          "end": 476.61,
+          "text": "as"
+        },
+        {
+          "start": 476.61,
+          "end": 476.84,
+          "text": "possible,"
+        },
+        {
+          "start": 477.18,
+          "end": 477.24,
+          "text": "a"
+        },
+        {
+          "start": 477.38,
+          "end": 477.88,
+          "text": "premium"
+        },
+        {
+          "start": 477.88,
+          "end": 478.08,
+          "text": "is"
+        },
+        {
+          "start": 478.3,
+          "end": 478.5,
+          "text": "fine."
+        }
+      ]
+    },
+    {
+      "start": 479.14,
+      "end": 484.44,
+      "text": "His reasoning, cash in the bank earns two percent. A GPU pays back in ten months.",
+      "words": [
+        {
+          "start": 479.14,
+          "end": 479.26,
+          "text": "His"
+        },
+        {
+          "start": 479.26,
+          "end": 479.68,
+          "text": "reasoning,"
+        },
+        {
+          "start": 479.98,
+          "end": 480.28,
+          "text": "cash"
+        },
+        {
+          "start": 480.28,
+          "end": 480.36,
+          "text": "in"
+        },
+        {
+          "start": 480.36,
+          "end": 480.46,
+          "text": "the"
+        },
+        {
+          "start": 480.58,
+          "end": 480.86,
+          "text": "bank"
+        },
+        {
+          "start": 480.96,
+          "end": 481.18,
+          "text": "earns"
+        },
+        {
+          "start": 481.28,
+          "end": 481.42,
+          "text": "two"
+        },
+        {
+          "start": 481.54,
+          "end": 481.82,
+          "text": "percent."
+        },
+        {
+          "start": 482.34,
+          "end": 482.4,
+          "text": "A"
+        },
+        {
+          "start": 482.4,
+          "end": 482.54,
+          "text": "GPU"
+        },
+        {
+          "start": 483.0,
+          "end": 483.28,
+          "text": "pays"
+        },
+        {
+          "start": 483.28,
+          "end": 483.44,
+          "text": "back"
+        },
+        {
+          "start": 483.44,
+          "end": 483.69,
+          "text": "in"
+        },
+        {
+          "start": 483.69,
+          "end": 483.98,
+          "text": "ten"
+        },
+        {
+          "start": 483.98,
+          "end": 484.44,
+          "text": "months."
+        }
+      ]
+    },
+    {
+      "start": 484.92,
+      "end": 488.76,
+      "text": "If I could spend it all in six months, he says, that would be wonderful.",
+      "words": [
+        {
+          "start": 484.92,
+          "end": 485.02,
+          "text": "If"
+        },
+        {
+          "start": 485.02,
+          "end": 485.14,
+          "text": "I"
+        },
+        {
+          "start": 485.14,
+          "end": 485.26,
+          "text": "could"
+        },
+        {
+          "start": 485.26,
+          "end": 485.48,
+          "text": "spend"
+        },
+        {
+          "start": 485.48,
+          "end": 485.6,
+          "text": "it"
+        },
+        {
+          "start": 485.72,
+          "end": 485.84,
+          "text": "all"
+        },
+        {
+          "start": 485.98,
+          "end": 486.06,
+          "text": "in"
+        },
+        {
+          "start": 486.06,
+          "end": 486.36,
+          "text": "six"
+        },
+        {
+          "start": 486.52,
+          "end": 486.82,
+          "text": "months,"
+        },
+        {
+          "start": 486.82,
+          "end": 486.88,
+          "text": "he"
+        },
+        {
+          "start": 486.88,
+          "end": 487.18,
+          "text": "says,"
+        },
+        {
+          "start": 487.44,
+          "end": 487.6,
+          "text": "that"
+        },
+        {
+          "start": 487.82,
+          "end": 487.97,
+          "text": "would"
+        },
+        {
+          "start": 487.97,
+          "end": 488.12,
+          "text": "be"
+        },
+        {
+          "start": 488.36,
+          "end": 488.76,
+          "text": "wonderful."
+        }
+      ]
+    },
+    {
+      "start": 489.44,
+      "end": 499.66,
+      "text": "The urgency is real. He puts DeepSeek at twenty thousand H equivalents, the China market Nvidia chip, while the biggest American models run around eight hundred billion",
+      "words": [
+        {
+          "start": 489.44,
+          "end": 489.58,
+          "text": "The"
+        },
+        {
+          "start": 489.58,
+          "end": 490.0,
+          "text": "urgency"
+        },
+        {
+          "start": 490.16,
+          "end": 490.44,
+          "text": "is"
+        },
+        {
+          "start": 490.44,
+          "end": 490.84,
+          "text": "real."
+        },
+        {
+          "start": 491.34,
+          "end": 491.5,
+          "text": "He"
+        },
+        {
+          "start": 491.5,
+          "end": 491.74,
+          "text": "puts"
+        },
+        {
+          "start": 491.86,
+          "end": 491.92,
+          "text": "DeepSeek"
+        },
+        {
+          "start": 492.4,
+          "end": 492.48,
+          "text": "at"
+        },
+        {
+          "start": 492.62,
+          "end": 492.76,
+          "text": "twenty"
+        },
+        {
+          "start": 493.14,
+          "end": 493.2,
+          "text": "thousand"
+        },
+        {
+          "start": 493.84,
+          "end": 493.9,
+          "text": "H"
+        },
+        {
+          "start": 493.9,
+          "end": 494.3,
+          "text": "equivalents,"
+        },
+        {
+          "start": 494.66,
+          "end": 494.76,
+          "text": "the"
+        },
+        {
+          "start": 494.88,
+          "end": 495.1,
+          "text": "China"
+        },
+        {
+          "start": 495.1,
+          "end": 495.46,
+          "text": "market"
+        },
+        {
+          "start": 495.56,
+          "end": 495.68,
+          "text": "Nvidia"
+        },
+        {
+          "start": 495.96,
+          "end": 496.12,
+          "text": "chip,"
+        },
+        {
+          "start": 496.76,
+          "end": 496.9,
+          "text": "while"
+        },
+        {
+          "start": 496.9,
+          "end": 496.98,
+          "text": "the"
+        },
+        {
+          "start": 497.08,
+          "end": 497.37,
+          "text": "biggest"
+        },
+        {
+          "start": 497.4,
+          "end": 497.54,
+          "text": "American"
+        },
+        {
+          "start": 497.68,
+          "end": 497.88,
+          "text": "models"
+        },
+        {
+          "start": 498.12,
+          "end": 498.32,
+          "text": "run"
+        },
+        {
+          "start": 498.32,
+          "end": 498.64,
+          "text": "around"
+        },
+        {
+          "start": 498.74,
+          "end": 498.87,
+          "text": "eight"
+        },
+        {
+          "start": 498.87,
+          "end": 499.08,
+          "text": "hundred"
+        },
+        {
+          "start": 499.2,
+          "end": 499.66,
+          "text": "billion"
+        }
+      ]
+    },
+    {
+      "start": 499.98,
+      "end": 508.34,
+      "text": "active parameters against DeepSeek's forty-nine. Training at that scale would take, by his estimate, fifty thousand next-gen chips.",
+      "words": [
+        {
+          "start": 499.98,
+          "end": 500.26,
+          "text": "active"
+        },
+        {
+          "start": 500.26,
+          "end": 500.8,
+          "text": "parameters"
+        },
+        {
+          "start": 501.22,
+          "end": 501.38,
+          "text": "against"
+        },
+        {
+          "start": 501.58,
+          "end": 502.11,
+          "text": "DeepSeek's"
+        },
+        {
+          "start": 502.11,
+          "end": 502.6,
+          "text": "forty-nine."
+        },
+        {
+          "start": 503.62,
+          "end": 503.98,
+          "text": "Training"
+        },
+        {
+          "start": 503.98,
+          "end": 504.09,
+          "text": "at"
+        },
+        {
+          "start": 504.09,
+          "end": 504.23,
+          "text": "that"
+        },
+        {
+          "start": 504.23,
+          "end": 504.5,
+          "text": "scale"
+        },
+        {
+          "start": 504.7,
+          "end": 504.81,
+          "text": "would"
+        },
+        {
+          "start": 504.81,
+          "end": 504.98,
+          "text": "take,"
+        },
+        {
+          "start": 505.18,
+          "end": 505.28,
+          "text": "by"
+        },
+        {
+          "start": 505.28,
+          "end": 505.5,
+          "text": "his"
+        },
+        {
+          "start": 505.5,
+          "end": 505.94,
+          "text": "estimate,"
+        },
+        {
+          "start": 506.38,
+          "end": 506.4,
+          "text": "fifty"
+        },
+        {
+          "start": 506.86,
+          "end": 506.94,
+          "text": "thousand"
+        },
+        {
+          "start": 507.38,
+          "end": 507.9,
+          "text": "next-gen"
+        },
+        {
+          "start": 507.9,
+          "end": 508.34,
+          "text": "chips."
+        }
+      ]
+    },
+    {
+      "start": 509.04,
+      "end": 516.74,
+      "text": "His conclusion? The gap with the U.S. is compute, and even the talent gap is downstream of it because fewer chips means fewer experiments.",
+      "words": [
+        {
+          "start": 509.04,
+          "end": 509.18,
+          "text": "His"
+        },
+        {
+          "start": 509.18,
+          "end": 509.58,
+          "text": "conclusion?"
+        },
+        {
+          "start": 510.12,
+          "end": 510.24,
+          "text": "The"
+        },
+        {
+          "start": 510.24,
+          "end": 510.49,
+          "text": "gap"
+        },
+        {
+          "start": 510.49,
+          "end": 510.66,
+          "text": "with"
+        },
+        {
+          "start": 510.66,
+          "end": 510.72,
+          "text": "the"
+        },
+        {
+          "start": 510.72,
+          "end": 511.22,
+          "text": "U.S."
+        },
+        {
+          "start": 511.32,
+          "end": 511.44,
+          "text": "is"
+        },
+        {
+          "start": 511.44,
+          "end": 511.56,
+          "text": "compute,"
+        },
+        {
+          "start": 512.3,
+          "end": 512.38,
+          "text": "and"
+        },
+        {
+          "start": 512.38,
+          "end": 512.56,
+          "text": "even"
+        },
+        {
+          "start": 512.56,
+          "end": 512.7,
+          "text": "the"
+        },
+        {
+          "start": 512.7,
+          "end": 512.88,
+          "text": "talent"
+        },
+        {
+          "start": 513.08,
+          "end": 513.28,
+          "text": "gap"
+        },
+        {
+          "start": 513.4,
+          "end": 513.5,
+          "text": "is"
+        },
+        {
+          "start": 513.5,
+          "end": 513.97,
+          "text": "downstream"
+        },
+        {
+          "start": 513.97,
+          "end": 514.14,
+          "text": "of"
+        },
+        {
+          "start": 514.14,
+          "end": 514.24,
+          "text": "it"
+        },
+        {
+          "start": 514.64,
+          "end": 514.81,
+          "text": "because"
+        },
+        {
+          "start": 514.81,
+          "end": 515.16,
+          "text": "fewer"
+        },
+        {
+          "start": 515.16,
+          "end": 515.58,
+          "text": "chips"
+        },
+        {
+          "start": 515.58,
+          "end": 515.8,
+          "text": "means"
+        },
+        {
+          "start": 515.9,
+          "end": 516.24,
+          "text": "fewer"
+        },
+        {
+          "start": 516.24,
+          "end": 516.74,
+          "text": "experiments."
+        }
+      ]
+    },
+    {
+      "start": 517.48,
+      "end": 522.6,
+      "text": "And yet, in the same meeting, Nvidia, he says, is digging its own grave.",
+      "words": [
+        {
+          "start": 517.48,
+          "end": 517.6,
+          "text": "And"
+        },
+        {
+          "start": 517.6,
+          "end": 518.17,
+          "text": "yet,"
+        },
+        {
+          "start": 518.17,
+          "end": 518.34,
+          "text": "in"
+        },
+        {
+          "start": 518.34,
+          "end": 518.42,
+          "text": "the"
+        },
+        {
+          "start": 518.42,
+          "end": 518.74,
+          "text": "same"
+        },
+        {
+          "start": 518.86,
+          "end": 519.4,
+          "text": "meeting,"
+        },
+        {
+          "start": 519.68,
+          "end": 520.46,
+          "text": "Nvidia,"
+        },
+        {
+          "start": 520.46,
+          "end": 520.58,
+          "text": "he"
+        },
+        {
+          "start": 520.58,
+          "end": 521.02,
+          "text": "says,"
+        },
+        {
+          "start": 521.02,
+          "end": 521.18,
+          "text": "is"
+        },
+        {
+          "start": 521.34,
+          "end": 521.52,
+          "text": "digging"
+        },
+        {
+          "start": 521.7,
+          "end": 521.82,
+          "text": "its"
+        },
+        {
+          "start": 521.92,
+          "end": 522.08,
+          "text": "own"
+        },
+        {
+          "start": 522.3,
+          "end": 522.6,
+          "text": "grave."
+        }
+      ]
+    },
+    {
+      "start": 523.36,
+      "end": 528.56,
+      "text": "Cuda's moat is software nobody wants to rewrite, but AI writes code now.",
+      "words": [
+        {
+          "start": 523.36,
+          "end": 523.76,
+          "text": "Cuda's"
+        },
+        {
+          "start": 523.88,
+          "end": 524.1,
+          "text": "moat"
+        },
+        {
+          "start": 524.1,
+          "end": 524.32,
+          "text": "is"
+        },
+        {
+          "start": 524.32,
+          "end": 524.82,
+          "text": "software"
+        },
+        {
+          "start": 524.82,
+          "end": 525.08,
+          "text": "nobody"
+        },
+        {
+          "start": 525.36,
+          "end": 525.64,
+          "text": "wants"
+        },
+        {
+          "start": 525.64,
+          "end": 525.76,
+          "text": "to"
+        },
+        {
+          "start": 525.76,
+          "end": 526.42,
+          "text": "rewrite,"
+        },
+        {
+          "start": 526.68,
+          "end": 526.8,
+          "text": "but"
+        },
+        {
+          "start": 526.92,
+          "end": 527.05,
+          "text": "AI"
+        },
+        {
+          "start": 527.05,
+          "end": 527.9,
+          "text": "writes"
+        },
+        {
+          "start": 527.9,
+          "end": 528.06,
+          "text": "code"
+        },
+        {
+          "start": 528.26,
+          "end": 528.56,
+          "text": "now."
+        }
+      ]
+    },
+    {
+      "start": 529.16,
+      "end": 538.12,
+      "text": "DeepSeek built TileLang, a high-level language that rewrites GPU kernels in a fraction of the effort, and uses AI to write TileLang itself.",
+      "words": [
+        {
+          "start": 529.16,
+          "end": 529.67,
+          "text": "DeepSeek"
+        },
+        {
+          "start": 529.67,
+          "end": 529.94,
+          "text": "built"
+        },
+        {
+          "start": 530.06,
+          "end": 530.56,
+          "text": "TileLang,"
+        },
+        {
+          "start": 530.86,
+          "end": 530.96,
+          "text": "a"
+        },
+        {
+          "start": 530.96,
+          "end": 531.4,
+          "text": "high-level"
+        },
+        {
+          "start": 531.4,
+          "end": 531.9,
+          "text": "language"
+        },
+        {
+          "start": 531.9,
+          "end": 532.04,
+          "text": "that"
+        },
+        {
+          "start": 532.16,
+          "end": 532.65,
+          "text": "rewrites"
+        },
+        {
+          "start": 532.65,
+          "end": 532.94,
+          "text": "GPU"
+        },
+        {
+          "start": 533.28,
+          "end": 533.82,
+          "text": "kernels"
+        },
+        {
+          "start": 533.82,
+          "end": 533.92,
+          "text": "in"
+        },
+        {
+          "start": 533.92,
+          "end": 534.0,
+          "text": "a"
+        },
+        {
+          "start": 534.18,
+          "end": 534.54,
+          "text": "fraction"
+        },
+        {
+          "start": 534.54,
+          "end": 534.66,
+          "text": "of"
+        },
+        {
+          "start": 534.66,
+          "end": 534.74,
+          "text": "the"
+        },
+        {
+          "start": 534.74,
+          "end": 535.2,
+          "text": "effort,"
+        },
+        {
+          "start": 535.52,
+          "end": 535.76,
+          "text": "and"
+        },
+        {
+          "start": 535.76,
+          "end": 536.1,
+          "text": "uses"
+        },
+        {
+          "start": 536.22,
+          "end": 536.42,
+          "text": "AI"
+        },
+        {
+          "start": 536.7,
+          "end": 536.8,
+          "text": "to"
+        },
+        {
+          "start": 536.8,
+          "end": 537.04,
+          "text": "write"
+        },
+        {
+          "start": 537.14,
+          "end": 537.64,
+          "text": "TileLang"
+        },
+        {
+          "start": 537.64,
+          "end": 538.12,
+          "text": "itself."
+        }
+      ]
+    },
+    {
+      "start": 538.92,
+      "end": 545.14,
+      "text": "Every card Nvidia sells trains better AI, and better AI ports the ecosystem faster.",
+      "words": [
+        {
+          "start": 538.92,
+          "end": 539.27,
+          "text": "Every"
+        },
+        {
+          "start": 539.27,
+          "end": 539.6,
+          "text": "card"
+        },
+        {
+          "start": 539.6,
+          "end": 539.97,
+          "text": "Nvidia"
+        },
+        {
+          "start": 539.97,
+          "end": 540.43,
+          "text": "sells"
+        },
+        {
+          "start": 540.43,
+          "end": 540.96,
+          "text": "trains"
+        },
+        {
+          "start": 541.12,
+          "end": 541.36,
+          "text": "better"
+        },
+        {
+          "start": 541.36,
+          "end": 541.7,
+          "text": "AI,"
+        },
+        {
+          "start": 542.22,
+          "end": 542.32,
+          "text": "and"
+        },
+        {
+          "start": 542.42,
+          "end": 542.66,
+          "text": "better"
+        },
+        {
+          "start": 542.66,
+          "end": 542.9,
+          "text": "AI"
+        },
+        {
+          "start": 543.22,
+          "end": 543.56,
+          "text": "ports"
+        },
+        {
+          "start": 543.56,
+          "end": 543.72,
+          "text": "the"
+        },
+        {
+          "start": 543.72,
+          "end": 544.34,
+          "text": "ecosystem"
+        },
+        {
+          "start": 544.62,
+          "end": 545.14,
+          "text": "faster."
+        }
+      ]
+    },
+    {
+      "start": 545.72,
+      "end": 553.52,
+      "text": "The escape is real, but unfinished. V three trains on Nvidia down to hand-tuned Nvidia instructions.",
+      "words": [
+        {
+          "start": 545.72,
+          "end": 545.86,
+          "text": "The"
+        },
+        {
+          "start": 545.86,
+          "end": 546.18,
+          "text": "escape"
+        },
+        {
+          "start": 546.34,
+          "end": 546.58,
+          "text": "is"
+        },
+        {
+          "start": 546.76,
+          "end": 547.02,
+          "text": "real,"
+        },
+        {
+          "start": 547.34,
+          "end": 547.44,
+          "text": "but"
+        },
+        {
+          "start": 547.68,
+          "end": 548.36,
+          "text": "unfinished."
+        },
+        {
+          "start": 548.94,
+          "end": 549.12,
+          "text": "V"
+        },
+        {
+          "start": 549.26,
+          "end": 549.42,
+          "text": "three"
+        },
+        {
+          "start": 549.68,
+          "end": 549.94,
+          "text": "trains"
+        },
+        {
+          "start": 550.02,
+          "end": 550.14,
+          "text": "on"
+        },
+        {
+          "start": 550.24,
+          "end": 550.8,
+          "text": "Nvidia"
+        },
+        {
+          "start": 551.16,
+          "end": 551.36,
+          "text": "down"
+        },
+        {
+          "start": 551.36,
+          "end": 551.54,
+          "text": "to"
+        },
+        {
+          "start": 551.54,
+          "end": 552.33,
+          "text": "hand-tuned"
+        },
+        {
+          "start": 552.33,
+          "end": 552.67,
+          "text": "Nvidia"
+        },
+        {
+          "start": 552.67,
+          "end": 553.52,
+          "text": "instructions."
+        }
+      ]
+    },
+    {
+      "start": 554.08,
+      "end": 557.9,
+      "text": "V three point two shipped kernels in both CUDA and TIL-Lang.",
+      "words": [
+        {
+          "start": 554.08,
+          "end": 554.22,
+          "text": "V"
+        },
+        {
+          "start": 554.22,
+          "end": 554.44,
+          "text": "three"
+        },
+        {
+          "start": 554.54,
+          "end": 554.64,
+          "text": "point"
+        },
+        {
+          "start": 554.78,
+          "end": 554.94,
+          "text": "two"
+        },
+        {
+          "start": 555.12,
+          "end": 555.41,
+          "text": "shipped"
+        },
+        {
+          "start": 555.41,
+          "end": 555.82,
+          "text": "kernels"
+        },
+        {
+          "start": 555.82,
+          "end": 556.03,
+          "text": "in"
+        },
+        {
+          "start": 556.03,
+          "end": 556.36,
+          "text": "both"
+        },
+        {
+          "start": 556.5,
+          "end": 556.82,
+          "text": "CUDA"
+        },
+        {
+          "start": 556.98,
+          "end": 557.28,
+          "text": "and"
+        },
+        {
+          "start": 557.28,
+          "end": 557.9,
+          "text": "TIL-Lang."
+        }
+      ]
+    },
+    {
+      "start": 558.58,
+      "end": 562.16,
+      "text": "V four got day zero support on Huawei's Ascend chips.",
+      "words": [
+        {
+          "start": 558.58,
+          "end": 558.74,
+          "text": "V"
+        },
+        {
+          "start": 558.74,
+          "end": 559.0,
+          "text": "four"
+        },
+        {
+          "start": 559.18,
+          "end": 559.32,
+          "text": "got"
+        },
+        {
+          "start": 559.52,
+          "end": 559.7,
+          "text": "day"
+        },
+        {
+          "start": 559.7,
+          "end": 560.16,
+          "text": "zero"
+        },
+        {
+          "start": 560.16,
+          "end": 560.64,
+          "text": "support"
+        },
+        {
+          "start": 560.64,
+          "end": 560.82,
+          "text": "on"
+        },
+        {
+          "start": 560.82,
+          "end": 561.33,
+          "text": "Huawei's"
+        },
+        {
+          "start": 561.33,
+          "end": 561.63,
+          "text": "Ascend"
+        },
+        {
+          "start": 561.63,
+          "end": 562.16,
+          "text": "chips."
+        }
+      ]
+    },
+    {
+      "start": 562.62,
+      "end": 566.36,
+      "text": "And DeepSeek's own Tile kernels library still requires CUDA today.",
+      "words": [
+        {
+          "start": 562.62,
+          "end": 562.76,
+          "text": "And"
+        },
+        {
+          "start": 562.88,
+          "end": 563.36,
+          "text": "DeepSeek's"
+        },
+        {
+          "start": 563.48,
+          "end": 563.68,
+          "text": "own"
+        },
+        {
+          "start": 563.78,
+          "end": 564.0,
+          "text": "Tile"
+        },
+        {
+          "start": 564.1,
+          "end": 564.34,
+          "text": "kernels"
+        },
+        {
+          "start": 564.34,
+          "end": 564.8,
+          "text": "library"
+        },
+        {
+          "start": 564.8,
+          "end": 565.14,
+          "text": "still"
+        },
+        {
+          "start": 565.26,
+          "end": 565.72,
+          "text": "requires"
+        },
+        {
+          "start": 565.72,
+          "end": 566.02,
+          "text": "CUDA"
+        },
+        {
+          "start": 566.02,
+          "end": 566.36,
+          "text": "today."
+        }
+      ]
+    },
+    {
+      "start": 567.1,
+      "end": 574.84,
+      "text": "His prediction? Within a year, the domestic chip software problem is solved, and the bottleneck that remains is Huawei's production capacity.",
+      "words": [
+        {
+          "start": 567.1,
+          "end": 567.26,
+          "text": "His"
+        },
+        {
+          "start": 567.26,
+          "end": 567.62,
+          "text": "prediction?"
+        },
+        {
+          "start": 568.16,
+          "end": 568.38,
+          "text": "Within"
+        },
+        {
+          "start": 568.38,
+          "end": 568.52,
+          "text": "a"
+        },
+        {
+          "start": 568.52,
+          "end": 568.96,
+          "text": "year,"
+        },
+        {
+          "start": 569.16,
+          "end": 569.26,
+          "text": "the"
+        },
+        {
+          "start": 569.26,
+          "end": 569.64,
+          "text": "domestic"
+        },
+        {
+          "start": 569.74,
+          "end": 569.89,
+          "text": "chip"
+        },
+        {
+          "start": 569.89,
+          "end": 570.08,
+          "text": "software"
+        },
+        {
+          "start": 570.26,
+          "end": 570.72,
+          "text": "problem"
+        },
+        {
+          "start": 570.82,
+          "end": 570.96,
+          "text": "is"
+        },
+        {
+          "start": 570.96,
+          "end": 571.44,
+          "text": "solved,"
+        },
+        {
+          "start": 571.9,
+          "end": 572.0,
+          "text": "and"
+        },
+        {
+          "start": 572.0,
+          "end": 572.12,
+          "text": "the"
+        },
+        {
+          "start": 572.12,
+          "end": 572.56,
+          "text": "bottleneck"
+        },
+        {
+          "start": 572.56,
+          "end": 572.66,
+          "text": "that"
+        },
+        {
+          "start": 572.84,
+          "end": 573.1,
+          "text": "remains"
+        },
+        {
+          "start": 573.1,
+          "end": 573.42,
+          "text": "is"
+        },
+        {
+          "start": 573.42,
+          "end": 573.86,
+          "text": "Huawei's"
+        },
+        {
+          "start": 574.1,
+          "end": 574.36,
+          "text": "production"
+        },
+        {
+          "start": 574.38,
+          "end": 574.84,
+          "text": "capacity."
+        }
+      ]
+    },
+    {
+      "start": 575.62,
+      "end": 581.68,
+      "text": "Asked for his one non-negotiable, he didn't say compute or the models, he said the team.",
+      "words": [
+        {
+          "start": 575.62,
+          "end": 576.0,
+          "text": "Asked"
+        },
+        {
+          "start": 576.0,
+          "end": 576.12,
+          "text": "for"
+        },
+        {
+          "start": 576.12,
+          "end": 576.32,
+          "text": "his"
+        },
+        {
+          "start": 576.46,
+          "end": 576.72,
+          "text": "one"
+        },
+        {
+          "start": 576.72,
+          "end": 577.78,
+          "text": "non-negotiable,"
+        },
+        {
+          "start": 578.22,
+          "end": 578.3,
+          "text": "he"
+        },
+        {
+          "start": 578.3,
+          "end": 578.52,
+          "text": "didn't"
+        },
+        {
+          "start": 578.52,
+          "end": 578.68,
+          "text": "say"
+        },
+        {
+          "start": 578.68,
+          "end": 578.84,
+          "text": "compute"
+        },
+        {
+          "start": 579.48,
+          "end": 579.6,
+          "text": "or"
+        },
+        {
+          "start": 579.6,
+          "end": 579.7,
+          "text": "the"
+        },
+        {
+          "start": 579.7,
+          "end": 580.06,
+          "text": "models,"
+        },
+        {
+          "start": 580.56,
+          "end": 580.7,
+          "text": "he"
+        },
+        {
+          "start": 580.7,
+          "end": 580.96,
+          "text": "said"
+        },
+        {
+          "start": 581.1,
+          "end": 581.18,
+          "text": "the"
+        },
+        {
+          "start": 581.3,
+          "end": 581.68,
+          "text": "team."
+        }
+      ]
+    },
+    {
+      "start": 582.22,
+      "end": 586.42,
+      "text": "If the team stays, we achieve AGI. Everything else is just time.",
+      "words": [
+        {
+          "start": 582.22,
+          "end": 582.34,
+          "text": "If"
+        },
+        {
+          "start": 582.34,
+          "end": 582.47,
+          "text": "the"
+        },
+        {
+          "start": 582.47,
+          "end": 582.72,
+          "text": "team"
+        },
+        {
+          "start": 582.72,
+          "end": 582.98,
+          "text": "stays,"
+        },
+        {
+          "start": 583.34,
+          "end": 583.5,
+          "text": "we"
+        },
+        {
+          "start": 583.5,
+          "end": 583.82,
+          "text": "achieve"
+        },
+        {
+          "start": 584.0,
+          "end": 584.46,
+          "text": "AGI."
+        },
+        {
+          "start": 584.96,
+          "end": 585.28,
+          "text": "Everything"
+        },
+        {
+          "start": 585.28,
+          "end": 585.5,
+          "text": "else"
+        },
+        {
+          "start": 585.5,
+          "end": 585.74,
+          "text": "is"
+        },
+        {
+          "start": 585.74,
+          "end": 586.02,
+          "text": "just"
+        },
+        {
+          "start": 586.14,
+          "end": 586.42,
+          "text": "time."
+        }
+      ]
+    },
+    {
+      "start": 587.24,
+      "end": 595.3,
+      "text": "It's backed by behavior. They've lost key researchers to rivals, and the funding round reportedly came with one condition for every investor.",
+      "words": [
+        {
+          "start": 587.24,
+          "end": 587.43,
+          "text": "It's"
+        },
+        {
+          "start": 587.43,
+          "end": 587.58,
+          "text": "backed"
+        },
+        {
+          "start": 587.76,
+          "end": 587.96,
+          "text": "by"
+        },
+        {
+          "start": 587.96,
+          "end": 588.56,
+          "text": "behavior."
+        },
+        {
+          "start": 588.86,
+          "end": 588.98,
+          "text": "They've"
+        },
+        {
+          "start": 588.98,
+          "end": 589.21,
+          "text": "lost"
+        },
+        {
+          "start": 589.21,
+          "end": 589.48,
+          "text": "key"
+        },
+        {
+          "start": 589.8,
+          "end": 590.2,
+          "text": "researchers"
+        },
+        {
+          "start": 590.2,
+          "end": 590.36,
+          "text": "to"
+        },
+        {
+          "start": 590.46,
+          "end": 591.0,
+          "text": "rivals,"
+        },
+        {
+          "start": 591.28,
+          "end": 591.36,
+          "text": "and"
+        },
+        {
+          "start": 591.36,
+          "end": 591.46,
+          "text": "the"
+        },
+        {
+          "start": 591.46,
+          "end": 591.82,
+          "text": "funding"
+        },
+        {
+          "start": 591.82,
+          "end": 592.08,
+          "text": "round"
+        },
+        {
+          "start": 592.08,
+          "end": 592.66,
+          "text": "reportedly"
+        },
+        {
+          "start": 592.78,
+          "end": 592.98,
+          "text": "came"
+        },
+        {
+          "start": 592.98,
+          "end": 593.2,
+          "text": "with"
+        },
+        {
+          "start": 593.34,
+          "end": 593.52,
+          "text": "one"
+        },
+        {
+          "start": 593.88,
+          "end": 594.08,
+          "text": "condition"
+        },
+        {
+          "start": 594.24,
+          "end": 594.32,
+          "text": "for"
+        },
+        {
+          "start": 594.46,
+          "end": 594.78,
+          "text": "every"
+        },
+        {
+          "start": 594.78,
+          "end": 595.3,
+          "text": "investor."
+        }
+      ]
+    },
+    {
+      "start": 595.64,
+      "end": 604.5,
+      "text": "No poaching deep seek staff, no funding spin outs. Inside, no KPIs, and engineers get half their time for self-directed research.",
+      "words": [
+        {
+          "start": 595.64,
+          "end": 595.83,
+          "text": "No"
+        },
+        {
+          "start": 595.83,
+          "end": 596.14,
+          "text": "poaching"
+        },
+        {
+          "start": 596.28,
+          "end": 596.32,
+          "text": "deep"
+        },
+        {
+          "start": 596.42,
+          "end": 596.56,
+          "text": "seek"
+        },
+        {
+          "start": 596.56,
+          "end": 597.04,
+          "text": "staff,"
+        },
+        {
+          "start": 597.3,
+          "end": 597.52,
+          "text": "no"
+        },
+        {
+          "start": 597.52,
+          "end": 597.92,
+          "text": "funding"
+        },
+        {
+          "start": 597.92,
+          "end": 598.22,
+          "text": "spin"
+        },
+        {
+          "start": 598.22,
+          "end": 598.56,
+          "text": "outs."
+        },
+        {
+          "start": 599.32,
+          "end": 599.86,
+          "text": "Inside,"
+        },
+        {
+          "start": 600.06,
+          "end": 600.24,
+          "text": "no"
+        },
+        {
+          "start": 600.36,
+          "end": 600.8,
+          "text": "KPIs,"
+        },
+        {
+          "start": 601.28,
+          "end": 601.38,
+          "text": "and"
+        },
+        {
+          "start": 601.38,
+          "end": 601.86,
+          "text": "engineers"
+        },
+        {
+          "start": 601.86,
+          "end": 602.02,
+          "text": "get"
+        },
+        {
+          "start": 602.02,
+          "end": 602.3,
+          "text": "half"
+        },
+        {
+          "start": 602.42,
+          "end": 602.6,
+          "text": "their"
+        },
+        {
+          "start": 602.6,
+          "end": 602.9,
+          "text": "time"
+        },
+        {
+          "start": 602.9,
+          "end": 603.04,
+          "text": "for"
+        },
+        {
+          "start": 603.04,
+          "end": 603.96,
+          "text": "self-directed"
+        },
+        {
+          "start": 603.96,
+          "end": 604.5,
+          "text": "research."
+        }
+      ]
+    },
+    {
+      "start": 605.14,
+      "end": 610.18,
+      "text": "He also admits the loose structure is straining. Real hierarchy is being built right now.",
+      "words": [
+        {
+          "start": 605.14,
+          "end": 605.26,
+          "text": "He"
+        },
+        {
+          "start": 605.4,
+          "end": 605.46,
+          "text": "also"
+        },
+        {
+          "start": 605.56,
+          "end": 605.74,
+          "text": "admits"
+        },
+        {
+          "start": 605.88,
+          "end": 606.04,
+          "text": "the"
+        },
+        {
+          "start": 606.04,
+          "end": 606.24,
+          "text": "loose"
+        },
+        {
+          "start": 606.52,
+          "end": 606.88,
+          "text": "structure"
+        },
+        {
+          "start": 606.88,
+          "end": 607.04,
+          "text": "is"
+        },
+        {
+          "start": 607.04,
+          "end": 607.62,
+          "text": "straining."
+        },
+        {
+          "start": 608.02,
+          "end": 608.18,
+          "text": "Real"
+        },
+        {
+          "start": 608.32,
+          "end": 608.9,
+          "text": "hierarchy"
+        },
+        {
+          "start": 609.04,
+          "end": 609.16,
+          "text": "is"
+        },
+        {
+          "start": 609.16,
+          "end": 609.34,
+          "text": "being"
+        },
+        {
+          "start": 609.34,
+          "end": 609.61,
+          "text": "built"
+        },
+        {
+          "start": 609.61,
+          "end": 609.94,
+          "text": "right"
+        },
+        {
+          "start": 609.94,
+          "end": 610.18,
+          "text": "now."
+        }
+      ]
+    },
+    {
+      "start": 610.86,
+      "end": 616.6,
+      "text": "That's the picture four hours leave behind. A quant's discipline applied to intelligence itself.",
+      "words": [
+        {
+          "start": 610.86,
+          "end": 611.26,
+          "text": "That's"
+        },
+        {
+          "start": 611.26,
+          "end": 611.42,
+          "text": "the"
+        },
+        {
+          "start": 611.42,
+          "end": 611.72,
+          "text": "picture"
+        },
+        {
+          "start": 611.72,
+          "end": 612.1,
+          "text": "four"
+        },
+        {
+          "start": 612.1,
+          "end": 612.48,
+          "text": "hours"
+        },
+        {
+          "start": 612.48,
+          "end": 612.66,
+          "text": "leave"
+        },
+        {
+          "start": 612.8,
+          "end": 613.12,
+          "text": "behind."
+        },
+        {
+          "start": 613.82,
+          "end": 613.93,
+          "text": "A"
+        },
+        {
+          "start": 613.93,
+          "end": 614.4,
+          "text": "quant's"
+        },
+        {
+          "start": 614.54,
+          "end": 614.98,
+          "text": "discipline"
+        },
+        {
+          "start": 614.98,
+          "end": 615.36,
+          "text": "applied"
+        },
+        {
+          "start": 615.46,
+          "end": 615.56,
+          "text": "to"
+        },
+        {
+          "start": 615.76,
+          "end": 616.16,
+          "text": "intelligence"
+        },
+        {
+          "start": 616.26,
+          "end": 616.6,
+          "text": "itself."
+        }
+      ]
+    },
+    {
+      "start": 617.34,
+      "end": 625.24,
+      "text": "Cap the margin, cut the cost, open the recipe, refuse everything off the main line, and spend the difference on one bet.",
+      "words": [
+        {
+          "start": 617.34,
+          "end": 617.5,
+          "text": "Cap"
+        },
+        {
+          "start": 617.5,
+          "end": 617.62,
+          "text": "the"
+        },
+        {
+          "start": 617.62,
+          "end": 618.31,
+          "text": "margin,"
+        },
+        {
+          "start": 618.31,
+          "end": 618.49,
+          "text": "cut"
+        },
+        {
+          "start": 618.49,
+          "end": 618.59,
+          "text": "the"
+        },
+        {
+          "start": 618.59,
+          "end": 619.22,
+          "text": "cost,"
+        },
+        {
+          "start": 619.4,
+          "end": 619.72,
+          "text": "open"
+        },
+        {
+          "start": 619.72,
+          "end": 619.84,
+          "text": "the"
+        },
+        {
+          "start": 619.84,
+          "end": 620.28,
+          "text": "recipe,"
+        },
+        {
+          "start": 620.72,
+          "end": 621.16,
+          "text": "refuse"
+        },
+        {
+          "start": 621.32,
+          "end": 621.82,
+          "text": "everything"
+        },
+        {
+          "start": 621.82,
+          "end": 621.94,
+          "text": "off"
+        },
+        {
+          "start": 621.94,
+          "end": 622.06,
+          "text": "the"
+        },
+        {
+          "start": 622.06,
+          "end": 622.26,
+          "text": "main"
+        },
+        {
+          "start": 622.26,
+          "end": 622.58,
+          "text": "line,"
+        },
+        {
+          "start": 623.08,
+          "end": 623.2,
+          "text": "and"
+        },
+        {
+          "start": 623.2,
+          "end": 623.5,
+          "text": "spend"
+        },
+        {
+          "start": 623.5,
+          "end": 623.65,
+          "text": "the"
+        },
+        {
+          "start": 623.65,
+          "end": 623.98,
+          "text": "difference"
+        },
+        {
+          "start": 624.1,
+          "end": 624.32,
+          "text": "on"
+        },
+        {
+          "start": 624.52,
+          "end": 624.7,
+          "text": "one"
+        },
+        {
+          "start": 624.92,
+          "end": 625.24,
+          "text": "bet."
+        }
+      ]
+    },
+    {
+      "start": 625.9,
+      "end": 633.88,
+      "text": "It also comes with a promise you can check. He said the strongest model they build will always be released open, the same one they run themselves.",
+      "words": [
+        {
+          "start": 625.9,
+          "end": 626.0,
+          "text": "It"
+        },
+        {
+          "start": 626.0,
+          "end": 626.08,
+          "text": "also"
+        },
+        {
+          "start": 626.08,
+          "end": 626.36,
+          "text": "comes"
+        },
+        {
+          "start": 626.46,
+          "end": 626.56,
+          "text": "with"
+        },
+        {
+          "start": 626.56,
+          "end": 626.64,
+          "text": "a"
+        },
+        {
+          "start": 626.74,
+          "end": 627.16,
+          "text": "promise"
+        },
+        {
+          "start": 627.16,
+          "end": 627.3,
+          "text": "you"
+        },
+        {
+          "start": 627.32,
+          "end": 627.4,
+          "text": "can"
+        },
+        {
+          "start": 627.4,
+          "end": 627.86,
+          "text": "check."
+        },
+        {
+          "start": 628.36,
+          "end": 628.46,
+          "text": "He"
+        },
+        {
+          "start": 628.46,
+          "end": 628.66,
+          "text": "said"
+        },
+        {
+          "start": 628.66,
+          "end": 628.76,
+          "text": "the"
+        },
+        {
+          "start": 628.76,
+          "end": 629.4,
+          "text": "strongest"
+        },
+        {
+          "start": 629.4,
+          "end": 629.7,
+          "text": "model"
+        },
+        {
+          "start": 629.7,
+          "end": 629.84,
+          "text": "they"
+        },
+        {
+          "start": 629.94,
+          "end": 630.26,
+          "text": "build"
+        },
+        {
+          "start": 630.26,
+          "end": 630.4,
+          "text": "will"
+        },
+        {
+          "start": 630.56,
+          "end": 631.06,
+          "text": "always"
+        },
+        {
+          "start": 631.06,
+          "end": 631.18,
+          "text": "be"
+        },
+        {
+          "start": 631.18,
+          "end": 631.52,
+          "text": "released"
+        },
+        {
+          "start": 631.52,
+          "end": 631.94,
+          "text": "open,"
+        },
+        {
+          "start": 632.42,
+          "end": 632.5,
+          "text": "the"
+        },
+        {
+          "start": 632.5,
+          "end": 632.7,
+          "text": "same"
+        },
+        {
+          "start": 632.7,
+          "end": 632.86,
+          "text": "one"
+        },
+        {
+          "start": 632.86,
+          "end": 633.0,
+          "text": "they"
+        },
+        {
+          "start": 633.0,
+          "end": 633.18,
+          "text": "run"
+        },
+        {
+          "start": 633.18,
+          "end": 633.88,
+          "text": "themselves."
+        }
+      ]
+    },
+    {
+      "start": 634.48,
+      "end": 634.9,
+      "text": "We'll see.",
+      "words": [
+        {
+          "start": 634.48,
+          "end": 634.64,
+          "text": "We'll"
+        },
+        {
+          "start": 634.64,
+          "end": 634.9,
+          "text": "see."
+        }
+      ]
+    }
+  ]
+}

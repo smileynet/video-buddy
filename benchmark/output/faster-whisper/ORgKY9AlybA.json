@@ -1,0 +1,2606 @@
+{
+  "engine": "faster-whisper",
+  "model": "base",
+  "device": "cpu",
+  "video_id": "ORgKY9AlybA",
+  "audio_duration": 1032.576,
+  "transcribe_time": 185.38,
+  "rtf": 5.57,
+  "segment_count": 432,
+  "hallucination_repeats": 0,
+  "full_text": "There's no way around it and no sugar coating it. Use of large language models often just called AI is proliferating. It's everywhere and it's only going to happen more. And on social media like YouTube and Instagram, it is particularly pernicious because while we're decent at spotting LLM writing, it's much harder when it's delivered enthusiastically by an influencer. Those Instagram shorts with links to a free PDF resource, they're mostly written by LLMs. And the resources almost always entirely artificially generated. But it's not just here. I've seen polyglot influencers reading scripts straight from chat GBT unedited. I've seen news stories, essays and magazines, even people responding to emails who start with sure thing. Here's an email response with a cordial tone. Not to mention the literary award scandals. The problem is that LLMs make it absurdly easy to write much, much more text and they do have legitimate uses. They can be a tremendous time and money saver, especially when it comes to tedious or formulaic work. But there's understandably strong pushback against LLM use for a variety of reasons ranging from the imminently practical to absurd moral panic. As an aside, something that is often overlooked is that they're also a gradient technology. I use an iPad with a great keyboard case to write on the subway. I love mine. Not sponsored, but I'll link in the description. It's pretty great if you're interested. Anyway, when I typed for a, I got an autocomplete suggestion with the entire phrase for a variety of reasons. That's a form of language modeling that is directly related to LLMs but about which nobody cares. The deeper fears are that people are no longer really thinking for themselves and will eventually be unable to do so. There's a fear that we can be manipulated by thinking machines. Don't worry, we'll get into just how intelligent artificial intelligence actually is. Or even worse, that our thinking can be manipulated by, well, unthinking agents. There's also a moral panic that takes a variety of forms most often over water use. From people who charge their iPhone, iPad, laptop, computer, television, modem, refrigerator, dishwasher, washing machine, regular lights, Christmas light display, and Bitcoin farming servers from the local hydroelectric grid while taking long showers and watering they're well manicured lawns. There's a fear of access to key systems being taken over by a machine that kills us all, which is a deep part of American culture in particular spanning everything from iRobot, to the Matrix, to SkyNet, from Terminator to Wargames with Matthew Broderick. Shall we play a game? There's also the fears of the investment bubble from those of us who remember the housing bubble that burst in 2008 or have read about the tulip craze in the Netherlands in the 1600s. Seriously, if you're not familiar with it, go read about it. It is fantastic. It is ridiculous. It's also simply moralized in an increasingly polarized political climate. Musk has an LLM. All LLMs are obviously bad. I still don't forgive him for ruining one of the best sci-fi word coinages in the history of sci-fi. There are ways to tell whether something was written by an LLM, though none of the discussion that I've seen so far actually mentions what I think is the clearest tell. And of course, nothing is foolproof. In fact, fools are precisely the failure case for what I think is the most robust method. Let me explain. If you're new to the channel, I'm Dr. Taylor Jones. I've got a PhD in linguistics from the University of Pennsylvania. And here on the channel, I discuss everything related to language, linguistics, language learning, and culture. If you're into those topics, be sure to subscribe and ring the bell for notifications. Today, we're talking about how to catch an imposter. Don't fear these things. They're not real. No, sorry. We're talking about how to spot LLM writing beyond the obvious. I'm Dr. Taylor Jones, and this is Language Jones. LLM writing has distinctive patterns, at least out of the box, which are so robust that there is an entire genre of TikTok making fun of how they talk. Not irrational. You're responding to a perceived sustainability crisis at a universal scale. That's macro level thinking. Because they're actually amazing at what they do, the problem is that none of the tells on their own are valid, but we'll get to that in a minute. Think about chat GPT voice. You probably have an idea of what it is. It's chipper and conversational, responding with sure thing. Sure thing. And explaining why whatever you asked is a really great question. That's a really great question. There are rhetorical devices that are used to the point of absurdity, most notably a comparison. It's not X. It's Y. I just saw this referred to as the DeGiorno construct, and I love that. It's not delivery. It's DeGiorno. Not to be confused with the Maybelline hedge. There's punchy ad copy writing, like breaking sentences into sentence fragments. Honestly, the catch, and so on. There's explicit validation of your or its own arguments. And that matters. Each of the big LLMs has their own overused pet words like Delve, honestly, actually, and that matters. Gap. And yes, even Blueprint. Some of you can already see the problem, though. Oh, and Gemini loves buckets and gaps for some reason. No idea why buckets. Claude loves toolkit and move. Any one of these is not evidence of AI, but all of them together are strongly suggestive of LLM use. It's gotten to the point that people have LLMs create anti-LLM style guides. I've got one for Claude. People have rightly become skeptical of LLM use because depending on the writing task, it can feel like dishonesty. I think Hank Green has a sensible take in that he'll give it a pass if it's clear the person used in LLM to generate some text, but clearly had the idea themselves. And we can all agree that, for instance, a novel or an academic paper should be entirely written by a thinking human. All right, so I scripted, filmed, and recorded this a few days before Hank Green just fell on his sword very publicly about AI misuse and maybe AI addiction. So I should probably be really clear about exactly what he said that I thought resonated because it wasn't all of that. I remember one video where he was talking about other people using AI. And he said that he could test to give creators a pass if he sees some of the hallmarks of AI like some of the rhetorical flourishes. If it's clear to him that he didn't understand the information or know the information and that the other person did, but maybe fleshed out an outline or reworked a paragraph using AI to make it a little bit better suited for the target audience that they have. That makes us to me as kind of reasonable. To get the concrete example, I've read this book multiple times. I've taught it multiple times. And if I wanted to create a YouTube video about it, which I might do, I can sit down and I can write an outline by hand where I know that it's got everything that's in the book that I want to talk about. Or I can brain dump to clot or some other AI. And I can write an outline, which I can then go back review, compare against my notes, compare against my teaching notes, compare against the actual book, and make sure that it makes sense and is correct. That takes me less time than doing the original writing by hand. And that's just because I write slower than clot does. But for something where I don't know the information, that's kind of ridiculous, right? Then you Google. Then you're basically just getting me doing a dramatic reading of my own Google results, which I don't know if they're accurate. So that's something that I think is a bad use of it. But maybe a little assistance in outlining something that you definitely already know. That I can see being an acceptable use case for AI. But when you do my brother and my wife had an intervention because I'm getting too much of a dopamine hit from AI, that's a problem. So yeah, bad timing on my part, quoting Hank Green, but what are you gonna do? But here's the problem with being constantly on the lookout for LLM assisted writing. LLM's follow a lot of writing best practices. My academic writing definitely benefited from a book called They Say I Say, which explicitly teaches to situate the reader by discussing others' claims, and then introduce your own and expand upon them. One way of doing this includes comparison. For instance, it's not AI-driven, it's actually classical rhetoric. I wrote that myself. It's a normal rhetorical flourish. And my academic writing, and that of my advisors in the academics I read a lot of, includes lots of parentheticals, thought set off with M-dashes, and... Groupings of three. That's classical rhetoric. So people are not good at detecting AI because AI now passes a turing test. That's kind of a tutology in terms of the definition of a turing test, but I hope you'll indulge me. LLM's write well enough to seem human, which is why people get convinced they're the messiah, or they should eat three cigarettes a day or whatever. There's a better way to tell. And I haven't seen anybody discuss it, and I think not for nothing, that is the real indicator of the literacy crisis. Let me explain. There's just a tiny bit of background needed that most people don't know, or can't remember, so bear with me for just a second. LLM's, despite being marketed as artificial intelligence, are not actually thinking. They're autocomplete on steroids. They produce an artifact that is the product of statistical transformations of numbers that correspond to words, or morphemes, or letter sequences, that are based on N-grams. N-grams are just a generalization of bi-grams, which itself are two words, or characters, that appear side-by-side in a text. They just have a lot of computational power behind them. And complicated recursive neural networks, doing feed-forward feedback tuning with generalized adversarial models. And who knows what else since my knowledge for this comes from when I rolled my own a decade ago. And I know the math and science have really progressed since then. Point is though that they're N-gram TF-IDF, that's term frequency inverse document frequency, so don't comment me in the comments for saying IDF, you lunatics. And basically, next word predictors, like I used when I hit tab to select half a sentence and writing this script, just orders of magnitudes larger and faster. This means they do not think. There is no thinking. There is no reasoning. They are dumb, but fast. They're just faster at being dumb. Being dumb faster than everybody else gives a lot of people the appearance of intelligence. It's really hard to wrap your head around this because they sure look and sound like they're answering your questions. They're not. What they do is give it a prompt, which is transformed into a string of digits for them. They provide an optimized string of digits in return. The optimization really means that what they provide after being transformed from digits back to letters and spaces is an artifact that appears similar to how an answer might appear. Does that make sense? Like if you say, can you pass the salt plausible answer might be yes, no, maybe. Do I sound like a magic eight ball? Same idea. A less plausible answer is salt or NACL, as a mineral that, and a total failure is something like Dostoevsky was born in 1821 or Scythylapyr. That yes is not a yes. It's just one of the set of words that is the highest ranked as appearing like a valid answer. And this is how you spot them because they're not thinking they're just putting words together. You get words that go together, but that lack semantic coherence. They're not manipulating concepts, they're just manipulating strings of letters. And yes, I wrote that last sentence myself too. So in coherent, but plausible word choices or mixed metaphors, along with all those other clues, are the real giveaway. Let me give some examples. I recently saw a purported geopolitical analysis of the deployment of naval power during the war with Iran. Get your language shown, Spengo cards ready. The article had all the hallmarks of LLM writing people are familiar with, including my peeve, the ever-expanding use of quietly and amid. But it started by describing a military offense as, quote, nestled amid a year of war. Nestled, Gemini, and Fleshing out an outline I wrote, returned a paragraph that included a description of two conceptual categories as two overarching pillars that undergird the entire whatever the fuck we were talking about. Overarching pillars are already architecturally incoherent, but simultaneously overarching and undergirding is mind-bendingly perverse. Jet fuel might not be able to melt-stale beams. Bingo! Oh, god. But Gemini, sure seems to be able to. For another Gemini Haller, I got a paragraph that said, words aren't just empty containers, a blank slate to be filled. I can't remember if it said containers or buckets, actually, because it really loves buckets. Anyway, you can fill a container. You can fill a slate. Those are common enough co-occurrences. What is entirely opaque to an LLM is that those are two radically different conceptual meanings of filling something. Turning our attention to Claude, it's not better. Every time I try to use it to accelerate my writing, I get back lines like, we're going to look at two related toolkits and see what they buy you when you point them at a problem like. Let's think about this for a minute. We're going to do what now? We're going to look at a toolkit, okay? And see what it buys you. We're bartering tools now when you point it at, when you what? Have you ever bought anything by pointing a toolkit at it? I know I haven't. I tried it at the local cafe and they told me, sir, put the wrench down or we're calling the cops. That's spanner and constabulary from our UK viewers. The number one giveaway of LLM writing is not the punchy ad copy sentences, the overuse of honestly and delved, the use of, it's not X, it's Y comparisons and rhetorical groupings of three. It's the absolute conceptual incoherence behind common word choices. But this gives rise to a problem and quite a serious one at that given the accelerating literacy crisis. Namely, some people are also incoherent thinkers who mix metaphors. Even if LLM's were all trained on the tevias and dogberries of their source material, people routinely mix metaphors. My wife and I do it for fun, bingo. But what we do is the opposite of an LLM. Things like mixing, you set them up, I knock them down and you open to the door, I just walked through it to get you set them up, I just walked through them like a sculpture garden. Or you open to the door, I just knocked it down. Look at slot team. Anyway, the very real question is, do we need to determine whether it's an LLM or an idiot before discounting incoherent writing? I recently read an article in the Atlantic Bimoning, what else, declining literacy, where I ended up spending a significant portion of it trying to determine why it was so bad. It turns out it was written by an undergrad and it read, well, like an undergrad writing project barely worthy of a B. It of course overlooked one possible reason for declining rates of magazine reading, magazines now publishing creative writing exercises from undergrads. Point is whether it was an LLM or not was a red herring, it was simply bad writing and that points to a bigger issue. LLMs can actually be quite useful. They're particularly useful for boilerplate, for first drafts of easily verifiable information, especially when you have to write similar documents repeatedly. For instance, explaining the concept of a phonium before, of course, then editing it. They really shine when used for language study. They're large language models after all. I've got a whole segment of my upcoming course on self-directed language study that is on how to use LLMs to their maximum potential. For more on that, scan the QR code or go to www.languagejones.com slash accelerator and none of it is LLM generated because they would never, in a million years, think of it. They're also useful for things like read this draft or are there any glaring omissions. That is, finding things you left out, locating places that you can cut material, that's a lot of how I use them and so on. Everything, everything, though, must be taken with a huge grain of salt and edited multiple times, even things that were correct in previous drafts. And full disclosure, I've used LLMs in scripting for YouTube. In fact, I did an entire experiment to see whether my channel did better with content I wrote entirely on my own or workshopped with LLMs. The results are in another video, but spoilers, they might be depressing. I moved away from it after the experiment, even though LLM videos kind of do better because the mental burden of correcting incoherent metaphors was too much. I'd rather learn steno, which I'm doing than edit another paragraph from Gemini or Claude about what happens when you point overarching buckets or whatever. However, I may still use Claude from time to time to trim fat. And ever since having Gemini write my YouTube descriptions, my videos do better. I didn't know elements of the algorithm that Google's products did know. So next time you're suspicious of LLM writing, while it can help to play LLM bingo, look for incoherent semantics. As an aside, let's take so next time you at the end of a video. A call to action is a hallmark of YouTube writing. I wrote this one myself, but the rhetorical move is just good writing for this format. And I would have said rhetorical move anyway, but now I'm aware that it sounds like Claude. If you like what I'm doing with the channel, you can support it on YouTube with super thanks or on Patreon at patreon.com slash language Jones. Please leave me a comment they are great for the algorithm and subscribe if you haven't already. Until next time, happy hunting.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.32,
+      "duration": 2.32,
+      "text": "There's no way around it and no sugar coating it."
+    },
+    {
+      "start": 2.32,
+      "end": 6.16,
+      "duration": 3.84,
+      "text": "Use of large language models often just called AI is proliferating."
+    },
+    {
+      "start": 6.16,
+      "end": 8.48,
+      "duration": 2.32,
+      "text": "It's everywhere and it's only going to happen more."
+    },
+    {
+      "start": 8.48,
+      "end": 10.88,
+      "duration": 2.4,
+      "text": "And on social media like YouTube and Instagram,"
+    },
+    {
+      "start": 10.88,
+      "end": 15.92,
+      "duration": 5.04,
+      "text": "it is particularly pernicious because while we're decent at spotting LLM writing,"
+    },
+    {
+      "start": 15.92,
+      "end": 20.64,
+      "duration": 4.72,
+      "text": "it's much harder when it's delivered enthusiastically by an influencer."
+    },
+    {
+      "start": 20.64,
+      "end": 23.84,
+      "duration": 3.2,
+      "text": "Those Instagram shorts with links to a free PDF resource,"
+    },
+    {
+      "start": 23.84,
+      "end": 25.76,
+      "duration": 1.92,
+      "text": "they're mostly written by LLMs."
+    },
+    {
+      "start": 25.76,
+      "end": 29.76,
+      "duration": 4.0,
+      "text": "And the resources almost always entirely artificially generated."
+    },
+    {
+      "start": 29.76,
+      "end": 32.72,
+      "duration": 2.96,
+      "text": "But it's not just here. I've seen polyglot influencers"
+    },
+    {
+      "start": 32.72,
+      "end": 35.6,
+      "duration": 2.88,
+      "text": "reading scripts straight from chat GBT unedited."
+    },
+    {
+      "start": 35.6,
+      "end": 38.48,
+      "duration": 2.88,
+      "text": "I've seen news stories, essays and magazines,"
+    },
+    {
+      "start": 38.48,
+      "end": 41.68,
+      "duration": 3.2,
+      "text": "even people responding to emails who start with"
+    },
+    {
+      "start": 41.68,
+      "end": 45.04,
+      "duration": 3.36,
+      "text": "sure thing. Here's an email response with a cordial tone."
+    },
+    {
+      "start": 45.04,
+      "end": 47.68,
+      "duration": 2.64,
+      "text": "Not to mention the literary award scandals."
+    },
+    {
+      "start": 47.68,
+      "end": 50.96,
+      "duration": 3.28,
+      "text": "The problem is that LLMs make it absurdly easy to write much,"
+    },
+    {
+      "start": 50.96,
+      "end": 53.84,
+      "duration": 2.88,
+      "text": "much more text and they do have legitimate uses."
+    },
+    {
+      "start": 53.84,
+      "end": 56.32,
+      "duration": 2.48,
+      "text": "They can be a tremendous time and money saver,"
+    },
+    {
+      "start": 56.32,
+      "end": 59.68,
+      "duration": 3.36,
+      "text": "especially when it comes to tedious or formulaic work."
+    },
+    {
+      "start": 59.68,
+      "end": 62.64,
+      "duration": 2.96,
+      "text": "But there's understandably strong pushback against LLM use"
+    },
+    {
+      "start": 62.64,
+      "end": 66.8,
+      "duration": 4.16,
+      "text": "for a variety of reasons ranging from the imminently practical"
+    },
+    {
+      "start": 66.8,
+      "end": 68.56,
+      "duration": 1.76,
+      "text": "to absurd moral panic."
+    },
+    {
+      "start": 68.56,
+      "end": 71.2,
+      "duration": 2.64,
+      "text": "As an aside, something that is often overlooked is that"
+    },
+    {
+      "start": 71.2,
+      "end": 73.76,
+      "duration": 2.56,
+      "text": "they're also a gradient technology."
+    },
+    {
+      "start": 73.76,
+      "end": 77.12,
+      "duration": 3.36,
+      "text": "I use an iPad with a great keyboard case to write on the subway."
+    },
+    {
+      "start": 77.12,
+      "end": 80.88,
+      "duration": 3.76,
+      "text": "I love mine. Not sponsored, but I'll link in the description."
+    },
+    {
+      "start": 80.88,
+      "end": 82.64,
+      "duration": 1.76,
+      "text": "It's pretty great if you're interested."
+    },
+    {
+      "start": 82.72,
+      "end": 86.96,
+      "duration": 4.24,
+      "text": "Anyway, when I typed for a, I got an autocomplete suggestion"
+    },
+    {
+      "start": 86.96,
+      "end": 90.08,
+      "duration": 3.12,
+      "text": "with the entire phrase for a variety of reasons."
+    },
+    {
+      "start": 90.08,
+      "end": 93.04,
+      "duration": 2.96,
+      "text": "That's a form of language modeling that is directly related"
+    },
+    {
+      "start": 93.04,
+      "end": 95.44,
+      "duration": 2.4,
+      "text": "to LLMs but about which nobody cares."
+    },
+    {
+      "start": 95.44,
+      "end": 99.36,
+      "duration": 3.92,
+      "text": "The deeper fears are that people are no longer really thinking for themselves"
+    },
+    {
+      "start": 99.36,
+      "end": 101.6,
+      "duration": 2.24,
+      "text": "and will eventually be unable to do so."
+    },
+    {
+      "start": 101.6,
+      "end": 104.96,
+      "duration": 3.36,
+      "text": "There's a fear that we can be manipulated by thinking machines."
+    },
+    {
+      "start": 104.96,
+      "end": 108.08,
+      "duration": 3.12,
+      "text": "Don't worry, we'll get into just how intelligent artificial"
+    },
+    {
+      "start": 108.08,
+      "end": 109.76,
+      "duration": 1.68,
+      "text": "intelligence actually is."
+    },
+    {
+      "start": 109.84,
+      "end": 112.88,
+      "duration": 3.04,
+      "text": "Or even worse, that our thinking can be manipulated"
+    },
+    {
+      "start": 112.88,
+      "end": 115.44,
+      "duration": 2.56,
+      "text": "by, well, unthinking agents."
+    },
+    {
+      "start": 115.44,
+      "end": 117.68,
+      "duration": 2.24,
+      "text": "There's also a moral panic that takes a variety of forms"
+    },
+    {
+      "start": 117.68,
+      "end": 119.44,
+      "duration": 1.76,
+      "text": "most often over water use."
+    },
+    {
+      "start": 119.44,
+      "end": 123.28,
+      "duration": 3.84,
+      "text": "From people who charge their iPhone, iPad, laptop, computer,"
+    },
+    {
+      "start": 123.28,
+      "end": 128.32,
+      "duration": 5.04,
+      "text": "television, modem, refrigerator, dishwasher, washing machine,"
+    },
+    {
+      "start": 128.32,
+      "end": 130.48,
+      "duration": 2.16,
+      "text": "regular lights, Christmas light display,"
+    },
+    {
+      "start": 130.48,
+      "end": 134.4,
+      "duration": 3.92,
+      "text": "and Bitcoin farming servers from the local hydroelectric grid"
+    },
+    {
+      "start": 134.4,
+      "end": 137.12,
+      "duration": 2.72,
+      "text": "while taking long showers and watering"
+    },
+    {
+      "start": 137.2,
+      "end": 138.8,
+      "duration": 1.6,
+      "text": "they're well manicured lawns."
+    },
+    {
+      "start": 138.8,
+      "end": 141.44,
+      "duration": 2.64,
+      "text": "There's a fear of access to key systems being taken over"
+    },
+    {
+      "start": 141.44,
+      "end": 144.96,
+      "duration": 3.52,
+      "text": "by a machine that kills us all, which is a deep part of American culture"
+    },
+    {
+      "start": 144.96,
+      "end": 148.32,
+      "duration": 3.36,
+      "text": "in particular spanning everything from iRobot,"
+    },
+    {
+      "start": 148.32,
+      "end": 151.6,
+      "duration": 3.28,
+      "text": "to the Matrix, to SkyNet, from Terminator to Wargames"
+    },
+    {
+      "start": 151.6,
+      "end": 152.56,
+      "duration": 0.96,
+      "text": "with Matthew Broderick."
+    },
+    {
+      "start": 152.56,
+      "end": 153.84,
+      "duration": 1.28,
+      "text": "Shall we play a game?"
+    },
+    {
+      "start": 153.84,
+      "end": 155.92,
+      "duration": 2.08,
+      "text": "There's also the fears of the investment bubble"
+    },
+    {
+      "start": 155.92,
+      "end": 158.4,
+      "duration": 2.48,
+      "text": "from those of us who remember the housing bubble"
+    },
+    {
+      "start": 158.4,
+      "end": 161.68,
+      "duration": 3.28,
+      "text": "that burst in 2008 or have read about the tulip craze"
+    },
+    {
+      "start": 161.68,
+      "end": 163.84,
+      "duration": 2.16,
+      "text": "in the Netherlands in the 1600s."
+    },
+    {
+      "start": 163.84,
+      "end": 165.92,
+      "duration": 2.08,
+      "text": "Seriously, if you're not familiar with it, go read about it."
+    },
+    {
+      "start": 166.0,
+      "end": 167.44,
+      "duration": 1.44,
+      "text": "It is fantastic."
+    },
+    {
+      "start": 167.44,
+      "end": 168.8,
+      "duration": 1.36,
+      "text": "It is ridiculous."
+    },
+    {
+      "start": 168.8,
+      "end": 173.12,
+      "duration": 4.32,
+      "text": "It's also simply moralized in an increasingly polarized political climate."
+    },
+    {
+      "start": 173.12,
+      "end": 174.4,
+      "duration": 1.28,
+      "text": "Musk has an LLM."
+    },
+    {
+      "start": 174.4,
+      "end": 176.32,
+      "duration": 1.92,
+      "text": "All LLMs are obviously bad."
+    },
+    {
+      "start": 176.32,
+      "end": 179.84,
+      "duration": 3.52,
+      "text": "I still don't forgive him for ruining one of the best sci-fi word coinages"
+    },
+    {
+      "start": 179.84,
+      "end": 181.2,
+      "duration": 1.36,
+      "text": "in the history of sci-fi."
+    },
+    {
+      "start": 181.2,
+      "end": 183.92,
+      "duration": 2.72,
+      "text": "There are ways to tell whether something was written by an LLM,"
+    },
+    {
+      "start": 183.92,
+      "end": 186.32,
+      "duration": 2.4,
+      "text": "though none of the discussion that I've seen"
+    },
+    {
+      "start": 186.32,
+      "end": 190.4,
+      "duration": 4.08,
+      "text": "so far actually mentions what I think is the clearest tell."
+    },
+    {
+      "start": 190.4,
+      "end": 192.32,
+      "duration": 1.92,
+      "text": "And of course, nothing is foolproof."
+    },
+    {
+      "start": 192.32,
+      "end": 195.52,
+      "duration": 3.2,
+      "text": "In fact, fools are precisely the failure case"
+    },
+    {
+      "start": 195.6,
+      "end": 198.24,
+      "duration": 2.64,
+      "text": "for what I think is the most robust method."
+    },
+    {
+      "start": 198.24,
+      "end": 199.04,
+      "duration": 0.8,
+      "text": "Let me explain."
+    },
+    {
+      "start": 199.04,
+      "end": 200.8,
+      "duration": 1.76,
+      "text": "If you're new to the channel, I'm Dr. Taylor Jones."
+    },
+    {
+      "start": 200.8,
+      "end": 203.52,
+      "duration": 2.72,
+      "text": "I've got a PhD in linguistics from the University of Pennsylvania."
+    },
+    {
+      "start": 203.52,
+      "end": 206.24,
+      "duration": 2.72,
+      "text": "And here on the channel, I discuss everything related"
+    },
+    {
+      "start": 206.24,
+      "end": 209.52,
+      "duration": 3.28,
+      "text": "to language, linguistics, language learning, and culture."
+    },
+    {
+      "start": 209.52,
+      "end": 211.76,
+      "duration": 2.24,
+      "text": "If you're into those topics, be sure to subscribe"
+    },
+    {
+      "start": 211.76,
+      "end": 213.12,
+      "duration": 1.36,
+      "text": "and ring the bell for notifications."
+    },
+    {
+      "start": 213.12,
+      "end": 215.76,
+      "duration": 2.64,
+      "text": "Today, we're talking about how to catch an imposter."
+    },
+    {
+      "start": 215.76,
+      "end": 217.52,
+      "duration": 1.76,
+      "text": "Don't fear these things."
+    },
+    {
+      "start": 218.32,
+      "end": 219.92,
+      "duration": 1.6,
+      "text": "They're not real."
+    },
+    {
+      "start": 219.92,
+      "end": 220.48,
+      "duration": 0.56,
+      "text": "No, sorry."
+    },
+    {
+      "start": 220.48,
+      "end": 223.2,
+      "duration": 2.72,
+      "text": "We're talking about how to spot LLM writing beyond the obvious."
+    },
+    {
+      "start": 223.2,
+      "end": 225.36,
+      "duration": 2.16,
+      "text": "I'm Dr. Taylor Jones, and this is Language Jones."
+    },
+    {
+      "start": 231.2,
+      "end": 233.92,
+      "duration": 2.72,
+      "text": "LLM writing has distinctive patterns, at least out of the box,"
+    },
+    {
+      "start": 233.92,
+      "end": 237.44,
+      "duration": 3.52,
+      "text": "which are so robust that there is an entire genre of TikTok"
+    },
+    {
+      "start": 237.44,
+      "end": 239.28,
+      "duration": 1.84,
+      "text": "making fun of how they talk."
+    },
+    {
+      "start": 239.28,
+      "end": 240.32,
+      "duration": 1.04,
+      "text": "Not irrational."
+    },
+    {
+      "start": 240.32,
+      "end": 243.04,
+      "duration": 2.72,
+      "text": "You're responding to a perceived sustainability crisis"
+    },
+    {
+      "start": 243.04,
+      "end": 244.24,
+      "duration": 1.2,
+      "text": "at a universal scale."
+    },
+    {
+      "start": 244.24,
+      "end": 245.68,
+      "duration": 1.44,
+      "text": "That's macro level thinking."
+    },
+    {
+      "start": 245.68,
+      "end": 247.84,
+      "duration": 2.16,
+      "text": "Because they're actually amazing at what they do,"
+    },
+    {
+      "start": 247.84,
+      "end": 252.32,
+      "duration": 4.48,
+      "text": "the problem is that none of the tells on their own are valid,"
+    },
+    {
+      "start": 252.32,
+      "end": 253.52,
+      "duration": 1.2,
+      "text": "but we'll get to that in a minute."
+    },
+    {
+      "start": 253.52,
+      "end": 254.8,
+      "duration": 1.28,
+      "text": "Think about chat GPT voice."
+    },
+    {
+      "start": 254.8,
+      "end": 256.32,
+      "duration": 1.52,
+      "text": "You probably have an idea of what it is."
+    },
+    {
+      "start": 256.32,
+      "end": 259.12,
+      "duration": 2.8,
+      "text": "It's chipper and conversational, responding with sure thing."
+    },
+    {
+      "start": 259.12,
+      "end": 260.0,
+      "duration": 0.88,
+      "text": "Sure thing."
+    },
+    {
+      "start": 260.0,
+      "end": 264.16,
+      "duration": 4.16,
+      "text": "And explaining why whatever you asked is a really great question."
+    },
+    {
+      "start": 264.16,
+      "end": 266.08,
+      "duration": 1.92,
+      "text": "That's a really great question."
+    },
+    {
+      "start": 266.08,
+      "end": 268.16,
+      "duration": 2.08,
+      "text": "There are rhetorical devices that are used"
+    },
+    {
+      "start": 268.16,
+      "end": 271.76,
+      "duration": 3.6,
+      "text": "to the point of absurdity, most notably a comparison."
+    },
+    {
+      "start": 271.76,
+      "end": 272.72,
+      "duration": 0.96,
+      "text": "It's not X."
+    },
+    {
+      "start": 272.72,
+      "end": 273.36,
+      "duration": 0.64,
+      "text": "It's Y."
+    },
+    {
+      "start": 273.36,
+      "end": 275.76,
+      "duration": 2.4,
+      "text": "I just saw this referred to as the DeGiorno construct,"
+    },
+    {
+      "start": 275.76,
+      "end": 276.8,
+      "duration": 1.04,
+      "text": "and I love that."
+    },
+    {
+      "start": 276.8,
+      "end": 277.84,
+      "duration": 1.04,
+      "text": "It's not delivery."
+    },
+    {
+      "start": 277.84,
+      "end": 278.8,
+      "duration": 0.96,
+      "text": "It's DeGiorno."
+    },
+    {
+      "start": 278.8,
+      "end": 281.36,
+      "duration": 2.56,
+      "text": "Not to be confused with the Maybelline hedge."
+    },
+    {
+      "start": 281.36,
+      "end": 283.28,
+      "duration": 1.92,
+      "text": "There's punchy ad copy writing,"
+    },
+    {
+      "start": 283.28,
+      "end": 286.48,
+      "duration": 3.2,
+      "text": "like breaking sentences into sentence fragments."
+    },
+    {
+      "start": 286.48,
+      "end": 289.12,
+      "duration": 2.64,
+      "text": "Honestly, the catch, and so on."
+    },
+    {
+      "start": 289.12,
+      "end": 292.8,
+      "duration": 3.68,
+      "text": "There's explicit validation of your or its own arguments."
+    },
+    {
+      "start": 292.8,
+      "end": 294.08,
+      "duration": 1.28,
+      "text": "And that matters."
+    },
+    {
+      "start": 294.08,
+      "end": 296.48,
+      "duration": 2.4,
+      "text": "Each of the big LLMs has their own overused pet words"
+    },
+    {
+      "start": 296.48,
+      "end": 298.56,
+      "duration": 2.08,
+      "text": "like Delve, honestly, actually,"
+    },
+    {
+      "start": 298.56,
+      "end": 299.44,
+      "duration": 0.88,
+      "text": "and that matters."
+    },
+    {
+      "start": 299.44,
+      "end": 299.84,
+      "duration": 0.4,
+      "text": "Gap."
+    },
+    {
+      "start": 299.84,
+      "end": 301.84,
+      "duration": 2.0,
+      "text": "And yes, even Blueprint."
+    },
+    {
+      "start": 301.84,
+      "end": 303.84,
+      "duration": 2.0,
+      "text": "Some of you can already see the problem, though."
+    },
+    {
+      "start": 303.84,
+      "end": 306.24,
+      "duration": 2.4,
+      "text": "Oh, and Gemini loves buckets and gaps for some reason."
+    },
+    {
+      "start": 306.24,
+      "end": 307.92,
+      "duration": 1.68,
+      "text": "No idea why buckets."
+    },
+    {
+      "start": 307.92,
+      "end": 310.0,
+      "duration": 2.08,
+      "text": "Claude loves toolkit and move."
+    },
+    {
+      "start": 310.0,
+      "end": 311.92,
+      "duration": 1.92,
+      "text": "Any one of these is not evidence of AI,"
+    },
+    {
+      "start": 311.92,
+      "end": 315.92,
+      "duration": 4.0,
+      "text": "but all of them together are strongly suggestive of LLM use."
+    },
+    {
+      "start": 315.92,
+      "end": 317.92,
+      "duration": 2.0,
+      "text": "It's gotten to the point that people have LLMs"
+    },
+    {
+      "start": 317.92,
+      "end": 320.08,
+      "duration": 2.16,
+      "text": "create anti-LLM style guides."
+    },
+    {
+      "start": 320.08,
+      "end": 321.12,
+      "duration": 1.04,
+      "text": "I've got one for Claude."
+    },
+    {
+      "start": 321.12,
+      "end": 323.76,
+      "duration": 2.64,
+      "text": "People have rightly become skeptical of LLM use"
+    },
+    {
+      "start": 323.76,
+      "end": 325.6,
+      "duration": 1.84,
+      "text": "because depending on the writing task,"
+    },
+    {
+      "start": 325.6,
+      "end": 327.76,
+      "duration": 2.16,
+      "text": "it can feel like dishonesty."
+    },
+    {
+      "start": 327.76,
+      "end": 329.68,
+      "duration": 1.92,
+      "text": "I think Hank Green has a sensible take"
+    },
+    {
+      "start": 329.68,
+      "end": 330.88,
+      "duration": 1.2,
+      "text": "in that he'll give it a pass"
+    },
+    {
+      "start": 330.88,
+      "end": 332.96,
+      "duration": 2.08,
+      "text": "if it's clear the person used in LLM"
+    },
+    {
+      "start": 332.96,
+      "end": 334.8,
+      "duration": 1.84,
+      "text": "to generate some text,"
+    },
+    {
+      "start": 334.8,
+      "end": 336.88,
+      "duration": 2.08,
+      "text": "but clearly had the idea themselves."
+    },
+    {
+      "start": 336.88,
+      "end": 338.96,
+      "duration": 2.08,
+      "text": "And we can all agree that, for instance,"
+    },
+    {
+      "start": 338.96,
+      "end": 341.28,
+      "duration": 2.32,
+      "text": "a novel or an academic paper"
+    },
+    {
+      "start": 341.28,
+      "end": 343.6,
+      "duration": 2.32,
+      "text": "should be entirely written by a thinking human."
+    },
+    {
+      "start": 343.6,
+      "end": 346.24,
+      "duration": 2.64,
+      "text": "All right, so I scripted, filmed, and recorded this a few days"
+    },
+    {
+      "start": 346.24,
+      "end": 349.12,
+      "duration": 2.88,
+      "text": "before Hank Green just fell on his sword"
+    },
+    {
+      "start": 349.12,
+      "end": 353.04,
+      "duration": 3.92,
+      "text": "very publicly about AI misuse and maybe AI addiction."
+    },
+    {
+      "start": 353.04,
+      "end": 354.08,
+      "duration": 1.04,
+      "text": "So I should probably be really clear"
+    },
+    {
+      "start": 354.08,
+      "end": 356.32,
+      "duration": 2.24,
+      "text": "about exactly what he said that I thought resonated"
+    },
+    {
+      "start": 356.32,
+      "end": 357.68,
+      "duration": 1.36,
+      "text": "because it wasn't all of that."
+    },
+    {
+      "start": 357.68,
+      "end": 360.08,
+      "duration": 2.4,
+      "text": "I remember one video where he was talking about"
+    },
+    {
+      "start": 360.08,
+      "end": 361.36,
+      "duration": 1.28,
+      "text": "other people using AI."
+    },
+    {
+      "start": 361.36,
+      "end": 363.2,
+      "duration": 1.84,
+      "text": "And he said that he could test to give creators a pass"
+    },
+    {
+      "start": 363.2,
+      "end": 365.36,
+      "duration": 2.16,
+      "text": "if he sees some of the hallmarks of AI"
+    },
+    {
+      "start": 365.36,
+      "end": 367.2,
+      "duration": 1.84,
+      "text": "like some of the rhetorical flourishes."
+    },
+    {
+      "start": 367.2,
+      "end": 369.52,
+      "duration": 2.32,
+      "text": "If it's clear to him that he didn't understand the information"
+    },
+    {
+      "start": 369.68,
+      "end": 372.16,
+      "duration": 2.48,
+      "text": "or know the information and that the other person did,"
+    },
+    {
+      "start": 372.16,
+      "end": 376.24,
+      "duration": 4.08,
+      "text": "but maybe fleshed out an outline or reworked a paragraph"
+    },
+    {
+      "start": 376.24,
+      "end": 378.64,
+      "duration": 2.4,
+      "text": "using AI to make it a little bit better suited"
+    },
+    {
+      "start": 378.64,
+      "end": 381.12,
+      "duration": 2.48,
+      "text": "for the target audience that they have."
+    },
+    {
+      "start": 381.12,
+      "end": 382.6,
+      "duration": 1.48,
+      "text": "That makes us to me as kind of reasonable."
+    },
+    {
+      "start": 382.6,
+      "end": 383.68,
+      "duration": 1.08,
+      "text": "To get the concrete example,"
+    },
+    {
+      "start": 383.68,
+      "end": 385.76,
+      "duration": 2.08,
+      "text": "I've read this book multiple times."
+    },
+    {
+      "start": 385.76,
+      "end": 387.32,
+      "duration": 1.56,
+      "text": "I've taught it multiple times."
+    },
+    {
+      "start": 387.32,
+      "end": 389.52,
+      "duration": 2.2,
+      "text": "And if I wanted to create a YouTube video about it,"
+    },
+    {
+      "start": 389.52,
+      "end": 391.84,
+      "duration": 2.32,
+      "text": "which I might do, I can sit down"
+    },
+    {
+      "start": 391.84,
+      "end": 393.8,
+      "duration": 1.96,
+      "text": "and I can write an outline by hand"
+    },
+    {
+      "start": 393.8,
+      "end": 395.68,
+      "duration": 1.88,
+      "text": "where I know that it's got everything that's in the book"
+    },
+    {
+      "start": 395.68,
+      "end": 396.96,
+      "duration": 1.28,
+      "text": "that I want to talk about."
+    },
+    {
+      "start": 396.96,
+      "end": 401.4,
+      "duration": 4.44,
+      "text": "Or I can brain dump to clot or some other AI."
+    },
+    {
+      "start": 401.4,
+      "end": 403.0,
+      "duration": 1.6,
+      "text": "And I can write an outline,"
+    },
+    {
+      "start": 403.0,
+      "end": 404.28,
+      "duration": 1.28,
+      "text": "which I can then go back review,"
+    },
+    {
+      "start": 404.28,
+      "end": 406.44,
+      "duration": 2.16,
+      "text": "compare against my notes, compare against my teaching notes,"
+    },
+    {
+      "start": 406.44,
+      "end": 407.96,
+      "duration": 1.52,
+      "text": "compare against the actual book,"
+    },
+    {
+      "start": 407.96,
+      "end": 410.12,
+      "duration": 2.16,
+      "text": "and make sure that it makes sense and is correct."
+    },
+    {
+      "start": 410.12,
+      "end": 412.16,
+      "duration": 2.04,
+      "text": "That takes me less time than doing"
+    },
+    {
+      "start": 412.16,
+      "end": 413.88,
+      "duration": 1.72,
+      "text": "the original writing by hand."
+    },
+    {
+      "start": 413.88,
+      "end": 416.48,
+      "duration": 2.6,
+      "text": "And that's just because I write slower than clot does."
+    },
+    {
+      "start": 416.48,
+      "end": 419.2,
+      "duration": 2.72,
+      "text": "But for something where I don't know the information,"
+    },
+    {
+      "start": 419.2,
+      "end": 420.24,
+      "duration": 1.04,
+      "text": "that's kind of ridiculous, right?"
+    },
+    {
+      "start": 420.24,
+      "end": 421.16,
+      "duration": 0.92,
+      "text": "Then you Google."
+    },
+    {
+      "start": 421.16,
+      "end": 423.28,
+      "duration": 2.12,
+      "text": "Then you're basically just getting me doing a dramatic reading"
+    },
+    {
+      "start": 423.28,
+      "end": 424.44,
+      "duration": 1.16,
+      "text": "of my own Google results,"
+    },
+    {
+      "start": 424.44,
+      "end": 426.16,
+      "duration": 1.72,
+      "text": "which I don't know if they're accurate."
+    },
+    {
+      "start": 426.16,
+      "end": 427.88,
+      "duration": 1.72,
+      "text": "So that's something that I think is a bad use of it."
+    },
+    {
+      "start": 427.88,
+      "end": 429.92,
+      "duration": 2.04,
+      "text": "But maybe a little assistance in outlining something"
+    },
+    {
+      "start": 429.92,
+      "end": 432.0,
+      "duration": 2.08,
+      "text": "that you definitely already know."
+    },
+    {
+      "start": 432.0,
+      "end": 434.52,
+      "duration": 2.52,
+      "text": "That I can see being an acceptable use case for AI."
+    },
+    {
+      "start": 434.52,
+      "end": 437.68,
+      "duration": 3.16,
+      "text": "But when you do my brother and my wife had an intervention"
+    },
+    {
+      "start": 437.68,
+      "end": 440.48,
+      "duration": 2.8,
+      "text": "because I'm getting too much of a dopamine hit from AI,"
+    },
+    {
+      "start": 440.48,
+      "end": 441.76,
+      "duration": 1.28,
+      "text": "that's a problem."
+    },
+    {
+      "start": 441.76,
+      "end": 445.48,
+      "duration": 3.72,
+      "text": "So yeah, bad timing on my part, quoting Hank Green,"
+    },
+    {
+      "start": 445.48,
+      "end": 447.0,
+      "duration": 1.52,
+      "text": "but what are you gonna do?"
+    },
+    {
+      "start": 447.0,
+      "end": 448.8,
+      "duration": 1.8,
+      "text": "But here's the problem with being constantly"
+    },
+    {
+      "start": 448.8,
+      "end": 451.16,
+      "duration": 2.36,
+      "text": "on the lookout for LLM assisted writing."
+    },
+    {
+      "start": 451.16,
+      "end": 454.0,
+      "duration": 2.84,
+      "text": "LLM's follow a lot of writing best practices."
+    },
+    {
+      "start": 454.0,
+      "end": 455.76,
+      "duration": 1.76,
+      "text": "My academic writing definitely benefited"
+    },
+    {
+      "start": 455.76,
+      "end": 457.72,
+      "duration": 1.96,
+      "text": "from a book called They Say I Say,"
+    },
+    {
+      "start": 457.72,
+      "end": 460.32,
+      "duration": 2.6,
+      "text": "which explicitly teaches to situate the reader"
+    },
+    {
+      "start": 460.32,
+      "end": 462.52,
+      "duration": 2.2,
+      "text": "by discussing others' claims,"
+    },
+    {
+      "start": 462.52,
+      "end": 465.32,
+      "duration": 2.8,
+      "text": "and then introduce your own and expand upon them."
+    },
+    {
+      "start": 465.32,
+      "end": 468.4,
+      "duration": 3.08,
+      "text": "One way of doing this includes comparison."
+    },
+    {
+      "start": 468.4,
+      "end": 470.68,
+      "duration": 2.28,
+      "text": "For instance, it's not AI-driven,"
+    },
+    {
+      "start": 470.68,
+      "end": 472.56,
+      "duration": 1.88,
+      "text": "it's actually classical rhetoric."
+    },
+    {
+      "start": 472.56,
+      "end": 473.68,
+      "duration": 1.12,
+      "text": "I wrote that myself."
+    },
+    {
+      "start": 473.68,
+      "end": 475.44,
+      "duration": 1.76,
+      "text": "It's a normal rhetorical flourish."
+    },
+    {
+      "start": 475.44,
+      "end": 478.12,
+      "duration": 2.68,
+      "text": "And my academic writing, and that of my advisors"
+    },
+    {
+      "start": 478.12,
+      "end": 479.48,
+      "duration": 1.36,
+      "text": "in the academics I read a lot of,"
+    },
+    {
+      "start": 479.48,
+      "end": 481.84,
+      "duration": 2.36,
+      "text": "includes lots of parentheticals,"
+    },
+    {
+      "start": 481.84,
+      "end": 485.0,
+      "duration": 3.16,
+      "text": "thought set off with M-dashes, and..."
+    },
+    {
+      "start": 485.04,
+      "end": 486.92,
+      "duration": 1.88,
+      "text": "Groupings of three."
+    },
+    {
+      "start": 486.92,
+      "end": 488.4,
+      "duration": 1.48,
+      "text": "That's classical rhetoric."
+    },
+    {
+      "start": 488.4,
+      "end": 490.32,
+      "duration": 1.92,
+      "text": "So people are not good at detecting AI"
+    },
+    {
+      "start": 490.32,
+      "end": 492.96,
+      "duration": 2.64,
+      "text": "because AI now passes a turing test."
+    },
+    {
+      "start": 492.96,
+      "end": 495.4,
+      "duration": 2.44,
+      "text": "That's kind of a tutology in terms of the definition"
+    },
+    {
+      "start": 495.4,
+      "end": 498.0,
+      "duration": 2.6,
+      "text": "of a turing test, but I hope you'll indulge me."
+    },
+    {
+      "start": 498.0,
+      "end": 500.36,
+      "duration": 2.36,
+      "text": "LLM's write well enough to seem human,"
+    },
+    {
+      "start": 500.36,
+      "end": 503.44,
+      "duration": 3.08,
+      "text": "which is why people get convinced they're the messiah,"
+    },
+    {
+      "start": 503.44,
+      "end": 506.32,
+      "duration": 2.88,
+      "text": "or they should eat three cigarettes a day or whatever."
+    },
+    {
+      "start": 506.32,
+      "end": 508.24,
+      "duration": 1.92,
+      "text": "There's a better way to tell."
+    },
+    {
+      "start": 508.24,
+      "end": 510.08,
+      "duration": 1.84,
+      "text": "And I haven't seen anybody discuss it,"
+    },
+    {
+      "start": 510.08,
+      "end": 511.76,
+      "duration": 1.68,
+      "text": "and I think not for nothing,"
+    },
+    {
+      "start": 511.76,
+      "end": 514.96,
+      "duration": 3.2,
+      "text": "that is the real indicator of the literacy crisis."
+    },
+    {
+      "start": 514.96,
+      "end": 515.8,
+      "duration": 0.84,
+      "text": "Let me explain."
+    },
+    {
+      "start": 515.8,
+      "end": 517.72,
+      "duration": 1.92,
+      "text": "There's just a tiny bit of background needed"
+    },
+    {
+      "start": 517.72,
+      "end": 520.76,
+      "duration": 3.04,
+      "text": "that most people don't know, or can't remember,"
+    },
+    {
+      "start": 520.76,
+      "end": 523.28,
+      "duration": 2.52,
+      "text": "so bear with me for just a second."
+    },
+    {
+      "start": 523.28,
+      "end": 526.04,
+      "duration": 2.76,
+      "text": "LLM's, despite being marketed as artificial intelligence,"
+    },
+    {
+      "start": 526.04,
+      "end": 527.64,
+      "duration": 1.6,
+      "text": "are not actually thinking."
+    },
+    {
+      "start": 527.64,
+      "end": 529.96,
+      "duration": 2.32,
+      "text": "They're autocomplete on steroids."
+    },
+    {
+      "start": 529.96,
+      "end": 532.52,
+      "duration": 2.56,
+      "text": "They produce an artifact that is the product"
+    },
+    {
+      "start": 532.52,
+      "end": 535.28,
+      "duration": 2.76,
+      "text": "of statistical transformations of numbers"
+    },
+    {
+      "start": 535.28,
+      "end": 537.44,
+      "duration": 2.16,
+      "text": "that correspond to words, or morphemes,"
+    },
+    {
+      "start": 537.44,
+      "end": 541.04,
+      "duration": 3.6,
+      "text": "or letter sequences, that are based on N-grams."
+    },
+    {
+      "start": 541.04,
+      "end": 543.64,
+      "duration": 2.6,
+      "text": "N-grams are just a generalization of bi-grams,"
+    },
+    {
+      "start": 543.64,
+      "end": 546.12,
+      "duration": 2.48,
+      "text": "which itself are two words, or characters,"
+    },
+    {
+      "start": 546.12,
+      "end": 548.84,
+      "duration": 2.72,
+      "text": "that appear side-by-side in a text."
+    },
+    {
+      "start": 548.84,
+      "end": 552.48,
+      "duration": 3.64,
+      "text": "They just have a lot of computational power behind them."
+    },
+    {
+      "start": 552.48,
+      "end": 554.48,
+      "duration": 2.0,
+      "text": "And complicated recursive neural networks,"
+    },
+    {
+      "start": 554.48,
+      "end": 556.32,
+      "duration": 1.84,
+      "text": "doing feed-forward feedback tuning"
+    },
+    {
+      "start": 556.32,
+      "end": 558.52,
+      "duration": 2.2,
+      "text": "with generalized adversarial models."
+    },
+    {
+      "start": 558.52,
+      "end": 561.72,
+      "duration": 3.2,
+      "text": "And who knows what else since my knowledge for this"
+    },
+    {
+      "start": 561.72,
+      "end": 565.4,
+      "duration": 3.68,
+      "text": "comes from when I rolled my own a decade ago."
+    },
+    {
+      "start": 565.4,
+      "end": 568.96,
+      "duration": 3.56,
+      "text": "And I know the math and science have really progressed since then."
+    },
+    {
+      "start": 568.96,
+      "end": 571.64,
+      "duration": 2.68,
+      "text": "Point is though that they're N-gram TF-IDF,"
+    },
+    {
+      "start": 571.64,
+      "end": 574.32,
+      "duration": 2.68,
+      "text": "that's term frequency inverse document frequency,"
+    },
+    {
+      "start": 574.32,
+      "end": 577.56,
+      "duration": 3.24,
+      "text": "so don't comment me in the comments for saying IDF,"
+    },
+    {
+      "start": 577.56,
+      "end": 578.4,
+      "duration": 0.84,
+      "text": "you lunatics."
+    },
+    {
+      "start": 578.4,
+      "end": 580.56,
+      "duration": 2.16,
+      "text": "And basically, next word predictors,"
+    },
+    {
+      "start": 580.56,
+      "end": 583.4,
+      "duration": 2.84,
+      "text": "like I used when I hit tab to select half a sentence"
+    },
+    {
+      "start": 583.4,
+      "end": 586.16,
+      "duration": 2.76,
+      "text": "and writing this script, just orders of magnitudes"
+    },
+    {
+      "start": 586.16,
+      "end": 587.32,
+      "duration": 1.16,
+      "text": "larger and faster."
+    },
+    {
+      "start": 587.32,
+      "end": 588.64,
+      "duration": 1.32,
+      "text": "This means they do not think."
+    },
+    {
+      "start": 588.64,
+      "end": 589.6,
+      "duration": 0.96,
+      "text": "There is no thinking."
+    },
+    {
+      "start": 589.6,
+      "end": 590.72,
+      "duration": 1.12,
+      "text": "There is no reasoning."
+    },
+    {
+      "start": 590.72,
+      "end": 593.28,
+      "duration": 2.56,
+      "text": "They are dumb, but fast."
+    },
+    {
+      "start": 593.28,
+      "end": 595.28,
+      "duration": 2.0,
+      "text": "They're just faster at being dumb."
+    },
+    {
+      "start": 595.28,
+      "end": 597.44,
+      "duration": 2.16,
+      "text": "Being dumb faster than everybody else"
+    },
+    {
+      "start": 597.44,
+      "end": 599.84,
+      "duration": 2.4,
+      "text": "gives a lot of people the appearance of intelligence."
+    },
+    {
+      "start": 599.84,
+      "end": 601.16,
+      "duration": 1.32,
+      "text": "It's really hard to wrap your head around this"
+    },
+    {
+      "start": 601.16,
+      "end": 602.4,
+      "duration": 1.24,
+      "text": "because they sure look and sound"
+    },
+    {
+      "start": 602.4,
+      "end": 604.56,
+      "duration": 2.16,
+      "text": "like they're answering your questions."
+    },
+    {
+      "start": 604.56,
+      "end": 605.24,
+      "duration": 0.68,
+      "text": "They're not."
+    },
+    {
+      "start": 605.24,
+      "end": 607.04,
+      "duration": 1.8,
+      "text": "What they do is give it a prompt,"
+    },
+    {
+      "start": 607.04,
+      "end": 609.76,
+      "duration": 2.72,
+      "text": "which is transformed into a string of digits for them."
+    },
+    {
+      "start": 609.76,
+      "end": 612.68,
+      "duration": 2.92,
+      "text": "They provide an optimized string of digits in return."
+    },
+    {
+      "start": 612.68,
+      "end": 616.0,
+      "duration": 3.32,
+      "text": "The optimization really means that what they provide"
+    },
+    {
+      "start": 616.0,
+      "end": 619.36,
+      "duration": 3.36,
+      "text": "after being transformed from digits back to letters"
+    },
+    {
+      "start": 619.36,
+      "end": 623.0,
+      "duration": 3.64,
+      "text": "and spaces is an artifact that appears"
+    },
+    {
+      "start": 623.0,
+      "end": 626.72,
+      "duration": 3.72,
+      "text": "similar to how an answer might appear."
+    },
+    {
+      "start": 626.72,
+      "end": 627.84,
+      "duration": 1.12,
+      "text": "Does that make sense?"
+    },
+    {
+      "start": 627.84,
+      "end": 630.24,
+      "duration": 2.4,
+      "text": "Like if you say, can you pass the salt"
+    },
+    {
+      "start": 630.24,
+      "end": 633.08,
+      "duration": 2.84,
+      "text": "plausible answer might be yes, no, maybe."
+    },
+    {
+      "start": 633.08,
+      "end": 634.32,
+      "duration": 1.24,
+      "text": "Do I sound like a magic eight ball?"
+    },
+    {
+      "start": 634.32,
+      "end": 635.52,
+      "duration": 1.2,
+      "text": "Same idea."
+    },
+    {
+      "start": 635.52,
+      "end": 638.36,
+      "duration": 2.84,
+      "text": "A less plausible answer is salt or NACL,"
+    },
+    {
+      "start": 638.36,
+      "end": 640.44,
+      "duration": 2.08,
+      "text": "as a mineral that, and a total failure"
+    },
+    {
+      "start": 640.44,
+      "end": 643.16,
+      "duration": 2.72,
+      "text": "is something like Dostoevsky was born in 1821"
+    },
+    {
+      "start": 643.16,
+      "end": 644.72,
+      "duration": 1.56,
+      "text": "or Scythylapyr."
+    },
+    {
+      "start": 644.72,
+      "end": 646.16,
+      "duration": 1.44,
+      "text": "That yes is not a yes."
+    },
+    {
+      "start": 646.16,
+      "end": 648.0,
+      "duration": 1.84,
+      "text": "It's just one of the set of words"
+    },
+    {
+      "start": 648.0,
+      "end": 651.8,
+      "duration": 3.8,
+      "text": "that is the highest ranked as appearing like a valid answer."
+    },
+    {
+      "start": 651.8,
+      "end": 653.44,
+      "duration": 1.64,
+      "text": "And this is how you spot them"
+    },
+    {
+      "start": 653.44,
+      "end": 657.52,
+      "duration": 4.08,
+      "text": "because they're not thinking they're just putting words together."
+    },
+    {
+      "start": 657.52,
+      "end": 659.48,
+      "duration": 1.96,
+      "text": "You get words that go together,"
+    },
+    {
+      "start": 659.48,
+      "end": 662.04,
+      "duration": 2.56,
+      "text": "but that lack semantic coherence."
+    },
+    {
+      "start": 662.04,
+      "end": 664.24,
+      "duration": 2.2,
+      "text": "They're not manipulating concepts,"
+    },
+    {
+      "start": 664.24,
+      "end": 666.4,
+      "duration": 2.16,
+      "text": "they're just manipulating strings of letters."
+    },
+    {
+      "start": 666.4,
+      "end": 669.08,
+      "duration": 2.68,
+      "text": "And yes, I wrote that last sentence myself too."
+    },
+    {
+      "start": 669.08,
+      "end": 671.56,
+      "duration": 2.48,
+      "text": "So in coherent, but plausible word choices"
+    },
+    {
+      "start": 671.56,
+      "end": 672.64,
+      "duration": 1.08,
+      "text": "or mixed metaphors,"
+    },
+    {
+      "start": 672.64,
+      "end": 676.4,
+      "duration": 3.76,
+      "text": "along with all those other clues, are the real giveaway."
+    },
+    {
+      "start": 676.4,
+      "end": 677.72,
+      "duration": 1.32,
+      "text": "Let me give some examples."
+    },
+    {
+      "start": 677.72,
+      "end": 680.2,
+      "duration": 2.48,
+      "text": "I recently saw a purported geopolitical analysis"
+    },
+    {
+      "start": 680.2,
+      "end": 683.16,
+      "duration": 2.96,
+      "text": "of the deployment of naval power during the war with Iran."
+    },
+    {
+      "start": 683.16,
+      "end": 685.48,
+      "duration": 2.32,
+      "text": "Get your language shown, Spengo cards ready."
+    },
+    {
+      "start": 685.48,
+      "end": 687.2,
+      "duration": 1.72,
+      "text": "The article had all the hallmarks"
+    },
+    {
+      "start": 687.2,
+      "end": 689.16,
+      "duration": 1.96,
+      "text": "of LLM writing people are familiar with,"
+    },
+    {
+      "start": 689.16,
+      "end": 690.72,
+      "duration": 1.56,
+      "text": "including my peeve,"
+    },
+    {
+      "start": 690.72,
+      "end": 694.08,
+      "duration": 3.36,
+      "text": "the ever-expanding use of quietly and amid."
+    },
+    {
+      "start": 694.08,
+      "end": 696.04,
+      "duration": 1.96,
+      "text": "But it started by describing a military offense"
+    },
+    {
+      "start": 696.04,
+      "end": 699.76,
+      "duration": 3.72,
+      "text": "as, quote, nestled amid a year of war."
+    },
+    {
+      "start": 699.76,
+      "end": 701.16,
+      "duration": 1.4,
+      "text": "Nestled, Gemini,"
+    },
+    {
+      "start": 701.16,
+      "end": 702.28,
+      "duration": 1.12,
+      "text": "and Fleshing out an outline I wrote,"
+    },
+    {
+      "start": 702.28,
+      "end": 705.48,
+      "duration": 3.2,
+      "text": "returned a paragraph that included a description"
+    },
+    {
+      "start": 705.48,
+      "end": 710.72,
+      "duration": 5.24,
+      "text": "of two conceptual categories as two overarching pillars"
+    },
+    {
+      "start": 710.72,
+      "end": 714.4,
+      "duration": 3.68,
+      "text": "that undergird the entire whatever the fuck we were talking about."
+    },
+    {
+      "start": 714.4,
+      "end": 716.44,
+      "duration": 2.04,
+      "text": "Overarching pillars are already architecturally"
+    },
+    {
+      "start": 716.44,
+      "end": 718.76,
+      "duration": 2.32,
+      "text": "incoherent, but simultaneously overarching"
+    },
+    {
+      "start": 718.76,
+      "end": 722.28,
+      "duration": 3.52,
+      "text": "and undergirding is mind-bendingly perverse."
+    },
+    {
+      "start": 722.28,
+      "end": 724.6,
+      "duration": 2.32,
+      "text": "Jet fuel might not be able to melt-stale beams."
+    },
+    {
+      "start": 724.6,
+      "end": 725.6,
+      "duration": 1.0,
+      "text": "Bingo!"
+    },
+    {
+      "start": 725.6,
+      "end": 726.68,
+      "duration": 1.08,
+      "text": "Oh, god."
+    },
+    {
+      "start": 726.68,
+      "end": 729.6,
+      "duration": 2.92,
+      "text": "But Gemini, sure seems to be able to."
+    },
+    {
+      "start": 729.6,
+      "end": 731.68,
+      "duration": 2.08,
+      "text": "For another Gemini Haller, I got a paragraph that said,"
+    },
+    {
+      "start": 731.68,
+      "end": 733.6,
+      "duration": 1.92,
+      "text": "words aren't just empty containers,"
+    },
+    {
+      "start": 733.6,
+      "end": 735.12,
+      "duration": 1.52,
+      "text": "a blank slate to be filled."
+    },
+    {
+      "start": 735.12,
+      "end": 738.04,
+      "duration": 2.92,
+      "text": "I can't remember if it said containers or buckets, actually,"
+    },
+    {
+      "start": 738.04,
+      "end": 739.32,
+      "duration": 1.28,
+      "text": "because it really loves buckets."
+    },
+    {
+      "start": 739.32,
+      "end": 741.16,
+      "duration": 1.84,
+      "text": "Anyway, you can fill a container."
+    },
+    {
+      "start": 741.16,
+      "end": 742.28,
+      "duration": 1.12,
+      "text": "You can fill a slate."
+    },
+    {
+      "start": 742.28,
+      "end": 744.24,
+      "duration": 1.96,
+      "text": "Those are common enough co-occurrences."
+    },
+    {
+      "start": 744.24,
+      "end": 745.76,
+      "duration": 1.52,
+      "text": "What is entirely opaque to an LLM"
+    },
+    {
+      "start": 745.88,
+      "end": 748.0,
+      "duration": 2.12,
+      "text": "is that those are two radically different conceptual"
+    },
+    {
+      "start": 748.0,
+      "end": 749.72,
+      "duration": 1.72,
+      "text": "meanings of filling something."
+    },
+    {
+      "start": 749.72,
+      "end": 752.68,
+      "duration": 2.96,
+      "text": "Turning our attention to Claude, it's not better."
+    },
+    {
+      "start": 752.68,
+      "end": 754.72,
+      "duration": 2.04,
+      "text": "Every time I try to use it to accelerate my writing,"
+    },
+    {
+      "start": 754.72,
+      "end": 757.76,
+      "duration": 3.04,
+      "text": "I get back lines like, we're going to look at two related"
+    },
+    {
+      "start": 757.76,
+      "end": 760.0,
+      "duration": 2.24,
+      "text": "toolkits and see what they buy you"
+    },
+    {
+      "start": 760.0,
+      "end": 762.16,
+      "duration": 2.16,
+      "text": "when you point them at a problem like."
+    },
+    {
+      "start": 763.68,
+      "end": 764.72,
+      "duration": 1.04,
+      "text": "Let's think about this for a minute."
+    },
+    {
+      "start": 764.72,
+      "end": 766.4,
+      "duration": 1.68,
+      "text": "We're going to do what now?"
+    },
+    {
+      "start": 766.4,
+      "end": 768.96,
+      "duration": 2.56,
+      "text": "We're going to look at a toolkit, okay?"
+    },
+    {
+      "start": 768.96,
+      "end": 771.04,
+      "duration": 2.08,
+      "text": "And see what it buys you."
+    },
+    {
+      "start": 771.04,
+      "end": 773.84,
+      "duration": 2.8,
+      "text": "We're bartering tools now when you point it at,"
+    },
+    {
+      "start": 773.84,
+      "end": 774.96,
+      "duration": 1.12,
+      "text": "when you what?"
+    },
+    {
+      "start": 774.96,
+      "end": 777.64,
+      "duration": 2.68,
+      "text": "Have you ever bought anything by pointing a toolkit at it?"
+    },
+    {
+      "start": 777.64,
+      "end": 778.76,
+      "duration": 1.12,
+      "text": "I know I haven't."
+    },
+    {
+      "start": 778.76,
+      "end": 780.48,
+      "duration": 1.72,
+      "text": "I tried it at the local cafe and they told me,"
+    },
+    {
+      "start": 780.48,
+      "end": 783.44,
+      "duration": 2.96,
+      "text": "sir, put the wrench down or we're calling the cops."
+    },
+    {
+      "start": 783.44,
+      "end": 786.44,
+      "duration": 3.0,
+      "text": "That's spanner and constabulary from our UK viewers."
+    },
+    {
+      "start": 786.44,
+      "end": 788.08,
+      "duration": 1.64,
+      "text": "The number one giveaway of LLM writing"
+    },
+    {
+      "start": 788.08,
+      "end": 790.24,
+      "duration": 2.16,
+      "text": "is not the punchy ad copy sentences,"
+    },
+    {
+      "start": 790.24,
+      "end": 792.72,
+      "duration": 2.48,
+      "text": "the overuse of honestly and delved,"
+    },
+    {
+      "start": 792.72,
+      "end": 795.08,
+      "duration": 2.36,
+      "text": "the use of, it's not X, it's Y comparisons"
+    },
+    {
+      "start": 795.08,
+      "end": 797.32,
+      "duration": 2.24,
+      "text": "and rhetorical groupings of three."
+    },
+    {
+      "start": 797.32,
+      "end": 799.68,
+      "duration": 2.36,
+      "text": "It's the absolute conceptual incoherence"
+    },
+    {
+      "start": 799.68,
+      "end": 801.8,
+      "duration": 2.12,
+      "text": "behind common word choices."
+    },
+    {
+      "start": 801.8,
+      "end": 803.16,
+      "duration": 1.36,
+      "text": "But this gives rise to a problem"
+    },
+    {
+      "start": 803.16,
+      "end": 804.92,
+      "duration": 1.76,
+      "text": "and quite a serious one at that"
+    },
+    {
+      "start": 804.92,
+      "end": 807.56,
+      "duration": 2.64,
+      "text": "given the accelerating literacy crisis."
+    },
+    {
+      "start": 807.56,
+      "end": 811.0,
+      "duration": 3.44,
+      "text": "Namely, some people are also incoherent thinkers"
+    },
+    {
+      "start": 811.0,
+      "end": 812.2,
+      "duration": 1.2,
+      "text": "who mix metaphors."
+    },
+    {
+      "start": 812.2,
+      "end": 814.24,
+      "duration": 2.04,
+      "text": "Even if LLM's were all trained on the tevias"
+    },
+    {
+      "start": 814.24,
+      "end": 816.2,
+      "duration": 1.96,
+      "text": "and dogberries of their source material,"
+    },
+    {
+      "start": 816.2,
+      "end": 818.32,
+      "duration": 2.12,
+      "text": "people routinely mix metaphors."
+    },
+    {
+      "start": 818.32,
+      "end": 820.48,
+      "duration": 2.16,
+      "text": "My wife and I do it for fun, bingo."
+    },
+    {
+      "start": 820.48,
+      "end": 822.76,
+      "duration": 2.28,
+      "text": "But what we do is the opposite of an LLM."
+    },
+    {
+      "start": 822.76,
+      "end": 826.04,
+      "duration": 3.28,
+      "text": "Things like mixing, you set them up, I knock them down"
+    },
+    {
+      "start": 826.04,
+      "end": 828.08,
+      "duration": 2.04,
+      "text": "and you open to the door, I just walked through it"
+    },
+    {
+      "start": 828.08,
+      "end": 830.96,
+      "duration": 2.88,
+      "text": "to get you set them up, I just walked through them"
+    },
+    {
+      "start": 830.96,
+      "end": 832.56,
+      "duration": 1.6,
+      "text": "like a sculpture garden."
+    },
+    {
+      "start": 832.56,
+      "end": 835.4,
+      "duration": 2.84,
+      "text": "Or you open to the door, I just knocked it down."
+    },
+    {
+      "start": 836.48,
+      "end": 837.88,
+      "duration": 1.4,
+      "text": "Look at slot team."
+    },
+    {
+      "start": 837.88,
+      "end": 839.32,
+      "duration": 1.44,
+      "text": "Anyway, the very real question is,"
+    },
+    {
+      "start": 839.32,
+      "end": 842.2,
+      "duration": 2.88,
+      "text": "do we need to determine whether it's an LLM or an idiot"
+    },
+    {
+      "start": 842.2,
+      "end": 844.92,
+      "duration": 2.72,
+      "text": "before discounting incoherent writing?"
+    },
+    {
+      "start": 844.92,
+      "end": 847.6,
+      "duration": 2.68,
+      "text": "I recently read an article in the Atlantic Bimoning,"
+    },
+    {
+      "start": 847.6,
+      "end": 849.52,
+      "duration": 1.92,
+      "text": "what else, declining literacy,"
+    },
+    {
+      "start": 849.52,
+      "end": 853.04,
+      "duration": 3.52,
+      "text": "where I ended up spending a significant portion of it"
+    },
+    {
+      "start": 853.04,
+      "end": 855.84,
+      "duration": 2.8,
+      "text": "trying to determine why it was so bad."
+    },
+    {
+      "start": 855.84,
+      "end": 857.88,
+      "duration": 2.04,
+      "text": "It turns out it was written by an undergrad"
+    },
+    {
+      "start": 857.88,
+      "end": 860.72,
+      "duration": 2.84,
+      "text": "and it read, well, like an undergrad writing project"
+    },
+    {
+      "start": 860.72,
+      "end": 862.04,
+      "duration": 1.32,
+      "text": "barely worthy of a B."
+    },
+    {
+      "start": 862.04,
+      "end": 864.2,
+      "duration": 2.16,
+      "text": "It of course overlooked one possible reason"
+    },
+    {
+      "start": 864.2,
+      "end": 866.36,
+      "duration": 2.16,
+      "text": "for declining rates of magazine reading,"
+    },
+    {
+      "start": 866.36,
+      "end": 869.96,
+      "duration": 3.6,
+      "text": "magazines now publishing creative writing exercises"
+    },
+    {
+      "start": 869.96,
+      "end": 870.96,
+      "duration": 1.0,
+      "text": "from undergrads."
+    },
+    {
+      "start": 870.96,
+      "end": 874.72,
+      "duration": 3.76,
+      "text": "Point is whether it was an LLM or not was a red herring,"
+    },
+    {
+      "start": 874.72,
+      "end": 877.48,
+      "duration": 2.76,
+      "text": "it was simply bad writing and that points to a bigger issue."
+    },
+    {
+      "start": 877.48,
+      "end": 879.88,
+      "duration": 2.4,
+      "text": "LLMs can actually be quite useful."
+    },
+    {
+      "start": 879.88,
+      "end": 881.84,
+      "duration": 1.96,
+      "text": "They're particularly useful for boilerplate,"
+    },
+    {
+      "start": 881.84,
+      "end": 885.0,
+      "duration": 3.16,
+      "text": "for first drafts of easily verifiable information,"
+    },
+    {
+      "start": 885.0,
+      "end": 889.16,
+      "duration": 4.16,
+      "text": "especially when you have to write similar documents repeatedly."
+    },
+    {
+      "start": 889.16,
+      "end": 891.84,
+      "duration": 2.68,
+      "text": "For instance, explaining the concept of a phonium"
+    },
+    {
+      "start": 891.88,
+      "end": 894.24,
+      "duration": 2.36,
+      "text": "before, of course, then editing it."
+    },
+    {
+      "start": 894.24,
+      "end": 896.64,
+      "duration": 2.4,
+      "text": "They really shine when used for language study."
+    },
+    {
+      "start": 896.64,
+      "end": 899.08,
+      "duration": 2.44,
+      "text": "They're large language models after all."
+    },
+    {
+      "start": 899.08,
+      "end": 901.32,
+      "duration": 2.24,
+      "text": "I've got a whole segment of my upcoming course"
+    },
+    {
+      "start": 901.32,
+      "end": 904.12,
+      "duration": 2.8,
+      "text": "on self-directed language study"
+    },
+    {
+      "start": 904.12,
+      "end": 907.56,
+      "duration": 3.44,
+      "text": "that is on how to use LLMs to their maximum potential."
+    },
+    {
+      "start": 907.56,
+      "end": 911.68,
+      "duration": 4.12,
+      "text": "For more on that, scan the QR code or go to www.languagejones.com"
+    },
+    {
+      "start": 911.68,
+      "end": 914.36,
+      "duration": 2.68,
+      "text": "slash accelerator and none of it is LLM generated"
+    },
+    {
+      "start": 914.36,
+      "end": 918.88,
+      "duration": 4.52,
+      "text": "because they would never, in a million years, think of it."
+    },
+    {
+      "start": 918.88,
+      "end": 921.8,
+      "duration": 2.92,
+      "text": "They're also useful for things like read this draft"
+    },
+    {
+      "start": 921.84,
+      "end": 923.92,
+      "duration": 2.08,
+      "text": "or are there any glaring omissions."
+    },
+    {
+      "start": 923.92,
+      "end": 925.84,
+      "duration": 1.92,
+      "text": "That is, finding things you left out,"
+    },
+    {
+      "start": 925.84,
+      "end": 928.24,
+      "duration": 2.4,
+      "text": "locating places that you can cut material,"
+    },
+    {
+      "start": 928.24,
+      "end": 930.68,
+      "duration": 2.44,
+      "text": "that's a lot of how I use them and so on."
+    },
+    {
+      "start": 930.68,
+      "end": 932.04,
+      "duration": 1.36,
+      "text": "Everything, everything, though,"
+    },
+    {
+      "start": 932.04,
+      "end": 933.56,
+      "duration": 1.52,
+      "text": "must be taken with a huge grain of salt"
+    },
+    {
+      "start": 933.56,
+      "end": 935.48,
+      "duration": 1.92,
+      "text": "and edited multiple times,"
+    },
+    {
+      "start": 935.48,
+      "end": 938.44,
+      "duration": 2.96,
+      "text": "even things that were correct in previous drafts."
+    },
+    {
+      "start": 938.44,
+      "end": 942.0,
+      "duration": 3.56,
+      "text": "And full disclosure, I've used LLMs in scripting for YouTube."
+    },
+    {
+      "start": 942.0,
+      "end": 944.76,
+      "duration": 2.76,
+      "text": "In fact, I did an entire experiment to see"
+    },
+    {
+      "start": 944.76,
+      "end": 947.68,
+      "duration": 2.92,
+      "text": "whether my channel did better with content"
+    },
+    {
+      "start": 947.68,
+      "end": 951.96,
+      "duration": 4.28,
+      "text": "I wrote entirely on my own or workshopped with LLMs."
+    },
+    {
+      "start": 951.96,
+      "end": 954.64,
+      "duration": 2.68,
+      "text": "The results are in another video, but spoilers,"
+    },
+    {
+      "start": 954.64,
+      "end": 956.12,
+      "duration": 1.48,
+      "text": "they might be depressing."
+    },
+    {
+      "start": 956.12,
+      "end": 958.04,
+      "duration": 1.92,
+      "text": "I moved away from it after the experiment,"
+    },
+    {
+      "start": 958.04,
+      "end": 960.92,
+      "duration": 2.88,
+      "text": "even though LLM videos kind of do better"
+    },
+    {
+      "start": 960.92,
+      "end": 962.72,
+      "duration": 1.8,
+      "text": "because the mental burden of correcting"
+    },
+    {
+      "start": 962.72,
+      "end": 965.56,
+      "duration": 2.84,
+      "text": "incoherent metaphors was too much."
+    },
+    {
+      "start": 965.56,
+      "end": 968.68,
+      "duration": 3.12,
+      "text": "I'd rather learn steno, which I'm doing"
+    },
+    {
+      "start": 968.68,
+      "end": 971.12,
+      "duration": 2.44,
+      "text": "than edit another paragraph from Gemini or Claude"
+    },
+    {
+      "start": 971.12,
+      "end": 974.24,
+      "duration": 3.12,
+      "text": "about what happens when you point overarching buckets"
+    },
+    {
+      "start": 974.24,
+      "end": 975.2,
+      "duration": 0.96,
+      "text": "or whatever."
+    },
+    {
+      "start": 975.2,
+      "end": 977.84,
+      "duration": 2.64,
+      "text": "However, I may still use Claude from time to time"
+    },
+    {
+      "start": 977.84,
+      "end": 978.88,
+      "duration": 1.04,
+      "text": "to trim fat."
+    },
+    {
+      "start": 978.88,
+      "end": 981.88,
+      "duration": 3.0,
+      "text": "And ever since having Gemini write my YouTube descriptions,"
+    },
+    {
+      "start": 981.88,
+      "end": 983.8,
+      "duration": 1.92,
+      "text": "my videos do better."
+    },
+    {
+      "start": 983.8,
+      "end": 985.8,
+      "duration": 2.0,
+      "text": "I didn't know elements of the algorithm"
+    },
+    {
+      "start": 985.8,
+      "end": 988.28,
+      "duration": 2.48,
+      "text": "that Google's products did know."
+    },
+    {
+      "start": 988.28,
+      "end": 990.52,
+      "duration": 2.24,
+      "text": "So next time you're suspicious of LLM writing,"
+    },
+    {
+      "start": 990.52,
+      "end": 993.36,
+      "duration": 2.84,
+      "text": "while it can help to play LLM bingo,"
+    },
+    {
+      "start": 993.36,
+      "end": 995.64,
+      "duration": 2.28,
+      "text": "look for incoherent semantics."
+    },
+    {
+      "start": 995.64,
+      "end": 999.2,
+      "duration": 3.56,
+      "text": "As an aside, let's take so next time you at the end of a video."
+    },
+    {
+      "start": 999.2,
+      "end": 1001.84,
+      "duration": 2.64,
+      "text": "A call to action is a hallmark of YouTube writing."
+    },
+    {
+      "start": 1001.84,
+      "end": 1004.56,
+      "duration": 2.72,
+      "text": "I wrote this one myself, but the rhetorical move"
+    },
+    {
+      "start": 1004.56,
+      "end": 1006.72,
+      "duration": 2.16,
+      "text": "is just good writing for this format."
+    },
+    {
+      "start": 1006.72,
+      "end": 1010.0,
+      "duration": 3.28,
+      "text": "And I would have said rhetorical move anyway,"
+    },
+    {
+      "start": 1010.0,
+      "end": 1012.56,
+      "duration": 2.56,
+      "text": "but now I'm aware that it sounds like Claude."
+    },
+    {
+      "start": 1012.56,
+      "end": 1014.04,
+      "duration": 1.48,
+      "text": "If you like what I'm doing with the channel,"
+    },
+    {
+      "start": 1014.04,
+      "end": 1016.8,
+      "duration": 2.76,
+      "text": "you can support it on YouTube with super thanks"
+    },
+    {
+      "start": 1016.8,
+      "end": 1020.48,
+      "duration": 3.68,
+      "text": "or on Patreon at patreon.com slash language Jones."
+    },
+    {
+      "start": 1020.48,
+      "end": 1022.64,
+      "duration": 2.16,
+      "text": "Please leave me a comment they are great for the algorithm"
+    },
+    {
+      "start": 1022.64,
+      "end": 1024.08,
+      "duration": 1.44,
+      "text": "and subscribe if you haven't already."
+    },
+    {
+      "start": 1024.08,
+      "end": 1025.76,
+      "duration": 1.68,
+      "text": "Until next time, happy hunting."
+    }
+  ]
+}

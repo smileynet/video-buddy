@@ -1,0 +1,1766 @@
+{
+  "engine": "faster-whisper",
+  "model": "base",
+  "device": "cpu",
+  "video_id": "B9bztU1sTFA",
+  "audio_duration": 2368.6186875,
+  "transcribe_time": 345.75,
+  "rtf": 6.85,
+  "segment_count": 292,
+  "hallucination_repeats": 0,
+  "full_text": "The text you are reading was rendered in real time on the GPU with what I believe to be a new technique. Like other more recent approaches, this technique operates on glyph curves directly in the shader. As such, it has no issue handling arbitrary zoom. Rotation and perspective work well too. Compared to signed distance approaches, this technique works really well with glyphs that have lots of curves. Note the preservation of thin features, even under some extreme perspective. In this video, I'll talk about the theory of how this algorithm operates, give some comparisons with other techniques that exist currently, talk a bit about the math, the background that you need to implement it, and you can totally do this on your own. I started this project a few weeks ago when I was working on a new UI layout engine for the game engine that I'm working on. Even though I've been a graphics engineer for a long time, normally when it comes to text rendering, I just take any of the texture sampling approaches and call it a day. I wanted to be a bit more ambitious this time though. The texture sampling and signed distance field approaches excel when it comes to performance and simplicity. Rendering textured quads is sort of the bread and butter of most UI rendering after all. Where these approaches really struggle though is memory. Even though signed distance approaches that you get away with lower resolution textures, you still need a good amount of memory to preserve detail under high levels of magnification. Multi-channel signed distance fields help preserve more detail, but again, at the expensive increased memory. Quality can be situationally good, provided your glyph quads are snapped to pixels in the case of grayscale textures. Signed distance fields produce less objectionable aliasing, but can lose feature clarity. On the versatility side, traditionally rasterized glyphs can't be rendered off the pixel grid without objectionable artifacting. So in that sense, they are the least versatile. STFs actually do a bit better here, so it's perhaps unfair I'm grouping these techniques together. Signed distance glyphs can be rotated and transformed, and you can also implement text effects like blurs and shadows directly in the shader. This advantage though is somewhat diminished by the impracticality of STF representations, and storing them for all the fonts and languages you might need to ship. Racerabbers are a separate important class of algorithms that take a completely different approach. They operate by casting rays from sample points within each pixel and counting ray glyph intersections to compute the sample point winding number. Because they operate on analytical shape representations, they are naturally versatile and able to support arbitrary transformations in the same way that scalable vector graphics can. Compared to the head of time rasterization approaches, Racerabbers have a heftier runtime cost than the GPU, but make up for it by having a much smaller memory footprint. Where Racerabbers appear to struggle more is in the complexity front. Because the algorithm relies on root finding to count discrete events, it is difficult to make Racerabbers numerically robust. This has been solved before as described in the slug paper, but the implementation challenges are quite real as others have found. Note that I put a star next to the Racerabber line, because I haven't actually implemented a variant of this algorithm myself, and I can't really speak to how Racerabbing algorithms compare to my solution, without educated guesswork. Instead, I wanted to go in a bit of a different direction with this goal in mind. Like Racerabbers, I knew that I wanted to benefit from rendering directly from the analytical representations of the glyphs. This would let me retain all the memory, quality, and versatility advantages. The idea I wanted to implement was based on continuous coverage estimates as opposed to discrete event counting. Performance was also top of mind for me, and I wanted a solution that was competitive with the state of the art. Without further ado, let's look at a bird's eye view of the algorithm. The algorithm begins by pre-processing glyph data embedded in open type font files. Each glyph contains one or more compressed streams of points that specify contours. These are the quadratic busy egg control points in this glyph. Bezier curves have control points that aren't on the glyph outline itself, but are used to modulate the curvature. Newer font formats specify glyph outlines with cubic busy eggs that possess four control points, and will need to be approximated with one or more quadratic busy eggs for this algorithm to work. For now, assume that all cubic busy eggs have been properly split. Other points on the contour correspond to line segments, which are essentially first order busy eggs. To simplify the implementation and improve performance of the shader, we'll need to promote these linear segments to quadratic busy eggs. At this point, everything we're working with is a quadratic busy egg, some sort, and if we were to connect all these curves for each contour, we would see the outline of the glyph take shape. On the topic of processing linear segments, strictly horizontal segments won't be needed, as we'll see later, so let's strip these from consideration in the future also. We're not done with curved processing just yet, however. To simplify some of the math down the line, we need all of these curves to be monotonic in both x and y. I'll cover this in more detail later, but for now, know that some of these quadratic busy eggs need to be split into up to three separate pieces to satisfy this condition. You might have missed it, but this glyph only happens to have one split needed here, because the inner loop happens to travel right ever so slightly before curving back left while moving upwards. Everything describes so far happens offline when the font gets processed and we're now ready to shade the glyph itself. In a pixel or computer shader, the first step is to determine the region of the glyph covered by the pixel. The size of this footprint may change depending on font size, glyph transformations, DPI, or camera configuration, and the footprint may not even be uniform, but we'll just stick with the simple square for now. We're now ready to discuss the core part of the algorithm, the scan line sweeping. For every footprint shaded, each curve is considered with respect to the upper and lower scan line boundaries. Normally, at this point, a raised aber would shoot raised from one or more sample points within the footprint to compute the sample winding number, but that's not what we're going to do. Before I describe what we actually do, something I need to mention is that the direction these contours travel is significant. The open type specification requires that the glyph interior is to the right from the perspective of a particle traveling along a contour. Showing here are particles moving along the outer contour, and here are particles moving along the inner contour. It's true that some misbehaving fonts from naughty font makers don't honor this requirement, but by enlarge the vast majority of fonts I tested did this correctly, and it's something we can fix in the font itself if needed. Now that we understand the significance of the contour direction, I've colored portions of the contour that are traveling upwards and green, and portions of the contour that are traveling downwards and red. Remember that the glyph interior is on the right. For each window, we'll only consider curves that intersect the scan line, and for each curve that does, we'll compute the area of the window covered if we sweep the curve to the right. The number below the window will track the area covered as a ratio of the total window area. This first segment ends part way up the scan line, so its area contribution is only a fraction of the area of the window. The reason the sweep is only partially covering the scan line is because that's where a curve happens to end. The upper and lower sweep boundaries are defined by the intersection of the scan line region and the curve's control points. This next segment fills in what's left, and at this point, our coverage estimate believes that the window is fully covered. This next sweep starts correcting our estimate, though. The swept curve moves downwards, so it reduces the coverage estimate. Unlike the previous sweeps, this sweep starts in the window interior. To compute the covered area, you can imagine approximating the area by computing the area of this trapezoid. This is the last sweep that overlaps the scan line. Unlike the previous sweep, we estimate the covered area with this triangle, which can be thought of as a trapezoid where one of the baselines is zero. With this, the scan line sweeper believes that the pixel is roughly 80% covered. Let's move the window around in this vicinity to get a feel for how this works in other situations. In this case, the window is completely outside the glyph interior, and the sweeps associated with downwards and upwards moving curves cancel out. This is another easy case, where the window is completely covered, and only one segment influences the coverage ratio. This window has a bit more going on since it overlaps a point where two curves meet, traveling in opposite directions. This leftmost curve covers the entire window as we've seen before. This curve here technically has a positive contribution, but it's so small that our low precision display doesn't show any changes. On the other hand, this curve has a more substantial negative contribution. The final coverage computer here is 61%, which seems pretty reasonable. All that's left is to repeat this for every pixel, and we should be left with a nicely anti-aliased glyph. Let's now get into the implementation, starting with a little bit of algebra. This is the evaluation of a quadratic-bezier curve, which is basically just a couple nested interpolations. Since we need to take derivatives of this equation with respect to T, it's a bit more convenient to write it in this form instead. Taking the derivative will let us find the inflection points. Setting this to zero and solving for T, we find two values of T that gives us our inflection points for the x and y coordinate. If both of these values are outside the unit interval for a given quadratic-bezier, we can say that that bezier curve is monotonic. If you're confused by this notation, just remember that the points in our bezier curve are actually two-dimensional, so the right-hand side of this equation here is actually two separate scalar expressions in one. Here's a Desmos demo I put together to explain how these equations work. At the top left here, you see three separate control points for our bezier curve. This equation we've seen already, this is the interpolation formula that allows us to evaluate a point on the bezier curve for a given parameter T. This next line plots the curve as the dash blue line you see on the right. This line is the secondary coefficient that you saw when we expressed the bezier curve evaluation as the more familiar quadratic form earlier. These next two values are actually values of T for which x and y are at their inflection point. These were our solutions for that equation when we set the derivative equal to zero. These last two lines evaluate the bezier curve at those inflection points and plot them on the right. This way, we'll be able to move the control points around and see how the inflection points change. Notice that I'm restricting the plotting of these inflection points to when the value of T lives within the unit interval. If I were to move this control point like so, now the center control point lives roughly between the outer control points. Visually, you should be able to see that the curve is monotonic across the entire interval. There's nowhere where it's increasing and then decreasing at some point along the curve. If I were to pull this control point up, now there's clearly a point along the curve for which y was increasing before the point and then decreasing after the point. Similarly, if I pull the control point down, you can see it works in the other direction as well. On the other hand, if I pull the point to the right, now I can create a point where the curve was going to the right prior to the inflection point and then moving to the left afterwards. It's maybe a bit subtle here, so let me exaggerate it a bit. As you might expect, it works in the opposite direction just as well. Finally, if I were to take the control point and pull it up like this, you can see that it's pretty easy to construct a scenario where we have both an x and a y inflection point. For each inflection point, we're going to need to split the bezier curve. Let's talk about how to do that. Let's suppose we want to split the curve here. We know that the endpoints of the sub-curve need to be the start point of our original curve, as well as the split point. So the question that remains is where between the two endpoints should the new control point be? It turns out that if you know how to evaluate points on the curve itself, you also know how to split the curve. The bezier curve evaluation happens with a series of interpolations. First we interpolate a and b, and that gets us this white point. Then we interpolate b and c, and that gets us this blue point. Then we interpolate those two points, and that gets us our answer. Now it turns out if we also wanted to split the bezier curve at this point, the intermediate value, where we interpolate it between a and b, is precisely the control point we need. For the first sub-curve. Similarly, if we wanted the control point for the second sub-curve, well that's precisely the point we evaluated when we interpolated between b and c. Here in green, I've plotted the bezier curve that would result if we use this white point as the control point. Notice that if I shift this value around, which is the split point, and the interpolated value between a and b changes, so too does that white control point, and the green bezier curve is completely coincident with our original curve. We've essentially split the bezier curve as a byproduct of evaluating it. This turns out to be an application of de Castel Joe's algorithm, which specifies not just how to evaluate bezier curves, but also how to split them. I think this is an unfortunately overlooked property of the algorithm, because people think you need to do something fancy to split curves when you might have been doing it all along without realizing it. Another thing we need to compute is where the bezier curve intersects either horizontal or vertical lines. It turns out that because all of the curves we'll work with in the shader are monotonic in both x and y. This can be done quite efficiently. Here's another Desmos demo to show how this works. This folder is holding all the functionality that you've seen already in terms of displaying control points, moving them around and interpolating the bezier. And QA, QB, and QC, these are the coefficients of our quadratic equation. Here I've defined Q sub D as the square root of the discriminant, and here I have the positive and the negative root if we were to evaluate the quadratic equation. Finally, I use those quantities to compute the positive and the negative root, which when evaluated gets us the point of intersection we need, and these points are plotted to the right restricted to the unit interval. On the right you can see the point of intersection plotted, along with the label that indicates whether we took the positive root or the negative root. Unlike before, I've also taken the liberty to label p0, p1, and p2, or the control points of our bezier curve, so you can understand the direction that the curve is moving it, because it always moves from p0 at t equals 0, up to p2, at t equals 1. One thing you'll notice here is that it seems like no matter how I move this control point around, only the positive root is where the intersection is. The negative root here, on the other hand, is marked undefined, because the root actually lies outside of the unit interval. That is, the evaluated root here, negative 2.8 is not part of the domain. If however, I were to swap p0 and p2, such that the bezier curve is now going downwards, it's actually the neglect opposite. The root is always the negative root. Let's understand why this might be true by looking at a simple parabola. At the top, I have these three coefficients, a, b, and c, I'm plotting the quadratic equation as a function of t, and I've also plotted the specific point here centered at negative b over 2a. This point is the point of symmetry about the parabola, and because of how the quadratic formula works, we know that the roots of the quadratic equation are symmetric about negative b over 2a. This d quantity here is just a random variable that I've named, has the root of b squared minus 4ac over 2a, and to find the roots of the quadratic equation, we need to either add or subtract d. So the question is, does a given intersection point correspond to the positive or the negative root? In this case, this intersection on the right corresponds to the positive root. How do we know? We know because a is a positive quantity, and if we take the positive root then d is a positive quantity, and so negative b over 2a plus that positive quantity gets us this intersection point. Conversely, if we were to take the negative root, then d is a negative quantity, and minus b over 2a minus that negative quantity moves us to the left, and that gets us the negative intersection. If I were to invert the parabola and consider the point of intersection in this inverted parabola, now it's actually the opposite case because a itself is now negative. That means that if I take the positive square root, d becomes a negative quantity, that moves me to the left of the inflection point. On the other hand, if I take the negative square root, those negatives cancel, d becomes a positive quantity, and that moves me to the right of the inflection point. With this information, if you consider the four different cases of positive curvature versus negative curvature, the left and the right root, you will find that the sign of the square root that you always need matches the sign of the gradient. Here, for example, y is increasing on this side of the parabola, and the positive root happens to be the one that corresponds to this intersection point. I'll leave it to you to verify the other three cases, though. To simplify the explanation a bit for this video, we're also going to remove contour overlaps. This isn't a strict requirement for this algorithm, and a method to relax this requirement is given in the associated paper. Fortunately, there are a number of algorithms that solve this quite well, and you can use tools like font forage to get rid of contour overlaps for your initial implementation, or you can just choose a font that doesn't have this problem. Let's take a look at how this is implemented in the shader itself, which will need in order to intersect with the scanline boundaries as well as the window boundaries on the left and the right. QA here is the secondary coefficients computed by the collar because it's reused multiple times. And C0, C1, and C2 are the coordinate values of the first, second, and third control point respectively. Target refers to the location of the horizontal or vertical line we're trying to hit. And the delta sign is the sign of the gradient, which we use to select whether we want the positive root or the negative root as we've seen. First, we look at the leading coefficient, and determine, hey, are we a linear line segment, or are we a quadratic curve? And if we're mostly linear, then this intersection routine is good enough. Otherwise, we compute the other coefficients of the quadratic expression. We compute the discriminant, and we do a check here where if the discriminant is less than 0, then we just clamp it to 0. Normally, it's not safe to do this because if the discriminant is negative, that usually corresponds to an actual scenario where there are no intersection points. In my case, this is totally fine because prior to me ever calling this routine, I already do bounds checks on the first and the last control point to determine if an intersection is guaranteed or not. So in this case, an underflow below 0 means that we just happen to hit some floating point in precision problem, and so we can clamp it safely. Then we compute the actual root, and this you will probably recognize as just the evaluation of the quadratic formula with that delta sign picking whether we want the positive or the negative root. By the way, I should just mention that you're going to be seeing this mad instruction or the multiply add instruction a lot. This is a habit that I've picked up for a long time ago because I always wanted to make sure that the driver and the shader compiler on as wide a variety of platforms and GPUs as possible always selected the best precision fuse multiply add instruction if available. I'll put a link in the description of a post that describes this in better detail for those that are interested. Now let's look at the implementation of the scan line sweep function. This function is the core of the shader and takes us inputs the window size, the window offset, as well as the three control points of the curve that we're trying to evaluate. Remember that the goal of this function is to take this curve sweep it to the right and compute the area for which that curve overlaps with the window. These next few lines discard curves that live entirely above or below the scan line. Note that we're only comparing the first and the last control points with the scan line height. The reason we can do this is because our curves are monotonic normally the curve interior lives within the convex hull that's produced by all three control points. But since we know that these curves are monotonic the middle control point necessarily lives within the interval of the outer two control points in both X and Y. And so we can make this comparison check a bit cheaper next we do a bit of housekeeping we shift all the coordinates by the pixel offset for the busy curve control points. And that means we're just working in this nice corner space where we are at a window in the first quadrant of the Cartesian plane. And this is kind of like what the geometry looks like now onto the actual sleeping part we have a fast path for strictly vertical segments that get swept to the right. These are easy because you just compute the height for which that segment intersects or overlaps with the scan line and the area is just the area of a rectangle or non vertical segments we do have to work a little bit harder. We have to evaluate the quadratic coefficients and this is the routine that you saw earlier where we compute intersections with the bottom and the top of the scan line. And we use this to determine if the curve itself is entirely to the left or to the right of the window. If the segment lies entirely to the left of the window then this is the same as the vertical case. And otherwise if the segment is entirely to the right then it has no contribution to the coverage whatsoever. This next part is probably the most complicated part of this function because at this point we know that the curve is somehow either starting within the pixel or ending within the pixel or otherwise somehow crossing the pixel. But to be honest this code isn't even that bad because it really just amounts to finding intersections or otherwise evaluating busy curves all of which you've already seen. By way of the summary I'll just remind you of this image that you saw before in the overview which shows that we are essentially approximating the curve as a linear segment passing through the pixel. And we can compute the coverage estimate just by taking the area of this trapezoid which may intersect with the top bottom or side segments of the pixel depending on the orientation of the curve. Here I've skipped ahead to the part of the code after we've already computed the intersections with the left and the right side of the pixel window. What we have here is Q0 and Q1 and these correspond to points on the curve that are also constrained similar within the pixel. One thing that we have to be careful about is that if the curve is exiting from the left or entering from the left. There is a region of the curve to the left of the pixel but also contribute to the coverage estimate because remember we are sweeping the curve all the way to the right and it's not just the intersection within the pixel that we care about. So that's what these lines of code here do. They essentially check depending on the direction that the curve is moving whether or not we are entering or exit the pixel from the left. And if so, we treat that portion of the curve as though it was a vertical line segment that sweeps to the right and we contribute that area to the final coverage. One thing I should have mentioned by the way is that whenever we are accumulating the coverage we always have to make sure we multiply it by the sign of whether the curve is moving upwards or downwards. Finally, we get to the very end of this function and at this point we are evaluating the coverage of the curve that intersects with the pixel directly and specifically we are interested in the area to the right of the curve. And all that's left is a little bit of arithmetic to compute the area of the trapezoid. We do this by computing this B quantity which is some of the two base lengths of the trapezoid divided by two which actually may be zero for one or the other base length depending on how the curve intersects the pixel. This area gets accumulated with the area from the curve that was swept to the right that entered or were exited the pixel from the left that we saw earlier. The rest of the shader isn't nearly as interesting but the main thing I wanted to mention was I've been talking a lot about the window or the pixel size and offset but I never really mentioned how those were computed. In my shader I actually have multiple variations of the shader one of which is used when rendering in screen space and the other which is used when rendering font in world space. In screen space this is a pretty easy case we know the font size we know the screen dpi we know the resolution of the font in the font coordinate space. And so we can compute before the draw ever happens how many font units per pixel there are and we know that the pixel size is uniform because the screen aligned quads aren't being distorted in any way so we can send the pixel size to the shader directly as a constant. The pixel offset I'm subtracting half of this pixel size again this is in font units at this point and the reason that's done is because when rendering really really small text there needs to be a bit of a boundary around the glyph such that we always get anti areas pixels there as opposed to seeing a really really sharp fall off. The harder case is if we are rendering the glyph in world space after it has potentially been stretched or scaled or rotated and also when it's under some form of a perspective or some other projective transform from the camera itself. Normally if we are rendering in screen space as in the easy case the UV vectors are also aligned with screen space so there's nothing really fancy going on and if we were to map the UV gradients from screen space into font space these are still orthogonal vectors that are aligned with the coordinate axes in font space. On the other hand if these UVs have been interpolated from vertices that have been transformed by matrix transforms and then projected somehow the result can be quite different these vectors mapped into font space might not be orthogonal they might be rotated with respect to the main coordinate axis they might be different lengths all bets are off here and that's kind of what this UV footprint here is an approximation of. F with computes the sum of the absolute values of the finite differences of the argument which is a big mouthful but all that is saying is that if we look at how this UV quantity which is a 2d vector is changing across a 2 by 2 quad of pixels this UV footprint is an estimate of that. We could try to do a more complicated computation here like the square root of the sum of squares of ddx fine ddy fine of UV and that would give us an even more accurate estimate of this but in reality because we are operating with these course pixels anyways F with often does just as good of a job. With that UV footprints which might not be uniform we can then scale it by some dilated science to get the pixel size. Unlike the case with rendering screen space cliffs though here we actually have to do a little bit of work to figure out what this dilated size should be. I won't show that calculation here because this is somewhat ancillary to the core aspect of the algorithm but the intuition behind how this works is that you want to have pixel dilation in screen space so you just need to work out how to scale the quad pre-image based on the model and camera matrices to get that result. You might be curious how many precision problems I encountered while implementing this. Well you might be surprised to know that the answer is none. Unlike racedabbers that count the occurrences of discrete events on a limited set of sample points the scanline sweep outcome is a continuous result. This means that if the areas computed are slightly off it doesn't result in a widely different outcome like you might encounter in a racedabber. In fact I was actually able to reduce the precision used to store all the glyph control points from single precision to half precision. While writing the true type font parser I noticed that most of the fonts I was using operated on a font grid with a resolution of 2048 units per m. 16 bit floating points have an 11 bit mantissa which means that they can actually represent integers between the range of negative 2048 to 2048 exactly. Even for fonts that define the font grid with the finer resolution than 2048 have precision seem more than sufficient for the scanline sweeper to render them at sufficient quality. Here are some VRAM usage numbers for a few fonts demoed in this video. Grayscale 8 bit or BC7 textures both store images at a rate of 1 byte per textile. So for the simpler fonts the storage requirement for the ASCII character set is just north of the size of a 4k texture. But in exchange for the storage you're able to render text at any size from any perspective which seems fairly economical. Something else where I would play with is the filtering footprint. What's been presented so far is the simplest version of this algorithm where the coverage estimate was made for a simple rectangular footprint. However, we could use a much more sophisticated footprint if we wanted. For example, in addition to estimating the coverage for region A here, in the same shader invocation we could also compute the coverage ratio estimate of this inner region B as well. Then we could use arbitrary linear combinations of these two ratios to use as our blend parameter. Choosing a greater weight for A here is supposed to be. We'd give us a sort of center-weighted scheme as opposed to the uniform scheme that we've been using so far. Of course, we can take any linear combination of any set of windows we want. If we needed very accurately sampled glyphs with extreme anisotropy, we could use a linear combination of ratios that approximated the ellipse of anisotropy for example. This is referred to as footprint assembly and is the basis behind many texture filtering algorithms. Another point to mention is that you don't have to store glyph curves in the original orientation. By rotating the control points of the glyph, you can store curves that can do rectangular coverage estimates that aren't access aligned with the original coordinate space. Note that if you do this, you won't be able to store the rotated curves with only 16 bits of precision anymore, so personally, I didn't find this worthwhile. A potentially more interesting application of this trick is sub-pixel filtering. Instead of computing the coverage for a square like this, you could instead use windows that are approximately overlap the sub-pixels. Then you would use these coverage estimates to drive the alpha components of a dual source blend. The overlap here is needed to avoid excessive color fringing, but the trick works quite well in my testing. You could go crazy and support weirder pixel geometries if you wanted to. So you're probably asking, okay, that all sounds great, but how does it perform? To test this, I rendered this scene that you've seen in front of you with a couple different fonts on a few GPUs. This is the Geist font from Versailles, and this is the Miami font. This font has about four to five times as many curves per glyph as the Geist font, so it's significantly more challenging. Let's first look at some timings before any series optimization work was done. These scenes were rendered at 1440p on all these GPUs and all clock speeds were set to stable. Geists renders okay on all these GPUs, but you can tell that the more complicated font is a real struggle. Especially on the 2060, which I would consider a pretty typical budget card. And these are some of the timings after a few optimization passes. These timings are a lot healthier and quite shipable. The hard case on the budget card still only takes just north of a third of a millisecond, which I consider pretty acceptable for what was being rendered. The main optimization that was useful was actually partitioning the glyphs. Here, this loop was what the original loop looked like. Pretty simple, you take a glyph, you look at each of its curves, you load each of these curves from a buffer, and then you execute the scanline sweep. With the optimization instead, we have every single glyph partitioned into a number of horizontal stripes. This is a similar optimization used in a number of other race tabbers, and it really does help because you're essentially limiting the number of curves that a pixel might encounter. It was pretty clear from looking at the profiles what needed to be optimized. Then the unoptimized version, every pixel has to look at a lot of curves that actually aren't intersecting the scanline at all. That's why most of the samples in the unoptimized shader are memory loads. On the other hand, in the optimized shader, most pixels can pick up only the curves that are relevant to its scanline, and so most of the instructions here sampled are in the ALU and FMA units. It's a similar story on AMD as well. At the top you can see that a lot more time is spent waiting for buffer loads to finish. While I'm reasonably happy with where things ended up at the moment, there are a few things that are potentially worth improving in the future. First, I'll probably implement a computer shader version of this. This isn't so much of an optimization in and of itself, but it doesn't able the next two optimizations. In a computer shader, we could rasterize one scanline at a time, as opposed to one tile at a time, which is the natural way that a pixel shader does its grouping. For pixel shaders, it's a pretty good assumption that if you are close by to another pixel in screen space, you will probably access the same memory. In our case, this is not exactly true. Pixels that are adjacent to each other vertically might access very different memory depending on which scanline they occupy. If we process pixels as scanlines as opposed to tiles, another thing we could do is load curves into scalar registers, as opposed to vector registers. Vector register pressure hasn't really been an issue for me, but this is something to keep in mind if you run into that problem. Unrelated, but in the future, I may take some time to implement more accurate anisotropic filtering. Earlier, I mentioned that we could manipulate pixel windows and take linear combinations of coverage estimates in order to approximate the ellipse of anisotropy. I've only experimented with this a little bit, but I haven't actually needed it for my current project. I might do this in the future though. Something else I also haven't implemented, but had started, was vertical partitioning. It probably makes sense to split curves up in such a way that they are sorted from left to right, or somehow vertically partition so that you can quickly discard all the curves that are fully to the right of the pixel you're looking at. This specific optimization is likely very font-dependent in terms of how effective it is. In my early experiments, I actually didn't see any speed up at all, which is why I haven't bothered finalizing it. It's possible, though, that for some fonts, this type of thing might be even necessary. And last, another thing I think might be worth exploring is actually some form of curve compression. Even though I'm storing all the curve data as 16-bit floats, there is still quite a bit of redundancy because a lot of the control points are actually shared between neighboring curves. I'll probably circle back to this in the future when I add support for CJK languages or other languages that have a lot more glyphs than English. If you made it this far, I'm truly impressed, and appreciate you for sticking around. Overall, I'm happy with how the scanline sweeper turned out, but I'm curious what you think as well. Let me know in the comments. Also, check out the associated blog post if you're interested in learning more. With that, I'll see you in the next one.",
+  "segments": [
+    {
+      "start": 0.78,
+      "end": 5.78,
+      "duration": 5.0,
+      "text": "The text you are reading was rendered in real time on the GPU with what I believe to be a new technique."
+    },
+    {
+      "start": 6.78,
+      "end": 11.78,
+      "duration": 5.0,
+      "text": "Like other more recent approaches, this technique operates on glyph curves directly in the shader."
+    },
+    {
+      "start": 12.78,
+      "end": 15.78,
+      "duration": 3.0,
+      "text": "As such, it has no issue handling arbitrary zoom."
+    },
+    {
+      "start": 20.88,
+      "end": 22.88,
+      "duration": 2.0,
+      "text": "Rotation and perspective work well too."
+    },
+    {
+      "start": 25.8,
+      "end": 30.8,
+      "duration": 5.0,
+      "text": "Compared to signed distance approaches, this technique works really well with glyphs that have lots of curves."
+    },
+    {
+      "start": 31.8,
+      "end": 34.8,
+      "duration": 3.0,
+      "text": "Note the preservation of thin features, even under some extreme perspective."
+    },
+    {
+      "start": 37.24,
+      "end": 41.24,
+      "duration": 4.0,
+      "text": "In this video, I'll talk about the theory of how this algorithm operates,"
+    },
+    {
+      "start": 42.24,
+      "end": 45.24,
+      "duration": 3.0,
+      "text": "give some comparisons with other techniques that exist currently,"
+    },
+    {
+      "start": 46.24,
+      "end": 49.24,
+      "duration": 3.0,
+      "text": "talk a bit about the math, the background that you need to implement it,"
+    },
+    {
+      "start": 50.24,
+      "end": 51.24,
+      "duration": 1.0,
+      "text": "and you can totally do this on your own."
+    },
+    {
+      "start": 53.24,
+      "end": 58.24,
+      "duration": 5.0,
+      "text": "I started this project a few weeks ago when I was working on a new UI layout engine for the game engine that I'm working on."
+    },
+    {
+      "start": 59.24,
+      "end": 63.24,
+      "duration": 4.0,
+      "text": "Even though I've been a graphics engineer for a long time, normally when it comes to text rendering,"
+    },
+    {
+      "start": 63.24,
+      "end": 66.24,
+      "duration": 3.0,
+      "text": "I just take any of the texture sampling approaches and call it a day."
+    },
+    {
+      "start": 67.24,
+      "end": 69.24,
+      "duration": 2.0,
+      "text": "I wanted to be a bit more ambitious this time though."
+    },
+    {
+      "start": 71.24,
+      "end": 76.24,
+      "duration": 5.0,
+      "text": "The texture sampling and signed distance field approaches excel when it comes to performance and simplicity."
+    },
+    {
+      "start": 77.24,
+      "end": 81.24,
+      "duration": 4.0,
+      "text": "Rendering textured quads is sort of the bread and butter of most UI rendering after all."
+    },
+    {
+      "start": 82.24,
+      "end": 84.24,
+      "duration": 2.0,
+      "text": "Where these approaches really struggle though is memory."
+    },
+    {
+      "start": 85.24,
+      "end": 88.24,
+      "duration": 3.0,
+      "text": "Even though signed distance approaches that you get away with lower resolution textures,"
+    },
+    {
+      "start": 88.24,
+      "end": 92.24,
+      "duration": 4.0,
+      "text": "you still need a good amount of memory to preserve detail under high levels of magnification."
+    },
+    {
+      "start": 93.24,
+      "end": 98.24,
+      "duration": 5.0,
+      "text": "Multi-channel signed distance fields help preserve more detail, but again, at the expensive increased memory."
+    },
+    {
+      "start": 100.24,
+      "end": 105.24,
+      "duration": 5.0,
+      "text": "Quality can be situationally good, provided your glyph quads are snapped to pixels in the case of grayscale textures."
+    },
+    {
+      "start": 106.24,
+      "end": 110.24,
+      "duration": 4.0,
+      "text": "Signed distance fields produce less objectionable aliasing, but can lose feature clarity."
+    },
+    {
+      "start": 111.24,
+      "end": 117.24,
+      "duration": 6.0,
+      "text": "On the versatility side, traditionally rasterized glyphs can't be rendered off the pixel grid without objectionable artifacting."
+    },
+    {
+      "start": 118.24,
+      "end": 120.24,
+      "duration": 2.0,
+      "text": "So in that sense, they are the least versatile."
+    },
+    {
+      "start": 121.24,
+      "end": 125.24,
+      "duration": 4.0,
+      "text": "STFs actually do a bit better here, so it's perhaps unfair I'm grouping these techniques together."
+    },
+    {
+      "start": 126.24,
+      "end": 131.24,
+      "duration": 5.0,
+      "text": "Signed distance glyphs can be rotated and transformed, and you can also implement text effects like blurs and shadows directly in the shader."
+    },
+    {
+      "start": 132.24,
+      "end": 139.24,
+      "duration": 7.0,
+      "text": "This advantage though is somewhat diminished by the impracticality of STF representations, and storing them for all the fonts and languages you might need to ship."
+    },
+    {
+      "start": 140.24,
+      "end": 144.24,
+      "duration": 4.0,
+      "text": "Racerabbers are a separate important class of algorithms that take a completely different approach."
+    },
+    {
+      "start": 144.24,
+      "end": 152.24,
+      "duration": 8.0,
+      "text": "They operate by casting rays from sample points within each pixel and counting ray glyph intersections to compute the sample point winding number."
+    },
+    {
+      "start": 153.24,
+      "end": 162.24,
+      "duration": 9.0,
+      "text": "Because they operate on analytical shape representations, they are naturally versatile and able to support arbitrary transformations in the same way that scalable vector graphics can."
+    },
+    {
+      "start": 163.24,
+      "end": 170.24,
+      "duration": 7.0,
+      "text": "Compared to the head of time rasterization approaches, Racerabbers have a heftier runtime cost than the GPU, but make up for it by having a much smaller memory footprint."
+    },
+    {
+      "start": 171.24,
+      "end": 175.24,
+      "duration": 4.0,
+      "text": "Where Racerabbers appear to struggle more is in the complexity front."
+    },
+    {
+      "start": 175.24,
+      "end": 181.24,
+      "duration": 6.0,
+      "text": "Because the algorithm relies on root finding to count discrete events, it is difficult to make Racerabbers numerically robust."
+    },
+    {
+      "start": 182.24,
+      "end": 188.24,
+      "duration": 6.0,
+      "text": "This has been solved before as described in the slug paper, but the implementation challenges are quite real as others have found."
+    },
+    {
+      "start": 189.24,
+      "end": 198.24,
+      "duration": 9.0,
+      "text": "Note that I put a star next to the Racerabber line, because I haven't actually implemented a variant of this algorithm myself, and I can't really speak to how Racerabbing algorithms compare to my solution,"
+    },
+    {
+      "start": 198.24,
+      "end": 200.24,
+      "duration": 2.0,
+      "text": "without educated guesswork."
+    },
+    {
+      "start": 201.24,
+      "end": 205.24,
+      "duration": 4.0,
+      "text": "Instead, I wanted to go in a bit of a different direction with this goal in mind."
+    },
+    {
+      "start": 206.24,
+      "end": 211.24,
+      "duration": 5.0,
+      "text": "Like Racerabbers, I knew that I wanted to benefit from rendering directly from the analytical representations of the glyphs."
+    },
+    {
+      "start": 212.24,
+      "end": 216.24,
+      "duration": 4.0,
+      "text": "This would let me retain all the memory, quality, and versatility advantages."
+    },
+    {
+      "start": 217.24,
+      "end": 222.24,
+      "duration": 5.0,
+      "text": "The idea I wanted to implement was based on continuous coverage estimates as opposed to discrete event counting."
+    },
+    {
+      "start": 223.24,
+      "end": 229.24,
+      "duration": 6.0,
+      "text": "Performance was also top of mind for me, and I wanted a solution that was competitive with the state of the art."
+    },
+    {
+      "start": 230.24,
+      "end": 233.24,
+      "duration": 3.0,
+      "text": "Without further ado, let's look at a bird's eye view of the algorithm."
+    },
+    {
+      "start": 234.24,
+      "end": 238.24,
+      "duration": 4.0,
+      "text": "The algorithm begins by pre-processing glyph data embedded in open type font files."
+    },
+    {
+      "start": 239.24,
+      "end": 242.24,
+      "duration": 3.0,
+      "text": "Each glyph contains one or more compressed streams of points that specify contours."
+    },
+    {
+      "start": 244.24,
+      "end": 247.24,
+      "duration": 3.0,
+      "text": "These are the quadratic busy egg control points in this glyph."
+    },
+    {
+      "start": 248.24,
+      "end": 254.24,
+      "duration": 6.0,
+      "text": "Bezier curves have control points that aren't on the glyph outline itself, but are used to modulate the curvature."
+    },
+    {
+      "start": 255.24,
+      "end": 260.24,
+      "duration": 5.0,
+      "text": "Newer font formats specify glyph outlines with cubic busy eggs that possess four control points,"
+    },
+    {
+      "start": 261.24,
+      "end": 265.24,
+      "duration": 4.0,
+      "text": "and will need to be approximated with one or more quadratic busy eggs for this algorithm to work."
+    },
+    {
+      "start": 267.55,
+      "end": 270.55,
+      "duration": 3.0,
+      "text": "For now, assume that all cubic busy eggs have been properly split."
+    },
+    {
+      "start": 271.55,
+      "end": 276.55,
+      "duration": 5.0,
+      "text": "Other points on the contour correspond to line segments, which are essentially first order busy eggs."
+    },
+    {
+      "start": 277.55,
+      "end": 283.55,
+      "duration": 6.0,
+      "text": "To simplify the implementation and improve performance of the shader, we'll need to promote these linear segments to quadratic busy eggs."
+    },
+    {
+      "start": 285.55,
+      "end": 289.55,
+      "duration": 4.0,
+      "text": "At this point, everything we're working with is a quadratic busy egg, some sort,"
+    },
+    {
+      "start": 290.55,
+      "end": 294.55,
+      "duration": 4.0,
+      "text": "and if we were to connect all these curves for each contour, we would see the outline of the glyph take shape."
+    },
+    {
+      "start": 296.9,
+      "end": 304.9,
+      "duration": 8.0,
+      "text": "On the topic of processing linear segments, strictly horizontal segments won't be needed, as we'll see later, so let's strip these from consideration in the future also."
+    },
+    {
+      "start": 305.9,
+      "end": 308.9,
+      "duration": 3.0,
+      "text": "We're not done with curved processing just yet, however."
+    },
+    {
+      "start": 309.9,
+      "end": 313.9,
+      "duration": 4.0,
+      "text": "To simplify some of the math down the line, we need all of these curves to be monotonic in both x and y."
+    },
+    {
+      "start": 314.9,
+      "end": 322.9,
+      "duration": 8.0,
+      "text": "I'll cover this in more detail later, but for now, know that some of these quadratic busy eggs need to be split into up to three separate pieces to satisfy this condition."
+    },
+    {
+      "start": 325.21,
+      "end": 333.21,
+      "duration": 8.0,
+      "text": "You might have missed it, but this glyph only happens to have one split needed here, because the inner loop happens to travel right ever so slightly before curving back left while moving upwards."
+    },
+    {
+      "start": 334.21,
+      "end": 340.49,
+      "duration": 6.28,
+      "text": "Everything describes so far happens offline when the font gets processed and we're now ready to shade the glyph itself."
+    },
+    {
+      "start": 341.49,
+      "end": 346.49,
+      "duration": 5.0,
+      "text": "In a pixel or computer shader, the first step is to determine the region of the glyph covered by the pixel."
+    },
+    {
+      "start": 347.49,
+      "end": 360.09,
+      "duration": 12.6,
+      "text": "The size of this footprint may change depending on font size, glyph transformations, DPI, or camera configuration, and the footprint may not even be uniform, but we'll just stick with the simple square for now."
+    },
+    {
+      "start": 361.09,
+      "end": 365.75,
+      "duration": 4.66,
+      "text": "We're now ready to discuss the core part of the algorithm, the scan line sweeping."
+    },
+    {
+      "start": 366.75,
+      "end": 373.48,
+      "duration": 6.73,
+      "text": "For every footprint shaded, each curve is considered with respect to the upper and lower scan line boundaries."
+    },
+    {
+      "start": 375.89,
+      "end": 383.89,
+      "duration": 8.0,
+      "text": "Normally, at this point, a raised aber would shoot raised from one or more sample points within the footprint to compute the sample winding number, but that's not what we're going to do."
+    },
+    {
+      "start": 385.89,
+      "end": 390.89,
+      "duration": 5.0,
+      "text": "Before I describe what we actually do, something I need to mention is that the direction these contours travel is significant."
+    },
+    {
+      "start": 391.89,
+      "end": 397.89,
+      "duration": 6.0,
+      "text": "The open type specification requires that the glyph interior is to the right from the perspective of a particle traveling along a contour."
+    },
+    {
+      "start": 399.89,
+      "end": 406.52,
+      "duration": 6.63,
+      "text": "Showing here are particles moving along the outer contour, and here are particles moving along the inner contour."
+    },
+    {
+      "start": 407.52,
+      "end": 417.52,
+      "duration": 10.0,
+      "text": "It's true that some misbehaving fonts from naughty font makers don't honor this requirement, but by enlarge the vast majority of fonts I tested did this correctly, and it's something we can fix in the font itself if needed."
+    },
+    {
+      "start": 419.93,
+      "end": 428.93,
+      "duration": 9.0,
+      "text": "Now that we understand the significance of the contour direction, I've colored portions of the contour that are traveling upwards and green, and portions of the contour that are traveling downwards and red."
+    },
+    {
+      "start": 429.93,
+      "end": 442.46,
+      "duration": 12.53,
+      "text": "Remember that the glyph interior is on the right. For each window, we'll only consider curves that intersect the scan line, and for each curve that does, we'll compute the area of the window covered if we sweep the curve to the right."
+    },
+    {
+      "start": 443.46,
+      "end": 447.46,
+      "duration": 4.0,
+      "text": "The number below the window will track the area covered as a ratio of the total window area."
+    },
+    {
+      "start": 449.97,
+      "end": 454.97,
+      "duration": 5.0,
+      "text": "This first segment ends part way up the scan line, so its area contribution is only a fraction of the area of the window."
+    },
+    {
+      "start": 455.97,
+      "end": 460.97,
+      "duration": 5.0,
+      "text": "The reason the sweep is only partially covering the scan line is because that's where a curve happens to end."
+    },
+    {
+      "start": 461.97,
+      "end": 467.97,
+      "duration": 6.0,
+      "text": "The upper and lower sweep boundaries are defined by the intersection of the scan line region and the curve's control points."
+    },
+    {
+      "start": 468.97,
+      "end": 473.97,
+      "duration": 5.0,
+      "text": "This next segment fills in what's left, and at this point, our coverage estimate believes that the window is fully covered."
+    },
+    {
+      "start": 476.22,
+      "end": 482.22,
+      "duration": 6.0,
+      "text": "This next sweep starts correcting our estimate, though. The swept curve moves downwards, so it reduces the coverage estimate."
+    },
+    {
+      "start": 484.66,
+      "end": 493.66,
+      "duration": 9.0,
+      "text": "Unlike the previous sweeps, this sweep starts in the window interior. To compute the covered area, you can imagine approximating the area by computing the area of this trapezoid."
+    },
+    {
+      "start": 496.03,
+      "end": 505.03,
+      "duration": 9.0,
+      "text": "This is the last sweep that overlaps the scan line. Unlike the previous sweep, we estimate the covered area with this triangle, which can be thought of as a trapezoid where one of the baselines is zero."
+    },
+    {
+      "start": 507.03,
+      "end": 511.03,
+      "duration": 4.0,
+      "text": "With this, the scan line sweeper believes that the pixel is roughly 80% covered."
+    },
+    {
+      "start": 512.03,
+      "end": 516.03,
+      "duration": 4.0,
+      "text": "Let's move the window around in this vicinity to get a feel for how this works in other situations."
+    },
+    {
+      "start": 518.89,
+      "end": 525.89,
+      "duration": 7.0,
+      "text": "In this case, the window is completely outside the glyph interior, and the sweeps associated with downwards and upwards moving curves cancel out."
+    },
+    {
+      "start": 535.56,
+      "end": 540.56,
+      "duration": 5.0,
+      "text": "This is another easy case, where the window is completely covered, and only one segment influences the coverage ratio."
+    },
+    {
+      "start": 543.86,
+      "end": 548.86,
+      "duration": 5.0,
+      "text": "This window has a bit more going on since it overlaps a point where two curves meet, traveling in opposite directions."
+    },
+    {
+      "start": 549.86,
+      "end": 553.86,
+      "duration": 4.0,
+      "text": "This leftmost curve covers the entire window as we've seen before."
+    },
+    {
+      "start": 554.86,
+      "end": 560.86,
+      "duration": 6.0,
+      "text": "This curve here technically has a positive contribution, but it's so small that our low precision display doesn't show any changes."
+    },
+    {
+      "start": 562.86,
+      "end": 565.86,
+      "duration": 3.0,
+      "text": "On the other hand, this curve has a more substantial negative contribution."
+    },
+    {
+      "start": 566.86,
+      "end": 570.86,
+      "duration": 4.0,
+      "text": "The final coverage computer here is 61%, which seems pretty reasonable."
+    },
+    {
+      "start": 571.86,
+      "end": 576.86,
+      "duration": 5.0,
+      "text": "All that's left is to repeat this for every pixel, and we should be left with a nicely anti-aliased glyph."
+    },
+    {
+      "start": 589.22,
+      "end": 592.22,
+      "duration": 3.0,
+      "text": "Let's now get into the implementation, starting with a little bit of algebra."
+    },
+    {
+      "start": 594.82,
+      "end": 599.82,
+      "duration": 5.0,
+      "text": "This is the evaluation of a quadratic-bezier curve, which is basically just a couple nested interpolations."
+    },
+    {
+      "start": 602.2,
+      "end": 608.2,
+      "duration": 6.0,
+      "text": "Since we need to take derivatives of this equation with respect to T, it's a bit more convenient to write it in this form instead."
+    },
+    {
+      "start": 611.15,
+      "end": 613.15,
+      "duration": 2.0,
+      "text": "Taking the derivative will let us find the inflection points."
+    },
+    {
+      "start": 616.2,
+      "end": 624.2,
+      "duration": 8.0,
+      "text": "Setting this to zero and solving for T, we find two values of T that gives us our inflection points for the x and y coordinate."
+    },
+    {
+      "start": 626.2,
+      "end": 632.2,
+      "duration": 6.0,
+      "text": "If both of these values are outside the unit interval for a given quadratic-bezier, we can say that that bezier curve is monotonic."
+    },
+    {
+      "start": 634.7,
+      "end": 644.7,
+      "duration": 10.0,
+      "text": "If you're confused by this notation, just remember that the points in our bezier curve are actually two-dimensional, so the right-hand side of this equation here is actually two separate scalar expressions in one."
+    },
+    {
+      "start": 646.7,
+      "end": 650.7,
+      "duration": 4.0,
+      "text": "Here's a Desmos demo I put together to explain how these equations work."
+    },
+    {
+      "start": 651.7,
+      "end": 655.7,
+      "duration": 4.0,
+      "text": "At the top left here, you see three separate control points for our bezier curve."
+    },
+    {
+      "start": 662.3,
+      "end": 670.3,
+      "duration": 8.0,
+      "text": "This equation we've seen already, this is the interpolation formula that allows us to evaluate a point on the bezier curve for a given parameter T."
+    },
+    {
+      "start": 671.3,
+      "end": 675.3,
+      "duration": 4.0,
+      "text": "This next line plots the curve as the dash blue line you see on the right."
+    },
+    {
+      "start": 677.3,
+      "end": 685.3,
+      "duration": 8.0,
+      "text": "This line is the secondary coefficient that you saw when we expressed the bezier curve evaluation as the more familiar quadratic form earlier."
+    },
+    {
+      "start": 686.3,
+      "end": 694.16,
+      "duration": 7.86,
+      "text": "These next two values are actually values of T for which x and y are at their inflection point."
+    },
+    {
+      "start": 695.16,
+      "end": 699.16,
+      "duration": 4.0,
+      "text": "These were our solutions for that equation when we set the derivative equal to zero."
+    },
+    {
+      "start": 701.54,
+      "end": 706.54,
+      "duration": 5.0,
+      "text": "These last two lines evaluate the bezier curve at those inflection points and plot them on the right."
+    },
+    {
+      "start": 707.54,
+      "end": 711.54,
+      "duration": 4.0,
+      "text": "This way, we'll be able to move the control points around and see how the inflection points change."
+    },
+    {
+      "start": 712.54,
+      "end": 719.54,
+      "duration": 7.0,
+      "text": "Notice that I'm restricting the plotting of these inflection points to when the value of T lives within the unit interval."
+    },
+    {
+      "start": 720.54,
+      "end": 726.54,
+      "duration": 6.0,
+      "text": "If I were to move this control point like so, now the center control point lives roughly between the outer control points."
+    },
+    {
+      "start": 727.54,
+      "end": 732.54,
+      "duration": 5.0,
+      "text": "Visually, you should be able to see that the curve is monotonic across the entire interval."
+    },
+    {
+      "start": 733.54,
+      "end": 736.54,
+      "duration": 3.0,
+      "text": "There's nowhere where it's increasing and then decreasing at some point along the curve."
+    },
+    {
+      "start": 737.54,
+      "end": 745.54,
+      "duration": 8.0,
+      "text": "If I were to pull this control point up, now there's clearly a point along the curve for which y was increasing before the point and then decreasing after the point."
+    },
+    {
+      "start": 746.54,
+      "end": 751.54,
+      "duration": 5.0,
+      "text": "Similarly, if I pull the control point down, you can see it works in the other direction as well."
+    },
+    {
+      "start": 753.54,
+      "end": 763.54,
+      "duration": 10.0,
+      "text": "On the other hand, if I pull the point to the right, now I can create a point where the curve was going to the right prior to the inflection point and then moving to the left afterwards."
+    },
+    {
+      "start": 764.54,
+      "end": 768.54,
+      "duration": 4.0,
+      "text": "It's maybe a bit subtle here, so let me exaggerate it a bit."
+    },
+    {
+      "start": 769.54,
+      "end": 772.54,
+      "duration": 3.0,
+      "text": "As you might expect, it works in the opposite direction just as well."
+    },
+    {
+      "start": 773.54,
+      "end": 783.54,
+      "duration": 10.0,
+      "text": "Finally, if I were to take the control point and pull it up like this, you can see that it's pretty easy to construct a scenario where we have both an x and a y inflection point."
+    },
+    {
+      "start": 785.88,
+      "end": 789.88,
+      "duration": 4.0,
+      "text": "For each inflection point, we're going to need to split the bezier curve. Let's talk about how to do that."
+    },
+    {
+      "start": 792.48,
+      "end": 794.48,
+      "duration": 2.0,
+      "text": "Let's suppose we want to split the curve here."
+    },
+    {
+      "start": 795.48,
+      "end": 802.48,
+      "duration": 7.0,
+      "text": "We know that the endpoints of the sub-curve need to be the start point of our original curve, as well as the split point."
+    },
+    {
+      "start": 804.48,
+      "end": 809.48,
+      "duration": 5.0,
+      "text": "So the question that remains is where between the two endpoints should the new control point be?"
+    },
+    {
+      "start": 812.14,
+      "end": 816.14,
+      "duration": 4.0,
+      "text": "It turns out that if you know how to evaluate points on the curve itself, you also know how to split the curve."
+    },
+    {
+      "start": 817.14,
+      "end": 822.49,
+      "duration": 5.35,
+      "text": "The bezier curve evaluation happens with a series of interpolations."
+    },
+    {
+      "start": 823.49,
+      "end": 826.49,
+      "duration": 3.0,
+      "text": "First we interpolate a and b, and that gets us this white point."
+    },
+    {
+      "start": 827.49,
+      "end": 831.49,
+      "duration": 4.0,
+      "text": "Then we interpolate b and c, and that gets us this blue point."
+    },
+    {
+      "start": 832.49,
+      "end": 836.49,
+      "duration": 4.0,
+      "text": "Then we interpolate those two points, and that gets us our answer."
+    },
+    {
+      "start": 837.49,
+      "end": 848.28,
+      "duration": 10.79,
+      "text": "Now it turns out if we also wanted to split the bezier curve at this point, the intermediate value, where we interpolate it between a and b, is precisely the control point we need."
+    },
+    {
+      "start": 849.28,
+      "end": 850.28,
+      "duration": 1.0,
+      "text": "For the first sub-curve."
+    },
+    {
+      "start": 852.28,
+      "end": 860.28,
+      "duration": 8.0,
+      "text": "Similarly, if we wanted the control point for the second sub-curve, well that's precisely the point we evaluated when we interpolated between b and c."
+    },
+    {
+      "start": 862.69,
+      "end": 870.42,
+      "duration": 7.73,
+      "text": "Here in green, I've plotted the bezier curve that would result if we use this white point as the control point."
+    },
+    {
+      "start": 871.42,
+      "end": 877.42,
+      "duration": 6.0,
+      "text": "Notice that if I shift this value around, which is the split point, and the interpolated value between a and b changes,"
+    },
+    {
+      "start": 877.42,
+      "end": 884.42,
+      "duration": 7.0,
+      "text": "so too does that white control point, and the green bezier curve is completely coincident with our original curve."
+    },
+    {
+      "start": 885.42,
+      "end": 889.42,
+      "duration": 4.0,
+      "text": "We've essentially split the bezier curve as a byproduct of evaluating it."
+    },
+    {
+      "start": 890.42,
+      "end": 898.42,
+      "duration": 8.0,
+      "text": "This turns out to be an application of de Castel Joe's algorithm, which specifies not just how to evaluate bezier curves, but also how to split them."
+    },
+    {
+      "start": 898.42,
+      "end": 907.42,
+      "duration": 9.0,
+      "text": "I think this is an unfortunately overlooked property of the algorithm, because people think you need to do something fancy to split curves when you might have been doing it all along without realizing it."
+    },
+    {
+      "start": 910.69,
+      "end": 915.69,
+      "duration": 5.0,
+      "text": "Another thing we need to compute is where the bezier curve intersects either horizontal or vertical lines."
+    },
+    {
+      "start": 916.69,
+      "end": 922.69,
+      "duration": 6.0,
+      "text": "It turns out that because all of the curves we'll work with in the shader are monotonic in both x and y. This can be done quite efficiently."
+    },
+    {
+      "start": 924.69,
+      "end": 926.69,
+      "duration": 2.0,
+      "text": "Here's another Desmos demo to show how this works."
+    },
+    {
+      "start": 927.69,
+      "end": 935.69,
+      "duration": 8.0,
+      "text": "This folder is holding all the functionality that you've seen already in terms of displaying control points, moving them around and interpolating the bezier."
+    },
+    {
+      "start": 936.69,
+      "end": 941.69,
+      "duration": 5.0,
+      "text": "And QA, QB, and QC, these are the coefficients of our quadratic equation."
+    },
+    {
+      "start": 942.69,
+      "end": 953.94,
+      "duration": 11.25,
+      "text": "Here I've defined Q sub D as the square root of the discriminant, and here I have the positive and the negative root if we were to evaluate the quadratic equation."
+    },
+    {
+      "start": 954.94,
+      "end": 967.94,
+      "duration": 13.0,
+      "text": "Finally, I use those quantities to compute the positive and the negative root, which when evaluated gets us the point of intersection we need, and these points are plotted to the right restricted to the unit interval."
+    },
+    {
+      "start": 968.94,
+      "end": 976.94,
+      "duration": 8.0,
+      "text": "On the right you can see the point of intersection plotted, along with the label that indicates whether we took the positive root or the negative root."
+    },
+    {
+      "start": 976.94,
+      "end": 995.89,
+      "duration": 18.95,
+      "text": "Unlike before, I've also taken the liberty to label p0, p1, and p2, or the control points of our bezier curve, so you can understand the direction that the curve is moving it, because it always moves from p0 at t equals 0, up to p2, at t equals 1."
+    },
+    {
+      "start": 996.89,
+      "end": 1004.89,
+      "duration": 8.0,
+      "text": "One thing you'll notice here is that it seems like no matter how I move this control point around, only the positive root is where the intersection is."
+    },
+    {
+      "start": 1004.89,
+      "end": 1014.77,
+      "duration": 9.88,
+      "text": "The negative root here, on the other hand, is marked undefined, because the root actually lies outside of the unit interval."
+    },
+    {
+      "start": 1015.77,
+      "end": 1020.77,
+      "duration": 5.0,
+      "text": "That is, the evaluated root here, negative 2.8 is not part of the domain."
+    },
+    {
+      "start": 1021.77,
+      "end": 1028.77,
+      "duration": 7.0,
+      "text": "If however, I were to swap p0 and p2, such that the bezier curve is now going downwards, it's actually the neglect opposite."
+    },
+    {
+      "start": 1029.77,
+      "end": 1036.75,
+      "duration": 6.98,
+      "text": "The root is always the negative root. Let's understand why this might be true by looking at a simple parabola."
+    },
+    {
+      "start": 1036.75,
+      "end": 1051.75,
+      "duration": 15.0,
+      "text": "At the top, I have these three coefficients, a, b, and c, I'm plotting the quadratic equation as a function of t, and I've also plotted the specific point here centered at negative b over 2a."
+    },
+    {
+      "start": 1052.75,
+      "end": 1064.75,
+      "duration": 12.0,
+      "text": "This point is the point of symmetry about the parabola, and because of how the quadratic formula works, we know that the roots of the quadratic equation are symmetric about negative b over 2a."
+    },
+    {
+      "start": 1067.61,
+      "end": 1081.61,
+      "duration": 14.0,
+      "text": "This d quantity here is just a random variable that I've named, has the root of b squared minus 4ac over 2a, and to find the roots of the quadratic equation, we need to either add or subtract d."
+    },
+    {
+      "start": 1082.61,
+      "end": 1089.61,
+      "duration": 7.0,
+      "text": "So the question is, does a given intersection point correspond to the positive or the negative root?"
+    },
+    {
+      "start": 1090.61,
+      "end": 1111.61,
+      "duration": 21.0,
+      "text": "In this case, this intersection on the right corresponds to the positive root. How do we know? We know because a is a positive quantity, and if we take the positive root then d is a positive quantity, and so negative b over 2a plus that positive quantity gets us this intersection point."
+    },
+    {
+      "start": 1112.61,
+      "end": 1127.61,
+      "duration": 15.0,
+      "text": "Conversely, if we were to take the negative root, then d is a negative quantity, and minus b over 2a minus that negative quantity moves us to the left, and that gets us the negative intersection."
+    },
+    {
+      "start": 1130.75,
+      "end": 1140.75,
+      "duration": 10.0,
+      "text": "If I were to invert the parabola and consider the point of intersection in this inverted parabola, now it's actually the opposite case because a itself is now negative."
+    },
+    {
+      "start": 1141.75,
+      "end": 1149.75,
+      "duration": 8.0,
+      "text": "That means that if I take the positive square root, d becomes a negative quantity, that moves me to the left of the inflection point."
+    },
+    {
+      "start": 1150.75,
+      "end": 1159.75,
+      "duration": 9.0,
+      "text": "On the other hand, if I take the negative square root, those negatives cancel, d becomes a positive quantity, and that moves me to the right of the inflection point."
+    },
+    {
+      "start": 1164.08,
+      "end": 1179.46,
+      "duration": 15.38,
+      "text": "With this information, if you consider the four different cases of positive curvature versus negative curvature, the left and the right root, you will find that the sign of the square root that you always need matches the sign of the gradient."
+    },
+    {
+      "start": 1179.46,
+      "end": 1188.46,
+      "duration": 9.0,
+      "text": "Here, for example, y is increasing on this side of the parabola, and the positive root happens to be the one that corresponds to this intersection point."
+    },
+    {
+      "start": 1189.46,
+      "end": 1199.15,
+      "duration": 9.69,
+      "text": "I'll leave it to you to verify the other three cases, though. To simplify the explanation a bit for this video, we're also going to remove contour overlaps."
+    },
+    {
+      "start": 1200.15,
+      "end": 1207.15,
+      "duration": 7.0,
+      "text": "This isn't a strict requirement for this algorithm, and a method to relax this requirement is given in the associated paper."
+    },
+    {
+      "start": 1208.15,
+      "end": 1219.15,
+      "duration": 11.0,
+      "text": "Fortunately, there are a number of algorithms that solve this quite well, and you can use tools like font forage to get rid of contour overlaps for your initial implementation, or you can just choose a font that doesn't have this problem."
+    },
+    {
+      "start": 1225.85,
+      "end": 1234.85,
+      "duration": 9.0,
+      "text": "Let's take a look at how this is implemented in the shader itself, which will need in order to intersect with the scanline boundaries as well as the window boundaries on the left and the right."
+    },
+    {
+      "start": 1235.85,
+      "end": 1241.85,
+      "duration": 6.0,
+      "text": "QA here is the secondary coefficients computed by the collar because it's reused multiple times."
+    },
+    {
+      "start": 1242.85,
+      "end": 1248.85,
+      "duration": 6.0,
+      "text": "And C0, C1, and C2 are the coordinate values of the first, second, and third control point respectively."
+    },
+    {
+      "start": 1249.85,
+      "end": 1254.85,
+      "duration": 5.0,
+      "text": "Target refers to the location of the horizontal or vertical line we're trying to hit."
+    },
+    {
+      "start": 1255.85,
+      "end": 1263.85,
+      "duration": 8.0,
+      "text": "And the delta sign is the sign of the gradient, which we use to select whether we want the positive root or the negative root as we've seen."
+    },
+    {
+      "start": 1264.85,
+      "end": 1272.85,
+      "duration": 8.0,
+      "text": "First, we look at the leading coefficient, and determine, hey, are we a linear line segment, or are we a quadratic curve?"
+    },
+    {
+      "start": 1273.85,
+      "end": 1278.85,
+      "duration": 5.0,
+      "text": "And if we're mostly linear, then this intersection routine is good enough."
+    },
+    {
+      "start": 1279.85,
+      "end": 1283.85,
+      "duration": 4.0,
+      "text": "Otherwise, we compute the other coefficients of the quadratic expression."
+    },
+    {
+      "start": 1284.85,
+      "end": 1293.1,
+      "duration": 8.25,
+      "text": "We compute the discriminant, and we do a check here where if the discriminant is less than 0, then we just clamp it to 0."
+    },
+    {
+      "start": 1295.1,
+      "end": 1303.1,
+      "duration": 8.0,
+      "text": "Normally, it's not safe to do this because if the discriminant is negative, that usually corresponds to an actual scenario where there are no intersection points."
+    },
+    {
+      "start": 1304.1,
+      "end": 1314.1,
+      "duration": 10.0,
+      "text": "In my case, this is totally fine because prior to me ever calling this routine, I already do bounds checks on the first and the last control point to determine if an intersection is guaranteed or not."
+    },
+    {
+      "start": 1315.1,
+      "end": 1323.1,
+      "duration": 8.0,
+      "text": "So in this case, an underflow below 0 means that we just happen to hit some floating point in precision problem, and so we can clamp it safely."
+    },
+    {
+      "start": 1326.91,
+      "end": 1338.91,
+      "duration": 12.0,
+      "text": "Then we compute the actual root, and this you will probably recognize as just the evaluation of the quadratic formula with that delta sign picking whether we want the positive or the negative root."
+    },
+    {
+      "start": 1339.91,
+      "end": 1346.91,
+      "duration": 7.0,
+      "text": "By the way, I should just mention that you're going to be seeing this mad instruction or the multiply add instruction a lot."
+    },
+    {
+      "start": 1347.91,
+      "end": 1363.91,
+      "duration": 16.0,
+      "text": "This is a habit that I've picked up for a long time ago because I always wanted to make sure that the driver and the shader compiler on as wide a variety of platforms and GPUs as possible always selected the best precision fuse multiply add instruction if available."
+    },
+    {
+      "start": 1364.91,
+      "end": 1368.91,
+      "duration": 4.0,
+      "text": "I'll put a link in the description of a post that describes this in better detail for those that are interested."
+    },
+    {
+      "start": 1368.91,
+      "end": 1383.91,
+      "duration": 15.0,
+      "text": "Now let's look at the implementation of the scan line sweep function. This function is the core of the shader and takes us inputs the window size, the window offset, as well as the three control points of the curve that we're trying to evaluate."
+    },
+    {
+      "start": 1384.91,
+      "end": 1392.91,
+      "duration": 8.0,
+      "text": "Remember that the goal of this function is to take this curve sweep it to the right and compute the area for which that curve overlaps with the window."
+    },
+    {
+      "start": 1392.91,
+      "end": 1400.28,
+      "duration": 7.37,
+      "text": "These next few lines discard curves that live entirely above or below the scan line."
+    },
+    {
+      "start": 1401.28,
+      "end": 1406.28,
+      "duration": 5.0,
+      "text": "Note that we're only comparing the first and the last control points with the scan line height."
+    },
+    {
+      "start": 1407.28,
+      "end": 1417.28,
+      "duration": 10.0,
+      "text": "The reason we can do this is because our curves are monotonic normally the curve interior lives within the convex hull that's produced by all three control points."
+    },
+    {
+      "start": 1417.28,
+      "end": 1427.28,
+      "duration": 10.0,
+      "text": "But since we know that these curves are monotonic the middle control point necessarily lives within the interval of the outer two control points in both X and Y."
+    },
+    {
+      "start": 1428.28,
+      "end": 1438.69,
+      "duration": 10.41,
+      "text": "And so we can make this comparison check a bit cheaper next we do a bit of housekeeping we shift all the coordinates by the pixel offset for the busy curve control points."
+    },
+    {
+      "start": 1439.69,
+      "end": 1447.69,
+      "duration": 8.0,
+      "text": "And that means we're just working in this nice corner space where we are at a window in the first quadrant of the Cartesian plane."
+    },
+    {
+      "start": 1448.69,
+      "end": 1460.51,
+      "duration": 11.82,
+      "text": "And this is kind of like what the geometry looks like now onto the actual sleeping part we have a fast path for strictly vertical segments that get swept to the right."
+    },
+    {
+      "start": 1461.51,
+      "end": 1476.72,
+      "duration": 15.21,
+      "text": "These are easy because you just compute the height for which that segment intersects or overlaps with the scan line and the area is just the area of a rectangle or non vertical segments we do have to work a little bit harder."
+    },
+    {
+      "start": 1477.72,
+      "end": 1487.72,
+      "duration": 10.0,
+      "text": "We have to evaluate the quadratic coefficients and this is the routine that you saw earlier where we compute intersections with the bottom and the top of the scan line."
+    },
+    {
+      "start": 1490.16,
+      "end": 1495.16,
+      "duration": 5.0,
+      "text": "And we use this to determine if the curve itself is entirely to the left or to the right of the window."
+    },
+    {
+      "start": 1496.16,
+      "end": 1501.16,
+      "duration": 5.0,
+      "text": "If the segment lies entirely to the left of the window then this is the same as the vertical case."
+    },
+    {
+      "start": 1502.16,
+      "end": 1507.16,
+      "duration": 5.0,
+      "text": "And otherwise if the segment is entirely to the right then it has no contribution to the coverage whatsoever."
+    },
+    {
+      "start": 1508.16,
+      "end": 1522.16,
+      "duration": 14.0,
+      "text": "This next part is probably the most complicated part of this function because at this point we know that the curve is somehow either starting within the pixel or ending within the pixel or otherwise somehow crossing the pixel."
+    },
+    {
+      "start": 1522.16,
+      "end": 1531.16,
+      "duration": 9.0,
+      "text": "But to be honest this code isn't even that bad because it really just amounts to finding intersections or otherwise evaluating busy curves all of which you've already seen."
+    },
+    {
+      "start": 1532.16,
+      "end": 1542.16,
+      "duration": 10.0,
+      "text": "By way of the summary I'll just remind you of this image that you saw before in the overview which shows that we are essentially approximating the curve as a linear segment passing through the pixel."
+    },
+    {
+      "start": 1543.16,
+      "end": 1555.16,
+      "duration": 12.0,
+      "text": "And we can compute the coverage estimate just by taking the area of this trapezoid which may intersect with the top bottom or side segments of the pixel depending on the orientation of the curve."
+    },
+    {
+      "start": 1557.76,
+      "end": 1565.76,
+      "duration": 8.0,
+      "text": "Here I've skipped ahead to the part of the code after we've already computed the intersections with the left and the right side of the pixel window."
+    },
+    {
+      "start": 1566.76,
+      "end": 1574.76,
+      "duration": 8.0,
+      "text": "What we have here is Q0 and Q1 and these correspond to points on the curve that are also constrained similar within the pixel."
+    },
+    {
+      "start": 1575.76,
+      "end": 1582.76,
+      "duration": 7.0,
+      "text": "One thing that we have to be careful about is that if the curve is exiting from the left or entering from the left."
+    },
+    {
+      "start": 1582.76,
+      "end": 1593.76,
+      "duration": 11.0,
+      "text": "There is a region of the curve to the left of the pixel but also contribute to the coverage estimate because remember we are sweeping the curve all the way to the right and it's not just the intersection within the pixel that we care about."
+    },
+    {
+      "start": 1594.76,
+      "end": 1596.76,
+      "duration": 2.0,
+      "text": "So that's what these lines of code here do."
+    },
+    {
+      "start": 1596.76,
+      "end": 1604.76,
+      "duration": 8.0,
+      "text": "They essentially check depending on the direction that the curve is moving whether or not we are entering or exit the pixel from the left."
+    },
+    {
+      "start": 1604.76,
+      "end": 1614.76,
+      "duration": 10.0,
+      "text": "And if so, we treat that portion of the curve as though it was a vertical line segment that sweeps to the right and we contribute that area to the final coverage."
+    },
+    {
+      "start": 1615.76,
+      "end": 1625.76,
+      "duration": 10.0,
+      "text": "One thing I should have mentioned by the way is that whenever we are accumulating the coverage we always have to make sure we multiply it by the sign of whether the curve is moving upwards or downwards."
+    },
+    {
+      "start": 1625.76,
+      "end": 1640.2,
+      "duration": 14.44,
+      "text": "Finally, we get to the very end of this function and at this point we are evaluating the coverage of the curve that intersects with the pixel directly and specifically we are interested in the area to the right of the curve."
+    },
+    {
+      "start": 1641.2,
+      "end": 1645.2,
+      "duration": 4.0,
+      "text": "And all that's left is a little bit of arithmetic to compute the area of the trapezoid."
+    },
+    {
+      "start": 1645.2,
+      "end": 1660.2,
+      "duration": 15.0,
+      "text": "We do this by computing this B quantity which is some of the two base lengths of the trapezoid divided by two which actually may be zero for one or the other base length depending on how the curve intersects the pixel."
+    },
+    {
+      "start": 1661.2,
+      "end": 1670.2,
+      "duration": 9.0,
+      "text": "This area gets accumulated with the area from the curve that was swept to the right that entered or were exited the pixel from the left that we saw earlier."
+    },
+    {
+      "start": 1670.2,
+      "end": 1682.67,
+      "duration": 12.47,
+      "text": "The rest of the shader isn't nearly as interesting but the main thing I wanted to mention was I've been talking a lot about the window or the pixel size and offset but I never really mentioned how those were computed."
+    },
+    {
+      "start": 1683.67,
+      "end": 1694.67,
+      "duration": 11.0,
+      "text": "In my shader I actually have multiple variations of the shader one of which is used when rendering in screen space and the other which is used when rendering font in world space."
+    },
+    {
+      "start": 1694.67,
+      "end": 1705.67,
+      "duration": 11.0,
+      "text": "In screen space this is a pretty easy case we know the font size we know the screen dpi we know the resolution of the font in the font coordinate space."
+    },
+    {
+      "start": 1706.67,
+      "end": 1721.67,
+      "duration": 15.0,
+      "text": "And so we can compute before the draw ever happens how many font units per pixel there are and we know that the pixel size is uniform because the screen aligned quads aren't being distorted in any way so we can send the pixel size to the shader directly as a constant."
+    },
+    {
+      "start": 1721.67,
+      "end": 1740.67,
+      "duration": 19.0,
+      "text": "The pixel offset I'm subtracting half of this pixel size again this is in font units at this point and the reason that's done is because when rendering really really small text there needs to be a bit of a boundary around the glyph such that we always get anti areas pixels there as opposed to seeing a really really sharp fall off."
+    },
+    {
+      "start": 1741.67,
+      "end": 1756.67,
+      "duration": 15.0,
+      "text": "The harder case is if we are rendering the glyph in world space after it has potentially been stretched or scaled or rotated and also when it's under some form of a perspective or some other projective transform from the camera itself."
+    },
+    {
+      "start": 1757.67,
+      "end": 1778.67,
+      "duration": 21.0,
+      "text": "Normally if we are rendering in screen space as in the easy case the UV vectors are also aligned with screen space so there's nothing really fancy going on and if we were to map the UV gradients from screen space into font space these are still orthogonal vectors that are aligned with the coordinate axes in font space."
+    },
+    {
+      "start": 1779.67,
+      "end": 1804.67,
+      "duration": 25.0,
+      "text": "On the other hand if these UVs have been interpolated from vertices that have been transformed by matrix transforms and then projected somehow the result can be quite different these vectors mapped into font space might not be orthogonal they might be rotated with respect to the main coordinate axis they might be different lengths all bets are off here and that's kind of what this UV footprint here is an approximation of."
+    },
+    {
+      "start": 1805.67,
+      "end": 1824.67,
+      "duration": 19.0,
+      "text": "F with computes the sum of the absolute values of the finite differences of the argument which is a big mouthful but all that is saying is that if we look at how this UV quantity which is a 2d vector is changing across a 2 by 2 quad of pixels this UV footprint is an estimate of that."
+    },
+    {
+      "start": 1824.67,
+      "end": 1844.67,
+      "duration": 20.0,
+      "text": "We could try to do a more complicated computation here like the square root of the sum of squares of ddx fine ddy fine of UV and that would give us an even more accurate estimate of this but in reality because we are operating with these course pixels anyways F with often does just as good of a job."
+    },
+    {
+      "start": 1845.67,
+      "end": 1852.67,
+      "duration": 7.0,
+      "text": "With that UV footprints which might not be uniform we can then scale it by some dilated science to get the pixel size."
+    },
+    {
+      "start": 1853.67,
+      "end": 1860.67,
+      "duration": 7.0,
+      "text": "Unlike the case with rendering screen space cliffs though here we actually have to do a little bit of work to figure out what this dilated size should be."
+    },
+    {
+      "start": 1861.67,
+      "end": 1875.67,
+      "duration": 14.0,
+      "text": "I won't show that calculation here because this is somewhat ancillary to the core aspect of the algorithm but the intuition behind how this works is that you want to have pixel dilation in screen space so you just need to work out how to scale the quad pre-image based on the model and camera matrices to get that result."
+    },
+    {
+      "start": 1878.14,
+      "end": 1882.14,
+      "duration": 4.0,
+      "text": "You might be curious how many precision problems I encountered while implementing this."
+    },
+    {
+      "start": 1883.14,
+      "end": 1886.14,
+      "duration": 3.0,
+      "text": "Well you might be surprised to know that the answer is none."
+    },
+    {
+      "start": 1887.14,
+      "end": 1894.14,
+      "duration": 7.0,
+      "text": "Unlike racedabbers that count the occurrences of discrete events on a limited set of sample points the scanline sweep outcome is a continuous result."
+    },
+    {
+      "start": 1895.14,
+      "end": 1901.14,
+      "duration": 6.0,
+      "text": "This means that if the areas computed are slightly off it doesn't result in a widely different outcome like you might encounter in a racedabber."
+    },
+    {
+      "start": 1902.14,
+      "end": 1909.14,
+      "duration": 7.0,
+      "text": "In fact I was actually able to reduce the precision used to store all the glyph control points from single precision to half precision."
+    },
+    {
+      "start": 1910.14,
+      "end": 1917.14,
+      "duration": 7.0,
+      "text": "While writing the true type font parser I noticed that most of the fonts I was using operated on a font grid with a resolution of 2048 units per m."
+    },
+    {
+      "start": 1919.14,
+      "end": 1928.14,
+      "duration": 9.0,
+      "text": "16 bit floating points have an 11 bit mantissa which means that they can actually represent integers between the range of negative 2048 to 2048 exactly."
+    },
+    {
+      "start": 1930.14,
+      "end": 1938.14,
+      "duration": 8.0,
+      "text": "Even for fonts that define the font grid with the finer resolution than 2048 have precision seem more than sufficient for the scanline sweeper to render them at sufficient quality."
+    },
+    {
+      "start": 1940.74,
+      "end": 1943.74,
+      "duration": 3.0,
+      "text": "Here are some VRAM usage numbers for a few fonts demoed in this video."
+    },
+    {
+      "start": 1944.74,
+      "end": 1949.74,
+      "duration": 5.0,
+      "text": "Grayscale 8 bit or BC7 textures both store images at a rate of 1 byte per textile."
+    },
+    {
+      "start": 1950.74,
+      "end": 1955.74,
+      "duration": 5.0,
+      "text": "So for the simpler fonts the storage requirement for the ASCII character set is just north of the size of a 4k texture."
+    },
+    {
+      "start": 1956.74,
+      "end": 1961.74,
+      "duration": 5.0,
+      "text": "But in exchange for the storage you're able to render text at any size from any perspective which seems fairly economical."
+    },
+    {
+      "start": 1963.74,
+      "end": 1966.74,
+      "duration": 3.0,
+      "text": "Something else where I would play with is the filtering footprint."
+    },
+    {
+      "start": 1967.74,
+      "end": 1974.74,
+      "duration": 7.0,
+      "text": "What's been presented so far is the simplest version of this algorithm where the coverage estimate was made for a simple rectangular footprint."
+    },
+    {
+      "start": 1975.74,
+      "end": 1978.74,
+      "duration": 3.0,
+      "text": "However, we could use a much more sophisticated footprint if we wanted."
+    },
+    {
+      "start": 1980.74,
+      "end": 1989.74,
+      "duration": 9.0,
+      "text": "For example, in addition to estimating the coverage for region A here, in the same shader invocation we could also compute the coverage ratio estimate of this inner region B as well."
+    },
+    {
+      "start": 1990.74,
+      "end": 1995.74,
+      "duration": 5.0,
+      "text": "Then we could use arbitrary linear combinations of these two ratios to use as our blend parameter."
+    },
+    {
+      "start": 1996.74,
+      "end": 2003.74,
+      "duration": 7.0,
+      "text": "Choosing a greater weight for A here is supposed to be. We'd give us a sort of center-weighted scheme as opposed to the uniform scheme that we've been using so far."
+    },
+    {
+      "start": 2004.74,
+      "end": 2008.74,
+      "duration": 4.0,
+      "text": "Of course, we can take any linear combination of any set of windows we want."
+    },
+    {
+      "start": 2009.74,
+      "end": 2017.74,
+      "duration": 8.0,
+      "text": "If we needed very accurately sampled glyphs with extreme anisotropy, we could use a linear combination of ratios that approximated the ellipse of anisotropy for example."
+    },
+    {
+      "start": 2018.74,
+      "end": 2023.74,
+      "duration": 5.0,
+      "text": "This is referred to as footprint assembly and is the basis behind many texture filtering algorithms."
+    },
+    {
+      "start": 2024.74,
+      "end": 2029.74,
+      "duration": 5.0,
+      "text": "Another point to mention is that you don't have to store glyph curves in the original orientation."
+    },
+    {
+      "start": 2030.74,
+      "end": 2037.74,
+      "duration": 7.0,
+      "text": "By rotating the control points of the glyph, you can store curves that can do rectangular coverage estimates that aren't access aligned with the original coordinate space."
+    },
+    {
+      "start": 2038.74,
+      "end": 2045.74,
+      "duration": 7.0,
+      "text": "Note that if you do this, you won't be able to store the rotated curves with only 16 bits of precision anymore, so personally, I didn't find this worthwhile."
+    },
+    {
+      "start": 2046.74,
+      "end": 2050.74,
+      "duration": 4.0,
+      "text": "A potentially more interesting application of this trick is sub-pixel filtering."
+    },
+    {
+      "start": 2051.74,
+      "end": 2057.74,
+      "duration": 6.0,
+      "text": "Instead of computing the coverage for a square like this, you could instead use windows that are approximately overlap the sub-pixels."
+    },
+    {
+      "start": 2058.74,
+      "end": 2062.74,
+      "duration": 4.0,
+      "text": "Then you would use these coverage estimates to drive the alpha components of a dual source blend."
+    },
+    {
+      "start": 2063.74,
+      "end": 2068.74,
+      "duration": 5.0,
+      "text": "The overlap here is needed to avoid excessive color fringing, but the trick works quite well in my testing."
+    },
+    {
+      "start": 2069.74,
+      "end": 2073.74,
+      "duration": 4.0,
+      "text": "You could go crazy and support weirder pixel geometries if you wanted to."
+    },
+    {
+      "start": 2074.74,
+      "end": 2078.74,
+      "duration": 4.0,
+      "text": "So you're probably asking, okay, that all sounds great, but how does it perform?"
+    },
+    {
+      "start": 2079.74,
+      "end": 2085.74,
+      "duration": 6.0,
+      "text": "To test this, I rendered this scene that you've seen in front of you with a couple different fonts on a few GPUs."
+    },
+    {
+      "start": 2086.74,
+      "end": 2090.74,
+      "duration": 4.0,
+      "text": "This is the Geist font from Versailles, and this is the Miami font."
+    },
+    {
+      "start": 2091.74,
+      "end": 2097.74,
+      "duration": 6.0,
+      "text": "This font has about four to five times as many curves per glyph as the Geist font, so it's significantly more challenging."
+    },
+    {
+      "start": 2098.74,
+      "end": 2101.74,
+      "duration": 3.0,
+      "text": "Let's first look at some timings before any series optimization work was done."
+    },
+    {
+      "start": 2102.74,
+      "end": 2108.74,
+      "duration": 6.0,
+      "text": "These scenes were rendered at 1440p on all these GPUs and all clock speeds were set to stable."
+    },
+    {
+      "start": 2109.74,
+      "end": 2114.74,
+      "duration": 5.0,
+      "text": "Geists renders okay on all these GPUs, but you can tell that the more complicated font is a real struggle."
+    },
+    {
+      "start": 2115.74,
+      "end": 2118.74,
+      "duration": 3.0,
+      "text": "Especially on the 2060, which I would consider a pretty typical budget card."
+    },
+    {
+      "start": 2119.74,
+      "end": 2122.74,
+      "duration": 3.0,
+      "text": "And these are some of the timings after a few optimization passes."
+    },
+    {
+      "start": 2123.74,
+      "end": 2125.74,
+      "duration": 2.0,
+      "text": "These timings are a lot healthier and quite shipable."
+    },
+    {
+      "start": 2126.74,
+      "end": 2133.74,
+      "duration": 7.0,
+      "text": "The hard case on the budget card still only takes just north of a third of a millisecond, which I consider pretty acceptable for what was being rendered."
+    },
+    {
+      "start": 2134.74,
+      "end": 2138.74,
+      "duration": 4.0,
+      "text": "The main optimization that was useful was actually partitioning the glyphs."
+    },
+    {
+      "start": 2139.74,
+      "end": 2142.74,
+      "duration": 3.0,
+      "text": "Here, this loop was what the original loop looked like."
+    },
+    {
+      "start": 2143.74,
+      "end": 2150.74,
+      "duration": 7.0,
+      "text": "Pretty simple, you take a glyph, you look at each of its curves, you load each of these curves from a buffer, and then you execute the scanline sweep."
+    },
+    {
+      "start": 2154.24,
+      "end": 2159.24,
+      "duration": 5.0,
+      "text": "With the optimization instead, we have every single glyph partitioned into a number of horizontal stripes."
+    },
+    {
+      "start": 2160.24,
+      "end": 2168.24,
+      "duration": 8.0,
+      "text": "This is a similar optimization used in a number of other race tabbers, and it really does help because you're essentially limiting the number of curves that a pixel might encounter."
+    },
+    {
+      "start": 2170.24,
+      "end": 2173.24,
+      "duration": 3.0,
+      "text": "It was pretty clear from looking at the profiles what needed to be optimized."
+    },
+    {
+      "start": 2175.24,
+      "end": 2181.24,
+      "duration": 6.0,
+      "text": "Then the unoptimized version, every pixel has to look at a lot of curves that actually aren't intersecting the scanline at all."
+    },
+    {
+      "start": 2182.24,
+      "end": 2185.24,
+      "duration": 3.0,
+      "text": "That's why most of the samples in the unoptimized shader are memory loads."
+    },
+    {
+      "start": 2186.24,
+      "end": 2195.24,
+      "duration": 9.0,
+      "text": "On the other hand, in the optimized shader, most pixels can pick up only the curves that are relevant to its scanline, and so most of the instructions here sampled are in the ALU and FMA units."
+    },
+    {
+      "start": 2197.24,
+      "end": 2203.24,
+      "duration": 6.0,
+      "text": "It's a similar story on AMD as well. At the top you can see that a lot more time is spent waiting for buffer loads to finish."
+    },
+    {
+      "start": 2205.24,
+      "end": 2210.24,
+      "duration": 5.0,
+      "text": "While I'm reasonably happy with where things ended up at the moment, there are a few things that are potentially worth improving in the future."
+    },
+    {
+      "start": 2211.24,
+      "end": 2214.24,
+      "duration": 3.0,
+      "text": "First, I'll probably implement a computer shader version of this."
+    },
+    {
+      "start": 2215.24,
+      "end": 2220.24,
+      "duration": 5.0,
+      "text": "This isn't so much of an optimization in and of itself, but it doesn't able the next two optimizations."
+    },
+    {
+      "start": 2221.24,
+      "end": 2229.24,
+      "duration": 8.0,
+      "text": "In a computer shader, we could rasterize one scanline at a time, as opposed to one tile at a time, which is the natural way that a pixel shader does its grouping."
+    },
+    {
+      "start": 2230.24,
+      "end": 2237.24,
+      "duration": 7.0,
+      "text": "For pixel shaders, it's a pretty good assumption that if you are close by to another pixel in screen space, you will probably access the same memory."
+    },
+    {
+      "start": 2238.24,
+      "end": 2246.24,
+      "duration": 8.0,
+      "text": "In our case, this is not exactly true. Pixels that are adjacent to each other vertically might access very different memory depending on which scanline they occupy."
+    },
+    {
+      "start": 2248.58,
+      "end": 2256.58,
+      "duration": 8.0,
+      "text": "If we process pixels as scanlines as opposed to tiles, another thing we could do is load curves into scalar registers, as opposed to vector registers."
+    },
+    {
+      "start": 2257.58,
+      "end": 2262.58,
+      "duration": 5.0,
+      "text": "Vector register pressure hasn't really been an issue for me, but this is something to keep in mind if you run into that problem."
+    },
+    {
+      "start": 2263.58,
+      "end": 2268.58,
+      "duration": 5.0,
+      "text": "Unrelated, but in the future, I may take some time to implement more accurate anisotropic filtering."
+    },
+    {
+      "start": 2269.58,
+      "end": 2277.58,
+      "duration": 8.0,
+      "text": "Earlier, I mentioned that we could manipulate pixel windows and take linear combinations of coverage estimates in order to approximate the ellipse of anisotropy."
+    },
+    {
+      "start": 2278.58,
+      "end": 2285.58,
+      "duration": 7.0,
+      "text": "I've only experimented with this a little bit, but I haven't actually needed it for my current project. I might do this in the future though."
+    },
+    {
+      "start": 2286.58,
+      "end": 2290.58,
+      "duration": 4.0,
+      "text": "Something else I also haven't implemented, but had started, was vertical partitioning."
+    },
+    {
+      "start": 2291.58,
+      "end": 2303.58,
+      "duration": 12.0,
+      "text": "It probably makes sense to split curves up in such a way that they are sorted from left to right, or somehow vertically partition so that you can quickly discard all the curves that are fully to the right of the pixel you're looking at."
+    },
+    {
+      "start": 2304.58,
+      "end": 2308.58,
+      "duration": 4.0,
+      "text": "This specific optimization is likely very font-dependent in terms of how effective it is."
+    },
+    {
+      "start": 2309.58,
+      "end": 2314.58,
+      "duration": 5.0,
+      "text": "In my early experiments, I actually didn't see any speed up at all, which is why I haven't bothered finalizing it."
+    },
+    {
+      "start": 2315.58,
+      "end": 2320.58,
+      "duration": 5.0,
+      "text": "It's possible, though, that for some fonts, this type of thing might be even necessary."
+    },
+    {
+      "start": 2321.58,
+      "end": 2326.58,
+      "duration": 5.0,
+      "text": "And last, another thing I think might be worth exploring is actually some form of curve compression."
+    },
+    {
+      "start": 2326.58,
+      "end": 2336.58,
+      "duration": 10.0,
+      "text": "Even though I'm storing all the curve data as 16-bit floats, there is still quite a bit of redundancy because a lot of the control points are actually shared between neighboring curves."
+    },
+    {
+      "start": 2337.58,
+      "end": 2344.58,
+      "duration": 7.0,
+      "text": "I'll probably circle back to this in the future when I add support for CJK languages or other languages that have a lot more glyphs than English."
+    },
+    {
+      "start": 2346.93,
+      "end": 2351.93,
+      "duration": 5.0,
+      "text": "If you made it this far, I'm truly impressed, and appreciate you for sticking around."
+    },
+    {
+      "start": 2351.93,
+      "end": 2357.93,
+      "duration": 6.0,
+      "text": "Overall, I'm happy with how the scanline sweeper turned out, but I'm curious what you think as well. Let me know in the comments."
+    },
+    {
+      "start": 2357.93,
+      "end": 2362.93,
+      "duration": 5.0,
+      "text": "Also, check out the associated blog post if you're interested in learning more."
+    },
+    {
+      "start": 2362.93,
+      "end": 2365.93,
+      "duration": 3.0,
+      "text": "With that, I'll see you in the next one."
+    }
+  ]
+}
