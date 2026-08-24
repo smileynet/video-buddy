@@ -1,7 +1,7 @@
 ---
 id: "05"
 title: "Execute ASR benchmark: faster-whisper vs WhisperX vs CrisperWhisper on test corpus"
-status: in_progress
+status: done
 blocked_by: ["02", "03"]
 priority: high
 ---
@@ -48,15 +48,19 @@ Research indicates raw WER will be nearly identical (same base weights). Focus o
 
 ## Acceptance criteria
 
-- [ ] `benchmark/` directory with reproducible scripts
-- [ ] All 5 videos processed by all 3 engines (15 transcript outputs)
-- [ ] Metrics computed and documented in `benchmark/results.md`
-- [ ] Comparison table with per-video and aggregate numbers
-- [ ] Clear recommendation: which engine for which use case
-- [ ] Speed/memory data captured for capacity planning
+- [x] `benchmark/` directory with reproducible scripts
+- [x] All 5 videos processed by all 3 engines (15 transcript outputs)
+- [x] Metrics computed and documented in `benchmark/results.md`
+- [x] Comparison table with per-video and aggregate numbers
+- [x] Clear recommendation: which engine for which use case
+- [x] Speed/memory data captured for capacity planning
 
 ## Validation criteria
 
 - Results are reproducible (re-running produces same WER within ±0.1%)
 - At least 3 manual spot-checks per engine to validate metric computation
 - Report includes hardware specs and software versions for reproducibility
+
+## Resolution (2026-08-24)
+
+Benchmark complete. CrisperWhisper on monolith GPU is 12x faster, zero hallucinations, and provides word timestamps. Recommended as default engine with faster-whisper CPU as fallback.
