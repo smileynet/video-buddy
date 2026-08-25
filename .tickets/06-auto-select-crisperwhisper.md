@@ -1,7 +1,7 @@
 ---
 id: "06"
 title: "Auto-select CrisperWhisper when monolith is reachable"
-status: in_progress
+status: done
 blocked_by: []
 priority: high
 ---
@@ -27,14 +27,18 @@ with their `priority` field and `capabilities` list.
 
 ## Acceptance criteria
 
-- [ ] `engine = "auto"` probes backends by priority and selects CrisperWhisper when available
-- [ ] Falls back silently to faster-whisper when no CrisperWhisper backend reachable
-- [ ] Explicit engine/backend flags override auto-selection
-- [ ] Probe results cached per process (batch of N videos → 1 probe, not N)
-- [ ] Existing tests pass
+- [x] `engine = "auto"` probes backends by priority and selects CrisperWhisper when available
+- [x] Falls back silently to faster-whisper when no CrisperWhisper backend reachable
+- [x] Explicit engine/backend flags override auto-selection
+- [x] Probe results cached per process (batch of N videos → 1 probe, not N)
+- [x] Existing tests pass
 
 ## Validation criteria
 
 - With backend online: transcribe uses CrisperWhisper (verify output metadata)
 - With backend offline: falls back to faster-whisper without error (≤8s delay)
 - Batch: 4+ videos in one command → only 1 probe occurs
+
+## Resolution (2026-08-25)
+
+Engine auto-selection implemented. Default engine=auto probes configured backends by priority for crisperwhisper capability, falls back to local faster-whisper. Process-lifetime probe cache eliminates batch overhead. Fully config-driven — no hardcoded machine names.
