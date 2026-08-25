@@ -133,7 +133,7 @@ def test_transcribe_command_writes_transcript_json(
         model_cache=None: [{"start": 0.0, "duration": 1.0, "text": "hi"}],
     )
 
-    exit_code = main(["transcribe", "abc123def45", "--workspace", str(workspace)])
+    exit_code = main(["transcribe", "abc123def45", "--workspace", str(workspace), "--whisper-engine", "faster-whisper"])
 
     assert exit_code == 0
     assert (intermediate / "transcript_abc123def45.json").is_file()

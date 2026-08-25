@@ -47,6 +47,21 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Error: audio file not found: {audio_path}", file=sys.stderr)
         return 1
 
+    # Convert non-wav formats to wav (CrisperWhisper's soundfile requires wav/flac)
+    if audio_path.suffix.lower() not in (".wav", ".flac"):
+        import subprocess
+
+        wav_path = audio_path.with_suffix(".wav")
+        try:
+            subprocess.run(
+                ["ffmpeg", "-i", str(audio_path), "-ar", "16000", "-ac", "1", str(wav_path), "-y"],
+                check=True, capture_output=True,
+            )
+            audio_path = wav_path
+        except (subprocess.SubprocessError, FileNotFoundError) as exc:
+            print(f"Error: failed to convert audio to wav: {exc}", file=sys.stderr)
+            return 1
+
     try:
         from crisperwhisper import CrisperWhisperModel
 

@@ -297,7 +297,7 @@ def _app_from_sections(sections: dict[str, dict[str, Any]]) -> AppConfig:
             model=str(whisper_data.get("model") or "auto"),
             device=str(whisper_data.get("device") or "auto"),
             compute_type=str(whisper_data.get("compute_type") or "auto"),
-            engine=str(whisper_data.get("engine") or "faster-whisper"),
+            engine=str(whisper_data.get("engine") or "auto"),
         ),
         frames=FramesConfig(
             max_per_video=int(frames_data.get("max_per_video") or 15),

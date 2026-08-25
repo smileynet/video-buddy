@@ -1117,9 +1117,9 @@ def _transcribe_path(
         if engine == "crisperwhisper" and hasattr(backend, "run_crisperwhisper"):
             return backend.run_crisperwhisper(
                 audio_path,
-                model=resolved_model,
-                device=resolved_device,
-                compute_type=resolved_compute_type,
+                model=model or "turbo",
+                device=device if device != "auto" else "auto",
+                compute_type=compute_type if compute_type != "auto" else "float16",
             )
         return backend.run_whisper(
             audio_path,
