@@ -70,7 +70,7 @@ def build_parser() -> argparse.ArgumentParser:
     transcribe_parser.add_argument("--whisper-model", help="Override Whisper model.")
     transcribe_parser.add_argument(
         "--whisper-engine",
-        choices=["faster-whisper", "whisperx", "crisperwhisper"],
+        choices=["auto", "faster-whisper", "whisperx", "crisperwhisper"],
         help="Transcription engine.",
     )
     transcribe_parser.add_argument(
@@ -169,7 +169,7 @@ def build_parser() -> argparse.ArgumentParser:
     ingest_parser.add_argument("--whisper-model", help="Override Whisper model.")
     ingest_parser.add_argument(
         "--whisper-engine",
-        choices=["faster-whisper", "whisperx", "crisperwhisper"],
+        choices=["auto", "faster-whisper", "whisperx", "crisperwhisper"],
         help="Transcription engine.",
     )
     ingest_parser.add_argument(
@@ -233,7 +233,7 @@ def build_parser() -> argparse.ArgumentParser:
     digest_transcribe.add_argument("--whisper-model", help="Override Whisper model.")
     digest_transcribe.add_argument(
         "--whisper-engine",
-        choices=["faster-whisper", "whisperx", "crisperwhisper"],
+        choices=["auto", "faster-whisper", "whisperx", "crisperwhisper"],
         help="Transcription engine.",
     )
     digest_transcribe.add_argument(
@@ -271,7 +271,7 @@ def build_parser() -> argparse.ArgumentParser:
     digest_run.add_argument("--whisper-model", help="Override Whisper model.")
     digest_run.add_argument(
         "--whisper-engine",
-        choices=["faster-whisper", "whisperx", "crisperwhisper"],
+        choices=["auto", "faster-whisper", "whisperx", "crisperwhisper"],
         help="Transcription engine.",
     )
     digest_run.add_argument(
@@ -1052,6 +1052,18 @@ def _transcribe_path(
     model = args.whisper_model or _none_if_auto(context.config.whisper.model)
     device = args.device or context.config.whisper.device
     compute_type = args.compute_type or context.config.whisper.compute_type
+
+    # Auto-select: find best available backend when no explicit choice
+    if engine == "auto" and backend is None:
+        from .compute.registry import build_registry
+
+        registry = build_registry(list(context.compute))
+        best = registry.find_capable("crisperwhisper")
+        if best is not None:
+            engine = "crisperwhisper"
+            backend = best
+        else:
+            engine = "faster-whisper"
 
     if engine == "whisperx" and backend is None:
         from .transcribe.pipeline import transcribe_video_json_whisperx

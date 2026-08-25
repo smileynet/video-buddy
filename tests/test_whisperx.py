@@ -205,7 +205,7 @@ class TestConfigEngine:
         from video_buddy.config import WhisperConfig
 
         config = WhisperConfig()
-        assert config.engine == "faster-whisper"
+        assert config.engine == "auto"
 
     def test_engine_field_accepted_in_config(self) -> None:
         from video_buddy.config import WhisperConfig

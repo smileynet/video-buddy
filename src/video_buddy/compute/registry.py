@@ -5,6 +5,9 @@ from pathlib import Path
 
 from .ssh import ProbeResult, SshBackend, SshBackendConfig
 
+# Process-lifetime probe cache — avoids re-probing the same backend in a batch.
+_probe_cache: dict[str, ProbeResult] = {}
+
 
 @dataclass(frozen=True, slots=True)
 class BackendRegistry:
@@ -18,6 +21,24 @@ class BackendRegistry:
     def get(self, name: str) -> SshBackend | None:
         for backend in self.ssh_backends:
             if backend.name == name:
+                return backend
+        return None
+
+    def find_capable(self, capability: str) -> SshBackend | None:
+        """Return highest-priority reachable backend with the given capability.
+
+        Probes are cached per-process so a batch of N videos pays the probe cost once.
+        """
+        candidates = sorted(
+            (b for b in self.ssh_backends if capability in b.config.capabilities),
+            key=lambda b: b.config.priority,
+            reverse=True,
+        )
+        for backend in candidates:
+            name = backend.config.name
+            if name not in _probe_cache:
+                _probe_cache[name] = backend.probe()
+            if _probe_cache[name].available:
                 return backend
         return None
 

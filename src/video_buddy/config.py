@@ -39,7 +39,7 @@ class WhisperConfig:
     model: str = "auto"
     device: str = "auto"
     compute_type: str = "auto"
-    engine: str = "faster-whisper"
+    engine: str = "auto"
 
 
 @dataclass(frozen=True, slots=True)
