@@ -119,6 +119,7 @@ Implemented now:
 Remote execution support exists for:
 - Whisper via configured SSH backends
 - EasyOCR via configured SSH backends
+- CrisperWhisper via configured SSH backends (requires `crisperwhisper` capability)
 
 ## Verification
 
