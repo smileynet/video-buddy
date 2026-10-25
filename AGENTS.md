@@ -80,6 +80,10 @@ Use the CLI for all mechanical steps. Do not reimplement fetch, transcription, f
 
 Prefer `--json` so outputs stay machine-readable.
 
+### Credentials
+
+Before asking for provider access, load relevant credentials privately from the repo-root `.env.local` into the child process environment. This Git-ignored file is the project lookup location. In a linked worktree, check its `.env.local`, then the primary checkout's file (locate the checkout with `git worktree list --porcelain`). If absent, check existing HF CLI authentication and user mise TOML configuration before asking the user. Keep values out of command arguments, output, tracked files and reports. Report credential presence/authentication status only. HF model-download access does not establish Gemini or hosted DINO-X API access.
+
 ### Compute backends
 
 Backend selection is config-driven via `[[compute]]` entries with `priority` and `capabilities`. Never hardcode machine names, Python paths, or priorities in source code. The system auto-selects the best available engine when `[whisper] engine = "auto"`.
