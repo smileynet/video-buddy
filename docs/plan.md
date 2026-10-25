@@ -2,7 +2,7 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Completed bounded research/OCR and local-model comparisons. Latest: [local follow-up](architecture/spikes/local-model-followup.md), including DINOv3, SAM3.1 adapter, MolmoPointGUI and video. Next: **25 — complete-state frame seeking** on held-out windows. Hosted30/33 lack matching provider access; NVIDIA34 lacks a supported running endpoint/physical reference. Native-video26 and human usability18/21 remain unqualified. Final feature/integration/architecture review28 still depends on their dispositions. Conditional19/20 remain backlog.
+Ticket **25 is in progress**: [matched-window frame comparison](architecture/spikes/subject-frame-seeking-results.md) records all 270 decoded frames, 3/3 held-out revisions for both crop seeking and a simple grid, and an empty existing-selector result. No advantage over the grid or exact code OCR is established. Next: moving/scrolling/brief-state and diagram coverage, grid offsets/budgets, memory and correction effort. Follow-up35 captures the low-edge selector failure after review28. Hosted30/33 and runtime34 gaps remain; final integration/architecture review28 is still gated.
 
 | id | title | status |
 |---|---|---|
@@ -11,11 +11,12 @@ Completed bounded research/OCR and local-model comparisons. Latest: [local follo
 | 31 | Compare Ai2 pointing tracking and interface grounding | ✅ done |
 | 32 | Compare YOLOE promptable detection and segmentation | ✅ done |
 | 33 | Compare hosted DINO-X grounding against local baselines | open |
+| 35 | Preserve useful low-edge code frames in frame selection | open |
 | 34 | Evaluate NVIDIA reasoning for physical demonstration evidence | open |
 | 24 | Resolve open research questions before the next spike round | ✅ done |
 | 14 | Compare OCR for exact commands and settings | ✅ done |
 | 23 | Compare image element models by downstream evidence jobs | ✅ done |
-| 25 | Find complete readable subject states by seeking within video windows | open |
+| 25 | Find complete readable subject states by seeking within video windows | in_progress |
 | 26 | Compare ordered frames and video input for action evidence | open |
 | 15 | Compare speech paths on implementation-critical details | open |
 | 17 | Evaluate evidence-preserving adaptation to a target environment | open |

@@ -54,3 +54,13 @@ Same-query providers chose browsersearch vsOSsearch on a screenshot containing b
 ## Completed local probe evidence
 
 Consume DINO3/SAM31/specialist findings from local-model-followup.md. Stable ID can retain wrong pixels; first-time pointing is not trajectory coverage; initial seeded mask can disappear duringpropagation. Score complete intended states and expected times, not only setup success or nominaltracking labels. Raw evidence: `codex/spike-provider-coverage` commit `fc7caee6184942d39ca4cc5cc2c4d36a36498d44`.
+
+## First matched-window execution — 2026-10-25
+
+Report: `docs/architecture/spikes/subject-frame-seeking-results.md`. Raw branch `codex/spike-subject-frame-seeking`, commit `63082cff1f7f74e99d38dd4a955fa74364b30803`; all270 decoded subject crops, timestamps/hashes, frozen settings, annotation corrections, OCR outputs and measured costs retained.
+
+Two real tutorial windows: filename preparation120frames and held-out code revision150frames. Same four-output cap: existing sparse and dense selector both saved0; crop/OCR seeking recovered2/2 filename and3/3 code states; time grid also2/2 and3/3. Both had one redundant code frame. Exact held-out OCR0/3 for both, despite visually complete evidence. Crop/OCR selection cost15.294seconds plus0.344seconds dense capture on the code window; four time-grid seeks0.431seconds before separate OCR audit. Manual fixed boxes; no detector/tracker or measured peak memory/human effort.
+
+The global2% edge-density veto rejects these sparse editor screens. Post-hoc flag-only bypass recovers3/3 code states on sparse candidates but2/3 dense, so extra candidates alone do not establish improvement. Follow-up35 owns reviewed implementation/regression work after integration review28.
+
+Keep this ticket in progress. Next: freeze independently checked scrolling/moving/brief-state and diagram windows, vary grid offsets/budgets, test subject association/optional masks only where boxes fail, measure memory and correction effort. Current fixed boxes do not qualify those cases. No new model or selector integrated.
