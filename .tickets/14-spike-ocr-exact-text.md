@@ -1,7 +1,7 @@
 ---
 id: "14"
 title: "Compare OCR for exact commands and settings"
-status: in_progress
+status: done
 blocked_by: ["13"]
 spec: "apply-build"
 priority: medium
@@ -40,10 +40,10 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Acceptance criteria
 
-- [ ] A durable report identifies the deciding question, actual compared options and frozen fixtures.
-- [ ] Every evaluated option records environment, observations, costs and evidence locations.
-- [ ] The report states the verdict and distinguishes observed results from unresolved limitations.
-- [ ] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
+- [x] A durable report identifies the deciding question, actual compared options and frozen fixtures.
+- [x] Every evaluated option records environment, observations, costs and evidence locations.
+- [x] The report states the verdict and distinguishes observed results from unresolved limitations.
+- [x] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
 
 ## Execution record
 
@@ -64,3 +64,12 @@ Record raw outputs, exact versions/configuration, failures and a per-job disposi
 ## Completed bounded real-video comparison (2026-10-25)
 
 Report: `docs/architecture/spikes/s3-ocr-results.md`. Frozen30 regions,10 tuning/20 held-out, two actual source videos; configurations committed before held-out inference. Evidence branch `codex/spike-real-video-ocr`, commit `4df4a8dfd9892ef6cc8bba075f9adc1aa58b98bc`. Full-frame exact lines: Paddle16/20, Easy13/20, Tesseract10/20; supplied crops: Tesseract14/20, Paddle11/20, Easy9/20. Frozen hashes and selected-config consistency verified; all three inference runs and pre-commit passed. Scoring association correction and original outputs preserved. Verdict retain baseline pending28, retain separate full-frame/crop challengers. Human correction-time benefit, broader languages and motion/occlusion remain unresolved, owned by18/21/25; no production/default change.
+
+## Resolution (2026-10-25)
+
+Completed bounded real-video OCR comparison: separate crop/full-frame roles, no universal replacement or demonstrated human correction-time improvement; prototype remains separate.
+
+### Verification
+1. ✓ A durable spike report records options, evidence and limitations — "docs/architecture/spikes/s3-ocr-results.md records two-source held-out comparison and per-role verdict, with human benefit explicitly unresolved"
+2. ✓ Every evaluated option records its fixture, environment and observations — "codex/spike-real-video-ocr commit4df4a8dfd9892ef6cc8bba075f9adc1aa58b98bc preserves30 frozen labels, raw outputs, timings, model hashes and environment; all three actual inference runs completed"
+3. ✓ The report states an adopt, retain, reject or unresolved verdict — "Bounded verdict retains baseline, Paddle full-frame challenger and Tesseract supplied-region challenger; broader seeking/usability tracked in25/18/21 and integration28"
