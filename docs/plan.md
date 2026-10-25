@@ -2,7 +2,7 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Ticket **25 is in progress**: [stress comparison](architecture/spikes/subject-frame-seeking-stress-results.md) adds 480 authored scrolling/motion/occlusion/brief-state frames and 144 grid configurations across six budgets/four offsets. In the real code window only one four-frame grid offset covered all revisions. A post-hoc PSM7/short-event candidate covered all controlled states at cap3; fresh natural confirmation is next. Sampled collector memory/costs are recorded, not complete pipeline qualification. Follow-up35 owns the production selector failure; review28 remains gated. Hosted30/33 and runtime34 gaps remain.
+Ticket **25 remains in progress**: [fresh real validation](architecture/spikes/subject-frame-seeking-real-validation.md) froze the unchanged event seeker before456 observations from a new tutorial. It recovered0/3 scrolling states at every cap1–8; the grid covered all3 at some offsets. Other one-state cases do not qualify later tracking. **Reject this candidate as default. Next:36 — revision boundaries for completed instructions and checkpoints**, with new locked validation after development. Broader independent/mask/task-level gaps remain25;35 owns the production selector failure. Review28 now depends on36 and still gates integration; hosted30/33 and runtime34 remain gaps.
 
 | id | title | status |
 |---|---|---|
@@ -17,6 +17,7 @@ Ticket **25 is in progress**: [stress comparison](architecture/spikes/subject-fr
 | 14 | Compare OCR for exact commands and settings | ✅ done |
 | 23 | Compare image element models by downstream evidence jobs | ✅ done |
 | 25 | Find complete readable subject states by seeking within video windows | in_progress |
+| 36 | Spike revision boundaries for typing and scrolling without prefix budget loss | open |
 | 26 | Compare ordered frames and video input for action evidence | open |
 | 15 | Compare speech paths on implementation-critical details | open |
 | 17 | Evaluate evidence-preserving adaptation to a target environment | open |
@@ -48,11 +49,11 @@ Ticket **25 is in progress**: [stress comparison](architecture/spikes/subject-fr
 
 A completed report can record an unresolved verdict, but do not treat it as approval to integrate. Existing tickets 08 (default ASR), 10 (integrity) and 11 (resume) overlap tool/state decisions; review the new findings before implementing their proposed approaches.
 
-Latest evidence: [S2 results](architecture/spikes/s2-results.md). Ticket 22 tracks clean-checkout CLI startup; experimental helper/flags stay on the spike branch. A closed spike with an unresolved verdict does not validate a production feature.
+Latest frame evidence: [fresh frozen-candidate validation](architecture/spikes/subject-frame-seeking-real-validation.md). Earlier [S2 results](architecture/spikes/s2-results.md) remain a historical acquisition/selection probe. Ticket 22 tracks clean-checkout CLI startup; experimental helper/flags stay on the spike branch. A closed spike with an unresolved verdict does not validate a production feature.
 
 Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). DINOv3 and SAM3.1 now have bounded inference records. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; complete-state and task qualification remain25/26.
 
-Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Remaining primary spikes: models 23, subject-window seeking 25, temporal evidence 26, speech 15, adaptation 17, review UX 18, fresh-performer usability 21, acquisition/recovery 27. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
+Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Remaining primary spikes: subject-window qualification25, revision boundaries36, temporal evidence26, speech15, adaptation17, review UX18, fresh-performer usability21 and acquisition/recovery27. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
 
 ## Expanded current-provider coverage
 

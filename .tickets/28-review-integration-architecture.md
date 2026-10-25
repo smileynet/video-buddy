@@ -13,6 +13,10 @@ validation_criteria:
 
 # Review spike findings and decide app features and integration architecture
 
+## Fresh real validation disposition — 2026-10-25
+
+`docs/architecture/spikes/subject-frame-seeking-real-validation.md` supersedes the provisional positive controlled diagnostic for default selection. The unchanged candidate recovered0/3 required scrolling states on a fresh source at every tested cap1–8; prefixes consumed its output budget. Other one-state early captures did not qualify later zoom/menu retention. Do not adopt this candidate as default. New blocker36 owns revision-boundary alternatives and new locked validation; these observed windows become development evidence. Ticket25 retains independent-label, broader-source, mask/diagram and task-level gaps. Raw evidence branch `codex/spike-subject-frame-seeking`, commit `181e209def0389a57b0b4192b4acb2447682f6e4`.
+
 ## Ticket25 comparison evidence added 2026-10-25
 
 Consume `docs/architecture/spikes/subject-frame-seeking-stress-results.md` alongside the first matched-window report. The real code grid result depends on offset; authored controls expose short-state and crop-tracking failures. The PSM7/event candidate was changed after inspecting controls, so it is not a held-out winner. Require fresh natural qualification before choosing a production selector/model composition. Ticket25 remains in progress; ticket35 owns the existing global inclusion-veto failure. Peak collector RSS is measured separately from full-pipeline memory. Preserve these limits when reviewing UX claims and integration scope.

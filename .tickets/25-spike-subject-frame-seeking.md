@@ -76,3 +76,13 @@ Original PSM13/frequency seeker at cap3: scroll3/3, motion0/3, occlusion2/3, bri
 Collector/children peak sampled summed RSS83.8MiB (decode/encoder excluded); tracked OCR about8.4–8.7seconds per120frame clip, template search about1second. The invariant-header fixture is deliberately easy; no wrong accepted controlled match observed, eight motion/blur abstentions. No SAM/mask benefit established.
 
 **Next:** freeze fresh natural scrolling, movement, obstruction and brief UI windows with independent label checks, then validate the unchanged PSM7/event candidate. Also test false/repeated subjects, diagram/settings completeness, source-wide discovery and human correction/task outcomes. Current natural exploration113–125seconds was unscored; do not claim it fills those gaps. Keep ticket25 in progress and review28 gated. Existing frame tests5passed; sweep/seek/timestamp checks and pre-commit passed.
+
+## Fresh-source frozen validation — 2026-10-25
+
+Report: `docs/architecture/spikes/subject-frame-seeking-real-validation.md`. New Traversy Git tutorial source, four natural windows: terminal scrolling, browser zoom, installer obstruction, brief menu disappearance/reopening.456 observations/405 unique frames; browser windows overlap. Single-agent OCR-assisted reference, with explicit geometry/visibility uncertainty. Labels/inputs/candidate frozen in commit834036e before inference; exact candidate hash verified against round2. No retuning.
+
+**Negative verdict:** frozen candidate recovered0/3 required scrolling states at every tested cap1,2,3,4,6,8. Its eight prefix/OCR-variant selections ended before the complete add command. Grid at cap4 recovered1/1/2/3 states across offsets0/.25/.5/.75. Other cases each1/1 from an early image, which does not establish tracking through later zoom/occlusion/reopened menus. Menu exact OCR was wrong. Raw branch `codex/spike-subject-frame-seeking`, commit `181e209def0389a57b0b4192b4acb2447682f6e4`.
+
+All192 actual grid seeks matched decoded frames;8 nominal presentation-index rounding discrepancies corrected explicitly, without changing coverage results. Existing frame tests5passed; pre-commit and hash/timestamp/seek checks passed. Costs retained; fresh peak memory/human effort not measured.
+
+Do not adopt the candidate as default. New ticket36 owns the separate revision-boundary spike; these real windows are development evidence for any revised policy, requiring new locked validation. Keep25 in progress for independent labels, broader sources/subjects, diagrams/masks and task-level qualification;35 owns the production inclusion veto and28 still gates integration.

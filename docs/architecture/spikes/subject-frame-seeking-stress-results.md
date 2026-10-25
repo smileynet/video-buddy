@@ -1,5 +1,7 @@
 # Frame seeking under scrolling, motion, occlusion and brief states
 
+**Latest follow-up:** [fresh real tutorial validation](subject-frame-seeking-real-validation.md) rejected the unchanged candidate as a default: it retained0/3 required scrolling states at every tested cap. The post-hoc success below remains a controlled diagnostic, not a production recommendation.
+
 **Ticket 25 · 25 October 2026 · experiments, not integrated.** The earlier real-video result depended on grid alignment: at a four-frame budget, only **one of four offsets** retained all three code revisions. Controlled clips exposed failures in the original seeker too. A revised short-event/PSM7 diagnostic recovered all three clean states in each control with three selected frames, but it was changed after inspecting the fixtures and needs fresh validation.
 
 ## Scope and comparison
