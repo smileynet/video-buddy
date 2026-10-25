@@ -1,7 +1,7 @@
 ---
 id: "14"
 title: "Compare OCR for exact commands and settings"
-status: open
+status: in_progress
 blocked_by: ["13"]
 spec: "apply-build"
 priority: medium
