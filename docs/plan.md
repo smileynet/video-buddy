@@ -21,7 +21,7 @@ Current focus: ticket 12 (S1). [Spike definitions](architecture/spike-plan.md), 
 | 13 | Find the minimum visual evidence needed to reproduce actions | open |
 | 14 | Compare OCR for exact commands and settings | open |
 | 15 | Compare speech paths on implementation-critical details | open |
-| 16 | Choose a state store using interruption and concurrency probes | open |
+| 16 | Choose a state store using interruption and concurrency probes | ✅ done |
 | 17 | Evaluate evidence-preserving adaptation to a target environment | open |
 | 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
 | 19 | Evaluate attribution only when it changes the next action | backlog |
