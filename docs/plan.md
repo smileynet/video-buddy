@@ -2,12 +2,12 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Completed: **24 — Open research**, with a cited decision register and independent audit. Next: resume **14 — real-video OCR qualification**, followed by the remaining model qualification in 23. Tickets 14 and 23 retain in-progress evidence; neither is complete. SAM 3 ran, SAM 3.1 has a session API blocker, DINOv3 access is now approved; inference pending. Final feature/integration/architecture review is ticket 28 after the primary qualification reports. Conditional tickets 19/20 remain backlog.
+Completed: **24 — Open research**, with a cited decision register and independent audit. Completed **14 — bounded real-video OCR comparison**. Next: **23 — remaining image-model qualification**. Ticket 23 remains in progress; OCR14 has a bounded per-role verdict with human benefit unresolved. SAM 3 ran, SAM 3.1 has a session API blocker, DINOv3 access is now approved; inference pending. Final feature/integration/architecture review is ticket 28 after the primary qualification reports. Conditional tickets 19/20 remain backlog.
 
 | id | title | status |
 |---|---|---|
 | 24 | Resolve open research questions before the next spike round | ✅ done |
-| 14 | Compare OCR for exact commands and settings | in_progress |
+| 14 | Compare OCR for exact commands and settings | ✅ done |
 | 23 | Compare image element models by downstream evidence jobs | in_progress |
 | 25 | Find complete readable subject states by seeking within video windows | open |
 | 26 | Compare ordered frames and video input for action evidence | open |
@@ -43,6 +43,6 @@ A completed report can record an unresolved verdict, but do not treat it as appr
 
 Latest evidence: [S2 results](architecture/spikes/s2-results.md). Ticket 22 tracks clean-checkout CLI startup; experimental helper/flags stay on the spike branch. A closed spike with an unresolved verdict does not validate a production feature.
 
-Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). Thirteen accessible configurations ran; SAM 3.1 has an upstream runtime blocker and DINOv3 access is now approved; inference pending. Tickets 14/23 require real-domain qualification.
+Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). Thirteen accessible configurations ran; SAM 3.1 has an upstream runtime blocker and DINOv3 access is now approved; inference pending. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; models23 still require remaining qualification.
 
-Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Remaining primary spikes: OCR 14, models 23, subject-window seeking 25, temporal evidence 26, speech 15, adaptation 17, review UX 18, fresh-performer usability 21, acquisition/recovery 27. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
+Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Remaining primary spikes: models 23, subject-window seeking 25, temporal evidence 26, speech 15, adaptation 17, review UX 18, fresh-performer usability 21, acquisition/recovery 27. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.

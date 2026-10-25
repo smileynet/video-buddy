@@ -66,7 +66,7 @@ See the branch README and per-family scripts. [Segmentation comparisons](https:/
 ## Work still required before integration
 
 1. Obtain DINOv3 approval and resolve SAM 3.1 upstream session compatibility, then run those checkpoints against the same relevant fixtures; keep ticket 23 in progress until those observations or an explicit user decision to exclude them exists.
-2. Finish ticket 14 with independent real video text regions and held-out windows, including typing, scrolling, blur, obstruction, punctuation and language needs. The synthetic smoke set does not satisfy that full quality bar.
+2. Extend the completed bounded [S3 real-video comparison](s3-ocr-results.md) through subject-window seeking25 and usability18/21: scrolling, blur, obstruction, languages and actual correction effort remain unqualified.
 3. Compare subject-aware box seeking against optional masks/tracking using exhaustive annotation in short windows. Measure readable complete-state recall, missed revisions and actual correction effort; mask quality alone is not success.
 4. Review one isolated candidate per job for implementation. Preserve raw evidence and abstention; do not integrate the complete upstream demo stacks or all shortlisted models by default.
 
