@@ -1,7 +1,7 @@
 ---
 id: "13"
 title: "Find the minimum visual evidence needed to reproduce actions"
-status: open
+status: in_progress
 blocked_by: ["12"]
 spec: "apply-build"
 priority: high
