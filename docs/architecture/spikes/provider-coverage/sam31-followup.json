@@ -1,0 +1,386 @@
+{
+  "status": "recorded",
+  "source_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "checkpoint_revision": "daa63191845a41281374e725f4c9e51c7a824460",
+  "adapter": "Drop unsupported offload_state_to_cpu only when false; reject true",
+  "sessions": [
+    {
+      "case": "controlled-dog",
+      "prompt": "dog",
+      "frames": [
+        {
+          "index": 0,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [
+            0
+          ],
+          "out_probs": [
+            0.7887788414955139
+          ],
+          "out_boxes_xywh": [
+            [
+              0.0,
+              0.02330743707716465,
+              0.9300000071525574,
+              0.9755827188491821
+            ]
+          ],
+          "mask_shape": [
+            1,
+            901,
+            1200
+          ],
+          "mask_areas": [
+            0.3863706992230855
+          ]
+        },
+        {
+          "index": 1,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [
+            0
+          ],
+          "out_probs": [
+            0.7887788414955139
+          ],
+          "out_boxes_xywh": [
+            [
+              0.007500000298023224,
+              0.025527192279696465,
+              0.9291666746139526,
+              0.9733629822731018
+            ]
+          ],
+          "mask_shape": [
+            1,
+            901,
+            1200
+          ],
+          "mask_areas": [
+            0.38698668146503884
+          ]
+        },
+        {
+          "index": 2,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [
+            0
+          ],
+          "out_probs": [
+            0.7887788414955139
+          ],
+          "out_boxes_xywh": [
+            [
+              0.01666666753590107,
+              0.025527192279696465,
+              0.9283333420753479,
+              0.9733629822731018
+            ]
+          ],
+          "mask_shape": [
+            1,
+            901,
+            1200
+          ],
+          "mask_areas": [
+            0.32523677395486494
+          ]
+        },
+        {
+          "index": 3,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [
+            0
+          ],
+          "out_probs": [
+            0.7887788414955139
+          ],
+          "out_boxes_xywh": [
+            [
+              0.024166667833924294,
+              0.024417314678430557,
+              0.9291666746139526,
+              0.9744728207588196
+            ]
+          ],
+          "mask_shape": [
+            1,
+            901,
+            1200
+          ],
+          "mask_areas": [
+            0.3871836847946726
+          ]
+        }
+      ],
+      "fixture_kind": "controlled translation/occlusion of one photo",
+      "initial": {
+        "keys": [
+          "out_obj_ids",
+          "out_probs",
+          "out_boxes_xywh",
+          "out_binary_masks",
+          "frame_stats"
+        ],
+        "out_obj_ids": [
+          0
+        ],
+        "out_probs": [
+          0.7887788414955139
+        ],
+        "out_boxes_xywh": [
+          [
+            0.0,
+            0.02330743707716465,
+            0.9300000071525574,
+            0.9755827188491821
+          ]
+        ],
+        "mask_shape": [
+          1,
+          901,
+          1200
+        ],
+        "mask_areas": [
+          0.38631890492045873
+        ]
+      },
+      "status": "ran",
+      "seconds": 20.322668552000323
+    },
+    {
+      "case": "controlled-negative",
+      "prompt": "elephant",
+      "frames": [
+        {
+          "index": 0,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [],
+          "out_probs": [],
+          "out_boxes_xywh": [],
+          "mask_shape": [
+            0,
+            901,
+            1200
+          ],
+          "mask_areas": []
+        },
+        {
+          "index": 1,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [],
+          "out_probs": [],
+          "out_boxes_xywh": [],
+          "mask_shape": [
+            0,
+            901,
+            1200
+          ],
+          "mask_areas": []
+        },
+        {
+          "index": 2,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [],
+          "out_probs": [],
+          "out_boxes_xywh": [],
+          "mask_shape": [
+            0,
+            901,
+            1200
+          ],
+          "mask_areas": []
+        },
+        {
+          "index": 3,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [],
+          "out_probs": [],
+          "out_boxes_xywh": [],
+          "mask_shape": [
+            0,
+            901,
+            1200
+          ],
+          "mask_areas": []
+        }
+      ],
+      "fixture_kind": "controlled translation/occlusion of one photo",
+      "initial": {
+        "keys": [
+          "out_obj_ids",
+          "out_probs",
+          "out_boxes_xywh",
+          "out_binary_masks",
+          "frame_stats"
+        ],
+        "out_obj_ids": [],
+        "out_probs": [],
+        "out_boxes_xywh": [],
+        "mask_shape": [
+          0,
+          901,
+          1200
+        ],
+        "mask_areas": []
+      },
+      "status": "ran",
+      "seconds": 2.286125856999206
+    },
+    {
+      "case": "real-diagram",
+      "prompt": "diagram",
+      "frames": [
+        {
+          "index": 0,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [],
+          "out_probs": [],
+          "out_boxes_xywh": [],
+          "mask_shape": [
+            0,
+            1080,
+            1920
+          ],
+          "mask_areas": []
+        },
+        {
+          "index": 1,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [],
+          "out_probs": [],
+          "out_boxes_xywh": [],
+          "mask_shape": [
+            0,
+            1080,
+            1920
+          ],
+          "mask_areas": []
+        },
+        {
+          "index": 2,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [],
+          "out_probs": [],
+          "out_boxes_xywh": [],
+          "mask_shape": [
+            0,
+            1080,
+            1920
+          ],
+          "mask_areas": []
+        },
+        {
+          "index": 3,
+          "keys": [
+            "out_obj_ids",
+            "out_probs",
+            "out_boxes_xywh",
+            "out_binary_masks",
+            "frame_stats"
+          ],
+          "out_obj_ids": [],
+          "out_probs": [],
+          "out_boxes_xywh": [],
+          "mask_shape": [
+            0,
+            1080,
+            1920
+          ],
+          "mask_areas": []
+        }
+      ],
+      "fixture_kind": "four sparse real captured diagram states",
+      "initial": {
+        "keys": [
+          "out_obj_ids",
+          "out_probs",
+          "out_boxes_xywh",
+          "out_binary_masks",
+          "frame_stats"
+        ],
+        "out_obj_ids": [],
+        "out_probs": [],
+        "out_boxes_xywh": [],
+        "mask_shape": [
+          0,
+          1080,
+          1920
+        ],
+        "mask_areas": []
+      },
+      "status": "ran",
+      "seconds": 3.3734654130003037
+    }
+  ],
+  "true_offload_rejected": true,
+  "load_seconds": 72.54360055699999,
+  "total_seconds": 98.55925989800016,
+  "peak_cuda_allocated_bytes": 7315324416
+}

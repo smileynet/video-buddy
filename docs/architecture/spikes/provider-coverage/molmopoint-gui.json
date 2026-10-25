@@ -1,0 +1,105 @@
+{
+  "repo": "allenai/MolmoPoint-GUI-8B",
+  "revision": "0337d39b721d0ce6fa9b315b158ac11c63e0dedc",
+  "status": "ran",
+  "config": {
+    "language": "NF4",
+    "vision": "bfloat16",
+    "max_crops": 2,
+    "max_new_tokens": 128
+  },
+  "observations": [
+    {
+      "target": "browser-search",
+      "prompt": "Point to the Google page search box containing today's price of microsoft, below the browser address bar.",
+      "reference_box": [
+        390,
+        205,
+        1776,
+        300
+      ],
+      "raw": "<points coords=\"<POINT_225><POINT_521><POINT_523>1<POINT_518>\">Google page search box containing today's price of microsoft, below the browser address bar</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          856.8391304347825,
+          253.20000000000002
+        ]
+      ],
+      "point_inside_target": true,
+      "generated_tokens": 30,
+      "seconds": 6.397023500001524
+    },
+    {
+      "target": "windows-search",
+      "prompt": "Point to the white Windows taskbar Search field with the magnifying glass at the bottom of the screen.",
+      "reference_box": [
+        1138,
+        2081,
+        1574,
+        2141
+      ],
+      "raw": "<points coords=\"<POINT_503><POINT_520><POINT_530>1<POINT_518>\">white Windows taskbar Search field with the magnifying glass at the bottom of the screen</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          1255.5,
+          2119.6
+        ]
+      ],
+      "point_inside_target": true,
+      "generated_tokens": 31,
+      "seconds": 3.0947696000002907
+    },
+    {
+      "target": "follow",
+      "prompt": "Point to the blue + Follow button on the Google stock result.",
+      "reference_box": [
+        1582,
+        802,
+        1736,
+        861
+      ],
+      "raw": "<points coords=\"<POINT_478><POINT_522><POINT_527>1<POINT_518>\">blue + Follow button on the Google stock result</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          950.5173913043477,
+          2039.6
+        ]
+      ],
+      "point_inside_target": false,
+      "generated_tokens": 23,
+      "seconds": 1.8875593999982812
+    },
+    {
+      "target": "overview",
+      "prompt": "Point to the outlined Overview pill above the stock chart.",
+      "reference_box": [
+        1022,
+        536,
+        1223,
+        619
+      ],
+      "raw": "<points coords=\"<POINT_272><POINT_522><POINT_529>1<POINT_518>\">outlined Overview pill above the stock chart</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          1114.6304347826087,
+          573.2
+        ]
+      ],
+      "point_inside_target": true,
+      "generated_tokens": 21,
+      "seconds": 1.7519432999979472
+    }
+  ],
+  "limits": "Four scoped queries on one previously inspected public UI screenshot; coarse target boxes, not independent held-out GUI qualification. Model returns points, no click is executed.",
+  "load_seconds": 60.563465299997915,
+  "total_seconds": 73.96340259999852,
+  "peak_cuda_allocated_bytes": 9182406656
+}

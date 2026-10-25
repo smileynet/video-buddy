@@ -1,0 +1,105 @@
+{
+  "repo": "allenai/MolmoPoint-GUI-8B",
+  "revision": "0337d39b721d0ce6fa9b315b158ac11c63e0dedc",
+  "status": "ran",
+  "config": {
+    "language": "NF4",
+    "vision": "bfloat16",
+    "max_crops": 2,
+    "max_new_tokens": 128
+  },
+  "observations": [
+    {
+      "target": "browser-search",
+      "prompt": "Point to the browser search input near the top of the page.",
+      "reference_box": [
+        390,
+        205,
+        1776,
+        300
+      ],
+      "raw": "<points coords=\"<POINT_225><POINT_521><POINT_523>1<POINT_518>\">browser search input near the top of the page</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          856.8391304347825,
+          253.20000000000002
+        ]
+      ],
+      "point_inside_target": true,
+      "generated_tokens": 23,
+      "seconds": 3.387607000000571
+    },
+    {
+      "target": "windows-search",
+      "prompt": "Point to the Windows taskbar Search field at the bottom of the screen.",
+      "reference_box": [
+        1138,
+        2081,
+        1574,
+        2141
+      ],
+      "raw": "<points coords=\"<POINT_503><POINT_520><POINT_530>1<POINT_518>\">Windows taskbar Search field at the bottom of the screen</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          1255.5,
+          2119.6
+        ]
+      ],
+      "point_inside_target": true,
+      "generated_tokens": 25,
+      "seconds": 1.853704299999663
+    },
+    {
+      "target": "follow",
+      "prompt": "Point to the Follow button beside Bill Gates.",
+      "reference_box": [
+        1582,
+        802,
+        1736,
+        861
+      ],
+      "raw": "<points coords=\"<POINT_488><POINT_519><POINT_531>1<POINT_518>\">Follow button beside Bill Gates</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          2312.021739130435,
+          1986.0
+        ]
+      ],
+      "point_inside_target": false,
+      "generated_tokens": 19,
+      "seconds": 1.5114745999999286
+    },
+    {
+      "target": "overview",
+      "prompt": "Point to the Overview tab.",
+      "reference_box": [
+        1022,
+        536,
+        1223,
+        619
+      ],
+      "raw": "<points coords=\"<POINT_325><POINT_520><POINT_527>1<POINT_518>\">Overview tab</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          2077.473913043478,
+          839.5999999999999
+        ]
+      ],
+      "point_inside_target": false,
+      "generated_tokens": 16,
+      "seconds": 1.3537131999983103
+    }
+  ],
+  "limits": "Four scoped queries on one previously inspected public UI screenshot; coarse target boxes, not independent held-out GUI qualification. Model returns points, no click is executed.",
+  "load_seconds": 543.0705506000013,
+  "total_seconds": 551.3161476000023,
+  "peak_cuda_allocated_bytes": 9182406656
+}

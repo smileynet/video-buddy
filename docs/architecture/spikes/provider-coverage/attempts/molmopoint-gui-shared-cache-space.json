@@ -1,0 +1,6 @@
+{
+  "status": "setup_interrupted",
+  "reason": "Shared HF cache had about1.22GB free before a34.7GB checkpoint download; stopped owned process and removed only its8incomplete files (~1.14GB). No existing complete model cache files removed.",
+  "retry": "Project scratch cache on drive with78GB free; explicit process-local HF_HUB_CACHE",
+  "inference_performed": false
+}

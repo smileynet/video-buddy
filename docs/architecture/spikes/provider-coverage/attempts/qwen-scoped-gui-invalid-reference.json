@@ -1,0 +1,71 @@
+{
+  "repo": "Qwen/Qwen3-VL-2B-Instruct",
+  "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "config": {
+    "dtype": "bfloat16",
+    "max_pixels": 262144,
+    "max_new_tokens": 128
+  },
+  "status": "ran",
+  "observations": [
+    {
+      "target": "browser-search",
+      "reference_box": [
+        390,
+        205,
+        1776,
+        300
+      ],
+      "fixture": "image-models/fixtures/ui.jpg",
+      "prompt": "Point to the browser search input near the top of the page.",
+      "output": "<points x1=\"151\" y1=\"11\" alt=\"browser search input near the top of the page\">browser search input near the top of the page</points>",
+      "generated_tokens": 40,
+      "seconds": 2.207410200000595
+    },
+    {
+      "target": "windows-search",
+      "reference_box": [
+        1138,
+        2081,
+        1574,
+        2141
+      ],
+      "fixture": "image-models/fixtures/ui.jpg",
+      "prompt": "Point to the Windows taskbar Search field at the bottom of the screen.",
+      "output": "<points x1=\"388\" y1=\"974\" alt=\"Windows taskbar Search field at the bottom of the screen\">Windows taskbar Search field at the bottom of the screen</points>",
+      "generated_tokens": 45,
+      "seconds": 1.5658656999985396
+    },
+    {
+      "target": "follow",
+      "reference_box": [
+        1582,
+        802,
+        1736,
+        861
+      ],
+      "fixture": "image-models/fixtures/ui.jpg",
+      "prompt": "Point to the Follow button beside Bill Gates.",
+      "output": "There are none.",
+      "generated_tokens": 5,
+      "seconds": 0.2128259999990405
+    },
+    {
+      "target": "overview",
+      "reference_box": [
+        1022,
+        536,
+        1223,
+        619
+      ],
+      "fixture": "image-models/fixtures/ui.jpg",
+      "prompt": "Point to the Overview tab.",
+      "output": "<points x1=\"335\" y1=\"260\" alt=\"Overview tab\">Overview tab</points>",
+      "generated_tokens": 27,
+      "seconds": 0.9523680000020249
+    }
+  ],
+  "load_seconds": 16.76506320000044,
+  "total_seconds": 22.150016399999004,
+  "peak_cuda_allocated_bytes": 4335990784
+}

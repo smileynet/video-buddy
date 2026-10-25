@@ -1,0 +1,47 @@
+{
+  "fixture": "image-models/fixtures/ui.jpg",
+  "sha256": "29dfbaca6024f5ca12e257f2d9499b475c78faad636609cc75c01ecfb5d3ec0f",
+  "queries": [
+    [
+      "browser-search",
+      "Point to the Google page search box containing today's price of microsoft, below the browser address bar.",
+      [
+        390,
+        205,
+        1776,
+        300
+      ]
+    ],
+    [
+      "windows-search",
+      "Point to the white Windows taskbar Search field with the magnifying glass at the bottom of the screen.",
+      [
+        1138,
+        2081,
+        1574,
+        2141
+      ]
+    ],
+    [
+      "follow",
+      "Point to the blue + Follow button on the Google stock result.",
+      [
+        1582,
+        802,
+        1736,
+        861
+      ]
+    ],
+    [
+      "overview",
+      "Point to the outlined Overview pill above the stock chart.",
+      [
+        1022,
+        536,
+        1223,
+        619
+      ]
+    ]
+  ],
+  "limits": "Corrected after identifying an invalid entity in original prompts; not a blinded held-out prompt comparison. Both models must use this same corrected set."
+}

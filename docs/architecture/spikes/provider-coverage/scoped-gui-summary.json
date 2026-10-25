@@ -1,0 +1,143 @@
+{
+  "limits": "One known screenshot, corrected prompts after invalid reference pass, different precision/processing budgets. Success requires one point inside intended coarse box; no actions executed.",
+  "qwen-scoped-gui.json": {
+    "hits": 4,
+    "n": 4,
+    "rows": [
+      {
+        "target": "browser-search",
+        "pixel_points": [
+          [
+            567.0,
+            252.72
+          ]
+        ],
+        "reference_box": [
+          390,
+          205,
+          1776,
+          300
+        ],
+        "single_point_inside": true
+      },
+      {
+        "target": "windows-search",
+        "pixel_points": [
+          [
+            1253.88,
+            2103.84
+          ]
+        ],
+        "reference_box": [
+          1138,
+          2081,
+          1574,
+          2141
+        ],
+        "single_point_inside": true
+      },
+      {
+        "target": "follow",
+        "pixel_points": [
+          [
+            1645.92,
+            820.8
+          ]
+        ],
+        "reference_box": [
+          1582,
+          802,
+          1736,
+          861
+        ],
+        "single_point_inside": true
+      },
+      {
+        "target": "overview",
+        "pixel_points": [
+          [
+            1095.12,
+            563.76
+          ]
+        ],
+        "reference_box": [
+          1022,
+          536,
+          1223,
+          619
+        ],
+        "single_point_inside": true
+      }
+    ]
+  },
+  "molmopoint-gui.json": {
+    "hits": 3,
+    "n": 4,
+    "rows": [
+      {
+        "target": "browser-search",
+        "pixel_points": [
+          [
+            856.8391304347825,
+            253.20000000000002
+          ]
+        ],
+        "reference_box": [
+          390,
+          205,
+          1776,
+          300
+        ],
+        "single_point_inside": true
+      },
+      {
+        "target": "windows-search",
+        "pixel_points": [
+          [
+            1255.5,
+            2119.6
+          ]
+        ],
+        "reference_box": [
+          1138,
+          2081,
+          1574,
+          2141
+        ],
+        "single_point_inside": true
+      },
+      {
+        "target": "follow",
+        "pixel_points": [
+          [
+            950.5173913043477,
+            2039.6
+          ]
+        ],
+        "reference_box": [
+          1582,
+          802,
+          1736,
+          861
+        ],
+        "single_point_inside": false
+      },
+      {
+        "target": "overview",
+        "pixel_points": [
+          [
+            1114.6304347826087,
+            573.2
+          ]
+        ],
+        "reference_box": [
+          1022,
+          536,
+          1223,
+          619
+        ],
+        "single_point_inside": true
+      }
+    ]
+  }
+}

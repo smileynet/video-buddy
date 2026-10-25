@@ -1,0 +1,135 @@
+{
+  "repo": "allenai/MolmoPoint-GUI-8B",
+  "revision": "0337d39b721d0ce6fa9b315b158ac11c63e0dedc",
+  "files": [
+    {
+      "file": "added_tokens.json",
+      "bytes": 845536,
+      "sha256": "085c97dbff1bc599095fb572e8e21fc5e7bed8ceb5a9a465314c7f136d62ec74"
+    },
+    {
+      "file": "chat_template.jinja",
+      "bytes": 3169
+    },
+    {
+      "file": "config.json",
+      "bytes": 3164,
+      "sha256": "71c7de8d69f1822e28700900f30d1299ed4dc48145c0836b37b3d88fc87c9db3"
+    },
+    {
+      "file": "configuration_molmo_point.py",
+      "bytes": 9188,
+      "sha256": "369a05c0dbfb1e363917c8d063e7f30a1de93ac67cfd1bcc2a95aa4e434a826a"
+    },
+    {
+      "file": "generation_config.json",
+      "bytes": 117,
+      "sha256": "103506d168927632c8f627d470611ec14e5bc38246470173713b5c28762026b0"
+    },
+    {
+      "file": "image_processing_molmo2.py",
+      "bytes": 22169,
+      "sha256": "22fcc160210a3a648b6d618171686c40b900f512107f532c266af7792ac00511"
+    },
+    {
+      "file": "merges.txt",
+      "bytes": 1671853
+    },
+    {
+      "file": "model-00001-of-00008.safetensors",
+      "bytes": 4974567112,
+      "resolved_cache_object": "2d3732d31814e012ccd7e6233767d666bb537ea326115cc39531a240ed869482"
+    },
+    {
+      "file": "model-00002-of-00008.safetensors",
+      "bytes": 4630720272,
+      "resolved_cache_object": "2dbca8ad1e05c93439d88de6f6894d21fc553505f0acf6628fba80fa2e729340"
+    },
+    {
+      "file": "model-00003-of-00008.safetensors",
+      "bytes": 4630720296,
+      "resolved_cache_object": "9b224a39e55774cb93733b2b9a2d7c359d965f2ddd06c25c0bfe7e090c60d1ea"
+    },
+    {
+      "file": "model-00004-of-00008.safetensors",
+      "bytes": 4630720320,
+      "resolved_cache_object": "207fff100afae525de98e3c8587844281385af38f0f1e3021d3486c8f65dfb3e"
+    },
+    {
+      "file": "model-00005-of-00008.safetensors",
+      "bytes": 4630720320,
+      "resolved_cache_object": "b227e15ad408116e6f1af3b0b7575af31c7ae813140926cc14d4ee8608ec57b6"
+    },
+    {
+      "file": "model-00006-of-00008.safetensors",
+      "bytes": 4630720320,
+      "resolved_cache_object": "402928f313108697a224ba24a357a760a4821b0754cd0aaf3df63267af31d3ce"
+    },
+    {
+      "file": "model-00007-of-00008.safetensors",
+      "bytes": 4091925052,
+      "resolved_cache_object": "fea334f4459058d2cd58ab488ca7897569589689be194b546c9e20953fe0b14e"
+    },
+    {
+      "file": "model-00008-of-00008.safetensors",
+      "bytes": 2491416816,
+      "resolved_cache_object": "b17a468d9df731816026852186bb4be2cb1ba38fdbc3c66e89baecf081527f4e"
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "bytes": 67904,
+      "sha256": "2ec4ec268051299d387aae82f887a1011e651b9e4ee48a2a8160f6096e508db8"
+    },
+    {
+      "file": "modeling_molmo_point.py",
+      "bytes": 81968,
+      "sha256": "aaf4f863dfb717f498e503b8e39f82c0effaded743fdfecc64271f26f08fcb01"
+    },
+    {
+      "file": "preprocessor_config.json",
+      "bytes": 556,
+      "sha256": "aa9898d1684b9cec93859865396020a7798d81d2f0a4fa729afe0e92d5d3ba3c"
+    },
+    {
+      "file": "processing_molmo2.py",
+      "bytes": 18224,
+      "sha256": "73fee7d5cc24e64fdecff90b07e2fea1985113394ffaaf9b87f42e40f3fb4aeb"
+    },
+    {
+      "file": "processor_config.json",
+      "bytes": 346,
+      "sha256": "90f6eea70ac5ee31221d5a83790f20ed6f4240521d5aba8ba776746e2600c6f4"
+    },
+    {
+      "file": "special_tokens_map.json",
+      "bytes": 7989,
+      "sha256": "7af6f09d819fce2662d3be59766042b6d20835104745049754cc61e1755c33fd"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 17417468,
+      "sha256": "2f437033cf8ca3315943460f7b7681d01130795107d9a99dc124fd9d6898e932"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "bytes": 5691741,
+      "sha256": "89d00c976c5e6b506941ac046faa4786159f71abe3275a0a417559beb6a62225"
+    },
+    {
+      "file": "video_preprocessor_config.json",
+      "bytes": 983,
+      "sha256": "ebf9bf053685ff25869fe3cad8fee71a258a5fe3d2cad94b41870baf41cab91b"
+    },
+    {
+      "file": "video_processing_molmo2.py",
+      "bytes": 37660,
+      "sha256": "aaeffabdee0b11f93fb380093df1738964340ea072ba6352bd3f371cc0df835e"
+    },
+    {
+      "file": "vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ],
+  "limits": "Small code/config files hashed locally; large weights use pinned HF revision/cache identity, not an independent full-weight checksum pass"
+}

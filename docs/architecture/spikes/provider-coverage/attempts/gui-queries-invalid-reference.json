@@ -1,0 +1,45 @@
+{
+  "queries": [
+    [
+      "browser-search",
+      "Point to the browser search input near the top of the page.",
+      [
+        390,
+        205,
+        1776,
+        300
+      ]
+    ],
+    [
+      "windows-search",
+      "Point to the Windows taskbar Search field at the bottom of the screen.",
+      [
+        1138,
+        2081,
+        1574,
+        2141
+      ]
+    ],
+    [
+      "follow",
+      "Point to the Follow button beside Bill Gates.",
+      [
+        1582,
+        802,
+        1736,
+        861
+      ]
+    ],
+    [
+      "overview",
+      "Point to the Overview tab.",
+      [
+        1022,
+        536,
+        1223,
+        619
+      ]
+    ]
+  ],
+  "reason": "Follow prompt named Bill Gates although image shows Microsoft stock result. Browser search prompt also underspecified. Preserved as invalid scoring reference, not model failure."
+}

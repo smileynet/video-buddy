@@ -1,0 +1,46 @@
+{
+  "real_sparse_frames": [
+    {
+      "model_frame": 0,
+      "source_requested_ms": 106000,
+      "committed_path": "docs\\architecture\\spikes\\s2-visual-comparison\\frame_00106000.jpg",
+      "sha256": "e879681476eb9fe89d1059570b9e3fb0645be60dd283281a75f2f4a2ed506fde"
+    },
+    {
+      "model_frame": 1,
+      "source_requested_ms": 112000,
+      "committed_path": "docs\\architecture\\spikes\\s2-visual-comparison\\frame_00112000.jpg",
+      "sha256": "559cf3810ce0ecabcc4ae619b781d5d531a16f2e9f4ce1b777cc808030877908"
+    },
+    {
+      "model_frame": 2,
+      "source_requested_ms": 114000,
+      "committed_path": "docs\\architecture\\spikes\\s2-visual-comparison\\frame_00114000.jpg",
+      "sha256": "8de4836e0135c36d06fd83c77206950e24eeb3cc114534050dad50ff2381a675"
+    },
+    {
+      "model_frame": 3,
+      "source_requested_ms": 116000,
+      "committed_path": "docs\\architecture\\spikes\\s2-visual-comparison\\frame_00116000.jpg",
+      "sha256": "dd0d658d54a488a1d358e73584019492d97afe44d03d67be8c119d570ba82dd7"
+    }
+  ],
+  "controlled": [
+    {
+      "path": "sam31-controlled\\00000.jpg",
+      "sha256": "bb09cefe31658773ac71beefa48615a8a19b9f3e0a624476213d2192cf207d41"
+    },
+    {
+      "path": "sam31-controlled\\00001.jpg",
+      "sha256": "ce795f735e2772fa768f2e30fbf3f2567c1d3f5a4e0750b3917d39c3b888c380"
+    },
+    {
+      "path": "sam31-controlled\\00002.jpg",
+      "sha256": "55d92143219b26b491845e7895ef7d390648d8223a801271d35b6accf129a8cc"
+    },
+    {
+      "path": "sam31-controlled\\00003.jpg",
+      "sha256": "17df59c9bb5e92e8f5de411d2af7fc7c2738792eee1f6308ef8a2bcdc7691d1b"
+    }
+  ]
+}

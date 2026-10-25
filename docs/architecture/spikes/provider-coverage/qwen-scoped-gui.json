@@ -1,0 +1,99 @@
+{
+  "repo": "Qwen/Qwen3-VL-2B-Instruct",
+  "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "config": {
+    "dtype": "bfloat16",
+    "max_pixels": 262144,
+    "max_new_tokens": 128
+  },
+  "status": "ran",
+  "observations": [
+    {
+      "target": "browser-search",
+      "reference_box": [
+        390,
+        205,
+        1776,
+        300
+      ],
+      "fixture": "image-models/fixtures/ui.jpg",
+      "prompt": "Point to the Google page search box containing today's price of microsoft, below the browser address bar.",
+      "output": "<points x1=\"175\" y1=\"117\" alt=\"Google page search box containing today's price of microsoft\">Google page search box containing today's price of microsoft</points>",
+      "generated_tokens": 43,
+      "seconds": 3.679016000001866,
+      "pixel_points": [
+        [
+          567.0,
+          252.72000000000003
+        ]
+      ],
+      "point_inside_target": true
+    },
+    {
+      "target": "windows-search",
+      "reference_box": [
+        1138,
+        2081,
+        1574,
+        2141
+      ],
+      "fixture": "image-models/fixtures/ui.jpg",
+      "prompt": "Point to the white Windows taskbar Search field with the magnifying glass at the bottom of the screen.",
+      "output": "<points x1=\"387\" y1=\"974\" alt=\"white Windows taskbar Search field with the magnifying glass at the bottom of the screen\">white Windows taskbar Search field with the magnifying glass at the bottom of the screen</points>",
+      "generated_tokens": 57,
+      "seconds": 2.5496778000015183,
+      "pixel_points": [
+        [
+          1253.88,
+          2103.84
+        ]
+      ],
+      "point_inside_target": true
+    },
+    {
+      "target": "follow",
+      "reference_box": [
+        1582,
+        802,
+        1736,
+        861
+      ],
+      "fixture": "image-models/fixtures/ui.jpg",
+      "prompt": "Point to the blue + Follow button on the Google stock result.",
+      "output": "<points x1=\"508\" y1=\"380\" alt=\"blue + Follow button on the Google stock result\">blue + Follow button on the Google stock result</points>",
+      "generated_tokens": 41,
+      "seconds": 1.7356808000004094,
+      "pixel_points": [
+        [
+          1645.92,
+          820.8000000000001
+        ]
+      ],
+      "point_inside_target": true
+    },
+    {
+      "target": "overview",
+      "reference_box": [
+        1022,
+        536,
+        1223,
+        619
+      ],
+      "fixture": "image-models/fixtures/ui.jpg",
+      "prompt": "Point to the outlined Overview pill above the stock chart.",
+      "output": "<points x1=\"338\" y1=\"261\" alt=\"outlined Overview pill above the stock chart\">outlined Overview pill above the stock chart</points>",
+      "generated_tokens": 37,
+      "seconds": 1.6111719000000448,
+      "pixel_points": [
+        [
+          1095.1200000000001,
+          563.76
+        ]
+      ],
+      "point_inside_target": true
+    }
+  ],
+  "load_seconds": 17.68287749999945,
+  "total_seconds": 28.012533400000393,
+  "peak_cuda_allocated_bytes": 4339245056
+}

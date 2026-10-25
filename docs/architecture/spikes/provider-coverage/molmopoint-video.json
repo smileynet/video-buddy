@@ -1,0 +1,115 @@
+{
+  "repo": "allenai/MolmoPoint-Vid-4B",
+  "revision": "b331ed6c6352e6db967325493c6dae515541a919",
+  "status": "recorded",
+  "config": {
+    "language": "NF4",
+    "vision": "bfloat16",
+    "max_new_tokens": 128,
+    "sampling": "none; four supplied frames with explicit relative timestamps"
+  },
+  "observations": [
+    {
+      "case": "controlled-dog",
+      "prompt": "Track the dog.",
+      "relative_requested_times": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "input_frames": [
+        "00000.jpg",
+        "00001.jpg",
+        "00002.jpg",
+        "00003.jpg"
+      ],
+      "processed_times": [
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "status": "ran",
+      "raw": "<points coords=\"<POINT_42><POINT_331><POINT_336>1<POINT_324>\">dog</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          807.3333333333333,
+          494.7157407407407
+        ]
+      ],
+      "generated_tokens": 15,
+      "token_budget_exhausted": false,
+      "seconds": 1.7244796000013594
+    },
+    {
+      "case": "controlled-negative",
+      "prompt": "Point to the elephant.",
+      "relative_requested_times": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "input_frames": [
+        "00000.jpg",
+        "00001.jpg",
+        "00002.jpg",
+        "00003.jpg"
+      ],
+      "processed_times": [
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "status": "ran",
+      "raw": "There are none.<|im_end|>",
+      "points": [],
+      "generated_tokens": 5,
+      "token_budget_exhausted": false,
+      "seconds": 0.472300900000846
+    },
+    {
+      "case": "real-diagram",
+      "prompt": "Track the circular diagram panel in the middle.",
+      "relative_requested_times": [
+        0,
+        6,
+        8,
+        10
+      ],
+      "input_frames": [
+        "00000.jpg",
+        "00001.jpg",
+        "00002.jpg",
+        "00003.jpg"
+      ],
+      "processed_times": [
+        0.0,
+        6.0,
+        8.0,
+        10.0
+      ],
+      "status": "ran",
+      "raw": "<points coords=\"<POINT_49><POINT_330><POINT_336>1<POINT_324>\">circular diagram panel in the middle</point><|im_end|>",
+      "points": [
+        [
+          1.0,
+          0.0,
+          1007.2888888888888,
+          673.0
+        ]
+      ],
+      "generated_tokens": 21,
+      "token_budget_exhausted": false,
+      "seconds": 1.3783519999997225
+    }
+  ],
+  "limits": "Predecoded sparse-frame video-processor input, not native-video decoding, all-frame coverage or long-video drift. Controlled dog sequence is derived from one photo.",
+  "load_seconds": 22.168198700001085,
+  "total_seconds": 25.743384699999297,
+  "peak_cuda_allocated_bytes": 4961393664
+}

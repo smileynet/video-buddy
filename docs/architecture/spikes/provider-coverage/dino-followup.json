@@ -1,0 +1,192 @@
+{
+  "status": "recorded",
+  "observations": [
+    {
+      "repo": "facebook/dinov2-small",
+      "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+      "processed_pixel_l1": 310.2672424316406,
+      "one_character_cls_cosine": 0.9982012510299683,
+      "status": "ran",
+      "patch_size": 14,
+      "register_offset": 1,
+      "shift_pixels": 14,
+      "matches": [
+        {
+          "source": [
+            4,
+            10
+          ],
+          "expected": [
+            5,
+            10
+          ],
+          "predicted": [
+            5,
+            10
+          ],
+          "exact": true,
+          "cosine": 0.9970054626464844
+        },
+        {
+          "source": [
+            11,
+            5
+          ],
+          "expected": [
+            12,
+            5
+          ],
+          "predicted": [
+            12,
+            5
+          ],
+          "exact": true,
+          "cosine": 0.9956846833229065
+        },
+        {
+          "source": [
+            12,
+            12
+          ],
+          "expected": [
+            13,
+            12
+          ],
+          "predicted": [
+            13,
+            12
+          ],
+          "exact": true,
+          "cosine": 0.9919939041137695
+        },
+        {
+          "source": [
+            5,
+            3
+          ],
+          "expected": [
+            6,
+            3
+          ],
+          "predicted": [
+            6,
+            3
+          ],
+          "exact": true,
+          "cosine": 0.9850287437438965
+        },
+        {
+          "source": [
+            8,
+            8
+          ],
+          "expected": [
+            9,
+            8
+          ],
+          "predicted": [
+            9,
+            8
+          ],
+          "exact": true,
+          "cosine": 0.9946234226226807
+        }
+      ],
+      "total_seconds": 2.533405700000003
+    },
+    {
+      "repo": "facebook/dinov3-vits16-pretrain-lvd1689m",
+      "revision": "114c1379950215c8b35dfcd4e90a5c251dde0d32",
+      "processed_pixel_l1": 278.5673828125,
+      "one_character_cls_cosine": 0.9870514869689941,
+      "status": "ran",
+      "patch_size": 16,
+      "register_offset": 5,
+      "shift_pixels": 16,
+      "matches": [
+        {
+          "source": [
+            4,
+            10
+          ],
+          "expected": [
+            5,
+            10
+          ],
+          "predicted": [
+            5,
+            10
+          ],
+          "exact": true,
+          "cosine": 0.9987735748291016
+        },
+        {
+          "source": [
+            11,
+            5
+          ],
+          "expected": [
+            12,
+            5
+          ],
+          "predicted": [
+            12,
+            5
+          ],
+          "exact": true,
+          "cosine": 0.9984411001205444
+        },
+        {
+          "source": [
+            12,
+            12
+          ],
+          "expected": [
+            13,
+            12
+          ],
+          "predicted": [
+            13,
+            13
+          ],
+          "exact": false,
+          "cosine": 0.9677507877349854
+        },
+        {
+          "source": [
+            5,
+            3
+          ],
+          "expected": [
+            6,
+            3
+          ],
+          "predicted": [
+            6,
+            3
+          ],
+          "exact": true,
+          "cosine": 0.99236661195755
+        },
+        {
+          "source": [
+            8,
+            8
+          ],
+          "expected": [
+            9,
+            8
+          ],
+          "predicted": [
+            9,
+            8
+          ],
+          "exact": true,
+          "cosine": 0.9992858171463013
+        }
+      ],
+      "total_seconds": 30.886575500000617
+    }
+  ],
+  "limits": "224px full-image resize; each model shifted one of its own patches (14 vs16px). Five selected natural-image patches and one controlled text revision, not held-out video association or a common score calibration."
+}
