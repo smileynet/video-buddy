@@ -1,7 +1,7 @@
 ---
 id: "13"
 title: "Find the minimum visual evidence needed to reproduce actions"
-status: in_progress
+status: done
 blocked_by: ["12"]
 spec: "apply-build"
 priority: high
@@ -40,11 +40,20 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Acceptance criteria
 
-- [ ] A durable report identifies the deciding question, actual compared options and frozen fixtures.
-- [ ] Every evaluated option records environment, observations, costs and evidence locations.
-- [ ] The report states the verdict and distinguishes observed results from unresolved limitations.
-- [ ] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
+- [x] A durable report identifies the deciding question, actual compared options and frozen fixtures.
+- [x] Every evaluated option records environment, observations, costs and evidence locations.
+- [x] The report states the verdict and distinguishes observed results from unresolved limitations.
+- [x] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
 
 ## Execution record
 
 Ran bounded comparison on 2026-10-25. [Results](../docs/architecture/spikes/s2-results.md), branch `codex/spike-targeted-frames`, commit `08d238f7ee728a58e7b214cf127d33adc8757ffe`. Compared preceding sparse15, exploratory targeted8, dense36 timestamped stills and post-hoc targeted15 through the CLI. Targeted capture recovered waveform/coordinate/circle evidence, but exact square-wave coefficients remain unresolved. No universal minimum, speed gain, native-video model comparison or reader task-completion result is claimed. 15 relevant tests passed. Prototype stays off main; startup prerequisite tracked in ticket 22.
+
+## Resolution (2026-10-25)
+
+Completed bounded visual reconnaissance comparison. Targeted frames recover facts missed by sparse overview, but exact implementation gap remains. No universal winner or speed claim; preserve prototype on codex/spike-targeted-frames.
+
+### Verification
+1. ✓ A durable spike report records options, evidence and limitations — "docs/architecture/spikes/s2-results.md records sparse, targeted and dense options and frozen source hash"
+2. ✓ Every evaluated option records its fixture, environment and observations — "08d238f preserves frame metadata, contact sheets, environment, costs and 15 passing relevant checks"
+3. ✓ The report states an adopt, retain, reject or unresolved verdict — "Report recommends evidence-directed follow-up as a candidate; minimum budget and reader benefit remain unresolved, no integration"
