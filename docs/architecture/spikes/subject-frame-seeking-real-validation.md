@@ -1,5 +1,7 @@
 # Fresh real tutorial validation of frozen event seeking
 
+**Latest follow-up:** [ticket 36 revision-boundary comparison](revision-boundary-results.md) tested two new alternatives and locked validation. Full context helped, but the preferred packet heuristic missed a later checkpoint; no default was adopted.
+
 **Ticket 25 · 25 October 2026 · negative default-selection verdict, no integration.** The unchanged candidate that succeeded on designed controls failed to preserve the required scrolling states in a fresh tutorial: **0/3 at every tested cap from 1 to 8**. A whole-frame grid preserved all three at some offsets. Do not adopt this candidate as the production default. Ticket 36 owns a separate revision-boundary spike; this validation was not retuned.
 
 ## Fresh source and frozen contract

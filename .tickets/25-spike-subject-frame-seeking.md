@@ -86,3 +86,9 @@ Report: `docs/architecture/spikes/subject-frame-seeking-real-validation.md`. New
 All192 actual grid seeks matched decoded frames;8 nominal presentation-index rounding discrepancies corrected explicitly, without changing coverage results. Existing frame tests5passed; pre-commit and hash/timestamp/seek checks passed. Costs retained; fresh peak memory/human effort not measured.
 
 Do not adopt the candidate as default. New ticket36 owns the separate revision-boundary spike; these real windows are development evidence for any revised policy, requiring new locked validation. Keep25 in progress for independent labels, broader sources/subjects, diagrams/masks and task-level qualification;35 owns the production inclusion veto and28 still gates integration.
+
+## Ticket36 boundary comparison disposition
+
+See `docs/architecture/spikes/revision-boundary-results.md`, raw `codex/spike-revision-boundaries` commit `842189be2c9480a8c228c7d87917713dc5acb0be`. The comparison separated180 observed development frames from509 locked validation frames across two windows/sources. Preferred packets improved development to3/3 but retained2–3/4 terminal validation states, losing repeated-command occurrence identity after scrolling. Settled runs and the grid retained4/4 at cap4; the other-source UI3/3 used a visual fallback. Exact filename/symbol/emoji writing remains unreliable.
+
+Keep36's bounded negative/conditional verdict distinct from broader25 qualification. Remaining questions: temporal occurrence identity under repeated commands/history loss; dynamic text extent outside a manually seeded viewport; independent references and more sources; masks/semantic association; correction effort and actual task outcomes. Do not infer success from a returned prompt or UI image. Review28 gates all adoption.

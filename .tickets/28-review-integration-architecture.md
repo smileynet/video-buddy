@@ -13,6 +13,10 @@ validation_criteria:
 
 # Review spike findings and decide app features and integration architecture
 
+## Ticket36 bounded comparison completed
+
+Consume `docs/architecture/spikes/revision-boundary-results.md`. Legacy, settled-run and command/response packet alternatives plus grid offsets/budgets were compared with180 development and509 locked validation frames. Preferred packets fixed the observed case but missed the later validation checkpoint (2–3/4); settled runs/grid reached4/4 at cap4. Other-source visual fallback and literal OCR remain separate from verified instructions. No policy retuned on validation; no new default adopted. Keep settled selection conditional and packet heuristic rejected as default;25 still owns wider temporal/geometry/reference/task gaps. Raw branch `codex/spike-revision-boundaries`, commit `842189be2c9480a8c228c7d87917713dc5acb0be`.
+
 ## Fresh real validation disposition — 2026-10-25
 
 `docs/architecture/spikes/subject-frame-seeking-real-validation.md` supersedes the provisional positive controlled diagnostic for default selection. The unchanged candidate recovered0/3 required scrolling states on a fresh source at every tested cap1–8; prefixes consumed its output budget. Other one-state early captures did not qualify later zoom/menu retention. Do not adopt this candidate as default. New blocker36 owns revision-boundary alternatives and new locked validation; these observed windows become development evidence. Ticket25 retains independent-label, broader-source, mask/diagram and task-level gaps. Raw evidence branch `codex/spike-subject-frame-seeking`, commit `181e209def0389a57b0b4192b4acb2447682f6e4`.
