@@ -1,6 +1,6 @@
 # Image-model job-fit spike: initial retention decisions
 
-Date: 2026-10-25. Tickets [14](../../../.tickets/14-spike-ocr-exact-text.md) and [23](../../../.tickets/23-image-model-job-fit.md). **Exploratory inference completed for 13 accessible configurations; SAM 3.1 has an unresolved runtime compatibility failure and DINOv3 remains gated.** These are per-job shortlist recommendations, not approval to integrate new dependencies or a claim of production-quality validation.
+Date: 2026-10-25. Tickets [14](../../../.tickets/14-spike-ocr-exact-text.md) and [23](../../../.tickets/23-image-model-job-fit.md). **The original shortlist now includes DINOv3 and SAM3.1 follow-up inference; see [latest local findings](local-model-followup.md).** These are per-job shortlist recommendations, not approval to integrate new dependencies or a claim of production-quality validation.
 
 ## Evidence and environment
 
@@ -33,10 +33,10 @@ Fixtures: 30 synthetic single-line crops (five strings × two themes × three si
 | EfficientSAM-Ti | Ran. All three masks in this particular point-prompt run included the negative seed. Deprioritize for this prompt/fixture until investigated; one sanity case is insufficient to reject it globally. |
 | Florence-2-base-ft | Ran object detection, dense region caption and region OCR. Named cat/dog, but dense UI caption collapsed to “computer monitor”; settings transcription contained errors. Deprioritize for fine UI parsing and exact OCR in the current shortlist. Other Florence variants/tasks are not disqualified. |
 | SAM 3 | Ran on Ubuntu WSL after native Windows import required Triton. Found cat/dog and rejected elephant; returned 15 UI button boxes and two search-field boxes. No regions for diagram, text or line chart at the fixed default settings. Dog had an additional broad high-scoring box. Retain as an optional concept-search challenger, not a universal region detector. Allocator peak ~4.58 GB. |
-| SAM 3.1 | Approved checkpoint loaded on Ubuntu WSL, but upstream session creation passes unsupported `offload_state_to_cpu` to the multiplex model. Initial four-object bucket override mismatched checkpoint tensors; retaining required bucket size 16 resolved that first issue. No tracking inference/quality verdict; retain as blocked challenger pending upstream API repair. |
-| DINOv3 ViT-S/16 | Same concrete access limitation; no inference/quality result. Pending approved access. |
+| SAM 3.1 | Ran through a false-only experimental API adapter. Controlled ID persisted with cat-mask contamination; diagram text found none, seeded initial mask was lost during propagation. [Follow-up](local-model-followup.md). |
+| DINOv3 ViT-S/16 | Ran:4/5 chosen translated patches; high similarity after one-character revision. Optional correspondence only; [limits](local-model-followup.md). |
 
-The user's existing Hugging Face credential was found in authorized user TOML settings and authenticated successfully. Its value was neither displayed nor persisted in evidence. Authentication does not imply per-model approval. SAM 3 and SAM 3.1 are now approved; DINOv3 still returns 403. Model access pages: [SAM 3](https://huggingface.co/facebook/sam3), [SAM 3.1](https://huggingface.co/facebook/sam3.1), [DINOv3](https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m). Do not download unapproved mirrors to bypass these gates.
+The user's existing Hugging Face credential was found in authorized user TOML settings and authenticated successfully. Its value was neither displayed nor persisted in evidence. Authentication does not imply per-model approval. All three checkpoint accesses are approved and the models have now run in bounded probes; earlier403 observations are historical. Model access pages: [SAM 3](https://huggingface.co/facebook/sam3), [SAM 3.1](https://huggingface.co/facebook/sam3.1), [DINOv3](https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m). Do not download unapproved mirrors to bypass these gates.
 
 ## OCR observations
 
@@ -65,14 +65,14 @@ See the branch README and per-family scripts. [Segmentation comparisons](https:/
 
 ## Work still required before integration
 
-1. Obtain DINOv3 approval and resolve SAM 3.1 upstream session compatibility, then run those checkpoints against the same relevant fixtures; keep ticket 23 in progress until those observations or an explicit user decision to exclude them exists.
+1. Use the completed bounded local follow-up as input to subject-window qualification25; SAM3.1 extent/retention and DINO correspondence are not production-qualified.
 2. Extend the completed bounded [S3 real-video comparison](s3-ocr-results.md) through subject-window seeking25 and usability18/21: scrolling, blur, obstruction, languages and actual correction effort remain unqualified.
 3. Compare subject-aware box seeking against optional masks/tracking using exhaustive annotation in short windows. Measure readable complete-state recall, missed revisions and actual correction effort; mask quality alone is not success.
 4. Review one isolated candidate per job for implementation. Preserve raw evidence and abstention; do not integrate the complete upstream demo stacks or all shortlisted models by default.
 
 ## Access recheck during ticket 24 (2026-10-25)
 
-DINOv3 checkpoint access is now approved with the existing credential: `facebook/dinov3-vits16-pretrain-lvd1689m`, revision `114c1379950215c8b35dfcd4e90a5c251dde0d32`, authenticated metadata request succeeded. Earlier 403 results above remain the historical experiment state, not the current blocker. Inference remains pending in ticket 23. SAM 3.1 caller/callee incompatibility is confirmed in current upstream revision `f1647e8d0c1d280991f4d1b7d974c2704537fe66`; see the ticket 24 research register for source references and a bounded experimental workaround.
+DINOv3 checkpoint access is now approved with the existing credential: `facebook/dinov3-vits16-pretrain-lvd1689m`, revision `114c1379950215c8b35dfcd4e90a5c251dde0d32`, authenticated metadata request succeeded. Earlier 403 results above remain the historical experiment state, not the current blocker. Inference subsequently completed in [the local follow-up](local-model-followup.md). SAM 3.1 caller/callee incompatibility is confirmed in current upstream revision `f1647e8d0c1d280991f4d1b7d974c2704537fe66`; see the ticket 24 research register for source references and a bounded experimental workaround.
 
 ## Held-out real-video follow-up (S3)
 

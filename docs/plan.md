@@ -2,7 +2,7 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Completed: **24 — Open research**, with a cited decision register and independent audit. Completed **14 — bounded real-video OCR comparison**. Current priority: **30–34 — current-provider comparisons**, alongside original model qualification23. Ticket 23 remains in progress; OCR14 has a bounded per-role verdict with human benefit unresolved. SAM 3 ran, SAM 3.1 has a session API blocker, DINOv3 access is now approved; inference pending. Final feature/integration/architecture review is ticket 28 after the primary qualification reports. Conditional tickets 19/20 remain backlog.
+Completed bounded research/OCR and local-model comparisons. Latest: [local follow-up](architecture/spikes/local-model-followup.md), including DINOv3, SAM3.1 adapter, MolmoPointGUI and video. Next: **25 — complete-state frame seeking** on held-out windows. Hosted30/33 lack matching provider access; NVIDIA34 lacks a supported running endpoint/physical reference. Native-video26 and human usability18/21 remain unqualified. Final feature/integration/architecture review28 still depends on their dispositions. Conditional19/20 remain backlog.
 
 | id | title | status |
 |---|---|---|
@@ -49,7 +49,7 @@ A completed report can record an unresolved verdict, but do not treat it as appr
 
 Latest evidence: [S2 results](architecture/spikes/s2-results.md). Ticket 22 tracks clean-checkout CLI startup; experimental helper/flags stay on the spike branch. A closed spike with an unresolved verdict does not validate a production feature.
 
-Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). Thirteen accessible configurations ran; SAM 3.1 has an upstream runtime blocker and DINOv3 access is now approved; inference pending. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; models23 still require remaining qualification.
+Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). DINOv3 and SAM3.1 now have bounded inference records. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; complete-state and task qualification remain25/26.
 
 Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Remaining primary spikes: models 23, subject-window seeking 25, temporal evidence 26, speech 15, adaptation 17, review UX 18, fresh-performer usability 21, acquisition/recovery 27. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
 
@@ -57,4 +57,4 @@ Research 24 is complete: [decision register](agents/research/open-questions.md),
 
 User priority: research29, then eligible provider comparisons30–34 alongside original model23. Gemini30, Ai2 31, YOLOE32, hosted DINO-X33 and NVIDIA34 must be explicitly measured, blocked or deferred before integration review28. No universal market coverage claim follows from the original shortlist.
 
-Provider progress: research29 complete; YOLOE32 has bounded text/visual findings;31 has Molmo2NF4/Qwenimage probes but specialists/temporal qualification remain open.30/33 have no matching key after checked project/mise/HFCLI lookup;34 lacks a running supported reasoner endpoint. HF_TOKEN is saved in ignored.env.local and authenticated; distinct hosted API access remains unverified. Review28 retains these dependencies.
+Provider progress: research29 complete; YOLOE32 has bounded text/visual findings;31 now has Molmo2 plusGUI/video specialist NF4 probes; dense trajectory and native-video qualification remain25/26.30/33 have no matching key after checked project/mise/HFCLI lookup;34 lacks a running supported reasoner endpoint. HF_TOKEN is saved in ignored.env.local and authenticated; distinct hosted API access remains unverified. Review28 retains these dependencies.

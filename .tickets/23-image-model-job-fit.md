@@ -58,3 +58,11 @@ Record exact code, checkpoint and dependency notices independently. OmniParser o
 ## Provider coverage expansion
 
 Current-provider comparison is now explicit in29–34. Coordinate shared fixtures/metrics and consume those results rather than duplicating provider installs. Original tested shortlist is not comprehensive market coverage. Final integration28 depends on all coverage dispositions.
+
+## Local follow-up (2026-10-25)
+
+DINOv3 inference completed against DINOv2 controls:4/5vs5/5 selected translated patches; one-character CLS0.9871vs0.9982, uncalibrated scales. SAM3.1 false-only adapter enabled three actual sessions and a box follow-up: controlleddog IDstable with cat-mask contamination, absent-elephant0objects, realdiagram text/box0objects. See docs/architecture/spikes/local-model-followup.md. No production patch or universal dedup/tracker verdict; task-window qualification remains25.
+
+## Completed local probe evidence
+
+Completed bounded original-family comparison after DINOv3 and SAM3.1 inference. SAM3.1 boxseed yielded initial panel mask but no propagated IDs; distinguish that from textgroundingnone. All original families now have inference or preserved limitations; downstream held-out complete-state work remains25, not an inferred production approval. Raw evidence: `codex/spike-provider-coverage` commit `fc7caee6184942d39ca4cc5cc2c4d36a36498d44`.

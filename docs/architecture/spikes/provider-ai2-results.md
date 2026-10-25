@@ -1,6 +1,6 @@
 # Ai2 Molmo2: memory-reduced image-pointing probe
 
-Date2026-10-25. Ticket31 remains in progress for specialist/temporal qualification. **Status: actual Molmo2 inference observed; MolmoPoint video/GUI variants unrun. No provider-wide or integration verdict.**
+Date2026-10-25. **Status: Molmo2 and both MolmoPoint GUI/video representatives have bounded inference records. No provider-wide or integration verdict.** Latest specialist evidence is in [local follow-up](local-model-followup.md).
 
 ## Pinned configuration
 
@@ -34,3 +34,7 @@ Evidence branch `codex/spike-provider-coverage`, directory `docs/architecture/sp
 Qwen3-VL2B BF16, pinned89644892, max262144pixels/128tokens ran the identical four prompts. Both pointed to the dog and abstained on elephant. Molmo pointed to browser search; Qwen pointed to Windows taskbar search. Both fields exist: the prompt is ambiguous, so neither choice establishes an accuracy winner. Qwen emitted complete settings point XML for the two visible rows; Molmo did not at64/128tokens. XML completeness is checked separately from coordinate/schema/semantic correctness in geometry-validation.json. Different crop/pixel budgets and precision prevent an architecture-wide quality or speed ranking. Qwen allocator peak4,337,127,424 bytes and cached total~22.64s are single-run observations.
 
 Disposition: retain Molmo2 as a bounded coarse-pointing challenger only with strict response validation. No video/GUI-specialist, full-precision parity, task-completion or universal provider verdict.
+
+## Subsequent specialist results
+
+[GUI/video follow-up](local-model-followup.md): GUI3/4 coarse target hits vsQwen4/4 on corrected queries; video specialist returned onlytime0positive points despite4supplied frames and explicit all-frame request. No general ranking or native-video coverage claim. Prior unrun/specialist statements above describe the earlier general-model pass.

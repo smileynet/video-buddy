@@ -50,3 +50,7 @@ Current-provider comparison is now explicit in29–34. Coordinate shared fixture
 ## Comparison follow-up
 
 Same-query providers chose browsersearch vsOSsearch on a screenshot containing both. Require task-scoped intended-region annotations (active app/window and desired action); generic subject names alone cannot define a valid accuracy comparison. Include strict geometry completeness checks before subject association. Evidence commit ce811ed8, provider reports under docs/architecture/spikes/.
+
+## Completed local probe evidence
+
+Consume DINO3/SAM31/specialist findings from local-model-followup.md. Stable ID can retain wrong pixels; first-time pointing is not trajectory coverage; initial seeded mask can disappear duringpropagation. Score complete intended states and expected times, not only setup success or nominaltracking labels. Raw evidence: `codex/spike-provider-coverage` commit `fc7caee6184942d39ca4cc5cc2c4d36a36498d44`.

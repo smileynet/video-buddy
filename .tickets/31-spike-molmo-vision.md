@@ -41,3 +41,7 @@ Pinned Molmo2-4B checkpoint has4.85B F32 parameters (~19.4GB download). Testing 
 ## Comparison follow-up
 
 Completed Molmo2NF4language/BF16vision at64/128tokens and same-query Qwen3VL2B BF16/128baseline. Dog/absent-elephant sanity checks both pass qualitatively. Browsersearch versusOSsearch is ambiguous, not an accuracywin. Molmo settings output remains incomplete at both limits; Qwen XML complete. Raw outputs and pinned configurations preserved. MolmoPoint video/GUI and task qualification remain unrun, so keep31inprogress. Evidence commit ce811ed8, provider reports under docs/architecture/spikes/.
+
+## Completed local probe evidence
+
+MolmoPointGUI8B andVid4B now ran with NF4language/BF16vision. Invalid wrong-entity/underspecified GUI pass preserved, corrected matching queries scored3/4 GUIvs4/4Qwen. Video processor preserved4supplied times but outputs had onlytime0positive points, even explicit allframes; absent elephantnone. No native-video/fullprecision/heldoutgeneralization. Bounded candidate comparison complete; window/temporal outcomes remain25/26. Raw evidence: `codex/spike-provider-coverage` commit `fc7caee6184942d39ca4cc5cc2c4d36a36498d44`.

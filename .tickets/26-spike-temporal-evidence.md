@@ -45,3 +45,7 @@ Record raw outputs, exact versions/configuration, failures and a per-job disposi
 ## Provider coverage expansion
 
 Current-provider comparison is now explicit in29–34. Coordinate shared fixtures/metrics and consume those results rather than duplicating provider installs. Original tested shortlist is not comprehensive market coverage. Final integration28 depends on all coverage dispositions.
+
+## Completed local probe evidence
+
+MolmoPointVid runs used four predecoded frames with explicit timestamps and no resampling. They are not a native-video transport/decode comparison. Onlyfirst-time pointsreturned even explicitall-frame request. Preserve native-vs-sampled distinction and per-timecoverage. Raw evidence: `codex/spike-provider-coverage` commit `fc7caee6184942d39ca4cc5cc2c4d36a36498d44`.

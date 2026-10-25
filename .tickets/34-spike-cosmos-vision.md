@@ -37,3 +37,11 @@ Automatic production integration, blanket provider endorsement, fetching private
 ## Current execution evidence (2026-10-25)
 
 Pinned Cosmos3Edge metadata is accessible; read-only docker server check failed because Linux-engine pipe absent. No reasoner inference, hardware fit or physical-task quality claimed. Need eligible configured runtime and reference physical-action sequence; see docs/architecture/spikes/provider-nvidia-results.md. Keep open.
+
+## Additional local prerequisite checks
+
+Pinned Cosmos3Edge config rejected by installedTransformers; current upstream auto registry lackscosmos3 registration and config hasnoauto_map. Docker andPodman servers inactive; CLI-configured backendsonlylocal. Preserve cosmos-local-prerequisites.json. No inference/quality evidence; supported serving deployment and physical-action reference remain required.
+
+## Completed local probe evidence
+
+Additional prerequisite probes found no installed/upstreamAutoConfig registration forcosmos3_edge, noauto_map, both container serversinactive; configuredbackendsonlylocal andexistingstoppedPodmanVM2GBRAM. NoNVIDIAinferenceclaimed. Supported reasoner endpoint plusphysicalreferencefixture remain open. Raw evidence: `codex/spike-provider-coverage` commit `fc7caee6184942d39ca4cc5cc2c4d36a36498d44`.

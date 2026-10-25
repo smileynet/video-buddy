@@ -11,3 +11,7 @@ Next: establish an eligible configured Linux/GPU reasoner endpoint and bound con
 ## Reproducible evidence
 
 [Raw inputs/pointers, scripts, outputs, failures and environment](https://github.com/smileynet/video-buddy/tree/ce811ed8cd1864d347953ed4a08f0b141955ca95/docs/architecture/spikes/provider-coverage), branch `codex/spike-provider-coverage`, commit `ce811ed8cd1864d347953ed4a08f0b141955ca95`. Hosted/runtime reports preserve limited readiness probes only, not inference.
+
+## Additional local eligibility checks
+
+Installed Transformers rejected the pinned cosmos3_edge architecture; current upstream main auto-configuration registry also had no cosmos3 entry at inspection, and checkpoint config hasnoauto_map. Podman also failed to connect; its stopped existing machine is configured with2GBRAM. CLI backends exposeonlylocal. These are current runtime prerequisites, not proof that the documented vLLM endpoint cannot be deployed. No inference was performed;34remainsopen.

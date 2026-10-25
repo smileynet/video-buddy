@@ -4,6 +4,8 @@ Research date: 2026-10-25. Origin: ticket 24 and the user's instruction to resea
 
 **Reading key:** high confidence means a documented contract or a directly preserved local observation, not proven user benefit. A documented capability is not measured quality. `Resolved for experiment` means enough is known to run the owning ticket; unresolved product claims remain visible. Repository/head sources below were read on the research date; exact pins are used where they match the tested materials. A code license does not automatically license separately downloaded weights, datasets or dependencies.
 
+**Subsequent experiment update:** DINOv3, SAM3.1 and both MolmoPoint specialists have now run in bounded local probes. [Latest local findings](../../architecture/spikes/local-model-followup.md) supersede historical unrun/access states below; source capability claims remain distinct from observed task fit.
+
 ## Verified findings that change the next experiments
 
 ### SAM 3.1 has a concrete source/API mismatch; access is no longer the blocker
