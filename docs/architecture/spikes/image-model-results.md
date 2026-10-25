@@ -69,3 +69,7 @@ See the branch README and per-family scripts. [Segmentation comparisons](https:/
 2. Finish ticket 14 with independent real video text regions and held-out windows, including typing, scrolling, blur, obstruction, punctuation and language needs. The synthetic smoke set does not satisfy that full quality bar.
 3. Compare subject-aware box seeking against optional masks/tracking using exhaustive annotation in short windows. Measure readable complete-state recall, missed revisions and actual correction effort; mask quality alone is not success.
 4. Review one isolated candidate per job for implementation. Preserve raw evidence and abstention; do not integrate the complete upstream demo stacks or all shortlisted models by default.
+
+## Access recheck during ticket 24 (2026-10-25)
+
+DINOv3 checkpoint access is now approved with the existing credential: `facebook/dinov3-vits16-pretrain-lvd1689m`, revision `114c1379950215c8b35dfcd4e90a5c251dde0d32`, authenticated metadata request succeeded. Earlier 403 results above remain the historical experiment state, not the current blocker. Inference remains pending in ticket 23. SAM 3.1 caller/callee incompatibility is confirmed in current upstream revision `f1647e8d0c1d280991f4d1b7d974c2704537fe66`; see the ticket 24 research register for source references and a bounded experimental workaround.

@@ -1,0 +1,50 @@
+{
+  "checked_date": "2026-10-25",
+  "method": "Authenticated huggingface_hub model_info and get_hf_file_metadata; no checkpoint download and no credential persisted",
+  "models": [
+    {
+      "repo": "facebook/sam3",
+      "revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+      "file": "sam3.pt",
+      "access": "approved",
+      "bytes": 3450062241
+    },
+    {
+      "repo": "facebook/sam3.1",
+      "revision": "daa63191845a41281374e725f4c9e51c7a824460",
+      "file": "sam3.1_multiplex.pt",
+      "access": "approved",
+      "bytes": 3502755717
+    },
+    {
+      "repo": "facebook/dinov3-vits16-pretrain-lvd1689m",
+      "revision": "114c1379950215c8b35dfcd4e90a5c251dde0d32",
+      "file": "model.safetensors",
+      "access": "approved",
+      "bytes": 86406384
+    }
+  ],
+  "sam3_source": {
+    "upstream_main": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "matches_tested_clone": true,
+    "caller": "sam3/model/sam3_base_predictor.py:140",
+    "callee": "sam3/model/sam3_multiplex_tracking.py:2218",
+    "class": "Sam3MultiplexTrackingWithInteractivity",
+    "init_state_args": [
+      "self",
+      "resource_path",
+      "offload_video_to_cpu",
+      "async_loading_frames",
+      "use_torchcodec",
+      "use_cv2",
+      "input_is_mp4"
+    ],
+    "accepts_kwargs": false,
+    "offload_state_to_cpu_supported": false
+  },
+  "limits": [
+    "Metadata access does not establish model quality or deployment eligibility",
+    "SAM3 byte count differs from initial probe; source/checkpoint hash should be recorded on each actual inference run",
+    "No SAM3.1 shim or DINOv3 inference performed in this research ticket"
+  ]
+}

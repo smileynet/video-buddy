@@ -34,3 +34,7 @@ Inventory unanswered topics across both docs/agents/research reports and all spi
 ## Out of scope
 
 Automatic production integration, unsupported winners, and invented user/quality measurements.
+
+## Execution record (2026-10-25)
+
+Created `docs/agents/research/open-questions.md` with primary-source findings, per-component code/weight notice inventory, explicit unknowns and owning experiments. Preserved authenticated access/source-signature probes in `docs/agents/research/checkpoint-access-2026-10-25.json`; all three checkpoints are approved, DINOv3 inference still pending. Updated experiment contracts and active budgets in 14/15/17/18/21/23/25/26/27. Updated earlier research notes, model results and dashboard access wording. No production behavior changed. Independent source audit passed with no blocking citation mismatch: `docs/agents/research/open-questions-audit.md`. Asset-specific eligibility and actual inference/user outcomes remain explicit execution work.

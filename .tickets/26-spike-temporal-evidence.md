@@ -33,3 +33,11 @@ Continue unresolved S2 modality comparison from ticket 13 and docs/architecture/
 ## Out of scope
 
 Automatic production integration, unsupported winners, and invented user/quality measurements.
+
+## Ticket 24 research execution contract (2026-10-25)
+
+**Budget:** One active day, excluding setup/download.
+
+Verify actual supported input modality before running. Freeze essential action/order labels and compare ordered timestamped stills to targeted clips at disclosed evidence/compute budgets. Report action/order/transient-state recall, unsupported claims and incremental cost to close gaps. If no supported native-video harness is available, record it untested rather than relabeling still input as video.
+
+Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.

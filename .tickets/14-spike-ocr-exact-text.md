@@ -52,3 +52,11 @@ A reproducible comparison that resolves the deciding question below, or explicit
 ## Reconciled remaining work (2026-10-25)
 
 Complete held-out real-video OCR qualification: approximately 30 manually labeled terminal/code/settings/UI regions with tuning/held-out separation. Measure exact-match/CER, missed regions, preprocessing costs and correction effort. Synthetic smoke results alone do not select a default. Coordinate window labels with ticket 25. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+
+## Ticket 24 research execution contract (2026-10-25)
+
+**Budget:** One active day, excluding downloads; stop at a reproducible held-out result or name the missing corpus/participant constraint.
+
+Freeze approximately 30 real regions covering code punctuation, numbers, terminal/UI themes, typing and blur. Declare tuning/held-out split before tuning; language scope starts English and records untested languages. Run identical full frames/crops through EasyOCR, Tesseract and Paddle; measure exact-match, CER, region misses, preprocessing/runtime/memory and observed correction effort. Label against source, never model consensus.
+
+Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.

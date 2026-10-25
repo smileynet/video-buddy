@@ -52,3 +52,11 @@ Not started. Record the actual experiment branch and evidence paths when work be
 ## Reconciled remaining work (2026-10-25)
 
 Evaluate target-platform/version adaptation separately from source observations, with official references for changes and a disposable target walkthrough. Keep unsupported changes visibly unverified. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+
+## Ticket 24 research execution contract (2026-10-25)
+
+**Budget:** Half to one active day.
+
+Use one frozen source/target version-platform mismatch. Compare faithful-with-gaps vs separately labeled adaptation. Record changed commands and official citations; inspect before authorized disposable execution. Score verified target checkpoints and unsupported essential changes. If no execution environment exists, leave success unresolved.
+
+Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.

@@ -42,3 +42,15 @@ Final additional evidence: `codex/spike-image-models` commit `fd948102c21f4d3b69
 ## Reconciled remaining work (2026-10-25)
 
 Finish real-domain job qualification beyond upstream demo fixtures: UI controls, diagrams, natural objects, regional matching and subject tracking. SAM 3 ran; SAM 3.1 checkpoint loads but upstream start_session rejects offload_state_to_cpu; DINOv3 still gated. Research 24 owns compatibility/access/license investigation; this ticket owns inference probes. Preserve concrete unresolved limits and evaluate long-window drift/occlusion only where needed for ticket 25. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+
+## Ticket 24 research execution contract (2026-10-25)
+
+**Budget:** One active day for remaining model qualification, excluding checkpoint downloads.
+
+Access rechecked 2026-10-25: SAM3, SAM3.1 AND DINOv3 now approved; no new credential action. DINOv3 pinned model revision114c1379950215c8b35dfcd4e90a5c251dde0d32. Reuse real-domain fixtures with explicit job labels, compare DINOv2/v3 patch association and text-revision sensitivity, not just CLS similarity. SAM3.1 source f1647e8d0c1d280991f4d1b7d974c2704537fe66 has confirmed caller/callee mismatch: start_session passes offload_state_to_cpu, multiplex init_state lacks it/**kwargs. Experimental shim may omit FALSE only and must reject TRUE; keep checkpoint multiplex_count16. Preserve unpatched failure and shim diff. Test no-object and nonempty subject propagation, drift/occlusion and extent, not only successful loading. This is a bounded experiment, not a production backend patch.
+
+Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.
+
+### Component eligibility gate
+
+Record exact code, checkpoint and dependency notices independently. OmniParser original icon_detect, icon_detect_v3, caption weights and root code are separate assets; a README badge is not a license for the whole stack. Use only components whose exact terms are established for the intended deployment; unknown eligibility stays unresolved. See the ticket 24 register for pinned sources. No blanket commercial eligibility claim follows from an MIT detector notice.

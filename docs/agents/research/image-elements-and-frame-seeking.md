@@ -114,3 +114,7 @@ Measure region recall, exact text/command match, readable complete-state recover
 - No source establishes a universal optimal-frame score or that model confidence equals readable/complete instructional evidence.
 - The OmniParser root-license/badge discrepancy and moving PR/model defaults require exact-revision review before adoption. This note records primary notices, not a legal eligibility determination.
 - Local hardware access, checkpoint approval, user retention/privacy constraints and acceptable search latency have not been established for these new models.
+
+## Subsequent local evidence (2026-10-25, ticket 24)
+
+The unmeasured statements above describe the original research pass. Subsequent exploratory inference is recorded in [image-model results](../../architecture/spikes/image-model-results.md), including SAM 3 on Ubuntu WSL and a confirmed SAM 3.1 session-API failure. DINOv3 access is now approved, with inference pending. Consult [the open-question register](open-questions.md) for current access/runtime and per-component eligibility; hardware allocator peaks remain bounded observations, not minimum VRAM guarantees.

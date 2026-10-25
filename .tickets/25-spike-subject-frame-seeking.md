@@ -34,3 +34,11 @@ Compare sparse/time-selected baseline, dense box/crop scoring, and optional mask
 ## Out of scope
 
 Automatic production integration, unsupported winners, and invented user/quality measurements.
+
+## Ticket 24 research execution contract (2026-10-25)
+
+**Budget:** One active day after corpus preparation.
+
+Freeze short labeled windows for typing, scrolling, blur/occlusion, diagrams and transient UI. Enumerate all essential distinct readable states across decoded frames before scoring. Compare sparse baseline, box/crop seeking and optional masks/tracking. Report complete-state recall, missed revisions, association errors, exact-text recovery, redundancy and stage costs. Tune thresholds on separate windows; preserve revisions rather than selecting one frame per entire subject.
+
+Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.

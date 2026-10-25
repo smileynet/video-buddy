@@ -34,3 +34,15 @@ Compare current acquisition to minimal integrity/recovery alternatives; do not a
 ## Out of scope
 
 Automatic production integration, unsupported winners, and invented user/quality measurements.
+
+## Ticket 24 research execution contract (2026-10-25)
+
+**Budget:** One active day.
+
+Use local deterministic corruption/interruption fixtures plus authorized live YouTube/Vimeo samples where accessible. Compare downloader success, ffprobe structure and full decode of the bounded fixture; archive/disk reconciliation and safe retry/resume. Record invalid-media detection, duplicate work, lost edits, auth-required behavior and stage recovery. Reuse S5 findings, do not claim container probing proves every frame decodes.
+
+Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.
+
+### State-store scope boundary
+
+S5 used one global Windows writer lock and immediate process-exit injection. Its 20/20 observations do not qualify Linux locks, network filesystems, power loss, multi-source throughput, or edits beyond a sidecar. Test per-source concurrent acquisition for the intended deployment; record unsupported platforms. Reopen the store choice only if these actual requirements invalidate the bounded file approach.

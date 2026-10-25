@@ -163,3 +163,7 @@ Build a small labeled set around intended reuse: implement a command tutorial, c
 - **Artifacts:** independent task completion, supported essential claims, delayed learner recall/application, decision usefulness and evidence retrieval success. Fluency and a valid schema are insufficient acceptance measures.
 
 **Unverified:** no fair engine shootout, OCR comparison, vision comparison, user study or delayed-learning test was performed in this research pass. The recommendation is a shortlist and a decision policy, not a claim that each incumbent is best.
+
+## Ticket 24 currency update (2026-10-25)
+
+[Open-question register](open-questions.md) rechecks source identity, checkpoint terms, runtime contracts and the remaining spike observations. In particular, CrisperWhisper v1 and its current successor must be distinguished from the worker model alias and historical package benchmark. Installed code, alias resolution, weights revision and deployment eligibility remain ticket 15 work; the current worker adapter alone does not establish them. No historical benchmark result selects a universal default.

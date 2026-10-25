@@ -52,3 +52,15 @@ Not started. Record the actual experiment branch and evidence paths when work be
 ## Reconciled remaining work (2026-10-25)
 
 Reassess earlier ASR benchmark conclusions using critical instruction/number recovery and evidence-location accuracy on matched passages. Preserve caption-source differences and model/license eligibility. Ticket 08 default change must await this verdict and final review 28. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+
+## Ticket 24 research execution contract (2026-10-25)
+
+**Budget:** One active day.
+
+Freeze short manually referenced instruction passages with names/numbers/commands plus silence/music. Compare eligible captions/faster-whisper/CrisperWhisper at disclosed hardware/scales; measure critical-term errors, omissions/additions and timestamp boundary errors separately. Compare alignment only on evidence-location failures. No universal default from old WER results.
+
+Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.
+
+### Installed speech identity before comparison
+
+The committed worker defaults to model alias `turbo` and imports `crisperwhisper.CrisperWhisperModel`; neither pins a checkpoint nor proves the remote worker version. Capture installed package version, alias resolution, checkpoint revision and applicable weights terms for each eligible configured backend before scoring. Upstream v1 card redirects/supersession must not silently substitute v2; preserve historical benchmark identities. If runtime identity cannot be established, mark that option ineligible/unresolved rather than selecting a default.

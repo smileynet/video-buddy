@@ -68,3 +68,11 @@ Not started. Record the actual experiment branch and evidence paths when work be
 ## Reconciled remaining work (2026-10-25)
 
 Observe evidence lookup, blocked-step correction and return-after-interruption with equivalent artifacts; compare Markdown/chat to an adjacent-evidence prototype. Keep mocked extraction controls labeled; coordinate participant needs with 21. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+
+## Ticket 24 research execution contract (2026-10-25)
+
+**Budget:** Half an active day plus participant time.
+
+Use identical completed artifact in linked Markdown/chat and adjacent-evidence view. Counterbalance tasks to locate setting, identify missing prerequisite, correct a step and resume. Record observed completion, evidence lookup time/actions and wrong support/tested interpretations. No participant means prepared protocol, not usability proof.
+
+Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.
