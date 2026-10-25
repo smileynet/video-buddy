@@ -1,0 +1,21 @@
+{
+  "reviewer": "single agent, not independent",
+  "method": "all scoped frames inspected in terminal lower-region and UI/card contact sheets before candidate development; boundaries with uncertain characters, transitions or glitches retained as unknown",
+  "terminal_onsets": {
+    "rm_command": 857,
+    "rm_response": 858.466667,
+    "status_command": 861.2,
+    "status_packet": 861.8
+  },
+  "ui_onsets": {
+    "add": "already present at window start",
+    "staged_count": 36.704,
+    "commit": 38.705
+  },
+  "caveats": [
+    "reference covers selected subjects, not every potential instruction",
+    "UI source uses edited illustrative command cards; a UI update is not proof those commands executed",
+    "whole-frame context is retained by all36 selectors, including legacy-time ablation",
+    "larger context/PSM6/boundary changes are composed alternatives, not a boundary-only causal ablation"
+  ]
+}
