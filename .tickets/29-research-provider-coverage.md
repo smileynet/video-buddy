@@ -1,7 +1,7 @@
 ---
 id: "29"
 title: "Verify current provider models and comparison eligibility"
-status: in_progress
+status: done
 blocked_by: []
 spec: "apply-build"
 priority: high
@@ -25,11 +25,23 @@ Expand the dated primary-source coverage inventory to Google Gemini, Ai2 Molmo2/
 
 ## Acceptance criteria
 
-- [ ] Record current explicit model/checkpoint/API identity and eligibility evidence, with dated primary citations.
-- [ ] Preserve frozen inputs, raw predictions, configuration, costs and runtime failures for every executed comparison.
-- [ ] Distinguish measured fit from untested, access-limited, hardware-limited and irrelevant options.
-- [ ] Give a per-job disposition and the remaining deciding observation; update dashboard coverage.
+- [x] Record current explicit model/checkpoint/API identity and eligibility evidence, with dated primary citations.
+- [x] Preserve frozen inputs, raw predictions, configuration, costs and runtime failures for every executed comparison.
+- [x] Distinguish measured fit from untested, access-limited, hardware-limited and irrelevant options.
+- [x] Give a per-job disposition and the remaining deciding observation; update dashboard coverage.
 
 ## Out of scope
 
 Automatic production integration, blanket provider endorsement, fetching private media or exposing credentials.
+
+## Research outcome
+
+Updated docs/agents/research/open-questions.md with all five provider families, exact representative IDs/revisions, input/output and eligibility constraints, unknowns and execution owners30–34. Independent provider-coverage-audit.md passes with no blocking mismatch. Current representatives differ from older assumptions: Gemini3.8Flash, YOLOE26s, role-specific MolmoPoint variants, hostedDINO-XPro and conditional Cosmos3Edge. No comprehensive-market or measured-quality claim follows from desk research.
+
+## Resolution (2026-10-25)
+
+Completed bounded current-provider refresh for Google, Ai2, Ultralytics, IDEA and NVIDIA; actual comparisons owned by30–34, final review28 depends on their dispositions.
+
+### Verification
+1. ✓ docs/agents/research/open-questions.md records pinned identities, evidence and per-job disposition or a concrete unresolved limitation — "docs/agents/research/open-questions.md current-provider section pins representatives/contracts/terms and concrete unknowns; independent provider-coverage-audit.md passes"
+2. ✓ tkt validate exits 0 — "tkt validate --brief passed with zero findings after creation and dependency updates"
