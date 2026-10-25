@@ -2,7 +2,7 @@
 id: "28"
 title: "Review spike findings and decide app features and integration architecture"
 status: open
-blocked_by: ["14", "15", "17", "18", "21", "23", "24", "25", "26", "27", "29", "30", "31", "32", "33", "34"]
+blocked_by: ["14", "15", "17", "18", "21", "23", "24", "25", "26", "27", "29", "30", "31", "32", "33", "34", "36"]
 spec: "apply-build"
 priority: high
 tags: ["workflow-spikes"]
