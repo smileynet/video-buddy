@@ -29,5 +29,21 @@
     "dtype": "BF16",
     "inference_attempted": false,
     "limit": "No running supported serving endpoint; no inference-quality or minimum-VRAM conclusion"
+  },
+  "credential_lookup_update": {
+    "sources_checked": [
+      "project .env.local",
+      "primary checkout .env.local",
+      "existing HF CLI",
+      "user mise TOML configuration and standard alternate locations"
+    ],
+    "saved_names": [
+      "HF_TOKEN"
+    ],
+    "project_file_git_ignored": true,
+    "hf_cli_auth_valid": true,
+    "gemini_credential_found": false,
+    "hosted_dinox_credential_found": false,
+    "limit": "No credentials or secret values persisted in evidence; credential itself stored only in ignored project-local files. Other provider accounts/quota remain unverified."
   }
 }

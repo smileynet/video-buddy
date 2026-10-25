@@ -1,14 +1,43 @@
 """Experiment-only credential discovery. Never writes or displays a credential."""
 
 import os
+import json
 from pathlib import Path
+import subprocess
 import tomllib
 
 
 def configure():
     from huggingface_hub import get_token
 
-    token = get_token()
+    token = os.environ.get("HF_TOKEN")
+    roots = [Path.cwd()]
+    try:
+        common = subprocess.check_output(
+            ["git", "rev-parse", "--git-common-dir"],
+            text=True,
+            stderr=subprocess.DEVNULL,
+        ).strip()
+        roots.append((Path.cwd() / common).resolve().parent)
+    except (OSError, subprocess.CalledProcessError):
+        pass
+    if not token:
+        for root in dict.fromkeys(roots):
+            local = root / ".env.local"
+            if not local.exists():
+                continue
+            for line in local.read_text(encoding="utf-8").splitlines():
+                key, sep, value = line.partition("=")
+                if sep and key.strip() == "HF_TOKEN":
+                    value = value.strip()
+                    token = (
+                        json.loads(value) if value.startswith('"') else value.strip("'")
+                    )
+                    break
+            if token:
+                break
+    if not token:
+        token = get_token()
     if not token:
         paths = [
             Path.home() / ".config/mise/config.toml",

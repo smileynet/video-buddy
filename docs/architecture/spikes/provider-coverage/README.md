@@ -15,3 +15,5 @@ Reproduce from repo root using .venvs/vision for yoloe_bench.py [--imgsz1280] an
 Per-job reports in main-checkout docs/architecture/spikes/provider-*-results.md state observed fit, limitations and outstanding deciding observations. Review28 owns integration after all required reports/dispositions; a completed bounded spike is not general task qualification.
 
 Observed Molmo2:dog and search-field point outputs, absent-elephant abstention; diagram coordinate sequence remains incomplete at64 and128tokens (128-arm confirms generated_tokens128). Do not consume incomplete geometry as validated output. General model only; specialists/video/fullprecision still unrun. Per-query outputs and allocator/load observations preserved.
+
+Credential lookup update: existing HF key verified through HF CLI and saved (by user request) to Git-ignored project/worktree.env.local. hf_context.py now checks project-local file and primary-checkout fallback before legacy discovery. User mise and standard alternate locations checked; no Gemini/DINO-X key found. No credential value is in evidence. Provider account/quota remain unverified.
