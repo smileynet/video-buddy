@@ -1,7 +1,7 @@
 ---
 id: "16"
 title: "Choose a state store using interruption and concurrency probes"
-status: in_progress
+status: done
 blocked_by: []
 spec: "apply-build"
 priority: medium
@@ -40,11 +40,20 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Acceptance criteria
 
-- [ ] A durable report identifies the deciding question, actual compared options and frozen fixtures.
-- [ ] Every evaluated option records environment, observations, costs and evidence locations.
-- [ ] The report states the verdict and distinguishes observed results from unresolved limitations.
-- [ ] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
+- [x] A durable report identifies the deciding question, actual compared options and frozen fixtures.
+- [x] Every evaluated option records environment, observations, costs and evidence locations.
+- [x] The report states the verdict and distinguishes observed results from unresolved limitations.
+- [x] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
 
 ## Execution record
 
 Ran 2026-10-24. Throwaway branch `codex/spike-state-comparison`, commit `82ce90eaa04c98ce0a41d4f884d4adea75069c0a`. [Results](../docs/architecture/spikes/s5-results.md): 10 injected scenarios per option passed (20/20); both implementations serialize writers globally. Verdict: file manifests remain viable under the bounded constraints; no universal winner or production integration. Report explicitly excludes high-throughput/multi-source qualification, power failure and cross-platform locking.
+
+## Resolution (2026-10-25)
+
+Completed bounded recovery comparison: 10 scenarios per option passed. Both serialize writers globally; file manifests remain viable. Preserve prototypes on codex/spike-state-comparison; no production integration.
+
+### Verification
+1. ✓ A durable spike report records options, evidence and limitations — "docs/architecture/spikes/s5-results.md records both options, 20 observed scenario outcomes and explicit limitations"
+2. ✓ Every evaluated option records its fixture, environment and observations — "Spike commit 82ce90e records fixture SHA-256, Windows/Python/SQLite versions and per-option observations.json checks"
+3. ✓ The report states an adopt, retain, reject or unresolved verdict — "Verdict retains file manifests as viable under global serialization; no universal winner or integration claimed"
