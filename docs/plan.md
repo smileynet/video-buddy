@@ -2,7 +2,7 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Next experiment: ticket 14 (OCR); S1/S2 closed with bounded findings, with human usability still unresolved in ticket 21. [Spike definitions](architecture/spike-plan.md), [S1 evidence](architecture/spikes/s1-status.md), [dashboard](architecture-dashboard.html). Do not integrate a proposed feature before its relevant experiment reports an evidence-backed verdict.
+Active: ticket 14 (real-video OCR qualification) and ticket 23 (per-job image models; three gated checkpoints pending approval). S1/S2 closed with bounded findings; human usability remains unresolved in ticket 21. [Spike definitions](architecture/spike-plan.md), [S1 evidence](architecture/spikes/s1-status.md), [dashboard](architecture-dashboard.html). Do not integrate a proposed feature before its relevant experiment reports an evidence-backed verdict.
 
 | id | title | status |
 |---|---|---|
@@ -28,6 +28,7 @@ Next experiment: ticket 14 (OCR); S1/S2 closed with bounded findings, with human
 | 20 | Evaluate retrieval when saved solutions become hard to find | backlog |
 | 21 | Measure guide versus note usability with a fresh task performer | backlog |
 | 22 | Restore CLI startup in a clean checkout by resolving the missing breakdown helper | open |
+| 23 | Compare image element models by downstream evidence jobs | in_progress |
 
 ## Spike ordering
 
@@ -36,3 +37,5 @@ Next experiment: ticket 14 (OCR); S1/S2 closed with bounded findings, with human
 A completed report can record an unresolved verdict, but do not treat it as approval to integrate. Existing tickets 08 (default ASR), 10 (integrity) and 11 (resume) overlap tool/state decisions; review the new findings before implementing their proposed approaches.
 
 Latest evidence: [S2 results](architecture/spikes/s2-results.md). Ticket 22 tracks clean-checkout CLI startup; experimental helper/flags stay on the spike branch. A closed spike with an unresolved verdict does not validate a production feature.
+
+Image-model evidence: [initial per-job results](architecture/spikes/image-model-results.md). Twelve accessible configurations ran. Gated SAM 3/3.1 and DINOv3 have concrete 403 access limits, not model-quality failures; keep ticket 23 in progress. Ticket 14 still needs held-out real-video qualification beyond the smoke set.

@@ -47,4 +47,4 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Execution record
 
-Not started. Record the actual experiment branch and evidence paths when work begins.
+2026-10-25: exploratory Tesseract/EasyOCR/PaddleOCR runs completed on 30 controlled single-line crops plus one real settings crop. See [results](../docs/architecture/spikes/image-model-results.md) and branch `codex/spike-image-models`, commit `16c970bacec751f96f2f4a68c73dfbeaf4289e9a`. Exact controlled recovery: 23/30, 2/30, 28/30 respectively; Paddle also recovered the real crop exactly. No held-out real-video corpus or correction-time study yet; keep in progress rather than treating a smoke set as full qualification. Source/subject-aware seeking design is informed by the new image-element research.
