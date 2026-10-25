@@ -1,0 +1,106 @@
+{
+  "deciding_question": "Retain completed commands and their checkpoint context without consuming the cap on typing prefixes",
+  "budgets": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+  ],
+  "offsets": [
+    0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "budget": "one active day after corpus preparation",
+  "cases": [
+    {
+      "id": "dev",
+      "phase": "development",
+      "folder": "seek-real-scroll3",
+      "viewport": [
+        44,
+        76,
+        867,
+        572
+      ],
+      "header": [
+        44,
+        43,
+        730,
+        74
+      ],
+      "roi": [
+        44,
+        547,
+        865,
+        571
+      ],
+      "source_id": "SWYqp7iY_Tc"
+    },
+    {
+      "id": "terminal",
+      "phase": "validation",
+      "folder": "revision-val-terminal",
+      "viewport": [
+        43,
+        75,
+        836,
+        553
+      ],
+      "header": [
+        43,
+        43,
+        700,
+        74
+      ],
+      "roi": [
+        43,
+        528,
+        836,
+        552
+      ],
+      "source_id": "SWYqp7iY_Tc"
+    },
+    {
+      "id": "ui",
+      "phase": "validation",
+      "folder": "revision-val-ui",
+      "viewport": [
+        975,
+        340,
+        1770,
+        865
+      ],
+      "header": [
+        1010,
+        395,
+        1260,
+        475
+      ],
+      "roi": [
+        1030,
+        630,
+        1760,
+        715
+      ],
+      "source_id": "hwP7WQkmECE"
+    }
+  ],
+  "parameters": {
+    "ocr_psm": 6,
+    "quiet_seconds": 0.2,
+    "ack_prompt_pattern": "^\\$\\s*(.*)$",
+    "baseline_history": "initial occurrence counts",
+    "packet_rank": "novel acknowledged command occurrences plus output context, confidence, time",
+    "fallback": "settled full-context frames, unverified"
+  },
+  "split": "Observed round3 dev window; two new real validation windows reserved before development; same-source and cross-source results separate",
+  "source_hashes": {
+    "SWYqp7iY_Tc": "a404e9e84132fde12cd77bbfc7d8183275f9ec31d97b28b3e5d4ea2dd2c723c1",
+    "hwP7WQkmECE": "fa8c3bec265e38ec3a8de4a8858ac3c31f1310d793eb4d66ef7646c3534dc734"
+  },
+  "retention": "small code/reference/summary and compressed observations in spike Git; captured media and regenerable exhaustive sheets ignored locally; no remote source backup claim"
+}
