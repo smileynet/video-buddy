@@ -1,7 +1,7 @@
 ---
 id: "23"
 title: "Compare image element models by downstream evidence jobs"
-status: open
+status: in_progress
 blocked_by: []
 spec: "apply-build"
 priority: high
