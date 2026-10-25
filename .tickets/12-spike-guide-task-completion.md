@@ -1,7 +1,7 @@
 ---
 id: "12"
 title: "Evaluate whether implementation guides improve task completion"
-status: in_progress
+status: done
 blocked_by: []
 spec: "apply-build"
 priority: high
@@ -40,11 +40,20 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Acceptance criteria
 
-- [ ] A durable report identifies the deciding question, actual compared options and frozen fixtures.
-- [ ] Every evaluated option records environment, observations, costs and evidence locations.
-- [ ] The report states the verdict and distinguishes observed results from unresolved limitations.
-- [ ] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
+- [x] A durable report identifies the deciding question, actual compared options and frozen fixtures.
+- [x] Every evaluated option records environment, observations, costs and evidence locations.
+- [x] The report states the verdict and distinguishes observed results from unresolved limitations.
+- [x] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
 
 ## Execution record
 
 Started 2026-10-24. Throwaway branch `codex/spike-guide-comparison`, commit `bae31aadd0b6c90e60f77cc5f50f9c33bc030dea`. See [initial observations](../docs/architecture/spikes/s1-status.md): equal-content note/guide variants and a frozen transcript packet are prepared; a numerical checkpoint passes the quarter-turn formula and rejects a zero-offset control. Reader completion remains unmeasured; no format winner or production integration is claimed. Keep in progress until the remaining observations are addressed.
+
+## Resolution (2026-10-25)
+
+Bounded source/format feasibility investigation concluded with unresolved usability verdict. Numerical control observed, source gap identified, reader validation retained in ticket 21. No guide-format winner selected.
+
+### Verification
+1. ✓ A durable spike report records options, evidence and limitations — "docs/architecture/spikes/s1-status.md records both formats, frozen source and unresolved reader question"
+2. ✓ Every evaluated option records its fixture, environment and observations — "bae31aa contains source hash, environment and numeric observations; source/capture limits are reported"
+3. ✓ The report states an adopt, retain, reject or unresolved verdict — "Verdict remains unresolved; missing reader experiment is tracked in ticket 21, no integration claimed"
