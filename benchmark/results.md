@@ -1,7 +1,15 @@
 # ASR Benchmark Results
 
-**Date:** 2026-08-23  
-**Hardware:** faster-whisper on local CPU (AMD), CrisperWhisper on monolith RTX 3070 (8GB, CUDA 12.4)  
+> Review note (2026-10-24): these historical results compare different hardware,
+> model sizes and precision settings. They do not establish an engine accuracy
+> winner. faster-whisper supports word timestamps; zero counted repeats does not
+> establish zero hallucinations, and transcript agreement is not reference accuracy.
+> Treat the recommendations and timing-precision claims below as unvalidated.
+> See the [tool-selection review](../docs/agents/research/video-workflow-architecture.md#correct-the-interpretation-of-the-local-asr-benchmark)
+> before using this report to choose defaults. Original observations are retained below.
+
+**Date:** 2026-08-23
+**Hardware:** faster-whisper on local CPU (AMD), CrisperWhisper on monolith RTX 3070 (8GB, CUDA 12.4)
 **Software:** faster-whisper 1.2.1 (base, int8), CrisperWhisper 2.0.2 (turbo, float16)
 
 ## Test Corpus
