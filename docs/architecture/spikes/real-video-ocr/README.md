@@ -1,0 +1,13 @@
+# Real-video OCR throwaway experiment
+
+Ticket14, frozen before OCR runs 2026-10-25. Branch codex/spike-real-video-ocr. No production integration.
+
+Source acquisition/capture used the CLI: fetch x7X9w_GIm1s (Python in100Seconds, Fireship), frames --at30,40,50,60,70,80,90,100,110,120 --ocr off. Exact committed images are unmodified captures at30/40/60/70/80/90/100/120 seconds. Second source is retained Qr3VsZYQy4s at820.985 seconds, an audio-synthesis slide. Capture flags are experimental S2 flags, not shipped main CLI. Existing environment/workspace reused.
+
+30 manually visually transcribed regions, no OCR-derived labels:10 tuning from five earlier Python passages;20 held-out from three later Python passages and the diagram slide. Split is by captured frame, no overlapping tuning/test image. Two videos only, same video style across some splits; not unseen-domain evaluation. Crops deliberately include legible lines, not random-frame prevalence. English only. No synthetic blur/degradation. Typing cursor and selection examples present; motion/blur/occlusion not qualified. All labels and original bytes frozen before inference; SHA256 in frozen-hashes.json. Inspect label-contact.jpg.
+
+Compare EasyOCR1.7.2 English GPU, Tesseract5.4 English CPU, PaddleOCR3.7 PPv5mobileEnglish CPU in their existing isolated environments. Tune crop scale1 or2 (Lanczos) for all; Tesseract also PSM7 vs13. Choose by tuning exact recovery, then total Levenshtein edits, then smaller scale/PSM7. Freeze selection before held-out runs. Do not tune detector thresholds on held-out. Native full-frame detection uses engine defaults (Tesseract PSM11), measured separately; assign detected boxes to labeled regions by box center then sort by reading order. Full-frame box association can split/merge regions and is part of that measured path, not a pure recognizer comparison. Preserve raw boxes/text/confidence.
+
+Whitespace collapsed for line scoring, punctuation/case retained. Indentation and exact original whitespace are NOT scored; these are line-text matches, not executable-code validity. Exact-match/CER and edit counts measure literal transcription only. Report empty associations and no-text results, not false claims of annotated detection IoU/recall. No participant correction time or task-completion study; edit counts are a proxy, not measured effort.
+
+Record model load, preprocessing, OCR, full-frame vs crop cost separately. Timing single-run mixed cold/warm, CPU/GPU configurations differ; no universal speed/memory ranking. Preserve failures and allocator peak. Budget one active day excluding prior setup/downloads; bounded result may retain baseline or leave default choice unresolved.

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "01",
+    "frame": "frames/python-30.jpg",
+    "path": "crops/01.png",
+    "split": "tune",
+    "box": [
+      210,
+      480,
+      705,
+      602
+    ],
+    "expected": "WEB APPS",
+    "kind": "ui_label"
+  },
+  {
+    "id": "02",
+    "frame": "frames/python-30.jpg",
+    "path": "crops/02.png",
+    "split": "tune",
+    "box": [
+      960,
+      576,
+      1225,
+      678
+    ],
+    "expected": "django",
+    "kind": "ui_label"
+  },
+  {
+    "id": "03",
+    "frame": "frames/python-40.jpg",
+    "path": "crops/03.png",
+    "split": "tune",
+    "box": [
+      88,
+      50,
+      330,
+      110
+    ],
+    "expected": "TERMINAL",
+    "kind": "ui_label"
+  },
+  {
+    "id": "04",
+    "frame": "frames/python-40.jpg",
+    "path": "crops/04.png",
+    "split": "tune",
+    "box": [
+      84,
+      182,
+      579,
+      259
+    ],
+    "expected": ">>> import this",
+    "kind": "code"
+  },
+  {
+    "id": "05",
+    "frame": "frames/python-60.jpg",
+    "path": "crops/05.png",
+    "split": "tune",
+    "box": [
+      65,
+      40,
+      260,
+      90
+    ],
+    "expected": "EXPLORER",
+    "kind": "ui_label"
+  },
+  {
+    "id": "06",
+    "frame": "frames/python-60.jpg",
+    "path": "crops/06.png",
+    "split": "tune",
+    "box": [
+      205,
+      214,
+      306,
+      275
+    ],
+    "expected": "hello",
+    "kind": "ui_label"
+  },
+  {
+    "id": "07",
+    "frame": "frames/python-60.jpg",
+    "path": "crops/07.png",
+    "split": "tune",
+    "box": [
+      65,
+      1018,
+      255,
+      1066
+    ],
+    "expected": "OUTLINE",
+    "kind": "ui_label"
+  },
+  {
+    "id": "08",
+    "frame": "frames/python-70.jpg",
+    "path": "crops/08.png",
+    "split": "tune",
+    "box": [
+      185,
+      320,
+      717,
+      388
+    ],
+    "expected": "hello = 'hi mom'",
+    "kind": "code"
+  },
+  {
+    "id": "09",
+    "frame": "frames/python-80.jpg",
+    "path": "crops/09.png",
+    "split": "tune",
+    "box": [
+      185,
+      215,
+      900,
+      287
+    ],
+    "expected": "my_tuple = ('a', 'b')",
+    "kind": "code"
+  },
+  {
+    "id": "10",
+    "frame": "frames/python-80.jpg",
+    "path": "crops/10.png",
+    "split": "tune",
+    "box": [
+      185,
+      380,
+      760,
+      447
+    ],
+    "expected": "my_list = [1,2,3]",
+    "kind": "code"
+  },
+  {
+    "id": "11",
+    "frame": "frames/python-90.jpg",
+    "path": "crops/11.png",
+    "split": "heldout",
+    "box": [
+      775,
+      300,
+      1055,
+      362
+    ],
+    "expected": "if True:",
+    "kind": "code"
+  },
+  {
+    "id": "12",
+    "frame": "frames/python-90.jpg",
+    "path": "crops/12.png",
+    "split": "heldout",
+    "box": [
+      909,
+      382,
+      1345,
+      444
+    ],
+    "expected": "if condition:",
+    "kind": "code"
+  },
+  {
+    "id": "13",
+    "frame": "frames/python-90.jpg",
+    "path": "crops/13.png",
+    "split": "heldout",
+    "box": [
+      1040,
+      464,
+      1484,
+      529
+    ],
+    "expected": "print(\"true\")",
+    "kind": "code"
+  },
+  {
+    "id": "14",
+    "frame": "frames/python-90.jpg",
+    "path": "crops/14.png",
+    "split": "heldout",
+    "box": [
+      908,
+      546,
+      1084,
+      610
+    ],
+    "expected": "else:",
+    "kind": "code"
+  },
+  {
+    "id": "15",
+    "frame": "frames/python-90.jpg",
+    "path": "crops/15.png",
+    "split": "heldout",
+    "box": [
+      1040,
+      629,
+      1520,
+      692
+    ],
+    "expected": "print(\"false\")",
+    "kind": "code"
+  },
+  {
+    "id": "16",
+    "frame": "frames/python-100.jpg",
+    "path": "crops/16.png",
+    "split": "heldout",
+    "box": [
+      185,
+      290,
+      693,
+      352
+    ],
+    "expected": "def have_fun():",
+    "kind": "code"
+  },
+  {
+    "id": "17",
+    "frame": "frames/python-100.jpg",
+    "path": "crops/17.png",
+    "split": "heldout",
+    "box": [
+      320,
+      373,
+      928,
+      437
+    ],
+    "expected": "for i in range(5):",
+    "kind": "code"
+  },
+  {
+    "id": "18",
+    "frame": "frames/python-100.jpg",
+    "path": "crops/18.png",
+    "split": "heldout",
+    "box": [
+      460,
+      452,
+      731,
+      518
+    ],
+    "expected": "print(i)",
+    "kind": "code"
+  },
+  {
+    "id": "19",
+    "frame": "frames/python-120.jpg",
+    "path": "crops/19.png",
+    "split": "heldout",
+    "box": [
+      187,
+      215,
+      662,
+      275
+    ],
+    "expected": "class Reptile:",
+    "kind": "code"
+  },
+  {
+    "id": "20",
+    "frame": "frames/python-120.jpg",
+    "path": "crops/20.png",
+    "split": "heldout",
+    "box": [
+      255,
+      295,
+      1153,
+      359
+    ],
+    "expected": "def __init__(self, length):",
+    "kind": "code"
+  },
+  {
+    "id": "21",
+    "frame": "frames/python-120.jpg",
+    "path": "crops/21.png",
+    "split": "heldout",
+    "box": [
+      321,
+      378,
+      1031,
+      442
+    ],
+    "expected": "self.length = length",
+    "kind": "code"
+  },
+  {
+    "id": "22",
+    "frame": "frames/python-120.jpg",
+    "path": "crops/22.png",
+    "split": "heldout",
+    "box": [
+      187,
+      542,
+      895,
+      605
+    ],
+    "expected": "class Snake(Reptile):",
+    "kind": "code"
+  },
+  {
+    "id": "23",
+    "frame": "frames/python-120.jpg",
+    "path": "crops/23.png",
+    "split": "heldout",
+    "box": [
+      320,
+      624,
+      930,
+      687
+    ],
+    "expected": "def slither(self):",
+    "kind": "code"
+  },
+  {
+    "id": "24",
+    "frame": "frames/diagram-820985.jpg",
+    "path": "crops/24.png",
+    "split": "heldout",
+    "box": [
+      512,
+      65,
+      1408,
+      154
+    ],
+    "expected": "AUDIO SYNTHESIS PLAN",
+    "kind": "diagram_label"
+  },
+  {
+    "id": "25",
+    "frame": "frames/diagram-820985.jpg",
+    "path": "crops/25.png",
+    "split": "heldout",
+    "box": [
+      176,
+      269,
+      594,
+      329
+    ],
+    "expected": "AUDIO SOURCES",
+    "kind": "diagram_label"
+  },
+  {
+    "id": "26",
+    "frame": "frames/diagram-820985.jpg",
+    "path": "crops/26.png",
+    "split": "heldout",
+    "box": [
+      211,
+      598,
+      637,
+      660
+    ],
+    "expected": "AUDIO WORKLET",
+    "kind": "diagram_label"
+  },
+  {
+    "id": "27",
+    "frame": "frames/diagram-820985.jpg",
+    "path": "crops/27.png",
+    "split": "heldout",
+    "box": [
+      175,
+      678,
+      665,
+      724
+    ],
+    "expected": "Plays combinations of sines.",
+    "kind": "diagram_text"
+  },
+  {
+    "id": "28",
+    "frame": "frames/diagram-820985.jpg",
+    "path": "crops/28.png",
+    "split": "heldout",
+    "box": [
+      175,
+      724,
+      635,
+      771
+    ],
+    "expected": "Runs in a separate thread.",
+    "kind": "diagram_text"
+  },
+  {
+    "id": "29",
+    "frame": "frames/diagram-820985.jpg",
+    "path": "crops/29.png",
+    "split": "heldout",
+    "box": [
+      835,
+      266,
+      1110,
+      291
+    ],
+    "expected": "var audioContext:AudioContext;",
+    "kind": "small_code"
+  },
+  {
+    "id": "30",
+    "frame": "frames/diagram-820985.jpg",
+    "path": "crops/30.png",
+    "split": "heldout",
+    "box": [
+      835,
+      290,
+      1074,
+      314
+    ],
+    "expected": "var node:AudioWorkletNode;",
+    "kind": "small_code"
+  }
+]
