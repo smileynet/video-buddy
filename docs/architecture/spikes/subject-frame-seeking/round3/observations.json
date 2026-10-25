@@ -1,0 +1,6694 @@
+{
+  "scroll": [
+    {
+      "filename": "frame_00940000.jpg",
+      "pts_s": 940.0,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011839399998279987,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.36316117392465,
+          "ocr_s": 0.06944490000023507
+        }
+      }
+    },
+    {
+      "filename": "frame_00940033.jpg",
+      "pts_s": 940.033333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011549599999852944,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.32022320260685,
+          "ocr_s": 0.0663989999993646
+        }
+      }
+    },
+    {
+      "filename": "frame_00940067.jpg",
+      "pts_s": 940.066667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.0107014999994135,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.29979698059495,
+          "ocr_s": 0.0660965999995824
+        }
+      }
+    },
+    {
+      "filename": "frame_00940100.jpg",
+      "pts_s": 940.1,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010934500001894776,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.2802829599345,
+          "ocr_s": 0.0670602999998664
+        }
+      }
+    },
+    {
+      "filename": "frame_00940133.jpg",
+      "pts_s": 940.133333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.012237499999173451,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.31226257162646,
+          "ocr_s": 0.06966889999966952
+        }
+      }
+    },
+    {
+      "filename": "frame_00940167.jpg",
+      "pts_s": 940.166667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011965099998633377,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.29876277463094,
+          "ocr_s": 0.06815379999898141
+        }
+      }
+    },
+    {
+      "filename": "frame_00940200.jpg",
+      "pts_s": 940.2,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.01255930000115768,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.35566974865853,
+          "ocr_s": 0.07002869999996619
+        }
+      }
+    },
+    {
+      "filename": "frame_00940233.jpg",
+      "pts_s": 940.233333,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.01186990000132937,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.3738403251393,
+          "ocr_s": 0.06875429999854532
+        }
+      }
+    },
+    {
+      "filename": "frame_00940267.jpg",
+      "pts_s": 940.266667,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.01183130000208621,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.33471937661557,
+          "ocr_s": 0.0673464999999851
+        }
+      }
+    },
+    {
+      "filename": "frame_00940300.jpg",
+      "pts_s": 940.3,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.01168159999724594,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 228.81307162231235,
+          "ocr_s": 0.0667966000000888
+        }
+      }
+    },
+    {
+      "filename": "frame_00940333.jpg",
+      "pts_s": 940.333333,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.01166689999809023,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 228.7898976693266,
+          "ocr_s": 0.06749649999983376
+        }
+      }
+    },
+    {
+      "filename": "frame_00940367.jpg",
+      "pts_s": 940.366667,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.011544700002559694,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 228.80169335025613,
+          "ocr_s": 0.0665515000000596
+        }
+      }
+    },
+    {
+      "filename": "frame_00940400.jpg",
+      "pts_s": 940.4,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.011231500000576489,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ g a ee wd",
+          "sharpness": 388.26897069472284,
+          "ocr_s": 0.08309739999822341
+        }
+      }
+    },
+    {
+      "filename": "frame_00940433.jpg",
+      "pts_s": 940.433333,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.010900799999944866,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ g a ee wd",
+          "sharpness": 388.18521388164817,
+          "ocr_s": 0.08322729999781586
+        }
+      }
+    },
+    {
+      "filename": "frame_00940467.jpg",
+      "pts_s": 940.466667,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.010861599999770988,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ g a ee wd",
+          "sharpness": 388.1602695507601,
+          "ocr_s": 0.08372059999965131
+        }
+      }
+    },
+    {
+      "filename": "frame_00940500.jpg",
+      "pts_s": 940.5,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.010709099999075988,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ g a ee wd",
+          "sharpness": 388.1442842884063,
+          "ocr_s": 0.08300270000108867
+        }
+      }
+    },
+    {
+      "filename": "frame_00940533.jpg",
+      "pts_s": 940.533333,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.01131859999804874,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ g a ee wd",
+          "sharpness": 388.2730156210412,
+          "ocr_s": 0.07963350000136415
+        }
+      }
+    },
+    {
+      "filename": "frame_00940567.jpg",
+      "pts_s": 940.566667,
+      "match_confidence": 0.9999962449073792,
+      "tracking_s": 0.011230799998884322,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 476.30993490247215,
+          "ocr_s": 0.06476619999739341
+        }
+      }
+    },
+    {
+      "filename": "frame_00940600.jpg",
+      "pts_s": 940.6,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010685400000511436,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 476.28308879815506,
+          "ocr_s": 0.06492390000130399
+        }
+      }
+    },
+    {
+      "filename": "frame_00940633.jpg",
+      "pts_s": 940.633333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.0107495000011113,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 476.29072628742165,
+          "ocr_s": 0.06311740000091959
+        }
+      }
+    },
+    {
+      "filename": "frame_00940667.jpg",
+      "pts_s": 940.666667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010924800000793766,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 572.6323330315054,
+          "ocr_s": 0.08106780000161962
+        }
+      }
+    },
+    {
+      "filename": "frame_00940700.jpg",
+      "pts_s": 940.7,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010446799999044742,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.1998817888427,
+          "ocr_s": 0.08315030000085244
+        }
+      }
+    },
+    {
+      "filename": "frame_00940733.jpg",
+      "pts_s": 940.733333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010729200002970174,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 572.3735789455563,
+          "ocr_s": 0.08267659999910393
+        }
+      }
+    },
+    {
+      "filename": "frame_00940767.jpg",
+      "pts_s": 940.766667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011106500001915265,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2441626917806,
+          "ocr_s": 0.08332769999833545
+        }
+      }
+    },
+    {
+      "filename": "frame_00940800.jpg",
+      "pts_s": 940.8,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010775899998407112,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08368690000133938
+        }
+      }
+    },
+    {
+      "filename": "frame_00940833.jpg",
+      "pts_s": 940.833333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011419200000091223,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08296369999879971
+        }
+      }
+    },
+    {
+      "filename": "frame_00940867.jpg",
+      "pts_s": 940.866667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.01084409999748459,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08403910000197357
+        }
+      }
+    },
+    {
+      "filename": "frame_00940900.jpg",
+      "pts_s": 940.9,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011407000001781853,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08351590000165743
+        }
+      }
+    },
+    {
+      "filename": "frame_00940933.jpg",
+      "pts_s": 940.933333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011186300002009375,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08421369999996386
+        }
+      }
+    },
+    {
+      "filename": "frame_00940967.jpg",
+      "pts_s": 940.966667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011275400000158697,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08508309999888297
+        }
+      }
+    },
+    {
+      "filename": "frame_00941000.jpg",
+      "pts_s": 941.0,
+      "match_confidence": 1.0,
+      "tracking_s": 0.01133539999864297,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08212619999903836
+        }
+      }
+    },
+    {
+      "filename": "frame_00941033.jpg",
+      "pts_s": 941.033333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.01089960000172141,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08381620000000112
+        }
+      }
+    },
+    {
+      "filename": "frame_00941067.jpg",
+      "pts_s": 941.066667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010982899999362417,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08415619999868795
+        }
+      }
+    },
+    {
+      "filename": "frame_00941100.jpg",
+      "pts_s": 941.1,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010720300000684801,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08387980000043171
+        }
+      }
+    },
+    {
+      "filename": "frame_00941133.jpg",
+      "pts_s": 941.133333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011655500002234476,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08512329999939539
+        }
+      }
+    },
+    {
+      "filename": "frame_00941167.jpg",
+      "pts_s": 941.166667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010865400003240211,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git| a ee wd",
+          "sharpness": 573.2141175980846,
+          "ocr_s": 0.08352640000157407
+        }
+      }
+    },
+    {
+      "filename": "frame_00941200.jpg",
+      "pts_s": 941.2,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011143200001242803,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | a ee wd",
+          "sharpness": 552.2486451945141,
+          "ocr_s": 0.0846588000022166
+        }
+      }
+    },
+    {
+      "filename": "frame_00941233.jpg",
+      "pts_s": 941.233333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010768699998152442,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | a ee wd",
+          "sharpness": 552.1799670342342,
+          "ocr_s": 0.08411610000257497
+        }
+      }
+    },
+    {
+      "filename": "frame_00941267.jpg",
+      "pts_s": 941.266667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.012122200001613237,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | a ee wd",
+          "sharpness": 552.1826854102305,
+          "ocr_s": 0.08250709999992978
+        }
+      }
+    },
+    {
+      "filename": "frame_00941300.jpg",
+      "pts_s": 941.3,
+      "match_confidence": 1.0,
+      "tracking_s": 0.01118750000023283,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | a ee wd",
+          "sharpness": 552.115266291809,
+          "ocr_s": 0.0831730999998399
+        }
+      }
+    },
+    {
+      "filename": "frame_00941333.jpg",
+      "pts_s": 941.333333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010923699999693781,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git a a ee ~~",
+          "sharpness": 612.0564068447493,
+          "ocr_s": 0.08091010000134702
+        }
+      }
+    },
+    {
+      "filename": "frame_00941367.jpg",
+      "pts_s": 941.366667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010501000000658678,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git a a ee ~~",
+          "sharpness": 612.0813805563715,
+          "ocr_s": 0.08309240000016871
+        }
+      }
+    },
+    {
+      "filename": "frame_00941400.jpg",
+      "pts_s": 941.4,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010494400001334725,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git a a ee ~~",
+          "sharpness": 612.0564068447493,
+          "ocr_s": 0.08355829999709385
+        }
+      }
+    },
+    {
+      "filename": "frame_00941433.jpg",
+      "pts_s": 941.433333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010381600000982871,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git a a ee ~~",
+          "sharpness": 612.0564068447493,
+          "ocr_s": 0.0835533999998006
+        }
+      }
+    },
+    {
+      "filename": "frame_00941467.jpg",
+      "pts_s": 941.466667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010656700000254204,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git a a ee ~~",
+          "sharpness": 612.0564068447493,
+          "ocr_s": 0.0822150000021793
+        }
+      }
+    },
+    {
+      "filename": "frame_00941500.jpg",
+      "pts_s": 941.5,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011534900000697235,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git al a ee ~~",
+          "sharpness": 612.0990874416599,
+          "ocr_s": 0.08097780000025523
+        }
+      }
+    },
+    {
+      "filename": "frame_00941533.jpg",
+      "pts_s": 941.533333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010801500000525266,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git al a ee ~~",
+          "sharpness": 612.5712948305651,
+          "ocr_s": 0.08433620000141673
+        }
+      }
+    },
+    {
+      "filename": "frame_00941567.jpg",
+      "pts_s": 941.566667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.01049580000108108,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git ad _ ee wd",
+          "sharpness": 664.7531136804199,
+          "ocr_s": 0.08415369999784161
+        }
+      }
+    },
+    {
+      "filename": "frame_00941600.jpg",
+      "pts_s": 941.6,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010594600000331411,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git ad _ ee wd",
+          "sharpness": 664.7531136804199,
+          "ocr_s": 0.08339459999842802
+        }
+      }
+    },
+    {
+      "filename": "frame_00941633.jpg",
+      "pts_s": 941.633333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010712899998907233,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git ad _ ee wd",
+          "sharpness": 664.7531136804199,
+          "ocr_s": 0.0817194000010204
+        }
+      }
+    },
+    {
+      "filename": "frame_00941667.jpg",
+      "pts_s": 941.666667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010953900000458816,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git ad _ ee wd",
+          "sharpness": 664.7531136804199,
+          "ocr_s": 0.0846148999989964
+        }
+      }
+    },
+    {
+      "filename": "frame_00941700.jpg",
+      "pts_s": 941.7,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010583100000076229,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add : a, a",
+          "sharpness": 733.2037215316733,
+          "ocr_s": 0.08087240000168094
+        }
+      }
+    },
+    {
+      "filename": "frame_00941733.jpg",
+      "pts_s": 941.733333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010562100000242935,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add : a, a",
+          "sharpness": 733.1899116645188,
+          "ocr_s": 0.07918960000097286
+        }
+      }
+    },
+    {
+      "filename": "frame_00941767.jpg",
+      "pts_s": 941.766667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.01074019999941811,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add : a, a",
+          "sharpness": 733.1899116645188,
+          "ocr_s": 0.07960409999941476
+        }
+      }
+    },
+    {
+      "filename": "frame_00941800.jpg",
+      "pts_s": 941.8,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010726199998316588,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add : a, a",
+          "sharpness": 734.1453782732306,
+          "ocr_s": 0.07894970000052126
+        }
+      }
+    },
+    {
+      "filename": "frame_00941833.jpg",
+      "pts_s": 941.833333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011106599999038735,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add : a, a",
+          "sharpness": 733.8205245489518,
+          "ocr_s": 0.07997350000005099
+        }
+      }
+    },
+    {
+      "filename": "frame_00941867.jpg",
+      "pts_s": 941.866667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010867699998925673,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add : a, a",
+          "sharpness": 733.8205245489518,
+          "ocr_s": 0.07883349999974598
+        }
+      }
+    },
+    {
+      "filename": "frame_00941900.jpg",
+      "pts_s": 941.9,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010965900000883266,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add : a, a",
+          "sharpness": 733.8205245489518,
+          "ocr_s": 0.08151900000302703
+        }
+      }
+    },
+    {
+      "filename": "frame_00941933.jpg",
+      "pts_s": 941.933333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010426499997265637,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add | : a, a",
+          "sharpness": 728.250137765173,
+          "ocr_s": 0.07940249999955995
+        }
+      }
+    },
+    {
+      "filename": "frame_00941967.jpg",
+      "pts_s": 941.966667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.01076430000102846,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add | : a, a",
+          "sharpness": 727.744145877769,
+          "ocr_s": 0.07738949999838951
+        }
+      }
+    },
+    {
+      "filename": "frame_00942000.jpg",
+      "pts_s": 942.0,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010767800002213335,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add | : a, a",
+          "sharpness": 727.6850777597563,
+          "ocr_s": 0.08204420000038226
+        }
+      }
+    },
+    {
+      "filename": "frame_00942033.jpg",
+      "pts_s": 942.033333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010452799997437978,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add | : a, a",
+          "sharpness": 728.1155730470731,
+          "ocr_s": 0.08073750000039581
+        }
+      }
+    },
+    {
+      "filename": "frame_00942067.jpg",
+      "pts_s": 942.066667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010902899997745408,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : a, a",
+          "sharpness": 754.6196430991092,
+          "ocr_s": 0.08129470000130823
+        }
+      }
+    },
+    {
+      "filename": "frame_00942100.jpg",
+      "pts_s": 942.1,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011686300000292249,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : a, a",
+          "sharpness": 753.5875683934656,
+          "ocr_s": 0.08302679999906104
+        }
+      }
+    },
+    {
+      "filename": "frame_00942133.jpg",
+      "pts_s": 942.133333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011148699999466771,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : a, a",
+          "sharpness": 753.5875683934656,
+          "ocr_s": 0.08241970000017318
+        }
+      }
+    },
+    {
+      "filename": "frame_00942167.jpg",
+      "pts_s": 942.166667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.01203440000244882,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : a, a",
+          "sharpness": 753.5755850307655,
+          "ocr_s": 0.08041229999798816
+        }
+      }
+    },
+    {
+      "filename": "frame_00942200.jpg",
+      "pts_s": 942.2,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010694700002204627,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : a, a",
+          "sharpness": 753.6111281208742,
+          "ocr_s": 0.08245700000043144
+        }
+      }
+    },
+    {
+      "filename": "frame_00942233.jpg",
+      "pts_s": 942.233333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010695000000850996,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : a, a",
+          "sharpness": 753.5278587055122,
+          "ocr_s": 0.07994759999928647
+        }
+      }
+    },
+    {
+      "filename": "frame_00942267.jpg",
+      "pts_s": 942.266667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010823099997651298,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : es, a",
+          "sharpness": 753.4931132919049,
+          "ocr_s": 0.08017429999745218
+        }
+      }
+    },
+    {
+      "filename": "frame_00942300.jpg",
+      "pts_s": 942.3,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011048300002585165,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : es, a",
+          "sharpness": 753.534977708659,
+          "ocr_s": 0.08006259999820031
+        }
+      }
+    },
+    {
+      "filename": "frame_00942333.jpg",
+      "pts_s": 942.333333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010548500002187211,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : es, a",
+          "sharpness": 753.3985466326726,
+          "ocr_s": 0.08095989999856101
+        }
+      }
+    },
+    {
+      "filename": "frame_00942367.jpg",
+      "pts_s": 942.366667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010806399997818517,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : papas a",
+          "sharpness": 753.4506425507582,
+          "ocr_s": 0.0840351999977429
+        }
+      }
+    },
+    {
+      "filename": "frame_00942400.jpg",
+      "pts_s": 942.4,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010537400001339847,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : papas a",
+          "sharpness": 753.4288136131145,
+          "ocr_s": 0.08067190000292612
+        }
+      }
+    },
+    {
+      "filename": "frame_00942433.jpg",
+      "pts_s": 942.433333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010919399999693269,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : pena a",
+          "sharpness": 753.3362097631012,
+          "ocr_s": 0.08097099999940838
+        }
+      }
+    },
+    {
+      "filename": "frame_00942467.jpg",
+      "pts_s": 942.466667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.011217700000997866,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : es, a",
+          "sharpness": 753.4189971149752,
+          "ocr_s": 0.07957300000271061
+        }
+      }
+    },
+    {
+      "filename": "frame_00942500.jpg",
+      "pts_s": 942.5,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010838499998499174,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git add .| : eee, a",
+          "sharpness": 753.9133749529577,
+          "ocr_s": 0.08377660000041942
+        }
+      }
+    },
+    {
+      "filename": "frame_00942533.jpg",
+      "pts_s": 942.533333,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010772500001621665,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "eS eee",
+          "sharpness": 75.56502819066891,
+          "ocr_s": 0.10145149999880232
+        }
+      }
+    },
+    {
+      "filename": "frame_00942567.jpg",
+      "pts_s": 942.566667,
+      "match_confidence": 1.0,
+      "tracking_s": 0.010654999998223502,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "eS eee",
+          "sharpness": 75.56502819066891,
+          "ocr_s": 0.10119729999860283
+        }
+      }
+    },
+    {
+      "filename": "frame_00942600.jpg",
+      "pts_s": 942.6,
+      "match_confidence": 0.9999904632568359,
+      "tracking_s": 0.011069200001657009,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.84623011052818,
+          "ocr_s": 0.06853409999894211
+        }
+      }
+    },
+    {
+      "filename": "frame_00942633.jpg",
+      "pts_s": 942.633333,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010571099999651778,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.84623011052818,
+          "ocr_s": 0.06593570000040927
+        }
+      }
+    },
+    {
+      "filename": "frame_00942667.jpg",
+      "pts_s": 942.666667,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.011012099999788916,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.85035540823515,
+          "ocr_s": 0.06782370000291849
+        }
+      }
+    },
+    {
+      "filename": "frame_00942700.jpg",
+      "pts_s": 942.7,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010524099998292513,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.8442000658672,
+          "ocr_s": 0.06703729999935604
+        }
+      }
+    },
+    {
+      "filename": "frame_00942733.jpg",
+      "pts_s": 942.733333,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.0109721000007994,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.8442000658672,
+          "ocr_s": 0.0665026000024227
+        }
+      }
+    },
+    {
+      "filename": "frame_00942767.jpg",
+      "pts_s": 942.766667,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010509599997021724,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.8442000658672,
+          "ocr_s": 0.06526479999956791
+        }
+      }
+    },
+    {
+      "filename": "frame_00942800.jpg",
+      "pts_s": 942.8,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.011307199998555006,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.8442000658672,
+          "ocr_s": 0.06571350000012899
+        }
+      }
+    },
+    {
+      "filename": "frame_00942833.jpg",
+      "pts_s": 942.833333,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010596000000077765,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.83120778003692,
+          "ocr_s": 0.06598260000100709
+        }
+      }
+    },
+    {
+      "filename": "frame_00942867.jpg",
+      "pts_s": 942.866667,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010823799999343464,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.75090158699135,
+          "ocr_s": 0.0692285000004631
+        }
+      }
+    },
+    {
+      "filename": "frame_00942900.jpg",
+      "pts_s": 942.9,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.011115900000731926,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.8202455388676,
+          "ocr_s": 0.07210289999784436
+        }
+      }
+    },
+    {
+      "filename": "frame_00942933.jpg",
+      "pts_s": 942.933333,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010898000000452157,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.91298624226454,
+          "ocr_s": 0.06555410000146367
+        }
+      }
+    },
+    {
+      "filename": "frame_00942967.jpg",
+      "pts_s": 942.966667,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.011038900000130525,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.91298624226454,
+          "ocr_s": 0.06641930000114371
+        }
+      }
+    },
+    {
+      "filename": "frame_00943000.jpg",
+      "pts_s": 943.0,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010479299999133218,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.91298624226454,
+          "ocr_s": 0.062664400000358
+        }
+      }
+    },
+    {
+      "filename": "frame_00943033.jpg",
+      "pts_s": 943.033333,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010756799998489441,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.91298624226454,
+          "ocr_s": 0.06423129999893717
+        }
+      }
+    },
+    {
+      "filename": "frame_00943067.jpg",
+      "pts_s": 943.066667,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010458000000653556,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.91298624226454,
+          "ocr_s": 0.06664899999668705
+        }
+      }
+    },
+    {
+      "filename": "frame_00943100.jpg",
+      "pts_s": 943.1,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.01120920000175829,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 231.89396016793575,
+          "ocr_s": 0.06462349999856087
+        }
+      }
+    },
+    {
+      "filename": "frame_00943133.jpg",
+      "pts_s": 943.133333,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010276999997586245,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 172.01119578027237,
+          "ocr_s": 0.08117130000027828
+        }
+      }
+    },
+    {
+      "filename": "frame_00943167.jpg",
+      "pts_s": 943.166667,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.010661100001016166,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 172.01119578027237,
+          "ocr_s": 0.06515419999777805
+        }
+      }
+    },
+    {
+      "filename": "frame_00943200.jpg",
+      "pts_s": 943.2,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.01191130000006524,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 172.01119578027237,
+          "ocr_s": 0.06729610000184039
+        }
+      }
+    },
+    {
+      "filename": "frame_00943233.jpg",
+      "pts_s": 943.233333,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.01117549999980838,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 172.01119578027237,
+          "ocr_s": 0.06558480000239797
+        }
+      }
+    },
+    {
+      "filename": "frame_00943267.jpg",
+      "pts_s": 943.266667,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.01099140000223997,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 172.01119578027237,
+          "ocr_s": 0.06472700000085752
+        }
+      }
+    },
+    {
+      "filename": "frame_00943300.jpg",
+      "pts_s": 943.3,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.011155400003190152,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 172.01284169121595,
+          "ocr_s": 0.06485129999782657
+        }
+      }
+    },
+    {
+      "filename": "frame_00943333.jpg",
+      "pts_s": 943.333333,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.01104450000275392,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 172.07064833335642,
+          "ocr_s": 0.06443249999938416
+        }
+      }
+    },
+    {
+      "filename": "frame_00943367.jpg",
+      "pts_s": 943.366667,
+      "match_confidence": 0.9999944567680359,
+      "tracking_s": 0.01008430000001681,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 172.0651167424039,
+          "ocr_s": 0.06515070000023115
+        }
+      }
+    },
+    {
+      "filename": "frame_00943400.jpg",
+      "pts_s": 943.4,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.011071400000219,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 171.84470013075367,
+          "ocr_s": 0.06375219999972614
+        }
+      }
+    },
+    {
+      "filename": "frame_00943433.jpg",
+      "pts_s": 943.433333,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010266700002830476,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 399.18477373985985,
+          "ocr_s": 0.06474779999916791
+        }
+      }
+    },
+    {
+      "filename": "frame_00943467.jpg",
+      "pts_s": 943.466667,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.011183099999470869,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 399.3496374823844,
+          "ocr_s": 0.06525239999973564
+        }
+      }
+    },
+    {
+      "filename": "frame_00943500.jpg",
+      "pts_s": 943.5,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010384199998952681,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 398.0721833537285,
+          "ocr_s": 0.06679850000000442
+        }
+      }
+    },
+    {
+      "filename": "frame_00943533.jpg",
+      "pts_s": 943.533333,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.009940100000676466,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 398.47852823647474,
+          "ocr_s": 0.06468259999746806
+        }
+      }
+    },
+    {
+      "filename": "frame_00943567.jpg",
+      "pts_s": 943.566667,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.01053450000108569,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 486.15947587170757,
+          "ocr_s": 0.06550949999655131
+        }
+      }
+    },
+    {
+      "filename": "frame_00943600.jpg",
+      "pts_s": 943.6,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.011180199999216711,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 486.21195996474574,
+          "ocr_s": 0.06586560000141617
+        }
+      }
+    },
+    {
+      "filename": "frame_00943633.jpg",
+      "pts_s": 943.633333,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010481700002856087,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 486.243454586982,
+          "ocr_s": 0.06369959999938146
+        }
+      }
+    },
+    {
+      "filename": "frame_00943667.jpg",
+      "pts_s": 943.666667,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010351699998864206,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 486.19255047531317,
+          "ocr_s": 0.06508620000022347
+        }
+      }
+    },
+    {
+      "filename": "frame_00943700.jpg",
+      "pts_s": 943.7,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.011098899998614797,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 577.8667154417248,
+          "ocr_s": 0.06897229999958654
+        }
+      }
+    },
+    {
+      "filename": "frame_00943733.jpg",
+      "pts_s": 943.733333,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.01048369999989518,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 577.85683243706,
+          "ocr_s": 0.06593260000227019
+        }
+      }
+    },
+    {
+      "filename": "frame_00943767.jpg",
+      "pts_s": 943.766667,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010872399998334004,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 577.85683243706,
+          "ocr_s": 0.06534839999949327
+        }
+      }
+    },
+    {
+      "filename": "frame_00943800.jpg",
+      "pts_s": 943.8,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.011416000001190696,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 577.85683243706,
+          "ocr_s": 0.06537490000118851
+        }
+      }
+    },
+    {
+      "filename": "frame_00943833.jpg",
+      "pts_s": 943.833333,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.01082930000120541,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 577.87092303485,
+          "ocr_s": 0.06522720000066329
+        }
+      }
+    },
+    {
+      "filename": "frame_00943867.jpg",
+      "pts_s": 943.866667,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010388700000476092,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | wa SK, fed dscetetes anh 7",
+          "sharpness": 558.1570600139887,
+          "ocr_s": 0.07967830000052345
+        }
+      }
+    },
+    {
+      "filename": "frame_00943900.jpg",
+      "pts_s": 943.9,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.01046209999913117,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | wa SK, fed dscetetes anh 7",
+          "sharpness": 558.1570600139887,
+          "ocr_s": 0.08073040000090259
+        }
+      }
+    },
+    {
+      "filename": "frame_00943933.jpg",
+      "pts_s": 943.933333,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.011295899999822723,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | wa SK, fed dscetetes anh 7",
+          "sharpness": 558.1570600139887,
+          "ocr_s": 0.08378249999805121
+        }
+      }
+    },
+    {
+      "filename": "frame_00943967.jpg",
+      "pts_s": 943.966667,
+      "match_confidence": 0.9999883770942688,
+      "tracking_s": 0.010908600001130253,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | wa SK, fed dscetetes anh 7",
+          "sharpness": 558.1570600139887,
+          "ocr_s": 0.08670580000034533
+        }
+      }
+    },
+    {
+      "filename": "frame_00944000.jpg",
+      "pts_s": 944.0,
+      "match_confidence": 0.9982919096946716,
+      "tracking_s": 0.011025100000551902,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | - Wig oe . oe Pa",
+          "sharpness": 571.2521961216627,
+          "ocr_s": 0.08596069999839528
+        }
+      }
+    },
+    {
+      "filename": "frame_00944033.jpg",
+      "pts_s": 944.033333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011330000001180451,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git | - Wig oe . oe Pa",
+          "sharpness": 571.3350682982687,
+          "ocr_s": 0.0874876999987464
+        }
+      }
+    },
+    {
+      "filename": "frame_00944067.jpg",
+      "pts_s": 944.066667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011016599997674348,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 598.7133742606162,
+          "ocr_s": 0.06778119999944465
+        }
+      }
+    },
+    {
+      "filename": "frame_00944100.jpg",
+      "pts_s": 944.1,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011598299999604933,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 598.7211064806642,
+          "ocr_s": 0.06763589999900432
+        }
+      }
+    },
+    {
+      "filename": "frame_00944133.jpg",
+      "pts_s": 944.133333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011483800000860356,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 598.7127709729452,
+          "ocr_s": 0.07041729999764357
+        }
+      }
+    },
+    {
+      "filename": "frame_00944167.jpg",
+      "pts_s": 944.166667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011255800000071758,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 598.6908337487383,
+          "ocr_s": 0.06446359999972628
+        }
+      }
+    },
+    {
+      "filename": "frame_00944200.jpg",
+      "pts_s": 944.2,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011462500002380693,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 598.6941523422001,
+          "ocr_s": 0.06671339999957127
+        }
+      }
+    },
+    {
+      "filename": "frame_00944233.jpg",
+      "pts_s": 944.233333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010817200000019511,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git st] \u2018 ee Is. Ge *",
+          "sharpness": 682.18362233807,
+          "ocr_s": 0.07899759999781963
+        }
+      }
+    },
+    {
+      "filename": "frame_00944267.jpg",
+      "pts_s": 944.266667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011009899997588946,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git st) \u2018 ee Is. Ge *",
+          "sharpness": 682.0324592849529,
+          "ocr_s": 0.07819499999823165
+        }
+      }
+    },
+    {
+      "filename": "frame_00944300.jpg",
+      "pts_s": 944.3,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010705099997721845,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git st) \u2018 ee Is. Ge *",
+          "sharpness": 682.117402590825,
+          "ocr_s": 0.07945240000117337
+        }
+      }
+    },
+    {
+      "filename": "frame_00944333.jpg",
+      "pts_s": 944.333333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011031800000637304,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git sta] - Wig oe . oe Pa",
+          "sharpness": 732.5122189649195,
+          "ocr_s": 0.08570049999980256
+        }
+      }
+    },
+    {
+      "filename": "frame_00944367.jpg",
+      "pts_s": 944.366667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010551900002610637,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git stal - Wig oe . oe Pa",
+          "sharpness": 732.5089962973526,
+          "ocr_s": 0.084031700000196
+        }
+      }
+    },
+    {
+      "filename": "frame_00944400.jpg",
+      "pts_s": 944.4,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010526300000492483,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git stal - Wig oe . oe Pa",
+          "sharpness": 732.5181505093904,
+          "ocr_s": 0.08468409999841242
+        }
+      }
+    },
+    {
+      "filename": "frame_00944433.jpg",
+      "pts_s": 944.433333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010594600000331411,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git stat] \u2018 ee Is. Ge *",
+          "sharpness": 798.982988359161,
+          "ocr_s": 0.07971059999908903
+        }
+      }
+    },
+    {
+      "filename": "frame_00944467.jpg",
+      "pts_s": 944.466667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010536099998716963,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git stat] \u2018 ee Is. Ge *",
+          "sharpness": 799.1657938808825,
+          "ocr_s": 0.0816134000015154
+        }
+      }
+    },
+    {
+      "filename": "frame_00944500.jpg",
+      "pts_s": 944.5,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010767499999928987,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git stat} \u2018 ee Is. Ge *",
+          "sharpness": 799.240587110263,
+          "ocr_s": 0.07867000000260305
+        }
+      }
+    },
+    {
+      "filename": "frame_00944533.jpg",
+      "pts_s": 944.533333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.01089259999935166,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git stat] \u2018 ee Is. Ge *",
+          "sharpness": 798.025228466567,
+          "ocr_s": 0.07857610000064597
+        }
+      }
+    },
+    {
+      "filename": "frame_00944567.jpg",
+      "pts_s": 944.566667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010482200003025355,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07814850000067963
+        }
+      }
+    },
+    {
+      "filename": "frame_00944600.jpg",
+      "pts_s": 944.6,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011290400001598755,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07882809999864548
+        }
+      }
+    },
+    {
+      "filename": "frame_00944633.jpg",
+      "pts_s": 944.633333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010555499997281004,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07818250000127591
+        }
+      }
+    },
+    {
+      "filename": "frame_00944667.jpg",
+      "pts_s": 944.666667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010508499999559717,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.08145929999955115
+        }
+      }
+    },
+    {
+      "filename": "frame_00944700.jpg",
+      "pts_s": 944.7,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.01061180000033346,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07875110000168206
+        }
+      }
+    },
+    {
+      "filename": "frame_00944733.jpg",
+      "pts_s": 944.733333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010973299999022856,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07976829999824986
+        }
+      }
+    },
+    {
+      "filename": "frame_00944767.jpg",
+      "pts_s": 944.766667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011273099997197278,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.08023019999745884
+        }
+      }
+    },
+    {
+      "filename": "frame_00944800.jpg",
+      "pts_s": 944.8,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010519499999645632,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.08020269999906304
+        }
+      }
+    },
+    {
+      "filename": "frame_00944833.jpg",
+      "pts_s": 944.833333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010839999999006977,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07957119999991846
+        }
+      }
+    },
+    {
+      "filename": "frame_00944867.jpg",
+      "pts_s": 944.866667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010477600000740495,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07705450000139535
+        }
+      }
+    },
+    {
+      "filename": "frame_00944900.jpg",
+      "pts_s": 944.9,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.011263200001849327,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07797969999955967
+        }
+      }
+    },
+    {
+      "filename": "frame_00944933.jpg",
+      "pts_s": 944.933333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010971499999868684,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ee Is. Ge *",
+          "sharpness": 898.105777357819,
+          "ocr_s": 0.07960629999797675
+        }
+      }
+    },
+    {
+      "filename": "frame_00944967.jpg",
+      "pts_s": 944.966667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.01011609999841312,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 ne ae =: Ge *",
+          "sharpness": 899.0498204115181,
+          "ocr_s": 0.08001180000064778
+        }
+      }
+    },
+    {
+      "filename": "frame_00945000.jpg",
+      "pts_s": 945.0,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010684000000765081,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 a *",
+          "sharpness": 901.6362402879507,
+          "ocr_s": 0.07835749999867403
+        }
+      }
+    },
+    {
+      "filename": "frame_00945033.jpg",
+      "pts_s": 945.033333,
+      "match_confidence": 0.9982785582542419,
+      "tracking_s": 0.011482000001706183,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] \u2018 2 ene *",
+          "sharpness": 904.5599875080751,
+          "ocr_s": 0.08079360000192537
+        }
+      }
+    },
+    {
+      "filename": "frame_00945067.jpg",
+      "pts_s": 945.066667,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.01111230000242358,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu ; i aie *",
+          "sharpness": 856.6534332975789,
+          "ocr_s": 0.07893870000043535
+        }
+      }
+    },
+    {
+      "filename": "frame_00945100.jpg",
+      "pts_s": 945.1,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.01049090000014985,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git statu] / jo. *",
+          "sharpness": 902.6156409624933,
+          "ocr_s": 0.08160570000109146
+        }
+      }
+    },
+    {
+      "filename": "frame_00945133.jpg",
+      "pts_s": 945.133333,
+      "match_confidence": 0.998284637928009,
+      "tracking_s": 0.010632699999405304,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / <n *",
+          "sharpness": 996.2513486650745,
+          "ocr_s": 0.08095239999965997
+        }
+      }
+    },
+    {
+      "filename": "frame_00945167.jpg",
+      "pts_s": 945.166667,
+      "match_confidence": 0.9982807040214539,
+      "tracking_s": 0.011109899998700712,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / <n *",
+          "sharpness": 995.4503598420034,
+          "ocr_s": 0.08090230000016163
+        }
+      }
+    },
+    {
+      "filename": "frame_00945200.jpg",
+      "pts_s": 945.2,
+      "match_confidence": 0.998292863368988,
+      "tracking_s": 0.01039909999963129,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / jo. *",
+          "sharpness": 995.5287647767552,
+          "ocr_s": 0.07932139999684296
+        }
+      }
+    },
+    {
+      "filename": "frame_00945233.jpg",
+      "pts_s": 945.233333,
+      "match_confidence": 0.998292863368988,
+      "tracking_s": 0.010649800002283882,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / jo. *",
+          "sharpness": 995.5350344971596,
+          "ocr_s": 0.07843080000020564
+        }
+      }
+    },
+    {
+      "filename": "frame_00945267.jpg",
+      "pts_s": 945.266667,
+      "match_confidence": 0.998292863368988,
+      "tracking_s": 0.010628100000758423,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / je. *",
+          "sharpness": 995.598499695617,
+          "ocr_s": 0.0778623999976844
+        }
+      }
+    },
+    {
+      "filename": "frame_00945300.jpg",
+      "pts_s": 945.3,
+      "match_confidence": 0.998292863368988,
+      "tracking_s": 0.010545500001171604,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / je. *",
+          "sharpness": 995.599260364808,
+          "ocr_s": 0.08001149999836343
+        }
+      }
+    },
+    {
+      "filename": "frame_00945333.jpg",
+      "pts_s": 945.333333,
+      "match_confidence": 0.998292863368988,
+      "tracking_s": 0.01033619999725488,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / je. *",
+          "sharpness": 995.612441723274,
+          "ocr_s": 0.07893669999975828
+        }
+      }
+    },
+    {
+      "filename": "frame_00945367.jpg",
+      "pts_s": 945.366667,
+      "match_confidence": 0.998292863368988,
+      "tracking_s": 0.010635599999659462,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / je. *",
+          "sharpness": 995.6083836120708,
+          "ocr_s": 0.08194010000079288
+        }
+      }
+    },
+    {
+      "filename": "frame_00945400.jpg",
+      "pts_s": 945.4,
+      "match_confidence": 0.998292863368988,
+      "tracking_s": 0.010690600000089034,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "$ git status| / je. *",
+          "sharpness": 995.6038276356087,
+          "ocr_s": 0.0791884000027494
+        }
+      }
+    },
+    {
+      "filename": "frame_00945433.jpg",
+      "pts_s": 945.433333,
+      "match_confidence": 0.9982928037643433,
+      "tracking_s": 0.012066700001014397,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "]",
+          "sharpness": 74.660065425875,
+          "ocr_s": 0.065005000000383
+        }
+      }
+    },
+    {
+      "filename": "frame_00945467.jpg",
+      "pts_s": 945.466667,
+      "match_confidence": 0.9982869029045105,
+      "tracking_s": 0.010770500000944594,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "|",
+          "sharpness": 74.40661893207864,
+          "ocr_s": 0.06584909999946831
+        }
+      }
+    },
+    {
+      "filename": "frame_00945500.jpg",
+      "pts_s": 945.5,
+      "match_confidence": 0.9982832074165344,
+      "tracking_s": 0.01090430000112974,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "ee ee",
+          "sharpness": 39.47667921288666,
+          "ocr_s": 0.09889230000044336
+        }
+      }
+    },
+    {
+      "filename": "frame_00945533.jpg",
+      "pts_s": 945.533333,
+      "match_confidence": 0.9982483983039856,
+      "tracking_s": 0.010809499999595573,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 220.2002139969354,
+          "ocr_s": 0.0659421000018483
+        }
+      }
+    },
+    {
+      "filename": "frame_00945567.jpg",
+      "pts_s": 945.566667,
+      "match_confidence": 0.9982431530952454,
+      "tracking_s": 0.010947999999189051,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 219.98548146139805,
+          "ocr_s": 0.06464830000186339
+        }
+      }
+    },
+    {
+      "filename": "frame_00945600.jpg",
+      "pts_s": 945.6,
+      "match_confidence": 0.9982431530952454,
+      "tracking_s": 0.011222799999814015,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.2002676972007,
+          "ocr_s": 0.06475130000035278
+        }
+      }
+    },
+    {
+      "filename": "frame_00945633.jpg",
+      "pts_s": 945.633333,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.010228600000118604,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.23208070387741,
+          "ocr_s": 0.06364010000106646
+        }
+      }
+    },
+    {
+      "filename": "frame_00945667.jpg",
+      "pts_s": 945.666667,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.010671600000932813,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.23670699886534,
+          "ocr_s": 0.06572960000266903
+        }
+      }
+    },
+    {
+      "filename": "frame_00945700.jpg",
+      "pts_s": 945.7,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.011237100003199885,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.12676726133455,
+          "ocr_s": 0.06469950000246172
+        }
+      }
+    },
+    {
+      "filename": "frame_00945733.jpg",
+      "pts_s": 945.733333,
+      "match_confidence": 0.9982484579086304,
+      "tracking_s": 0.010808399998495588,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.127647609303,
+          "ocr_s": 0.06645570000182488
+        }
+      }
+    },
+    {
+      "filename": "frame_00945767.jpg",
+      "pts_s": 945.766667,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.010633000001689652,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.127647609303,
+          "ocr_s": 0.06851800000004005
+        }
+      }
+    },
+    {
+      "filename": "frame_00945800.jpg",
+      "pts_s": 945.8,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.011179200002516154,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.12960730710577,
+          "ocr_s": 0.0666916999980458
+        }
+      }
+    },
+    {
+      "filename": "frame_00945833.jpg",
+      "pts_s": 945.833333,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.010259700000460725,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.13914434441753,
+          "ocr_s": 0.06450490000133868
+        }
+      }
+    },
+    {
+      "filename": "frame_00945867.jpg",
+      "pts_s": 945.866667,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.010473599999386352,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.11648622718138,
+          "ocr_s": 0.06710050000037882
+        }
+      }
+    },
+    {
+      "filename": "frame_00945900.jpg",
+      "pts_s": 945.9,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.010441599999467144,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.14641937943023,
+          "ocr_s": 0.06657049999921583
+        }
+      }
+    },
+    {
+      "filename": "frame_00945933.jpg",
+      "pts_s": 945.933333,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.011164999999891734,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.14641937943023,
+          "ocr_s": 0.0669168999993417
+        }
+      }
+    },
+    {
+      "filename": "frame_00945967.jpg",
+      "pts_s": 945.966667,
+      "match_confidence": 0.9982424378395081,
+      "tracking_s": 0.010776600000099279,
+      "observations": {
+        "tracked": {
+          "box": [
+            44,
+            547,
+            865,
+            571
+          ],
+          "text": "",
+          "sharpness": 218.14641937943023,
+          "ocr_s": 0.06509490000098594
+        }
+      }
+    }
+  ],
+  "motion": [
+    {
+      "filename": "frame_00480000.jpg",
+      "pts_s": 480.0,
+      "match_confidence": 0.9999940991401672,
+      "tracking_s": 0.010826500001712702,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07063510000079987
+        }
+      }
+    },
+    {
+      "filename": "frame_00480033.jpg",
+      "pts_s": 480.033333,
+      "match_confidence": 0.9998707175254822,
+      "tracking_s": 0.010420099999464583,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.0703256999986479
+        }
+      }
+    },
+    {
+      "filename": "frame_00480067.jpg",
+      "pts_s": 480.066667,
+      "match_confidence": 0.9999040961265564,
+      "tracking_s": 0.010696000001189532,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07108900000093854
+        }
+      }
+    },
+    {
+      "filename": "frame_00480100.jpg",
+      "pts_s": 480.1,
+      "match_confidence": 0.9998581409454346,
+      "tracking_s": 0.010753200000181096,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07150470000124187
+        }
+      }
+    },
+    {
+      "filename": "frame_00480133.jpg",
+      "pts_s": 480.133333,
+      "match_confidence": 0.9997983574867249,
+      "tracking_s": 0.010445399999298388,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07074139999895124
+        }
+      }
+    },
+    {
+      "filename": "frame_00480167.jpg",
+      "pts_s": 480.166667,
+      "match_confidence": 0.9997983574867249,
+      "tracking_s": 0.010991800001647789,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07226910000099451
+        }
+      }
+    },
+    {
+      "filename": "frame_00480200.jpg",
+      "pts_s": 480.2,
+      "match_confidence": 0.9997983574867249,
+      "tracking_s": 0.011172499998792773,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07329519999984768
+        }
+      }
+    },
+    {
+      "filename": "frame_00480233.jpg",
+      "pts_s": 480.233333,
+      "match_confidence": 0.9997983574867249,
+      "tracking_s": 0.011362200002622558,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07132930000079796
+        }
+      }
+    },
+    {
+      "filename": "frame_00480267.jpg",
+      "pts_s": 480.266667,
+      "match_confidence": 0.9997983574867249,
+      "tracking_s": 0.010725100000854582,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07038879999890924
+        }
+      }
+    },
+    {
+      "filename": "frame_00480300.jpg",
+      "pts_s": 480.3,
+      "match_confidence": 0.9997983574867249,
+      "tracking_s": 0.01097950000257697,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07006850000107079
+        }
+      }
+    },
+    {
+      "filename": "frame_00480333.jpg",
+      "pts_s": 480.333333,
+      "match_confidence": 0.999808132648468,
+      "tracking_s": 0.010604999999486608,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.06857429999945452
+        }
+      }
+    },
+    {
+      "filename": "frame_00480367.jpg",
+      "pts_s": 480.366667,
+      "match_confidence": 0.9997637271881104,
+      "tracking_s": 0.010917499999777647,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.06835769999815966
+        }
+      }
+    },
+    {
+      "filename": "frame_00480400.jpg",
+      "pts_s": 480.4,
+      "match_confidence": 0.9997912049293518,
+      "tracking_s": 0.010297799999534618,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07152700000006007
+        }
+      }
+    },
+    {
+      "filename": "frame_00480433.jpg",
+      "pts_s": 480.433333,
+      "match_confidence": 0.9997660517692566,
+      "tracking_s": 0.010906100000283914,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.06991970000308356
+        }
+      }
+    },
+    {
+      "filename": "frame_00480467.jpg",
+      "pts_s": 480.466667,
+      "match_confidence": 0.9997602105140686,
+      "tracking_s": 0.01072070000009262,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07042339999679825
+        }
+      }
+    },
+    {
+      "filename": "frame_00480500.jpg",
+      "pts_s": 480.5,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.01049090000014985,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.06785319999835338
+        }
+      }
+    },
+    {
+      "filename": "frame_00480533.jpg",
+      "pts_s": 480.533333,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.010547500001848675,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.0702010999993945
+        }
+      }
+    },
+    {
+      "filename": "frame_00480567.jpg",
+      "pts_s": 480.566667,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.01009649999832618,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.06773579999935464
+        }
+      }
+    },
+    {
+      "filename": "frame_00480600.jpg",
+      "pts_s": 480.6,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.010499300002265954,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07066470000063418
+        }
+      }
+    },
+    {
+      "filename": "frame_00480633.jpg",
+      "pts_s": 480.633333,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.01062889999957406,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07157379999989644
+        }
+      }
+    },
+    {
+      "filename": "frame_00480667.jpg",
+      "pts_s": 480.666667,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.010781599998153979,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.06873189999896567
+        }
+      }
+    },
+    {
+      "filename": "frame_00480700.jpg",
+      "pts_s": 480.7,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.01158420000137994,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07109520000085467
+        }
+      }
+    },
+    {
+      "filename": "frame_00480733.jpg",
+      "pts_s": 480.733333,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.01054170000134036,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.0710735000029672
+        }
+      }
+    },
+    {
+      "filename": "frame_00480767.jpg",
+      "pts_s": 480.766667,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.010159699999348959,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07283930000266992
+        }
+      }
+    },
+    {
+      "filename": "frame_00480800.jpg",
+      "pts_s": 480.8,
+      "match_confidence": 0.9997326135635376,
+      "tracking_s": 0.010760799999843584,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 9047.928342337951,
+          "ocr_s": 0.07387670000025537
+        }
+      }
+    },
+    {
+      "filename": "frame_00480833.jpg",
+      "pts_s": 480.833333,
+      "match_confidence": 0.37982112169265747,
+      "tracking_s": 0.010878899996896507,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00480867.jpg",
+      "pts_s": 480.866667,
+      "match_confidence": 0.3814511299133301,
+      "tracking_s": 0.011071900000388268,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00480900.jpg",
+      "pts_s": 480.9,
+      "match_confidence": 0.3815056085586548,
+      "tracking_s": 0.011287900000752416,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00480933.jpg",
+      "pts_s": 480.933333,
+      "match_confidence": 0.3600318431854248,
+      "tracking_s": 0.01096980000147596,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00480967.jpg",
+      "pts_s": 480.966667,
+      "match_confidence": 0.35977548360824585,
+      "tracking_s": 0.010601300000416813,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481000.jpg",
+      "pts_s": 481.0,
+      "match_confidence": 0.35977408289909363,
+      "tracking_s": 0.011037899999791989,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481033.jpg",
+      "pts_s": 481.033333,
+      "match_confidence": 0.35973984003067017,
+      "tracking_s": 0.010825299999851268,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481067.jpg",
+      "pts_s": 481.066667,
+      "match_confidence": 0.35973984003067017,
+      "tracking_s": 0.011357899998984067,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481100.jpg",
+      "pts_s": 481.1,
+      "match_confidence": 0.3597545325756073,
+      "tracking_s": 0.010279500002070563,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481133.jpg",
+      "pts_s": 481.133333,
+      "match_confidence": 0.3597545325756073,
+      "tracking_s": 0.011830800001916941,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481167.jpg",
+      "pts_s": 481.166667,
+      "match_confidence": 0.3597545325756073,
+      "tracking_s": 0.011063899997679982,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481200.jpg",
+      "pts_s": 481.2,
+      "match_confidence": 0.3598296344280243,
+      "tracking_s": 0.010730699999839999,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481233.jpg",
+      "pts_s": 481.233333,
+      "match_confidence": 0.3597545325756073,
+      "tracking_s": 0.011166500000399537,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481267.jpg",
+      "pts_s": 481.266667,
+      "match_confidence": 0.3597545325756073,
+      "tracking_s": 0.010869600002479274,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481300.jpg",
+      "pts_s": 481.3,
+      "match_confidence": 0.3597559630870819,
+      "tracking_s": 0.0106623000028776,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481333.jpg",
+      "pts_s": 481.333333,
+      "match_confidence": 0.3597545325756073,
+      "tracking_s": 0.010712200000853045,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481367.jpg",
+      "pts_s": 481.366667,
+      "match_confidence": 0.35974860191345215,
+      "tracking_s": 0.011300900001515402,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481400.jpg",
+      "pts_s": 481.4,
+      "match_confidence": 0.35970091819763184,
+      "tracking_s": 0.010907200001383899,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481433.jpg",
+      "pts_s": 481.433333,
+      "match_confidence": 0.359706848859787,
+      "tracking_s": 0.010429199999634875,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481467.jpg",
+      "pts_s": 481.466667,
+      "match_confidence": 0.359706848859787,
+      "tracking_s": 0.011002900002495153,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481500.jpg",
+      "pts_s": 481.5,
+      "match_confidence": 0.3597024977207184,
+      "tracking_s": 0.01119730000209529,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481533.jpg",
+      "pts_s": 481.533333,
+      "match_confidence": 0.3597024977207184,
+      "tracking_s": 0.010676500001864042,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481567.jpg",
+      "pts_s": 481.566667,
+      "match_confidence": 0.3597024977207184,
+      "tracking_s": 0.01105930000267108,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481600.jpg",
+      "pts_s": 481.6,
+      "match_confidence": 0.359703928232193,
+      "tracking_s": 0.010506599999644095,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481633.jpg",
+      "pts_s": 481.633333,
+      "match_confidence": 0.3597024977207184,
+      "tracking_s": 0.010942100001557264,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481667.jpg",
+      "pts_s": 481.666667,
+      "match_confidence": 0.359703928232193,
+      "tracking_s": 0.010373400000389665,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481700.jpg",
+      "pts_s": 481.7,
+      "match_confidence": 0.359703928232193,
+      "tracking_s": 0.01075230000060401,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481733.jpg",
+      "pts_s": 481.733333,
+      "match_confidence": 0.359703928232193,
+      "tracking_s": 0.010542500000155997,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481767.jpg",
+      "pts_s": 481.766667,
+      "match_confidence": 0.359703928232193,
+      "tracking_s": 0.010458600001584273,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481800.jpg",
+      "pts_s": 481.8,
+      "match_confidence": 0.359703928232193,
+      "tracking_s": 0.010797300001286203,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481833.jpg",
+      "pts_s": 481.833333,
+      "match_confidence": 0.359703928232193,
+      "tracking_s": 0.010930299999017734,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481867.jpg",
+      "pts_s": 481.866667,
+      "match_confidence": 0.3597024977207184,
+      "tracking_s": 0.01082460000179708,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481900.jpg",
+      "pts_s": 481.9,
+      "match_confidence": 0.359703928232193,
+      "tracking_s": 0.010372700002335478,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00481933.jpg",
+      "pts_s": 481.933333,
+      "match_confidence": 0.9946703314781189,
+      "tracking_s": 0.010671100000763545,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8764.010510315788,
+          "ocr_s": 0.06837700000323821
+        }
+      }
+    },
+    {
+      "filename": "frame_00481967.jpg",
+      "pts_s": 481.966667,
+      "match_confidence": 0.9946897029876709,
+      "tracking_s": 0.010344499998609535,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8763.682089263157,
+          "ocr_s": 0.06896749999941676
+        }
+      }
+    },
+    {
+      "filename": "frame_00482000.jpg",
+      "pts_s": 482.0,
+      "match_confidence": 0.9946786165237427,
+      "tracking_s": 0.011189699998794822,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.07071249999717111
+        }
+      }
+    },
+    {
+      "filename": "frame_00482033.jpg",
+      "pts_s": 482.033333,
+      "match_confidence": 0.994687020778656,
+      "tracking_s": 0.010127200002898462,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06914920000053826
+        }
+      }
+    },
+    {
+      "filename": "frame_00482067.jpg",
+      "pts_s": 482.066667,
+      "match_confidence": 0.994687020778656,
+      "tracking_s": 0.010416199998871889,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.0696048999998311
+        }
+      }
+    },
+    {
+      "filename": "frame_00482100.jpg",
+      "pts_s": 482.1,
+      "match_confidence": 0.9946702718734741,
+      "tracking_s": 0.010553100000834092,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.07246649999797228
+        }
+      }
+    },
+    {
+      "filename": "frame_00482133.jpg",
+      "pts_s": 482.133333,
+      "match_confidence": 0.9946867823600769,
+      "tracking_s": 0.011005000000295695,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06804840000040713
+        }
+      }
+    },
+    {
+      "filename": "frame_00482167.jpg",
+      "pts_s": 482.166667,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.010146100001293235,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.07040670000060345
+        }
+      }
+    },
+    {
+      "filename": "frame_00482200.jpg",
+      "pts_s": 482.2,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010263299998769071,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06929749999835622
+        }
+      }
+    },
+    {
+      "filename": "frame_00482233.jpg",
+      "pts_s": 482.233333,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010252199997921707,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.07017400000040652
+        }
+      }
+    },
+    {
+      "filename": "frame_00482267.jpg",
+      "pts_s": 482.266667,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.01099160000012489,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06674150000253576
+        }
+      }
+    },
+    {
+      "filename": "frame_00482300.jpg",
+      "pts_s": 482.3,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010632200002874015,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.08005860000048415
+        }
+      }
+    },
+    {
+      "filename": "frame_00482333.jpg",
+      "pts_s": 482.333333,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010244599998259218,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06811970000126166
+        }
+      }
+    },
+    {
+      "filename": "frame_00482367.jpg",
+      "pts_s": 482.366667,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.010376100002758903,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.07086960000015097
+        }
+      }
+    },
+    {
+      "filename": "frame_00482400.jpg",
+      "pts_s": 482.4,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.010605899999063695,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06861550000030547
+        }
+      }
+    },
+    {
+      "filename": "frame_00482433.jpg",
+      "pts_s": 482.433333,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.011024999999790452,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06803020000006654
+        }
+      }
+    },
+    {
+      "filename": "frame_00482467.jpg",
+      "pts_s": 482.466667,
+      "match_confidence": 0.9947090148925781,
+      "tracking_s": 0.010398200000054203,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06924349999826518
+        }
+      }
+    },
+    {
+      "filename": "frame_00482500.jpg",
+      "pts_s": 482.5,
+      "match_confidence": 0.9947090148925781,
+      "tracking_s": 0.010800700001709629,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06908889999976964
+        }
+      }
+    },
+    {
+      "filename": "frame_00482533.jpg",
+      "pts_s": 482.533333,
+      "match_confidence": 0.9947090148925781,
+      "tracking_s": 0.010591199999907985,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06948610000108602
+        }
+      }
+    },
+    {
+      "filename": "frame_00482567.jpg",
+      "pts_s": 482.566667,
+      "match_confidence": 0.9947090148925781,
+      "tracking_s": 0.010186600000452017,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06859649999751127
+        }
+      }
+    },
+    {
+      "filename": "frame_00482600.jpg",
+      "pts_s": 482.6,
+      "match_confidence": 0.9947090148925781,
+      "tracking_s": 0.010423499999888008,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.07023269999990589
+        }
+      }
+    },
+    {
+      "filename": "frame_00482633.jpg",
+      "pts_s": 482.633333,
+      "match_confidence": 0.9947090148925781,
+      "tracking_s": 0.010199200001807185,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.06900999999925261
+        }
+      }
+    },
+    {
+      "filename": "frame_00482667.jpg",
+      "pts_s": 482.666667,
+      "match_confidence": 0.9947090148925781,
+      "tracking_s": 0.010383199998614145,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.236405052632,
+          "ocr_s": 0.0666577000010875
+        }
+      }
+    },
+    {
+      "filename": "frame_00482700.jpg",
+      "pts_s": 482.7,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.01057579999906011,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07136990000071819
+        }
+      }
+    },
+    {
+      "filename": "frame_00482733.jpg",
+      "pts_s": 482.733333,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010538799997448223,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07031869999991613
+        }
+      }
+    },
+    {
+      "filename": "frame_00482767.jpg",
+      "pts_s": 482.766667,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.010639799998898525,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.06926519999979064
+        }
+      }
+    },
+    {
+      "filename": "frame_00482800.jpg",
+      "pts_s": 482.8,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.010548099999141414,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07160649999786983
+        }
+      }
+    },
+    {
+      "filename": "frame_00482833.jpg",
+      "pts_s": 482.833333,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.010252600000967504,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.06970030000229599
+        }
+      }
+    },
+    {
+      "filename": "frame_00482867.jpg",
+      "pts_s": 482.866667,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010922800000116695,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07266959999833489
+        }
+      }
+    },
+    {
+      "filename": "frame_00482900.jpg",
+      "pts_s": 482.9,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010379900002590148,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07244319999881554
+        }
+      }
+    },
+    {
+      "filename": "frame_00482933.jpg",
+      "pts_s": 482.933333,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010968599999614526,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07262749999790685
+        }
+      }
+    },
+    {
+      "filename": "frame_00482967.jpg",
+      "pts_s": 482.966667,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.011058100000809645,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07423460000063642
+        }
+      }
+    },
+    {
+      "filename": "frame_00483000.jpg",
+      "pts_s": 483.0,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010132399998838082,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.0725778000014543
+        }
+      }
+    },
+    {
+      "filename": "frame_00483033.jpg",
+      "pts_s": 483.033333,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010651799999322975,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07230409999829135
+        }
+      }
+    },
+    {
+      "filename": "frame_00483067.jpg",
+      "pts_s": 483.066667,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010474599999724887,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.08193409999876167
+        }
+      }
+    },
+    {
+      "filename": "frame_00483100.jpg",
+      "pts_s": 483.1,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.01078849999976228,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07108640000296873
+        }
+      }
+    },
+    {
+      "filename": "frame_00483133.jpg",
+      "pts_s": 483.133333,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010401600000477629,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07133030000113649
+        }
+      }
+    },
+    {
+      "filename": "frame_00483167.jpg",
+      "pts_s": 483.166667,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010271099999954458,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07037670000136131
+        }
+      }
+    },
+    {
+      "filename": "frame_00483200.jpg",
+      "pts_s": 483.2,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010254100001475308,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07171710000329767
+        }
+      }
+    },
+    {
+      "filename": "frame_00483233.jpg",
+      "pts_s": 483.233333,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.011293400002614362,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07066910000139615
+        }
+      }
+    },
+    {
+      "filename": "frame_00483267.jpg",
+      "pts_s": 483.266667,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010905499999353196,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.06981140000061714
+        }
+      }
+    },
+    {
+      "filename": "frame_00483300.jpg",
+      "pts_s": 483.3,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010552900002949173,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07126699999935227
+        }
+      }
+    },
+    {
+      "filename": "frame_00483333.jpg",
+      "pts_s": 483.333333,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010692500000004657,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07021399999939604
+        }
+      }
+    },
+    {
+      "filename": "frame_00483367.jpg",
+      "pts_s": 483.366667,
+      "match_confidence": 0.9947006702423096,
+      "tracking_s": 0.010399999999208376,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.06914870000036899
+        }
+      }
+    },
+    {
+      "filename": "frame_00483400.jpg",
+      "pts_s": 483.4,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.01051059999736026,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07052830000247923
+        }
+      }
+    },
+    {
+      "filename": "frame_00483433.jpg",
+      "pts_s": 483.433333,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.010426799999549985,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07013179999921704
+        }
+      }
+    },
+    {
+      "filename": "frame_00483467.jpg",
+      "pts_s": 483.466667,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.010654199999407865,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.06918339999901946
+        }
+      }
+    },
+    {
+      "filename": "frame_00483500.jpg",
+      "pts_s": 483.5,
+      "match_confidence": 0.994692325592041,
+      "tracking_s": 0.011070600001403363,
+      "observations": {
+        "tracked": {
+          "box": [
+            750,
+            142,
+            1000,
+            180
+          ],
+          "text": "Downloading Git",
+          "sharpness": 8762.415141894737,
+          "ocr_s": 0.07016959999964456
+        }
+      }
+    },
+    {
+      "filename": "frame_00483533.jpg",
+      "pts_s": 483.533333,
+      "match_confidence": 0.6990457773208618,
+      "tracking_s": 0.010609800003294367,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483567.jpg",
+      "pts_s": 483.566667,
+      "match_confidence": 0.6468790173530579,
+      "tracking_s": 0.010240100000373786,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483600.jpg",
+      "pts_s": 483.6,
+      "match_confidence": 0.4990008771419525,
+      "tracking_s": 0.010288599998602876,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483633.jpg",
+      "pts_s": 483.633333,
+      "match_confidence": 0.5005849003791809,
+      "tracking_s": 0.010404800003016135,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483667.jpg",
+      "pts_s": 483.666667,
+      "match_confidence": 0.49982360005378723,
+      "tracking_s": 0.010081799999170471,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483700.jpg",
+      "pts_s": 483.7,
+      "match_confidence": 0.4982401132583618,
+      "tracking_s": 0.010308800003258511,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483733.jpg",
+      "pts_s": 483.733333,
+      "match_confidence": 0.4972306191921234,
+      "tracking_s": 0.010251600000628969,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483767.jpg",
+      "pts_s": 483.766667,
+      "match_confidence": 0.4953886568546295,
+      "tracking_s": 0.010271599996485747,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483800.jpg",
+      "pts_s": 483.8,
+      "match_confidence": 0.49427175521850586,
+      "tracking_s": 0.010562399998889305,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483833.jpg",
+      "pts_s": 483.833333,
+      "match_confidence": 0.4954374134540558,
+      "tracking_s": 0.010964500001136912,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483867.jpg",
+      "pts_s": 483.866667,
+      "match_confidence": 0.49726974964141846,
+      "tracking_s": 0.010558000001765322,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483900.jpg",
+      "pts_s": 483.9,
+      "match_confidence": 0.49814173579216003,
+      "tracking_s": 0.010078299997985596,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483933.jpg",
+      "pts_s": 483.933333,
+      "match_confidence": 0.500071108341217,
+      "tracking_s": 0.0104207000003953,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483967.jpg",
+      "pts_s": 483.966667,
+      "match_confidence": 0.5036285519599915,
+      "tracking_s": 0.010562400002527284,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484000.jpg",
+      "pts_s": 484.0,
+      "match_confidence": 0.5037295818328857,
+      "tracking_s": 0.010729500001616543,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484033.jpg",
+      "pts_s": 484.033333,
+      "match_confidence": 0.48718351125717163,
+      "tracking_s": 0.01001410000026226,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484067.jpg",
+      "pts_s": 484.066667,
+      "match_confidence": 0.48453661799430847,
+      "tracking_s": 0.01043059999938123,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484100.jpg",
+      "pts_s": 484.1,
+      "match_confidence": 0.47982344031333923,
+      "tracking_s": 0.010534000000916421,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484133.jpg",
+      "pts_s": 484.133333,
+      "match_confidence": 0.47178101539611816,
+      "tracking_s": 0.01067220000186353,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484167.jpg",
+      "pts_s": 484.166667,
+      "match_confidence": 0.4658763110637665,
+      "tracking_s": 0.010735300002124859,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484200.jpg",
+      "pts_s": 484.2,
+      "match_confidence": 0.4573146402835846,
+      "tracking_s": 0.010866900000110036,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484233.jpg",
+      "pts_s": 484.233333,
+      "match_confidence": 0.45562943816185,
+      "tracking_s": 0.010630500000843313,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484267.jpg",
+      "pts_s": 484.266667,
+      "match_confidence": 0.4573186933994293,
+      "tracking_s": 0.010921299999608891,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484300.jpg",
+      "pts_s": 484.3,
+      "match_confidence": 0.45784062147140503,
+      "tracking_s": 0.010129899997991743,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484333.jpg",
+      "pts_s": 484.333333,
+      "match_confidence": 0.4590107500553131,
+      "tracking_s": 0.010484099999302998,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484367.jpg",
+      "pts_s": 484.366667,
+      "match_confidence": 0.4579012393951416,
+      "tracking_s": 0.010633399997459492,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484400.jpg",
+      "pts_s": 484.4,
+      "match_confidence": 0.4562087059020996,
+      "tracking_s": 0.011533100001543062,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484433.jpg",
+      "pts_s": 484.433333,
+      "match_confidence": 0.45731082558631897,
+      "tracking_s": 0.010823699998582015,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484467.jpg",
+      "pts_s": 484.466667,
+      "match_confidence": 0.4592241942882538,
+      "tracking_s": 0.010170599998673424,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484500.jpg",
+      "pts_s": 484.5,
+      "match_confidence": 0.4605700373649597,
+      "tracking_s": 0.011066499999287771,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484533.jpg",
+      "pts_s": 484.533333,
+      "match_confidence": 0.4607589542865753,
+      "tracking_s": 0.010351599998102756,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484567.jpg",
+      "pts_s": 484.566667,
+      "match_confidence": 0.4627472162246704,
+      "tracking_s": 0.010469500000908738,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484600.jpg",
+      "pts_s": 484.6,
+      "match_confidence": 0.46337780356407166,
+      "tracking_s": 0.010867499997402774,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484633.jpg",
+      "pts_s": 484.633333,
+      "match_confidence": 0.46338948607444763,
+      "tracking_s": 0.010388999999122461,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484667.jpg",
+      "pts_s": 484.666667,
+      "match_confidence": 0.4633757472038269,
+      "tracking_s": 0.010682499996619299,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484700.jpg",
+      "pts_s": 484.7,
+      "match_confidence": 0.4633709192276001,
+      "tracking_s": 0.010253199998260243,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484733.jpg",
+      "pts_s": 484.733333,
+      "match_confidence": 0.46337828040122986,
+      "tracking_s": 0.009862300001259428,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484767.jpg",
+      "pts_s": 484.766667,
+      "match_confidence": 0.4633735716342926,
+      "tracking_s": 0.01038189999962924,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484800.jpg",
+      "pts_s": 484.8,
+      "match_confidence": 0.46337616443634033,
+      "tracking_s": 0.011023799997929018,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484833.jpg",
+      "pts_s": 484.833333,
+      "match_confidence": 0.46338963508605957,
+      "tracking_s": 0.010235199999442557,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484867.jpg",
+      "pts_s": 484.866667,
+      "match_confidence": 0.4633922874927521,
+      "tracking_s": 0.010257199999614386,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484900.jpg",
+      "pts_s": 484.9,
+      "match_confidence": 0.4633922874927521,
+      "tracking_s": 0.010236000001896173,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484933.jpg",
+      "pts_s": 484.933333,
+      "match_confidence": 0.4633922874927521,
+      "tracking_s": 0.010238500002742512,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484967.jpg",
+      "pts_s": 484.966667,
+      "match_confidence": 0.4633922874927521,
+      "tracking_s": 0.010218999999779044,
+      "observations": {}
+    }
+  ],
+  "occlusion": [
+    {
+      "filename": "frame_00483300.jpg",
+      "pts_s": 483.3,
+      "match_confidence": 0.9999997019767761,
+      "tracking_s": 0.008921299999201437,
+      "observations": {
+        "tracked": {
+          "box": [
+            586,
+            247,
+            665,
+            266
+          ],
+          "text": "\u2018Community",
+          "sharpness": 17923.989040395456,
+          "ocr_s": 0.0660057000022789
+        }
+      }
+    },
+    {
+      "filename": "frame_00483333.jpg",
+      "pts_s": 483.333333,
+      "match_confidence": 0.9999997019767761,
+      "tracking_s": 0.009107600002607796,
+      "observations": {
+        "tracked": {
+          "box": [
+            586,
+            247,
+            665,
+            266
+          ],
+          "text": "\u2018Community",
+          "sharpness": 17923.989040395456,
+          "ocr_s": 0.0662947000018903
+        }
+      }
+    },
+    {
+      "filename": "frame_00483367.jpg",
+      "pts_s": 483.366667,
+      "match_confidence": 0.9999997019767761,
+      "tracking_s": 0.008994400002848124,
+      "observations": {
+        "tracked": {
+          "box": [
+            586,
+            247,
+            665,
+            266
+          ],
+          "text": "\u2018Community",
+          "sharpness": 17923.989040395456,
+          "ocr_s": 0.0650056999984372
+        }
+      }
+    },
+    {
+      "filename": "frame_00483400.jpg",
+      "pts_s": 483.4,
+      "match_confidence": 0.9999997019767761,
+      "tracking_s": 0.008967100002337247,
+      "observations": {
+        "tracked": {
+          "box": [
+            586,
+            247,
+            665,
+            266
+          ],
+          "text": "\u2018Community",
+          "sharpness": 17923.989040395456,
+          "ocr_s": 0.06603999999788357
+        }
+      }
+    },
+    {
+      "filename": "frame_00483433.jpg",
+      "pts_s": 483.433333,
+      "match_confidence": 0.9999997019767761,
+      "tracking_s": 0.009267699999327306,
+      "observations": {
+        "tracked": {
+          "box": [
+            586,
+            247,
+            665,
+            266
+          ],
+          "text": "\u2018Community",
+          "sharpness": 17923.989040395456,
+          "ocr_s": 0.06486060000315774
+        }
+      }
+    },
+    {
+      "filename": "frame_00483467.jpg",
+      "pts_s": 483.466667,
+      "match_confidence": 0.9999997019767761,
+      "tracking_s": 0.009121800001594238,
+      "observations": {
+        "tracked": {
+          "box": [
+            586,
+            247,
+            665,
+            266
+          ],
+          "text": "\u2018Community",
+          "sharpness": 17923.989040395456,
+          "ocr_s": 0.06639160000122502
+        }
+      }
+    },
+    {
+      "filename": "frame_00483500.jpg",
+      "pts_s": 483.5,
+      "match_confidence": 0.9999997019767761,
+      "tracking_s": 0.008800100000371458,
+      "observations": {
+        "tracked": {
+          "box": [
+            586,
+            247,
+            665,
+            266
+          ],
+          "text": "\u2018Community",
+          "sharpness": 17923.989040395456,
+          "ocr_s": 0.06498740000097314
+        }
+      }
+    },
+    {
+      "filename": "frame_00483533.jpg",
+      "pts_s": 483.533333,
+      "match_confidence": 0.6709725856781006,
+      "tracking_s": 0.00890599999911501,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483567.jpg",
+      "pts_s": 483.566667,
+      "match_confidence": 0.5630912780761719,
+      "tracking_s": 0.008928499999456108,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483600.jpg",
+      "pts_s": 483.6,
+      "match_confidence": 0.5702605247497559,
+      "tracking_s": 0.009018799999466864,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483633.jpg",
+      "pts_s": 483.633333,
+      "match_confidence": 0.5888670086860657,
+      "tracking_s": 0.008979899997939356,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483667.jpg",
+      "pts_s": 483.666667,
+      "match_confidence": 0.5932244062423706,
+      "tracking_s": 0.00891310000224621,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483700.jpg",
+      "pts_s": 483.7,
+      "match_confidence": 0.5900260210037231,
+      "tracking_s": 0.008941400003095623,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483733.jpg",
+      "pts_s": 483.733333,
+      "match_confidence": 0.575366199016571,
+      "tracking_s": 0.008997599998110672,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483767.jpg",
+      "pts_s": 483.766667,
+      "match_confidence": 0.5801979899406433,
+      "tracking_s": 0.009012399998027831,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483800.jpg",
+      "pts_s": 483.8,
+      "match_confidence": 0.5653403997421265,
+      "tracking_s": 0.00905639999837149,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483833.jpg",
+      "pts_s": 483.833333,
+      "match_confidence": 0.5417259335517883,
+      "tracking_s": 0.008864799998264061,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483867.jpg",
+      "pts_s": 483.866667,
+      "match_confidence": 0.5345001220703125,
+      "tracking_s": 0.008793199998763157,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483900.jpg",
+      "pts_s": 483.9,
+      "match_confidence": 0.5089955925941467,
+      "tracking_s": 0.008819200000289129,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483933.jpg",
+      "pts_s": 483.933333,
+      "match_confidence": 0.48285236954689026,
+      "tracking_s": 0.008864600000379141,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00483967.jpg",
+      "pts_s": 483.966667,
+      "match_confidence": 0.5047321915626526,
+      "tracking_s": 0.009192900000925874,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484000.jpg",
+      "pts_s": 484.0,
+      "match_confidence": 0.5017488598823547,
+      "tracking_s": 0.009173499998723855,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484033.jpg",
+      "pts_s": 484.033333,
+      "match_confidence": 0.530287504196167,
+      "tracking_s": 0.009194300000672229,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484067.jpg",
+      "pts_s": 484.066667,
+      "match_confidence": 0.5412579774856567,
+      "tracking_s": 0.00861839999924996,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484100.jpg",
+      "pts_s": 484.1,
+      "match_confidence": 0.5436828136444092,
+      "tracking_s": 0.008730599998671096,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484133.jpg",
+      "pts_s": 484.133333,
+      "match_confidence": 0.5271705985069275,
+      "tracking_s": 0.009240700001100777,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484167.jpg",
+      "pts_s": 484.166667,
+      "match_confidence": 0.5456551313400269,
+      "tracking_s": 0.008928100000048289,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484200.jpg",
+      "pts_s": 484.2,
+      "match_confidence": 0.5471950769424438,
+      "tracking_s": 0.009356300000945339,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484233.jpg",
+      "pts_s": 484.233333,
+      "match_confidence": 0.5966696739196777,
+      "tracking_s": 0.009001999998872634,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484267.jpg",
+      "pts_s": 484.266667,
+      "match_confidence": 0.5838760137557983,
+      "tracking_s": 0.008887800002412405,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484300.jpg",
+      "pts_s": 484.3,
+      "match_confidence": 0.55174720287323,
+      "tracking_s": 0.008867600001394749,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484333.jpg",
+      "pts_s": 484.333333,
+      "match_confidence": 0.5092630982398987,
+      "tracking_s": 0.009055400001670932,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484367.jpg",
+      "pts_s": 484.366667,
+      "match_confidence": 0.5087220072746277,
+      "tracking_s": 0.009161599999060854,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484400.jpg",
+      "pts_s": 484.4,
+      "match_confidence": 0.5099583864212036,
+      "tracking_s": 0.009068999999726657,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484433.jpg",
+      "pts_s": 484.433333,
+      "match_confidence": 0.4944889545440674,
+      "tracking_s": 0.00899790000039502,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484467.jpg",
+      "pts_s": 484.466667,
+      "match_confidence": 0.5179793238639832,
+      "tracking_s": 0.008817599999019876,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484500.jpg",
+      "pts_s": 484.5,
+      "match_confidence": 0.47832971811294556,
+      "tracking_s": 0.009112100000493228,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484533.jpg",
+      "pts_s": 484.533333,
+      "match_confidence": 0.478362113237381,
+      "tracking_s": 0.009131499999057269,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484567.jpg",
+      "pts_s": 484.566667,
+      "match_confidence": 0.4783421754837036,
+      "tracking_s": 0.009091799998714123,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484600.jpg",
+      "pts_s": 484.6,
+      "match_confidence": 0.4783475399017334,
+      "tracking_s": 0.008917700000893092,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484633.jpg",
+      "pts_s": 484.633333,
+      "match_confidence": 0.4783432185649872,
+      "tracking_s": 0.009162299997115042,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484667.jpg",
+      "pts_s": 484.666667,
+      "match_confidence": 0.47834083437919617,
+      "tracking_s": 0.008958900001744041,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484700.jpg",
+      "pts_s": 484.7,
+      "match_confidence": 0.47834351658821106,
+      "tracking_s": 0.00901019999946584,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484733.jpg",
+      "pts_s": 484.733333,
+      "match_confidence": 0.47834083437919617,
+      "tracking_s": 0.008898100000806153,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484767.jpg",
+      "pts_s": 484.766667,
+      "match_confidence": 0.47834083437919617,
+      "tracking_s": 0.00904409999930067,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484800.jpg",
+      "pts_s": 484.8,
+      "match_confidence": 0.47834083437919617,
+      "tracking_s": 0.008835200002067722,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484833.jpg",
+      "pts_s": 484.833333,
+      "match_confidence": 0.47834083437919617,
+      "tracking_s": 0.009084599998459453,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484867.jpg",
+      "pts_s": 484.866667,
+      "match_confidence": 0.47834083437919617,
+      "tracking_s": 0.008911400000215508,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484900.jpg",
+      "pts_s": 484.9,
+      "match_confidence": 0.47834014892578125,
+      "tracking_s": 0.009162199999991572,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484933.jpg",
+      "pts_s": 484.933333,
+      "match_confidence": 0.47833943367004395,
+      "tracking_s": 0.008858699999109376,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00484967.jpg",
+      "pts_s": 484.966667,
+      "match_confidence": 0.47834083437919617,
+      "tracking_s": 0.008908299998438451,
+      "observations": {}
+    }
+  ],
+  "brief": [
+    {
+      "filename": "frame_00576000.jpg",
+      "pts_s": 576.0,
+      "match_confidence": 0.9999930262565613,
+      "tracking_s": 0.010879299999942305,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26780.607987889594,
+          "ocr_s": 0.06650359999912325
+        }
+      }
+    },
+    {
+      "filename": "frame_00576033.jpg",
+      "pts_s": 576.033333,
+      "match_confidence": 0.9999303817749023,
+      "tracking_s": 0.010178099997574463,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26848.045962803764,
+          "ocr_s": 0.06488309999986086
+        }
+      }
+    },
+    {
+      "filename": "frame_00576067.jpg",
+      "pts_s": 576.066667,
+      "match_confidence": 0.9999716281890869,
+      "tracking_s": 0.010145500000362517,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26904.431374625623,
+          "ocr_s": 0.06833950000145705
+        }
+      }
+    },
+    {
+      "filename": "frame_00576100.jpg",
+      "pts_s": 576.1,
+      "match_confidence": 0.9999716281890869,
+      "tracking_s": 0.009864800002105767,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.0677280999989307
+        }
+      }
+    },
+    {
+      "filename": "frame_00576133.jpg",
+      "pts_s": 576.133333,
+      "match_confidence": 0.9999716281890869,
+      "tracking_s": 0.010765600000013364,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06630659999791533
+        }
+      }
+    },
+    {
+      "filename": "frame_00576167.jpg",
+      "pts_s": 576.166667,
+      "match_confidence": 0.9999716281890869,
+      "tracking_s": 0.010015899999416433,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.0656699999999546
+        }
+      }
+    },
+    {
+      "filename": "frame_00576200.jpg",
+      "pts_s": 576.2,
+      "match_confidence": 0.9999716281890869,
+      "tracking_s": 0.009917999999743188,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06641349999699742
+        }
+      }
+    },
+    {
+      "filename": "frame_00576233.jpg",
+      "pts_s": 576.233333,
+      "match_confidence": 0.9999583959579468,
+      "tracking_s": 0.009878000000753673,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06493670000054408
+        }
+      }
+    },
+    {
+      "filename": "frame_00576267.jpg",
+      "pts_s": 576.266667,
+      "match_confidence": 0.9973151683807373,
+      "tracking_s": 0.010143800001969794,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06675760000143782
+        }
+      }
+    },
+    {
+      "filename": "frame_00576300.jpg",
+      "pts_s": 576.3,
+      "match_confidence": 0.999772846698761,
+      "tracking_s": 0.01049319999947329,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06529299999965588
+        }
+      }
+    },
+    {
+      "filename": "frame_00576333.jpg",
+      "pts_s": 576.333333,
+      "match_confidence": 0.9999285936355591,
+      "tracking_s": 0.010833100001036655,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06755359999806387
+        }
+      }
+    },
+    {
+      "filename": "frame_00576367.jpg",
+      "pts_s": 576.366667,
+      "match_confidence": 0.9998950362205505,
+      "tracking_s": 0.009804900000744965,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.0653652000000875
+        }
+      }
+    },
+    {
+      "filename": "frame_00576400.jpg",
+      "pts_s": 576.4,
+      "match_confidence": 0.9998934268951416,
+      "tracking_s": 0.010237200000119628,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.07544469999993453
+        }
+      }
+    },
+    {
+      "filename": "frame_00576433.jpg",
+      "pts_s": 576.433333,
+      "match_confidence": 0.999875009059906,
+      "tracking_s": 0.010041800000180956,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06760389999908512
+        }
+      }
+    },
+    {
+      "filename": "frame_00576467.jpg",
+      "pts_s": 576.466667,
+      "match_confidence": 0.9998816847801208,
+      "tracking_s": 0.010455600000568666,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06583950000276673
+        }
+      }
+    },
+    {
+      "filename": "frame_00576500.jpg",
+      "pts_s": 576.5,
+      "match_confidence": 0.9998471140861511,
+      "tracking_s": 0.010494099999050377,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06800590000057127
+        }
+      }
+    },
+    {
+      "filename": "frame_00576533.jpg",
+      "pts_s": 576.533333,
+      "match_confidence": 0.9998674392700195,
+      "tracking_s": 0.010091000000102213,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06585719999930006
+        }
+      }
+    },
+    {
+      "filename": "frame_00576567.jpg",
+      "pts_s": 576.566667,
+      "match_confidence": 0.9998588562011719,
+      "tracking_s": 0.009724999999889405,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06522740000218619
+        }
+      }
+    },
+    {
+      "filename": "frame_00576600.jpg",
+      "pts_s": 576.6,
+      "match_confidence": 0.9998637437820435,
+      "tracking_s": 0.009961799998563947,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06352830000105314
+        }
+      }
+    },
+    {
+      "filename": "frame_00576633.jpg",
+      "pts_s": 576.633333,
+      "match_confidence": 0.9998562335968018,
+      "tracking_s": 0.010155500000109896,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06566219999876921
+        }
+      }
+    },
+    {
+      "filename": "frame_00576667.jpg",
+      "pts_s": 576.666667,
+      "match_confidence": 0.9998626708984375,
+      "tracking_s": 0.009899399999994785,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06441529999938211
+        }
+      }
+    },
+    {
+      "filename": "frame_00576700.jpg",
+      "pts_s": 576.7,
+      "match_confidence": 0.9998626708984375,
+      "tracking_s": 0.010731099999247817,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06562420000045677
+        }
+      }
+    },
+    {
+      "filename": "frame_00576733.jpg",
+      "pts_s": 576.733333,
+      "match_confidence": 0.9998693466186523,
+      "tracking_s": 0.00992709999991348,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06544260000009672
+        }
+      }
+    },
+    {
+      "filename": "frame_00576767.jpg",
+      "pts_s": 576.766667,
+      "match_confidence": 0.9998602867126465,
+      "tracking_s": 0.00998780000008992,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06554089999917778
+        }
+      }
+    },
+    {
+      "filename": "frame_00576800.jpg",
+      "pts_s": 576.8,
+      "match_confidence": 0.9998634457588196,
+      "tracking_s": 0.009949699997378048,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06530410000050324
+        }
+      }
+    },
+    {
+      "filename": "frame_00576833.jpg",
+      "pts_s": 576.833333,
+      "match_confidence": 0.9998634457588196,
+      "tracking_s": 0.01009649999832618,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06576399999903515
+        }
+      }
+    },
+    {
+      "filename": "frame_00576867.jpg",
+      "pts_s": 576.866667,
+      "match_confidence": 0.9998634457588196,
+      "tracking_s": 0.010451600002852501,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06615610000153538
+        }
+      }
+    },
+    {
+      "filename": "frame_00576900.jpg",
+      "pts_s": 576.9,
+      "match_confidence": 0.9998634457588196,
+      "tracking_s": 0.010327599997253856,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06820059999881778
+        }
+      }
+    },
+    {
+      "filename": "frame_00576933.jpg",
+      "pts_s": 576.933333,
+      "match_confidence": 0.9998752474784851,
+      "tracking_s": 0.010076499998831423,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06639670000004116
+        }
+      }
+    },
+    {
+      "filename": "frame_00576967.jpg",
+      "pts_s": 576.966667,
+      "match_confidence": 0.9998634457588196,
+      "tracking_s": 0.010053999998490326,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06523980000201846
+        }
+      }
+    },
+    {
+      "filename": "frame_00577000.jpg",
+      "pts_s": 577.0,
+      "match_confidence": 0.9998634457588196,
+      "tracking_s": 0.010044499998912215,
+      "observations": {
+        "tracked": {
+          "box": [
+            333,
+            498,
+            416,
+            512
+          ],
+          "text": "Git Bach Here",
+          "sharpness": 26992.101418706545,
+          "ocr_s": 0.06604030000016792
+        }
+      }
+    },
+    {
+      "filename": "frame_00577033.jpg",
+      "pts_s": 577.033333,
+      "match_confidence": 0.31656181812286377,
+      "tracking_s": 0.010679999999410938,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577067.jpg",
+      "pts_s": 577.066667,
+      "match_confidence": 0.31657224893569946,
+      "tracking_s": 0.009907299998303642,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577100.jpg",
+      "pts_s": 577.1,
+      "match_confidence": 0.3178168535232544,
+      "tracking_s": 0.01028799999767216,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577133.jpg",
+      "pts_s": 577.133333,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.01053180000235443,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577167.jpg",
+      "pts_s": 577.166667,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.010199699998338474,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577200.jpg",
+      "pts_s": 577.2,
+      "match_confidence": 0.31232109665870667,
+      "tracking_s": 0.010130700000445358,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577233.jpg",
+      "pts_s": 577.233333,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.01064079999923706,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577267.jpg",
+      "pts_s": 577.266667,
+      "match_confidence": 0.31232109665870667,
+      "tracking_s": 0.009788300001673633,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577300.jpg",
+      "pts_s": 577.3,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.010472899997694185,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577333.jpg",
+      "pts_s": 577.333333,
+      "match_confidence": 0.31232109665870667,
+      "tracking_s": 0.01017659999706666,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577367.jpg",
+      "pts_s": 577.366667,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.009885699997539632,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577400.jpg",
+      "pts_s": 577.4,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.010180299999774434,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577433.jpg",
+      "pts_s": 577.433333,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.009914400001434842,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577467.jpg",
+      "pts_s": 577.466667,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.010333199999877252,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577500.jpg",
+      "pts_s": 577.5,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.010913000001892215,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577533.jpg",
+      "pts_s": 577.533333,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.010624200000165729,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577567.jpg",
+      "pts_s": 577.566667,
+      "match_confidence": 0.31232109665870667,
+      "tracking_s": 0.010199200001807185,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577600.jpg",
+      "pts_s": 577.6,
+      "match_confidence": 0.31232771277427673,
+      "tracking_s": 0.01079119999849354,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577633.jpg",
+      "pts_s": 577.633333,
+      "match_confidence": 0.31232109665870667,
+      "tracking_s": 0.01035050000064075,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577667.jpg",
+      "pts_s": 577.666667,
+      "match_confidence": 0.312379390001297,
+      "tracking_s": 0.01014749999740161,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577700.jpg",
+      "pts_s": 577.7,
+      "match_confidence": 0.3177729845046997,
+      "tracking_s": 0.010170900000957772,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577733.jpg",
+      "pts_s": 577.733333,
+      "match_confidence": 0.31776461005210876,
+      "tracking_s": 0.009938799998053582,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577767.jpg",
+      "pts_s": 577.766667,
+      "match_confidence": 0.3177516758441925,
+      "tracking_s": 0.010569900001428323,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577800.jpg",
+      "pts_s": 577.8,
+      "match_confidence": 0.3177633583545685,
+      "tracking_s": 0.00996320000194828,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577833.jpg",
+      "pts_s": 577.833333,
+      "match_confidence": 0.5136042833328247,
+      "tracking_s": 0.010355900001741247,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577867.jpg",
+      "pts_s": 577.866667,
+      "match_confidence": 0.6323145031929016,
+      "tracking_s": 0.01010390000010375,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577900.jpg",
+      "pts_s": 577.9,
+      "match_confidence": 0.7597389817237854,
+      "tracking_s": 0.009880600002361462,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577933.jpg",
+      "pts_s": 577.933333,
+      "match_confidence": 0.7670074105262756,
+      "tracking_s": 0.009906300001603086,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00577967.jpg",
+      "pts_s": 577.966667,
+      "match_confidence": 0.7669901847839355,
+      "tracking_s": 0.010462300000654068,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578000.jpg",
+      "pts_s": 578.0,
+      "match_confidence": 0.7624241709709167,
+      "tracking_s": 0.010084999998070998,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578033.jpg",
+      "pts_s": 578.033333,
+      "match_confidence": 0.7561743855476379,
+      "tracking_s": 0.01064359999872977,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578067.jpg",
+      "pts_s": 578.066667,
+      "match_confidence": 0.7508978247642517,
+      "tracking_s": 0.010100600000441773,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578100.jpg",
+      "pts_s": 578.1,
+      "match_confidence": 0.7214081883430481,
+      "tracking_s": 0.01055139999880339,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578133.jpg",
+      "pts_s": 578.133333,
+      "match_confidence": 0.74366694688797,
+      "tracking_s": 0.010100499999680324,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578167.jpg",
+      "pts_s": 578.166667,
+      "match_confidence": 0.6955021023750305,
+      "tracking_s": 0.01006760000018403,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578200.jpg",
+      "pts_s": 578.2,
+      "match_confidence": 0.6949232816696167,
+      "tracking_s": 0.010105299999850104,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578233.jpg",
+      "pts_s": 578.233333,
+      "match_confidence": 0.6810383200645447,
+      "tracking_s": 0.010003300001699245,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578267.jpg",
+      "pts_s": 578.266667,
+      "match_confidence": 0.6628056168556213,
+      "tracking_s": 0.010102099997311598,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578300.jpg",
+      "pts_s": 578.3,
+      "match_confidence": 0.6742010712623596,
+      "tracking_s": 0.010221699998510303,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578333.jpg",
+      "pts_s": 578.333333,
+      "match_confidence": 0.7157710790634155,
+      "tracking_s": 0.009855399999651127,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578367.jpg",
+      "pts_s": 578.366667,
+      "match_confidence": 0.7339352965354919,
+      "tracking_s": 0.010081500000524102,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578400.jpg",
+      "pts_s": 578.4,
+      "match_confidence": 0.7323145270347595,
+      "tracking_s": 0.0104858000013337,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578433.jpg",
+      "pts_s": 578.433333,
+      "match_confidence": 0.7818213701248169,
+      "tracking_s": 0.010360500000388129,
+      "observations": {}
+    },
+    {
+      "filename": "frame_00578467.jpg",
+      "pts_s": 578.466667,
+      "match_confidence": 0.7819095849990845,
+      "tracking_s": 0.010296500000549713,
+      "observations": {}
+    }
+  ]
+}
