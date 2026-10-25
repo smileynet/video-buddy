@@ -1,0 +1,3361 @@
+{
+  "python": "3.13.14",
+  "machine": "Windows-11-10.0.26300-SP0",
+  "tesseract": "tesseract v5.4.0.20240606",
+  "cases": [
+    {
+      "case": {
+        "id": "filename-tune",
+        "folder": "seek-python-tune-current",
+        "phase": "tune",
+        "source": "x7X9w_GIm1s",
+        "box": [
+          195,
+          205,
+          605,
+          280
+        ],
+        "states": [
+          {
+            "id": "py",
+            "text": "hello.py",
+            "spans": [
+              [
+                60.527133,
+                61.5615
+              ]
+            ]
+          },
+          {
+            "id": "notebook",
+            "text": "hello.ipynb",
+            "spans": [
+              [
+                61.5615,
+                62.128733
+              ],
+              [
+                62.228833,
+                63
+              ]
+            ]
+          }
+        ]
+      },
+      "capture": {
+        "source": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\.scratch\\seek-retained-source\\x7X9w_GIm1s.mp4",
+        "start": 59.0,
+        "end": 63.0,
+        "decode_write_s": 0.3043422999980976,
+        "frames": [
+          {
+            "filename": "frame_00059026.jpg",
+            "pts_s": 59.025633
+          },
+          {
+            "filename": "frame_00059059.jpg",
+            "pts_s": 59.059
+          },
+          {
+            "filename": "frame_00059092.jpg",
+            "pts_s": 59.092367
+          },
+          {
+            "filename": "frame_00059126.jpg",
+            "pts_s": 59.125733
+          },
+          {
+            "filename": "frame_00059159.jpg",
+            "pts_s": 59.1591
+          },
+          {
+            "filename": "frame_00059192.jpg",
+            "pts_s": 59.192467
+          },
+          {
+            "filename": "frame_00059226.jpg",
+            "pts_s": 59.225833
+          },
+          {
+            "filename": "frame_00059259.jpg",
+            "pts_s": 59.2592
+          },
+          {
+            "filename": "frame_00059293.jpg",
+            "pts_s": 59.292567
+          },
+          {
+            "filename": "frame_00059326.jpg",
+            "pts_s": 59.325933
+          },
+          {
+            "filename": "frame_00059359.jpg",
+            "pts_s": 59.3593
+          },
+          {
+            "filename": "frame_00059393.jpg",
+            "pts_s": 59.392667
+          },
+          {
+            "filename": "frame_00059426.jpg",
+            "pts_s": 59.426033
+          },
+          {
+            "filename": "frame_00059459.jpg",
+            "pts_s": 59.4594
+          },
+          {
+            "filename": "frame_00059493.jpg",
+            "pts_s": 59.492767
+          },
+          {
+            "filename": "frame_00059526.jpg",
+            "pts_s": 59.526133
+          },
+          {
+            "filename": "frame_00059560.jpg",
+            "pts_s": 59.5595
+          },
+          {
+            "filename": "frame_00059593.jpg",
+            "pts_s": 59.592867
+          },
+          {
+            "filename": "frame_00059626.jpg",
+            "pts_s": 59.626233
+          },
+          {
+            "filename": "frame_00059660.jpg",
+            "pts_s": 59.6596
+          },
+          {
+            "filename": "frame_00059693.jpg",
+            "pts_s": 59.692967
+          },
+          {
+            "filename": "frame_00059726.jpg",
+            "pts_s": 59.726333
+          },
+          {
+            "filename": "frame_00059760.jpg",
+            "pts_s": 59.7597
+          },
+          {
+            "filename": "frame_00059793.jpg",
+            "pts_s": 59.793067
+          },
+          {
+            "filename": "frame_00059826.jpg",
+            "pts_s": 59.826433
+          },
+          {
+            "filename": "frame_00059860.jpg",
+            "pts_s": 59.8598
+          },
+          {
+            "filename": "frame_00059893.jpg",
+            "pts_s": 59.893167
+          },
+          {
+            "filename": "frame_00059927.jpg",
+            "pts_s": 59.926533
+          },
+          {
+            "filename": "frame_00059960.jpg",
+            "pts_s": 59.9599
+          },
+          {
+            "filename": "frame_00059993.jpg",
+            "pts_s": 59.993267
+          },
+          {
+            "filename": "frame_00060027.jpg",
+            "pts_s": 60.026633
+          },
+          {
+            "filename": "frame_00060060.jpg",
+            "pts_s": 60.06
+          },
+          {
+            "filename": "frame_00060093.jpg",
+            "pts_s": 60.093367
+          },
+          {
+            "filename": "frame_00060127.jpg",
+            "pts_s": 60.126733
+          },
+          {
+            "filename": "frame_00060160.jpg",
+            "pts_s": 60.1601
+          },
+          {
+            "filename": "frame_00060193.jpg",
+            "pts_s": 60.193467
+          },
+          {
+            "filename": "frame_00060227.jpg",
+            "pts_s": 60.226833
+          },
+          {
+            "filename": "frame_00060260.jpg",
+            "pts_s": 60.2602
+          },
+          {
+            "filename": "frame_00060294.jpg",
+            "pts_s": 60.293567
+          },
+          {
+            "filename": "frame_00060327.jpg",
+            "pts_s": 60.326933
+          },
+          {
+            "filename": "frame_00060360.jpg",
+            "pts_s": 60.3603
+          },
+          {
+            "filename": "frame_00060394.jpg",
+            "pts_s": 60.393667
+          },
+          {
+            "filename": "frame_00060427.jpg",
+            "pts_s": 60.427033
+          },
+          {
+            "filename": "frame_00060460.jpg",
+            "pts_s": 60.4604
+          },
+          {
+            "filename": "frame_00060494.jpg",
+            "pts_s": 60.493767
+          },
+          {
+            "filename": "frame_00060527.jpg",
+            "pts_s": 60.527133
+          },
+          {
+            "filename": "frame_00060560.jpg",
+            "pts_s": 60.5605
+          },
+          {
+            "filename": "frame_00060594.jpg",
+            "pts_s": 60.593867
+          },
+          {
+            "filename": "frame_00060627.jpg",
+            "pts_s": 60.627233
+          },
+          {
+            "filename": "frame_00060661.jpg",
+            "pts_s": 60.6606
+          },
+          {
+            "filename": "frame_00060694.jpg",
+            "pts_s": 60.693967
+          },
+          {
+            "filename": "frame_00060727.jpg",
+            "pts_s": 60.727333
+          },
+          {
+            "filename": "frame_00060761.jpg",
+            "pts_s": 60.7607
+          },
+          {
+            "filename": "frame_00060794.jpg",
+            "pts_s": 60.794067
+          },
+          {
+            "filename": "frame_00060827.jpg",
+            "pts_s": 60.827433
+          },
+          {
+            "filename": "frame_00060861.jpg",
+            "pts_s": 60.8608
+          },
+          {
+            "filename": "frame_00060894.jpg",
+            "pts_s": 60.894167
+          },
+          {
+            "filename": "frame_00060928.jpg",
+            "pts_s": 60.927533
+          },
+          {
+            "filename": "frame_00060961.jpg",
+            "pts_s": 60.9609
+          },
+          {
+            "filename": "frame_00060994.jpg",
+            "pts_s": 60.994267
+          },
+          {
+            "filename": "frame_00061028.jpg",
+            "pts_s": 61.027633
+          },
+          {
+            "filename": "frame_00061061.jpg",
+            "pts_s": 61.061
+          },
+          {
+            "filename": "frame_00061094.jpg",
+            "pts_s": 61.094367
+          },
+          {
+            "filename": "frame_00061128.jpg",
+            "pts_s": 61.127733
+          },
+          {
+            "filename": "frame_00061161.jpg",
+            "pts_s": 61.1611
+          },
+          {
+            "filename": "frame_00061194.jpg",
+            "pts_s": 61.194467
+          },
+          {
+            "filename": "frame_00061228.jpg",
+            "pts_s": 61.227833
+          },
+          {
+            "filename": "frame_00061261.jpg",
+            "pts_s": 61.2612
+          },
+          {
+            "filename": "frame_00061295.jpg",
+            "pts_s": 61.294567
+          },
+          {
+            "filename": "frame_00061328.jpg",
+            "pts_s": 61.327933
+          },
+          {
+            "filename": "frame_00061361.jpg",
+            "pts_s": 61.3613
+          },
+          {
+            "filename": "frame_00061395.jpg",
+            "pts_s": 61.394667
+          },
+          {
+            "filename": "frame_00061428.jpg",
+            "pts_s": 61.428033
+          },
+          {
+            "filename": "frame_00061461.jpg",
+            "pts_s": 61.4614
+          },
+          {
+            "filename": "frame_00061495.jpg",
+            "pts_s": 61.494767
+          },
+          {
+            "filename": "frame_00061528.jpg",
+            "pts_s": 61.528133
+          },
+          {
+            "filename": "frame_00061562.jpg",
+            "pts_s": 61.5615
+          },
+          {
+            "filename": "frame_00061595.jpg",
+            "pts_s": 61.594867
+          },
+          {
+            "filename": "frame_00061628.jpg",
+            "pts_s": 61.628233
+          },
+          {
+            "filename": "frame_00061662.jpg",
+            "pts_s": 61.6616
+          },
+          {
+            "filename": "frame_00061695.jpg",
+            "pts_s": 61.694967
+          },
+          {
+            "filename": "frame_00061728.jpg",
+            "pts_s": 61.728333
+          },
+          {
+            "filename": "frame_00061762.jpg",
+            "pts_s": 61.7617
+          },
+          {
+            "filename": "frame_00061795.jpg",
+            "pts_s": 61.795067
+          },
+          {
+            "filename": "frame_00061828.jpg",
+            "pts_s": 61.828433
+          },
+          {
+            "filename": "frame_00061862.jpg",
+            "pts_s": 61.8618
+          },
+          {
+            "filename": "frame_00061895.jpg",
+            "pts_s": 61.895167
+          },
+          {
+            "filename": "frame_00061929.jpg",
+            "pts_s": 61.928533
+          },
+          {
+            "filename": "frame_00061962.jpg",
+            "pts_s": 61.9619
+          },
+          {
+            "filename": "frame_00061995.jpg",
+            "pts_s": 61.995267
+          },
+          {
+            "filename": "frame_00062029.jpg",
+            "pts_s": 62.028633
+          },
+          {
+            "filename": "frame_00062062.jpg",
+            "pts_s": 62.062
+          },
+          {
+            "filename": "frame_00062095.jpg",
+            "pts_s": 62.095367
+          },
+          {
+            "filename": "frame_00062129.jpg",
+            "pts_s": 62.128733
+          },
+          {
+            "filename": "frame_00062162.jpg",
+            "pts_s": 62.1621
+          },
+          {
+            "filename": "frame_00062195.jpg",
+            "pts_s": 62.195467
+          },
+          {
+            "filename": "frame_00062229.jpg",
+            "pts_s": 62.228833
+          },
+          {
+            "filename": "frame_00062262.jpg",
+            "pts_s": 62.2622
+          },
+          {
+            "filename": "frame_00062296.jpg",
+            "pts_s": 62.295567
+          },
+          {
+            "filename": "frame_00062329.jpg",
+            "pts_s": 62.328933
+          },
+          {
+            "filename": "frame_00062362.jpg",
+            "pts_s": 62.3623
+          },
+          {
+            "filename": "frame_00062396.jpg",
+            "pts_s": 62.395667
+          },
+          {
+            "filename": "frame_00062429.jpg",
+            "pts_s": 62.429033
+          },
+          {
+            "filename": "frame_00062462.jpg",
+            "pts_s": 62.4624
+          },
+          {
+            "filename": "frame_00062496.jpg",
+            "pts_s": 62.495767
+          },
+          {
+            "filename": "frame_00062529.jpg",
+            "pts_s": 62.529133
+          },
+          {
+            "filename": "frame_00062562.jpg",
+            "pts_s": 62.5625
+          },
+          {
+            "filename": "frame_00062596.jpg",
+            "pts_s": 62.595867
+          },
+          {
+            "filename": "frame_00062629.jpg",
+            "pts_s": 62.629233
+          },
+          {
+            "filename": "frame_00062663.jpg",
+            "pts_s": 62.6626
+          },
+          {
+            "filename": "frame_00062696.jpg",
+            "pts_s": 62.695967
+          },
+          {
+            "filename": "frame_00062729.jpg",
+            "pts_s": 62.729333
+          },
+          {
+            "filename": "frame_00062763.jpg",
+            "pts_s": 62.7627
+          },
+          {
+            "filename": "frame_00062796.jpg",
+            "pts_s": 62.796067
+          },
+          {
+            "filename": "frame_00062829.jpg",
+            "pts_s": 62.829433
+          },
+          {
+            "filename": "frame_00062863.jpg",
+            "pts_s": 62.8628
+          },
+          {
+            "filename": "frame_00062896.jpg",
+            "pts_s": 62.896167
+          },
+          {
+            "filename": "frame_00062930.jpg",
+            "pts_s": 62.929533
+          },
+          {
+            "filename": "frame_00062963.jpg",
+            "pts_s": 62.9629
+          },
+          {
+            "filename": "frame_00062996.jpg",
+            "pts_s": 62.996267
+          }
+        ]
+      },
+      "rows": [
+        {
+          "filename": "frame_00059026.jpg",
+          "pts_s": 59.025633,
+          "text": "fo",
+          "sharpness": 635.6698594635468,
+          "ocr_s": 0.13243789999978617
+        },
+        {
+          "filename": "frame_00059059.jpg",
+          "pts_s": 59.059,
+          "text": "fo",
+          "sharpness": 635.6698594635468,
+          "ocr_s": 0.06918919999952777
+        },
+        {
+          "filename": "frame_00059092.jpg",
+          "pts_s": 59.092367,
+          "text": "fo",
+          "sharpness": 635.6698594635468,
+          "ocr_s": 0.07057680000070832
+        },
+        {
+          "filename": "frame_00059126.jpg",
+          "pts_s": 59.125733,
+          "text": "fo",
+          "sharpness": 635.6698594635468,
+          "ocr_s": 0.07087099999989732
+        },
+        {
+          "filename": "frame_00059159.jpg",
+          "pts_s": 59.1591,
+          "text": "fo",
+          "sharpness": 635.7108350733029,
+          "ocr_s": 0.07162260000040988
+        },
+        {
+          "filename": "frame_00059192.jpg",
+          "pts_s": 59.192467,
+          "text": "fo",
+          "sharpness": 635.7108350733029,
+          "ocr_s": 0.0726847000005364
+        },
+        {
+          "filename": "frame_00059226.jpg",
+          "pts_s": 59.225833,
+          "text": "fo",
+          "sharpness": 635.4923175622976,
+          "ocr_s": 0.07179149999865331
+        },
+        {
+          "filename": "frame_00059259.jpg",
+          "pts_s": 59.2592,
+          "text": "hoo",
+          "sharpness": 946.3963468824113,
+          "ocr_s": 0.0735184000004665
+        },
+        {
+          "filename": "frame_00059293.jpg",
+          "pts_s": 59.292567,
+          "text": "ho",
+          "sharpness": 946.1103631425739,
+          "ocr_s": 0.07245280000279308
+        },
+        {
+          "filename": "frame_00059326.jpg",
+          "pts_s": 59.325933,
+          "text": "hoo",
+          "sharpness": 945.9885420043626,
+          "ocr_s": 0.07395879999967292
+        },
+        {
+          "filename": "frame_00059359.jpg",
+          "pts_s": 59.3593,
+          "text": "hd",
+          "sharpness": 1069.3715013539559,
+          "ocr_s": 0.07415960000071209
+        },
+        {
+          "filename": "frame_00059393.jpg",
+          "pts_s": 59.392667,
+          "text": "hd",
+          "sharpness": 1069.3796314352567,
+          "ocr_s": 0.07411990000036894
+        },
+        {
+          "filename": "frame_00059426.jpg",
+          "pts_s": 59.426033,
+          "text": "hd",
+          "sharpness": 1069.3796314352567,
+          "ocr_s": 0.07373179999922286
+        },
+        {
+          "filename": "frame_00059459.jpg",
+          "pts_s": 59.4594,
+          "text": "hd",
+          "sharpness": 1069.3493875328177,
+          "ocr_s": 0.074040800001967
+        },
+        {
+          "filename": "frame_00059493.jpg",
+          "pts_s": 59.492767,
+          "text": "hd",
+          "sharpness": 1069.3555663946063,
+          "ocr_s": 0.07278470000164816
+        },
+        {
+          "filename": "frame_00059526.jpg",
+          "pts_s": 59.526133,
+          "text": "hel",
+          "sharpness": 1114.244010802036,
+          "ocr_s": 0.07346640000105253
+        },
+        {
+          "filename": "frame_00059560.jpg",
+          "pts_s": 59.5595,
+          "text": "hel",
+          "sharpness": 1114.244010802036,
+          "ocr_s": 0.07132380000257399
+        },
+        {
+          "filename": "frame_00059593.jpg",
+          "pts_s": 59.592867,
+          "text": "hel",
+          "sharpness": 1114.244010802036,
+          "ocr_s": 0.076384699998016
+        },
+        {
+          "filename": "frame_00059626.jpg",
+          "pts_s": 59.626233,
+          "text": "hel",
+          "sharpness": 1113.926937631304,
+          "ocr_s": 0.07485909999741125
+        },
+        {
+          "filename": "frame_00059660.jpg",
+          "pts_s": 59.6596,
+          "text": "hell",
+          "sharpness": 1180.6448117855773,
+          "ocr_s": 0.0748940000012226
+        },
+        {
+          "filename": "frame_00059693.jpg",
+          "pts_s": 59.692967,
+          "text": "hell",
+          "sharpness": 1181.7909581270408,
+          "ocr_s": 0.07880110000041896
+        },
+        {
+          "filename": "frame_00059726.jpg",
+          "pts_s": 59.726333,
+          "text": "hell",
+          "sharpness": 1180.7418524359837,
+          "ocr_s": 0.07690640000146232
+        },
+        {
+          "filename": "frame_00059760.jpg",
+          "pts_s": 59.7597,
+          "text": "hell",
+          "sharpness": 1181.3839987774472,
+          "ocr_s": 0.0759436000007554
+        },
+        {
+          "filename": "frame_00059793.jpg",
+          "pts_s": 59.793067,
+          "text": "hell",
+          "sharpness": 1181.7014621920814,
+          "ocr_s": 0.07271599999876344
+        },
+        {
+          "filename": "frame_00059826.jpg",
+          "pts_s": 59.826433,
+          "text": "held",
+          "sharpness": 1336.2792276015598,
+          "ocr_s": 0.07396280000102706
+        },
+        {
+          "filename": "frame_00059860.jpg",
+          "pts_s": 59.8598,
+          "text": "held",
+          "sharpness": 1336.364691016194,
+          "ocr_s": 0.07457459999932325
+        },
+        {
+          "filename": "frame_00059893.jpg",
+          "pts_s": 59.893167,
+          "text": "held",
+          "sharpness": 1336.364691016194,
+          "ocr_s": 0.07175680000000284
+        },
+        {
+          "filename": "frame_00059927.jpg",
+          "pts_s": 59.926533,
+          "text": "held",
+          "sharpness": 1336.364691016194,
+          "ocr_s": 0.07298520000040298
+        },
+        {
+          "filename": "frame_00059960.jpg",
+          "pts_s": 59.9599,
+          "text": "held",
+          "sharpness": 1336.364691016194,
+          "ocr_s": 0.07444699999905424
+        },
+        {
+          "filename": "frame_00059993.jpg",
+          "pts_s": 59.993267,
+          "text": "held",
+          "sharpness": 1336.364691016194,
+          "ocr_s": 0.07338780000281986
+        },
+        {
+          "filename": "frame_00060027.jpg",
+          "pts_s": 60.026633,
+          "text": "held",
+          "sharpness": 1336.364691016194,
+          "ocr_s": 0.07430659999954514
+        },
+        {
+          "filename": "frame_00060060.jpg",
+          "pts_s": 60.06,
+          "text": "held",
+          "sharpness": 1336.364691016194,
+          "ocr_s": 0.07212240000080783
+        },
+        {
+          "filename": "frame_00060093.jpg",
+          "pts_s": 60.093367,
+          "text": "held",
+          "sharpness": 1336.364691016194,
+          "ocr_s": 0.07368339999811724
+        },
+        {
+          "filename": "frame_00060127.jpg",
+          "pts_s": 60.126733,
+          "text": "hello)",
+          "sharpness": 1019.957595361491,
+          "ocr_s": 0.07166239999787649
+        },
+        {
+          "filename": "frame_00060160.jpg",
+          "pts_s": 60.1601,
+          "text": "hello)",
+          "sharpness": 1019.947188857426,
+          "ocr_s": 0.07203200000003562
+        },
+        {
+          "filename": "frame_00060193.jpg",
+          "pts_s": 60.193467,
+          "text": "helo)",
+          "sharpness": 1019.9873839793773,
+          "ocr_s": 0.07294259999980568
+        },
+        {
+          "filename": "frame_00060227.jpg",
+          "pts_s": 60.226833,
+          "text": "helo)",
+          "sharpness": 1019.9873839793773,
+          "ocr_s": 0.07255780000195955
+        },
+        {
+          "filename": "frame_00060260.jpg",
+          "pts_s": 60.2602,
+          "text": "helo)",
+          "sharpness": 1019.9873839793773,
+          "ocr_s": 0.07246680000025663
+        },
+        {
+          "filename": "frame_00060294.jpg",
+          "pts_s": 60.293567,
+          "text": "helo)",
+          "sharpness": 1019.9873839793773,
+          "ocr_s": 0.07323139999789419
+        },
+        {
+          "filename": "frame_00060327.jpg",
+          "pts_s": 60.326933,
+          "text": "lhellopn",
+          "sharpness": 1453.7803103697534,
+          "ocr_s": 0.07341529999757768
+        },
+        {
+          "filename": "frame_00060360.jpg",
+          "pts_s": 60.3603,
+          "text": "lhellopn",
+          "sharpness": 1453.7803103697534,
+          "ocr_s": 0.074158700001135
+        },
+        {
+          "filename": "frame_00060394.jpg",
+          "pts_s": 60.393667,
+          "text": "lhellopn =",
+          "sharpness": 1453.8649282559322,
+          "ocr_s": 0.0753093000021181
+        },
+        {
+          "filename": "frame_00060427.jpg",
+          "pts_s": 60.427033,
+          "text": "hello",
+          "sharpness": 1453.922489231542,
+          "ocr_s": 0.07403709999925923
+        },
+        {
+          "filename": "frame_00060460.jpg",
+          "pts_s": 60.4604,
+          "text": "lhellopn",
+          "sharpness": 1453.8100989876393,
+          "ocr_s": 0.07309220000024652
+        },
+        {
+          "filename": "frame_00060494.jpg",
+          "pts_s": 60.493767,
+          "text": "hello",
+          "sharpness": 1453.8162128087777,
+          "ocr_s": 0.07428090000030352
+        },
+        {
+          "filename": "frame_00060527.jpg",
+          "pts_s": 60.527133,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07423059999928228
+        },
+        {
+          "filename": "frame_00060560.jpg",
+          "pts_s": 60.5605,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07600970000203233
+        },
+        {
+          "filename": "frame_00060594.jpg",
+          "pts_s": 60.593867,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07146040000225184
+        },
+        {
+          "filename": "frame_00060627.jpg",
+          "pts_s": 60.627233,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.08206389999759267
+        },
+        {
+          "filename": "frame_00060661.jpg",
+          "pts_s": 60.6606,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.0755395000014687
+        },
+        {
+          "filename": "frame_00060694.jpg",
+          "pts_s": 60.693967,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07497399999920162
+        },
+        {
+          "filename": "frame_00060727.jpg",
+          "pts_s": 60.727333,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07516089999990072
+        },
+        {
+          "filename": "frame_00060761.jpg",
+          "pts_s": 60.7607,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07337990000087302
+        },
+        {
+          "filename": "frame_00060794.jpg",
+          "pts_s": 60.794067,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07383610000033514
+        },
+        {
+          "filename": "frame_00060827.jpg",
+          "pts_s": 60.827433,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07476500000120723
+        },
+        {
+          "filename": "frame_00060861.jpg",
+          "pts_s": 60.8608,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07468449999942095
+        },
+        {
+          "filename": "frame_00060894.jpg",
+          "pts_s": 60.894167,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07231030000184546
+        },
+        {
+          "filename": "frame_00060928.jpg",
+          "pts_s": 60.927533,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.0709406999994826
+        },
+        {
+          "filename": "frame_00060961.jpg",
+          "pts_s": 60.9609,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07627259999935632
+        },
+        {
+          "filename": "frame_00060994.jpg",
+          "pts_s": 60.994267,
+          "text": "lhellopy",
+          "sharpness": 1548.6601947560316,
+          "ocr_s": 0.07400129999950877
+        },
+        {
+          "filename": "frame_00061028.jpg",
+          "pts_s": 61.027633,
+          "text": "lhellopy",
+          "sharpness": 1548.7002597966818,
+          "ocr_s": 0.07446229999914067
+        },
+        {
+          "filename": "frame_00061061.jpg",
+          "pts_s": 61.061,
+          "text": "lhellopy",
+          "sharpness": 1347.3147540051557,
+          "ocr_s": 0.08036010000068927
+        },
+        {
+          "filename": "frame_00061094.jpg",
+          "pts_s": 61.094367,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.07557250000172644
+        },
+        {
+          "filename": "frame_00061128.jpg",
+          "pts_s": 61.127733,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.07371010000133538
+        },
+        {
+          "filename": "frame_00061161.jpg",
+          "pts_s": 61.1611,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.07305369999812683
+        },
+        {
+          "filename": "frame_00061194.jpg",
+          "pts_s": 61.194467,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.07202540000071167
+        },
+        {
+          "filename": "frame_00061228.jpg",
+          "pts_s": 61.227833,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.0730576000023575
+        },
+        {
+          "filename": "frame_00061261.jpg",
+          "pts_s": 61.2612,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.0729752000006556
+        },
+        {
+          "filename": "frame_00061295.jpg",
+          "pts_s": 61.294567,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.07469580000179121
+        },
+        {
+          "filename": "frame_00061328.jpg",
+          "pts_s": 61.327933,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.07128820000070846
+        },
+        {
+          "filename": "frame_00061361.jpg",
+          "pts_s": 61.3613,
+          "text": "lhellopy",
+          "sharpness": 1347.3152092897085,
+          "ocr_s": 0.07177040000169654
+        },
+        {
+          "filename": "frame_00061395.jpg",
+          "pts_s": 61.394667,
+          "text": "lhellopy",
+          "sharpness": 1348.0259319759405,
+          "ocr_s": 0.07592360000126064
+        },
+        {
+          "filename": "frame_00061428.jpg",
+          "pts_s": 61.428033,
+          "text": "lhellopy =",
+          "sharpness": 1348.8849439608698,
+          "ocr_s": 0.07285249999767984
+        },
+        {
+          "filename": "frame_00061461.jpg",
+          "pts_s": 61.4614,
+          "text": "lhellopy",
+          "sharpness": 1349.1466674027365,
+          "ocr_s": 0.07307679999939865
+        },
+        {
+          "filename": "frame_00061495.jpg",
+          "pts_s": 61.494767,
+          "text": "lhellopy",
+          "sharpness": 1349.2628630513582,
+          "ocr_s": 0.07614459999967949
+        },
+        {
+          "filename": "frame_00061528.jpg",
+          "pts_s": 61.528133,
+          "text": "lhellopy",
+          "sharpness": 1349.4511478617226,
+          "ocr_s": 0.0803976999995939
+        },
+        {
+          "filename": "frame_00061562.jpg",
+          "pts_s": 61.5615,
+          "text": "hello.ipynb",
+          "sharpness": 1902.0875639896888,
+          "ocr_s": 0.0782495999992534
+        },
+        {
+          "filename": "frame_00061595.jpg",
+          "pts_s": 61.594867,
+          "text": "lhello.ipynb",
+          "sharpness": 1901.8158241522904,
+          "ocr_s": 0.07565889999750652
+        },
+        {
+          "filename": "frame_00061628.jpg",
+          "pts_s": 61.628233,
+          "text": "lhello.ipynb",
+          "sharpness": 1904.8553602125717,
+          "ocr_s": 0.07616690000213566
+        },
+        {
+          "filename": "frame_00061662.jpg",
+          "pts_s": 61.6616,
+          "text": "lhello.ipynb",
+          "sharpness": 1695.3359455615046,
+          "ocr_s": 0.07631109999783803
+        },
+        {
+          "filename": "frame_00061695.jpg",
+          "pts_s": 61.694967,
+          "text": "lhello.ipynb",
+          "sharpness": 1698.3209622304182,
+          "ocr_s": 0.07459579999704147
+        },
+        {
+          "filename": "frame_00061728.jpg",
+          "pts_s": 61.728333,
+          "text": "lhello.ipynb",
+          "sharpness": 1698.8212721940642,
+          "ocr_s": 0.07531290000042645
+        },
+        {
+          "filename": "frame_00061762.jpg",
+          "pts_s": 61.7617,
+          "text": "lhello.ipynb",
+          "sharpness": 1699.096224738185,
+          "ocr_s": 0.07605460000195308
+        },
+        {
+          "filename": "frame_00061795.jpg",
+          "pts_s": 61.795067,
+          "text": "hello.ipynb",
+          "sharpness": 1699.4962357284685,
+          "ocr_s": 0.0740525000001071
+        },
+        {
+          "filename": "frame_00061828.jpg",
+          "pts_s": 61.828433,
+          "text": "hello.ipynb",
+          "sharpness": 1699.4962357284685,
+          "ocr_s": 0.07650879999710014
+        },
+        {
+          "filename": "frame_00061862.jpg",
+          "pts_s": 61.8618,
+          "text": "hello.ipynb",
+          "sharpness": 1699.4962357284685,
+          "ocr_s": 0.07448570000269683
+        },
+        {
+          "filename": "frame_00061895.jpg",
+          "pts_s": 61.895167,
+          "text": "lhello.ipynb",
+          "sharpness": 1699.475162557737,
+          "ocr_s": 0.0847663000022294
+        },
+        {
+          "filename": "frame_00061929.jpg",
+          "pts_s": 61.928533,
+          "text": "lhello.ipynb",
+          "sharpness": 1699.4962357284685,
+          "ocr_s": 0.07489050000003772
+        },
+        {
+          "filename": "frame_00061962.jpg",
+          "pts_s": 61.9619,
+          "text": "lhello.ipynb",
+          "sharpness": 1699.4475202813142,
+          "ocr_s": 0.07311480000134907
+        },
+        {
+          "filename": "frame_00061995.jpg",
+          "pts_s": 61.995267,
+          "text": "lhello.ipynb",
+          "sharpness": 1699.4475202813142,
+          "ocr_s": 0.07610679999925196
+        },
+        {
+          "filename": "frame_00062029.jpg",
+          "pts_s": 62.028633,
+          "text": "lhello.ipynb",
+          "sharpness": 1699.4475202813142,
+          "ocr_s": 0.07559840000249096
+        },
+        {
+          "filename": "frame_00062062.jpg",
+          "pts_s": 62.062,
+          "text": "lhello.ipynb",
+          "sharpness": 1699.4475202813142,
+          "ocr_s": 0.08023449999745935
+        },
+        {
+          "filename": "frame_00062095.jpg",
+          "pts_s": 62.095367,
+          "text": "Be",
+          "sharpness": 259.5328671304117,
+          "ocr_s": 0.07237259999965318
+        },
+        {
+          "filename": "frame_00062129.jpg",
+          "pts_s": 62.128733,
+          "text": "ee",
+          "sharpness": 259.5745581873223,
+          "ocr_s": 0.07293980000031297
+        },
+        {
+          "filename": "frame_00062162.jpg",
+          "pts_s": 62.1621,
+          "text": "YY",
+          "sharpness": 260.4994946394342,
+          "ocr_s": 0.07095689999914612
+        },
+        {
+          "filename": "frame_00062195.jpg",
+          "pts_s": 62.195467,
+          "text": "Be",
+          "sharpness": 284.25731989265654,
+          "ocr_s": 0.07175419999839505
+        },
+        {
+          "filename": "frame_00062229.jpg",
+          "pts_s": 62.228833,
+          "text": "helloipynb",
+          "sharpness": 1460.5334419469891,
+          "ocr_s": 0.07679759999882663
+        },
+        {
+          "filename": "frame_00062262.jpg",
+          "pts_s": 62.2622,
+          "text": "hello.ipynb",
+          "sharpness": 1435.4339126773746,
+          "ocr_s": 0.07526899999720627
+        },
+        {
+          "filename": "frame_00062296.jpg",
+          "pts_s": 62.295567,
+          "text": "hello.ipynb",
+          "sharpness": 1436.1077988562365,
+          "ocr_s": 0.07387680000101682
+        },
+        {
+          "filename": "frame_00062329.jpg",
+          "pts_s": 62.328933,
+          "text": "hello.ipynb",
+          "sharpness": 1436.013815116399,
+          "ocr_s": 0.0725921000012022
+        },
+        {
+          "filename": "frame_00062362.jpg",
+          "pts_s": 62.3623,
+          "text": "hello.ipynb",
+          "sharpness": 1462.8808486049309,
+          "ocr_s": 0.07326629999806755
+        },
+        {
+          "filename": "frame_00062396.jpg",
+          "pts_s": 62.395667,
+          "text": "hello.ipynb",
+          "sharpness": 1460.7578013309535,
+          "ocr_s": 0.07485900000028778
+        },
+        {
+          "filename": "frame_00062429.jpg",
+          "pts_s": 62.429033,
+          "text": "hello.ipynb",
+          "sharpness": 1462.8511900683454,
+          "ocr_s": 0.0746486999996705
+        },
+        {
+          "filename": "frame_00062462.jpg",
+          "pts_s": 62.4624,
+          "text": "hello.ipynb",
+          "sharpness": 1462.8511900683454,
+          "ocr_s": 0.07467949999772827
+        },
+        {
+          "filename": "frame_00062496.jpg",
+          "pts_s": 62.495767,
+          "text": "helloipynb",
+          "sharpness": 1247.173176103113,
+          "ocr_s": 0.07437560000107624
+        },
+        {
+          "filename": "frame_00062529.jpg",
+          "pts_s": 62.529133,
+          "text": "helloipynb",
+          "sharpness": 1247.173176103113,
+          "ocr_s": 0.07803839999905904
+        },
+        {
+          "filename": "frame_00062562.jpg",
+          "pts_s": 62.5625,
+          "text": "hello.ipynb",
+          "sharpness": 1248.6120053714058,
+          "ocr_s": 0.07542929999908665
+        },
+        {
+          "filename": "frame_00062596.jpg",
+          "pts_s": 62.595867,
+          "text": "hello.ipynb",
+          "sharpness": 1250.664818379536,
+          "ocr_s": 0.07510240000192425
+        },
+        {
+          "filename": "frame_00062629.jpg",
+          "pts_s": 62.629233,
+          "text": "helloipynb",
+          "sharpness": 1250.6585744770969,
+          "ocr_s": 0.07681980000052135
+        },
+        {
+          "filename": "frame_00062663.jpg",
+          "pts_s": 62.6626,
+          "text": "helloipynb",
+          "sharpness": 1250.6585744770969,
+          "ocr_s": 0.07604979999814532
+        },
+        {
+          "filename": "frame_00062696.jpg",
+          "pts_s": 62.695967,
+          "text": "helloipynb",
+          "sharpness": 1250.6585744770969,
+          "ocr_s": 0.0771026999973401
+        },
+        {
+          "filename": "frame_00062729.jpg",
+          "pts_s": 62.729333,
+          "text": "helloipynb",
+          "sharpness": 1250.6585744770969,
+          "ocr_s": 0.07880239999940386
+        },
+        {
+          "filename": "frame_00062763.jpg",
+          "pts_s": 62.7627,
+          "text": "hello.ipynb",
+          "sharpness": 1250.6585744770969,
+          "ocr_s": 0.07969900000171037
+        },
+        {
+          "filename": "frame_00062796.jpg",
+          "pts_s": 62.796067,
+          "text": "helloipynb",
+          "sharpness": 1250.663257403926,
+          "ocr_s": 0.08354429999963031
+        },
+        {
+          "filename": "frame_00062829.jpg",
+          "pts_s": 62.829433,
+          "text": "hello.ipynb",
+          "sharpness": 1171.6220993334655,
+          "ocr_s": 0.08165589999771328
+        },
+        {
+          "filename": "frame_00062863.jpg",
+          "pts_s": 62.8628,
+          "text": "hello.ipynb",
+          "sharpness": 1171.6220993334655,
+          "ocr_s": 0.08040700000128709
+        },
+        {
+          "filename": "frame_00062896.jpg",
+          "pts_s": 62.896167,
+          "text": "hello.ipynb",
+          "sharpness": 1171.6220993334655,
+          "ocr_s": 0.07931699999971897
+        },
+        {
+          "filename": "frame_00062930.jpg",
+          "pts_s": 62.929533,
+          "text": "hello.ipynb",
+          "sharpness": 1171.6220993334655,
+          "ocr_s": 0.07974130000002333
+        },
+        {
+          "filename": "frame_00062963.jpg",
+          "pts_s": 62.9629,
+          "text": "helloipynb",
+          "sharpness": 1171.6265220976932,
+          "ocr_s": 0.08150069999828702
+        },
+        {
+          "filename": "frame_00062996.jpg",
+          "pts_s": 62.996267,
+          "text": "helloipynb",
+          "sharpness": 1171.6265220976932,
+          "ocr_s": 0.08092869999745744
+        }
+      ],
+      "selected": [
+        {
+          "filename": "frame_00061028.jpg",
+          "pts_s": 61.027633,
+          "text": "lhellopy",
+          "sharpness": 1548.7002597966818,
+          "ocr_s": 0.07446229999914067
+        },
+        {
+          "filename": "frame_00061562.jpg",
+          "pts_s": 61.5615,
+          "text": "hello.ipynb",
+          "sharpness": 1902.0875639896888,
+          "ocr_s": 0.0782495999992534
+        },
+        {
+          "filename": "frame_00061628.jpg",
+          "pts_s": 61.628233,
+          "text": "lhello.ipynb",
+          "sharpness": 1904.8553602125717,
+          "ocr_s": 0.07616690000213566
+        },
+        {
+          "filename": "frame_00062229.jpg",
+          "pts_s": 62.228833,
+          "text": "helloipynb",
+          "sharpness": 1460.5334419469891,
+          "ocr_s": 0.07679759999882663
+        }
+      ],
+      "metrics": {
+        "sparse_existing": {
+          "times": [],
+          "covered": [],
+          "recall": 0.0,
+          "missed": [
+            "py",
+            "notebook"
+          ],
+          "redundant": 0,
+          "nonessential": 0
+        },
+        "dense_existing": {
+          "times": [],
+          "covered": [],
+          "recall": 0.0,
+          "missed": [
+            "py",
+            "notebook"
+          ],
+          "redundant": 0,
+          "nonessential": 0
+        },
+        "time_grid": {
+          "times": [
+            59.5,
+            60.5,
+            61.5,
+            62.5
+          ],
+          "covered": [
+            "notebook",
+            "py"
+          ],
+          "recall": 1.0,
+          "missed": [],
+          "redundant": 0,
+          "nonessential": 2
+        },
+        "subject_seek": {
+          "times": [
+            61.027633,
+            61.5615,
+            61.628233,
+            62.228833
+          ],
+          "covered": [
+            "notebook",
+            "py"
+          ],
+          "recall": 1.0,
+          "missed": [],
+          "redundant": 2,
+          "nonessential": 0
+        }
+      },
+      "costs": {
+        "crop_ocr_score_s": 9.67350290000104,
+        "ocr_s": 9.039279500000703,
+        "sparse_decode_write_s": 0.14730389999749605,
+        "sparse_select_s": 1.4739139000012074,
+        "dense_select_s": 2.0039853999987827,
+        "time_grid_seek_write_s": 0.43017459999828134
+      },
+      "exact_text": {
+        "subject_seek": [
+          {
+            "pts_s": 61.027633,
+            "text": "lhellopy"
+          },
+          {
+            "pts_s": 61.5615,
+            "text": "hello.ipynb"
+          },
+          {
+            "pts_s": 61.628233,
+            "text": "lhello.ipynb"
+          },
+          {
+            "pts_s": 62.228833,
+            "text": "helloipynb"
+          }
+        ],
+        "time_grid": [
+          {
+            "pts_s": 59.5,
+            "text": "hel"
+          },
+          {
+            "pts_s": 60.5,
+            "text": "lhellopy"
+          },
+          {
+            "pts_s": 61.5,
+            "text": "lhellopy"
+          },
+          {
+            "pts_s": 62.5,
+            "text": "helloipynb"
+          }
+        ]
+      },
+      "source_sha256": "27ae317a6bae60f16283b5aa2c2b02b50901ed7f7caeb6c3ecd1300037a381d5",
+      "edge_density_range": [
+        0.301,
+        1.008
+      ]
+    },
+    {
+      "case": {
+        "id": "code-heldout",
+        "folder": "seek-python-revisions",
+        "phase": "heldout",
+        "source": "x7X9w_GIm1s",
+        "box": [
+          170,
+          310,
+          1450,
+          410
+        ],
+        "states": [
+          {
+            "id": "single",
+            "text": "hello = 'hi mom'",
+            "spans": [
+              [
+                73,
+                75.8758
+              ]
+            ]
+          },
+          {
+            "id": "intermediate",
+            "text": "hello, hola = 'hi mom'",
+            "spans": [
+              [
+                75.8758,
+                76.409667
+              ]
+            ]
+          },
+          {
+            "id": "multiple",
+            "text": "hello, hola = 'hi mom', 'hola mamá'",
+            "spans": [
+              [
+                76.409667,
+                78
+              ]
+            ]
+          }
+        ]
+      },
+      "capture": {
+        "source": ".scratch\\seek-retained-source\\x7X9w_GIm1s.mp4",
+        "start": 73.0,
+        "end": 78.0,
+        "decode_write_s": 0.3443650000008347,
+        "frames": [
+          {
+            "filename": "frame_00073006.jpg",
+            "pts_s": 73.006267
+          },
+          {
+            "filename": "frame_00073040.jpg",
+            "pts_s": 73.039633
+          },
+          {
+            "filename": "frame_00073073.jpg",
+            "pts_s": 73.073
+          },
+          {
+            "filename": "frame_00073106.jpg",
+            "pts_s": 73.106367
+          },
+          {
+            "filename": "frame_00073140.jpg",
+            "pts_s": 73.139733
+          },
+          {
+            "filename": "frame_00073173.jpg",
+            "pts_s": 73.1731
+          },
+          {
+            "filename": "frame_00073206.jpg",
+            "pts_s": 73.206467
+          },
+          {
+            "filename": "frame_00073240.jpg",
+            "pts_s": 73.239833
+          },
+          {
+            "filename": "frame_00073273.jpg",
+            "pts_s": 73.2732
+          },
+          {
+            "filename": "frame_00073307.jpg",
+            "pts_s": 73.306567
+          },
+          {
+            "filename": "frame_00073340.jpg",
+            "pts_s": 73.339933
+          },
+          {
+            "filename": "frame_00073373.jpg",
+            "pts_s": 73.3733
+          },
+          {
+            "filename": "frame_00073407.jpg",
+            "pts_s": 73.406667
+          },
+          {
+            "filename": "frame_00073440.jpg",
+            "pts_s": 73.440033
+          },
+          {
+            "filename": "frame_00073473.jpg",
+            "pts_s": 73.4734
+          },
+          {
+            "filename": "frame_00073507.jpg",
+            "pts_s": 73.506767
+          },
+          {
+            "filename": "frame_00073540.jpg",
+            "pts_s": 73.540133
+          },
+          {
+            "filename": "frame_00073574.jpg",
+            "pts_s": 73.5735
+          },
+          {
+            "filename": "frame_00073607.jpg",
+            "pts_s": 73.606867
+          },
+          {
+            "filename": "frame_00073640.jpg",
+            "pts_s": 73.640233
+          },
+          {
+            "filename": "frame_00073674.jpg",
+            "pts_s": 73.6736
+          },
+          {
+            "filename": "frame_00073707.jpg",
+            "pts_s": 73.706967
+          },
+          {
+            "filename": "frame_00073740.jpg",
+            "pts_s": 73.740333
+          },
+          {
+            "filename": "frame_00073774.jpg",
+            "pts_s": 73.7737
+          },
+          {
+            "filename": "frame_00073807.jpg",
+            "pts_s": 73.807067
+          },
+          {
+            "filename": "frame_00073840.jpg",
+            "pts_s": 73.840433
+          },
+          {
+            "filename": "frame_00073874.jpg",
+            "pts_s": 73.8738
+          },
+          {
+            "filename": "frame_00073907.jpg",
+            "pts_s": 73.907167
+          },
+          {
+            "filename": "frame_00073941.jpg",
+            "pts_s": 73.940533
+          },
+          {
+            "filename": "frame_00073974.jpg",
+            "pts_s": 73.9739
+          },
+          {
+            "filename": "frame_00074007.jpg",
+            "pts_s": 74.007267
+          },
+          {
+            "filename": "frame_00074041.jpg",
+            "pts_s": 74.040633
+          },
+          {
+            "filename": "frame_00074074.jpg",
+            "pts_s": 74.074
+          },
+          {
+            "filename": "frame_00074107.jpg",
+            "pts_s": 74.107367
+          },
+          {
+            "filename": "frame_00074141.jpg",
+            "pts_s": 74.140733
+          },
+          {
+            "filename": "frame_00074174.jpg",
+            "pts_s": 74.1741
+          },
+          {
+            "filename": "frame_00074207.jpg",
+            "pts_s": 74.207467
+          },
+          {
+            "filename": "frame_00074241.jpg",
+            "pts_s": 74.240833
+          },
+          {
+            "filename": "frame_00074274.jpg",
+            "pts_s": 74.2742
+          },
+          {
+            "filename": "frame_00074308.jpg",
+            "pts_s": 74.307567
+          },
+          {
+            "filename": "frame_00074341.jpg",
+            "pts_s": 74.340933
+          },
+          {
+            "filename": "frame_00074374.jpg",
+            "pts_s": 74.3743
+          },
+          {
+            "filename": "frame_00074408.jpg",
+            "pts_s": 74.407667
+          },
+          {
+            "filename": "frame_00074441.jpg",
+            "pts_s": 74.441033
+          },
+          {
+            "filename": "frame_00074474.jpg",
+            "pts_s": 74.4744
+          },
+          {
+            "filename": "frame_00074508.jpg",
+            "pts_s": 74.507767
+          },
+          {
+            "filename": "frame_00074541.jpg",
+            "pts_s": 74.541133
+          },
+          {
+            "filename": "frame_00074574.jpg",
+            "pts_s": 74.5745
+          },
+          {
+            "filename": "frame_00074608.jpg",
+            "pts_s": 74.607867
+          },
+          {
+            "filename": "frame_00074641.jpg",
+            "pts_s": 74.641233
+          },
+          {
+            "filename": "frame_00074675.jpg",
+            "pts_s": 74.6746
+          },
+          {
+            "filename": "frame_00074708.jpg",
+            "pts_s": 74.707967
+          },
+          {
+            "filename": "frame_00074741.jpg",
+            "pts_s": 74.741333
+          },
+          {
+            "filename": "frame_00074775.jpg",
+            "pts_s": 74.7747
+          },
+          {
+            "filename": "frame_00074808.jpg",
+            "pts_s": 74.808067
+          },
+          {
+            "filename": "frame_00074841.jpg",
+            "pts_s": 74.841433
+          },
+          {
+            "filename": "frame_00074875.jpg",
+            "pts_s": 74.8748
+          },
+          {
+            "filename": "frame_00074908.jpg",
+            "pts_s": 74.908167
+          },
+          {
+            "filename": "frame_00074942.jpg",
+            "pts_s": 74.941533
+          },
+          {
+            "filename": "frame_00074975.jpg",
+            "pts_s": 74.9749
+          },
+          {
+            "filename": "frame_00075008.jpg",
+            "pts_s": 75.008267
+          },
+          {
+            "filename": "frame_00075042.jpg",
+            "pts_s": 75.041633
+          },
+          {
+            "filename": "frame_00075075.jpg",
+            "pts_s": 75.075
+          },
+          {
+            "filename": "frame_00075108.jpg",
+            "pts_s": 75.108367
+          },
+          {
+            "filename": "frame_00075142.jpg",
+            "pts_s": 75.141733
+          },
+          {
+            "filename": "frame_00075175.jpg",
+            "pts_s": 75.1751
+          },
+          {
+            "filename": "frame_00075208.jpg",
+            "pts_s": 75.208467
+          },
+          {
+            "filename": "frame_00075242.jpg",
+            "pts_s": 75.241833
+          },
+          {
+            "filename": "frame_00075275.jpg",
+            "pts_s": 75.2752
+          },
+          {
+            "filename": "frame_00075309.jpg",
+            "pts_s": 75.308567
+          },
+          {
+            "filename": "frame_00075342.jpg",
+            "pts_s": 75.341933
+          },
+          {
+            "filename": "frame_00075375.jpg",
+            "pts_s": 75.3753
+          },
+          {
+            "filename": "frame_00075409.jpg",
+            "pts_s": 75.408667
+          },
+          {
+            "filename": "frame_00075442.jpg",
+            "pts_s": 75.442033
+          },
+          {
+            "filename": "frame_00075475.jpg",
+            "pts_s": 75.4754
+          },
+          {
+            "filename": "frame_00075509.jpg",
+            "pts_s": 75.508767
+          },
+          {
+            "filename": "frame_00075542.jpg",
+            "pts_s": 75.542133
+          },
+          {
+            "filename": "frame_00075576.jpg",
+            "pts_s": 75.5755
+          },
+          {
+            "filename": "frame_00075609.jpg",
+            "pts_s": 75.608867
+          },
+          {
+            "filename": "frame_00075642.jpg",
+            "pts_s": 75.642233
+          },
+          {
+            "filename": "frame_00075676.jpg",
+            "pts_s": 75.6756
+          },
+          {
+            "filename": "frame_00075709.jpg",
+            "pts_s": 75.708967
+          },
+          {
+            "filename": "frame_00075742.jpg",
+            "pts_s": 75.742333
+          },
+          {
+            "filename": "frame_00075776.jpg",
+            "pts_s": 75.7757
+          },
+          {
+            "filename": "frame_00075809.jpg",
+            "pts_s": 75.809067
+          },
+          {
+            "filename": "frame_00075842.jpg",
+            "pts_s": 75.842433
+          },
+          {
+            "filename": "frame_00075876.jpg",
+            "pts_s": 75.8758
+          },
+          {
+            "filename": "frame_00075909.jpg",
+            "pts_s": 75.909167
+          },
+          {
+            "filename": "frame_00075943.jpg",
+            "pts_s": 75.942533
+          },
+          {
+            "filename": "frame_00075976.jpg",
+            "pts_s": 75.9759
+          },
+          {
+            "filename": "frame_00076009.jpg",
+            "pts_s": 76.009267
+          },
+          {
+            "filename": "frame_00076043.jpg",
+            "pts_s": 76.042633
+          },
+          {
+            "filename": "frame_00076076.jpg",
+            "pts_s": 76.076
+          },
+          {
+            "filename": "frame_00076109.jpg",
+            "pts_s": 76.109367
+          },
+          {
+            "filename": "frame_00076143.jpg",
+            "pts_s": 76.142733
+          },
+          {
+            "filename": "frame_00076176.jpg",
+            "pts_s": 76.1761
+          },
+          {
+            "filename": "frame_00076209.jpg",
+            "pts_s": 76.209467
+          },
+          {
+            "filename": "frame_00076243.jpg",
+            "pts_s": 76.242833
+          },
+          {
+            "filename": "frame_00076276.jpg",
+            "pts_s": 76.2762
+          },
+          {
+            "filename": "frame_00076310.jpg",
+            "pts_s": 76.309567
+          },
+          {
+            "filename": "frame_00076343.jpg",
+            "pts_s": 76.342933
+          },
+          {
+            "filename": "frame_00076376.jpg",
+            "pts_s": 76.3763
+          },
+          {
+            "filename": "frame_00076410.jpg",
+            "pts_s": 76.409667
+          },
+          {
+            "filename": "frame_00076443.jpg",
+            "pts_s": 76.443033
+          },
+          {
+            "filename": "frame_00076476.jpg",
+            "pts_s": 76.4764
+          },
+          {
+            "filename": "frame_00076510.jpg",
+            "pts_s": 76.509767
+          },
+          {
+            "filename": "frame_00076543.jpg",
+            "pts_s": 76.543133
+          },
+          {
+            "filename": "frame_00076576.jpg",
+            "pts_s": 76.5765
+          },
+          {
+            "filename": "frame_00076610.jpg",
+            "pts_s": 76.609867
+          },
+          {
+            "filename": "frame_00076643.jpg",
+            "pts_s": 76.643233
+          },
+          {
+            "filename": "frame_00076677.jpg",
+            "pts_s": 76.6766
+          },
+          {
+            "filename": "frame_00076710.jpg",
+            "pts_s": 76.709967
+          },
+          {
+            "filename": "frame_00076743.jpg",
+            "pts_s": 76.743333
+          },
+          {
+            "filename": "frame_00076777.jpg",
+            "pts_s": 76.7767
+          },
+          {
+            "filename": "frame_00076810.jpg",
+            "pts_s": 76.810067
+          },
+          {
+            "filename": "frame_00076843.jpg",
+            "pts_s": 76.843433
+          },
+          {
+            "filename": "frame_00076877.jpg",
+            "pts_s": 76.8768
+          },
+          {
+            "filename": "frame_00076910.jpg",
+            "pts_s": 76.910167
+          },
+          {
+            "filename": "frame_00076944.jpg",
+            "pts_s": 76.943533
+          },
+          {
+            "filename": "frame_00076977.jpg",
+            "pts_s": 76.9769
+          },
+          {
+            "filename": "frame_00077010.jpg",
+            "pts_s": 77.010267
+          },
+          {
+            "filename": "frame_00077044.jpg",
+            "pts_s": 77.043633
+          },
+          {
+            "filename": "frame_00077077.jpg",
+            "pts_s": 77.077
+          },
+          {
+            "filename": "frame_00077110.jpg",
+            "pts_s": 77.110367
+          },
+          {
+            "filename": "frame_00077144.jpg",
+            "pts_s": 77.143733
+          },
+          {
+            "filename": "frame_00077177.jpg",
+            "pts_s": 77.1771
+          },
+          {
+            "filename": "frame_00077210.jpg",
+            "pts_s": 77.210467
+          },
+          {
+            "filename": "frame_00077244.jpg",
+            "pts_s": 77.243833
+          },
+          {
+            "filename": "frame_00077277.jpg",
+            "pts_s": 77.2772
+          },
+          {
+            "filename": "frame_00077311.jpg",
+            "pts_s": 77.310567
+          },
+          {
+            "filename": "frame_00077344.jpg",
+            "pts_s": 77.343933
+          },
+          {
+            "filename": "frame_00077377.jpg",
+            "pts_s": 77.3773
+          },
+          {
+            "filename": "frame_00077411.jpg",
+            "pts_s": 77.410667
+          },
+          {
+            "filename": "frame_00077444.jpg",
+            "pts_s": 77.444033
+          },
+          {
+            "filename": "frame_00077477.jpg",
+            "pts_s": 77.4774
+          },
+          {
+            "filename": "frame_00077511.jpg",
+            "pts_s": 77.510767
+          },
+          {
+            "filename": "frame_00077544.jpg",
+            "pts_s": 77.544133
+          },
+          {
+            "filename": "frame_00077578.jpg",
+            "pts_s": 77.5775
+          },
+          {
+            "filename": "frame_00077611.jpg",
+            "pts_s": 77.610867
+          },
+          {
+            "filename": "frame_00077644.jpg",
+            "pts_s": 77.644233
+          },
+          {
+            "filename": "frame_00077678.jpg",
+            "pts_s": 77.6776
+          },
+          {
+            "filename": "frame_00077711.jpg",
+            "pts_s": 77.710967
+          },
+          {
+            "filename": "frame_00077744.jpg",
+            "pts_s": 77.744333
+          },
+          {
+            "filename": "frame_00077778.jpg",
+            "pts_s": 77.7777
+          },
+          {
+            "filename": "frame_00077811.jpg",
+            "pts_s": 77.811067
+          },
+          {
+            "filename": "frame_00077844.jpg",
+            "pts_s": 77.844433
+          },
+          {
+            "filename": "frame_00077878.jpg",
+            "pts_s": 77.8778
+          },
+          {
+            "filename": "frame_00077911.jpg",
+            "pts_s": 77.911167
+          },
+          {
+            "filename": "frame_00077945.jpg",
+            "pts_s": 77.944533
+          },
+          {
+            "filename": "frame_00077978.jpg",
+            "pts_s": 77.9779
+          }
+        ]
+      },
+      "rows": [
+        {
+          "filename": "frame_00073006.jpg",
+          "pts_s": 73.006267,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.09022030000051018
+        },
+        {
+          "filename": "frame_00073040.jpg",
+          "pts_s": 73.039633,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08897790000264649
+        },
+        {
+          "filename": "frame_00073073.jpg",
+          "pts_s": 73.073,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08894019999934244
+        },
+        {
+          "filename": "frame_00073106.jpg",
+          "pts_s": 73.106367,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.0879053999997268
+        },
+        {
+          "filename": "frame_00073140.jpg",
+          "pts_s": 73.139733,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08563300000241725
+        },
+        {
+          "filename": "frame_00073173.jpg",
+          "pts_s": 73.1731,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08675319999747444
+        },
+        {
+          "filename": "frame_00073206.jpg",
+          "pts_s": 73.206467,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08624780000172905
+        },
+        {
+          "filename": "frame_00073240.jpg",
+          "pts_s": 73.239833,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08767639999859966
+        },
+        {
+          "filename": "frame_00073273.jpg",
+          "pts_s": 73.2732,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08638680000149179
+        },
+        {
+          "filename": "frame_00073307.jpg",
+          "pts_s": 73.306567,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08716809999896213
+        },
+        {
+          "filename": "frame_00073340.jpg",
+          "pts_s": 73.339933,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08712179999929504
+        },
+        {
+          "filename": "frame_00073373.jpg",
+          "pts_s": 73.3733,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08434810000107973
+        },
+        {
+          "filename": "frame_00073407.jpg",
+          "pts_s": 73.406667,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08882720000110567
+        },
+        {
+          "filename": "frame_00073440.jpg",
+          "pts_s": 73.440033,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08862990000125137
+        },
+        {
+          "filename": "frame_00073473.jpg",
+          "pts_s": 73.4734,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08764749999681953
+        },
+        {
+          "filename": "frame_00073507.jpg",
+          "pts_s": 73.506767,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08700200000021141
+        },
+        {
+          "filename": "frame_00073540.jpg",
+          "pts_s": 73.540133,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08781549999912386
+        },
+        {
+          "filename": "frame_00073574.jpg",
+          "pts_s": 73.5735,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08715099999972153
+        },
+        {
+          "filename": "frame_00073607.jpg",
+          "pts_s": 73.606867,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08607499999925494
+        },
+        {
+          "filename": "frame_00073640.jpg",
+          "pts_s": 73.640233,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.0867885000006936
+        },
+        {
+          "filename": "frame_00073674.jpg",
+          "pts_s": 73.6736,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08791239999845857
+        },
+        {
+          "filename": "frame_00073707.jpg",
+          "pts_s": 73.706967,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08737529999780236
+        },
+        {
+          "filename": "frame_00073740.jpg",
+          "pts_s": 73.740333,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08798770000066725
+        },
+        {
+          "filename": "frame_00073774.jpg",
+          "pts_s": 73.7737,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08463120000305935
+        },
+        {
+          "filename": "frame_00073807.jpg",
+          "pts_s": 73.807067,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 221.884703125,
+          "ocr_s": 0.08558970000012778
+        },
+        {
+          "filename": "frame_00073840.jpg",
+          "pts_s": 73.840433,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.620828125,
+          "ocr_s": 0.08407509999960894
+        },
+        {
+          "filename": "frame_00073874.jpg",
+          "pts_s": 73.8738,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.09020800000143936
+        },
+        {
+          "filename": "frame_00073907.jpg",
+          "pts_s": 73.907167,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08896639999875333
+        },
+        {
+          "filename": "frame_00073941.jpg",
+          "pts_s": 73.940533,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08436979999896721
+        },
+        {
+          "filename": "frame_00073974.jpg",
+          "pts_s": 73.9739,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08972179999909713
+        },
+        {
+          "filename": "frame_00074007.jpg",
+          "pts_s": 74.007267,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08681019999858108
+        },
+        {
+          "filename": "frame_00074041.jpg",
+          "pts_s": 74.040633,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08736340000177734
+        },
+        {
+          "filename": "frame_00074074.jpg",
+          "pts_s": 74.074,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08872759999940172
+        },
+        {
+          "filename": "frame_00074107.jpg",
+          "pts_s": 74.107367,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.086889300000621
+        },
+        {
+          "filename": "frame_00074141.jpg",
+          "pts_s": 74.140733,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.0881842000017059
+        },
+        {
+          "filename": "frame_00074174.jpg",
+          "pts_s": 74.1741,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08640490000107093
+        },
+        {
+          "filename": "frame_00074207.jpg",
+          "pts_s": 74.207467,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08761109999977634
+        },
+        {
+          "filename": "frame_00074241.jpg",
+          "pts_s": 74.240833,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08613580000019283
+        },
+        {
+          "filename": "frame_00074274.jpg",
+          "pts_s": 74.2742,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08503400000336114
+        },
+        {
+          "filename": "frame_00074308.jpg",
+          "pts_s": 74.307567,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66003125,
+          "ocr_s": 0.08451869999771588
+        },
+        {
+          "filename": "frame_00074341.jpg",
+          "pts_s": 74.340933,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 223.36896874609374,
+          "ocr_s": 0.08624069999859785
+        },
+        {
+          "filename": "frame_00074374.jpg",
+          "pts_s": 74.3743,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 223.36745312109375,
+          "ocr_s": 0.08576529999845661
+        },
+        {
+          "filename": "frame_00074408.jpg",
+          "pts_s": 74.407667,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 223.36842187109374,
+          "ocr_s": 0.08492100000148639
+        },
+        {
+          "filename": "frame_00074441.jpg",
+          "pts_s": 74.441033,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 223.36842187109374,
+          "ocr_s": 0.08436970000184374
+        },
+        {
+          "filename": "frame_00074474.jpg",
+          "pts_s": 74.4744,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 223.36842187109374,
+          "ocr_s": 0.08720900000116671
+        },
+        {
+          "filename": "frame_00074508.jpg",
+          "pts_s": 74.507767,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.08532629999899655
+        },
+        {
+          "filename": "frame_00074541.jpg",
+          "pts_s": 74.541133,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.08560190000207513
+        },
+        {
+          "filename": "frame_00074574.jpg",
+          "pts_s": 74.5745,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.08425370000259136
+        },
+        {
+          "filename": "frame_00074608.jpg",
+          "pts_s": 74.607867,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.0839769999984128
+        },
+        {
+          "filename": "frame_00074641.jpg",
+          "pts_s": 74.641233,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.1043312000001606
+        },
+        {
+          "filename": "frame_00074675.jpg",
+          "pts_s": 74.6746,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.08748740000010002
+        },
+        {
+          "filename": "frame_00074708.jpg",
+          "pts_s": 74.707967,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.08687420000205748
+        },
+        {
+          "filename": "frame_00074741.jpg",
+          "pts_s": 74.741333,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.08771019999767304
+        },
+        {
+          "filename": "frame_00074775.jpg",
+          "pts_s": 74.7747,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.08955649999916204
+        },
+        {
+          "filename": "frame_00074808.jpg",
+          "pts_s": 74.808067,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.0848495999998704
+        },
+        {
+          "filename": "frame_00074841.jpg",
+          "pts_s": 74.841433,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.09427510000023176
+        },
+        {
+          "filename": "frame_00074875.jpg",
+          "pts_s": 74.8748,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.09071430000039982
+        },
+        {
+          "filename": "frame_00074908.jpg",
+          "pts_s": 74.908167,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.660375,
+          "ocr_s": 0.08988160000080825
+        },
+        {
+          "filename": "frame_00074942.jpg",
+          "pts_s": 74.941533,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 209.66387499975585,
+          "ocr_s": 0.09002619999955641
+        },
+        {
+          "filename": "frame_00074975.jpg",
+          "pts_s": 74.9749,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 224.85639290765383,
+          "ocr_s": 0.0892679999997199
+        },
+        {
+          "filename": "frame_00075008.jpg",
+          "pts_s": 75.008267,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 210.78105927124022,
+          "ocr_s": 0.0895366999975522
+        },
+        {
+          "filename": "frame_00075042.jpg",
+          "pts_s": 75.041633,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 223.447,
+          "ocr_s": 0.08980109999902197
+        },
+        {
+          "filename": "frame_00075075.jpg",
+          "pts_s": 75.075,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 234.25501468652348,
+          "ocr_s": 0.08723230000032345
+        },
+        {
+          "filename": "frame_00075108.jpg",
+          "pts_s": 75.108367,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 246.445421875,
+          "ocr_s": 0.0885667000002286
+        },
+        {
+          "filename": "frame_00075142.jpg",
+          "pts_s": 75.141733,
+          "text": "hello = ‘hi'moms",
+          "sharpness": 246.96321875,
+          "ocr_s": 0.08879529999830993
+        },
+        {
+          "filename": "frame_00075175.jpg",
+          "pts_s": 75.1751,
+          "text": "hello = ‘hi lom’",
+          "sharpness": 241.663296875,
+          "ocr_s": 0.08747529999891412
+        },
+        {
+          "filename": "frame_00075208.jpg",
+          "pts_s": 75.208467,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 243.4295625,
+          "ocr_s": 0.08689869999943767
+        },
+        {
+          "filename": "frame_00075242.jpg",
+          "pts_s": 75.241833,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 245.07121875,
+          "ocr_s": 0.08363400000234833
+        },
+        {
+          "filename": "frame_00075275.jpg",
+          "pts_s": 75.2752,
+          "text": "hello = ‘hi mom!",
+          "sharpness": 247.504828125,
+          "ocr_s": 0.08643929999743705
+        },
+        {
+          "filename": "frame_00075309.jpg",
+          "pts_s": 75.308567,
+          "text": "hello = ‘hi mom’,",
+          "sharpness": 248.418625,
+          "ocr_s": 0.08520130000033532
+        },
+        {
+          "filename": "frame_00075342.jpg",
+          "pts_s": 75.341933,
+          "text": "hello = ‘himoms , 0",
+          "sharpness": 244.005625,
+          "ocr_s": 0.08643769999980577
+        },
+        {
+          "filename": "frame_00075375.jpg",
+          "pts_s": 75.3753,
+          "text": "hello = ‘hi mom’ , 0",
+          "sharpness": 244.509015625,
+          "ocr_s": 0.08683709999968414
+        },
+        {
+          "filename": "frame_00075409.jpg",
+          "pts_s": 75.408667,
+          "text": "hello = ‘hi mom’ , 0",
+          "sharpness": 244.509015625,
+          "ocr_s": 0.14089270000113174
+        },
+        {
+          "filename": "frame_00075442.jpg",
+          "pts_s": 75.442033,
+          "text": "hello ='himom’ @",
+          "sharpness": 295.745234375,
+          "ocr_s": 0.09607520000281511
+        },
+        {
+          "filename": "frame_00075475.jpg",
+          "pts_s": 75.4754,
+          "text": "hello ='himom'| @ = —",
+          "sharpness": 313.16878125,
+          "ocr_s": 0.09325990000070306
+        },
+        {
+          "filename": "frame_00075509.jpg",
+          "pts_s": 75.508767,
+          "text": "hello ='himom'| @ =~",
+          "sharpness": 313.20825,
+          "ocr_s": 0.11028689999875496
+        },
+        {
+          "filename": "frame_00075542.jpg",
+          "pts_s": 75.542133,
+          "text": "hello ='himom'| @ =",
+          "sharpness": 286.2625,
+          "ocr_s": 0.15454420000241953
+        },
+        {
+          "filename": "frame_00075576.jpg",
+          "pts_s": 75.5755,
+          "text": "hello ='himom'| @",
+          "sharpness": 249.873765625,
+          "ocr_s": 0.09882939999806695
+        },
+        {
+          "filename": "frame_00075609.jpg",
+          "pts_s": 75.608867,
+          "text": "hello = ‘hi mom'| ,",
+          "sharpness": 266.903625,
+          "ocr_s": 0.1094706000003498
+        },
+        {
+          "filename": "frame_00075642.jpg",
+          "pts_s": 75.642233,
+          "text": "hello = ‘hi mom)",
+          "sharpness": 271.61051826116943,
+          "ocr_s": 0.08879130000059376
+        },
+        {
+          "filename": "frame_00075676.jpg",
+          "pts_s": 75.6756,
+          "text": "hello = ‘hi mom) 2",
+          "sharpness": 227.12228125,
+          "ocr_s": 0.08956259999831673
+        },
+        {
+          "filename": "frame_00075709.jpg",
+          "pts_s": 75.708967,
+          "text": "hello = ‘hi mom) 2",
+          "sharpness": 227.12228125,
+          "ocr_s": 0.14348319999771775
+        },
+        {
+          "filename": "frame_00075742.jpg",
+          "pts_s": 75.742333,
+          "text": "hello = ‘hi mom) 2",
+          "sharpness": 227.12228125,
+          "ocr_s": 0.10265209999852232
+        },
+        {
+          "filename": "frame_00075776.jpg",
+          "pts_s": 75.7757,
+          "text": "hello = ‘hi mom) 2",
+          "sharpness": 227.12228125,
+          "ocr_s": 0.09556610000072396
+        },
+        {
+          "filename": "frame_00075809.jpg",
+          "pts_s": 75.809067,
+          "text": "hello = ‘hi mom) 2",
+          "sharpness": 227.12228125,
+          "ocr_s": 0.10288589999981923
+        },
+        {
+          "filename": "frame_00075842.jpg",
+          "pts_s": 75.842433,
+          "text": "hello = ‘hi mom) 2",
+          "sharpness": 227.12228125,
+          "ocr_s": 0.0885110999988683
+        },
+        {
+          "filename": "frame_00075876.jpg",
+          "pts_s": 75.8758,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 301.77075,
+          "ocr_s": 0.1310747999996238
+        },
+        {
+          "filename": "frame_00075909.jpg",
+          "pts_s": 75.909167,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.636828125,
+          "ocr_s": 0.10384749999866472
+        },
+        {
+          "filename": "frame_00075943.jpg",
+          "pts_s": 75.942533,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 302.637,
+          "ocr_s": 0.10252519999994547
+        },
+        {
+          "filename": "frame_00075976.jpg",
+          "pts_s": 75.9759,
+          "text": "hello, hola = ‘hi mom’ 2 2",
+          "sharpness": 303.52921875,
+          "ocr_s": 0.11052490000292892
+        },
+        {
+          "filename": "frame_00076009.jpg",
+          "pts_s": 76.009267,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.41565625,
+          "ocr_s": 0.11056240000107209
+        },
+        {
+          "filename": "frame_00076043.jpg",
+          "pts_s": 76.042633,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.41565625,
+          "ocr_s": 0.14119429999846034
+        },
+        {
+          "filename": "frame_00076076.jpg",
+          "pts_s": 76.076,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.09773009999844362
+        },
+        {
+          "filename": "frame_00076109.jpg",
+          "pts_s": 76.109367,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.10155229999872972
+        },
+        {
+          "filename": "frame_00076143.jpg",
+          "pts_s": 76.142733,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.201020199998311
+        },
+        {
+          "filename": "frame_00076176.jpg",
+          "pts_s": 76.1761,
+          "text": "hello, hola = ‘hi mom’ 2",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.1536338000005344
+        },
+        {
+          "filename": "frame_00076209.jpg",
+          "pts_s": 76.209467,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.10681370000020252
+        },
+        {
+          "filename": "frame_00076243.jpg",
+          "pts_s": 76.242833,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.1062554000018281
+        },
+        {
+          "filename": "frame_00076276.jpg",
+          "pts_s": 76.2762,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.09767970000029891
+        },
+        {
+          "filename": "frame_00076310.jpg",
+          "pts_s": 76.309567,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.08873030000177096
+        },
+        {
+          "filename": "frame_00076343.jpg",
+          "pts_s": 76.342933,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.614578125,
+          "ocr_s": 0.0885798999988765
+        },
+        {
+          "filename": "frame_00076376.jpg",
+          "pts_s": 76.3763,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 290.75475,
+          "ocr_s": 0.09108080000078189
+        },
+        {
+          "filename": "frame_00076410.jpg",
+          "pts_s": 76.409667,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.611953125,
+          "ocr_s": 0.09486680000190972
+        },
+        {
+          "filename": "frame_00076443.jpg",
+          "pts_s": 76.443033,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.603578125,
+          "ocr_s": 0.09490229999937583
+        },
+        {
+          "filename": "frame_00076476.jpg",
+          "pts_s": 76.4764,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.58834375,
+          "ocr_s": 0.09778110000115703
+        },
+        {
+          "filename": "frame_00076510.jpg",
+          "pts_s": 76.509767,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.53790625,
+          "ocr_s": 0.09463029999824357
+        },
+        {
+          "filename": "frame_00076543.jpg",
+          "pts_s": 76.543133,
+          "text": "‘hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.535671875,
+          "ocr_s": 0.09411999999792897
+        },
+        {
+          "filename": "frame_00076576.jpg",
+          "pts_s": 76.5765,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.29578125,
+          "ocr_s": 0.09317139999984647
+        },
+        {
+          "filename": "frame_00076610.jpg",
+          "pts_s": 76.609867,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.413296875,
+          "ocr_s": 0.09444830000211368
+        },
+        {
+          "filename": "frame_00076643.jpg",
+          "pts_s": 76.643233,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.413078125,
+          "ocr_s": 0.0938456000003498
+        },
+        {
+          "filename": "frame_00076677.jpg",
+          "pts_s": 76.6766,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.413609375,
+          "ocr_s": 0.09294290000252659
+        },
+        {
+          "filename": "frame_00076710.jpg",
+          "pts_s": 76.709967,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.412609375,
+          "ocr_s": 0.09626960000241525
+        },
+        {
+          "filename": "frame_00076743.jpg",
+          "pts_s": 76.743333,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.39809375,
+          "ocr_s": 0.09593210000093677
+        },
+        {
+          "filename": "frame_00076777.jpg",
+          "pts_s": 76.7767,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.38709375,
+          "ocr_s": 0.09450079999805894
+        },
+        {
+          "filename": "frame_00076810.jpg",
+          "pts_s": 76.810067,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.38709375,
+          "ocr_s": 0.11577140000008512
+        },
+        {
+          "filename": "frame_00076843.jpg",
+          "pts_s": 76.843433,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.38709375,
+          "ocr_s": 0.0959437000019534
+        },
+        {
+          "filename": "frame_00076877.jpg",
+          "pts_s": 76.8768,
+          "text": "hello, hola = ‘hi mom'| ‘hola mama’",
+          "sharpness": 449.38709375,
+          "ocr_s": 0.0954606999985117
+        },
+        {
+          "filename": "frame_00076910.jpg",
+          "pts_s": 76.910167,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mamé'",
+          "sharpness": 431.960015625,
+          "ocr_s": 0.09617720000096597
+        },
+        {
+          "filename": "frame_00076944.jpg",
+          "pts_s": 76.943533,
+          "text": "hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.943359375,
+          "ocr_s": 0.09484030000021448
+        },
+        {
+          "filename": "frame_00076977.jpg",
+          "pts_s": 76.9769,
+          "text": "hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.94515625,
+          "ocr_s": 0.09420250000039232
+        },
+        {
+          "filename": "frame_00077010.jpg",
+          "pts_s": 77.010267,
+          "text": "hello, hola = ‘hi mom', ‘hola mama’ —",
+          "sharpness": 431.949046875,
+          "ocr_s": 0.09535110000069835
+        },
+        {
+          "filename": "frame_00077044.jpg",
+          "pts_s": 77.043633,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.0958122000010917
+        },
+        {
+          "filename": "frame_00077077.jpg",
+          "pts_s": 77.077,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.09299420000024838
+        },
+        {
+          "filename": "frame_00077110.jpg",
+          "pts_s": 77.110367,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.09268650000012713
+        },
+        {
+          "filename": "frame_00077144.jpg",
+          "pts_s": 77.143733,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.09294010000303388
+        },
+        {
+          "filename": "frame_00077177.jpg",
+          "pts_s": 77.1771,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.0956183999987843
+        },
+        {
+          "filename": "frame_00077210.jpg",
+          "pts_s": 77.210467,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.09609479999926407
+        },
+        {
+          "filename": "frame_00077244.jpg",
+          "pts_s": 77.243833,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.09422639999684179
+        },
+        {
+          "filename": "frame_00077277.jpg",
+          "pts_s": 77.2772,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.09407370000189985
+        },
+        {
+          "filename": "frame_00077311.jpg",
+          "pts_s": 77.310567,
+          "text": "‘hello, hola = ‘hi mom', ‘hola mama’",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.0950598000017635
+        },
+        {
+          "filename": "frame_00077344.jpg",
+          "pts_s": 77.343933,
+          "text": "hello, hola = ‘hi mom', ‘hola mamé'",
+          "sharpness": 431.950296875,
+          "ocr_s": 0.09407419999843114
+        },
+        {
+          "filename": "frame_00077377.jpg",
+          "pts_s": 77.3773,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 500.322265625,
+          "ocr_s": 0.09652790000109235
+        },
+        {
+          "filename": "frame_00077411.jpg",
+          "pts_s": 77.410667,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 500.21265625,
+          "ocr_s": 0.09648309999829507
+        },
+        {
+          "filename": "frame_00077444.jpg",
+          "pts_s": 77.444033,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 500.7756875,
+          "ocr_s": 0.09414000000106171
+        },
+        {
+          "filename": "frame_00077477.jpg",
+          "pts_s": 77.4774,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.239015625,
+          "ocr_s": 0.09667049999916344
+        },
+        {
+          "filename": "frame_00077511.jpg",
+          "pts_s": 77.510767,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09645470000032219
+        },
+        {
+          "filename": "frame_00077544.jpg",
+          "pts_s": 77.544133,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09503460000269115
+        },
+        {
+          "filename": "frame_00077578.jpg",
+          "pts_s": 77.5775,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09579860000303597
+        },
+        {
+          "filename": "frame_00077611.jpg",
+          "pts_s": 77.610867,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.228890625,
+          "ocr_s": 0.0966816000000108
+        },
+        {
+          "filename": "frame_00077644.jpg",
+          "pts_s": 77.644233,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.228890625,
+          "ocr_s": 0.09428009999828646
+        },
+        {
+          "filename": "frame_00077678.jpg",
+          "pts_s": 77.6776,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09749010000086855
+        },
+        {
+          "filename": "frame_00077711.jpg",
+          "pts_s": 77.710967,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09597509999730391
+        },
+        {
+          "filename": "frame_00077744.jpg",
+          "pts_s": 77.744333,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09314449999874341
+        },
+        {
+          "filename": "frame_00077778.jpg",
+          "pts_s": 77.7777,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09328040000036708
+        },
+        {
+          "filename": "frame_00077811.jpg",
+          "pts_s": 77.811067,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09262139999918872
+        },
+        {
+          "filename": "frame_00077844.jpg",
+          "pts_s": 77.844433,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09420429999954649
+        },
+        {
+          "filename": "frame_00077878.jpg",
+          "pts_s": 77.8778,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'",
+          "sharpness": 485.15203125,
+          "ocr_s": 0.09229169999889564
+        },
+        {
+          "filename": "frame_00077911.jpg",
+          "pts_s": 77.911167,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'",
+          "sharpness": 485.15203125,
+          "ocr_s": 0.09545979999893461
+        },
+        {
+          "filename": "frame_00077945.jpg",
+          "pts_s": 77.944533,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'",
+          "sharpness": 485.15203125,
+          "ocr_s": 0.09173090000331285
+        },
+        {
+          "filename": "frame_00077978.jpg",
+          "pts_s": 77.9779,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'",
+          "sharpness": 485.15203125,
+          "ocr_s": 0.0945224999995844
+        }
+      ],
+      "selected": [
+        {
+          "filename": "frame_00074341.jpg",
+          "pts_s": 74.340933,
+          "text": "hello = ‘hi mom| 2",
+          "sharpness": 223.36896874609374,
+          "ocr_s": 0.08624069999859785
+        },
+        {
+          "filename": "frame_00075108.jpg",
+          "pts_s": 75.108367,
+          "text": "hello = ‘hi mom’",
+          "sharpness": 246.445421875,
+          "ocr_s": 0.0885667000002286
+        },
+        {
+          "filename": "frame_00075909.jpg",
+          "pts_s": 75.909167,
+          "text": "hello, hola = ‘hi mom’",
+          "sharpness": 303.636828125,
+          "ocr_s": 0.10384749999866472
+        },
+        {
+          "filename": "frame_00077511.jpg",
+          "pts_s": 77.510767,
+          "text": "hello, hola = ‘hi mom', ‘hola mama'| —",
+          "sharpness": 502.242109375,
+          "ocr_s": 0.09645470000032219
+        }
+      ],
+      "metrics": {
+        "sparse_existing": {
+          "times": [],
+          "covered": [],
+          "recall": 0.0,
+          "missed": [
+            "single",
+            "intermediate",
+            "multiple"
+          ],
+          "redundant": 0,
+          "nonessential": 0
+        },
+        "dense_existing": {
+          "times": [],
+          "covered": [],
+          "recall": 0.0,
+          "missed": [
+            "single",
+            "intermediate",
+            "multiple"
+          ],
+          "redundant": 0,
+          "nonessential": 0
+        },
+        "time_grid": {
+          "times": [
+            73.625,
+            74.875,
+            76.125,
+            77.375
+          ],
+          "covered": [
+            "intermediate",
+            "multiple",
+            "single"
+          ],
+          "recall": 1.0,
+          "missed": [],
+          "redundant": 1,
+          "nonessential": 0
+        },
+        "subject_seek": {
+          "times": [
+            74.340933,
+            75.108367,
+            75.909167,
+            77.510767
+          ],
+          "covered": [
+            "intermediate",
+            "multiple",
+            "single"
+          ],
+          "recall": 1.0,
+          "missed": [],
+          "redundant": 1,
+          "nonessential": 0
+        }
+      },
+      "costs": {
+        "crop_ocr_score_s": 15.293783599998278,
+        "ocr_s": 14.214473300009558,
+        "sparse_decode_write_s": 0.14253600000301958,
+        "sparse_select_s": 0.15931169999748818,
+        "dense_select_s": 2.4182187000005797,
+        "time_grid_seek_write_s": 0.43146940000224276
+      },
+      "exact_text": {
+        "subject_seek": [
+          {
+            "pts_s": 74.340933,
+            "text": "hello = ‘hi mom| 2"
+          },
+          {
+            "pts_s": 75.108367,
+            "text": "hello = ‘hi mom’"
+          },
+          {
+            "pts_s": 75.909167,
+            "text": "hello, hola = ‘hi mom’"
+          },
+          {
+            "pts_s": 77.510767,
+            "text": "hello, hola = ‘hi mom', ‘hola mama'| —"
+          }
+        ],
+        "time_grid": [
+          {
+            "pts_s": 73.625,
+            "text": "hello = ‘hi mom| 2"
+          },
+          {
+            "pts_s": 74.875,
+            "text": "hello = ‘hi mom’"
+          },
+          {
+            "pts_s": 76.125,
+            "text": "hello, hola = ‘hi mom’"
+          },
+          {
+            "pts_s": 77.375,
+            "text": "hello, hola = ‘hi mom', ‘hola mama'| —"
+          }
+        ]
+      },
+      "source_sha256": "27ae317a6bae60f16283b5aa2c2b02b50901ed7f7caeb6c3ecd1300037a381d5",
+      "edge_density_range": [
+        0.301,
+        0.608
+      ]
+    }
+  ]
+}

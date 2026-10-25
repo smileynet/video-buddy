@@ -1,0 +1,55 @@
+[
+  {
+    "case": "filename-tune",
+    "sparse": {
+      "times": [
+        60.25,
+        61.75,
+        62.25,
+        62.75
+      ],
+      "covered": [
+        "notebook"
+      ]
+    },
+    "dense": {
+      "times": [
+        60.127,
+        61.562,
+        62.396,
+        62.996
+      ],
+      "covered": [
+        "notebook"
+      ]
+    }
+  },
+  {
+    "case": "code-heldout",
+    "sparse": {
+      "times": [
+        73.25,
+        76.25,
+        76.75,
+        77.75
+      ],
+      "covered": [
+        "single",
+        "intermediate",
+        "multiple"
+      ]
+    },
+    "dense": {
+      "times": [
+        73.006,
+        76.677,
+        77.377,
+        77.978
+      ],
+      "covered": [
+        "single",
+        "multiple"
+      ]
+    }
+  }
+]
