@@ -1,0 +1,256 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.14",
+  "sqlite": "3.53.1",
+  "scratch_store": "C:\\Users\\uosmi\\AppData\\Local\\Temp\\video-buddy-THROWAWAY-state-johno8e3",
+  "fixture_path": "D:\\code\\video-buddy\\vb-workspace\\notes\\media\\Qr3VsZYQy4s\\frame_00174148.jpg",
+  "fixture_bytes": 283710,
+  "fixture_sha256": "ad4513b01f0bbe1883f5ecf668685c1695093ed8a6412f881c89b720f1fee383",
+  "elapsed_seconds": 11.827478799998062,
+  "all_passed": true,
+  "observations": [
+    {
+      "option": "manifest",
+      "case": "after_artifact",
+      "passed": true,
+      "checks": {
+        "injected_exit_17": true,
+        "resume_exit_0": true,
+        "generation_count": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "manifest",
+      "case": "partial_artifact",
+      "passed": true,
+      "checks": {
+        "injected_exit_17": true,
+        "resume_exit_0": true,
+        "generation_count": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "manifest",
+      "case": "state_commit",
+      "passed": true,
+      "checks": {
+        "injected_exit_17": true,
+        "resume_exit_0": true,
+        "generation_count": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "manifest",
+      "case": "corrupt",
+      "passed": true,
+      "checks": {
+        "regenerated": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "manifest",
+      "case": "missing",
+      "passed": true,
+      "checks": {
+        "regenerated": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "manifest",
+      "case": "config_changed",
+      "passed": true,
+      "checks": {
+        "invalidated": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "manifest",
+      "case": "duplicate",
+      "passed": true,
+      "checks": {
+        "both_completed": true,
+        "one_generation": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "manifest",
+      "case": "auth",
+      "passed": true,
+      "checks": {
+        "no_blind_retry": true,
+        "explicit_recovery": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "manifest",
+      "case": "optional",
+      "passed": true,
+      "checks": {
+        "state_complete": true,
+        "hash_matches_disk": true,
+        "optional_failure_visible": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "manifest",
+      "case": "edits",
+      "passed": true,
+      "checks": {
+        "sidecar_untouched": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "sqlite",
+      "case": "after_artifact",
+      "passed": true,
+      "checks": {
+        "injected_exit_17": true,
+        "resume_exit_0": true,
+        "generation_count": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "sqlite",
+      "case": "partial_artifact",
+      "passed": true,
+      "checks": {
+        "injected_exit_17": true,
+        "resume_exit_0": true,
+        "generation_count": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "sqlite",
+      "case": "state_commit",
+      "passed": true,
+      "checks": {
+        "injected_exit_17": true,
+        "resume_exit_0": true,
+        "generation_count": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "sqlite",
+      "case": "corrupt",
+      "passed": true,
+      "checks": {
+        "regenerated": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "sqlite",
+      "case": "missing",
+      "passed": true,
+      "checks": {
+        "regenerated": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "sqlite",
+      "case": "config_changed",
+      "passed": true,
+      "checks": {
+        "invalidated": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    },
+    {
+      "option": "sqlite",
+      "case": "duplicate",
+      "passed": true,
+      "checks": {
+        "both_completed": true,
+        "one_generation": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "sqlite",
+      "case": "auth",
+      "passed": true,
+      "checks": {
+        "no_blind_retry": true,
+        "explicit_recovery": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "sqlite",
+      "case": "optional",
+      "passed": true,
+      "checks": {
+        "state_complete": true,
+        "hash_matches_disk": true,
+        "optional_failure_visible": true
+      },
+      "generations": 1
+    },
+    {
+      "option": "sqlite",
+      "case": "edits",
+      "passed": true,
+      "checks": {
+        "sidecar_untouched": true,
+        "state_complete": true,
+        "hash_matches_disk": true
+      },
+      "generations": 2
+    }
+  ],
+  "limits": [
+    "dummy stage, not a downloader or media pipeline",
+    "both options serialize writers across the whole scratch store",
+    "process crashes, not power loss or network filesystem failure",
+    "known expected fixture bytes substitute for stage-specific artifact validation",
+    "no multi-machine lock or high-throughput evaluation"
+  ]
+}
