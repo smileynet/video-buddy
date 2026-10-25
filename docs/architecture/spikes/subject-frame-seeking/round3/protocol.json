@@ -1,0 +1,111 @@
+{
+  "source": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+  "freshness": "Not previously used for scoring or tuning; source/window selection based on visible phenomena only",
+  "candidate_source_sha256": "48569e78870c74a6a97c603bc47d2ce98cc035d4b4f5d5360b554feed0aa65ae",
+  "source_commit": "39275c6072e85be74640c292310858202809a659",
+  "ocr_psm": 7,
+  "template_threshold": 0.8,
+  "minimum_run": 2,
+  "ranking": "first occurrence, sharpest representative per exact OCR string",
+  "budgets": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+  ],
+  "offsets": [
+    0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "cases": [
+    {
+      "id": "scroll",
+      "folder": "seek-real-scroll3",
+      "header": [
+        44,
+        43,
+        730,
+        74
+      ],
+      "roi": [
+        44,
+        547,
+        865,
+        571
+      ],
+      "states": [
+        "git add .",
+        "git status",
+        "post-add status evidence"
+      ]
+    },
+    {
+      "id": "motion",
+      "folder": "seek-real-motion2",
+      "header": [
+        558,
+        15,
+        1110,
+        44
+      ],
+      "roi": [
+        750,
+        142,
+        1000,
+        180
+      ],
+      "states": [
+        "Downloading Git"
+      ]
+    },
+    {
+      "id": "occlusion",
+      "folder": "seek-real-occlusion3",
+      "header": [
+        590,
+        151,
+        689,
+        165
+      ],
+      "roi": [
+        586,
+        247,
+        665,
+        266
+      ],
+      "states": [
+        "Community"
+      ]
+    },
+    {
+      "id": "brief",
+      "folder": "seek-real-brief3",
+      "header": [
+        316,
+        390,
+        444,
+        437
+      ],
+      "roi": [
+        333,
+        498,
+        416,
+        512
+      ],
+      "states": [
+        "Git Bash Here"
+      ]
+    }
+  ],
+  "limits": [
+    "manual one-subject seeds",
+    "one new tutorial; overlapping browser windows",
+    "occlusion subject is a navigation label, not an established essential build step",
+    "independent human label check unavailable; all crops reviewed by same agent",
+    "no parameter changes permitted after inference"
+  ]
+}

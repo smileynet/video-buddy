@@ -1,0 +1,12 @@
+{
+  "reviewer": "same agent; no independent human check",
+  "provenance": "PSM11 full-frame reference proposals plus exhaustive frame contact inspection; no candidate outputs consumed",
+  "corrections": [
+    "terminal command completion at942.066667 and945.133333; post-add status at945.533333",
+    "manual terminal line extents on stable plateaus; scrolling-transition geometry retained as unknown",
+    "browser absent480.833333\u2013481.933333 during UAC/desktop switch",
+    "menu text inspected manually despite failed small-font reference OCR",
+    "Community label visible until483.933333; overlay transition uncertain; navigation label is not an established essential step"
+  ],
+  "uncertainty": "Unknown visibility/extent propagates to score intervals; it is not counted as a confident miss"
+}
