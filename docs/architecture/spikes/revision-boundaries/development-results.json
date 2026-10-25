@@ -1,0 +1,2239 @@
+{
+  "dev": {
+    "phase": "development",
+    "total": 3,
+    "budgets": {
+      "1": {
+        "legacy": {
+          "covered_min": [],
+          "covered_max": [],
+          "exact_literals": [],
+          "selected": 1,
+          "redundant": 0,
+          "prefix_only": 1,
+          "missed": [
+            0,
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "index": 16,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.533333,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "settled": {
+          "covered_min": [],
+          "covered_max": [],
+          "exact_literals": [],
+          "selected": 1,
+          "redundant": 0,
+          "prefix_only": 1,
+          "missed": [
+            0,
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "index": 24,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.8,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "packets": {
+          "covered_min": [
+            0,
+            1,
+            2
+          ],
+          "covered_max": [
+            0,
+            1,
+            2
+          ],
+          "exact_literals": [
+            1
+          ],
+          "selected": 1,
+          "redundant": 0,
+          "prefix_only": 0,
+          "missed": [],
+          "evidence": [
+            {
+              "index": 169,
+              "features": [
+                "command:git add.#1",
+                "command:git status#1",
+                "response:git status#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 945.633333,
+              "hits": [
+                0,
+                1,
+                2
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "grid": [
+          {
+            "offset": 0,
+            "covered_min": [],
+            "covered_max": [],
+            "exact_literals": [],
+            "selected": 1,
+            "redundant": 0,
+            "prefix_only": 0,
+            "missed": [
+              0,
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 0,
+                "reason": "grid",
+                "requested": 940.0,
+                "pts_s": 940.0,
+                "hits": [],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.25,
+            "covered_min": [],
+            "covered_max": [],
+            "exact_literals": [],
+            "selected": 1,
+            "redundant": 0,
+            "prefix_only": 1,
+            "missed": [
+              0,
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 45,
+                "reason": "grid",
+                "requested": 941.5,
+                "pts_s": 941.5,
+                "hits": [],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.5,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 1,
+            "redundant": 0,
+            "prefix_only": 0,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 90,
+                "reason": "grid",
+                "requested": 943.0,
+                "pts_s": 943.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.75,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 1,
+            "redundant": 0,
+            "prefix_only": 0,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 135,
+                "reason": "grid",
+                "requested": 944.5,
+                "pts_s": 944.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          }
+        ]
+      },
+      "2": {
+        "legacy": {
+          "covered_min": [],
+          "covered_max": [],
+          "exact_literals": [],
+          "selected": 2,
+          "redundant": 0,
+          "prefix_only": 2,
+          "missed": [
+            0,
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "index": 16,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.533333,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 23,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.766667,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "settled": {
+          "covered_min": [
+            0
+          ],
+          "covered_max": [
+            0
+          ],
+          "exact_literals": [],
+          "selected": 2,
+          "redundant": 0,
+          "prefix_only": 1,
+          "missed": [
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "index": 24,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.8,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 137,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 944.566667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "packets": {
+          "covered_min": [
+            0,
+            1,
+            2
+          ],
+          "covered_max": [
+            0,
+            1,
+            2
+          ],
+          "exact_literals": [
+            0,
+            1
+          ],
+          "selected": 2,
+          "redundant": 1,
+          "prefix_only": 0,
+          "missed": [],
+          "evidence": [
+            {
+              "index": 169,
+              "features": [
+                "command:git add.#1",
+                "command:git status#1",
+                "response:git status#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 945.633333,
+              "hits": [
+                0,
+                1,
+                2
+              ],
+              "unknown": []
+            },
+            {
+              "index": 149,
+              "features": [
+                "command:git add .#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 944.966667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "grid": [
+          {
+            "offset": 0,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 2,
+            "redundant": 0,
+            "prefix_only": 0,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 0,
+                "reason": "grid",
+                "requested": 940.0,
+                "pts_s": 940.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 90,
+                "reason": "grid",
+                "requested": 943.0,
+                "pts_s": 943.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.25,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 2,
+            "redundant": 0,
+            "prefix_only": 1,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 23,
+                "reason": "grid",
+                "requested": 940.75,
+                "pts_s": 940.766667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 113,
+                "reason": "grid",
+                "requested": 943.75,
+                "pts_s": 943.766667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.5,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 2,
+            "redundant": 0,
+            "prefix_only": 1,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 45,
+                "reason": "grid",
+                "requested": 941.5,
+                "pts_s": 941.5,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 135,
+                "reason": "grid",
+                "requested": 944.5,
+                "pts_s": 944.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.75,
+            "covered_min": [
+              0,
+              1
+            ],
+            "covered_max": [
+              0,
+              1
+            ],
+            "exact_literals": [
+              0,
+              1
+            ],
+            "selected": 2,
+            "redundant": 1,
+            "prefix_only": 0,
+            "missed": [
+              2
+            ],
+            "evidence": [
+              {
+                "index": 68,
+                "reason": "grid",
+                "requested": 942.25,
+                "pts_s": 942.266667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 158,
+                "reason": "grid",
+                "requested": 945.25,
+                "pts_s": 945.266667,
+                "hits": [
+                  0,
+                  1
+                ],
+                "unknown": []
+              }
+            ]
+          }
+        ]
+      },
+      "3": {
+        "legacy": {
+          "covered_min": [],
+          "covered_max": [],
+          "exact_literals": [],
+          "selected": 3,
+          "redundant": 0,
+          "prefix_only": 3,
+          "missed": [
+            0,
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "index": 16,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.533333,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 23,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.766667,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 36,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.2,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "settled": {
+          "covered_min": [
+            0,
+            1
+          ],
+          "covered_max": [
+            0,
+            1
+          ],
+          "exact_literals": [
+            1
+          ],
+          "selected": 3,
+          "redundant": 1,
+          "prefix_only": 1,
+          "missed": [
+            2
+          ],
+          "evidence": [
+            {
+              "index": 24,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.8,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 137,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 944.566667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            },
+            {
+              "index": 162,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 945.4,
+              "hits": [
+                0,
+                1
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "packets": {
+          "covered_min": [
+            0,
+            1,
+            2
+          ],
+          "covered_max": [
+            0,
+            1,
+            2
+          ],
+          "exact_literals": [
+            0,
+            1
+          ],
+          "selected": 2,
+          "redundant": 1,
+          "prefix_only": 0,
+          "missed": [],
+          "evidence": [
+            {
+              "index": 169,
+              "features": [
+                "command:git add.#1",
+                "command:git status#1",
+                "response:git status#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 945.633333,
+              "hits": [
+                0,
+                1,
+                2
+              ],
+              "unknown": []
+            },
+            {
+              "index": 149,
+              "features": [
+                "command:git add .#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 944.966667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "grid": [
+          {
+            "offset": 0,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 3,
+            "redundant": 0,
+            "prefix_only": 1,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 0,
+                "reason": "grid",
+                "requested": 940.0,
+                "pts_s": 940.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 60,
+                "reason": "grid",
+                "requested": 942.0,
+                "pts_s": 942.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 120,
+                "reason": "grid",
+                "requested": 944.0,
+                "pts_s": 944.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.25,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [
+              0
+            ],
+            "selected": 3,
+            "redundant": 1,
+            "prefix_only": 1,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 15,
+                "reason": "grid",
+                "requested": 940.5,
+                "pts_s": 940.5,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 75,
+                "reason": "grid",
+                "requested": 942.5,
+                "pts_s": 942.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 135,
+                "reason": "grid",
+                "requested": 944.5,
+                "pts_s": 944.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.5,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 3,
+            "redundant": 1,
+            "prefix_only": 1,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 30,
+                "reason": "grid",
+                "requested": 941.0,
+                "pts_s": 941.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 90,
+                "reason": "grid",
+                "requested": 943.0,
+                "pts_s": 943.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 150,
+                "reason": "grid",
+                "requested": 945.0,
+                "pts_s": 945.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.75,
+            "covered_min": [
+              0,
+              1
+            ],
+            "covered_max": [
+              0,
+              1
+            ],
+            "exact_literals": [
+              1
+            ],
+            "selected": 3,
+            "redundant": 1,
+            "prefix_only": 1,
+            "missed": [
+              2
+            ],
+            "evidence": [
+              {
+                "index": 45,
+                "reason": "grid",
+                "requested": 941.5,
+                "pts_s": 941.5,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 105,
+                "reason": "grid",
+                "requested": 943.5,
+                "pts_s": 943.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 165,
+                "reason": "grid",
+                "requested": 945.5,
+                "pts_s": 945.5,
+                "hits": [
+                  0,
+                  1
+                ],
+                "unknown": []
+              }
+            ]
+          }
+        ]
+      },
+      "4": {
+        "legacy": {
+          "covered_min": [],
+          "covered_max": [],
+          "exact_literals": [],
+          "selected": 4,
+          "redundant": 0,
+          "prefix_only": 4,
+          "missed": [
+            0,
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "index": 16,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.533333,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 23,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.766667,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 36,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.2,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 41,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.366667,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "settled": {
+          "covered_min": [
+            0,
+            1
+          ],
+          "covered_max": [
+            0,
+            1
+          ],
+          "exact_literals": [
+            1
+          ],
+          "selected": 4,
+          "redundant": 1,
+          "prefix_only": 1,
+          "missed": [
+            2
+          ],
+          "evidence": [
+            {
+              "index": 24,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.8,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 137,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 944.566667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            },
+            {
+              "index": 162,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 945.4,
+              "hits": [
+                0,
+                1
+              ],
+              "unknown": []
+            },
+            {
+              "index": 5,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.166667,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "packets": {
+          "covered_min": [
+            0,
+            1,
+            2
+          ],
+          "covered_max": [
+            0,
+            1,
+            2
+          ],
+          "exact_literals": [
+            0,
+            1
+          ],
+          "selected": 2,
+          "redundant": 1,
+          "prefix_only": 0,
+          "missed": [],
+          "evidence": [
+            {
+              "index": 169,
+              "features": [
+                "command:git add.#1",
+                "command:git status#1",
+                "response:git status#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 945.633333,
+              "hits": [
+                0,
+                1,
+                2
+              ],
+              "unknown": []
+            },
+            {
+              "index": 149,
+              "features": [
+                "command:git add .#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 944.966667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "grid": [
+          {
+            "offset": 0,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 4,
+            "redundant": 1,
+            "prefix_only": 1,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 0,
+                "reason": "grid",
+                "requested": 940.0,
+                "pts_s": 940.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 45,
+                "reason": "grid",
+                "requested": 941.5,
+                "pts_s": 941.5,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 90,
+                "reason": "grid",
+                "requested": 943.0,
+                "pts_s": 943.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 135,
+                "reason": "grid",
+                "requested": 944.5,
+                "pts_s": 944.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.25,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 4,
+            "redundant": 1,
+            "prefix_only": 1,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 12,
+                "reason": "grid",
+                "requested": 940.375,
+                "pts_s": 940.4,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 57,
+                "reason": "grid",
+                "requested": 941.875,
+                "pts_s": 941.9,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 102,
+                "reason": "grid",
+                "requested": 943.375,
+                "pts_s": 943.4,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 147,
+                "reason": "grid",
+                "requested": 944.875,
+                "pts_s": 944.9,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.5,
+            "covered_min": [
+              0,
+              1
+            ],
+            "covered_max": [
+              0,
+              1
+            ],
+            "exact_literals": [
+              0,
+              1
+            ],
+            "selected": 4,
+            "redundant": 2,
+            "prefix_only": 1,
+            "missed": [
+              2
+            ],
+            "evidence": [
+              {
+                "index": 23,
+                "reason": "grid",
+                "requested": 940.75,
+                "pts_s": 940.766667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 68,
+                "reason": "grid",
+                "requested": 942.25,
+                "pts_s": 942.266667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 113,
+                "reason": "grid",
+                "requested": 943.75,
+                "pts_s": 943.766667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 158,
+                "reason": "grid",
+                "requested": 945.25,
+                "pts_s": 945.266667,
+                "hits": [
+                  0,
+                  1
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.75,
+            "covered_min": [
+              0,
+              1,
+              2
+            ],
+            "covered_max": [
+              0,
+              1,
+              2
+            ],
+            "exact_literals": [
+              1
+            ],
+            "selected": 4,
+            "redundant": 2,
+            "prefix_only": 1,
+            "missed": [],
+            "evidence": [
+              {
+                "index": 34,
+                "reason": "grid",
+                "requested": 941.125,
+                "pts_s": 941.133333,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 79,
+                "reason": "grid",
+                "requested": 942.625,
+                "pts_s": 942.633333,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 124,
+                "reason": "grid",
+                "requested": 944.125,
+                "pts_s": 944.133333,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 169,
+                "reason": "grid",
+                "requested": 945.625,
+                "pts_s": 945.633333,
+                "hits": [
+                  0,
+                  1,
+                  2
+                ],
+                "unknown": []
+              }
+            ]
+          }
+        ]
+      },
+      "6": {
+        "legacy": {
+          "covered_min": [],
+          "covered_max": [],
+          "exact_literals": [],
+          "selected": 6,
+          "redundant": 0,
+          "prefix_only": 6,
+          "missed": [
+            0,
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "index": 16,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.533333,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 23,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.766667,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 36,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.2,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 41,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.366667,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 46,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.533333,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 47,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.566667,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "settled": {
+          "covered_min": [
+            0,
+            1
+          ],
+          "covered_max": [
+            0,
+            1
+          ],
+          "exact_literals": [
+            1
+          ],
+          "selected": 4,
+          "redundant": 1,
+          "prefix_only": 1,
+          "missed": [
+            2
+          ],
+          "evidence": [
+            {
+              "index": 24,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.8,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 137,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 944.566667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            },
+            {
+              "index": 162,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 945.4,
+              "hits": [
+                0,
+                1
+              ],
+              "unknown": []
+            },
+            {
+              "index": 5,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.166667,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "packets": {
+          "covered_min": [
+            0,
+            1,
+            2
+          ],
+          "covered_max": [
+            0,
+            1,
+            2
+          ],
+          "exact_literals": [
+            0,
+            1
+          ],
+          "selected": 2,
+          "redundant": 1,
+          "prefix_only": 0,
+          "missed": [],
+          "evidence": [
+            {
+              "index": 169,
+              "features": [
+                "command:git add.#1",
+                "command:git status#1",
+                "response:git status#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 945.633333,
+              "hits": [
+                0,
+                1,
+                2
+              ],
+              "unknown": []
+            },
+            {
+              "index": 149,
+              "features": [
+                "command:git add .#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 944.966667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "grid": [
+          {
+            "offset": 0,
+            "covered_min": [
+              0
+            ],
+            "covered_max": [
+              0
+            ],
+            "exact_literals": [],
+            "selected": 6,
+            "redundant": 2,
+            "prefix_only": 2,
+            "missed": [
+              1,
+              2
+            ],
+            "evidence": [
+              {
+                "index": 0,
+                "reason": "grid",
+                "requested": 940.0,
+                "pts_s": 940.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 30,
+                "reason": "grid",
+                "requested": 941.0,
+                "pts_s": 941.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 60,
+                "reason": "grid",
+                "requested": 942.0,
+                "pts_s": 942.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 90,
+                "reason": "grid",
+                "requested": 943.0,
+                "pts_s": 943.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 120,
+                "reason": "grid",
+                "requested": 944.0,
+                "pts_s": 944.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 150,
+                "reason": "grid",
+                "requested": 945.0,
+                "pts_s": 945.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.25,
+            "covered_min": [
+              0,
+              1
+            ],
+            "covered_max": [
+              0,
+              1
+            ],
+            "exact_literals": [
+              0,
+              1
+            ],
+            "selected": 6,
+            "redundant": 3,
+            "prefix_only": 1,
+            "missed": [
+              2
+            ],
+            "evidence": [
+              {
+                "index": 8,
+                "reason": "grid",
+                "requested": 940.25,
+                "pts_s": 940.266667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 38,
+                "reason": "grid",
+                "requested": 941.25,
+                "pts_s": 941.266667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 68,
+                "reason": "grid",
+                "requested": 942.25,
+                "pts_s": 942.266667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 98,
+                "reason": "grid",
+                "requested": 943.25,
+                "pts_s": 943.266667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 128,
+                "reason": "grid",
+                "requested": 944.25,
+                "pts_s": 944.266667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 158,
+                "reason": "grid",
+                "requested": 945.25,
+                "pts_s": 945.266667,
+                "hits": [
+                  0,
+                  1
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.5,
+            "covered_min": [
+              0,
+              1
+            ],
+            "covered_max": [
+              0,
+              1
+            ],
+            "exact_literals": [
+              0,
+              1
+            ],
+            "selected": 6,
+            "redundant": 3,
+            "prefix_only": 2,
+            "missed": [
+              2
+            ],
+            "evidence": [
+              {
+                "index": 15,
+                "reason": "grid",
+                "requested": 940.5,
+                "pts_s": 940.5,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 45,
+                "reason": "grid",
+                "requested": 941.5,
+                "pts_s": 941.5,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 75,
+                "reason": "grid",
+                "requested": 942.5,
+                "pts_s": 942.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 105,
+                "reason": "grid",
+                "requested": 943.5,
+                "pts_s": 943.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 135,
+                "reason": "grid",
+                "requested": 944.5,
+                "pts_s": 944.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 165,
+                "reason": "grid",
+                "requested": 945.5,
+                "pts_s": 945.5,
+                "hits": [
+                  0,
+                  1
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.75,
+            "covered_min": [
+              0,
+              1,
+              2
+            ],
+            "covered_max": [
+              0,
+              1,
+              2
+            ],
+            "exact_literals": [
+              1
+            ],
+            "selected": 6,
+            "redundant": 3,
+            "prefix_only": 2,
+            "missed": [],
+            "evidence": [
+              {
+                "index": 23,
+                "reason": "grid",
+                "requested": 940.75,
+                "pts_s": 940.766667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 53,
+                "reason": "grid",
+                "requested": 941.75,
+                "pts_s": 941.766667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 83,
+                "reason": "grid",
+                "requested": 942.75,
+                "pts_s": 942.766667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 113,
+                "reason": "grid",
+                "requested": 943.75,
+                "pts_s": 943.766667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 143,
+                "reason": "grid",
+                "requested": 944.75,
+                "pts_s": 944.766667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 173,
+                "reason": "grid",
+                "requested": 945.75,
+                "pts_s": 945.766667,
+                "hits": [
+                  0,
+                  1,
+                  2
+                ],
+                "unknown": []
+              }
+            ]
+          }
+        ]
+      },
+      "8": {
+        "legacy": {
+          "covered_min": [],
+          "covered_max": [],
+          "exact_literals": [],
+          "selected": 8,
+          "redundant": 0,
+          "prefix_only": 8,
+          "missed": [
+            0,
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "index": 16,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.533333,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 23,
+              "reason": "old event time, full-frame context",
+              "pts_s": 940.766667,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 36,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.2,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 41,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.366667,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 46,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.533333,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 47,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.566667,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 54,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.8,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 58,
+              "reason": "old event time, full-frame context",
+              "pts_s": 941.933333,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "settled": {
+          "covered_min": [
+            0,
+            1
+          ],
+          "covered_max": [
+            0,
+            1
+          ],
+          "exact_literals": [
+            1
+          ],
+          "selected": 4,
+          "redundant": 1,
+          "prefix_only": 1,
+          "missed": [
+            2
+          ],
+          "evidence": [
+            {
+              "index": 24,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.8,
+              "hits": [],
+              "unknown": []
+            },
+            {
+              "index": 137,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 944.566667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            },
+            {
+              "index": 162,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 945.4,
+              "hits": [
+                0,
+                1
+              ],
+              "unknown": []
+            },
+            {
+              "index": 5,
+              "reason": "settled visual context; execution unverified",
+              "pts_s": 940.166667,
+              "hits": [],
+              "unknown": []
+            }
+          ]
+        },
+        "packets": {
+          "covered_min": [
+            0,
+            1,
+            2
+          ],
+          "covered_max": [
+            0,
+            1,
+            2
+          ],
+          "exact_literals": [
+            0,
+            1
+          ],
+          "selected": 2,
+          "redundant": 1,
+          "prefix_only": 0,
+          "missed": [],
+          "evidence": [
+            {
+              "index": 169,
+              "features": [
+                "command:git add.#1",
+                "command:git status#1",
+                "response:git status#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 945.633333,
+              "hits": [
+                0,
+                1,
+                2
+              ],
+              "unknown": []
+            },
+            {
+              "index": 149,
+              "features": [
+                "command:git add .#1"
+              ],
+              "reason": "later prompt observed; success not inferred",
+              "pts_s": 944.966667,
+              "hits": [
+                0
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "grid": [
+          {
+            "offset": 0,
+            "covered_min": [
+              0,
+              1
+            ],
+            "covered_max": [
+              0,
+              1
+            ],
+            "exact_literals": [
+              0,
+              1
+            ],
+            "selected": 8,
+            "redundant": 4,
+            "prefix_only": 2,
+            "missed": [
+              2
+            ],
+            "evidence": [
+              {
+                "index": 0,
+                "reason": "grid",
+                "requested": 940.0,
+                "pts_s": 940.0,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 23,
+                "reason": "grid",
+                "requested": 940.75,
+                "pts_s": 940.766667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 45,
+                "reason": "grid",
+                "requested": 941.5,
+                "pts_s": 941.5,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 68,
+                "reason": "grid",
+                "requested": 942.25,
+                "pts_s": 942.266667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 90,
+                "reason": "grid",
+                "requested": 943.0,
+                "pts_s": 943.0,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 113,
+                "reason": "grid",
+                "requested": 943.75,
+                "pts_s": 943.766667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 135,
+                "reason": "grid",
+                "requested": 944.5,
+                "pts_s": 944.5,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 158,
+                "reason": "grid",
+                "requested": 945.25,
+                "pts_s": 945.266667,
+                "hits": [
+                  0,
+                  1
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.25,
+            "covered_min": [
+              0,
+              1
+            ],
+            "covered_max": [
+              0,
+              1
+            ],
+            "exact_literals": [
+              0,
+              1
+            ],
+            "selected": 8,
+            "redundant": 4,
+            "prefix_only": 2,
+            "missed": [
+              2
+            ],
+            "evidence": [
+              {
+                "index": 6,
+                "reason": "grid",
+                "requested": 940.1875,
+                "pts_s": 940.2,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 29,
+                "reason": "grid",
+                "requested": 940.9375,
+                "pts_s": 940.966667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 51,
+                "reason": "grid",
+                "requested": 941.6875,
+                "pts_s": 941.7,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 74,
+                "reason": "grid",
+                "requested": 942.4375,
+                "pts_s": 942.466667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 96,
+                "reason": "grid",
+                "requested": 943.1875,
+                "pts_s": 943.2,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 119,
+                "reason": "grid",
+                "requested": 943.9375,
+                "pts_s": 943.966667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 141,
+                "reason": "grid",
+                "requested": 944.6875,
+                "pts_s": 944.7,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 164,
+                "reason": "grid",
+                "requested": 945.4375,
+                "pts_s": 945.466667,
+                "hits": [
+                  0,
+                  1
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.5,
+            "covered_min": [
+              0,
+              1,
+              2
+            ],
+            "covered_max": [
+              0,
+              1,
+              2
+            ],
+            "exact_literals": [
+              1
+            ],
+            "selected": 8,
+            "redundant": 4,
+            "prefix_only": 2,
+            "missed": [],
+            "evidence": [
+              {
+                "index": 12,
+                "reason": "grid",
+                "requested": 940.375,
+                "pts_s": 940.4,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 34,
+                "reason": "grid",
+                "requested": 941.125,
+                "pts_s": 941.133333,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 57,
+                "reason": "grid",
+                "requested": 941.875,
+                "pts_s": 941.9,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 79,
+                "reason": "grid",
+                "requested": 942.625,
+                "pts_s": 942.633333,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 102,
+                "reason": "grid",
+                "requested": 943.375,
+                "pts_s": 943.4,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 124,
+                "reason": "grid",
+                "requested": 944.125,
+                "pts_s": 944.133333,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 147,
+                "reason": "grid",
+                "requested": 944.875,
+                "pts_s": 944.9,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 169,
+                "reason": "grid",
+                "requested": 945.625,
+                "pts_s": 945.633333,
+                "hits": [
+                  0,
+                  1,
+                  2
+                ],
+                "unknown": []
+              }
+            ]
+          },
+          {
+            "offset": 0.75,
+            "covered_min": [
+              0,
+              1,
+              2
+            ],
+            "covered_max": [
+              0,
+              1,
+              2
+            ],
+            "exact_literals": [
+              0,
+              1
+            ],
+            "selected": 8,
+            "redundant": 5,
+            "prefix_only": 2,
+            "missed": [],
+            "evidence": [
+              {
+                "index": 17,
+                "reason": "grid",
+                "requested": 940.5625,
+                "pts_s": 940.566667,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 40,
+                "reason": "grid",
+                "requested": 941.3125,
+                "pts_s": 941.333333,
+                "hits": [],
+                "unknown": []
+              },
+              {
+                "index": 62,
+                "reason": "grid",
+                "requested": 942.0625,
+                "pts_s": 942.066667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 85,
+                "reason": "grid",
+                "requested": 942.8125,
+                "pts_s": 942.833333,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 107,
+                "reason": "grid",
+                "requested": 943.5625,
+                "pts_s": 943.566667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 130,
+                "reason": "grid",
+                "requested": 944.3125,
+                "pts_s": 944.333333,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 152,
+                "reason": "grid",
+                "requested": 945.0625,
+                "pts_s": 945.066667,
+                "hits": [
+                  0
+                ],
+                "unknown": []
+              },
+              {
+                "index": 175,
+                "reason": "grid",
+                "requested": 945.8125,
+                "pts_s": 945.833333,
+                "hits": [
+                  0,
+                  1,
+                  2
+                ],
+                "unknown": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "ocr_s": 59.34764710000309,
+    "frames": 180
+  }
+}

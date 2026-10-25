@@ -1,0 +1,12 @@
+{
+  "preferred": "packets",
+  "decision_basis": "Development:3/3 states at cap1 versus settled0/3 at1 and2/3 at caps3\u20138; legacy0/3",
+  "policy_sha256": "0d6412f13ffb4ca32f8558a394beeddd2684479c02dfd3ebd9cef75314e1fcc6",
+  "collector_sha256": "d05beaad54f81f18ba940e7455de9d19a40b0d9f60e698354555f9ee4747c3d7",
+  "reference_sha256": "f8b3d21c94cf64d326c2ab26fd82d38d870004e14448ab1c01f66a0f88de9ebe",
+  "no_validation_ocr_yet": true,
+  "parameters": "protocol.json; no changes permitted after this freeze",
+  "development_exact_at1": [
+    1
+  ]
+}
