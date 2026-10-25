@@ -64,3 +64,15 @@ Two real tutorial windows: filename preparation120frames and held-out code revis
 The global2% edge-density veto rejects these sparse editor screens. Post-hoc flag-only bypass recovers3/3 code states on sparse candidates but2/3 dense, so extra candidates alone do not establish improvement. Follow-up35 owns reviewed implementation/regression work after integration review28.
 
 Keep this ticket in progress. Next: freeze independently checked scrolling/moving/brief-state and diagram windows, vary grid offsets/budgets, test subject association/optional masks only where boxes fail, measure memory and correction effort. Current fixed boxes do not qualify those cases. No new model or selector integrated.
+
+## Scrolling / motion / occlusion / brief-state round — 2026-10-25
+
+Report: `docs/architecture/spikes/subject-frame-seeking-stress-results.md`. Raw branch `codex/spike-subject-frame-seeking`, commit `39275c6072e85be74640c292310858202809a659`; complete controlled source videos, all480 decoded crops/labels, both OCR passes, selected full-frame comparisons, stage costs and sampled RSS retained.
+
+Swept caps1,2,3,4,6,8 and grid offsets0,.25,.5,.75:96 configurations on four authored controls plus48 on earlier real windows. Real code at cap4: grid coverage2/2/3/2 of3, earlier seeker3/3. At cap8 one grid offset still missed the intermediate revision. These are correlated configurations, not independent accuracy trials.
+
+Original PSM13/frequency seeker at cap3: scroll3/3, motion0/3, occlusion2/3, brief2/3. After an explicit post-hoc PSM7 diagnostic, static/frequency motion0/3 versus tracked/frequency3/3; short-event selection also recovered occlusion/brief3/3 versus frequency2/3. PSM7/events yielded all12 controlled states/strings with three selections per clip, no redundancy, but this is not held-out confirmation. Natural code exact OCR remains0/3. All192 distinct controlled core seeks were pixel-identical to the expected decoded frames.
+
+Collector/children peak sampled summed RSS83.8MiB (decode/encoder excluded); tracked OCR about8.4–8.7seconds per120frame clip, template search about1second. The invariant-header fixture is deliberately easy; no wrong accepted controlled match observed, eight motion/blur abstentions. No SAM/mask benefit established.
+
+**Next:** freeze fresh natural scrolling, movement, obstruction and brief UI windows with independent label checks, then validate the unchanged PSM7/event candidate. Also test false/repeated subjects, diagram/settings completeness, source-wide discovery and human correction/task outcomes. Current natural exploration113–125seconds was unscored; do not claim it fills those gaps. Keep ticket25 in progress and review28 gated. Existing frame tests5passed; sweep/seek/timestamp checks and pre-commit passed.

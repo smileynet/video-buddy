@@ -1,5 +1,7 @@
 # Subject-aware frame seeking: first matched-window comparison
 
+**Latest follow-up:** [offset/budget sweep and controlled scrolling, motion, occlusion and brief-state tests](subject-frame-seeking-stress-results.md). The midpoint-grid result below describes one offset; only one of four offsets retained all three real code revisions at cap4. Diagnostic event seeking is promising on authored controls, pending fresh natural validation.
+
 **Ticket 25 · 25 October 2026 · partial qualification, no integration.** On one held-out code window, crop/OCR seeking recovered all three visible revisions, but a four-frame time grid did too. The existing selector returned no frames. Dense capture alone did not fix its whole-image inclusion veto. Keep the simple time-grid control in future comparisons; no benefit over that control is established yet.
 
 ## What was compared

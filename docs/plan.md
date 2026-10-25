@@ -2,7 +2,7 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Ticket **25 is in progress**: [matched-window frame comparison](architecture/spikes/subject-frame-seeking-results.md) records all 270 decoded frames, 3/3 held-out revisions for both crop seeking and a simple grid, and an empty existing-selector result. No advantage over the grid or exact code OCR is established. Next: moving/scrolling/brief-state and diagram coverage, grid offsets/budgets, memory and correction effort. Follow-up35 captures the low-edge selector failure after review28. Hosted30/33 and runtime34 gaps remain; final integration/architecture review28 is still gated.
+Ticket **25 is in progress**: [stress comparison](architecture/spikes/subject-frame-seeking-stress-results.md) adds 480 authored scrolling/motion/occlusion/brief-state frames and 144 grid configurations across six budgets/four offsets. In the real code window only one four-frame grid offset covered all revisions. A post-hoc PSM7/short-event candidate covered all controlled states at cap3; fresh natural confirmation is next. Sampled collector memory/costs are recorded, not complete pipeline qualification. Follow-up35 owns the production selector failure; review28 remains gated. Hosted30/33 and runtime34 gaps remain.
 
 | id | title | status |
 |---|---|---|

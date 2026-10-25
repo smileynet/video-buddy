@@ -13,6 +13,10 @@ validation_criteria:
 
 # Review spike findings and decide app features and integration architecture
 
+## Ticket25 comparison evidence added 2026-10-25
+
+Consume `docs/architecture/spikes/subject-frame-seeking-stress-results.md` alongside the first matched-window report. The real code grid result depends on offset; authored controls expose short-state and crop-tracking failures. The PSM7/event candidate was changed after inspecting controls, so it is not a held-out winner. Require fresh natural qualification before choosing a production selector/model composition. Ticket25 remains in progress; ticket35 owns the existing global inclusion-veto failure. Peak collector RSS is measured separately from full-pipeline memory. Preserve these limits when reviewing UX claims and integration scope.
+
 ## Intent source and context
 
 User request 2026-10-25: review all spike findings, consider final integration, and review app features and architecture. Read docs/architecture/spike-plan.md, docs/architecture/workflow-proposal.md, docs/architecture/spikes/image-model-results.md and docs/plan.md. Primary job: apply a technique/build something and verify a result. All existing reports and prototype branches are evidence, not production implementations.
