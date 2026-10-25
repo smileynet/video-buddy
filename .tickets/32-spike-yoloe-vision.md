@@ -1,7 +1,7 @@
 ---
 id: "32"
 title: "Compare YOLOE promptable detection and segmentation"
-status: in_progress
+status: done
 blocked_by: ["29"]
 spec: "apply-build"
 priority: high
@@ -25,10 +25,10 @@ Evaluate current text/visual-prompt YOLOE against Grounding DINO and SAM3 for na
 
 ## Acceptance criteria
 
-- [ ] Record current explicit model/checkpoint/API identity and eligibility evidence, with dated primary citations.
-- [ ] Preserve frozen inputs, raw predictions, configuration, costs and runtime failures for every executed comparison.
-- [ ] Distinguish measured fit from untested, access-limited, hardware-limited and irrelevant options.
-- [ ] Give a per-job disposition and the remaining deciding observation; update dashboard coverage.
+- [x] Record current explicit model/checkpoint/API identity and eligibility evidence, with dated primary citations.
+- [x] Preserve frozen inputs, raw predictions, configuration, costs and runtime failures for every executed comparison.
+- [x] Distinguish measured fit from untested, access-limited, hardware-limited and irrelevant options.
+- [x] Give a per-job disposition and the remaining deciding observation; update dashboard coverage.
 
 ## Out of scope
 
@@ -37,3 +37,11 @@ Automatic production integration, blanket provider endorsement, fetching private
 ## Current execution evidence (2026-10-25)
 
 YOLOE26s actual text-prompt probes at640/1280 and supplied-box probes at640 completed; same frozen images, negative elephant, raw boxes/masks/overlays captured. NoUIregions at eitherresolution; diagram at640 disappears1280. Manual code-panel seed recovers panel plus an extra almostfullframe. Broader held-out qualification remains25; report docs/architecture/spikes/provider-yoloe-results.md.
+
+## Resolution (2026-10-25)
+
+Completed bounded current YOLOE comparison; retain object/diagram challenger, no general UI role or integration approval. Broader state/held-out qualification remains25 and finalreview28.
+
+### Verification
+1. ✓ docs/architecture/spikes/provider-yoloe-results.md records pinned identities, evidence and per-job disposition or a concrete unresolved limitation — "docs/architecture/spikes/provider-yoloe-results.md records exact YOLOE26s/encoder hashes, text640/1280 and visual-seed outputs, qualitative baseline comparison and role-specific verdict"
+2. ✓ tkt validate exits 0 — "tkt validate passed on expanded graph; experiment branch ce811ed8 preserves raw outputs, overlays, source/fixture identities, failures and passing pre-commit"
