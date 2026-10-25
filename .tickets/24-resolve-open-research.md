@@ -1,7 +1,7 @@
 ---
 id: "24"
 title: "Resolve open research questions before the next spike round"
-status: open
+status: in_progress
 blocked_by: []
 spec: "apply-build"
 priority: urgent
