@@ -1,7 +1,7 @@
 ---
 id: "36"
 title: "Spike revision boundaries for typing and scrolling without prefix budget loss"
-status: in_progress
+status: done
 blocked_by: []
 priority: high
 tags: ["workflow-spikes"]
@@ -24,8 +24,26 @@ Budget: one active day after corpus preparation. Freeze new validation windows a
 
 ## Acceptance criteria
 
-- [ ] Preserve the original failed candidate and report completed-state recall, missed revisions, redundancy and partial-prefix budget consumption for each challenger.
-- [ ] Compare grid offsets0/.25/.5/.75 at caps1,2,3,4,6,8 with equivalent output caps and verified source times.
-- [ ] Record text extent/association limitations and exact command/checkpoint recovery separately from visual recall.
-- [ ] Validate the selected unchanged policy on newly frozen real windows; clearly separate development from validation.
-- [ ] Report stage costs and remaining uncertainty; update dashboard, ticket25 and review28 without integrating the prototype.
+- [x] Preserve the original failed candidate and report completed-state recall, missed revisions, redundancy and partial-prefix budget consumption for each challenger.
+- [x] Compare grid offsets0/.25/.5/.75 at caps1,2,3,4,6,8 with equivalent output caps and verified source times.
+- [x] Record text extent/association limitations and exact command/checkpoint recovery separately from visual recall.
+- [x] Validate the selected unchanged policy on newly frozen real windows; clearly separate development from validation.
+- [x] Report stage costs and remaining uncertainty; update dashboard, ticket25 and review28 without integrating the prototype.
+
+## Execution evidence — 2026-10-25
+
+Report: `docs/architecture/spikes/revision-boundary-results.md`. Raw branch `codex/spike-revision-boundaries`, commit `842189be2c9480a8c228c7d87917713dc5acb0be`. Windows reserved af29e5a, labels locked7b77096 before development, preferred policy/collector/references frozen55aeb15 before validation OCR. No validation retuning; normalized freeze contents verified unchanged.
+
+Compared legacy event-time/full-context control, whole-viewport settled runs, command/response packets with unverified fallback, and grids at caps1,2,3,4,6,8 × offsets0/.25/.5/.75.180 development frames plus509 validation frames across a previously unscored same-source window and an edited other-source tutorial. Single-agent references/uncertainty remain explicit.
+
+Development at cap4: legacy0/3 with4 prefix-only selections; settled2/3 with1 prefix-only; packets3/3 with0 prefix-only, and3/3 already at cap1. Preferred packets were chosen on this evidence. Locked terminal validation: packets2 confirmed/up to3 of4 at every cap, definitely missing final checkpoint; settled4/4 at cap4 and all four grid offsets4/4. Locked UI: settled and packet fallback3/3 at cap2, not execution evidence. Exact writing remains unreliable. Keep failed and conditional findings; do not adopt packets as default or swap preference after validation.
+
+All144 actual grid requests matched decoded neighborhoods, with12 nominal index corrections recorded. Five frame tests passed;689 references/509 validation frames and parser/freeze/hash checks passed. Stage costs and sampled collector RSS88.7MiB recorded; human correction/task benefit not measured. Compact artifacts inspected; three local replay frames matched hashes. Dashboard,25 and28 updated; no production integration.
+
+## Resolution (2026-10-25)
+
+Completed bounded comparison without integration. Preferred packets improved development but missed a locked terminal checkpoint (2–3/4); settled runs and grid reached4/4 at cap4. Keep packets rejected as default and settled selection conditional; broader gaps remain25 and adoption remains28.
+
+### Verification
+1. ✓ A revision-boundary comparison report records frozen development/validation split, all candidates, outcomes and limitations — "Report docs/architecture/spikes/revision-boundary-results.md records all policies, development and locked validation, frozen commits, metrics, failures and limitations; raw spike commit842189b."
+2. ✓ tkt validate exits 0 — "tkt validate passed with no findings; frame tests5 passed; freeze, parser,144 seek and dashboard checks passed."
