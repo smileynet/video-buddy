@@ -1,0 +1,43 @@
+{
+  "repo": "Qwen/Qwen3-VL-2B-Instruct",
+  "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "config": {
+    "dtype": "bfloat16",
+    "max_pixels": 262144,
+    "max_new_tokens": 128
+  },
+  "status": "ran",
+  "observations": [
+    {
+      "fixture": "image-models\\fixtures\\objects.jpg",
+      "prompt": "Point to the dog.",
+      "output": "<points x1=\"651\" y1=\"345\" alt=\"dog\">dog</points>",
+      "generated_tokens": 25,
+      "seconds": 1.997741600000154
+    },
+    {
+      "fixture": "image-models\\fixtures\\objects.jpg",
+      "prompt": "Point to the elephant.",
+      "output": "There are none.",
+      "generated_tokens": 5,
+      "seconds": 0.17331329999797163
+    },
+    {
+      "fixture": "image-models\\fixtures\\ui.jpg",
+      "prompt": "Point to the search input field.",
+      "output": "<points x1=\"387\" y1=\"977\" alt=\"search input field\">search input field</points>",
+      "generated_tokens": 29,
+      "seconds": 1.0098710999991454
+    },
+    {
+      "fixture": "image-models\\fixtures\\diagram.jpg",
+      "prompt": "Point to the text showing harmonic settings.",
+      "output": "<points x1=\"675\" y1=\"474\" x2=\"675\" y2=\"524\" alt=\"text showing harmonic settings\">text showing harmonic settings</points>",
+      "generated_tokens": 45,
+      "seconds": 1.5878764000008232
+    }
+  ],
+  "load_seconds": 17.42965059999915,
+  "total_seconds": 22.636648899999273,
+  "peak_cuda_allocated_bytes": 4337127424
+}

@@ -1,0 +1,74 @@
+{
+  "method": "XML well-formedness only; not coordinate/schema/semantic correctness",
+  "results": [
+    {
+      "run": "molmo2-nf4.json",
+      "prompt": "Point to the dog.",
+      "is_abstention": false,
+      "complete_xml": true
+    },
+    {
+      "run": "molmo2-nf4.json",
+      "prompt": "Point to the elephant.",
+      "is_abstention": true
+    },
+    {
+      "run": "molmo2-nf4.json",
+      "prompt": "Point to the search input field.",
+      "is_abstention": false,
+      "complete_xml": true
+    },
+    {
+      "run": "molmo2-nf4.json",
+      "prompt": "Point to the text showing harmonic settings.",
+      "is_abstention": false,
+      "complete_xml": false
+    },
+    {
+      "run": "molmo2-nf4-128.json",
+      "prompt": "Point to the dog.",
+      "is_abstention": false,
+      "complete_xml": true
+    },
+    {
+      "run": "molmo2-nf4-128.json",
+      "prompt": "Point to the elephant.",
+      "is_abstention": true
+    },
+    {
+      "run": "molmo2-nf4-128.json",
+      "prompt": "Point to the search input field.",
+      "is_abstention": false,
+      "complete_xml": true
+    },
+    {
+      "run": "molmo2-nf4-128.json",
+      "prompt": "Point to the text showing harmonic settings.",
+      "is_abstention": false,
+      "complete_xml": false
+    },
+    {
+      "run": "qwen-pointing.json",
+      "prompt": "Point to the dog.",
+      "is_abstention": false,
+      "complete_xml": true
+    },
+    {
+      "run": "qwen-pointing.json",
+      "prompt": "Point to the elephant.",
+      "is_abstention": true
+    },
+    {
+      "run": "qwen-pointing.json",
+      "prompt": "Point to the search input field.",
+      "is_abstention": false,
+      "complete_xml": true
+    },
+    {
+      "run": "qwen-pointing.json",
+      "prompt": "Point to the text showing harmonic settings.",
+      "is_abstention": false,
+      "complete_xml": true
+    }
+  ]
+}
