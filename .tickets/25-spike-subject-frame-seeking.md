@@ -1,7 +1,7 @@
 ---
 id: "25"
 title: "Find complete readable subject states by seeking within video windows"
-status: open
+status: in_progress
 blocked_by: []
 spec: "apply-build"
 priority: high
