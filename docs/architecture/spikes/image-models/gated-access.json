@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "facebook/sam3",
+    "access": "unresolved",
+    "error_type": "GatedRepoError",
+    "error": "403 Client Error. (Request ID: Root=1-6ade04d6-7a2c630e7c501b2262beb9f4;7a398185-512e-4c8e-81e9-b5d68cf9ccc9)\n\nCannot access gated repo for url https://huggingface.co/facebook/sam3/resolve/3c879f39826c281e95690f02c7821c4de09afae7/model.safetensors.\nAccess to model facebook/sam3 is restricted and you are not in the authorized list. Visit https://huggingface.co/facebook/sam3 to ask for access."
+  },
+  {
+    "repo": "facebook/sam3.1",
+    "access": "unresolved",
+    "error_type": "GatedRepoError",
+    "error": "403 Client Error. (Request ID: Root=1-6ade04d7-418610fe427dc6da7062e823;fc702433-a32a-468c-bd00-c50c2046faa1)\n\nCannot access gated repo for url https://huggingface.co/facebook/sam3.1/resolve/daa63191845a41281374e725f4c9e51c7a824460/sam3.1_multiplex.pt.\nAccess to model facebook/sam3.1 is restricted and you are not in the authorized list. Visit https://huggingface.co/facebook/sam3.1 to ask for access."
+  },
+  {
+    "repo": "facebook/dinov3-vits16-pretrain-lvd1689m",
+    "access": "unresolved",
+    "error_type": "GatedRepoError",
+    "error": "403 Client Error. (Request ID: Root=1-6ade04d7-5fd1d3442f999fea357b90cf;770f4915-c4f2-44b2-aa29-d7e5c67fbfca)\n\nCannot access gated repo for url https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m/resolve/114c1379950215c8b35dfcd4e90a5c251dde0d32/model.safetensors.\nAccess to model facebook/dinov3-vits16-pretrain-lvd1689m is restricted and you are not in the authorized list. Visit https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m to ask for access."
+  }
+]

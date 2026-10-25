@@ -1,0 +1,34 @@
+{
+  "family": "efficientsam",
+  "status": "ran",
+  "revisions": {},
+  "observations": [
+    {
+      "fixture": "objects.jpg",
+      "prompt": {
+        "positive": [
+          800,
+          350
+        ],
+        "negative": [
+          300,
+          650
+        ]
+      },
+      "mask_area_ratio": 0.6608083610802812,
+      "includes_positive_seed": true,
+      "includes_negative_seed": true,
+      "predicted_score": 0.8679201006889343,
+      "mask_box": [
+        0,
+        22,
+        1115,
+        900
+      ],
+      "ground_truth_mask": "not annotated; these are seed/extent sanity checks, not segmentation accuracy"
+    }
+  ],
+  "inference_seconds": 0.3984847000001537,
+  "total_seconds": 0.6823905000001105,
+  "peak_cuda_allocated_bytes": 495346176
+}

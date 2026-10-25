@@ -1,0 +1,55 @@
+{
+  "status": "ran",
+  "observations": [
+    {
+      "target": "follow",
+      "box": [
+        1582.98046875,
+        802.76220703125,
+        1737.10986328125,
+        858.68701171875
+      ],
+      "caption": "Add Follow.",
+      "seconds": 0.9226715999993758
+    },
+    {
+      "target": "search",
+      "box": [
+        391.078125,
+        205.34765625,
+        1429.5234375,
+        298.17333984375
+      ],
+      "caption": "Performational",
+      "seconds": 0.05335899999954563
+    },
+    {
+      "target": "overview",
+      "box": [
+        1022.94140625,
+        535.95263671875,
+        1224.13623046875,
+        615.469482421875
+      ],
+      "caption": "Overview",
+      "seconds": 0.043761300000369374
+    },
+    {
+      "target": "images",
+      "box": [
+        1731.216796875,
+        330.13037109375,
+        1882.6962890625,
+        409.6669921875
+      ],
+      "caption": "Images",
+      "seconds": 0.037043700000140234
+    }
+  ],
+  "revisions": {
+    "microsoft/OmniParser-v2.0": "f55d0750e5b94db2125ef0b45b0fa4a85ddc59b4",
+    "microsoft/Florence-2-base": "5ca5edf5bd017b9919c05d08aebef5e4c7ac3bac"
+  },
+  "total_seconds": 27.855081700000483,
+  "limit": "Detector + official icon-caption component probe, manually selected target centers; not complete OmniParser OCR merging or GUI actions"
+}

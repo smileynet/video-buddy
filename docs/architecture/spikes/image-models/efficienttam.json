@@ -1,0 +1,37 @@
+{
+  "family": "efficienttam",
+  "status": "ran",
+  "revisions": {
+    "yunyangx/efficient-track-anything": "9bdd8ab585b19ef95f9c9ed847ac9478301890b4"
+  },
+  "observations": [
+    {
+      "fixture": "objects.jpg",
+      "prompt": {
+        "positive": [
+          800,
+          350
+        ],
+        "negative": [
+          300,
+          650
+        ]
+      },
+      "mask_area_ratio": 0.07497780244173141,
+      "includes_positive_seed": true,
+      "includes_negative_seed": false,
+      "predicted_score": 0.291015625,
+      "mask_box": [
+        602,
+        26,
+        998,
+        398
+      ],
+      "ground_truth_mask": "not annotated; these are seed/extent sanity checks, not segmentation accuracy"
+    }
+  ],
+  "runtime_adjustment": "Disable optional torch.compile: native Windows environment has no Triton backend",
+  "inference_seconds": 0.4301525999999285,
+  "total_seconds": 2.415417800000796,
+  "peak_cuda_allocated_bytes": 218238464
+}

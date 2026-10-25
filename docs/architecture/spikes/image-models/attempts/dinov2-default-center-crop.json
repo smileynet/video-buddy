@@ -1,0 +1,18 @@
+{
+  "family": "dinov2",
+  "status": "ran",
+  "revisions": {
+    "facebook/dinov2-small": "ed25f3a31f01632728cabb09d1542f84ab7b0056"
+  },
+  "observations": [
+    {
+      "job": "do not lose a one-character settings revision",
+      "changed": "port=8001 -> port=8000",
+      "cls_cosine": 1.0,
+      "seconds": 0.25598730000001524,
+      "limit": "CLS similarity only, not dense matching/track accuracy"
+    }
+  ],
+  "total_seconds": 30.940234600000622,
+  "peak_cuda_allocated_bytes": 118002688
+}

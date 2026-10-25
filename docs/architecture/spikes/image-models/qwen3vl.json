@@ -1,0 +1,31 @@
+{
+  "family": "qwen3vl",
+  "status": "ran",
+  "observations": [
+    {
+      "fixture": "objects.jpg",
+      "prompt": "List the visible animals and report whether an elephant is visible. Be literal.",
+      "response": "The visible animals are a cat and a dog. An elephant is not visible.",
+      "seconds": 1.4109277000006841
+    },
+    {
+      "fixture": "real-settings.png",
+      "prompt": "Transcribe the visible text exactly. Output only the text; do not correct or invent characters.",
+      "response": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "seconds": 0.6326397000002544
+    },
+    {
+      "fixture": "ui.jpg",
+      "prompt": "Identify the search field, Follow button and Overview tab. Describe them concisely; do not claim any action was performed.",
+      "response": "The search field is a rectangular input box located at the top of the Google search page, where users can enter a query. The Follow button is a blue button with a white arrow icon, located on the right side of the Microsoft Corp. stock summary section, used to follow the company's updates. The Overview tab is a tab located at the top of the stock summary page, which provides a general overview of the company's financial information.",
+      "seconds": 2.5390919000001304
+    }
+  ],
+  "checkpoint": {
+    "repo": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "max_pixels": 262144
+  },
+  "total_seconds": 91.74160910000046,
+  "peak_cuda_allocated_bytes": 4340024832
+}

@@ -1,0 +1,36 @@
+{
+  "family": "sam2",
+  "status": "ran",
+  "revisions": {
+    "facebook/sam2.1-hiera-tiny": "de431c4043854a71d8101e17995dfe596bf101a5"
+  },
+  "observations": [
+    {
+      "fixture": "objects.jpg",
+      "prompt": {
+        "positive": [
+          800,
+          350
+        ],
+        "negative": [
+          300,
+          650
+        ]
+      },
+      "mask_area_ratio": 0.014170366259711431,
+      "includes_positive_seed": true,
+      "includes_negative_seed": false,
+      "predicted_score": 0.46484375,
+      "mask_box": [
+        639,
+        255,
+        843,
+        377
+      ],
+      "ground_truth_mask": "not annotated; these are seed/extent sanity checks, not segmentation accuracy"
+    }
+  ],
+  "inference_seconds": 0.4568570000001273,
+  "total_seconds": 6.2093832999998995,
+  "peak_cuda_allocated_bytes": 526083584
+}

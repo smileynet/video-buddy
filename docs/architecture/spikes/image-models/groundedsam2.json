@@ -1,0 +1,92 @@
+{
+  "family": "groundedsam2",
+  "status": "ran",
+  "observations": [
+    {
+      "fixture": "objects",
+      "label": "cat",
+      "input_box": [
+        0.612419843673706,
+        319.7149353027344,
+        562.7151489257812,
+        877.3292846679688
+      ],
+      "mask_box": [
+        0,
+        323,
+        557,
+        871
+      ],
+      "area": 0.16637162864208221,
+      "score": 0.96484375,
+      "seconds": 0.17487919999985024
+    },
+    {
+      "fixture": "objects",
+      "label": "dog",
+      "input_box": [
+        394.33074951171875,
+        11.59687614440918,
+        1139.9266357421875,
+        899.6889038085938
+      ],
+      "mask_box": [
+        408,
+        19,
+        1111,
+        900
+      ],
+      "area": 0.3702663779258728,
+      "score": 0.97265625,
+      "seconds": 0.02360359999966022,
+      "includes_dog_seed": true,
+      "includes_cat_seed": false
+    },
+    {
+      "fixture": "diagram",
+      "label": "diagram",
+      "input_box": [
+        712.0877685546875,
+        291.0556335449219,
+        1207.5810546875,
+        787.4141845703125
+      ],
+      "mask_box": [
+        715,
+        296,
+        1204,
+        785
+      ],
+      "area": 0.11479022353887558,
+      "score": 0.9921875,
+      "seconds": 0.03118839999933698
+    },
+    {
+      "fixture": "diagram",
+      "label": "text",
+      "input_box": [
+        1245.41796875,
+        477.2406311035156,
+        1783.82421875,
+        531.8394775390625
+      ],
+      "mask_box": [
+        1246,
+        479,
+        1784,
+        532
+      ],
+      "area": 0.013860436156392097,
+      "score": 0.98046875,
+      "seconds": 0.02040430000033666
+    }
+  ],
+  "checkpoint": {
+    "repo": "facebook/sam2.1-hiera-tiny",
+    "revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+    "file": "sam2.1_hiera_tiny.pt"
+  },
+  "limit": "Uses frozen outputs of prior Grounding DINO run; timings cover segmentation stage only, no annotated mask accuracy",
+  "total_seconds": 2.7113154000007853,
+  "peak_cuda_allocated_bytes": 526738944
+}

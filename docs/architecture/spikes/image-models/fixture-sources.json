@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ui",
+    "url": "https://raw.githubusercontent.com/microsoft/OmniParser/master/imgs/demo_image.jpg",
+    "sha256": "29dfbaca6024f5ca12e257f2d9499b475c78faad636609cc75c01ecfb5d3ec0f"
+  },
+  {
+    "id": "objects",
+    "url": "https://raw.githubusercontent.com/IDEA-Research/GroundingDINO/main/.asset/cat_dog.jpeg",
+    "sha256": "f056b63ab86ac8c83471316351e0df5fcc33ce21160f0e041a12d8a80c4eea8f"
+  },
+  {
+    "id": "diagram",
+    "source": "Qr3VsZYQy4s at 116s, existing captured frame",
+    "sha256": "dd0d658d54a488a1d358e73584019492d97afe44d03d67be8c119d570ba82dd7"
+  }
+]

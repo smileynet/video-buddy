@@ -1,0 +1,111 @@
+{
+  "family": "dinov2",
+  "status": "ran",
+  "revisions": {
+    "facebook/dinov2-small": "ed25f3a31f01632728cabb09d1542f84ab7b0056"
+  },
+  "observations": [
+    {
+      "job": "do not lose a one-character settings revision",
+      "changed": "port=8001 -> port=8000",
+      "cls_cosine": 0.9982012510299683,
+      "seconds": 0.20793120000053023,
+      "limit": "CLS similarity only, not dense matching/track accuracy"
+    },
+    {
+      "job": "dense correspondence on controlled image translation",
+      "shift_pixels": [
+        14,
+        0
+      ],
+      "patch_size": 14,
+      "matches": [
+        {
+          "source_patch": [
+            4,
+            10
+          ],
+          "expected_target_patch": [
+            5,
+            10
+          ],
+          "predicted_target_patch": [
+            5,
+            10
+          ],
+          "exact": true,
+          "similarity": 0.9970054626464844
+        },
+        {
+          "source_patch": [
+            11,
+            5
+          ],
+          "expected_target_patch": [
+            12,
+            5
+          ],
+          "predicted_target_patch": [
+            12,
+            5
+          ],
+          "exact": true,
+          "similarity": 0.9956846833229065
+        },
+        {
+          "source_patch": [
+            12,
+            12
+          ],
+          "expected_target_patch": [
+            13,
+            12
+          ],
+          "predicted_target_patch": [
+            13,
+            12
+          ],
+          "exact": true,
+          "similarity": 0.9919939041137695
+        },
+        {
+          "source_patch": [
+            5,
+            3
+          ],
+          "expected_target_patch": [
+            6,
+            3
+          ],
+          "predicted_target_patch": [
+            6,
+            3
+          ],
+          "exact": true,
+          "similarity": 0.9850287437438965
+        },
+        {
+          "source_patch": [
+            8,
+            8
+          ],
+          "expected_target_patch": [
+            9,
+            8
+          ],
+          "predicted_target_patch": [
+            9,
+            8
+          ],
+          "exact": true,
+          "similarity": 0.9946234226226807
+        }
+      ],
+      "limit": "five chosen patches on one synthetically translated natural image; not video drift/occlusion evaluation"
+    }
+  ],
+  "preprocessing": "Disable default center crop, resize full images to 224x224 so left-aligned text is retained",
+  "processed_changed_pixel_l1": 310.2672424316406,
+  "total_seconds": 3.505733999999393,
+  "peak_cuda_allocated_bytes": 118002688
+}

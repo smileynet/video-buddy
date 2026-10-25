@@ -1,0 +1,328 @@
+{
+  "engine": "tesseract",
+  "cases": [
+    {
+      "id": "text-light-14-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.17692640000041138,
+      "raw": "uv run video-buddy --json frames\n"
+    },
+    {
+      "id": "text-light-14-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.07927269999981945,
+      "raw": "python -m venv .venv\n"
+    },
+    {
+      "id": "text-light-14-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.07827809999980673,
+      "raw": "CUDA_VISIBLE_DEVICES=0\n"
+    },
+    {
+      "id": "text-light-14-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase-0.0000",
+      "exact": false,
+      "cer": 0.025,
+      "seconds": 0.08407460000034916,
+      "raw": "harmonic=1 amplitude=1.0000 phase-0.0000\n"
+    },
+    {
+      "id": "text-light-14-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08144799999990937,
+      "raw": "port=8001\n"
+    },
+    {
+      "id": "text-light-22-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08827389999987645,
+      "raw": "uv run video-buddy --json frames\n"
+    },
+    {
+      "id": "text-light-22-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08195740000064689,
+      "raw": "python -m venv .venv\n"
+    },
+    {
+      "id": "text-light-22-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08549120000043331,
+      "raw": "CUDA_VISIBLE_DEVICES=0\n"
+    },
+    {
+      "id": "text-light-22-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08964760000071692,
+      "raw": "harmonic=1 amplitude=1.0000 phase=0.0000\n"
+    },
+    {
+      "id": "text-light-22-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08005820000016683,
+      "raw": "port=8001\n"
+    },
+    {
+      "id": "text-light-32-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08767360000001645,
+      "raw": "uv run video-buddy --json frames\n"
+    },
+    {
+      "id": "text-light-32-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08452110000052926,
+      "raw": "python -m venv .venv\n"
+    },
+    {
+      "id": "text-light-32-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=\u00ae",
+      "exact": false,
+      "cer": 0.045454545454545456,
+      "seconds": 0.0822650000000067,
+      "raw": "CUDA_VISIBLE_DEVICES=\u00ae\n"
+    },
+    {
+      "id": "text-light-32-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=e.ee0ee",
+      "exact": false,
+      "cer": 0.125,
+      "seconds": 0.09521750000021711,
+      "raw": "harmonic=1 amplitude=1.0000 phase=e.ee0ee\n"
+    },
+    {
+      "id": "text-light-32-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08025069999985135,
+      "raw": "port=8001\n"
+    },
+    {
+      "id": "text-dark-14-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.0878642999996373,
+      "raw": "uv run video-buddy --json frames\n"
+    },
+    {
+      "id": "text-dark-14-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08683449999989534,
+      "raw": "python -m venv .venv\n"
+    },
+    {
+      "id": "text-dark-14-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08808020000014949,
+      "raw": "CUDA_VISIBLE_DEVICES=0\n"
+    },
+    {
+      "id": "text-dark-14-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.000 phase-0.0000",
+      "exact": false,
+      "cer": 0.05,
+      "seconds": 0.09342130000004545,
+      "raw": "harmonic=1 amplitude=1.000 phase-0.0000\n"
+    },
+    {
+      "id": "text-dark-14-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08516180000060558,
+      "raw": "port=8001\n"
+    },
+    {
+      "id": "text-dark-22-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.09299780000037572,
+      "raw": "uv run video-buddy --json frames\n"
+    },
+    {
+      "id": "text-dark-22-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08575519999976677,
+      "raw": "python -m venv .venv\n"
+    },
+    {
+      "id": "text-dark-22-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08984820000023319,
+      "raw": "CUDA_VISIBLE_DEVICES=0\n"
+    },
+    {
+      "id": "text-dark-22-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.09792889999971521,
+      "raw": "harmonic=1 amplitude=1.0000 phase=0.0000\n"
+    },
+    {
+      "id": "text-dark-22-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8@01",
+      "exact": false,
+      "cer": 0.1111111111111111,
+      "seconds": 0.07909579999977723,
+      "raw": "port=8@01\n"
+    },
+    {
+      "id": "text-dark-32-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.09211239999967802,
+      "raw": "uv run video-buddy --json frames\n"
+    },
+    {
+      "id": "text-dark-32-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.0927019000000655,
+      "raw": "python -m venv .venv\n"
+    },
+    {
+      "id": "text-dark-32-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0\u00ae",
+      "exact": false,
+      "cer": 0.045454545454545456,
+      "seconds": 0.09032370000022638,
+      "raw": "CUDA_VISIBLE_DEVICES=0\u00ae\n"
+    },
+    {
+      "id": "text-dark-32-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0@00 phase=e.ee0e",
+      "exact": false,
+      "cer": 0.125,
+      "seconds": 0.09711570000035863,
+      "raw": "harmonic=1 amplitude=1.0@00 phase=e.ee0e\n"
+    },
+    {
+      "id": "text-dark-32-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.08691169999929116,
+      "raw": "port=8001\n"
+    },
+    {
+      "id": "real-settings",
+      "kind": "source_crop",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 6.6000",
+      "exact": false,
+      "cer": 0.2,
+      "seconds": 0.11322240000026795,
+      "raw": "harmonic=1 amplitude=1.0000 6.6000\n"
+    }
+  ],
+  "status": "ran",
+  "load_seconds": 2.600000698294025e-06,
+  "controlled_synthetic": {
+    "n": 30,
+    "exact": 23,
+    "mean_cer": 0.01756734006734007
+  },
+  "source_crop": {
+    "n": 1,
+    "exact": 0,
+    "mean_cer": 0.2
+  },
+  "total_seconds": 2.8151262000001225
+}

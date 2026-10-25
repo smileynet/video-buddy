@@ -1,0 +1,96 @@
+{
+  "family": "florence",
+  "status": "ran",
+  "revisions": {
+    "microsoft/Florence-2-base-ft": "f6c1a25888ffc1d945ee8a1a77ac833c7303d46e"
+  },
+  "observations": [
+    {
+      "fixture": "objects",
+      "task": "<OD>",
+      "seconds": 1.4463787000004231,
+      "raw": "</s><s>cat<loc_0><loc_355><loc_470><loc_974>dog<loc_0><loc_11><loc_953><loc_998></s>",
+      "parsed": {
+        "<OD>": {
+          "bboxes": [
+            [
+              0.6000000238418579,
+              320.3055114746094,
+              564.6000366210938,
+              878.0245361328125
+            ],
+            [
+              0.6000000238418579,
+              10.361499786376953,
+              1144.2000732421875,
+              899.6484985351562
+            ]
+          ],
+          "labels": [
+            "cat",
+            "dog"
+          ]
+        }
+      }
+    },
+    {
+      "fixture": "ui",
+      "task": "<DENSE_REGION_CAPTION>",
+      "seconds": 0.045928900000035355,
+      "raw": "</s><s>computer monitor<loc_0><loc_0><loc_998><loc_998></s>",
+      "parsed": {
+        "<DENSE_REGION_CAPTION>": {
+          "bboxes": [
+            [
+              1.6200000047683716,
+              1.0800000429153442,
+              3235.139892578125,
+              2156.760009765625
+            ]
+          ],
+          "labels": [
+            "computer monitor"
+          ]
+        }
+      }
+    },
+    {
+      "fixture": "real-settings",
+      "task": "<OCR_WITH_REGION>",
+      "seconds": 0.14540460000080202,
+      "raw": "</s><s>harmonic! applitude-1.000<loc_49><loc_338><loc_634><loc_338><loc_634><loc_638><loc_49><loc_638>pulse-0.000<loc_710><loc_349><loc_949><loc_349><loc_949><loc_638><loc_710><loc_638></s>",
+      "parsed": {
+        "<OCR_WITH_REGION>": {
+          "quad_boxes": [
+            [
+              27.225000381469727,
+              18.61750030517578,
+              348.9750061035156,
+              18.61750030517578,
+              348.9750061035156,
+              35.11750030517578,
+              27.225000381469727,
+              35.11750030517578
+            ],
+            [
+              390.7749938964844,
+              19.22249984741211,
+              522.2250366210938,
+              19.22249984741211,
+              522.2250366210938,
+              35.11750030517578,
+              390.7749938964844,
+              35.11750030517578
+            ]
+          ],
+          "labels": [
+            "</s>harmonic! applitude-1.000",
+            "pulse-0.000"
+          ]
+        }
+      }
+    }
+  ],
+  "total_seconds": 21.225322600000254,
+  "peak_cuda_allocated_bytes": 649145344
+}

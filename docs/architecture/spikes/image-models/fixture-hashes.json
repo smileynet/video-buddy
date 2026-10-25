@@ -1,0 +1,172 @@
+[
+  {
+    "file": "fixtures\\diagram.jpg",
+    "sha256": "dd0d658d54a488a1d358e73584019492d97afe44d03d67be8c119d570ba82dd7",
+    "bytes": 77877
+  },
+  {
+    "file": "fixtures\\objects.jpg",
+    "sha256": "f056b63ab86ac8c83471316351e0df5fcc33ce21160f0e041a12d8a80c4eea8f",
+    "bytes": 123411
+  },
+  {
+    "file": "fixtures\\real-settings.png",
+    "sha256": "ee93193e547dde41f233533439ea6ce2c6b107184ba0d73839fba41c568ec03f",
+    "bytes": 21129
+  },
+  {
+    "file": "fixtures\\text-dark-14-0.png",
+    "sha256": "286d43731d95b3755f9a1046512a1c06b190c593f59d74f1f7d77115768e0976",
+    "bytes": 2688
+  },
+  {
+    "file": "fixtures\\text-dark-14-1.png",
+    "sha256": "f8e8e8e2515c80b3cc76a1c11c37b266f92c4ebd9eb22f8bc546006cf634f9e4",
+    "bytes": 1877
+  },
+  {
+    "file": "fixtures\\text-dark-14-2.png",
+    "sha256": "e4ce4e6c202ff7dbf876e9fbc5c7a8c13e91b9881f1b178fe975a01e5844b375",
+    "bytes": 2306
+  },
+  {
+    "file": "fixtures\\text-dark-14-3.png",
+    "sha256": "cb321de576058af442df95b9cc50996305d9c48e0666a9d75092a5371d29aacc",
+    "bytes": 2823
+  },
+  {
+    "file": "fixtures\\text-dark-14-4.png",
+    "sha256": "c1e81251061d98ce7c9e0f1256467796165437eea419045d78bb98be50472a0f",
+    "bytes": 1746
+  },
+  {
+    "file": "fixtures\\text-dark-22-0.png",
+    "sha256": "2d2467e87a0f7768f868483d5c5d4d4f51256f6e8379bc240ef164b3c64d3c46",
+    "bytes": 4188
+  },
+  {
+    "file": "fixtures\\text-dark-22-1.png",
+    "sha256": "3f6b6628d706077d6bb3c27e06e38a28e5ca15da4e376c4493ade933ef730cc8",
+    "bytes": 2877
+  },
+  {
+    "file": "fixtures\\text-dark-22-2.png",
+    "sha256": "0718f44e85a2787c715bb3dcca6dca16c0fedcb6f3dbb2a3b567b54aca8ecc4e",
+    "bytes": 3480
+  },
+  {
+    "file": "fixtures\\text-dark-22-3.png",
+    "sha256": "0b52d34b259cf720672a2def9684c67f8de12186613b6712e379397d40d7ce86",
+    "bytes": 4443
+  },
+  {
+    "file": "fixtures\\text-dark-22-4.png",
+    "sha256": "8ff0682f131bb32dc603d87eae2ac9e6321d063b8e2cc3853e816d52cd54c026",
+    "bytes": 2568
+  },
+  {
+    "file": "fixtures\\text-dark-32-0.png",
+    "sha256": "a95b0a656300577d0ac4ba44fd0b58a2d67339e52792c0f06c1f865f0e07a631",
+    "bytes": 6115
+  },
+  {
+    "file": "fixtures\\text-dark-32-1.png",
+    "sha256": "e3377ecdf58df4c6c817dc11a58eca5a6ea1009152c0a5c8156a7e4210846f3a",
+    "bytes": 4152
+  },
+  {
+    "file": "fixtures\\text-dark-32-2.png",
+    "sha256": "540ff50f8587b72eb338feaddbd3b595685d246f38900e73a011f6c2ae565e3c",
+    "bytes": 5216
+  },
+  {
+    "file": "fixtures\\text-dark-32-3.png",
+    "sha256": "7ee5fd9717d707ee34c774170cb21aab22e8eb0d7799d320a7ce5162a90b27ba",
+    "bytes": 6712
+  },
+  {
+    "file": "fixtures\\text-dark-32-4.png",
+    "sha256": "04e32e6e38108b59304546ae9f7d1b8cdb9e0cd7fdb2f564ff093845f1ff33b1",
+    "bytes": 3764
+  },
+  {
+    "file": "fixtures\\text-light-14-0.png",
+    "sha256": "9f6cfff42c1637e3fc3a096d06ea1d4c7d9f5c9123ca078b0b76da23198b8f14",
+    "bytes": 2565
+  },
+  {
+    "file": "fixtures\\text-light-14-1.png",
+    "sha256": "4cecba9c5518b28cc6f3986e7d76805e0191e506e51004c5ab94e75b621bf660",
+    "bytes": 1783
+  },
+  {
+    "file": "fixtures\\text-light-14-2.png",
+    "sha256": "22097b7f2b819c3532f4959d47fd321532cfa9eae0dd4ec2b5c169bb161d7328",
+    "bytes": 2172
+  },
+  {
+    "file": "fixtures\\text-light-14-3.png",
+    "sha256": "9b31c65e2b6bad52ed30c28f9259fa1ec394ba0a6bb526c66bb5307460f54630",
+    "bytes": 2685
+  },
+  {
+    "file": "fixtures\\text-light-14-4.png",
+    "sha256": "0734e168723592dfdd684582b5f28569b7801a5227adecfa65f5506b94614b90",
+    "bytes": 1651
+  },
+  {
+    "file": "fixtures\\text-light-22-0.png",
+    "sha256": "25a8694f14400d84b29c5996dc556dc174f364a30a1087bd6413f75d8c0846fb",
+    "bytes": 3800
+  },
+  {
+    "file": "fixtures\\text-light-22-1.png",
+    "sha256": "f82e5715c38c85bbc9d5bc4bb2cde7b992d0d267dabcdee13debd795f4da35e4",
+    "bytes": 2610
+  },
+  {
+    "file": "fixtures\\text-light-22-2.png",
+    "sha256": "6b1fc772e6e2f9930cfea102b791cee43931a502826067a13e448ade7891cc38",
+    "bytes": 3137
+  },
+  {
+    "file": "fixtures\\text-light-22-3.png",
+    "sha256": "da5956bd14c68c3242cff7ed78d92eb03bd3f04037d7e466fece9744255978c6",
+    "bytes": 3887
+  },
+  {
+    "file": "fixtures\\text-light-22-4.png",
+    "sha256": "c82b058f8d41c6171d311e8faaca9c66c59f10303a00d6dd389baee93c73806d",
+    "bytes": 2412
+  },
+  {
+    "file": "fixtures\\text-light-32-0.png",
+    "sha256": "333a4c1df1cb52482eda638d78f42fa1da2db5d542e426756dfc04e843a6cfd4",
+    "bytes": 5611
+  },
+  {
+    "file": "fixtures\\text-light-32-1.png",
+    "sha256": "4c341f297e91c7a6b04438f536acbd266c92ba8a86321f50bdb351efb8255fa3",
+    "bytes": 3718
+  },
+  {
+    "file": "fixtures\\text-light-32-2.png",
+    "sha256": "f8165d5a3bb04492d5a7a4030c7b0ffac88f18f91db617c08f58da2e153d7bd0",
+    "bytes": 4699
+  },
+  {
+    "file": "fixtures\\text-light-32-3.png",
+    "sha256": "8fb9d3ac6297fc77aa74e09ad4166efbf5d4ac7776293e23356e5c1154dd09ea",
+    "bytes": 5863
+  },
+  {
+    "file": "fixtures\\text-light-32-4.png",
+    "sha256": "64f3a07a5d9d00c26f2612bf391d24c9cdce95ed74e362a79a0724edf649768a",
+    "bytes": 3447
+  },
+  {
+    "file": "fixtures\\ui.jpg",
+    "sha256": "29dfbaca6024f5ca12e257f2d9499b475c78faad636609cc75c01ecfb5d3ec0f",
+    "bytes": 573377
+  }
+]

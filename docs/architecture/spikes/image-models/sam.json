@@ -1,0 +1,57 @@
+{
+  "family": "sam",
+  "status": "ran",
+  "revisions": {},
+  "observations": [
+    {
+      "fixture": "objects.jpg",
+      "prompt": {
+        "positive": [
+          800,
+          350
+        ],
+        "negative": [
+          300,
+          650
+        ]
+      },
+      "mask_area_ratio": 0.5690149833518313,
+      "includes_positive_seed": true,
+      "includes_negative_seed": true,
+      "predicted_score": 0.867141604423523,
+      "mask_box": [
+        0,
+        20,
+        1116,
+        897
+      ],
+      "ground_truth_mask": "not annotated; these are seed/extent sanity checks, not segmentation accuracy"
+    }
+  ],
+  "inference_seconds": 0.6215517000000546,
+  "candidate_seed_checks": [
+    {
+      "index": 0,
+      "score": 0.867141604423523,
+      "positive": true,
+      "negative": true,
+      "area": 0.5690149833518313
+    },
+    {
+      "index": 1,
+      "score": 0.7526365518569946,
+      "positive": true,
+      "negative": false,
+      "area": 0.3267693303736589
+    },
+    {
+      "index": 2,
+      "score": 0.8544027805328369,
+      "positive": true,
+      "negative": false,
+      "area": 0.02887902330743618
+    }
+  ],
+  "total_seconds": 2.2288912999993045,
+  "peak_cuda_allocated_bytes": 2905566720
+}

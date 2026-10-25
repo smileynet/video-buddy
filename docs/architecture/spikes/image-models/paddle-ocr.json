@@ -1,0 +1,3047 @@
+{
+  "engine": "paddle",
+  "cases": [
+    {
+      "id": "text-light-14-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.2740844999998444,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-14-0.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  18
+                ],
+                [
+                  263,
+                  18
+                ],
+                [
+                  263,
+                  39
+                ],
+                [
+                  13,
+                  39
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "uv run video-buddy --json frames"
+            ],
+            "rec_scores": [
+              0.9755617380142212
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  18
+                ],
+                [
+                  263,
+                  18
+                ],
+                [
+                  263,
+                  39
+                ],
+                [
+                  13,
+                  39
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                18,
+                263,
+                39
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-14-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.16826409999976022,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-14-1.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  18
+                ],
+                [
+                  171,
+                  16
+                ],
+                [
+                  171,
+                  37
+                ],
+                [
+                  12,
+                  39
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "python -m venv .venv"
+            ],
+            "rec_scores": [
+              0.9941493272781372
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  18
+                ],
+                [
+                  171,
+                  16
+                ],
+                [
+                  171,
+                  37
+                ],
+                [
+                  12,
+                  39
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                16,
+                171,
+                39
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-14-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.19703889999982493,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-14-2.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  14,
+                  19
+                ],
+                [
+                  186,
+                  19
+                ],
+                [
+                  186,
+                  36
+                ],
+                [
+                  14,
+                  36
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "CUDA_VISIBLE_DEVICES=0"
+            ],
+            "rec_scores": [
+              0.9996345639228821
+            ],
+            "rec_polys": [
+              [
+                [
+                  14,
+                  19
+                ],
+                [
+                  186,
+                  19
+                ],
+                [
+                  186,
+                  36
+                ],
+                [
+                  14,
+                  36
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                14,
+                19,
+                186,
+                36
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-14-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.2959147000001394,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-14-3.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  14,
+                  19
+                ],
+                [
+                  324,
+                  19
+                ],
+                [
+                  324,
+                  36
+                ],
+                [
+                  14,
+                  36
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "harmonic=1 amplitude=1.0000 phase=0.0000"
+            ],
+            "rec_scores": [
+              0.9908555150032043
+            ],
+            "rec_polys": [
+              [
+                [
+                  14,
+                  19
+                ],
+                [
+                  324,
+                  19
+                ],
+                [
+                  324,
+                  36
+                ],
+                [
+                  14,
+                  36
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                14,
+                19,
+                324,
+                36
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-14-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.12610729999960313,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-14-4.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  19
+                ],
+                [
+                  85,
+                  16
+                ],
+                [
+                  85,
+                  35
+                ],
+                [
+                  12,
+                  38
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "port=8001"
+            ],
+            "rec_scores": [
+              0.9995248317718506
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  19
+                ],
+                [
+                  85,
+                  16
+                ],
+                [
+                  85,
+                  35
+                ],
+                [
+                  12,
+                  38
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                16,
+                85,
+                38
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.23024699999950826,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-22-0.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  14,
+                  16
+                ],
+                [
+                  401,
+                  18
+                ],
+                [
+                  401,
+                  48
+                ],
+                [
+                  14,
+                  46
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "uv run video-buddy --json frames"
+            ],
+            "rec_scores": [
+              0.9826859831809998
+            ],
+            "rec_polys": [
+              [
+                [
+                  14,
+                  16
+                ],
+                [
+                  401,
+                  18
+                ],
+                [
+                  401,
+                  48
+                ],
+                [
+                  14,
+                  46
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                14,
+                16,
+                401,
+                48
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.1639852999996947,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-22-1.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  14,
+                  19
+                ],
+                [
+                  258,
+                  19
+                ],
+                [
+                  258,
+                  49
+                ],
+                [
+                  14,
+                  49
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "python -m venv .venv"
+            ],
+            "rec_scores": [
+              0.999485194683075
+            ],
+            "rec_polys": [
+              [
+                [
+                  14,
+                  19
+                ],
+                [
+                  258,
+                  19
+                ],
+                [
+                  258,
+                  49
+                ],
+                [
+                  14,
+                  49
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                14,
+                19,
+                258,
+                49
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.17456160000074306,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-22-2.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  15,
+                  19
+                ],
+                [
+                  282,
+                  19
+                ],
+                [
+                  282,
+                  48
+                ],
+                [
+                  15,
+                  48
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "CUDA_VISIBLE_DEVICES=0"
+            ],
+            "rec_scores": [
+              0.9939050674438477
+            ],
+            "rec_polys": [
+              [
+                [
+                  15,
+                  19
+                ],
+                [
+                  282,
+                  19
+                ],
+                [
+                  282,
+                  48
+                ],
+                [
+                  15,
+                  48
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                15,
+                19,
+                282,
+                48
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.28243579999980284,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-22-3.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  15,
+                  16
+                ],
+                [
+                  498,
+                  16
+                ],
+                [
+                  498,
+                  45
+                ],
+                [
+                  15,
+                  45
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "harmonic=1 amplitude=1.0000 phase=0.0000"
+            ],
+            "rec_scores": [
+              0.9982013702392578
+            ],
+            "rec_polys": [
+              [
+                [
+                  15,
+                  16
+                ],
+                [
+                  498,
+                  16
+                ],
+                [
+                  498,
+                  45
+                ],
+                [
+                  15,
+                  45
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                15,
+                16,
+                498,
+                45
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.13090190000002622,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-22-4.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  21
+                ],
+                [
+                  124,
+                  19
+                ],
+                [
+                  124,
+                  44
+                ],
+                [
+                  12,
+                  46
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "port=8001"
+            ],
+            "rec_scores": [
+              0.9998828172683716
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  21
+                ],
+                [
+                  124,
+                  19
+                ],
+                [
+                  124,
+                  44
+                ],
+                [
+                  12,
+                  46
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                19,
+                124,
+                46
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.2497283000002426,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-32-0.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  17
+                ],
+                [
+                  576,
+                  19
+                ],
+                [
+                  576,
+                  58
+                ],
+                [
+                  13,
+                  56
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "uv run video-buddy --json frames"
+            ],
+            "rec_scores": [
+              0.9837618470191956
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  17
+                ],
+                [
+                  576,
+                  19
+                ],
+                [
+                  576,
+                  58
+                ],
+                [
+                  13,
+                  56
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                17,
+                576,
+                58
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.17921620000015537,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-32-1.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  15,
+                  20
+                ],
+                [
+                  367,
+                  20
+                ],
+                [
+                  367,
+                  57
+                ],
+                [
+                  15,
+                  57
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "python -m venv .venv"
+            ],
+            "rec_scores": [
+              0.9995868802070618
+            ],
+            "rec_polys": [
+              [
+                [
+                  15,
+                  20
+                ],
+                [
+                  367,
+                  20
+                ],
+                [
+                  367,
+                  57
+                ],
+                [
+                  15,
+                  57
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                15,
+                20,
+                367,
+                57
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.1881230000008145,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-32-2.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  15,
+                  20
+                ],
+                [
+                  401,
+                  21
+                ],
+                [
+                  401,
+                  60
+                ],
+                [
+                  15,
+                  59
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "CUDA_VISIBLE_DEVICES=0"
+            ],
+            "rec_scores": [
+              0.9925107359886169
+            ],
+            "rec_polys": [
+              [
+                [
+                  15,
+                  20
+                ],
+                [
+                  401,
+                  21
+                ],
+                [
+                  401,
+                  60
+                ],
+                [
+                  15,
+                  59
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                15,
+                20,
+                401,
+                60
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.3098474999997052,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-32-3.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  14,
+                  19
+                ],
+                [
+                  719,
+                  19
+                ],
+                [
+                  719,
+                  56
+                ],
+                [
+                  14,
+                  56
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "harmonic=1 amplitude=1.0000 phase=0.0000"
+            ],
+            "rec_scores": [
+              0.9989240765571594
+            ],
+            "rec_polys": [
+              [
+                [
+                  14,
+                  19
+                ],
+                [
+                  719,
+                  19
+                ],
+                [
+                  719,
+                  56
+                ],
+                [
+                  14,
+                  56
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                14,
+                19,
+                719,
+                56
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.1271600000000035,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-light-32-4.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  21
+                ],
+                [
+                  174,
+                  19
+                ],
+                [
+                  174,
+                  54
+                ],
+                [
+                  12,
+                  56
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "port=8001"
+            ],
+            "rec_scores": [
+              0.9998952150344849
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  21
+                ],
+                [
+                  174,
+                  19
+                ],
+                [
+                  174,
+                  54
+                ],
+                [
+                  12,
+                  56
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                19,
+                174,
+                56
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.4234601999996812,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-14-0.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  19
+                ],
+                [
+                  212,
+                  20
+                ],
+                [
+                  212,
+                  38
+                ],
+                [
+                  12,
+                  36
+                ]
+              ],
+              [
+                [
+                  212,
+                  20
+                ],
+                [
+                  261,
+                  23
+                ],
+                [
+                  261,
+                  36
+                ],
+                [
+                  211,
+                  34
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1,
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "uv run video-buddy --json",
+              "frames"
+            ],
+            "rec_scores": [
+              0.9892049431800842,
+              0.9999523758888245
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  19
+                ],
+                [
+                  212,
+                  20
+                ],
+                [
+                  212,
+                  38
+                ],
+                [
+                  12,
+                  36
+                ]
+              ],
+              [
+                [
+                  212,
+                  20
+                ],
+                [
+                  261,
+                  23
+                ],
+                [
+                  261,
+                  36
+                ],
+                [
+                  211,
+                  34
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                19,
+                212,
+                38
+              ],
+              [
+                211,
+                20,
+                261,
+                36
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.392379400000209,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-14-1.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  22
+                ],
+                [
+                  67,
+                  17
+                ],
+                [
+                  68,
+                  35
+                ],
+                [
+                  13,
+                  39
+                ]
+              ],
+              [
+                [
+                  68,
+                  25
+                ],
+                [
+                  122,
+                  25
+                ],
+                [
+                  122,
+                  34
+                ],
+                [
+                  68,
+                  34
+                ]
+              ],
+              [
+                [
+                  131,
+                  25
+                ],
+                [
+                  167,
+                  25
+                ],
+                [
+                  167,
+                  34
+                ],
+                [
+                  131,
+                  34
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1,
+              -1,
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "python",
+              "-m venv",
+              ".venv"
+            ],
+            "rec_scores": [
+              0.9998283386230469,
+              0.9427645802497864,
+              0.9983385801315308
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  22
+                ],
+                [
+                  67,
+                  17
+                ],
+                [
+                  68,
+                  35
+                ],
+                [
+                  13,
+                  39
+                ]
+              ],
+              [
+                [
+                  68,
+                  25
+                ],
+                [
+                  122,
+                  25
+                ],
+                [
+                  122,
+                  34
+                ],
+                [
+                  68,
+                  34
+                ]
+              ],
+              [
+                [
+                  131,
+                  25
+                ],
+                [
+                  167,
+                  25
+                ],
+                [
+                  167,
+                  34
+                ],
+                [
+                  131,
+                  34
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                17,
+                68,
+                39
+              ],
+              [
+                68,
+                25,
+                122,
+                34
+              ],
+              [
+                131,
+                25,
+                167,
+                34
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.19201479999992443,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-14-2.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  19
+                ],
+                [
+                  186,
+                  20
+                ],
+                [
+                  186,
+                  38
+                ],
+                [
+                  13,
+                  36
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "CUDA_VISIBLE_DEVICES=0"
+            ],
+            "rec_scores": [
+              0.9998619556427002
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  19
+                ],
+                [
+                  186,
+                  20
+                ],
+                [
+                  186,
+                  38
+                ],
+                [
+                  13,
+                  36
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                19,
+                186,
+                38
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.30689320000055886,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-14-3.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  19
+                ],
+                [
+                  323,
+                  19
+                ],
+                [
+                  323,
+                  35
+                ],
+                [
+                  13,
+                  35
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "harmonic=1 amplitude=1.0000 phase=0.0000"
+            ],
+            "rec_scores": [
+              0.9841283559799194
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  19
+                ],
+                [
+                  323,
+                  19
+                ],
+                [
+                  323,
+                  35
+                ],
+                [
+                  13,
+                  35
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                19,
+                323,
+                35
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.13163219999933062,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-14-4.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  24
+                ],
+                [
+                  84,
+                  20
+                ],
+                [
+                  84,
+                  34
+                ],
+                [
+                  13,
+                  38
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "port=8001"
+            ],
+            "rec_scores": [
+              0.9999082088470459
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  24
+                ],
+                [
+                  84,
+                  20
+                ],
+                [
+                  84,
+                  34
+                ],
+                [
+                  13,
+                  38
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                20,
+                84,
+                38
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy --json frames",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.23373820000051637,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-22-0.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  16
+                ],
+                [
+                  403,
+                  18
+                ],
+                [
+                  403,
+                  46
+                ],
+                [
+                  12,
+                  45
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "uv run video-buddy --json frames"
+            ],
+            "rec_scores": [
+              0.9962289333343506
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  16
+                ],
+                [
+                  403,
+                  18
+                ],
+                [
+                  403,
+                  46
+                ],
+                [
+                  12,
+                  45
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                16,
+                403,
+                46
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.1938427999994019,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-22-1.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  20
+                ],
+                [
+                  259,
+                  16
+                ],
+                [
+                  259,
+                  42
+                ],
+                [
+                  12,
+                  46
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "python -m venv .venv"
+            ],
+            "rec_scores": [
+              0.9951211214065552
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  20
+                ],
+                [
+                  259,
+                  16
+                ],
+                [
+                  259,
+                  42
+                ],
+                [
+                  12,
+                  46
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                16,
+                259,
+                46
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.2022041000000172,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-22-2.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  20
+                ],
+                [
+                  283,
+                  20
+                ],
+                [
+                  283,
+                  45
+                ],
+                [
+                  13,
+                  45
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "CUDA_VISIBLE_DEVICES=0"
+            ],
+            "rec_scores": [
+              0.9863185286521912
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  20
+                ],
+                [
+                  283,
+                  20
+                ],
+                [
+                  283,
+                  45
+                ],
+                [
+                  13,
+                  45
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                20,
+                283,
+                45
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amp1itude=1.0000 phase=0.0000",
+      "exact": false,
+      "cer": 0.025,
+      "seconds": 0.2633974999998827,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-22-3.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  16
+                ],
+                [
+                  500,
+                  16
+                ],
+                [
+                  500,
+                  45
+                ],
+                [
+                  13,
+                  45
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "harmonic=1 amp1itude=1.0000 phase=0.0000"
+            ],
+            "rec_scores": [
+              0.9868640899658203
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  16
+                ],
+                [
+                  500,
+                  16
+                ],
+                [
+                  500,
+                  45
+                ],
+                [
+                  13,
+                  45
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                16,
+                500,
+                45
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.12814199999957054,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-22-4.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  24
+                ],
+                [
+                  123,
+                  20
+                ],
+                [
+                  124,
+                  41
+                ],
+                [
+                  13,
+                  45
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "port=8001"
+            ],
+            "rec_scores": [
+              0.9999444484710693
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  24
+                ],
+                [
+                  123,
+                  20
+                ],
+                [
+                  124,
+                  41
+                ],
+                [
+                  13,
+                  45
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                20,
+                124,
+                45
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uv run video-buddy , --json frames",
+      "exact": false,
+      "cer": 0.0625,
+      "seconds": 0.3152430000000095,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-32-0.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  9,
+                  14
+                ],
+                [
+                  339,
+                  16
+                ],
+                [
+                  339,
+                  55
+                ],
+                [
+                  9,
+                  52
+                ]
+              ],
+              [
+                [
+                  321,
+                  19
+                ],
+                [
+                  577,
+                  16
+                ],
+                [
+                  577,
+                  54
+                ],
+                [
+                  322,
+                  56
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1,
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "uv run video-buddy",
+              ", --json frames"
+            ],
+            "rec_scores": [
+              0.9998719692230225,
+              0.9656053185462952
+            ],
+            "rec_polys": [
+              [
+                [
+                  9,
+                  14
+                ],
+                [
+                  339,
+                  16
+                ],
+                [
+                  339,
+                  55
+                ],
+                [
+                  9,
+                  52
+                ]
+              ],
+              [
+                [
+                  321,
+                  19
+                ],
+                [
+                  577,
+                  16
+                ],
+                [
+                  577,
+                  54
+                ],
+                [
+                  322,
+                  56
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                9,
+                14,
+                339,
+                55
+              ],
+              [
+                321,
+                16,
+                577,
+                56
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv .venv",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.1804229999997915,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-32-1.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  12,
+                  19
+                ],
+                [
+                  369,
+                  15
+                ],
+                [
+                  369,
+                  54
+                ],
+                [
+                  12,
+                  58
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "python -m venv .venv"
+            ],
+            "rec_scores": [
+              0.9998390078544617
+            ],
+            "rec_polys": [
+              [
+                [
+                  12,
+                  19
+                ],
+                [
+                  369,
+                  15
+                ],
+                [
+                  369,
+                  54
+                ],
+                [
+                  12,
+                  58
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                12,
+                15,
+                369,
+                58
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.19973980000031588,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-32-2.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  15,
+                  20
+                ],
+                [
+                  402,
+                  20
+                ],
+                [
+                  402,
+                  54
+                ],
+                [
+                  15,
+                  54
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "CUDA_VISIBLE_DEVICES=0"
+            ],
+            "rec_scores": [
+              0.9999056458473206
+            ],
+            "rec_polys": [
+              [
+                [
+                  15,
+                  20
+                ],
+                [
+                  402,
+                  20
+                ],
+                [
+                  402,
+                  54
+                ],
+                [
+                  15,
+                  54
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                15,
+                20,
+                402,
+                54
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.3113623999997799,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-32-3.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  16
+                ],
+                [
+                  721,
+                  16
+                ],
+                [
+                  721,
+                  54
+                ],
+                [
+                  13,
+                  54
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "harmonic=1 amplitude=1.0000 phase=0.0000"
+            ],
+            "rec_scores": [
+              0.9866792559623718
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  16
+                ],
+                [
+                  721,
+                  16
+                ],
+                [
+                  721,
+                  54
+                ],
+                [
+                  13,
+                  54
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                16,
+                721,
+                54
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port=8001",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.12295489999996789,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\text-dark-32-4.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  13,
+                  24
+                ],
+                [
+                  173,
+                  20
+                ],
+                [
+                  173,
+                  50
+                ],
+                [
+                  13,
+                  54
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "port=8001"
+            ],
+            "rec_scores": [
+              0.9999725818634033
+            ],
+            "rec_polys": [
+              [
+                [
+                  13,
+                  24
+                ],
+                [
+                  173,
+                  20
+                ],
+                [
+                  173,
+                  50
+                ],
+                [
+                  13,
+                  54
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                13,
+                20,
+                173,
+                54
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "real-settings",
+      "kind": "source_crop",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.40798260000065056,
+      "raw": [
+        {
+          "res": {
+            "input_path": "D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\image-models\\fixtures\\real-settings.png",
+            "page_index": null,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_textline_orientation": false
+            },
+            "dt_polys": [
+              [
+                [
+                  27,
+                  15
+                ],
+                [
+                  137,
+                  15
+                ],
+                [
+                  137,
+                  36
+                ],
+                [
+                  27,
+                  36
+                ]
+              ],
+              [
+                [
+                  173,
+                  16
+                ],
+                [
+                  349,
+                  16
+                ],
+                [
+                  349,
+                  37
+                ],
+                [
+                  173,
+                  37
+                ]
+              ],
+              [
+                [
+                  388,
+                  16
+                ],
+                [
+                  523,
+                  15
+                ],
+                [
+                  523,
+                  35
+                ],
+                [
+                  389,
+                  37
+                ]
+              ]
+            ],
+            "text_det_params": {
+              "limit_side_len": 64,
+              "limit_type": "min",
+              "thresh": 0.3,
+              "max_side_limit": 4000,
+              "box_thresh": 0.6,
+              "unclip_ratio": 1.5
+            },
+            "text_type": "general",
+            "textline_orientation_angles": [
+              -1,
+              -1,
+              -1
+            ],
+            "text_rec_score_thresh": 0.0,
+            "return_word_box": false,
+            "rec_texts": [
+              "harmonic=1",
+              "amplitude=1.0000",
+              "phase=0.0000"
+            ],
+            "rec_scores": [
+              0.9998685121536255,
+              0.999313473701477,
+              0.9995209574699402
+            ],
+            "rec_polys": [
+              [
+                [
+                  27,
+                  15
+                ],
+                [
+                  137,
+                  15
+                ],
+                [
+                  137,
+                  36
+                ],
+                [
+                  27,
+                  36
+                ]
+              ],
+              [
+                [
+                  173,
+                  16
+                ],
+                [
+                  349,
+                  16
+                ],
+                [
+                  349,
+                  37
+                ],
+                [
+                  173,
+                  37
+                ]
+              ],
+              [
+                [
+                  388,
+                  16
+                ],
+                [
+                  523,
+                  15
+                ],
+                [
+                  523,
+                  35
+                ],
+                [
+                  389,
+                  37
+                ]
+              ]
+            ],
+            "rec_boxes": [
+              [
+                27,
+                15,
+                137,
+                36
+              ],
+              [
+                173,
+                16,
+                349,
+                37
+              ],
+              [
+                388,
+                15,
+                523,
+                37
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "status": "ran",
+  "load_seconds": 15.236006899999666,
+  "controlled_synthetic": {
+    "n": 30,
+    "exact": 28,
+    "mean_cer": 0.0029166666666666664
+  },
+  "source_crop": {
+    "n": 1,
+    "exact": 1,
+    "mean_cer": 0.0
+  },
+  "total_seconds": 22.33942930000012
+}

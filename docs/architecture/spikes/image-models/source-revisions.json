@@ -1,0 +1,22 @@
+{
+  "sam": {
+    "remote": "https://github.com/facebookresearch/segment-anything.git",
+    "sha": "dca509fe793f601edb92606367a655c15ac00fdf"
+  },
+  "sam2": {
+    "remote": "https://github.com/facebookresearch/sam2.git",
+    "sha": "2b90b9f5ceec907a1c18123530e92e794ad901a4"
+  },
+  "efficient-sam": {
+    "remote": "https://github.com/yformer/EfficientSAM.git",
+    "sha": "d525f622e6f640acf5a0fc37c7ca1f243da5bde0"
+  },
+  "efficient-tam": {
+    "remote": "https://github.com/yformer/EfficientTAM.git",
+    "sha": "abcd061ebd3cc6e7527d152d75b890126aaa53f6"
+  },
+  "omniparser": {
+    "remote": "https://github.com/microsoft/OmniParser.git",
+    "sha": "354021201345a96178360b28733573e27269f2de"
+  }
+}

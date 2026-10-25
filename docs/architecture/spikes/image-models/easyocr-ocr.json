@@ -1,0 +1,1921 @@
+{
+  "engine": "easyocr",
+  "cases": [
+    {
+      "id": "text-light-14-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "run video-buddy json frames",
+      "exact": false,
+      "cer": 0.15625,
+      "seconds": 0.53137229999993,
+      "raw": [
+        {
+          "box": [
+            [
+              37.0,
+              21.0
+            ],
+            [
+              157.0,
+              21.0
+            ],
+            [
+              157.0,
+              39.0
+            ],
+            [
+              37.0,
+              39.0
+            ]
+          ],
+          "text": "run video-buddy",
+          "confidence": 0.687810581135973
+        },
+        {
+          "box": [
+            [
+              175.0,
+              21.0
+            ],
+            [
+              263.0,
+              21.0
+            ],
+            [
+              263.0,
+              39.0
+            ],
+            [
+              175.0,
+              39.0
+            ]
+          ],
+          "text": "json frames",
+          "confidence": 0.7727958933797375
+        }
+      ]
+    },
+    {
+      "id": "text-light-14-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python venv Vemy",
+      "exact": false,
+      "cer": 0.35,
+      "seconds": 0.04362029999992956,
+      "raw": [
+        {
+          "box": [
+            [
+              14.0,
+              19.0
+            ],
+            [
+              65.0,
+              19.0
+            ],
+            [
+              65.0,
+              39.0
+            ],
+            [
+              14.0,
+              39.0
+            ]
+          ],
+          "text": "python",
+          "confidence": 0.4953302898694564
+        },
+        {
+          "box": [
+            [
+              91.0,
+              23.0
+            ],
+            [
+              125.0,
+              23.0
+            ],
+            [
+              125.0,
+              37.0
+            ],
+            [
+              91.0,
+              37.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.99983149766922
+        },
+        {
+          "box": [
+            [
+              138.0,
+              26.0
+            ],
+            [
+              168.0,
+              26.0
+            ],
+            [
+              168.0,
+              34.0
+            ],
+            [
+              138.0,
+              34.0
+            ]
+          ],
+          "text": "Vemy",
+          "confidence": 0.6192947626113892
+        }
+      ]
+    },
+    {
+      "id": "text-light-14-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.036534500000016124,
+      "raw": [
+        {
+          "box": [
+            [
+              15.0,
+              21.0
+            ],
+            [
+              187.0,
+              21.0
+            ],
+            [
+              187.0,
+              37.0
+            ],
+            [
+              15.0,
+              37.0
+            ]
+          ],
+          "text": "CUDA_VISIBLE_DEVICES=0",
+          "confidence": 0.8284934628766651
+        }
+      ]
+    },
+    {
+      "id": "text-light-14-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic-l amplitude=l 0000 phase-0 0000",
+      "exact": false,
+      "cer": 0.15,
+      "seconds": 0.049357400000189955,
+      "raw": [
+        {
+          "box": [
+            [
+              15.0,
+              21.0
+            ],
+            [
+              93.0,
+              21.0
+            ],
+            [
+              93.0,
+              37.0
+            ],
+            [
+              15.0,
+              37.0
+            ]
+          ],
+          "text": "harmonic-l",
+          "confidence": 0.7056643996141283
+        },
+        {
+          "box": [
+            [
+              99.0,
+              21.0
+            ],
+            [
+              187.0,
+              21.0
+            ],
+            [
+              187.0,
+              37.0
+            ],
+            [
+              99.0,
+              37.0
+            ]
+          ],
+          "text": "amplitude=l",
+          "confidence": 0.6162325267440822
+        },
+        {
+          "box": [
+            [
+              191.0,
+              23.0
+            ],
+            [
+              225.0,
+              23.0
+            ],
+            [
+              225.0,
+              37.0
+            ],
+            [
+              191.0,
+              37.0
+            ]
+          ],
+          "text": "0000",
+          "confidence": 0.9380763173103333
+        },
+        {
+          "box": [
+            [
+              231.0,
+              23.0
+            ],
+            [
+              287.0,
+              23.0
+            ],
+            [
+              287.0,
+              39.0
+            ],
+            [
+              231.0,
+              39.0
+            ]
+          ],
+          "text": "phase-0",
+          "confidence": 0.8653214338678903
+        },
+        {
+          "box": [
+            [
+              291.0,
+              23.0
+            ],
+            [
+              325.0,
+              23.0
+            ],
+            [
+              325.0,
+              37.0
+            ],
+            [
+              291.0,
+              37.0
+            ]
+          ],
+          "text": "0000",
+          "confidence": 0.9380763173103333
+        }
+      ]
+    },
+    {
+      "id": "text-light-14-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port-8001",
+      "exact": false,
+      "cer": 0.1111111111111111,
+      "seconds": 0.020203199999741628,
+      "raw": [
+        {
+          "box": [
+            [
+              15.0,
+              23.0
+            ],
+            [
+              87.0,
+              23.0
+            ],
+            [
+              87.0,
+              37.0
+            ],
+            [
+              15.0,
+              37.0
+            ]
+          ],
+          "text": "port-8001",
+          "confidence": 0.8219125814040813
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "UV run video-buddy ~json frames",
+      "exact": false,
+      "cer": 0.125,
+      "seconds": 0.0449399999997695,
+      "raw": [
+        {
+          "box": [
+            [
+              15.0,
+              27.0
+            ],
+            [
+              41.0,
+              27.0
+            ],
+            [
+              41.0,
+              43.0
+            ],
+            [
+              15.0,
+              43.0
+            ]
+          ],
+          "text": "UV",
+          "confidence": 0.3582283604563979
+        },
+        {
+          "box": [
+            [
+              48.0,
+              16.0
+            ],
+            [
+              236.0,
+              16.0
+            ],
+            [
+              236.0,
+              46.0
+            ],
+            [
+              48.0,
+              46.0
+            ]
+          ],
+          "text": "run video-buddy",
+          "confidence": 0.9971947363504521
+        },
+        {
+          "box": [
+            [
+              256.0,
+              20.0
+            ],
+            [
+              320.0,
+              20.0
+            ],
+            [
+              320.0,
+              46.0
+            ],
+            [
+              256.0,
+              46.0
+            ]
+          ],
+          "text": "~json",
+          "confidence": 0.6806223042801572
+        },
+        {
+          "box": [
+            [
+              326.0,
+              20.0
+            ],
+            [
+              404.0,
+              20.0
+            ],
+            [
+              404.0,
+              44.0
+            ],
+            [
+              326.0,
+              44.0
+            ]
+          ],
+          "text": "frames",
+          "confidence": 0.998788854433235
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python venv venv",
+      "exact": false,
+      "cer": 0.2,
+      "seconds": 0.032377200000155426,
+      "raw": [
+        {
+          "box": [
+            [
+              12.0,
+              20.0
+            ],
+            [
+              90.0,
+              20.0
+            ],
+            [
+              90.0,
+              46.0
+            ],
+            [
+              12.0,
+              46.0
+            ]
+          ],
+          "text": "python",
+          "confidence": 0.9999785864734593
+        },
+        {
+          "box": [
+            [
+              135.0,
+              23.0
+            ],
+            [
+              187.0,
+              23.0
+            ],
+            [
+              187.0,
+              43.0
+            ],
+            [
+              135.0,
+              43.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9988225102424622
+        },
+        {
+          "box": [
+            [
+              207.0,
+              23.0
+            ],
+            [
+              259.0,
+              23.0
+            ],
+            [
+              259.0,
+              43.0
+            ],
+            [
+              207.0,
+              43.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9987511038780212
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES-0",
+      "exact": false,
+      "cer": 0.045454545454545456,
+      "seconds": 0.02837100000033388,
+      "raw": [
+        {
+          "box": [
+            [
+              12.0,
+              20.0
+            ],
+            [
+              284.0,
+              20.0
+            ],
+            [
+              284.0,
+              44.0
+            ],
+            [
+              12.0,
+              44.0
+            ]
+          ],
+          "text": "CUDA_VISIBLE_DEVICES-0",
+          "confidence": 0.7119727230774084
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic-l amplitude-l.0000 phase=0.0000",
+      "exact": false,
+      "cer": 0.1,
+      "seconds": 0.03347349999967264,
+      "raw": [
+        {
+          "box": [
+            [
+              12.0,
+              17.0
+            ],
+            [
+              344.0,
+              17.0
+            ],
+            [
+              344.0,
+              46.0
+            ],
+            [
+              12.0,
+              46.0
+            ]
+          ],
+          "text": "harmonic-l amplitude-l.0000",
+          "confidence": 0.5899431741652784
+        },
+        {
+          "box": [
+            [
+              352.0,
+              20.0
+            ],
+            [
+              502.0,
+              20.0
+            ],
+            [
+              502.0,
+              46.0
+            ],
+            [
+              352.0,
+              46.0
+            ]
+          ],
+          "text": "phase=0.0000",
+          "confidence": 0.7309661173778419
+        }
+      ]
+    },
+    {
+      "id": "text-light-22-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port-8001",
+      "exact": false,
+      "cer": 0.1111111111111111,
+      "seconds": 0.018494799999643874,
+      "raw": [
+        {
+          "box": [
+            [
+              11.0,
+              18.0
+            ],
+            [
+              126.0,
+              18.0
+            ],
+            [
+              126.0,
+              46.0
+            ],
+            [
+              11.0,
+              46.0
+            ]
+          ],
+          "text": "port-8001",
+          "confidence": 0.7105018297240078
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "UV run video-buddy --json frames",
+      "exact": false,
+      "cer": 0.0625,
+      "seconds": 0.041830499999377935,
+      "raw": [
+        {
+          "box": [
+            [
+              14.0,
+              24.0
+            ],
+            [
+              52.0,
+              24.0
+            ],
+            [
+              52.0,
+              50.0
+            ],
+            [
+              14.0,
+              50.0
+            ]
+          ],
+          "text": "UV",
+          "confidence": 0.8524561714217744
+        },
+        {
+          "box": [
+            [
+              68.0,
+              24.0
+            ],
+            [
+              124.0,
+              24.0
+            ],
+            [
+              124.0,
+              52.0
+            ],
+            [
+              68.0,
+              52.0
+            ]
+          ],
+          "text": "run",
+          "confidence": 0.999996902852449
+        },
+        {
+          "box": [
+            [
+              135.0,
+              19.0
+            ],
+            [
+              337.0,
+              19.0
+            ],
+            [
+              337.0,
+              57.0
+            ],
+            [
+              135.0,
+              57.0
+            ]
+          ],
+          "text": "video-buddy",
+          "confidence": 0.9997595226078161
+        },
+        {
+          "box": [
+            [
+              349.0,
+              21.0
+            ],
+            [
+              459.0,
+              21.0
+            ],
+            [
+              459.0,
+              57.0
+            ],
+            [
+              349.0,
+              57.0
+            ]
+          ],
+          "text": "--json",
+          "confidence": 0.6332139021830802
+        },
+        {
+          "box": [
+            [
+              470.0,
+              20.0
+            ],
+            [
+              580.0,
+              20.0
+            ],
+            [
+              580.0,
+              52.0
+            ],
+            [
+              470.0,
+              52.0
+            ]
+          ],
+          "text": "frames",
+          "confidence": 0.8747409272062874
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python -m venv venv",
+      "exact": false,
+      "cer": 0.05,
+      "seconds": 0.032199799999943934,
+      "raw": [
+        {
+          "box": [
+            [
+              10.0,
+              14.0
+            ],
+            [
+              127.0,
+              14.0
+            ],
+            [
+              127.0,
+              62.0
+            ],
+            [
+              10.0,
+              62.0
+            ]
+          ],
+          "text": "python",
+          "confidence": 0.9999910452650745
+        },
+        {
+          "box": [
+            [
+              138.0,
+              26.0
+            ],
+            [
+              176.0,
+              26.0
+            ],
+            [
+              176.0,
+              50.0
+            ],
+            [
+              138.0,
+              50.0
+            ]
+          ],
+          "text": "-m",
+          "confidence": 0.7372112003381676
+        },
+        {
+          "box": [
+            [
+              190.0,
+              24.0
+            ],
+            [
+              264.0,
+              24.0
+            ],
+            [
+              264.0,
+              52.0
+            ],
+            [
+              190.0,
+              52.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9993188381195068
+        },
+        {
+          "box": [
+            [
+              296.0,
+              24.0
+            ],
+            [
+              370.0,
+              24.0
+            ],
+            [
+              370.0,
+              52.0
+            ],
+            [
+              296.0,
+              52.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9807255414891225
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA VISIBLE DEVICES=0",
+      "exact": false,
+      "cer": 0.09090909090909091,
+      "seconds": 0.03187679999973625,
+      "raw": [
+        {
+          "box": [
+            [
+              12.0,
+              22.0
+            ],
+            [
+              90.0,
+              22.0
+            ],
+            [
+              90.0,
+              52.0
+            ],
+            [
+              12.0,
+              52.0
+            ]
+          ],
+          "text": "CUDA",
+          "confidence": 0.9998167753219604
+        },
+        {
+          "box": [
+            [
+              102.0,
+              22.0
+            ],
+            [
+              232.0,
+              22.0
+            ],
+            [
+              232.0,
+              52.0
+            ],
+            [
+              102.0,
+              52.0
+            ]
+          ],
+          "text": "VISIBLE",
+          "confidence": 0.9938274640678516
+        },
+        {
+          "box": [
+            [
+              242.0,
+              22.0
+            ],
+            [
+              406.0,
+              22.0
+            ],
+            [
+              406.0,
+              54.0
+            ],
+            [
+              242.0,
+              54.0
+            ]
+          ],
+          "text": "DEVICES=0",
+          "confidence": 0.8753133693888654
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic-1 amplitude-1.0000 phase-0.0000",
+      "exact": false,
+      "cer": 0.075,
+      "seconds": 0.03506100000049628,
+      "raw": [
+        {
+          "box": [
+            [
+              12.0,
+              12.0
+            ],
+            [
+              724.0,
+              12.0
+            ],
+            [
+              724.0,
+              61.0
+            ],
+            [
+              12.0,
+              61.0
+            ]
+          ],
+          "text": "harmonic-1 amplitude-1.0000 phase-0.0000",
+          "confidence": 0.7479014667634122
+        }
+      ]
+    },
+    {
+      "id": "text-light-32-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port-8001",
+      "exact": false,
+      "cer": 0.1111111111111111,
+      "seconds": 0.017547800000102143,
+      "raw": [
+        {
+          "box": [
+            [
+              11.0,
+              14.0
+            ],
+            [
+              177.0,
+              14.0
+            ],
+            [
+              177.0,
+              59.0
+            ],
+            [
+              11.0,
+              59.0
+            ]
+          ],
+          "text": "port-8001",
+          "confidence": 0.9973238611689405
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "run video-buddy json frames",
+      "exact": false,
+      "cer": 0.15625,
+      "seconds": 0.027433799999926123,
+      "raw": [
+        {
+          "box": [
+            [
+              37.0,
+              21.0
+            ],
+            [
+              157.0,
+              21.0
+            ],
+            [
+              157.0,
+              39.0
+            ],
+            [
+              37.0,
+              39.0
+            ]
+          ],
+          "text": "run video-buddy",
+          "confidence": 0.9233723457704174
+        },
+        {
+          "box": [
+            [
+              175.0,
+              21.0
+            ],
+            [
+              263.0,
+              21.0
+            ],
+            [
+              263.0,
+              39.0
+            ],
+            [
+              175.0,
+              39.0
+            ]
+          ],
+          "text": "json frames",
+          "confidence": 0.8060306042548806
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python venv venv",
+      "exact": false,
+      "cer": 0.2,
+      "seconds": 0.027347700000063924,
+      "raw": [
+        {
+          "box": [
+            [
+              12.0,
+              19.0
+            ],
+            [
+              65.0,
+              19.0
+            ],
+            [
+              65.0,
+              39.0
+            ],
+            [
+              12.0,
+              39.0
+            ]
+          ],
+          "text": "python",
+          "confidence": 0.9998810562898492
+        },
+        {
+          "box": [
+            [
+              91.0,
+              23.0
+            ],
+            [
+              125.0,
+              23.0
+            ],
+            [
+              125.0,
+              37.0
+            ],
+            [
+              91.0,
+              37.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9995383620262146
+        },
+        {
+          "box": [
+            [
+              137.0,
+              23.0
+            ],
+            [
+              171.0,
+              23.0
+            ],
+            [
+              171.0,
+              37.0
+            ],
+            [
+              137.0,
+              37.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9997914433479309
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBL DEVICES-0",
+      "exact": false,
+      "cer": 0.13636363636363635,
+      "seconds": 0.0260868000004848,
+      "raw": [
+        {
+          "box": [
+            [
+              13.0,
+              21.0
+            ],
+            [
+              101.0,
+              21.0
+            ],
+            [
+              101.0,
+              37.0
+            ],
+            [
+              13.0,
+              37.0
+            ]
+          ],
+          "text": "CUDA_VISIBL",
+          "confidence": 0.9881728373909388
+        },
+        {
+          "box": [
+            [
+              113.0,
+              21.0
+            ],
+            [
+              187.0,
+              21.0
+            ],
+            [
+              187.0,
+              37.0
+            ],
+            [
+              113.0,
+              37.0
+            ]
+          ],
+          "text": "DEVICES-0",
+          "confidence": 0.9375077484827046
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic-1 amplitude-1.0000 phase-0.0000",
+      "exact": false,
+      "cer": 0.075,
+      "seconds": 0.02838210000027175,
+      "raw": [
+        {
+          "box": [
+            [
+              13.0,
+              18.0
+            ],
+            [
+              325.0,
+              18.0
+            ],
+            [
+              325.0,
+              39.0
+            ],
+            [
+              13.0,
+              39.0
+            ]
+          ],
+          "text": "harmonic-1 amplitude-1.0000 phase-0.0000",
+          "confidence": 0.9026658696477231
+        }
+      ]
+    },
+    {
+      "id": "text-dark-14-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port-8001",
+      "exact": false,
+      "cer": 0.1111111111111111,
+      "seconds": 0.01848379999955796,
+      "raw": [
+        {
+          "box": [
+            [
+              15.0,
+              23.0
+            ],
+            [
+              87.0,
+              23.0
+            ],
+            [
+              87.0,
+              39.0
+            ],
+            [
+              15.0,
+              39.0
+            ]
+          ],
+          "text": "port-8001",
+          "confidence": 0.9968347125183354
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "uV run video-buddy json frames",
+      "exact": false,
+      "cer": 0.09375,
+      "seconds": 0.03636740000001737,
+      "raw": [
+        {
+          "box": [
+            [
+              13.0,
+              25.0
+            ],
+            [
+              41.0,
+              25.0
+            ],
+            [
+              41.0,
+              43.0
+            ],
+            [
+              13.0,
+              43.0
+            ]
+          ],
+          "text": "uV",
+          "confidence": 0.7346356940341118
+        },
+        {
+          "box": [
+            [
+              48.0,
+              16.0
+            ],
+            [
+              236.0,
+              16.0
+            ],
+            [
+              236.0,
+              46.0
+            ],
+            [
+              48.0,
+              46.0
+            ]
+          ],
+          "text": "run video-buddy",
+          "confidence": 0.769011744681118
+        },
+        {
+          "box": [
+            [
+              266.0,
+              20.0
+            ],
+            [
+              320.0,
+              20.0
+            ],
+            [
+              320.0,
+              46.0
+            ],
+            [
+              266.0,
+              46.0
+            ]
+          ],
+          "text": "json",
+          "confidence": 0.9871519804000854
+        },
+        {
+          "box": [
+            [
+              326.0,
+              20.0
+            ],
+            [
+              404.0,
+              20.0
+            ],
+            [
+              404.0,
+              44.0
+            ],
+            [
+              326.0,
+              44.0
+            ]
+          ],
+          "text": "frames",
+          "confidence": 0.9973429618804976
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python venv venv",
+      "exact": false,
+      "cer": 0.2,
+      "seconds": 0.027575800000704476,
+      "raw": [
+        {
+          "box": [
+            [
+              10.0,
+              16.0
+            ],
+            [
+              91.0,
+              16.0
+            ],
+            [
+              91.0,
+              48.0
+            ],
+            [
+              10.0,
+              48.0
+            ]
+          ],
+          "text": "python",
+          "confidence": 0.9999814091714911
+        },
+        {
+          "box": [
+            [
+              135.0,
+              23.0
+            ],
+            [
+              187.0,
+              23.0
+            ],
+            [
+              187.0,
+              43.0
+            ],
+            [
+              135.0,
+              43.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.998630702495575
+        },
+        {
+          "box": [
+            [
+              207.0,
+              23.0
+            ],
+            [
+              259.0,
+              23.0
+            ],
+            [
+              259.0,
+              43.0
+            ],
+            [
+              207.0,
+              43.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9979162216186523
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES=0",
+      "exact": true,
+      "cer": 0.0,
+      "seconds": 0.02354150000064692,
+      "raw": [
+        {
+          "box": [
+            [
+              10.0,
+              19.0
+            ],
+            [
+              284.0,
+              19.0
+            ],
+            [
+              284.0,
+              44.0
+            ],
+            [
+              10.0,
+              44.0
+            ]
+          ],
+          "text": "CUDA_VISIBLE_DEVICES=0",
+          "confidence": 0.6977494656375856
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic-1 amplitude-1.0000 phase-0.0000",
+      "exact": false,
+      "cer": 0.075,
+      "seconds": 0.036276599999837345,
+      "raw": [
+        {
+          "box": [
+            [
+              12.0,
+              16.0
+            ],
+            [
+              502.0,
+              16.0
+            ],
+            [
+              502.0,
+              46.0
+            ],
+            [
+              12.0,
+              46.0
+            ]
+          ],
+          "text": "harmonic-1 amplitude-1.0000 phase-0.0000",
+          "confidence": 0.7501363065065014
+        }
+      ]
+    },
+    {
+      "id": "text-dark-22-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port-8001",
+      "exact": false,
+      "cer": 0.1111111111111111,
+      "seconds": 0.01773389999925712,
+      "raw": [
+        {
+          "box": [
+            [
+              11.0,
+              18.0
+            ],
+            [
+              126.0,
+              18.0
+            ],
+            [
+              126.0,
+              46.0
+            ],
+            [
+              11.0,
+              46.0
+            ]
+          ],
+          "text": "port-8001",
+          "confidence": 0.9625183734076208
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-0.png",
+      "kind": "controlled_synthetic",
+      "expected": "uv run video-buddy --json frames",
+      "text": "UV run video-buddy -~json frames",
+      "exact": false,
+      "cer": 0.09375,
+      "seconds": 0.04165459999967425,
+      "raw": [
+        {
+          "box": [
+            [
+              14.0,
+              26.0
+            ],
+            [
+              52.0,
+              26.0
+            ],
+            [
+              52.0,
+              50.0
+            ],
+            [
+              14.0,
+              50.0
+            ]
+          ],
+          "text": "UV",
+          "confidence": 0.9820148749970937
+        },
+        {
+          "box": [
+            [
+              66.0,
+              24.0
+            ],
+            [
+              124.0,
+              24.0
+            ],
+            [
+              124.0,
+              52.0
+            ],
+            [
+              66.0,
+              52.0
+            ]
+          ],
+          "text": "run",
+          "confidence": 0.9999910526883591
+        },
+        {
+          "box": [
+            [
+              135.0,
+              19.0
+            ],
+            [
+              337.0,
+              19.0
+            ],
+            [
+              337.0,
+              59.0
+            ],
+            [
+              135.0,
+              59.0
+            ]
+          ],
+          "text": "video-buddy",
+          "confidence": 0.920953302149212
+        },
+        {
+          "box": [
+            [
+              349.0,
+              21.0
+            ],
+            [
+              459.0,
+              21.0
+            ],
+            [
+              459.0,
+              59.0
+            ],
+            [
+              349.0,
+              59.0
+            ]
+          ],
+          "text": "-~json",
+          "confidence": 0.5417025183679378
+        },
+        {
+          "box": [
+            [
+              470.0,
+              20.0
+            ],
+            [
+              580.0,
+              20.0
+            ],
+            [
+              580.0,
+              52.0
+            ],
+            [
+              470.0,
+              52.0
+            ]
+          ],
+          "text": "frames",
+          "confidence": 0.9637373511535346
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-1.png",
+      "kind": "controlled_synthetic",
+      "expected": "python -m venv .venv",
+      "text": "python ~m venv venv",
+      "exact": false,
+      "cer": 0.1,
+      "seconds": 0.031144300000050862,
+      "raw": [
+        {
+          "box": [
+            [
+              8.0,
+              13.0
+            ],
+            [
+              127.0,
+              13.0
+            ],
+            [
+              127.0,
+              63.0
+            ],
+            [
+              8.0,
+              63.0
+            ]
+          ],
+          "text": "python",
+          "confidence": 0.999993235283433
+        },
+        {
+          "box": [
+            [
+              138.0,
+              24.0
+            ],
+            [
+              176.0,
+              24.0
+            ],
+            [
+              176.0,
+              50.0
+            ],
+            [
+              138.0,
+              50.0
+            ]
+          ],
+          "text": "~m",
+          "confidence": 0.6048486080669321
+        },
+        {
+          "box": [
+            [
+              190.0,
+              24.0
+            ],
+            [
+              264.0,
+              24.0
+            ],
+            [
+              264.0,
+              52.0
+            ],
+            [
+              190.0,
+              52.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9993594288825989
+        },
+        {
+          "box": [
+            [
+              296.0,
+              24.0
+            ],
+            [
+              368.0,
+              24.0
+            ],
+            [
+              368.0,
+              50.0
+            ],
+            [
+              296.0,
+              50.0
+            ]
+          ],
+          "text": "venv",
+          "confidence": 0.9992542266845703
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-2.png",
+      "kind": "controlled_synthetic",
+      "expected": "CUDA_VISIBLE_DEVICES=0",
+      "text": "CUDA_VISIBLE_DEVICES-0",
+      "exact": false,
+      "cer": 0.045454545454545456,
+      "seconds": 0.023999700000786106,
+      "raw": [
+        {
+          "box": [
+            [
+              11.0,
+              18.0
+            ],
+            [
+              407.0,
+              18.0
+            ],
+            [
+              407.0,
+              55.0
+            ],
+            [
+              11.0,
+              55.0
+            ]
+          ],
+          "text": "CUDA_VISIBLE_DEVICES-0",
+          "confidence": 0.5488823034233649
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-3.png",
+      "kind": "controlled_synthetic",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic-1 amplitude-1.0000 phase-0.0000",
+      "exact": false,
+      "cer": 0.075,
+      "seconds": 0.031814099999792234,
+      "raw": [
+        {
+          "box": [
+            [
+              10.0,
+              12.0
+            ],
+            [
+              726.0,
+              12.0
+            ],
+            [
+              726.0,
+              61.0
+            ],
+            [
+              10.0,
+              61.0
+            ]
+          ],
+          "text": "harmonic-1 amplitude-1.0000 phase-0.0000",
+          "confidence": 0.9514349251471024
+        }
+      ]
+    },
+    {
+      "id": "text-dark-32-4.png",
+      "kind": "controlled_synthetic",
+      "expected": "port=8001",
+      "text": "port-8001",
+      "exact": false,
+      "cer": 0.1111111111111111,
+      "seconds": 0.019710700000359793,
+      "raw": [
+        {
+          "box": [
+            [
+              10.0,
+              16.0
+            ],
+            [
+              177.0,
+              16.0
+            ],
+            [
+              177.0,
+              59.0
+            ],
+            [
+              10.0,
+              59.0
+            ]
+          ],
+          "text": "port-8001",
+          "confidence": 0.9996578798121947
+        }
+      ]
+    },
+    {
+      "id": "real-settings",
+      "kind": "source_crop",
+      "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+      "text": "harmonic=l amplitude-1.0000 phase=0.0000:",
+      "exact": false,
+      "cer": 0.075,
+      "seconds": 0.0569562999999107,
+      "raw": [
+        {
+          "box": [
+            [
+              25.0,
+              17.0
+            ],
+            [
+              137.0,
+              17.0
+            ],
+            [
+              137.0,
+              37.0
+            ],
+            [
+              25.0,
+              37.0
+            ]
+          ],
+          "text": "harmonic=l",
+          "confidence": 0.5157147811650032
+        },
+        {
+          "box": [
+            [
+              171.0,
+              12.0
+            ],
+            [
+              350.0,
+              12.0
+            ],
+            [
+              350.0,
+              40.0
+            ],
+            [
+              171.0,
+              40.0
+            ]
+          ],
+          "text": "amplitude-1.0000",
+          "confidence": 0.9324943421629397
+        },
+        {
+          "box": [
+            [
+              388.0,
+              16.0
+            ],
+            [
+              526.0,
+              16.0
+            ],
+            [
+              526.0,
+              40.0
+            ],
+            [
+              388.0,
+              40.0
+            ]
+          ],
+          "text": "phase=0.0000:",
+          "confidence": 0.29694688219244797
+        }
+      ]
+    }
+  ],
+  "status": "ran",
+  "load_seconds": 13.821295599999758,
+  "controlled_synthetic": {
+    "n": 30,
+    "exact": 2,
+    "mean_cer": 0.1107449494949495
+  },
+  "source_crop": {
+    "n": 1,
+    "exact": 0,
+    "mean_cer": 0.075
+  },
+  "total_seconds": 15.293446499999845
+}

@@ -1,0 +1,71 @@
+{
+  "family": "efficienttam_tracking",
+  "status": "ran",
+  "observations": [
+    {
+      "frame": 0,
+      "source_seconds": 106,
+      "ids": [
+        1
+      ],
+      "area": 0.11003472222222223,
+      "mask_box": [
+        716,
+        458,
+        1200,
+        940
+      ]
+    },
+    {
+      "frame": 1,
+      "source_seconds": 112,
+      "ids": [
+        1
+      ],
+      "area": 0.1129783950617284,
+      "mask_box": [
+        717,
+        443,
+        1202,
+        928
+      ]
+    },
+    {
+      "frame": 2,
+      "source_seconds": 114,
+      "ids": [
+        1
+      ],
+      "area": 0.1133690200617284,
+      "mask_box": [
+        716,
+        360,
+        1202,
+        845
+      ]
+    },
+    {
+      "frame": 3,
+      "source_seconds": 116,
+      "ids": [
+        1
+      ],
+      "area": 0.11499807098765433,
+      "mask_box": [
+        713,
+        296,
+        1204,
+        785
+      ]
+    }
+  ],
+  "checkpoint": {
+    "repo": "yunyangx/efficient-track-anything",
+    "revision": "9bdd8ab585b19ef95f9c9ed847ac9478301890b4",
+    "file": "efficienttam_ti_512x512.pt"
+  },
+  "inference_seconds": 0.5633821999999782,
+  "limit": "Four temporally sparse real diagram frames, not continuous native video; one manually seeded panel, no mask ground truth or identity-switch rate",
+  "total_seconds": 1.322607899999639,
+  "peak_cuda_allocated_bytes": 239249408
+}

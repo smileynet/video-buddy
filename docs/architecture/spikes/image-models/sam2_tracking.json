@@ -1,0 +1,71 @@
+{
+  "family": "sam2_tracking",
+  "status": "ran",
+  "observations": [
+    {
+      "frame": 0,
+      "source_seconds": 106,
+      "ids": [
+        1
+      ],
+      "area": 0.11101658950617284,
+      "mask_box": [
+        718,
+        459,
+        1199,
+        942
+      ]
+    },
+    {
+      "frame": 1,
+      "source_seconds": 112,
+      "ids": [
+        1
+      ],
+      "area": 0.11350308641975308,
+      "mask_box": [
+        716,
+        443,
+        1203,
+        929
+      ]
+    },
+    {
+      "frame": 2,
+      "source_seconds": 114,
+      "ids": [
+        1
+      ],
+      "area": 0.11436583719135802,
+      "mask_box": [
+        716,
+        359,
+        1203,
+        846
+      ]
+    },
+    {
+      "frame": 3,
+      "source_seconds": 116,
+      "ids": [
+        1
+      ],
+      "area": 0.11413194444444444,
+      "mask_box": [
+        715,
+        297,
+        1204,
+        785
+      ]
+    }
+  ],
+  "checkpoint": {
+    "repo": "facebook/sam2.1-hiera-tiny",
+    "revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+    "file": "sam2.1_hiera_tiny.pt"
+  },
+  "inference_seconds": 0.722298700000465,
+  "limit": "Four temporally sparse real diagram frames, not continuous native video; one manually seeded panel, no mask ground truth or identity-switch rate",
+  "total_seconds": 1.628136600000289,
+  "peak_cuda_allocated_bytes": 608570368
+}

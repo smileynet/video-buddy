@@ -1,0 +1,249 @@
+[
+  {
+    "id": "text-light-14-0.png",
+    "path": "fixtures/text-light-14-0.png",
+    "expected": "uv run video-buddy --json frames",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-14-1.png",
+    "path": "fixtures/text-light-14-1.png",
+    "expected": "python -m venv .venv",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-14-2.png",
+    "path": "fixtures/text-light-14-2.png",
+    "expected": "CUDA_VISIBLE_DEVICES=0",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-14-3.png",
+    "path": "fixtures/text-light-14-3.png",
+    "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-14-4.png",
+    "path": "fixtures/text-light-14-4.png",
+    "expected": "port=8001",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-22-0.png",
+    "path": "fixtures/text-light-22-0.png",
+    "expected": "uv run video-buddy --json frames",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-22-1.png",
+    "path": "fixtures/text-light-22-1.png",
+    "expected": "python -m venv .venv",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-22-2.png",
+    "path": "fixtures/text-light-22-2.png",
+    "expected": "CUDA_VISIBLE_DEVICES=0",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-22-3.png",
+    "path": "fixtures/text-light-22-3.png",
+    "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-22-4.png",
+    "path": "fixtures/text-light-22-4.png",
+    "expected": "port=8001",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-32-0.png",
+    "path": "fixtures/text-light-32-0.png",
+    "expected": "uv run video-buddy --json frames",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-32-1.png",
+    "path": "fixtures/text-light-32-1.png",
+    "expected": "python -m venv .venv",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-32-2.png",
+    "path": "fixtures/text-light-32-2.png",
+    "expected": "CUDA_VISIBLE_DEVICES=0",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-32-3.png",
+    "path": "fixtures/text-light-32-3.png",
+    "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "light"
+  },
+  {
+    "id": "text-light-32-4.png",
+    "path": "fixtures/text-light-32-4.png",
+    "expected": "port=8001",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "light"
+  },
+  {
+    "id": "text-dark-14-0.png",
+    "path": "fixtures/text-dark-14-0.png",
+    "expected": "uv run video-buddy --json frames",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-14-1.png",
+    "path": "fixtures/text-dark-14-1.png",
+    "expected": "python -m venv .venv",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-14-2.png",
+    "path": "fixtures/text-dark-14-2.png",
+    "expected": "CUDA_VISIBLE_DEVICES=0",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-14-3.png",
+    "path": "fixtures/text-dark-14-3.png",
+    "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-14-4.png",
+    "path": "fixtures/text-dark-14-4.png",
+    "expected": "port=8001",
+    "kind": "controlled_synthetic",
+    "size": 14,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-22-0.png",
+    "path": "fixtures/text-dark-22-0.png",
+    "expected": "uv run video-buddy --json frames",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-22-1.png",
+    "path": "fixtures/text-dark-22-1.png",
+    "expected": "python -m venv .venv",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-22-2.png",
+    "path": "fixtures/text-dark-22-2.png",
+    "expected": "CUDA_VISIBLE_DEVICES=0",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-22-3.png",
+    "path": "fixtures/text-dark-22-3.png",
+    "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-22-4.png",
+    "path": "fixtures/text-dark-22-4.png",
+    "expected": "port=8001",
+    "kind": "controlled_synthetic",
+    "size": 22,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-32-0.png",
+    "path": "fixtures/text-dark-32-0.png",
+    "expected": "uv run video-buddy --json frames",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-32-1.png",
+    "path": "fixtures/text-dark-32-1.png",
+    "expected": "python -m venv .venv",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-32-2.png",
+    "path": "fixtures/text-dark-32-2.png",
+    "expected": "CUDA_VISIBLE_DEVICES=0",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-32-3.png",
+    "path": "fixtures/text-dark-32-3.png",
+    "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "dark"
+  },
+  {
+    "id": "text-dark-32-4.png",
+    "path": "fixtures/text-dark-32-4.png",
+    "expected": "port=8001",
+    "kind": "controlled_synthetic",
+    "size": 32,
+    "theme": "dark"
+  },
+  {
+    "id": "real-settings",
+    "path": "fixtures/real-settings.png",
+    "expected": "harmonic=1 amplitude=1.0000 phase=0.0000",
+    "kind": "source_crop",
+    "source": "diagram.jpg crop [1240,478,1790,533]"
+  }
+]
