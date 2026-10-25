@@ -1,7 +1,7 @@
 ---
 id: "12"
 title: "Evaluate whether implementation guides improve task completion"
-status: open
+status: in_progress
 blocked_by: []
 spec: "apply-build"
 priority: high
