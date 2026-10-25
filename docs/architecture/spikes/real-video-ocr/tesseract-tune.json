@@ -1,0 +1,689 @@
+{
+  "engine": "tesseract",
+  "phase": "tune",
+  "load_seconds": 5.000001692678779e-07,
+  "cases": [
+    {
+      "id": "01",
+      "kind": "ui_label",
+      "expected": "WEB APPS",
+      "text": "WEB APPS",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.01144639999984065,
+      "ocr_seconds": 0.4019703000012669,
+      "raw": []
+    },
+    {
+      "id": "02",
+      "kind": "ui_label",
+      "expected": "django",
+      "text": "django",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005180999978620093,
+      "ocr_seconds": 0.07417549999809125,
+      "raw": []
+    },
+    {
+      "id": "03",
+      "kind": "ui_label",
+      "expected": "TERMINAL",
+      "text": "TERMINAL",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0004093000025022775,
+      "ocr_seconds": 0.0744360000026063,
+      "raw": []
+    },
+    {
+      "id": "04",
+      "kind": "code",
+      "expected": ">>> import this",
+      "text": ">>> import this",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005239999991317745,
+      "ocr_seconds": 0.08090919999813195,
+      "raw": []
+    },
+    {
+      "id": "05",
+      "kind": "ui_label",
+      "expected": "EXPLORER",
+      "text": "EXPLORER",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0003623000011430122,
+      "ocr_seconds": 0.07169280000016443,
+      "raw": []
+    },
+    {
+      "id": "06",
+      "kind": "ui_label",
+      "expected": "hello",
+      "text": "hello",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0003419999993639067,
+      "ocr_seconds": 0.07056160000138334,
+      "raw": []
+    },
+    {
+      "id": "07",
+      "kind": "ui_label",
+      "expected": "OUTLINE",
+      "text": "OUTLINE",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.00032949999877018854,
+      "ocr_seconds": 0.07147659999827738,
+      "raw": []
+    },
+    {
+      "id": "08",
+      "kind": "code",
+      "expected": "hello = 'hi mom'",
+      "text": "hello = \u2018hi mom'",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.0625,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005841999991389457,
+      "ocr_seconds": 0.08109189999959199,
+      "raw": []
+    },
+    {
+      "id": "09",
+      "kind": "code",
+      "expected": "my_tuple = ('a', 'b')",
+      "text": "my tuple = (\u2018a', \u2018'b')",
+      "exact": false,
+      "edits": 3,
+      "cer": 0.14285714285714285,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005939000002399553,
+      "ocr_seconds": 0.08750900000086403,
+      "raw": []
+    },
+    {
+      "id": "10",
+      "kind": "code",
+      "expected": "my_list = [1,2,3]",
+      "text": "my list = [1,2,3]",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.058823529411764705,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.000545299997611437,
+      "ocr_seconds": 0.08376639999914914,
+      "raw": []
+    },
+    {
+      "id": "01",
+      "kind": "ui_label",
+      "expected": "WEB APPS",
+      "text": "WEB APPS",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0008190000007743947,
+      "ocr_seconds": 0.08825009999782196,
+      "raw": []
+    },
+    {
+      "id": "02",
+      "kind": "ui_label",
+      "expected": "django",
+      "text": "django",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005367000012483913,
+      "ocr_seconds": 0.07725699999718927,
+      "raw": []
+    },
+    {
+      "id": "03",
+      "kind": "ui_label",
+      "expected": "TERMINAL",
+      "text": "TERMINAL",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.00034779999987222254,
+      "ocr_seconds": 0.0771048000024166,
+      "raw": []
+    },
+    {
+      "id": "04",
+      "kind": "code",
+      "expected": ">>> import this",
+      "text": ">>> import this",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0006023999994795304,
+      "ocr_seconds": 0.08052350000070874,
+      "raw": []
+    },
+    {
+      "id": "05",
+      "kind": "ui_label",
+      "expected": "EXPLORER",
+      "text": "EXPLORER",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0003434000027482398,
+      "ocr_seconds": 0.07422389999919687,
+      "raw": []
+    },
+    {
+      "id": "06",
+      "kind": "ui_label",
+      "expected": "hello",
+      "text": "hello",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0003584000005503185,
+      "ocr_seconds": 0.06673199999931967,
+      "raw": []
+    },
+    {
+      "id": "07",
+      "kind": "ui_label",
+      "expected": "OUTLINE",
+      "text": "OUTLINE",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.00031769999986863695,
+      "ocr_seconds": 0.0732014999994135,
+      "raw": []
+    },
+    {
+      "id": "08",
+      "kind": "code",
+      "expected": "hello = 'hi mom'",
+      "text": "hello = \u2018hi mom'",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.0625,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0006279000008362345,
+      "ocr_seconds": 0.07951669999965816,
+      "raw": []
+    },
+    {
+      "id": "09",
+      "kind": "code",
+      "expected": "my_tuple = ('a', 'b')",
+      "text": "my tuple = (\u2018'a', 'b')",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.09523809523809523,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005716999985452276,
+      "ocr_seconds": 0.08464660000026925,
+      "raw": []
+    },
+    {
+      "id": "10",
+      "kind": "code",
+      "expected": "my_list = [1,2,3]",
+      "text": "my list = [1,2,3]",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.058823529411764705,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005601999982900452,
+      "ocr_seconds": 0.08066329999928712,
+      "raw": []
+    },
+    {
+      "id": "01",
+      "kind": "ui_label",
+      "expected": "WEB APPS",
+      "text": "WEB APPS",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.002844599999662023,
+      "ocr_seconds": 0.1285368999997445,
+      "raw": []
+    },
+    {
+      "id": "02",
+      "kind": "ui_label",
+      "expected": "django",
+      "text": "django",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.001558899999508867,
+      "ocr_seconds": 0.09623139999894192,
+      "raw": []
+    },
+    {
+      "id": "03",
+      "kind": "ui_label",
+      "expected": "TERMINAL",
+      "text": "TERMINAL",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0009357999988424126,
+      "ocr_seconds": 0.08415839999724994,
+      "raw": []
+    },
+    {
+      "id": "04",
+      "kind": "code",
+      "expected": ">>> import this",
+      "text": ">>> import this",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.001660099998844089,
+      "ocr_seconds": 0.09882899999865913,
+      "raw": []
+    },
+    {
+      "id": "05",
+      "kind": "ui_label",
+      "expected": "EXPLORER",
+      "text": "EXPLORER",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0008645000016258564,
+      "ocr_seconds": 0.08304419999694801,
+      "raw": []
+    },
+    {
+      "id": "06",
+      "kind": "ui_label",
+      "expected": "hello",
+      "text": "hello",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006173000001581386,
+      "ocr_seconds": 0.07676229999924544,
+      "raw": []
+    },
+    {
+      "id": "07",
+      "kind": "ui_label",
+      "expected": "OUTLINE",
+      "text": "OUTLINE",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006280999987211544,
+      "ocr_seconds": 0.07969589999993332,
+      "raw": []
+    },
+    {
+      "id": "08",
+      "kind": "code",
+      "expected": "hello = 'hi mom'",
+      "text": "hello = \u2018hi mom\u2019",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.125,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0017585999994480517,
+      "ocr_seconds": 0.10137889999896288,
+      "raw": []
+    },
+    {
+      "id": "09",
+      "kind": "code",
+      "expected": "my_tuple = ('a', 'b')",
+      "text": "my tuple = (\u2018a', \u2018'b')",
+      "exact": false,
+      "edits": 3,
+      "cer": 0.14285714285714285,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.002383499999268679,
+      "ocr_seconds": 0.11135159999685129,
+      "raw": []
+    },
+    {
+      "id": "10",
+      "kind": "code",
+      "expected": "my_list = [1,2,3]",
+      "text": "my list = [1,2,3]",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.058823529411764705,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0019376999989617616,
+      "ocr_seconds": 0.10584389999712585,
+      "raw": []
+    },
+    {
+      "id": "01",
+      "kind": "ui_label",
+      "expected": "WEB APPS",
+      "text": "WEB APPS",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0029113000018696766,
+      "ocr_seconds": 0.12685989999954472,
+      "raw": []
+    },
+    {
+      "id": "02",
+      "kind": "ui_label",
+      "expected": "django",
+      "text": "django",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0014996999998402316,
+      "ocr_seconds": 0.09869629999957397,
+      "raw": []
+    },
+    {
+      "id": "03",
+      "kind": "ui_label",
+      "expected": "TERMINAL",
+      "text": "TERMINAL",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0009281999991799239,
+      "ocr_seconds": 0.09220189999905415,
+      "raw": []
+    },
+    {
+      "id": "04",
+      "kind": "code",
+      "expected": ">>> import this",
+      "text": ">>> import this",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0017762999996193685,
+      "ocr_seconds": 0.10305880000305478,
+      "raw": []
+    },
+    {
+      "id": "05",
+      "kind": "ui_label",
+      "expected": "EXPLORER",
+      "text": "EXPLORER",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0007351999993261416,
+      "ocr_seconds": 0.0874818000011146,
+      "raw": []
+    },
+    {
+      "id": "06",
+      "kind": "ui_label",
+      "expected": "hello",
+      "text": "hello",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005783000015071593,
+      "ocr_seconds": 0.07595859999855747,
+      "raw": []
+    },
+    {
+      "id": "07",
+      "kind": "ui_label",
+      "expected": "OUTLINE",
+      "text": "OUTLINE",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0006060999985493254,
+      "ocr_seconds": 0.08028299999932642,
+      "raw": []
+    },
+    {
+      "id": "08",
+      "kind": "code",
+      "expected": "hello = 'hi mom'",
+      "text": "hello = \u2018hi mom'",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.0625,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.001730600000882987,
+      "ocr_seconds": 0.10362630000236095,
+      "raw": []
+    },
+    {
+      "id": "09",
+      "kind": "code",
+      "expected": "my_tuple = ('a', 'b')",
+      "text": "my tuple = (\u2018'a', 'b')",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.09523809523809523,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.00232020000112243,
+      "ocr_seconds": 0.11077270000168937,
+      "raw": []
+    },
+    {
+      "id": "10",
+      "kind": "code",
+      "expected": "my_list = [1,2,3]",
+      "text": "my list = [1,2,3]",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.058823529411764705,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0019151999986206647,
+      "ocr_seconds": 0.0976955000005546,
+      "raw": []
+    }
+  ],
+  "frames": [],
+  "total_seconds": 3.875122500001453
+}

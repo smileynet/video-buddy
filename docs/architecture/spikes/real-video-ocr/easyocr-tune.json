@@ -1,0 +1,780 @@
+{
+  "engine": "easyocr",
+  "phase": "tune",
+  "load_seconds": 10.841445900001418,
+  "cases": [
+    {
+      "id": "01",
+      "kind": "ui_label",
+      "expected": "WEB APPS",
+      "text": "WEB APPS",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.003690699999424396,
+      "ocr_seconds": 0.4371793999998772,
+      "raw": [
+        {
+          "box": [
+            18.0,
+            12.0,
+            482.0,
+            110.0
+          ],
+          "text": "WEB APPS",
+          "confidence": 0.9946302345226604
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "kind": "ui_label",
+      "expected": "django",
+      "text": "django",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005911000007472467,
+      "ocr_seconds": 0.031536599999526516,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            4.0,
+            265.0,
+            102.0
+          ],
+          "text": "django",
+          "confidence": 0.9999190173938846
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "kind": "ui_label",
+      "expected": "TERMINAL",
+      "text": "TERMINAL",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0003590000014810357,
+      "ocr_seconds": 0.022441299999627518,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            2.0,
+            233.0,
+            51.0
+          ],
+          "text": "TERMINAL",
+          "confidence": 0.9637099725737297
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "kind": "code",
+      "expected": ">>> import this",
+      "text": ">>> import this",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0004948999994667247,
+      "ocr_seconds": 0.038383999999496154,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            21.0,
+            101.0,
+            65.0
+          ],
+          "text": ">>>",
+          "confidence": 0.9737387979441192
+        },
+        {
+          "box": [
+            129.0,
+            11.0,
+            339.0,
+            77.0
+          ],
+          "text": "import",
+          "confidence": 0.9995442103036608
+        },
+        {
+          "box": [
+            359.0,
+            9.0,
+            495.0,
+            69.0
+          ],
+          "text": "this",
+          "confidence": 0.9999968409538269
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "kind": "ui_label",
+      "expected": "EXPLORER",
+      "text": "EXPLORER",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0003536000003805384,
+      "ocr_seconds": 0.02169080000021495,
+      "raw": [
+        {
+          "box": [
+            3.0,
+            3.0,
+            191.0,
+            47.0
+          ],
+          "text": "EXPLORER",
+          "confidence": 0.9999744167274011
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "kind": "ui_label",
+      "expected": "hello",
+      "text": "hello",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.000323799999023322,
+      "ocr_seconds": 0.02619549999872106,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            0.0,
+            101.0,
+            61.0
+          ],
+          "text": "hello",
+          "confidence": 0.9664338083352072
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "kind": "ui_label",
+      "expected": "OUTLINE",
+      "text": "OUTLINE",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.00035800000114249997,
+      "ocr_seconds": 0.020639799997297814,
+      "raw": [
+        {
+          "box": [
+            3.0,
+            1.0,
+            179.0,
+            45.0
+          ],
+          "text": "OUTLINE",
+          "confidence": 0.9991785867484652
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "kind": "code",
+      "expected": "hello = 'hi mom'",
+      "text": "hello = hi mom",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.125,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006083999978727661,
+      "ocr_seconds": 0.035714800000278046,
+      "raw": [
+        {
+          "box": [
+            5.0,
+            3.0,
+            181.0,
+            65.0
+          ],
+          "text": "hello",
+          "confidence": 0.9999451417589579
+        },
+        {
+          "box": [
+            208.0,
+            24.0,
+            240.0,
+            54.0
+          ],
+          "text": "=",
+          "confidence": 0.9072909684164756
+        },
+        {
+          "box": [
+            301.0,
+            5.0,
+            377.0,
+            65.0
+          ],
+          "text": "hi",
+          "confidence": 0.9994455610898054
+        },
+        {
+          "box": [
+            400.0,
+            14.0,
+            510.0,
+            62.0
+          ],
+          "text": "mom",
+          "confidence": 0.998593614333087
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "kind": "code",
+      "expected": "my_tuple = ('a', 'b')",
+      "text": "my_tuple ('a' , 'b' )",
+      "exact": false,
+      "edits": 4,
+      "cer": 0.19047619047619047,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006021000008331612,
+      "ocr_seconds": 0.034556099999463186,
+      "raw": [
+        {
+          "box": [
+            2.0,
+            4.0,
+            280.0,
+            72.0
+          ],
+          "text": "my_tuple",
+          "confidence": 0.7389332370021425
+        },
+        {
+          "box": [
+            370.0,
+            4.0,
+            540.0,
+            72.0
+          ],
+          "text": "('a' ,",
+          "confidence": 0.9052517831359456
+        },
+        {
+          "box": [
+            575.0,
+            5.0,
+            705.0,
+            72.0
+          ],
+          "text": "'b' )",
+          "confidence": 0.6688893203217745
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "kind": "code",
+      "expected": "my_list = [1,2,3]",
+      "text": "my_list = [1,2,3]",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005553000009967946,
+      "ocr_seconds": 0.03251090000048862,
+      "raw": [
+        {
+          "box": [
+            2.0,
+            1.0,
+            249.0,
+            67.0
+          ],
+          "text": "my_list",
+          "confidence": 0.9984111308625737
+        },
+        {
+          "box": [
+            276.0,
+            24.0,
+            310.0,
+            54.0
+          ],
+          "text": "=",
+          "confidence": 0.9425536396947933
+        },
+        {
+          "box": [
+            334.0,
+            2.0,
+            575.0,
+            67.0
+          ],
+          "text": "[1,2,3]",
+          "confidence": 0.9827930494916981
+        }
+      ]
+    },
+    {
+      "id": "01",
+      "kind": "ui_label",
+      "expected": "WEB APPS",
+      "text": "WEB APPS",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0027669999981299043,
+      "ocr_seconds": 0.03639420000035898,
+      "raw": [
+        {
+          "box": [
+            38.0,
+            38.0,
+            438.0,
+            206.0
+          ],
+          "text": "WEB",
+          "confidence": 0.9486392140388489
+        },
+        {
+          "box": [
+            486.0,
+            34.0,
+            954.0,
+            208.0
+          ],
+          "text": "APPS",
+          "confidence": 0.998031735420227
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "kind": "ui_label",
+      "expected": "django",
+      "text": "django",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0013712999971176032,
+      "ocr_seconds": 0.025369200000568526,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            9.0,
+            530.0,
+            202.0
+          ],
+          "text": "django",
+          "confidence": 0.9999568808391094
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "kind": "ui_label",
+      "expected": "TERMINAL",
+      "text": "TERMINAL",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0008701000006112736,
+      "ocr_seconds": 0.013664699999935692,
+      "raw": [
+        {
+          "box": [
+            7.0,
+            9.0,
+            465.0,
+            101.0
+          ],
+          "text": "TERMINAL",
+          "confidence": 0.9999565883557231
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "kind": "code",
+      "expected": ">>> import this",
+      "text": ">>> import this",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0018001999997068197,
+      "ocr_seconds": 0.0378839999975753,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            39.0,
+            205.0,
+            135.0
+          ],
+          "text": ">>>",
+          "confidence": 0.9842281213581544
+        },
+        {
+          "box": [
+            258.0,
+            20.0,
+            675.0,
+            154.0
+          ],
+          "text": "import",
+          "confidence": 0.9991528704029304
+        },
+        {
+          "box": [
+            719.0,
+            19.0,
+            990.0,
+            131.0
+          ],
+          "text": "this",
+          "confidence": 0.9999954104423523
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "kind": "ui_label",
+      "expected": "EXPLORER",
+      "text": "EXPLORER",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006923000000824686,
+      "ocr_seconds": 0.02281800000127987,
+      "raw": [
+        {
+          "box": [
+            9.0,
+            7.0,
+            383.0,
+            93.0
+          ],
+          "text": "EXPLORER",
+          "confidence": 0.963035131885668
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "kind": "ui_label",
+      "expected": "hello",
+      "text": "hello",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005353999986255076,
+      "ocr_seconds": 0.020331499999883818,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            18.0,
+            202.0,
+            114.0
+          ],
+          "text": "hello",
+          "confidence": 0.9994136008497309
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "kind": "ui_label",
+      "expected": "OUTLINE",
+      "text": "OUTLINE",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006438000018533785,
+      "ocr_seconds": 0.02200980000270647,
+      "raw": [
+        {
+          "box": [
+            8.0,
+            6.0,
+            358.0,
+            86.0
+          ],
+          "text": "OUTLINE",
+          "confidence": 0.999609242116307
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "kind": "code",
+      "expected": "hello = 'hi mom'",
+      "text": "hello = hi mom",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.125,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.001734299999952782,
+      "ocr_seconds": 0.0425900999980513,
+      "raw": [
+        {
+          "box": [
+            9.0,
+            11.0,
+            355.0,
+            125.0
+          ],
+          "text": "hello",
+          "confidence": 0.9997843501545863
+        },
+        {
+          "box": [
+            420.0,
+            44.0,
+            484.0,
+            100.0
+          ],
+          "text": "=",
+          "confidence": 0.8883437678960604
+        },
+        {
+          "box": [
+            602.0,
+            13.0,
+            744.0,
+            122.0
+          ],
+          "text": "hi",
+          "confidence": 0.9997668515954087
+        },
+        {
+          "box": [
+            804.0,
+            28.0,
+            1018.0,
+            124.0
+          ],
+          "text": "mom",
+          "confidence": 0.9932256271110034
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "kind": "code",
+      "expected": "my_tuple = ('a', 'b')",
+      "text": "my_tuple ('a' ) 'b' )",
+      "exact": false,
+      "edits": 5,
+      "cer": 0.23809523809523808,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0021769999984826427,
+      "ocr_seconds": 0.04466089999914402,
+      "raw": [
+        {
+          "box": [
+            1.0,
+            10.0,
+            562.0,
+            144.0
+          ],
+          "text": "my_tuple",
+          "confidence": 0.713281199225522
+        },
+        {
+          "box": [
+            748.0,
+            12.0,
+            1004.0,
+            140.0
+          ],
+          "text": "('a'",
+          "confidence": 0.9992920160293579
+        },
+        {
+          "box": [
+            1010.0,
+            80.0,
+            1060.0,
+            136.0
+          ],
+          "text": ")",
+          "confidence": 0.7854312782838093
+        },
+        {
+          "box": [
+            1150.0,
+            12.0,
+            1404.0,
+            138.0
+          ],
+          "text": "'b' )",
+          "confidence": 0.9733698192427085
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "kind": "code",
+      "expected": "my_list = [1,2,3]",
+      "text": "my list = [1,2,3]",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.058823529411764705,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.001737800001137657,
+      "ocr_seconds": 0.04243830000268645,
+      "raw": [
+        {
+          "box": [
+            6.0,
+            31.0,
+            161.0,
+            134.0
+          ],
+          "text": "my",
+          "confidence": 0.9999089640209476
+        },
+        {
+          "box": [
+            209.0,
+            13.0,
+            489.0,
+            127.0
+          ],
+          "text": "list",
+          "confidence": 0.9997571706771851
+        },
+        {
+          "box": [
+            546.0,
+            48.0,
+            616.0,
+            104.0
+          ],
+          "text": "=",
+          "confidence": 0.9553193916489455
+        },
+        {
+          "box": [
+            676.0,
+            9.0,
+            1143.0,
+            134.0
+          ],
+          "text": "[1,2,3]",
+          "confidence": 0.9943487604780282
+        }
+      ]
+    }
+  ],
+  "frames": [],
+  "total_seconds": 11.87371820000044,
+  "peak_cuda_allocated_bytes": 373837824
+}

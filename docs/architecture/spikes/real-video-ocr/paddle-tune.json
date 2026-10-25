@@ -1,0 +1,749 @@
+{
+  "engine": "paddle",
+  "phase": "tune",
+  "load_seconds": 7.069900000002235,
+  "cases": [
+    {
+      "id": "01",
+      "kind": "ui_label",
+      "expected": "WEB APPS",
+      "text": "WEB APPS",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.05333949999840115,
+      "ocr_seconds": 0.3429432999982964,
+      "raw": [
+        {
+          "box": [
+            14.0,
+            19.0,
+            222.0,
+            107.0
+          ],
+          "text": "WEB",
+          "confidence": 0.9972429871559143
+        },
+        {
+          "box": [
+            235.0,
+            19.0,
+            474.0,
+            104.0
+          ],
+          "text": "APPS",
+          "confidence": 0.999495804309845
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "kind": "ui_label",
+      "expected": "django",
+      "text": "django",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.000522300000739051,
+      "ocr_seconds": 0.09122299999944516,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            0.0,
+            264.0,
+            102.0
+          ],
+          "text": "django",
+          "confidence": 0.9243567585945129
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "kind": "ui_label",
+      "expected": "TERMINAL",
+      "text": "TERMINAL",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0003609000013966579,
+      "ocr_seconds": 0.08828269999867189,
+      "raw": [
+        {
+          "box": [
+            8.0,
+            8.0,
+            228.0,
+            48.0
+          ],
+          "text": "TERMINAL",
+          "confidence": 0.9999232292175293
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "kind": "code",
+      "expected": ">>> import this",
+      "text": ">>> import this",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005037999981141184,
+      "ocr_seconds": 0.2785336000015377,
+      "raw": [
+        {
+          "box": [
+            3.0,
+            18.0,
+            100.0,
+            63.0
+          ],
+          "text": ">>>",
+          "confidence": 0.9945912957191467
+        },
+        {
+          "box": [
+            135.0,
+            14.0,
+            335.0,
+            65.0
+          ],
+          "text": "import",
+          "confidence": 0.9999828934669495
+        },
+        {
+          "box": [
+            360.0,
+            11.0,
+            495.0,
+            65.0
+          ],
+          "text": "this",
+          "confidence": 0.9999732971191406
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "kind": "ui_label",
+      "expected": "EXPLORER",
+      "text": "EXPLORER",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.00034270000105607323,
+      "ocr_seconds": 0.09038109999892185,
+      "raw": [
+        {
+          "box": [
+            6.0,
+            7.0,
+            187.0,
+            42.0
+          ],
+          "text": "EXPLORER",
+          "confidence": 0.9998888969421387
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "kind": "ui_label",
+      "expected": "hello",
+      "text": "hello",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0003171999996993691,
+      "ocr_seconds": 0.08915720000004512,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            3.0,
+            101.0,
+            57.0
+          ],
+          "text": "hello",
+          "confidence": 0.99932461977005
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "kind": "ui_label",
+      "expected": "OUTLINE",
+      "text": "OUTLINE",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0003219999998691492,
+      "ocr_seconds": 0.0730769000001601,
+      "raw": [
+        {
+          "box": [
+            5.0,
+            6.0,
+            174.0,
+            40.0
+          ],
+          "text": "OUTLINE",
+          "confidence": 0.9976903796195984
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "kind": "code",
+      "expected": "hello = 'hi mom'",
+      "text": "hello 'hi mom",
+      "exact": false,
+      "edits": 3,
+      "cer": 0.1875,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005517999998119194,
+      "ocr_seconds": 0.2817448999994667,
+      "raw": [
+        {
+          "box": [
+            4.0,
+            6.0,
+            176.0,
+            60.0
+          ],
+          "text": "hello",
+          "confidence": 0.9992450475692749
+        },
+        {
+          "box": [
+            284.0,
+            8.0,
+            371.0,
+            57.0
+          ],
+          "text": "'hi",
+          "confidence": 0.9945423007011414
+        },
+        {
+          "box": [
+            403.0,
+            16.0,
+            508.0,
+            58.0
+          ],
+          "text": "mom",
+          "confidence": 0.9998146891593933
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "kind": "code",
+      "expected": "my_tuple = ('a', 'b')",
+      "text": "my_tuple",
+      "exact": false,
+      "edits": 13,
+      "cer": 0.6190476190476191,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005861999998160172,
+      "ocr_seconds": 0.08851619999768445,
+      "raw": [
+        {
+          "box": [
+            5.0,
+            9.0,
+            282.0,
+            67.0
+          ],
+          "text": "my_tuple",
+          "confidence": 0.9999623894691467
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "kind": "code",
+      "expected": "my_list = [1,2,3]",
+      "text": "my_list [1,2,3]",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.11764705882352941,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005748000003222842,
+      "ocr_seconds": 0.19481369999994058,
+      "raw": [
+        {
+          "box": [
+            3.0,
+            6.0,
+            244.0,
+            64.0
+          ],
+          "text": "my_list",
+          "confidence": 0.9992936253547668
+        },
+        {
+          "box": [
+            340.0,
+            6.0,
+            571.0,
+            67.0
+          ],
+          "text": "[1,2,3]",
+          "confidence": 0.999775230884552
+        }
+      ]
+    },
+    {
+      "id": "01",
+      "kind": "ui_label",
+      "expected": "WEB APPS",
+      "text": "WEB APPS",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.002857299998140661,
+      "ocr_seconds": 0.3509799999992538,
+      "raw": [
+        {
+          "box": [
+            40.0,
+            39.0,
+            438.0,
+            201.0
+          ],
+          "text": "WEB",
+          "confidence": 0.9988908171653748
+        },
+        {
+          "box": [
+            473.0,
+            32.0,
+            947.0,
+            203.0
+          ],
+          "text": "APPS",
+          "confidence": 0.99953293800354
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "kind": "ui_label",
+      "expected": "django",
+      "text": "django",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0013270999988890253,
+      "ocr_seconds": 0.13649819999773172,
+      "raw": [
+        {
+          "box": [
+            8.0,
+            14.0,
+            527.0,
+            202.0
+          ],
+          "text": "django",
+          "confidence": 0.9352631568908691
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "kind": "ui_label",
+      "expected": "TERMINAL",
+      "text": "TERMINAL",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0008533999971405137,
+      "ocr_seconds": 0.1072015999998257,
+      "raw": [
+        {
+          "box": [
+            13.0,
+            14.0,
+            455.0,
+            99.0
+          ],
+          "text": "TERMINAL",
+          "confidence": 0.9999041557312012
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "kind": "code",
+      "expected": ">>> import this",
+      "text": "import this >>>",
+      "exact": false,
+      "edits": 8,
+      "cer": 0.5333333333333333,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0016332999985024799,
+      "ocr_seconds": 0.36064970000006724,
+      "raw": [
+        {
+          "box": [
+            258.0,
+            17.0,
+            672.0,
+            146.0
+          ],
+          "text": "import",
+          "confidence": 0.9999852776527405
+        },
+        {
+          "box": [
+            717.0,
+            20.0,
+            990.0,
+            135.0
+          ],
+          "text": "this",
+          "confidence": 0.9999793171882629
+        },
+        {
+          "box": [
+            3.0,
+            36.0,
+            202.0,
+            130.0
+          ],
+          "text": ">>>",
+          "confidence": 0.992766797542572
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "kind": "ui_label",
+      "expected": "EXPLORER",
+      "text": "EXPLORER",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0007136999993235804,
+      "ocr_seconds": 0.08356389999971725,
+      "raw": [
+        {
+          "box": [
+            16.0,
+            17.0,
+            372.0,
+            84.0
+          ],
+          "text": "EXPLORER",
+          "confidence": 0.9998356699943542
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "kind": "ui_label",
+      "expected": "hello",
+      "text": "hello",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005361000003176741,
+      "ocr_seconds": 0.09590540000135661,
+      "raw": [
+        {
+          "box": [
+            0.0,
+            9.0,
+            202.0,
+            118.0
+          ],
+          "text": "hello",
+          "confidence": 0.9983009099960327
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "kind": "ui_label",
+      "expected": "OUTLINE",
+      "text": "OUTLINE",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006323999987216666,
+      "ocr_seconds": 0.08677159999933792,
+      "raw": [
+        {
+          "box": [
+            14.0,
+            14.0,
+            347.0,
+            79.0
+          ],
+          "text": "OUTLINE",
+          "confidence": 0.9996918439865112
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "kind": "code",
+      "expected": "hello = 'hi mom'",
+      "text": "hello 'hi mom",
+      "exact": false,
+      "edits": 3,
+      "cer": 0.1875,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0017545000009704381,
+      "ocr_seconds": 0.3467430999990029,
+      "raw": [
+        {
+          "box": [
+            12.0,
+            10.0,
+            353.0,
+            123.0
+          ],
+          "text": "hello",
+          "confidence": 0.9994522929191589
+        },
+        {
+          "box": [
+            557.0,
+            6.0,
+            752.0,
+            128.0
+          ],
+          "text": "'hi",
+          "confidence": 0.9975640773773193
+        },
+        {
+          "box": [
+            807.0,
+            38.0,
+            1012.0,
+            117.0
+          ],
+          "text": "mom",
+          "confidence": 0.9997050166130066
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "kind": "code",
+      "expected": "my_tuple = ('a', 'b')",
+      "text": "tuple 'b my a J",
+      "exact": false,
+      "edits": 14,
+      "cer": 0.6666666666666666,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.002142900000762893,
+      "ocr_seconds": 0.5653516000020318,
+      "raw": [
+        {
+          "box": [
+            205.0,
+            12.0,
+            552.0,
+            142.0
+          ],
+          "text": "tuple",
+          "confidence": 0.9999553561210632
+        },
+        {
+          "box": [
+            1159.0,
+            11.0,
+            1300.0,
+            133.0
+          ],
+          "text": "'b",
+          "confidence": 0.9958527088165283
+        },
+        {
+          "box": [
+            1.0,
+            30.0,
+            162.0,
+            144.0
+          ],
+          "text": "my",
+          "confidence": 0.9997428059577942
+        },
+        {
+          "box": [
+            871.0,
+            33.0,
+            947.0,
+            125.0
+          ],
+          "text": "a",
+          "confidence": 0.9999589920043945
+        },
+        {
+          "box": [
+            1022.0,
+            92.0,
+            1051.0,
+            132.0
+          ],
+          "text": "J",
+          "confidence": 0.497340589761734
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "kind": "code",
+      "expected": "my_list = [1,2,3]",
+      "text": "list 1 ,2,3] my",
+      "exact": false,
+      "edits": 9,
+      "cer": 0.5294117647058824,
+      "empty": false,
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.001770599999872502,
+      "ocr_seconds": 0.44565700000021025,
+      "raw": [
+        {
+          "box": [
+            212.0,
+            12.0,
+            484.0,
+            125.0
+          ],
+          "text": "list",
+          "confidence": 0.9999831914901733
+        },
+        {
+          "box": [
+            727.0,
+            19.0,
+            841.0,
+            124.0
+          ],
+          "text": "1",
+          "confidence": 0.9990623593330383
+        },
+        {
+          "box": [
+            840.0,
+            6.0,
+            1142.0,
+            134.0
+          ],
+          "text": ",2,3]",
+          "confidence": 0.9484525918960571
+        },
+        {
+          "box": [
+            6.0,
+            31.0,
+            156.0,
+            134.0
+          ],
+          "text": "my",
+          "confidence": 0.9998083710670471
+        }
+      ]
+    }
+  ],
+  "frames": [],
+  "total_seconds": 11.340388300002815
+}

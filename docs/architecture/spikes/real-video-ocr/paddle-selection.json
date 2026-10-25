@@ -1,0 +1,24 @@
+{
+  "selected": {
+    "scale": 1,
+    "psm": 7
+  },
+  "tuning_rank": [
+    {
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "exact": 7,
+      "edits": 18
+    },
+    {
+      "config": {
+        "scale": 2,
+        "psm": 7
+      },
+      "exact": 6,
+      "edits": 34
+    }
+  ]
+}
