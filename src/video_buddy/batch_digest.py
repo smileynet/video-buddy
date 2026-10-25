@@ -11,6 +11,17 @@ from .fetch.article import detect_doi, detect_source_type
 from .fetch.youtube import extract_video_id, fetch_video
 
 
+def _find_breakdown(workspace, day: str, video_id: str) -> Path | None:
+    # Spike prerequisite: helper already present in the primary checkout's
+    # uncommitted work, but absent from the committed base importing it.
+    root = workspace.notes / "digests"
+    if day:
+        candidate = root / day / f"video_{video_id}.md"
+        if candidate.is_file():
+            return candidate
+    return next(iter(sorted(root.glob(f"*/video_{video_id}.md"))), None)
+
+
 def load_urls(input_path: str) -> list[str]:
     content = (
         sys.stdin.read()

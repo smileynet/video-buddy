@@ -295,28 +295,55 @@ def capture_video_frames(
     timeout: int = 600,
     ffmpeg_bin: str | None = None,
     scene_detection_max_duration_s: int = 600,
+    timestamps_s: list[float] | None = None,
+    media_path: Path | None = None,
 ) -> dict:
     media_dir.mkdir(parents=True, exist_ok=True)
     download_dir = media_dir / "_download"
     raw_frames_dir = media_dir / "_frames_tmp"
-    video_path = download_video(
+    video_path = media_path or download_video(
         video_url(video_id),
         download_dir,
         timeout=timeout,
         cookies_from_browser=cookies_from_browser,
     )
     try:
-        scenes = detect_scenes(
-            video_path,
-            scene_detection_max_duration_s=scene_detection_max_duration_s,
-        )
-        extracted = extract_frames(
-            video_path,
-            scenes,
-            raw_frames_dir,
-            ffmpeg_bin=ffmpeg_bin,
-        )
-        selected = select_frames(extracted, video_id=video_id, max_frames=max_frames)
+        if timestamps_s is not None:
+            # S2 THROWAWAY: preserve explicitly requested evidence, without ranking
+            # or perceptual deduplication removing near-identical action frames.
+            duration = _video_duration_seconds(video_path)
+            if any(not 0 <= t < duration for t in timestamps_s):
+                raise ValueError("Requested timestamp outside source duration")
+            selected = []
+            extracted = []
+            for t in sorted(set(timestamps_s)):
+                path = media_dir / f"frame_{round(t * 1000):08d}.jpg"
+                _extract_single_frame(video_path, t, path, ffmpeg_bin=ffmpeg_bin)
+                extracted.append(path)
+                selected.append(
+                    {
+                        **score_frame(path),
+                        "video_id": video_id,
+                        "filename": path.name,
+                        "path": str(path),
+                        "timestamp_ms": round(t * 1000),
+                        "timestamp_human": format_duration(t),
+                    }
+                )
+        else:
+            scenes = detect_scenes(
+                video_path,
+                scene_detection_max_duration_s=scene_detection_max_duration_s,
+            )
+            extracted = extract_frames(
+                video_path,
+                scenes,
+                raw_frames_dir,
+                ffmpeg_bin=ffmpeg_bin,
+            )
+            selected = select_frames(
+                extracted, video_id=video_id, max_frames=max_frames
+            )
         for frame in selected:
             source_path = Path(str(frame["path"]))
             destination_path = media_dir / source_path.name
@@ -344,7 +371,8 @@ def capture_video_frames(
             ],
         }
     finally:
-        shutil.rmtree(download_dir, ignore_errors=True)
+        if media_path is None:
+            shutil.rmtree(download_dir, ignore_errors=True)
         shutil.rmtree(raw_frames_dir, ignore_errors=True)
 
 

@@ -95,6 +95,13 @@ def build_parser() -> argparse.ArgumentParser:
         "--max-frames", type=int, help="Maximum number of selected frames."
     )
     frames_parser.add_argument("--ocr", choices=["auto", "off"], help="OCR mode.")
+    # S2 THROWAWAY: experimental capture controls; not approved for integration.
+    frames_parser.add_argument(
+        "--at", type=float, nargs="+", help="SPIKE: exact requested seconds."
+    )
+    frames_parser.add_argument(
+        "--media-file", type=Path, help="SPIKE: retained local source video."
+    )
     frames_parser.add_argument(
         "--engine",
         choices=["easyocr", "tesseract"],
@@ -466,6 +473,11 @@ def _handle_frames(args: argparse.Namespace) -> int:
             cookies_from_browser=cookies,
             ffmpeg_bin=tool_cfg.ffmpeg,
             scene_detection_max_duration_s=cfg.scene_detection_max_duration_s,
+            **(
+                {"timestamps_s": args.at, "media_path": args.media_file}
+                if args.at is not None or args.media_file is not None
+                else {}
+            ),
         )
         metadata = _apply_ocr(args, context, backend, video_id, metadata)
         metadata_path = context.workspace.frames_meta(video_id)
