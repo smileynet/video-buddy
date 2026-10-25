@@ -47,4 +47,4 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Execution record
 
-Not started. Record the actual experiment branch and evidence paths when work begins.
+Started 2026-10-24. Throwaway branch `codex/spike-guide-comparison`, commit `bae31aadd0b6c90e60f77cc5f50f9c33bc030dea`. See [initial observations](../docs/architecture/spikes/s1-status.md): equal-content note/guide variants and a frozen transcript packet are prepared; a numerical checkpoint passes the quarter-turn formula and rejects a zero-offset control. Reader completion remains unmeasured; no format winner or production integration is claimed. Keep in progress until the remaining observations are addressed.

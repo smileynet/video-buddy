@@ -47,4 +47,4 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Execution record
 
-Not started. Record the actual experiment branch and evidence paths when work begins.
+Fixture preparation on 2026-10-24: CLI frames run on Qr3VsZYQy4s produced 200 candidates and 15 selections; earliest selected timestamp 174.148 seconds. No selected frame falls inside the square-wave (71.70–85.14s) or circle (95.92–112.04s) evidence intervals. See [S1 observations](../docs/architecture/spikes/s1-status.md). This is a baseline coverage observation only; targeted-frame and clip options remain unrun. Current CLI has no timestamp-window option. Ticket remains open, dependent on S1; no S2 winner is claimed.
