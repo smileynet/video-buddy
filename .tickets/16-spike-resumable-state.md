@@ -47,4 +47,4 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Execution record
 
-Not started. Record the actual experiment branch and evidence paths when work begins.
+Ran 2026-10-24. Throwaway branch `codex/spike-state-comparison`, commit `82ce90eaa04c98ce0a41d4f884d4adea75069c0a`. [Results](../docs/architecture/spikes/s5-results.md): 10 injected scenarios per option passed (20/20); both implementations serialize writers globally. Verdict: file manifests remain viable under the bounded constraints; no universal winner or production integration. Report explicitly excludes high-throughput/multi-source qualification, power failure and cross-platform locking.
