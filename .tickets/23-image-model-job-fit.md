@@ -1,7 +1,7 @@
 ---
 id: "23"
 title: "Compare image element models by downstream evidence jobs"
-status: in_progress
+status: done
 blocked_by: []
 spec: "apply-build"
 priority: high
@@ -24,10 +24,10 @@ Coverage: Tesseract, EasyOCR, PaddleOCR; original SAM, SAM 2.1, EfficientSAM, Ef
 
 ## Acceptance criteria
 
-- [ ] Every researched family has actual inference evidence or an explicit unresolved access/runtime limitation.
-- [ ] Compared jobs use frozen fixtures and preserve raw outputs, timings, prompts and environments.
-- [ ] Recommendations distinguish measured job fit from untested candidates and synthetic smoke checks from real-domain evaluation.
-- [ ] Experimental code/dependencies stay on the spike branch; no production model integration is implied.
+- [x] Every researched family has actual inference evidence or an explicit unresolved access/runtime limitation.
+- [x] Compared jobs use frozen fixtures and preserve raw outputs, timings, prompts and environments.
+- [x] Recommendations distinguish measured job fit from untested candidates and synthetic smoke checks from real-domain evaluation.
+- [x] Experimental code/dependencies stay on the spike branch; no production model integration is implied.
 
 ## Execution record
 
@@ -66,3 +66,12 @@ DINOv3 inference completed against DINOv2 controls:4/5vs5/5 selected translated 
 ## Completed local probe evidence
 
 Completed bounded original-family comparison after DINOv3 and SAM3.1 inference. SAM3.1 boxseed yielded initial panel mask but no propagated IDs; distinguish that from textgroundingnone. All original families now have inference or preserved limitations; downstream held-out complete-state work remains25, not an inferred production approval. Raw evidence: `codex/spike-provider-coverage` commit `fc7caee6184942d39ca4cc5cc2c4d36a36498d44`.
+
+## Resolution (2026-10-25)
+
+Completed bounded original image-model comparison with DINOv3 and SAM3.1 follow-up; observed limits remain explicit, held-out job-window qualification continues25.
+
+### Verification
+1. ✓ Every researched model has a recorded run result or concrete unresolved access/runtime limitation — "docs/architecture/spikes/local-model-followup.md completes DINOv3 and SAM3.1 observed inference; all original candidate families have raw runs or explicit limitations"
+2. ✓ Compared jobs use frozen fixtures and preserve raw outputs, timings and environment — "codex/spike-provider-coverage fc7caee preserves inputs, manifests, corrected controls, masks, per-frame outputs, timing and failures; pre-commit passes"
+3. ✓ A per-job retention recommendation distinguishes measured evidence from untested candidates — "Per-role verdicts retain conditional candidates and leave extent, state completeness and task benefit to25/26/28; no production integration"
