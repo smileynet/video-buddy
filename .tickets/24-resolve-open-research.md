@@ -1,7 +1,7 @@
 ---
 id: "24"
 title: "Resolve open research questions before the next spike round"
-status: in_progress
+status: done
 blocked_by: []
 spec: "apply-build"
 priority: urgent
@@ -25,11 +25,11 @@ Inventory unanswered topics across both docs/agents/research reports and all spi
 
 ## Acceptance criteria
 
-- [ ] Create docs/agents/research/open-questions.md with question, source/date/revision, finding, confidence, remaining observation and owning ticket.
-- [ ] Every unresolved topic in existing reports is resolved, mapped to a spike, or explicitly deferred with a reason.
-- [ ] Record SAM 3.1 API diagnosis and DINOv3 access status without exposing credentials or treating failures as quality results.
-- [ ] Update affected tickets with executable experiment plans and predeclared metrics/budgets.
-- [ ] Record source-supported code/checkpoint eligibility separately for each candidate component.
+- [x] Create docs/agents/research/open-questions.md with question, source/date/revision, finding, confidence, remaining observation and owning ticket.
+- [x] Every unresolved topic in existing reports is resolved, mapped to a spike, or explicitly deferred with a reason.
+- [x] Record SAM 3.1 API diagnosis and DINOv3 access status without exposing credentials or treating failures as quality results.
+- [x] Update affected tickets with executable experiment plans and predeclared metrics/budgets.
+- [x] Record source-supported code/checkpoint eligibility separately for each candidate component.
 
 ## Out of scope
 
@@ -38,3 +38,11 @@ Automatic production integration, unsupported winners, and invented user/quality
 ## Execution record (2026-10-25)
 
 Created `docs/agents/research/open-questions.md` with primary-source findings, per-component code/weight notice inventory, explicit unknowns and owning experiments. Preserved authenticated access/source-signature probes in `docs/agents/research/checkpoint-access-2026-10-25.json`; all three checkpoints are approved, DINOv3 inference still pending. Updated experiment contracts and active budgets in 14/15/17/18/21/23/25/26/27. Updated earlier research notes, model results and dashboard access wording. No production behavior changed. Independent source audit passed with no blocking citation mismatch: `docs/agents/research/open-questions-audit.md`. Asset-specific eligibility and actual inference/user outcomes remain explicit execution work.
+
+## Resolution (2026-10-25)
+
+Completed cited decision register and independent source audit; all unresolved outcomes mapped to bounded execution tickets, with access and SAM3.1 diagnosis updated. No production integration.
+
+### Verification
+1. ✓ docs/agents/research/open-questions.md exists and records evidence, limitations and a disposition for each scoped question — "docs/agents/research/open-questions.md records primary-source findings, eligibility gaps, owner matrix; independent open-questions-audit.md passes; checkpoint-access-2026-10-25.json preserves probes"
+2. ✓ tkt validate exits 0 — "tkt validate --brief passed with zero findings; pre-commit passed on all changed research/ticket/dashboard files"
