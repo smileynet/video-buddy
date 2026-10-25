@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-25",
+  "credentials": {
+    "google": {
+      "checked_environment_names": [
+        "GEMINI_API_KEY",
+        "GOOGLE_API_KEY"
+      ],
+      "available": false
+    },
+    "idea": {
+      "checked_environment_names": [
+        "DINOX_API_KEY",
+        "DDS_API_TOKEN",
+        "DDS_API_KEY",
+        "DEEPDATASPACE_API_TOKEN"
+      ],
+      "available": false
+    }
+  },
+  "calls_attempted": 0,
+  "limits": "Current process environment only; account access/quota and other private configuration are unverified. Configuration location requested from user; no keys printed or written.",
+  "nvidia_runtime": {
+    "docker_cli_present": true,
+    "docker_server": "connection failed: dockerDesktopLinuxEngine pipe absent",
+    "model": "nvidia/Cosmos3-Edge",
+    "revision": "344d602b128d1bbdacb43b08d0a3626f46343e29",
+    "safetensors_parameters": 3858999728,
+    "dtype": "BF16",
+    "inference_attempted": false,
+    "limit": "No running supported serving endpoint; no inference-quality or minimum-VRAM conclusion"
+  }
+}

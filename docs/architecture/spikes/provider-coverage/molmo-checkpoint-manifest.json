@@ -1,0 +1,115 @@
+{
+  "repo": "allenai/Molmo2-4B",
+  "revision": "042abfa7a38879a376cec03d949eff0aefaa0600",
+  "files": [
+    {
+      "name": "added_tokens.json",
+      "bytes": 9919,
+      "sha256": "8bc892fbf3933cf0c00794b0f0fa638ca22429db58d427f71ea953accabbf1e7"
+    },
+    {
+      "name": "chat_template.jinja",
+      "bytes": 3169
+    },
+    {
+      "name": "config.json",
+      "bytes": 2538,
+      "sha256": "17e072e3c3b29d9be7a348c74b88658e67ccce094c31b21f87646f6cecd2a76f"
+    },
+    {
+      "name": "configuration_molmo2.py",
+      "bytes": 13906,
+      "sha256": "e75a5ab18c298f91d81b2b1e68369812b655a573b4a6a52d59ab8535d791bf39"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 117,
+      "sha256": "103506d168927632c8f627d470611ec14e5bc38246470173713b5c28762026b0"
+    },
+    {
+      "name": "image_processing_molmo2.py",
+      "bytes": 21116,
+      "sha256": "613bc2436936cebb1ebf0bfddda666b5c979573ba503fb904eed6eb56a706181"
+    },
+    {
+      "name": "merges.txt",
+      "bytes": 1671853
+    },
+    {
+      "name": "model-00001-of-00004.safetensors",
+      "bytes": 4891799000,
+      "content_addressed_cache_object": "065ed844edb74cc3f3992415dc412cfae4c2f6e324de76dc84fffe3a652f6fd3"
+    },
+    {
+      "name": "model-00002-of-00004.safetensors",
+      "bytes": 4844690992,
+      "content_addressed_cache_object": "ac1506897468e69d5af2f46127d30274eecb71c60745e7d27ea0319a27addbb4"
+    },
+    {
+      "name": "model-00003-of-00004.safetensors",
+      "bytes": 4844691024,
+      "content_addressed_cache_object": "da71a15c961f92361b64c3b45f5465d370c9992f032f0f4adf544d0b208ed573"
+    },
+    {
+      "name": "model-00004-of-00004.safetensors",
+      "bytes": 4822393416,
+      "content_addressed_cache_object": "519e694862a7d6d82e539424733f6f55fd8118c3c37e328c2dd942a6d4a16120"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "bytes": 75780,
+      "sha256": "bc043f680e16ecd6f936ef55bf1979781772d37005192d2f3382385f79e42045"
+    },
+    {
+      "name": "modeling_molmo2.py",
+      "bytes": 71560,
+      "sha256": "4a469aba3698dd1ef9b579439f363bda90ba3be2a5709e73bc10d8840f84e07a"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "bytes": 555,
+      "sha256": "026ee03897ff86cb0d3f7c638145a04a253d4c0722fc5bcc3cf996bb0ebed211"
+    },
+    {
+      "name": "processing_molmo2.py",
+      "bytes": 16627,
+      "sha256": "61ef1329d8a02caebaa5e5acd07a329fdbf9772e18ff32cd7256c09a3231360b"
+    },
+    {
+      "name": "processor_config.json",
+      "bytes": 301,
+      "sha256": "1a976bcab088bcc4601906c345898558daa18f5e69ec4b1df8ab23a389db8bf2"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 7908,
+      "sha256": "a4922e884f1f6d82a2ff339c39b2b4e15c437dc85b87816e7c1504d5645e6cd8"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 11477017,
+      "sha256": "95e80901c901584f416b8fd4349fd60022774b89ba4377626511f0562cc599f7"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 64390,
+      "sha256": "090037776ede9d6522fbac368c1ce9141518a461828eefac1ab8660bd904fa1e"
+    },
+    {
+      "name": "video_preprocessor_config.json",
+      "bytes": 984,
+      "sha256": "ab16df7a17cb94cf57daeab7c6760a8be8cfad1fa37258cb86ad48d09ffd1815"
+    },
+    {
+      "name": "video_processing_molmo2.py",
+      "bytes": 37045,
+      "sha256": "91c4c6404f58dde3213b060874ce35c7f3695002f761fadf5af3f2515f770ba3"
+    },
+    {
+      "name": "vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ],
+  "limits": "Small config/source files hashed locally; safetensor rows record HF content-addressed cache names, not an independent full-file hash pass"
+}

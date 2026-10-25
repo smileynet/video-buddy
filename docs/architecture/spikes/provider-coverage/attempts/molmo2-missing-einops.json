@@ -1,0 +1,19 @@
+{
+  "repo": "allenai/Molmo2-4B",
+  "revision": "042abfa7a38879a376cec03d949eff0aefaa0600",
+  "status": "runtime_or_setup_failure",
+  "config": {
+    "quantization": "NF4",
+    "compute_dtype": "bfloat16",
+    "max_crops": 2,
+    "max_new_tokens": 64,
+    "device": "cuda:0",
+    "limit": "Quantized image-only smoke probe; not full-precision, GUI-specialist or temporal qualification"
+  },
+  "observations": [],
+  "error_type": "ImportError",
+  "error": "This modeling file requires the following packages that were not found in your environment: einops. Run `pip install einops`",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\provider-coverage\\molmo_bench.py\", line 20, in <module>\n    processor = AutoProcessor.from_pretrained(repo, revision=revision, trust_remote_code=True)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\.venvs\\qwen\\Lib\\site-packages\\transformers\\models\\auto\\processing_auto.py\", line 387, in from_pretrained\n    processor_class = get_class_from_dynamic_module(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\.venvs\\qwen\\Lib\\site-packages\\transformers\\dynamic_module_utils.py\", line 604, in get_class_from_dynamic_module\n    final_module = get_cached_module_file(\n                   ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\.venvs\\qwen\\Lib\\site-packages\\transformers\\dynamic_module_utils.py\", line 467, in get_cached_module_file\n    get_cached_module_file(\n  File \"D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\.venvs\\qwen\\Lib\\site-packages\\transformers\\dynamic_module_utils.py\", line 427, in get_cached_module_file\n    modules_needed = check_imports(resolved_module_file)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\.venvs\\qwen\\Lib\\site-packages\\transformers\\dynamic_module_utils.py\", line 260, in check_imports\n    raise ImportError(\nImportError: This modeling file requires the following packages that were not found in your environment: einops. Run `pip install einops`\n",
+  "total_seconds": 1.2960232000004908,
+  "peak_cuda_allocated_bytes": 0
+}

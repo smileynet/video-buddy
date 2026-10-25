@@ -1,0 +1,57 @@
+{
+  "model": "yoloe-26s-seg.pt",
+  "mode": "visual_box",
+  "imgsz": 640,
+  "conf": 0.25,
+  "observations": [
+    {
+      "fixture": "image-models/fixtures/ui.jpg",
+      "seed_box": [
+        390,
+        205,
+        1776,
+        300
+      ],
+      "limit": "Manual region seed supplied; generic object0 label is not semantic identification",
+      "status": "ran",
+      "seconds": 0.7887095000005502,
+      "boxes": [],
+      "scores": [],
+      "labels": []
+    },
+    {
+      "fixture": "real-video-ocr/frames/python-90.jpg",
+      "seed_box": [
+        675,
+        220,
+        1650,
+        820
+      ],
+      "limit": "Manual region seed supplied; generic object0 label is not semantic identification",
+      "status": "ran",
+      "seconds": 0.24776310000015656,
+      "boxes": [
+        [
+          678.7073364257812,
+          222.2618408203125,
+          1662.5438232421875,
+          813.085693359375
+        ],
+        [
+          0.0,
+          1.244110107421875,
+          1879.3524169921875,
+          1078.2762451171875
+        ]
+      ],
+      "scores": [
+        0.3913296163082123,
+        0.35445401072502136
+      ],
+      "labels": [
+        "object0",
+        "object0"
+      ]
+    }
+  ]
+}

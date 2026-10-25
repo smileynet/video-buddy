@@ -1,0 +1,113 @@
+{
+  "model": "yoloe-26s-seg.pt",
+  "ultralytics": "8.4.189",
+  "status": "ran",
+  "config": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "device": 0,
+    "text_prompts": true
+  },
+  "fixtures": [
+    {
+      "fixture": "image-models\\fixtures\\objects.jpg",
+      "sha256": "f056b63ab86ac8c83471316351e0df5fcc33ce21160f0e041a12d8a80c4eea8f",
+      "prompts": [
+        "dog",
+        "cat",
+        "elephant"
+      ],
+      "prompt_seconds": 11.914637499998207,
+      "inference_seconds": 1.0166453999991063,
+      "boxes": [
+        [
+          0.0,
+          326.9079895019531,
+          558.353759765625,
+          872.1779174804688
+        ],
+        [
+          484.30035400390625,
+          17.80739402770996,
+          1122.9677734375,
+          894.5848999023438
+        ]
+      ],
+      "scores": [
+        0.8810393214225769,
+        0.7657040357589722
+      ],
+      "labels": [
+        "cat",
+        "dog"
+      ]
+    },
+    {
+      "fixture": "image-models\\fixtures\\diagram.jpg",
+      "sha256": "dd0d658d54a488a1d358e73584019492d97afe44d03d67be8c119d570ba82dd7",
+      "prompts": [
+        "diagram",
+        "text"
+      ],
+      "prompt_seconds": 0.18707050000011805,
+      "inference_seconds": 0.19784470000013243,
+      "boxes": [
+        [
+          715.1932373046875,
+          294.257080078125,
+          1205.9891357421875,
+          784.9149169921875
+        ]
+      ],
+      "scores": [
+        0.3367482125759125
+      ],
+      "labels": [
+        "diagram"
+      ]
+    },
+    {
+      "fixture": "image-models\\fixtures\\ui.jpg",
+      "sha256": "29dfbaca6024f5ca12e257f2d9499b475c78faad636609cc75c01ecfb5d3ec0f",
+      "prompts": [
+        "search input field",
+        "button",
+        "line chart"
+      ],
+      "prompt_seconds": 0.17622189999747206,
+      "inference_seconds": 0.1628406999989238,
+      "boxes": [],
+      "scores": [],
+      "labels": []
+    },
+    {
+      "fixture": "real-video-ocr\\frames\\python-90.jpg",
+      "sha256": "a46c8a7797b678c65dfe00ce04989001e525725eba350c982937b73d0d3415a2",
+      "prompts": [
+        "code editor",
+        "text",
+        "button"
+      ],
+      "prompt_seconds": 0.1674817000020994,
+      "inference_seconds": 0.10497050000049057,
+      "boxes": [
+        [
+          1050.6201171875,
+          630.9885864257812,
+          1500.7349853515625,
+          687.02783203125
+        ]
+      ],
+      "scores": [
+        0.25966042280197144
+      ],
+      "labels": [
+        "code editor"
+      ]
+    }
+  ],
+  "weights_sha256": "48f24206bc8680d60cbbfa296b0140da849669b9515058b72f5a945142df0654",
+  "load_seconds": 1.4980052999999316,
+  "total_seconds": 15.563985299999331,
+  "peak_cuda_allocated_bytes": 329105408
+}

@@ -1,0 +1,46 @@
+{
+  "repo": "allenai/Molmo2-4B",
+  "revision": "042abfa7a38879a376cec03d949eff0aefaa0600",
+  "status": "ran",
+  "config": {
+    "quantization": "NF4 language / bfloat16 vision",
+    "compute_dtype": "bfloat16",
+    "max_crops": 2,
+    "max_new_tokens": 128,
+    "device": "cuda:0",
+    "limit": "Quantized image-only smoke probe; not full-precision, GUI-specialist or temporal qualification"
+  },
+  "observations": [
+    {
+      "fixture": "image-models\\fixtures\\objects.jpg",
+      "prompt": "Point to the dog.",
+      "output": "<points coords=\"1 1 633 333\">dog.</points>",
+      "generated_tokens": 21,
+      "seconds": 3.9479238000021724
+    },
+    {
+      "fixture": "image-models\\fixtures\\objects.jpg",
+      "prompt": "Point to the elephant.",
+      "output": "There are none.",
+      "generated_tokens": 5,
+      "seconds": 0.6921969000031822
+    },
+    {
+      "fixture": "image-models\\fixtures\\ui.jpg",
+      "prompt": "Point to the search input field.",
+      "output": "<points coords=\"1 1 233 123\">search input field</points>",
+      "generated_tokens": 23,
+      "seconds": 1.822209699999803
+    },
+    {
+      "fixture": "image-models\\fixtures\\diagram.jpg",
+      "prompt": "Point to the text showing harmonic settings.",
+      "output": "<points coords=\"1 1 704 463 2 704 533 3 743 463 4 743 533 5 783 463 6 783 533 7 823 463 8 823 533 9 863 463 10 863 533 11 903 463 12 903 533",
+      "generated_tokens": 128,
+      "seconds": 9.983501500002603
+    }
+  ],
+  "load_seconds": 79.94038150000051,
+  "total_seconds": 96.6822977999982,
+  "peak_cuda_allocated_bytes": 4960738304
+}

@@ -1,0 +1,127 @@
+{
+  "model": "yoloe-26s-seg.pt",
+  "ultralytics": "8.4.189",
+  "status": "ran",
+  "config": {
+    "imgsz": 1280,
+    "conf": 0.25,
+    "device": 0,
+    "text_prompts": true
+  },
+  "fixtures": [
+    {
+      "fixture": "image-models\\fixtures\\objects.jpg",
+      "sha256": "f056b63ab86ac8c83471316351e0df5fcc33ce21160f0e041a12d8a80c4eea8f",
+      "prompts": [
+        "dog",
+        "cat",
+        "elephant"
+      ],
+      "prompt_seconds": 1.7147407999982534,
+      "inference_seconds": 0.711286999998265,
+      "boxes": [
+        [
+          260.0963134765625,
+          31.468570709228516,
+          920.2670288085938,
+          766.9177856445312
+        ],
+        [
+          524.32568359375,
+          14.539010047912598,
+          1121.87890625,
+          709.8422241210938
+        ],
+        [
+          11.565914154052734,
+          188.06622314453125,
+          638.856201171875,
+          897.0482788085938
+        ]
+      ],
+      "scores": [
+        0.8831137418746948,
+        0.7878048419952393,
+        0.7584667205810547
+      ],
+      "labels": [
+        "dog",
+        "cat",
+        "cat"
+      ]
+    },
+    {
+      "fixture": "image-models\\fixtures\\diagram.jpg",
+      "sha256": "dd0d658d54a488a1d358e73584019492d97afe44d03d67be8c119d570ba82dd7",
+      "prompts": [
+        "diagram",
+        "text"
+      ],
+      "prompt_seconds": 0.27685940000083065,
+      "inference_seconds": 0.3598007000000507,
+      "boxes": [],
+      "scores": [],
+      "labels": []
+    },
+    {
+      "fixture": "image-models\\fixtures\\ui.jpg",
+      "sha256": "29dfbaca6024f5ca12e257f2d9499b475c78faad636609cc75c01ecfb5d3ec0f",
+      "prompts": [
+        "search input field",
+        "button",
+        "line chart"
+      ],
+      "prompt_seconds": 0.3222135999967577,
+      "inference_seconds": 0.2324479999988398,
+      "boxes": [],
+      "scores": [],
+      "labels": []
+    },
+    {
+      "fixture": "real-video-ocr\\frames\\python-90.jpg",
+      "sha256": "a46c8a7797b678c65dfe00ce04989001e525725eba350c982937b73d0d3415a2",
+      "prompts": [
+        "code editor",
+        "text",
+        "button"
+      ],
+      "prompt_seconds": 0.4275128000008408,
+      "inference_seconds": 0.1191244999972696,
+      "boxes": [
+        [
+          1016.4596557617188,
+          389.7161865234375,
+          1333.9185791015625,
+          433.30718994140625
+        ],
+        [
+          784.8489990234375,
+          307.3683166503906,
+          1034.102783203125,
+          352.2425842285156
+        ],
+        [
+          1047.0615234375,
+          630.7508544921875,
+          1496.01806640625,
+          687.10986328125
+        ]
+      ],
+      "scores": [
+        0.6540769934654236,
+        0.3175975978374481,
+        0.2695339620113373
+      ],
+      "labels": [
+        "code editor",
+        "code editor",
+        "text"
+      ]
+    }
+  ],
+  "weights_sha256": "48f24206bc8680d60cbbfa296b0140da849669b9515058b72f5a945142df0654",
+  "load_seconds": 0.10974949999945238,
+  "text_encoder_sha256": "35d7f213e4d75f38514e4656ad3cb91158bd33e3805d8ac349f23b186f66982f",
+  "total_seconds": 4.590241000001697,
+  "peak_cuda_allocated_bytes": 345768448
+}

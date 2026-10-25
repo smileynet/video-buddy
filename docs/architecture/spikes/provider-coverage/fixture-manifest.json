@@ -1,0 +1,18 @@
+[
+  {
+    "path": "image-models\\fixtures\\objects.jpg",
+    "sha256": "f056b63ab86ac8c83471316351e0df5fcc33ce21160f0e041a12d8a80c4eea8f"
+  },
+  {
+    "path": "image-models\\fixtures\\diagram.jpg",
+    "sha256": "dd0d658d54a488a1d358e73584019492d97afe44d03d67be8c119d570ba82dd7"
+  },
+  {
+    "path": "image-models\\fixtures\\ui.jpg",
+    "sha256": "29dfbaca6024f5ca12e257f2d9499b475c78faad636609cc75c01ecfb5d3ec0f"
+  },
+  {
+    "path": "real-video-ocr\\frames\\python-90.jpg",
+    "sha256": "a46c8a7797b678c65dfe00ce04989001e525725eba350c982937b73d0d3415a2"
+  }
+]
