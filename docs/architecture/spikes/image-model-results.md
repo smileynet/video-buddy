@@ -73,3 +73,7 @@ See the branch README and per-family scripts. [Segmentation comparisons](https:/
 ## Access recheck during ticket 24 (2026-10-25)
 
 DINOv3 checkpoint access is now approved with the existing credential: `facebook/dinov3-vits16-pretrain-lvd1689m`, revision `114c1379950215c8b35dfcd4e90a5c251dde0d32`, authenticated metadata request succeeded. Earlier 403 results above remain the historical experiment state, not the current blocker. Inference remains pending in ticket 23. SAM 3.1 caller/callee incompatibility is confirmed in current upstream revision `f1647e8d0c1d280991f4d1b7d974c2704537fe66`; see the ticket 24 research register for source references and a bounded experimental workaround.
+
+## Held-out real-video follow-up (S3)
+
+[Ticket 14 results](s3-ocr-results.md) supersede the synthetic-only ranking for these new inputs. On 20 held-out real lines, full-frame exact recovery was Paddle16, Easy13, Tesseract10; supplied crops were Tesseract14, Paddle11, Easy9. Keep separate full-frame/crop candidates; no universal replacement or observed human correction benefit. Prototype branch `codex/spike-real-video-ocr`, commit `4df4a8d`.

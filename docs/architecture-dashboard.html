@@ -125,15 +125,15 @@
 <section id="models" class="tabpanel" role="tabpanel" aria-labelledby="tab-models" hidden>
 <span class="badge">Mocked · measured experiment snapshots, not a product workflow</span>
 <h2>Keep models for distinct evidence jobs.</h2>
-<p class="lead">13 accessible configurations ran, plus composed grounding/segmentation and temporal probes. SAM 3 ran; SAM 3.1 has an upstream runtime blocker; DINOv3 access approved; inference pending. These are provisional shortlist decisions; nothing was integrated into the application.</p>
+<p class="lead">13 accessible configurations ran, plus composed grounding/segmentation and temporal probes. SAM 3 ran; SAM 3.1 has an upstream runtime blocker; DINOv3 access approved; inference pending. These are provisional shortlist decisions; nothing was integrated into the application. <a href="architecture/spikes/s3-ocr-results.md">Held-out OCR results →</a></p>
 <div class="grid section">
-<article class="card"><div class="kicker">EXACT WRITING</div><h3>PaddleOCR leads this small set</h3><p>Exact recovery on 30 controlled single-line crops: PaddleOCR 28, Tesseract 23, EasyOCR 2. Paddle also recovered the one real settings crop exactly.</p><small>Five strings × two themes × three sizes; no held-out real-video corpus. This is not a universal OCR ranking.</small></article>
+<article class="card"><div class="kicker">EXACT WRITING</div><h3>OCR choice depends on the input</h3><p>Held-out real-video lines: full frames — Paddle 16/20, EasyOCR 13/20, Tesseract 10/20. Supplied crops — Tesseract 14/20, Paddle 11/20, EasyOCR 9/20.</p><small>Two selected videos, 10 tuning/20 held-out regions. No measured correction-time benefit or universal default.</small></article>
 <article class="card"><div class="kicker">IDENTITY ≠ CONTENT</div><h3>A stable panel can contain a new instruction</h3><p>SAM 2 and EfficientTAM both followed a diagram panel across four captured states. DINOv2 matched 5/5 controlled translated patches, but whole-image similarity stayed 0.9982 after one character changed.</p><small>Keep text revisions separately from track IDs and semantic similarity.</small></article>
 </div>
 <div class="tablewrap"><table><thead><tr><th>Configuration</th><th>Observed fit / failure</th><th>Provisional disposition</th></tr></thead><tbody>
-<tr><td>PaddleOCR mobile English</td><td>28/30 controls + real settings exact</td><td>Leading exact-text candidate; qualify on real held-out windows</td></tr>
-<tr><td>Tesseract PSM 7</td><td>23/30 controls; real crop not exact</td><td>Keep low-dependency fallback</td></tr>
-<tr><td>EasyOCR English GPU</td><td>2/30 controls; real crop has errors</td><td>Keep existing baseline pending broader qualification; not current text leader</td></tr>
+<tr><td>PaddleOCR mobile English</td><td>16/20 real held-out full-frame lines; 11/20 crops</td><td>Full-frame challenger; broader state/correction qualification remains</td></tr>
+<tr><td>Tesseract crop PSM13 / frame PSM11</td><td>14/20 real held-out crops; 10/20 full-frame lines</td><td>Supplied-region challenger and CPU fallback; retain source evidence</td></tr>
+<tr><td>EasyOCR English GPU</td><td>13/20 real held-out full-frame lines; 9/20 crops</td><td>Keep existing baseline pending broader qualification; not current text leader</td></tr>
 <tr><td>Grounding DINO tiny</td><td>Found animals, diagram and text; UI search box nearly whole-screen</td><td>Keep for named objects/diagrams, not unqualified UI grounding</td></tr>
 <tr><td>Grounding DINO → SAM 2.1</td><td>Box prompts separated dog/cat and isolated diagram/text panel</td><td>Keep optional mask composition when boxes are insufficient</td></tr>
 <tr><td>SAM 2.1 tiny</td><td>Point prompt selected a part; box prompt and panel tracking useful</td><td>Keep segmentation/tracking comparison and fallback</td></tr>
