@@ -1,7 +1,7 @@
 ---
 id: "31"
 title: "Compare Ai2 pointing tracking and interface grounding"
-status: in_progress
+status: done
 blocked_by: ["29"]
 spec: "apply-build"
 priority: high
@@ -25,10 +25,10 @@ Compare a practical current Molmo2/MolmoPoint checkpoint for image pointing and 
 
 ## Acceptance criteria
 
-- [ ] Record current explicit model/checkpoint/API identity and eligibility evidence, with dated primary citations.
-- [ ] Preserve frozen inputs, raw predictions, configuration, costs and runtime failures for every executed comparison.
-- [ ] Distinguish measured fit from untested, access-limited, hardware-limited and irrelevant options.
-- [ ] Give a per-job disposition and the remaining deciding observation; update dashboard coverage.
+- [x] Record current explicit model/checkpoint/API identity and eligibility evidence, with dated primary citations.
+- [x] Preserve frozen inputs, raw predictions, configuration, costs and runtime failures for every executed comparison.
+- [x] Distinguish measured fit from untested, access-limited, hardware-limited and irrelevant options.
+- [x] Give a per-job disposition and the remaining deciding observation; update dashboard coverage.
 
 ## Out of scope
 
@@ -45,3 +45,11 @@ Completed Molmo2NF4language/BF16vision at64/128tokens and same-query Qwen3VL2B B
 ## Completed local probe evidence
 
 MolmoPointGUI8B andVid4B now ran with NF4language/BF16vision. Invalid wrong-entity/underspecified GUI pass preserved, corrected matching queries scored3/4 GUIvs4/4Qwen. Video processor preserved4supplied times but outputs had onlytime0positive points, even explicit allframes; absent elephantnone. No native-video/fullprecision/heldoutgeneralization. Bounded candidate comparison complete; window/temporal outcomes remain25/26. Raw evidence: `codex/spike-provider-coverage` commit `fc7caee6184942d39ca4cc5cc2c4d36a36498d44`.
+
+## Resolution (2026-10-25)
+
+Completed bounded NF4 Ai2 representative comparisons: GUI3/4target hits vsQwen4/4; video onlyfirst-timepoints despitefourframes/explicitcoveragequery. Full-precision and native/held-out task outcomes remain25/26/28, not inferred success.
+
+### Verification
+1. ✓ docs/architecture/spikes/provider-ai2-results.md records pinned identities, evidence and per-job disposition or a concrete unresolved limitation — "docs/architecture/spikes/local-model-followup.md and provider-ai2-results.md record pinned general/GUI/video representatives, corrected matching queries, raw decoded points and bounded dispositions"
+2. ✓ tkt validate exits 0 — "tkt validate and pre-commit passed; corrected prompt parity, SAM guard/frame counts and video timestamp preservation verified against actual outputs"
