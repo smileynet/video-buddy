@@ -85,6 +85,22 @@ The inspected working tree includes uncommitted code. Presence is not proof of r
 
 Avoid a universal plugin framework or distributed queue now. The real variable seams are source provider, speech/OCR engine, compute backend and output template. Keep implementation detail behind small interfaces rather than adding wrappers around every function.
 
+## Subject-aware evidence search (research addition, 2026-10-25)
+
+The user's refinement is to seek the best frame(s) within a subject's span, not just select timestamps globally. Treat a subject as a region with identity, type, temporal extent and content revisions. See [image-element model research](../agents/research/image-elements-and-frame-seeking.md) for verified model capabilities and constraints. This design is proposed, not implemented or benchmarked.
+
+Separate locating, segmenting, tracking, reading and interpreting. A rectangle from a text detector may be all OCR needs; do not require pixel masks for rectangular code panels. SAM 3/3.1 is a candidate for text/exemplar-prompted concept localization and tracking; SAM 2.1 or a lighter tracker can propagate an already located subject. Screen-specific parsers and OCR are separate candidates for controls and exact text. Segmentation alone does not supply readable text, control semantics or a complete procedure.
+
+Proposed flow: cheap scan across the relevant segment → locate subject regions → associate/track each subject → detect distinct content states → search neighboring frames for useful evidence → return original padded crops plus full-frame context and unresolved gaps. Inspect all frames within a bounded difficult interval when needed; use coarse-to-fine seeking elsewhere. Never label a coarse search globally optimal, because a brief state can occur between candidates.
+
+For text, score the original region's sharpness, readable size, visible completeness, obstruction and OCR agreement across neighbors. Do not rank only by model confidence; a confidently read half-typed command is incomplete. For diagrams, distinguish construction stages from the completed view. For actions, preserve before/after and intermediate states instead of collapsing them into one best-looking image. The candidate output may be a set of frames, not one maximum-score frame.
+
+Keep region hierarchy and content state distinct: a code-editor panel can persist while its lines change. Group text lines into a readable subject, but retain meaningful revisions inside that subject. Use change signals to trigger new evidence requests; do not interpret a stable tracking ID as a stable command. Blank/erased final states must not outrank earlier complete instructions merely because they are visually clean.
+
+Keep source frame index/PTS where available, timestamp, original dimensions, box/mask coordinates, model/prompt/revision, track identity, state identity and selection reasons. Keep OCR geometry/text and interpretation separate. Detect cuts, scrolling and replacement so a tracked rectangle does not imply the content is unchanged. Preserve unmasked original crops for text reading; masking must not erase punctuation, context or antialiasing.
+
+Before integration, compare OCR-box/region seeking against a screen-parser path on UI/text tasks and a detector-plus-tracker path on diagrams/objects. Add SAM masks only when box tracking fails due to shape or obstruction, and compare SAM 3.1 against an eligible SAM 2.1/lightweight path only for that need. Use exhaustive annotated frames in short held-out windows as the reference. Measure critical-state recall, exact text/setting recovery, time to find evidence, drift/identity switches and measured compute/memory cost. No model has yet been run for this comparison.
+
 ## Artifact contract
 
 Keep current conventional paths during migration. Add a job manifest under `intermediates/jobs/<job_id>.json`; new artifact names are proposed, not current CLI outputs.
