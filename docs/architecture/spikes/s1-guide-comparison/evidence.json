@@ -1,0 +1,71 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=Qr3VsZYQy4s",
+  "source_artifact": "benchmark/output/crisperwhisper/Qr3VsZYQy4s.json",
+  "source_sha256": "1e6e079775ee490ce9234181cb9813e6c9f0d24f14f9ca636b0c2df58b315e14",
+  "transcription_engine": "crisperwhisper",
+  "model": "turbo",
+  "independently_verified_audio_or_images": false,
+  "python": "3.13.14",
+  "segments": [
+    {
+      "evidence_id": "E008",
+      "start": 57.7,
+      "end": 62.78,
+      "text": "This is what a single sine wave sounds like. Yeah, just one perfect smooth tone."
+    },
+    {
+      "evidence_id": "E009",
+      "start": 63.84,
+      "end": 70.72,
+      "text": "It can be played faster, slower, louder and quieter, but something cool happens when we add a bunch of them together."
+    },
+    {
+      "evidence_id": "E010",
+      "start": 71.7,
+      "end": 75.72,
+      "text": "If we align the sine waves just right, we get a sawtooth wave."
+    },
+    {
+      "evidence_id": "E011",
+      "start": 76.42,
+      "end": 81.08,
+      "text": "Neat. Or if you combine only half of them, we end up with a square wave."
+    },
+    {
+      "evidence_id": "E012",
+      "start": 81.66,
+      "end": 85.14,
+      "text": "Or if you combine them in this way, you get a triangle wave."
+    },
+    {
+      "evidence_id": "E013",
+      "start": 85.84,
+      "end": 90.14,
+      "text": "Turns out, you could create literally any waveform just by combining sine waves."
+    },
+    {
+      "evidence_id": "E014",
+      "start": 90.8,
+      "end": 94.88,
+      "text": "We'll use this and more techniques to make the sound effects and music in this experiment."
+    },
+    {
+      "evidence_id": "E015",
+      "start": 95.92,
+      "end": 105.98,
+      "text": "But a similar idea can be used in two dimensions. If we control how high up or down this dot is by fixing it to a sine wave, then we control how far left and right it is by fixing it to a"
+    },
+    {
+      "evidence_id": "E016",
+      "start": 106.1,
+      "end": 112.04,
+      "text": "copy of the sine wave, then as long as we offset one side by a quarter turn, the dot goes in a perfect circle."
+    },
+    {
+      "evidence_id": "E017",
+      "start": 112.56,
+      "end": 119.4,
+      "text": "Just like before, we can add in a higher frequency sign, and in this case it makes like a cloud or some loops."
+    }
+  ]
+}
