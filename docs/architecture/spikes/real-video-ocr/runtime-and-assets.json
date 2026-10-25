@@ -1,0 +1,74 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.10",
+  "tesseract": "C:\\Program Files\\Tesseract-OCR\\tesseract.EXE",
+  "tesseract_version": "tesseract v5.4.0.20240606\n leptonica-1.84.1\n  libgif 5.2.1 : libjpeg 8d (libjpeg-turbo 3.0.1) : libpng 1.6.43 : libtiff 4.6.0 : zlib 1.3 : libwebp 1.4.0 : libopenjp2 2.5.2\n Found AVX2\n Found AVX\n Found FMA\n Found SSE4.1\n Found libarchive 3.7.4 zlib/1.3.1 liblzma/5.6.1 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.6\n",
+  "assets": [
+    {
+      "asset": "craft_mlt_25k.pth",
+      "parent": "model",
+      "bytes": 83152330,
+      "sha256": "4a5efbfb48b4081100544e75e1e2b57f8de3d84f213004b14b85fd4b3748db17"
+    },
+    {
+      "asset": "english_g2.pth",
+      "parent": "model",
+      "bytes": 15143997,
+      "sha256": "e2272681d9d67a04e2dff396b6e95077bc19001f8f6d3593c307b9852e1c29e8"
+    },
+    {
+      "asset": "config.json",
+      "parent": "PP-OCRv5_mobile_det",
+      "bytes": 2871,
+      "sha256": "7ac1c33f377ba58561f4b89d3180b6add2b7c5c60a4edac90fa4e0ceccdc6665"
+    },
+    {
+      "asset": "inference.json",
+      "parent": "PP-OCRv5_mobile_det",
+      "bytes": 229777,
+      "sha256": "05feef1acb00aa4cd7362b15f7f501fc4f99d7b1fa73c1c871e0c7b1504b0f5c"
+    },
+    {
+      "asset": "inference.pdiparams",
+      "parent": "PP-OCRv5_mobile_det",
+      "bytes": 4692937,
+      "sha256": "afa1820cb16c1fd0dad589d0f8b389139061c1ef6d68019685fd07be997dda5b"
+    },
+    {
+      "asset": "inference.yml",
+      "parent": "PP-OCRv5_mobile_det",
+      "bytes": 903,
+      "sha256": "98069072e1b6b37d727fd9d9f11725faa46d6ea0de012f2ed26caea011c37699"
+    },
+    {
+      "asset": "config.json",
+      "parent": "en_PP-OCRv5_mobile_rec",
+      "bytes": 10455,
+      "sha256": "16103ac291a82fca50f0bb000d62a4b8168f6042f03c89c44cf32f241d1eb1f2"
+    },
+    {
+      "asset": "inference.json",
+      "parent": "en_PP-OCRv5_mobile_rec",
+      "bytes": 217712,
+      "sha256": "fd1b6ec722ea841a72d3ba43e527df1d1066d5d7808e0503ee3eec7265188753"
+    },
+    {
+      "asset": "inference.pdiparams",
+      "parent": "en_PP-OCRv5_mobile_rec",
+      "bytes": 7772315,
+      "sha256": "3ec8a97ed6cefe8568d3e2ee90bb193299b566a7661aa4fd52d224b96b59f66b"
+    },
+    {
+      "asset": "inference.yml",
+      "parent": "en_PP-OCRv5_mobile_rec",
+      "bytes": 3964,
+      "sha256": "27e91d0582f40168aa218303c76e184bc78fa7a5d105aad0cfbad8458b441067"
+    },
+    {
+      "asset": "eng.traineddata",
+      "parent": "tessdata",
+      "bytes": 4113088,
+      "sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2"
+    }
+  ]
+}

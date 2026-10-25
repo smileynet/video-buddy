@@ -54,7 +54,13 @@ elif args.engine == "paddle":
         cpu_threads=4,
         enable_mkldnn=False,
     )
-report = {"engine": args.engine, "phase": args.phase, "load_seconds": time.perf_counter() - began, "cases": [], "frames": []}
+report = {
+    "engine": args.engine,
+    "phase": args.phase,
+    "load_seconds": time.perf_counter() - began,
+    "cases": [],
+    "frames": [],
+}
 
 
 def recognize(im, psm=7, full=False):
@@ -64,32 +70,80 @@ def recognize(im, psm=7, full=False):
         command = ["tesseract", "stdin", "stdout", "--psm", str(11 if full else psm)]
         if full:
             command.append("tsv")
-        result = subprocess.run(command, input=buffer.getvalue(), capture_output=True, check=True).stdout.decode("utf-8")
+        result = subprocess.run(
+            command, input=buffer.getvalue(), capture_output=True, check=True
+        ).stdout.decode("utf-8")
         if not full:
             return result, []
         boxes = []
         for row in csv.DictReader(io.StringIO(result), delimiter="\t"):
             if row["text"].strip():
                 x, y, w, h = [int(row[k]) for k in ["left", "top", "width", "height"]]
-                boxes.append({"box": [x, y, x+w, y+h], "text": row["text"], "confidence": float(row["conf"])})
+                boxes.append(
+                    {
+                        "box": [x, y, x + w, y + h],
+                        "text": row["text"],
+                        "confidence": float(row["conf"]),
+                    }
+                )
         return " ".join(x["text"] for x in boxes), boxes
     if args.engine == "easyocr":
         raw = model.readtext(np.array(im))
-        boxes = [{"box": [float(min(p[0] for p in b)), float(min(p[1] for p in b)), float(max(p[0] for p in b)), float(max(p[1] for p in b))], "text": t, "confidence": float(c)} for b, t, c in raw]
+        boxes = [
+            {
+                "box": [
+                    float(min(p[0] for p in b)),
+                    float(min(p[1] for p in b)),
+                    float(max(p[0] for p in b)),
+                    float(max(p[1] for p in b)),
+                ],
+                "text": t,
+                "confidence": float(c),
+            }
+            for b, t, c in raw
+        ]
     else:
         prediction = list(model.predict(np.array(im)))[0]
         raw = prediction.json["res"]
-        boxes = [{"box": [float(min(p[0] for p in b)), float(min(p[1] for p in b)), float(max(p[0] for p in b)), float(max(p[1] for p in b))], "text": t, "confidence": float(c)} for b, t, c in zip(raw["rec_polys"], raw["rec_texts"], raw["rec_scores"], strict=True)]
+        boxes = [
+            {
+                "box": [
+                    float(min(p[0] for p in b)),
+                    float(min(p[1] for p in b)),
+                    float(max(p[0] for p in b)),
+                    float(max(p[1] for p in b)),
+                ],
+                "text": t,
+                "confidence": float(c),
+            }
+            for b, t, c in zip(
+                raw["rec_polys"], raw["rec_texts"], raw["rec_scores"], strict=True
+            )
+        ]
     return " ".join(x["text"] for x in boxes), boxes
 
 
 def score(case, text, **extra):
     expected, text = norm(case["expected"]), norm(text)
     edits = distance(expected, text)
-    return {"id": case["id"], "kind": case["kind"], "expected": expected, "text": text, "exact": expected == text, "edits": edits, "cer": edits / len(expected), "empty": not text, **extra}
+    return {
+        "id": case["id"],
+        "kind": case["kind"],
+        "expected": expected,
+        "text": text,
+        "exact": expected == text,
+        "edits": edits,
+        "cer": edits / len(expected),
+        "empty": not text,
+        **extra,
+    }
 
 
-choices = [{"scale": scale, "psm": psm} for scale in [1, 2] for psm in ([7, 13] if args.engine == "tesseract" else [7])]
+choices = [
+    {"scale": scale, "psm": psm}
+    for scale in [1, 2]
+    for psm in ([7, 13] if args.engine == "tesseract" else [7])
+]
 selection = root / f"{args.engine}-selection.json"
 if args.phase == "heldout":
     choices = [json.loads(selection.read_text())["selected"]]
@@ -104,30 +158,77 @@ for config in choices:
         prep = time.perf_counter() - start
         start = time.perf_counter()
         text, raw = recognize(im, config["psm"])
-        report["cases"].append(score(case, text, config=config, preprocessing_seconds=prep, ocr_seconds=time.perf_counter()-start, raw=raw))
+        report["cases"].append(
+            score(
+                case,
+                text,
+                config=config,
+                preprocessing_seconds=prep,
+                ocr_seconds=time.perf_counter() - start,
+                raw=raw,
+            )
+        )
 if args.phase == "tune":
     ranked = []
     for config in choices:
         rows = [x for x in report["cases"] if x["config"] == config]
-        ranked.append({"config": config, "exact": sum(x["exact"] for x in rows), "edits": sum(x["edits"] for x in rows)})
-    ranked.sort(key=lambda x: (-x["exact"], x["edits"], x["config"]["scale"], x["config"]["psm"]))
-    selection.write_text(json.dumps({"selected": ranked[0]["config"], "tuning_rank": ranked}, indent=2)+"\n")
+        ranked.append(
+            {
+                "config": config,
+                "exact": sum(x["exact"] for x in rows),
+                "edits": sum(x["edits"] for x in rows),
+            }
+        )
+    ranked.sort(
+        key=lambda x: (
+            -x["exact"],
+            x["edits"],
+            x["config"]["scale"],
+            x["config"]["psm"],
+        )
+    )
+    selection.write_text(
+        json.dumps({"selected": ranked[0]["config"], "tuning_rank": ranked}, indent=2)
+        + "\n"
+    )
 else:
     for frame in sorted({x["frame"] for x in cases if x["split"] == "heldout"}):
         im = Image.open(root / frame).convert("RGB")
         start = time.perf_counter()
         text, raw = recognize(im, full=True)
-        observation = {"frame": frame, "ocr_seconds": time.perf_counter()-start, "raw": raw, "regions": []}
+        observation = {
+            "frame": frame,
+            "ocr_seconds": time.perf_counter() - start,
+            "raw": raw,
+            "regions": [],
+        }
         for case in cases:
             if case["frame"] != frame or case["split"] != "heldout":
                 continue
             x0, y0, x1, y1 = case["box"]
-            selected = [x for x in raw if x0 <= (x["box"][0]+x["box"][2])/2 <= x1 and y0 <= (x["box"][1]+x["box"][3])/2 <= y1]
-            selected.sort(key=lambda x: (round(x["box"][1]/15), x["box"][0]))
-            observation["regions"].append(score(case, " ".join(x["text"] for x in selected), detections=len(selected)))
+            selected = [
+                x
+                for x in raw
+                if x0 <= (x["box"][0] + x["box"][2]) / 2 <= x1
+                and y0 <= (x["box"][1] + x["box"][3]) / 2 <= y1
+            ]
+            selected.sort(key=lambda x: x["box"][0])
+            observation["regions"].append(
+                score(
+                    case,
+                    " ".join(x["text"] for x in selected),
+                    detections=len(selected),
+                )
+            )
         report["frames"].append(observation)
-report["total_seconds"] = time.perf_counter()-began
+report["total_seconds"] = time.perf_counter() - began
 if args.engine == "easyocr":
     report["peak_cuda_allocated_bytes"] = torch.cuda.max_memory_allocated()
-(root / f"{args.engine}-{args.phase}.json").write_text(json.dumps(report, indent=2)+"\n")
-print(json.dumps({k:v for k,v in report.items() if k not in ["cases", "frames"]}, indent=2))
+(root / f"{args.engine}-{args.phase}.json").write_text(
+    json.dumps(report, indent=2) + "\n"
+)
+print(
+    json.dumps(
+        {k: v for k, v in report.items() if k not in ["cases", "frames"]}, indent=2
+    )
+)

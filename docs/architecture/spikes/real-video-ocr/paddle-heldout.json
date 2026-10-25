@@ -1,0 +1,1723 @@
+{
+  "engine": "paddle",
+  "phase": "heldout",
+  "load_seconds": 2.5142994999987422,
+  "cases": [
+    {
+      "id": "11",
+      "kind": "code",
+      "expected": "if True:",
+      "text": "if True:",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0036104999999224674,
+      "ocr_seconds": 0.24548330000106944,
+      "raw": [
+        {
+          "box": [
+            3.0,
+            4.0,
+            75.0,
+            54.0
+          ],
+          "text": "if",
+          "confidence": 0.9999256730079651
+        },
+        {
+          "box": [
+            102.0,
+            8.0,
+            268.0,
+            60.0
+          ],
+          "text": "True:",
+          "confidence": 0.9998718500137329
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "kind": "code",
+      "expected": "if condition:",
+      "text": "if condition:",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.00045119999776943587,
+      "ocr_seconds": 0.1941329000001133,
+      "raw": [
+        {
+          "box": [
+            2.0,
+            2.0,
+            73.0,
+            54.0
+          ],
+          "text": "if",
+          "confidence": 0.9998686909675598
+        },
+        {
+          "box": [
+            102.0,
+            5.0,
+            431.0,
+            56.0
+          ],
+          "text": "condition:",
+          "confidence": 0.9800752401351929
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "kind": "code",
+      "expected": "print(\"true\")",
+      "text": "print \"true",
+      "exact": false,
+      "edits": 3,
+      "cer": 0.23076923076923078,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005902999982936308,
+      "ocr_seconds": 0.19100210000033258,
+      "raw": [
+        {
+          "box": [
+            5.0,
+            4.0,
+            175.0,
+            59.0
+          ],
+          "text": "print",
+          "confidence": 0.9999593496322632
+        },
+        {
+          "box": [
+            196.0,
+            5.0,
+            371.0,
+            56.0
+          ],
+          "text": "\"true",
+          "confidence": 0.999721348285675
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "kind": "code",
+      "expected": "else:",
+      "text": "else",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.2,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.00041820000114967115,
+      "ocr_seconds": 0.0679013999979361,
+      "raw": [
+        {
+          "box": [
+            3.0,
+            6.0,
+            147.0,
+            55.0
+          ],
+          "text": "else",
+          "confidence": 0.9999648332595825
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "kind": "code",
+      "expected": "print(\"false\")",
+      "text": "print \"false",
+      "exact": false,
+      "edits": 3,
+      "cer": 0.21428571428571427,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0007078999988152646,
+      "ocr_seconds": 0.18934619999708957,
+      "raw": [
+        {
+          "box": [
+            4.0,
+            1.0,
+            174.0,
+            58.0
+          ],
+          "text": "print",
+          "confidence": 0.9999597668647766
+        },
+        {
+          "box": [
+            199.0,
+            0.0,
+            403.0,
+            54.0
+          ],
+          "text": "\"false",
+          "confidence": 0.9989736676216125
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "kind": "code",
+      "expected": "def have_fun():",
+      "text": "def have fun",
+      "exact": false,
+      "edits": 4,
+      "cer": 0.26666666666666666,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005813999996462371,
+      "ocr_seconds": 0.19497259999843664,
+      "raw": [
+        {
+          "box": [
+            6.0,
+            1.0,
+            281.0,
+            55.0
+          ],
+          "text": "def have",
+          "confidence": 0.9622300267219543
+        },
+        {
+          "box": [
+            300.0,
+            1.0,
+            407.0,
+            56.0
+          ],
+          "text": "fun",
+          "confidence": 0.9999372959136963
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "kind": "code",
+      "expected": "for i in range(5):",
+      "text": "for in range(5):",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.1111111111111111,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006285999988904223,
+      "ocr_seconds": 0.20219489999726648,
+      "raw": [
+        {
+          "box": [
+            1.0,
+            0.0,
+            110.0,
+            57.0
+          ],
+          "text": "for",
+          "confidence": 0.9999148845672607
+        },
+        {
+          "box": [
+            198.0,
+            2.0,
+            595.0,
+            60.0
+          ],
+          "text": "in range(5):",
+          "confidence": 0.9991989731788635
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "kind": "code",
+      "expected": "print(i)",
+      "text": "brint (i)",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.25,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0004120999983570073,
+      "ocr_seconds": 0.1834593000021414,
+      "raw": [
+        {
+          "box": [
+            6.0,
+            6.0,
+            168.0,
+            58.0
+          ],
+          "text": "brint",
+          "confidence": 0.933263897895813
+        },
+        {
+          "box": [
+            148.0,
+            1.0,
+            261.0,
+            64.0
+          ],
+          "text": "(i)",
+          "confidence": 0.9837866425514221
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "kind": "code",
+      "expected": "class Reptile:",
+      "text": "class Reptile:",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006212000007508323,
+      "ocr_seconds": 0.19287350000013248,
+      "raw": [
+        {
+          "box": [
+            5.0,
+            0.0,
+            170.0,
+            55.0
+          ],
+          "text": "class",
+          "confidence": 0.9999504089355469
+        },
+        {
+          "box": [
+            203.0,
+            3.0,
+            461.0,
+            55.0
+          ],
+          "text": "Reptile:",
+          "confidence": 0.9999634623527527
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "kind": "code",
+      "expected": "def __init__(self, length):",
+      "text": "def init (self length):",
+      "exact": false,
+      "edits": 5,
+      "cer": 0.18518518518518517,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0009886999978334643,
+      "ocr_seconds": 0.3795137999986764,
+      "raw": [
+        {
+          "box": [
+            1.0,
+            0.0,
+            108.0,
+            56.0
+          ],
+          "text": "def",
+          "confidence": 0.999958336353302
+        },
+        {
+          "box": [
+            201.0,
+            1.0,
+            338.0,
+            54.0
+          ],
+          "text": "init",
+          "confidence": 0.9999740123748779
+        },
+        {
+          "box": [
+            402.0,
+            0.0,
+            574.0,
+            61.0
+          ],
+          "text": "(self",
+          "confidence": 0.9994719624519348
+        },
+        {
+          "box": [
+            631.0,
+            2.0,
+            886.0,
+            57.0
+          ],
+          "text": "length):",
+          "confidence": 0.9373349547386169
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "kind": "code",
+      "expected": "self.length = length",
+      "text": "self.length length",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.1,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006597000028705224,
+      "ocr_seconds": 0.21143260000098962,
+      "raw": [
+        {
+          "box": [
+            5.0,
+            1.0,
+            371.0,
+            57.0
+          ],
+          "text": "self.length",
+          "confidence": 0.9987935423851013
+        },
+        {
+          "box": [
+            464.0,
+            0.0,
+            669.0,
+            61.0
+          ],
+          "text": "length",
+          "confidence": 0.9997040629386902
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "kind": "code",
+      "expected": "class Snake(Reptile):",
+      "text": "class Snake(Reptile):",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.000798099998064572,
+      "ocr_seconds": 0.3104913999995915,
+      "raw": [
+        {
+          "box": [
+            5.0,
+            0.0,
+            172.0,
+            56.0
+          ],
+          "text": "class",
+          "confidence": 0.9999327659606934
+        },
+        {
+          "box": [
+            200.0,
+            2.0,
+            688.0,
+            55.0
+          ],
+          "text": "Snake(Reptile):",
+          "confidence": 0.9697757363319397
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "kind": "code",
+      "expected": "def slither(self):",
+      "text": "def slither(self):",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0006537000008393079,
+      "ocr_seconds": 0.16335909999907017,
+      "raw": [
+        {
+          "box": [
+            1.0,
+            0.0,
+            595.0,
+            58.0
+          ],
+          "text": "def slither(self):",
+          "confidence": 0.9982701539993286
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "kind": "diagram_label",
+      "expected": "AUDIO SYNTHESIS PLAN",
+      "text": "AUDIO SYNTHESIS S PLAN",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.1,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0013016999982937705,
+      "ocr_seconds": 0.3746769999997923,
+      "raw": [
+        {
+          "box": [
+            4.0,
+            11.0,
+            237.0,
+            77.0
+          ],
+          "text": "AUDIO",
+          "confidence": 0.9984175562858582
+        },
+        {
+          "box": [
+            245.0,
+            16.0,
+            672.0,
+            73.0
+          ],
+          "text": "SYNTHESIS",
+          "confidence": 0.9990361332893372
+        },
+        {
+          "box": [
+            640.0,
+            13.0,
+            888.0,
+            78.0
+          ],
+          "text": "S PLAN",
+          "confidence": 0.9484069347381592
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "kind": "diagram_label",
+      "expected": "AUDIO SOURCES",
+      "text": "AUDIO SOURCES",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0007297999982256442,
+      "ocr_seconds": 0.1457375999998476,
+      "raw": [
+        {
+          "box": [
+            7.0,
+            10.0,
+            411.0,
+            52.0
+          ],
+          "text": "AUDIO SOURCES",
+          "confidence": 0.9903723001480103
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "kind": "diagram_label",
+      "expected": "AUDIO WORKLET",
+      "text": "AUDIO WORKLET",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0007287000007636379,
+      "ocr_seconds": 0.16405179999856045,
+      "raw": [
+        {
+          "box": [
+            4.0,
+            15.0,
+            417.0,
+            53.0
+          ],
+          "text": "AUDIO WORKLET",
+          "confidence": 0.9992706775665283
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "kind": "diagram_text",
+      "expected": "Plays combinations of sines.",
+      "text": "Plays combinations of sines.",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005256000004010275,
+      "ocr_seconds": 0.17881169999964186,
+      "raw": [
+        {
+          "box": [
+            1.0,
+            2.0,
+            483.0,
+            43.0
+          ],
+          "text": "Plays combinations of sines.",
+          "confidence": 0.998113751411438
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "kind": "diagram_text",
+      "expected": "Runs in a separate thread.",
+      "text": "Runs in a separate thread.",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.0005300999982864596,
+      "ocr_seconds": 0.17972779999763588,
+      "raw": [
+        {
+          "box": [
+            2.0,
+            2.0,
+            447.0,
+            39.0
+          ],
+          "text": "Runs in a separate thread.",
+          "confidence": 0.9916033148765564
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "kind": "small_code",
+      "expected": "var audioContext:AudioContext;",
+      "text": "var audioContext:AudioContext;",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.00036920000275131315,
+      "ocr_seconds": 0.23409770000216668,
+      "raw": [
+        {
+          "box": [
+            3.0,
+            3.0,
+            268.0,
+            22.0
+          ],
+          "text": "var audioContext:AudioContext;",
+          "confidence": 0.9831687808036804
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "kind": "small_code",
+      "expected": "var node:AudioWorkletNode;",
+      "text": "var node:AudioWorkletNode;",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 7
+      },
+      "preprocessing_seconds": 0.00035379999826545827,
+      "ocr_seconds": 0.20605829999840353,
+      "raw": [
+        {
+          "box": [
+            3.0,
+            1.0,
+            232.0,
+            20.0
+          ],
+          "text": "var node:AudioWorkletNode;",
+          "confidence": 0.9650720953941345
+        }
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "frame": "frames/diagram-820985.jpg",
+      "ocr_seconds": 9.259280999998737,
+      "raw": [
+        {
+          "box": [
+            509.0,
+            71.0,
+            1405.0,
+            149.0
+          ],
+          "text": "AUDIO SYNTHESIS PLAN",
+          "confidence": 0.9985160827636719
+        },
+        {
+          "box": [
+            30.0,
+            218.0,
+            98.0,
+            244.0
+          ],
+          "text": "beep",
+          "confidence": 0.9998599886894226
+        },
+        {
+          "box": [
+            800.0,
+            222.0,
+            998.0,
+            244.0
+          ],
+          "text": "class SineAudioSource",
+          "confidence": 0.9986140727996826
+        },
+        {
+          "box": [
+            997.0,
+            228.0,
+            1005.0,
+            238.0
+          ],
+          "text": "{",
+          "confidence": 0.5729385018348694
+        },
+        {
+          "box": [
+            182.0,
+            275.0,
+            591.0,
+            322.0
+          ],
+          "text": "AUDIO SOURCES",
+          "confidence": 0.9988607168197632
+        },
+        {
+          "box": [
+            835.0,
+            266.0,
+            1104.0,
+            289.0
+          ],
+          "text": "var audioContext:AudioContext;",
+          "confidence": 0.9975283145904541
+        },
+        {
+          "box": [
+            600.0,
+            281.0,
+            683.0,
+            319.0
+          ],
+          "text": "(\u00d718)",
+          "confidence": 0.9896805882453918
+        },
+        {
+          "box": [
+            834.0,
+            288.0,
+            1071.0,
+            313.0
+          ],
+          "text": "var node:AudioWorkletNode;",
+          "confidence": 0.9880131483078003
+        },
+        {
+          "box": [
+            766.0,
+            311.0,
+            796.0,
+            338.0
+          ],
+          "text": "to",
+          "confidence": 0.9994975924491882
+        },
+        {
+          "box": [
+            836.0,
+            333.0,
+            1044.0,
+            356.0
+          ],
+          "text": "public function new() {",
+          "confidence": 0.9902488589286804
+        },
+        {
+          "box": [
+            136.0,
+            359.0,
+            711.0,
+            400.0
+          ],
+          "text": "Manages parameters, like volume",
+          "confidence": 0.9987491369247437
+        },
+        {
+          "box": [
+            871.0,
+            356.0,
+            1173.0,
+            378.0
+          ],
+          "text": "audioContext = new AudioContext();",
+          "confidence": 0.9773315191268921
+        },
+        {
+          "box": [
+            870.0,
+            373.0,
+            1518.0,
+            400.0
+          ],
+          "text": "audioContext.audioWorklet.addModule(\"SineAudioWorklet.js\").then(() ->{",
+          "confidence": 0.967742383480072
+        },
+        {
+          "box": [
+            135.0,
+            405.0,
+            650.0,
+            446.0
+          ],
+          "text": "and pitch, in an Audio Worklet.",
+          "confidence": 0.992680013179779
+        },
+        {
+          "box": [
+            903.0,
+            394.0,
+            1730.0,
+            424.0
+          ],
+          "text": "node = new AudioWorkletNode(audioContext,\"SineAudioWorklet\", { outputChannelCount:[2] });",
+          "confidence": 0.9795970320701599
+        },
+        {
+          "box": [
+            907.0,
+            425.0,
+            1258.0,
+            445.0
+          ],
+          "text": "node.connect(audioContext.destination);",
+          "confidence": 0.9867956638336182
+        },
+        {
+          "box": [
+            874.0,
+            449.0,
+            902.0,
+            469.0
+          ],
+          "text": "});",
+          "confidence": 0.9973875880241394
+        },
+        {
+          "box": [
+            28.0,
+            461.0,
+            85.0,
+            491.0
+          ],
+          "text": "drur",
+          "confidence": 0.9931907057762146
+        },
+        {
+          "box": [
+            134.0,
+            484.0,
+            698.0,
+            527.0
+          ],
+          "text": "triggerNote(pitch, volume, ...)",
+          "confidence": 0.9793320298194885
+        },
+        {
+          "box": [
+            836.0,
+            511.0,
+            1873.0,
+            535.0
+          ],
+          "text": "public function triggerNote(pitch:Float, volume:Float, attack:Float, decay:Float, sustain:Float, release:Float) {",
+          "confidence": 0.9872465133666992
+        },
+        {
+          "box": [
+            871.0,
+            536.0,
+            1315.0,
+            559.0
+          ],
+          "text": "var currentTime:Float = audioContext.currentTime;",
+          "confidence": 0.9907991290092468
+        },
+        {
+          "box": [
+            871.0,
+            580.0,
+            1450.0,
+            606.0
+          ],
+          "text": "node.parameters.get(\"pitch\").setValueAtTime(pitch, currentTime);",
+          "confidence": 0.9819158911705017
+        },
+        {
+          "box": [
+            213.0,
+            607.0,
+            632.0,
+            654.0
+          ],
+          "text": "AUDIO WORKLET",
+          "confidence": 0.9990199208259583
+        },
+        {
+          "box": [
+            873.0,
+            625.0,
+            939.0,
+            646.0
+          ],
+          "text": "// ADSR",
+          "confidence": 0.9829515218734741
+        },
+        {
+          "box": [
+            871.0,
+            647.0,
+            1270.0,
+            670.0
+          ],
+          "text": "node.parameters.get(\"volume\").setValueAtTime",
+          "confidence": 0.9966155886650085
+        },
+        {
+          "box": [
+            1348.0,
+            653.0,
+            1371.0,
+            669.0
+          ],
+          "text": "(0",
+          "confidence": 0.995287299156189
+        },
+        {
+          "box": [
+            1502.0,
+            653.0,
+            1608.0,
+            670.0
+          ],
+          "text": "currentTime",
+          "confidence": 0.99994295835495
+        },
+        {
+          "box": [
+            871.0,
+            670.0,
+            1422.0,
+            695.0
+          ],
+          "text": "node.parameters.get(\"volume\").linearRampToValueAtTime(volume,",
+          "confidence": 0.9924840331077576
+        },
+        {
+          "box": [
+            176.0,
+            681.0,
+            661.0,
+            722.0
+          ],
+          "text": "Plays combinations of sines.",
+          "confidence": 0.9989728331565857
+        },
+        {
+          "box": [
+            1502.0,
+            676.0,
+            1676.0,
+            696.0
+          ],
+          "text": "currentTime+attack",
+          "confidence": 0.9998093843460083
+        },
+        {
+          "box": [
+            870.0,
+            691.0,
+            1732.0,
+            722.0
+          ],
+          "text": "node.parameters.get(\"volume\").linearRampToValueAtTime(volume*sustain, currentTime+attack+decay",
+          "confidence": 0.9829002022743225
+        },
+        {
+          "box": [
+            870.0,
+            713.0,
+            1377.0,
+            742.0
+          ],
+          "text": "node.parameters.get(\"volume\").1inearRampToValueAtTime(0,",
+          "confidence": 0.9901542067527771
+        },
+        {
+          "box": [
+            174.0,
+            724.0,
+            625.0,
+            768.0
+          ],
+          "text": "Runs in a separate thread.",
+          "confidence": 0.9870057702064514
+        },
+        {
+          "box": [
+            1500.0,
+            718.0,
+            1824.0,
+            746.0
+          ],
+          "text": "currentTime+attack+decay+release);",
+          "confidence": 0.998275876045227
+        },
+        {
+          "box": [
+            838.0,
+            780.0,
+            1099.0,
+            806.0
+          ],
+          "text": "// ...other helpful functions",
+          "confidence": 0.9740192294120789
+        }
+      ],
+      "regions": [
+        {
+          "id": "24",
+          "kind": "diagram_label",
+          "expected": "AUDIO SYNTHESIS PLAN",
+          "text": "AUDIO SYNTHESIS PLAN",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "25",
+          "kind": "diagram_label",
+          "expected": "AUDIO SOURCES",
+          "text": "AUDIO SOURCES",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "26",
+          "kind": "diagram_label",
+          "expected": "AUDIO WORKLET",
+          "text": "AUDIO WORKLET",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "27",
+          "kind": "diagram_text",
+          "expected": "Plays combinations of sines.",
+          "text": "Plays combinations of sines.",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "28",
+          "kind": "diagram_text",
+          "expected": "Runs in a separate thread.",
+          "text": "Runs in a separate thread.",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "29",
+          "kind": "small_code",
+          "expected": "var audioContext:AudioContext;",
+          "text": "var audioContext:AudioContext;",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "30",
+          "kind": "small_code",
+          "expected": "var node:AudioWorkletNode;",
+          "text": "var node:AudioWorkletNode;",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        }
+      ]
+    },
+    {
+      "frame": "frames/python-100.jpg",
+      "ocr_seconds": 2.6617985000011686,
+      "raw": [
+        {
+          "box": [
+            175.0,
+            44.0,
+            463.0,
+            121.0
+          ],
+          "text": "hello.py 4",
+          "confidence": 0.9830266833305359
+        },
+        {
+          "box": [
+            434.0,
+            45.0,
+            648.0,
+            112.0
+          ],
+          "text": "hello.py\\",
+          "confidence": 0.9868128299713135
+        },
+        {
+          "box": [
+            709.0,
+            47.0,
+            921.0,
+            106.0
+          ],
+          "text": "have_fun",
+          "confidence": 0.999413251876831
+        },
+        {
+          "box": [
+            1677.0,
+            41.0,
+            1737.0,
+            100.0
+          ],
+          "text": "E",
+          "confidence": 0.7646787762641907
+        },
+        {
+          "box": [
+            1558.0,
+            43.0,
+            1622.0,
+            105.0
+          ],
+          "text": "",
+          "confidence": 0.0
+        },
+        {
+          "box": [
+            191.0,
+            291.0,
+            300.0,
+            346.0
+          ],
+          "text": "def",
+          "confidence": 0.9999541640281677
+        },
+        {
+          "box": [
+            313.0,
+            285.0,
+            690.0,
+            357.0
+          ],
+          "text": "have_fun():",
+          "confidence": 0.9973328113555908
+        },
+        {
+          "box": [
+            320.0,
+            370.0,
+            432.0,
+            430.0
+          ],
+          "text": "for",
+          "confidence": 0.9999836087226868
+        },
+        {
+          "box": [
+            512.0,
+            366.0,
+            917.0,
+            442.0
+          ],
+          "text": "in range(5):",
+          "confidence": 0.9998764991760254
+        },
+        {
+          "box": [
+            458.0,
+            385.0,
+            485.0,
+            415.0
+          ],
+          "text": "1",
+          "confidence": 0.7275789976119995
+        },
+        {
+          "box": [
+            455.0,
+            445.0,
+            725.0,
+            526.0
+          ],
+          "text": "brint(i)",
+          "confidence": 0.9621928930282593
+        },
+        {
+          "box": [
+            566.0,
+            665.0,
+            952.0,
+            758.0
+          ],
+          "text": "SPACES",
+          "confidence": 0.9969277381896973
+        },
+        {
+          "box": [
+            977.0,
+            666.0,
+            1177.0,
+            758.0
+          ],
+          "text": "PER",
+          "confidence": 0.998421847820282
+        },
+        {
+          "box": [
+            1194.0,
+            665.0,
+            1523.0,
+            763.0
+          ],
+          "text": "BLOCK",
+          "confidence": 0.9992234110832214
+        },
+        {
+          "box": [
+            484.0,
+            677.0,
+            535.0,
+            727.0
+          ],
+          "text": "7",
+          "confidence": 0.7489936947822571
+        }
+      ],
+      "regions": [
+        {
+          "id": "16",
+          "kind": "code",
+          "expected": "def have_fun():",
+          "text": "def have_fun():",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "17",
+          "kind": "code",
+          "expected": "for i in range(5):",
+          "text": "for 1 in range(5):",
+          "exact": false,
+          "edits": 1,
+          "cer": 0.05555555555555555,
+          "empty": false,
+          "detections": 3
+        },
+        {
+          "id": "18",
+          "kind": "code",
+          "expected": "print(i)",
+          "text": "brint(i)",
+          "exact": false,
+          "edits": 1,
+          "cer": 0.125,
+          "empty": false,
+          "detections": 1
+        }
+      ]
+    },
+    {
+      "frame": "frames/python-120.jpg",
+      "ocr_seconds": 3.1565751999987697,
+      "raw": [
+        {
+          "box": [
+            172.0,
+            45.0,
+            390.0,
+            119.0
+          ],
+          "text": "hello.py",
+          "confidence": 0.9999815821647644
+        },
+        {
+          "box": [
+            383.0,
+            35.0,
+            831.0,
+            116.0
+          ],
+          "text": "hello.py\\Snake",
+          "confidence": 0.9582449793815613
+        },
+        {
+          "box": [
+            888.0,
+            44.0,
+            1039.0,
+            106.0
+          ],
+          "text": "slither",
+          "confidence": 0.9999796152114868
+        },
+        {
+          "box": [
+            1568.0,
+            50.0,
+            1615.0,
+            96.0
+          ],
+          "text": ":",
+          "confidence": 0.8101527690887451
+        },
+        {
+          "box": [
+            1684.0,
+            47.0,
+            1730.0,
+            93.0
+          ],
+          "text": "T",
+          "confidence": 0.4796348214149475
+        },
+        {
+          "box": [
+            369.0,
+            64.0,
+            402.0,
+            98.0
+          ],
+          "text": "7",
+          "confidence": 0.21019086241722107
+        },
+        {
+          "box": [
+            192.0,
+            214.0,
+            360.0,
+            272.0
+          ],
+          "text": "class",
+          "confidence": 0.9999685287475586
+        },
+        {
+          "box": [
+            385.0,
+            209.0,
+            655.0,
+            280.0
+          ],
+          "text": "Reptile:",
+          "confidence": 0.9999440908432007
+        },
+        {
+          "box": [
+            1234.0,
+            277.0,
+            1743.0,
+            545.0
+          ],
+          "text": "OOP",
+          "confidence": 0.8707332015037537
+        },
+        {
+          "box": [
+            255.0,
+            293.0,
+            365.0,
+            353.0
+          ],
+          "text": "def",
+          "confidence": 0.9999663233757019
+        },
+        {
+          "box": [
+            449.0,
+            292.0,
+            883.0,
+            359.0
+          ],
+          "text": "init_(self,",
+          "confidence": 0.9787822961807251
+        },
+        {
+          "box": [
+            882.0,
+            293.0,
+            1148.0,
+            362.0
+          ],
+          "text": "length):",
+          "confidence": 0.9990216493606567
+        },
+        {
+          "box": [
+            322.0,
+            374.0,
+            697.0,
+            440.0
+          ],
+          "text": "self.length",
+          "confidence": 0.9990482330322266
+        },
+        {
+          "box": [
+            779.0,
+            373.0,
+            992.0,
+            444.0
+          ],
+          "text": "length",
+          "confidence": 0.9987066388130188
+        },
+        {
+          "box": [
+            191.0,
+            539.0,
+            362.0,
+            598.0
+          ],
+          "text": "class",
+          "confidence": 0.9999592900276184
+        },
+        {
+          "box": [
+            381.0,
+            538.0,
+            882.0,
+            607.0
+          ],
+          "text": "Snake(Reptile):",
+          "confidence": 0.9996917843818665
+        },
+        {
+          "box": [
+            323.0,
+            623.0,
+            433.0,
+            679.0
+          ],
+          "text": "def",
+          "confidence": 0.9999644160270691
+        },
+        {
+          "box": [
+            446.0,
+            618.0,
+            918.0,
+            687.0
+          ],
+          "text": "slither(self):",
+          "confidence": 0.9997900128364563
+        },
+        {
+          "box": [
+            452.0,
+            700.0,
+            1063.0,
+            770.0
+          ],
+          "text": "print(\"I'm a snake",
+          "confidence": 0.9541965126991272
+        },
+        {
+          "box": [
+            1097.0,
+            704.0,
+            1155.0,
+            758.0
+          ],
+          "text": "a",
+          "confidence": 0.6142460703849792
+        }
+      ],
+      "regions": [
+        {
+          "id": "19",
+          "kind": "code",
+          "expected": "class Reptile:",
+          "text": "class Reptile:",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "20",
+          "kind": "code",
+          "expected": "def __init__(self, length):",
+          "text": "def init_(self, length):",
+          "exact": false,
+          "edits": 3,
+          "cer": 0.1111111111111111,
+          "empty": false,
+          "detections": 3
+        },
+        {
+          "id": "21",
+          "kind": "code",
+          "expected": "self.length = length",
+          "text": "self.length length",
+          "exact": false,
+          "edits": 2,
+          "cer": 0.1,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "22",
+          "kind": "code",
+          "expected": "class Snake(Reptile):",
+          "text": "class Snake(Reptile):",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "23",
+          "kind": "code",
+          "expected": "def slither(self):",
+          "text": "def slither(self):",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        }
+      ]
+    },
+    {
+      "frame": "frames/python-90.jpg",
+      "ocr_seconds": 1.8087392000015825,
+      "raw": [
+        {
+          "box": [
+            775.0,
+            297.0,
+            1045.0,
+            363.0
+          ],
+          "text": "if True:",
+          "confidence": 0.9869444370269775
+        },
+        {
+          "box": [
+            902.0,
+            373.0,
+            1344.0,
+            445.0
+          ],
+          "text": "if condition:",
+          "confidence": 0.9979338049888611
+        },
+        {
+          "box": [
+            1037.0,
+            456.0,
+            1473.0,
+            533.0
+          ],
+          "text": "print(\"true\")",
+          "confidence": 0.9984318614006042
+        },
+        {
+          "box": [
+            906.0,
+            546.0,
+            1078.0,
+            606.0
+          ],
+          "text": "else:",
+          "confidence": 0.9999381899833679
+        },
+        {
+          "box": [
+            1038.0,
+            619.0,
+            1504.0,
+            696.0
+          ],
+          "text": "print(\"false\")",
+          "confidence": 0.9996676445007324
+        }
+      ],
+      "regions": [
+        {
+          "id": "11",
+          "kind": "code",
+          "expected": "if True:",
+          "text": "if True:",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "12",
+          "kind": "code",
+          "expected": "if condition:",
+          "text": "if condition:",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "13",
+          "kind": "code",
+          "expected": "print(\"true\")",
+          "text": "print(\"true\")",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "14",
+          "kind": "code",
+          "expected": "else:",
+          "text": "else:",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "15",
+          "kind": "code",
+          "expected": "print(\"false\")",
+          "text": "print(\"false\")",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 1
+        }
+      ]
+    }
+  ],
+  "total_seconds": 23.676663099999132,
+  "association_rule": "Single-line labeled ROIs: detected-box center inside ROI, then ascending x; quantized-y initial scoring preserved in attempts"
+}

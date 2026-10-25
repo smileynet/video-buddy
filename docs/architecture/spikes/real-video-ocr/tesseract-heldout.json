@@ -1,0 +1,2533 @@
+{
+  "engine": "tesseract",
+  "phase": "heldout",
+  "load_seconds": 6.000009307172149e-07,
+  "cases": [
+    {
+      "id": "11",
+      "kind": "code",
+      "expected": "if True:",
+      "text": "ap TRNe?",
+      "exact": false,
+      "edits": 5,
+      "cer": 0.625,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.009608399999706307,
+      "ocr_seconds": 0.08144069999980275,
+      "raw": []
+    },
+    {
+      "id": "12",
+      "kind": "code",
+      "expected": "if condition:",
+      "text": "if condition:",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0004483999982767273,
+      "ocr_seconds": 0.0773202999989735,
+      "raw": []
+    },
+    {
+      "id": "13",
+      "kind": "code",
+      "expected": "print(\"true\")",
+      "text": "print(\"true\")",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0004902999971818645,
+      "ocr_seconds": 0.0797497999992629,
+      "raw": []
+    },
+    {
+      "id": "14",
+      "kind": "code",
+      "expected": "else:",
+      "text": "else:",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.00041849999979604036,
+      "ocr_seconds": 0.06905980000010459,
+      "raw": []
+    },
+    {
+      "id": "15",
+      "kind": "code",
+      "expected": "print(\"false\")",
+      "text": "print(\"false\")",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005844000006618444,
+      "ocr_seconds": 0.0794397999998182,
+      "raw": []
+    },
+    {
+      "id": "16",
+      "kind": "code",
+      "expected": "def have_fun():",
+      "text": "def have fun():",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.06666666666666667,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005130999998073094,
+      "ocr_seconds": 0.08399740000095335,
+      "raw": []
+    },
+    {
+      "id": "17",
+      "kind": "code",
+      "expected": "for i in range(5):",
+      "text": "for i in range(5):",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.000598900001932634,
+      "ocr_seconds": 0.08437639999829116,
+      "raw": []
+    },
+    {
+      "id": "18",
+      "kind": "code",
+      "expected": "print(i)",
+      "text": "brint(i)",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.125,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.000483600000734441,
+      "ocr_seconds": 0.07205709999834653,
+      "raw": []
+    },
+    {
+      "id": "19",
+      "kind": "code",
+      "expected": "class Reptile:",
+      "text": "class Reptile:",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005548999979509972,
+      "ocr_seconds": 0.08504530000209343,
+      "raw": []
+    },
+    {
+      "id": "20",
+      "kind": "code",
+      "expected": "def __init__(self, length):",
+      "text": "def _init__(self, length):",
+      "exact": false,
+      "edits": 1,
+      "cer": 0.037037037037037035,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0008459999990009237,
+      "ocr_seconds": 0.0940974000004644,
+      "raw": []
+    },
+    {
+      "id": "21",
+      "kind": "code",
+      "expected": "self.length = length",
+      "text": "self.length = length |",
+      "exact": false,
+      "edits": 2,
+      "cer": 0.1,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005826999986311421,
+      "ocr_seconds": 0.08442419999846607,
+      "raw": []
+    },
+    {
+      "id": "22",
+      "kind": "code",
+      "expected": "class Snake(Reptile):",
+      "text": "class Snake(Reptile):",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0007073999986459967,
+      "ocr_seconds": 0.09219500000108383,
+      "raw": []
+    },
+    {
+      "id": "23",
+      "kind": "code",
+      "expected": "def slither(self):",
+      "text": "def slither(self):",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0006673999996564817,
+      "ocr_seconds": 0.08759979999740608,
+      "raw": []
+    },
+    {
+      "id": "24",
+      "kind": "diagram_label",
+      "expected": "AUDIO SYNTHESIS PLAN",
+      "text": "AUDIO SYNTHESIS PLAN",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.001276700000744313,
+      "ocr_seconds": 0.10215439999956288,
+      "raw": []
+    },
+    {
+      "id": "25",
+      "kind": "diagram_label",
+      "expected": "AUDIO SOURCES",
+      "text": "AUDIO SOURCES",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0006399000012606848,
+      "ocr_seconds": 0.07724100000268663,
+      "raw": []
+    },
+    {
+      "id": "26",
+      "kind": "diagram_label",
+      "expected": "AUDIO WORKLET",
+      "text": "AUDIO WORKLET",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0005357000009098556,
+      "ocr_seconds": 0.07793239999955404,
+      "raw": []
+    },
+    {
+      "id": "27",
+      "kind": "diagram_text",
+      "expected": "Plays combinations of sines.",
+      "text": "Plays combinations of sines.",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.00048719999904278666,
+      "ocr_seconds": 0.0785875000001397,
+      "raw": []
+    },
+    {
+      "id": "28",
+      "kind": "diagram_text",
+      "expected": "Runs in a separate thread.",
+      "text": "Runs in a separate thread.",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.00044979999802308157,
+      "ocr_seconds": 0.0786402999983693,
+      "raw": []
+    },
+    {
+      "id": "29",
+      "kind": "small_code",
+      "expected": "var audioContext:AudioContext;",
+      "text": "var audioContext :AudioContext; |",
+      "exact": false,
+      "edits": 3,
+      "cer": 0.1,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.0003845999999612104,
+      "ocr_seconds": 0.07887140000093495,
+      "raw": []
+    },
+    {
+      "id": "30",
+      "kind": "small_code",
+      "expected": "var node:AudioWorkletNode;",
+      "text": "var node:AudioWorkletNode;",
+      "exact": true,
+      "edits": 0,
+      "cer": 0.0,
+      "empty": false,
+      "config": {
+        "scale": 1,
+        "psm": 13
+      },
+      "preprocessing_seconds": 0.00031570000282954425,
+      "ocr_seconds": 0.07685209999908693,
+      "raw": []
+    }
+  ],
+  "frames": [
+    {
+      "frame": "frames/diagram-820985.jpg",
+      "ocr_seconds": 0.6904493000001821,
+      "raw": [
+        {
+          "box": [
+            807,
+            230,
+            847,
+            241
+          ],
+          "text": "class",
+          "confidence": 93.250298
+        },
+        {
+          "box": [
+            858,
+            228,
+            989,
+            241
+          ],
+          "text": "SineAudioSource",
+          "confidence": 91.925713
+        },
+        {
+          "box": [
+            1000,
+            227,
+            1006,
+            242
+          ],
+          "text": "{",
+          "confidence": 93.093575
+        },
+        {
+          "box": [
+            841,
+            277,
+            865,
+            285
+          ],
+          "text": "var",
+          "confidence": 88.512955
+        },
+        {
+          "box": [
+            876,
+            271,
+            1102,
+            285
+          ],
+          "text": "audioContext",
+          "confidence": 80.873283
+        },
+        {
+          "box": [
+            984,
+            263,
+            990,
+            294
+          ],
+          "text": ":",
+          "confidence": 38.794243
+        },
+        {
+          "box": [
+            992,
+            271,
+            1102,
+            285
+          ],
+          "text": "AudioContext;",
+          "confidence": 38.794243
+        },
+        {
+          "box": [
+            842,
+            300,
+            862,
+            307
+          ],
+          "text": "var",
+          "confidence": 90.952103
+        },
+        {
+          "box": [
+            876,
+            295,
+            916,
+            307
+          ],
+          "text": "node:",
+          "confidence": 80.231926
+        },
+        {
+          "box": [
+            920,
+            293,
+            1067,
+            308
+          ],
+          "text": "AudioWorkletNode;",
+          "confidence": 80.231926
+        },
+        {
+          "box": [
+            185,
+            282,
+            344,
+            317
+          ],
+          "text": "AUDIO",
+          "confidence": 96.02755
+        },
+        {
+          "box": [
+            362,
+            282,
+            584,
+            317
+          ],
+          "text": "SOURCES",
+          "confidence": 92.364944
+        },
+        {
+          "box": [
+            608,
+            291,
+            677,
+            314
+          ],
+          "text": "\u00ab:8)",
+          "confidence": 75.203003
+        },
+        {
+          "box": [
+            841,
+            341,
+            891,
+            355
+          ],
+          "text": "public",
+          "confidence": 94.070328
+        },
+        {
+          "box": [
+            903,
+            340,
+            970,
+            352
+          ],
+          "text": "function",
+          "confidence": 94.070328
+        },
+        {
+          "box": [
+            982,
+            343,
+            988,
+            351
+          ],
+          "text": "ni",
+          "confidence": 68.384598
+        },
+        {
+          "box": [
+            876,
+            362,
+            980,
+            375
+          ],
+          "text": "audioContext",
+          "confidence": 90.21257
+        },
+        {
+          "box": [
+            1025,
+            366,
+            1033,
+            373
+          ],
+          "text": "w",
+          "confidence": 64.225914
+        },
+        {
+          "box": [
+            1043,
+            361,
+            1155,
+            374
+          ],
+          "text": "AudioContext",
+          "confidence": 39.620293
+        },
+        {
+          "box": [
+            1163,
+            364,
+            1174,
+            375
+          ],
+          "text": "();",
+          "confidence": 39.620293
+        },
+        {
+          "box": [
+            141,
+            365,
+            287,
+            399
+          ],
+          "text": "Manages",
+          "confidence": 96.387779
+        },
+        {
+          "box": [
+            301,
+            367,
+            502,
+            400
+          ],
+          "text": "parameters,",
+          "confidence": 96.39296
+        },
+        {
+          "box": [
+            517,
+            365,
+            573,
+            392
+          ],
+          "text": "like",
+          "confidence": 95.355682
+        },
+        {
+          "box": [
+            586,
+            365,
+            707,
+            392
+          ],
+          "text": "volume",
+          "confidence": 96.820526
+        },
+        {
+          "box": [
+            876,
+            382,
+            1257,
+            396
+          ],
+          "text": "audioContext",
+          "confidence": 88.342262
+        },
+        {
+          "box": [
+            982,
+            378,
+            992,
+            404
+          ],
+          "text": ".",
+          "confidence": 69.749413
+        },
+        {
+          "box": [
+            995,
+            378,
+            1091,
+            404
+          ],
+          "text": "audioWorklet",
+          "confidence": 69.749413
+        },
+        {
+          "box": [
+            1099,
+            378,
+            1260,
+            404
+          ],
+          "text": ".addModule(\"SineAu",
+          "confidence": 64.973557
+        },
+        {
+          "box": [
+            1314,
+            381,
+            1329,
+            393
+          ],
+          "text": "k1",
+          "confidence": 45.245895
+        },
+        {
+          "box": [
+            1360,
+            385,
+            1375,
+            395
+          ],
+          "text": "is",
+          "confidence": 52.431664
+        },
+        {
+          "box": [
+            1398,
+            380,
+            1466,
+            395
+          ],
+          "text": "-then(()",
+          "confidence": 47.178741
+        },
+        {
+          "box": [
+            1480,
+            386,
+            1495,
+            392
+          ],
+          "text": "->",
+          "confidence": 70.811005
+        },
+        {
+          "box": [
+            1706,
+            403,
+            1707,
+            408
+          ],
+          "text": "}",
+          "confidence": 73.90242
+        },
+        {
+          "box": [
+            911,
+            406,
+            944,
+            418
+          ],
+          "text": "node",
+          "confidence": 96.541962
+        },
+        {
+          "box": [
+            955,
+            412,
+            962,
+            416
+          ],
+          "text": "=",
+          "confidence": 96.770966
+        },
+        {
+          "box": [
+            991,
+            412,
+            997,
+            418
+          ],
+          "text": "w",
+          "confidence": 90.475113
+        },
+        {
+          "box": [
+            1007,
+            405,
+            1273,
+            419
+          ],
+          "text": "AudioWorkletNode(audioContext,",
+          "confidence": 67.305222
+        },
+        {
+          "box": [
+            1472,
+            411,
+            1473,
+            417
+          ],
+          "text": "{",
+          "confidence": 91.07354
+        },
+        {
+          "box": [
+            1472,
+            404,
+            1473,
+            409
+          ],
+          "text": "f",
+          "confidence": 0.0
+        },
+        {
+          "box": [
+            1487,
+            402,
+            1660,
+            418
+          ],
+          "text": "outputChannelCount",
+          "confidence": 78.134178
+        },
+        {
+          "box": [
+            1655,
+            396,
+            1661,
+            424
+          ],
+          "text": ":",
+          "confidence": 78.134178
+        },
+        {
+          "box": [
+            1667,
+            402,
+            1690,
+            417
+          ],
+          "text": "[2]",
+          "confidence": 96.685524
+        },
+        {
+          "box": [
+            1706,
+            410,
+            1708,
+            416
+          ],
+          "text": "}",
+          "confidence": 90.850403
+        },
+        {
+          "box": [
+            1723,
+            412,
+            1727,
+            417
+          ],
+          "text": "5",
+          "confidence": 76.709946
+        },
+        {
+          "box": [
+            139,
+            410,
+            197,
+            437
+          ],
+          "text": "and",
+          "confidence": 96.81488
+        },
+        {
+          "box": [
+            212,
+            410,
+            298,
+            445
+          ],
+          "text": "pitch,",
+          "confidence": 96.263977
+        },
+        {
+          "box": [
+            313,
+            410,
+            338,
+            437
+          ],
+          "text": "in",
+          "confidence": 96.010483
+        },
+        {
+          "box": [
+            353,
+            417,
+            389,
+            437
+          ],
+          "text": "an",
+          "confidence": 96.62458
+        },
+        {
+          "box": [
+            403,
+            410,
+            495,
+            437
+          ],
+          "text": "Audio",
+          "confidence": 93.299698
+        },
+        {
+          "box": [
+            509,
+            410,
+            644,
+            437
+          ],
+          "text": "Worklet.",
+          "confidence": 90.921082
+        },
+        {
+          "box": [
+            911,
+            422,
+            951,
+            450
+          ],
+          "text": "node.",
+          "confidence": 83.062569
+        },
+        {
+          "box": [
+            960,
+            430,
+            1012,
+            441
+          ],
+          "text": "connect",
+          "confidence": 85.182365
+        },
+        {
+          "box": [
+            1019,
+            428,
+            1129,
+            441
+          ],
+          "text": "(audioContext",
+          "confidence": 89.441505
+        },
+        {
+          "box": [
+            1135,
+            422,
+            1243,
+            450
+          ],
+          "text": ".destination)",
+          "confidence": 89.19252
+        },
+        {
+          "box": [
+            1251,
+            431,
+            1255,
+            442
+          ],
+          "text": ";",
+          "confidence": 89.19252
+        },
+        {
+          "box": [
+            877,
+            452,
+            899,
+            467
+          ],
+          "text": "Ys",
+          "confidence": 48.941704
+        },
+        {
+          "box": [
+            634,
+            510,
+            657,
+            515
+          ],
+          "text": "ae",
+          "confidence": 70.57489
+        },
+        {
+          "box": [
+            139,
+            492,
+            457,
+            522
+          ],
+          "text": "triggerNote(pitch,",
+          "confidence": 91.885056
+        },
+        {
+          "box": [
+            484,
+            493,
+            603,
+            520
+          ],
+          "text": "volume,",
+          "confidence": 96.456871
+        },
+        {
+          "box": [
+            687,
+            492,
+            695,
+            521
+          ],
+          "text": ")",
+          "confidence": 91.781311
+        },
+        {
+          "box": [
+            841,
+            519,
+            882,
+            533
+          ],
+          "text": "publi",
+          "confidence": 95.450302
+        },
+        {
+          "box": [
+            904,
+            520,
+            970,
+            530
+          ],
+          "text": "function",
+          "confidence": 93.266098
+        },
+        {
+          "box": [
+            981,
+            518,
+            1121,
+            533
+          ],
+          "text": "triggerNote(pitcl",
+          "confidence": 9.07943
+        },
+        {
+          "box": [
+            1151,
+            518,
+            1192,
+            533
+          ],
+          "text": "loat,",
+          "confidence": 89.857208
+        },
+        {
+          "box": [
+            1204,
+            518,
+            1264,
+            530
+          ],
+          "text": "volume:",
+          "confidence": 96.968658
+        },
+        {
+          "box": [
+            1278,
+            518,
+            1318,
+            533
+          ],
+          "text": "loat,",
+          "confidence": 92.299606
+        },
+        {
+          "box": [
+            1331,
+            518,
+            1447,
+            533
+          ],
+          "text": "attack:Float,",
+          "confidence": 92.66011
+        },
+        {
+          "box": [
+            1460,
+            518,
+            1567,
+            533
+          ],
+          "text": "decay:Float,",
+          "confidence": 92.832603
+        },
+        {
+          "box": [
+            1581,
+            518,
+            1708,
+            533
+          ],
+          "text": "sustain:Float,",
+          "confidence": 92.950905
+        },
+        {
+          "box": [
+            1722,
+            517,
+            1842,
+            530
+          ],
+          "text": "release:Float",
+          "confidence": 92.985451
+        },
+        {
+          "box": [
+            876,
+            545,
+            878,
+            549
+          ],
+          "text": "\u00b0",
+          "confidence": 15.440323
+        },
+        {
+          "box": [
+            911,
+            541,
+            1059,
+            553
+          ],
+          "text": "currentTime:Float",
+          "confidence": 91.53495
+        },
+        {
+          "box": [
+            1070,
+            547,
+            1078,
+            551
+          ],
+          "text": "=",
+          "confidence": 92.701805
+        },
+        {
+          "box": [
+            1088,
+            541,
+            1310,
+            556
+          ],
+          "text": "audioContext.currentTime;",
+          "confidence": 92.234894
+        },
+        {
+          "box": [
+            876,
+            586,
+            916,
+            598
+          ],
+          "text": "node.",
+          "confidence": 6.790962
+        },
+        {
+          "box": [
+            921,
+            575,
+            1006,
+            608
+          ],
+          "text": "parameters",
+          "confidence": 6.790962
+        },
+        {
+          "box": [
+            1010,
+            587,
+            1319,
+            602
+          ],
+          "text": "-get(\"pitch\").setValueAtTime(pitch,",
+          "confidence": 63.870865
+        },
+        {
+          "box": [
+            1332,
+            587,
+            1431,
+            599
+          ],
+          "text": "currentTime)",
+          "confidence": 91.1707
+        },
+        {
+          "box": [
+            1443,
+            591,
+            1447,
+            602
+          ],
+          "text": ";",
+          "confidence": 92.31282
+        },
+        {
+          "box": [
+            903,
+            631,
+            926,
+            642
+          ],
+          "text": "ADS!",
+          "confidence": 36.51701
+        },
+        {
+          "box": [
+            216,
+            614,
+            376,
+            650
+          ],
+          "text": "AUDIO",
+          "confidence": 91.553474
+        },
+        {
+          "box": [
+            392,
+            614,
+            628,
+            650
+          ],
+          "text": "WORKLET",
+          "confidence": 89.156326
+        },
+        {
+          "box": [
+            876,
+            653,
+            909,
+            665
+          ],
+          "text": "node",
+          "confidence": 95.454071
+        },
+        {
+          "box": [
+            913,
+            654,
+            1006,
+            668
+          ],
+          "text": "-parameters",
+          "confidence": 51.312485
+        },
+        {
+          "box": [
+            1017,
+            654,
+            1047,
+            668
+          ],
+          "text": "get",
+          "confidence": 40.91275
+        },
+        {
+          "box": [
+            1042,
+            643,
+            1051,
+            675
+          ],
+          "text": "(",
+          "confidence": 40.91275
+        },
+        {
+          "box": [
+            1089,
+            658,
+            1104,
+            665
+          ],
+          "text": "um",
+          "confidence": 81.880363
+        },
+        {
+          "box": [
+            1135,
+            654,
+            1266,
+            667
+          ],
+          "text": "-setValueAtTime",
+          "confidence": 80.629066
+        },
+        {
+          "box": [
+            1351,
+            656,
+            1373,
+            670
+          ],
+          "text": "(@,",
+          "confidence": 77.485489
+        },
+        {
+          "box": [
+            1506,
+            656,
+            1607,
+            669
+          ],
+          "text": "currentTime",
+          "confidence": 85.539841
+        },
+        {
+          "box": [
+            1811,
+            661,
+            1812,
+            669
+          ],
+          "text": ")",
+          "confidence": 88.213104
+        },
+        {
+          "box": [
+            1817,
+            668,
+            1822,
+            673
+          ],
+          "text": "3",
+          "confidence": 86.230301
+        },
+        {
+          "box": [
+            876,
+            675,
+            909,
+            687
+          ],
+          "text": "node",
+          "confidence": 96.911957
+        },
+        {
+          "box": [
+            913,
+            677,
+            1006,
+            690
+          ],
+          "text": "-parameters",
+          "confidence": 68.683235
+        },
+        {
+          "box": [
+            1017,
+            677,
+            1047,
+            691
+          ],
+          "text": "get(",
+          "confidence": 86.074791
+        },
+        {
+          "box": [
+            1088,
+            681,
+            1104,
+            688
+          ],
+          "text": "\u2018um",
+          "confidence": 67.835999
+        },
+        {
+          "box": [
+            1127,
+            681,
+            1129,
+            689
+          ],
+          "text": ")",
+          "confidence": 75.689079
+        },
+        {
+          "box": [
+            1135,
+            677,
+            1419,
+            694
+          ],
+          "text": ".linearRampToValueAtTime(volume,",
+          "confidence": 27.506416
+        },
+        {
+          "box": [
+            1506,
+            680,
+            1672,
+            692
+          ],
+          "text": "currentTime+attack",
+          "confidence": 82.215736
+        },
+        {
+          "box": [
+            876,
+            698,
+            909,
+            710
+          ],
+          "text": "node",
+          "confidence": 96.368462
+        },
+        {
+          "box": [
+            1089,
+            703,
+            1104,
+            711
+          ],
+          "text": "um",
+          "confidence": 78.540359
+        },
+        {
+          "box": [
+            1810,
+            685,
+            1812,
+            694
+          ],
+          "text": ")",
+          "confidence": 91.360474
+        },
+        {
+          "box": [
+            181,
+            686,
+            268,
+            721
+          ],
+          "text": "Plays",
+          "confidence": 96.459572
+        },
+        {
+          "box": [
+            282,
+            687,
+            504,
+            714
+          ],
+          "text": "combinations",
+          "confidence": 96.17691
+        },
+        {
+          "box": [
+            518,
+            687,
+            548,
+            714
+          ],
+          "text": "of",
+          "confidence": 93.268532
+        },
+        {
+          "box": [
+            560,
+            687,
+            655,
+            714
+          ],
+          "text": "sines.",
+          "confidence": 92.657875
+        },
+        {
+          "box": [
+            913,
+            699,
+            1006,
+            713
+          ],
+          "text": "-parameters",
+          "confidence": 62.902111
+        },
+        {
+          "box": [
+            1017,
+            700,
+            1046,
+            714
+          ],
+          "text": "get",
+          "confidence": 2.868103
+        },
+        {
+          "box": [
+            1062,
+            703,
+            1072,
+            711
+          ],
+          "text": "(\"vc",
+          "confidence": 2.868103
+        },
+        {
+          "box": [
+            1135,
+            709,
+            1138,
+            712
+          ],
+          "text": "-",
+          "confidence": 69.211082
+        },
+        {
+          "box": [
+            1143,
+            699,
+            1493,
+            717
+          ],
+          "text": "LinearRampToValueAtTime(volume*sustain,",
+          "confidence": 69.211082
+        },
+        {
+          "box": [
+            1506,
+            703,
+            1729,
+            719
+          ],
+          "text": "currentTime+attack+decay",
+          "confidence": 90.084175
+        },
+        {
+          "box": [
+            1810,
+            707,
+            1812,
+            716
+          ],
+          "text": ")",
+          "confidence": 92.569237
+        },
+        {
+          "box": [
+            1817,
+            715,
+            1822,
+            720
+          ],
+          "text": "3",
+          "confidence": 86.358238
+        },
+        {
+          "box": [
+            876,
+            719,
+            909,
+            731
+          ],
+          "text": "node",
+          "confidence": 96.878365
+        },
+        {
+          "box": [
+            913,
+            721,
+            1006,
+            734
+          ],
+          "text": "-parameters",
+          "confidence": 51.545757
+        },
+        {
+          "box": [
+            1017,
+            721,
+            1041,
+            735
+          ],
+          "text": "get",
+          "confidence": 57.75375
+        },
+        {
+          "box": [
+            1045,
+            726,
+            1047,
+            733
+          ],
+          "text": "(",
+          "confidence": 57.75375
+        },
+        {
+          "box": [
+            1089,
+            725,
+            1112,
+            733
+          ],
+          "text": "ume",
+          "confidence": 87.214584
+        },
+        {
+          "box": [
+            1135,
+            721,
+            1373,
+            738
+          ],
+          "text": "-linearRampToValueAtTime(0,",
+          "confidence": 53.036316
+        },
+        {
+          "box": [
+            1506,
+            725,
+            1805,
+            742
+          ],
+          "text": "currentTime+attack+decay+release)",
+          "confidence": 52.950516
+        },
+        {
+          "box": [
+            1818,
+            737,
+            1822,
+            743
+          ],
+          "text": ";",
+          "confidence": 89.376396
+        },
+        {
+          "box": [
+            181,
+            732,
+            262,
+            759
+          ],
+          "text": "Runs",
+          "confidence": 96.658836
+        },
+        {
+          "box": [
+            277,
+            732,
+            302,
+            759
+          ],
+          "text": "in",
+          "confidence": 95.677979
+        },
+        {
+          "box": [
+            317,
+            739,
+            332,
+            759
+          ],
+          "text": "a",
+          "confidence": 95.677979
+        },
+        {
+          "box": [
+            347,
+            734,
+            492,
+            767
+          ],
+          "text": "separate",
+          "confidence": 95.987907
+        },
+        {
+          "box": [
+            506,
+            732,
+            620,
+            759
+          ],
+          "text": "thread.",
+          "confidence": 96.722664
+        },
+        {
+          "box": [
+            896,
+            788,
+            931,
+            799
+          ],
+          "text": "other",
+          "confidence": 95.227798
+        },
+        {
+          "box": [
+            947,
+            788,
+            1006,
+            802
+          ],
+          "text": "helpful",
+          "confidence": 95.227798
+        },
+        {
+          "box": [
+            1017,
+            791,
+            1072,
+            801
+          ],
+          "text": "functic",
+          "confidence": 87.406235
+        }
+      ],
+      "regions": [
+        {
+          "id": "24",
+          "kind": "diagram_label",
+          "expected": "AUDIO SYNTHESIS PLAN",
+          "text": "",
+          "exact": false,
+          "edits": 20,
+          "cer": 1.0,
+          "empty": true,
+          "detections": 0
+        },
+        {
+          "id": "25",
+          "kind": "diagram_label",
+          "expected": "AUDIO SOURCES",
+          "text": "AUDIO SOURCES",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "26",
+          "kind": "diagram_label",
+          "expected": "AUDIO WORKLET",
+          "text": "AUDIO WORKLET",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "27",
+          "kind": "diagram_text",
+          "expected": "Plays combinations of sines.",
+          "text": "Plays combinations of sines.",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 4
+        },
+        {
+          "id": "28",
+          "kind": "diagram_text",
+          "expected": "Runs in a separate thread.",
+          "text": "Runs in a separate thread.",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 5
+        },
+        {
+          "id": "29",
+          "kind": "small_code",
+          "expected": "var audioContext:AudioContext;",
+          "text": "var audioContext : AudioContext;",
+          "exact": false,
+          "edits": 2,
+          "cer": 0.06666666666666667,
+          "empty": false,
+          "detections": 4
+        },
+        {
+          "id": "30",
+          "kind": "small_code",
+          "expected": "var node:AudioWorkletNode;",
+          "text": "var node: AudioWorkletNode;",
+          "exact": false,
+          "edits": 1,
+          "cer": 0.038461538461538464,
+          "empty": false,
+          "detections": 3
+        }
+      ]
+    },
+    {
+      "frame": "frames/python-100.jpg",
+      "ocr_seconds": 0.26944079999884707,
+      "raw": [
+        {
+          "box": [
+            90,
+            46,
+            151,
+            105
+          ],
+          "text": "@",
+          "confidence": 69.517754
+        },
+        {
+          "box": [
+            185,
+            57,
+            373,
+            112
+          ],
+          "text": "hello.py",
+          "confidence": 91.952988
+        },
+        {
+          "box": [
+            396,
+            59,
+            422,
+            95
+          ],
+          "text": "4",
+          "confidence": 97.007446
+        },
+        {
+          "box": [
+            453,
+            57,
+            642,
+            107
+          ],
+          "text": "hello.py\\",
+          "confidence": 90.566116
+        },
+        {
+          "box": [
+            667,
+            44,
+            692,
+            104
+          ],
+          "text": "@",
+          "confidence": 56.531357
+        },
+        {
+          "box": [
+            722,
+            57,
+            913,
+            102
+          ],
+          "text": "have_fun",
+          "confidence": 92.119827
+        },
+        {
+          "box": [
+            1406,
+            44,
+            1845,
+            107
+          ],
+          "text": "py",
+          "confidence": 65.831421
+        },
+        {
+          "box": [
+            1589,
+            21,
+            1642,
+            111
+          ],
+          "text": "9",
+          "confidence": 58.729813
+        },
+        {
+          "box": [
+            1679,
+            21,
+            1725,
+            111
+          ],
+          "text": "O",
+          "confidence": 77.550522
+        },
+        {
+          "box": [
+            1769,
+            21,
+            1845,
+            111
+          ],
+          "text": "--",
+          "confidence": 0.0
+        },
+        {
+          "box": [
+            196,
+            297,
+            291,
+            340
+          ],
+          "text": "def",
+          "confidence": 93.07811
+        },
+        {
+          "box": [
+            330,
+            295,
+            678,
+            352
+          ],
+          "text": "have_fun():",
+          "confidence": 90.752838
+        },
+        {
+          "box": [
+            328,
+            379,
+            422,
+            422
+          ],
+          "text": "for",
+          "confidence": 96.029442
+        },
+        {
+          "box": [
+            463,
+            380,
+            487,
+            421
+          ],
+          "text": "i",
+          "confidence": 94.042778
+        },
+        {
+          "box": [
+            529,
+            380,
+            586,
+            421
+          ],
+          "text": "in",
+          "confidence": 93.273071
+        },
+        {
+          "box": [
+            629,
+            377,
+            910,
+            434
+          ],
+          "text": "range(5):",
+          "confidence": 91.431122
+        },
+        {
+          "box": [
+            210,
+            446,
+            250,
+            502
+          ],
+          "text": "?",
+          "confidence": 50.693935
+        },
+        {
+          "box": [
+            460,
+            443,
+            714,
+            525
+          ],
+          "text": "brint(i)",
+          "confidence": 81.180145
+        },
+        {
+          "box": [
+            1859,
+            737,
+            1918,
+            745
+          ],
+          "text": "\u2014",
+          "confidence": 71.605698
+        },
+        {
+          "box": [
+            161,
+            558,
+            256,
+            842
+          ],
+          "text": "Pr",
+          "confidence": 33.382103
+        },
+        {
+          "box": [
+            326,
+            558,
+            445,
+            842
+          ],
+          "text": "Jil",
+          "confidence": 17.311699
+        },
+        {
+          "box": [
+            492,
+            558,
+            540,
+            842
+          ],
+          "text": "+",
+          "confidence": 17.676079
+        },
+        {
+          "box": [
+            587,
+            558,
+            919,
+            842
+          ],
+          "text": "SPACES",
+          "confidence": 90.305542
+        },
+        {
+          "box": [
+            989,
+            558,
+            1156,
+            842
+          ],
+          "text": "PER",
+          "confidence": 96.494499
+        },
+        {
+          "box": [
+            1226,
+            558,
+            1534,
+            842
+          ],
+          "text": "BLOCK",
+          "confidence": 94.443558
+        }
+      ],
+      "regions": [
+        {
+          "id": "16",
+          "kind": "code",
+          "expected": "def have_fun():",
+          "text": "def have_fun():",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "17",
+          "kind": "code",
+          "expected": "for i in range(5):",
+          "text": "for i in range(5):",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 4
+        },
+        {
+          "id": "18",
+          "kind": "code",
+          "expected": "print(i)",
+          "text": "brint(i)",
+          "exact": false,
+          "edits": 1,
+          "cer": 0.125,
+          "empty": false,
+          "detections": 1
+        }
+      ]
+    },
+    {
+      "frame": "frames/python-120.jpg",
+      "ocr_seconds": 0.30867289999878267,
+      "raw": [
+        {
+          "box": [
+            90,
+            46,
+            151,
+            105
+          ],
+          "text": "@",
+          "confidence": 73.453568
+        },
+        {
+          "box": [
+            184,
+            57,
+            373,
+            112
+          ],
+          "text": "hello.py",
+          "confidence": 91.275627
+        },
+        {
+          "box": [
+            402,
+            44,
+            1032,
+            107
+          ],
+          "text": "hello.py\\\u00a2Snake\\",
+          "confidence": 11.383904
+        },
+        {
+          "box": [
+            839,
+            40,
+            859,
+            116
+          ],
+          "text": "\u00a9",
+          "confidence": 59.655907
+        },
+        {
+          "box": [
+            883,
+            40,
+            1036,
+            116
+          ],
+          "text": "slither",
+          "confidence": 96.378929
+        },
+        {
+          "box": [
+            1406,
+            44,
+            1845,
+            107
+          ],
+          "text": "py",
+          "confidence": 72.233574
+        },
+        {
+          "box": [
+            1589,
+            21,
+            1635,
+            111
+          ],
+          "text": "9",
+          "confidence": 63.799549
+        },
+        {
+          "box": [
+            1679,
+            21,
+            1725,
+            111
+          ],
+          "text": "O",
+          "confidence": 77.417297
+        },
+        {
+          "box": [
+            1769,
+            21,
+            1845,
+            111
+          ],
+          "text": "--",
+          "confidence": 0.0
+        },
+        {
+          "box": [
+            198,
+            221,
+            354,
+            263
+          ],
+          "text": "class",
+          "confidence": 96.50631
+        },
+        {
+          "box": [
+            397,
+            221,
+            645,
+            274
+          ],
+          "text": "Reptile:",
+          "confidence": 95.79998
+        },
+        {
+          "box": [
+            263,
+            302,
+            357,
+            345
+          ],
+          "text": "def",
+          "confidence": 91.389885
+        },
+        {
+          "box": [
+            392,
+            300,
+            844,
+            357
+          ],
+          "text": "_init__(self,",
+          "confidence": 85.111649
+        },
+        {
+          "box": [
+            894,
+            300,
+            1141,
+            357
+          ],
+          "text": "length):",
+          "confidence": 96.613083
+        },
+        {
+          "box": [
+            331,
+            383,
+            686,
+            438
+          ],
+          "text": "self.length",
+          "confidence": 88.124191
+        },
+        {
+          "box": [
+            726,
+            401,
+            752,
+            417
+          ],
+          "text": "=",
+          "confidence": 96.972267
+        },
+        {
+          "box": [
+            794,
+            384,
+            984,
+            438
+          ],
+          "text": "length",
+          "confidence": 96.564568
+        },
+        {
+          "box": [
+            198,
+            548,
+            354,
+            590
+          ],
+          "text": "class",
+          "confidence": 93.019958
+        },
+        {
+          "box": [
+            395,
+            545,
+            877,
+            602
+          ],
+          "text": "Snake(Reptile):",
+          "confidence": 91.742661
+        },
+        {
+          "box": [
+            329,
+            629,
+            423,
+            672
+          ],
+          "text": "def",
+          "confidence": 93.18042
+        },
+        {
+          "box": [
+            463,
+            627,
+            910,
+            684
+          ],
+          "text": "slither(self):",
+          "confidence": 90.613945
+        },
+        {
+          "box": [
+            462,
+            708,
+            787,
+            765
+          ],
+          "text": "print(\"I'm",
+          "confidence": 91.393333
+        },
+        {
+          "box": [
+            826,
+            722,
+            851,
+            753
+          ],
+          "text": "a",
+          "confidence": 76.207924
+        },
+        {
+          "box": [
+            893,
+            711,
+            1051,
+            753
+          ],
+          "text": "snake",
+          "confidence": 76.207924
+        },
+        {
+          "box": [
+            1099,
+            701,
+            1223,
+            765
+          ],
+          "text": "3\")",
+          "confidence": 84.018089
+        },
+        {
+          "box": [
+            192,
+            691,
+            329,
+            774
+          ],
+          "text": "le",
+          "confidence": 35.903404
+        }
+      ],
+      "regions": [
+        {
+          "id": "19",
+          "kind": "code",
+          "expected": "class Reptile:",
+          "text": "class Reptile:",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "20",
+          "kind": "code",
+          "expected": "def __init__(self, length):",
+          "text": "def _init__(self, length):",
+          "exact": false,
+          "edits": 1,
+          "cer": 0.037037037037037035,
+          "empty": false,
+          "detections": 3
+        },
+        {
+          "id": "21",
+          "kind": "code",
+          "expected": "self.length = length",
+          "text": "self.length = length",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 3
+        },
+        {
+          "id": "22",
+          "kind": "code",
+          "expected": "class Snake(Reptile):",
+          "text": "class Snake(Reptile):",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        },
+        {
+          "id": "23",
+          "kind": "code",
+          "expected": "def slither(self):",
+          "text": "def slither(self):",
+          "exact": true,
+          "edits": 0,
+          "cer": 0.0,
+          "empty": false,
+          "detections": 2
+        }
+      ]
+    },
+    {
+      "frame": "frames/python-90.jpg",
+      "ocr_seconds": 0.14612699999997858,
+      "raw": [
+        {
+          "box": [
+            785,
+            351,
+            794,
+            352
+          ],
+          "text": "-",
+          "confidence": 50.574387
+        },
+        {
+          "box": [
+            816,
+            330,
+            841,
+            332
+          ],
+          "text": "ae",
+          "confidence": 35.928024
+        },
+        {
+          "box": [
+            900,
+            321,
+            926,
+            349
+          ],
+          "text": "[i",
+          "confidence": 50.144928
+        },
+        {
+          "box": [
+            956,
+            321,
+            976,
+            349
+          ],
+          "text": "U",
+          "confidence": 82.721581
+        },
+        {
+          "box": [
+            1287,
+            406,
+            1307,
+            432
+          ],
+          "text": "fl",
+          "confidence": 66.293495
+        },
+        {
+          "box": [
+            1227,
+            479,
+            1232,
+            489
+          ],
+          "text": "f",
+          "confidence": 60.956699
+        },
+        {
+          "box": [
+            1258,
+            472,
+            1262,
+            485
+          ],
+          "text": "il",
+          "confidence": 85.255951
+        },
+        {
+          "box": [
+            1116,
+            485,
+            1140,
+            508
+          ],
+          "text": "aL",
+          "confidence": 65.528778
+        },
+        {
+          "box": [
+            1056,
+            651,
+            1075,
+            676
+          ],
+          "text": "9)",
+          "confidence": 31.899895
+        },
+        {
+          "box": [
+            1081,
+            657,
+            1091,
+            676
+          ],
+          "text": "q",
+          "confidence": 65.623344
+        },
+        {
+          "box": [
+            1146,
+            648,
+            1175,
+            678
+          ],
+          "text": "n",
+          "confidence": 90.233864
+        },
+        {
+          "box": [
+            1492,
+            653,
+            1502,
+            676
+          ],
+          "text": ")",
+          "confidence": 84.465164
+        }
+      ],
+      "regions": [
+        {
+          "id": "11",
+          "kind": "code",
+          "expected": "if True:",
+          "text": "- ae [i U",
+          "exact": false,
+          "edits": 9,
+          "cer": 1.125,
+          "empty": false,
+          "detections": 4
+        },
+        {
+          "id": "12",
+          "kind": "code",
+          "expected": "if condition:",
+          "text": "fl",
+          "exact": false,
+          "edits": 12,
+          "cer": 0.9230769230769231,
+          "empty": false,
+          "detections": 1
+        },
+        {
+          "id": "13",
+          "kind": "code",
+          "expected": "print(\"true\")",
+          "text": "aL f il",
+          "exact": false,
+          "edits": 13,
+          "cer": 1.0,
+          "empty": false,
+          "detections": 3
+        },
+        {
+          "id": "14",
+          "kind": "code",
+          "expected": "else:",
+          "text": "",
+          "exact": false,
+          "edits": 5,
+          "cer": 1.0,
+          "empty": true,
+          "detections": 0
+        },
+        {
+          "id": "15",
+          "kind": "code",
+          "expected": "print(\"false\")",
+          "text": "9) q n )",
+          "exact": false,
+          "edits": 13,
+          "cer": 0.9285714285714286,
+          "empty": false,
+          "detections": 4
+        }
+      ]
+    }
+  ],
+  "total_seconds": 3.1046258000023954,
+  "association_rule": "Single-line labeled ROIs: detected-box center inside ROI, then ascending x; quantized-y initial scoring preserved in attempts"
+}

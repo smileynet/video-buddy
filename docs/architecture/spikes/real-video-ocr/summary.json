@@ -1,0 +1,80 @@
+{
+  "easyocr": {
+    "crop": {
+      "regions": 20,
+      "exact": 9,
+      "edits": 25,
+      "characters": 350,
+      "micro_cer": 0.07142857142857142,
+      "empty": 0,
+      "ocr_seconds": 0.7915755000030913
+    },
+    "full_frame": {
+      "regions": 20,
+      "exact": 13,
+      "edits": 15,
+      "characters": 350,
+      "micro_cer": 0.04285714285714286,
+      "empty": 0,
+      "ocr_seconds": 1.7427349999961734
+    },
+    "load_seconds": 3.7705542000003334,
+    "selected": {
+      "scale": 1,
+      "psm": 7
+    },
+    "peak_cuda_allocated_bytes": 2275004416
+  },
+  "paddle": {
+    "crop": {
+      "regions": 20,
+      "exact": 11,
+      "edits": 24,
+      "characters": 350,
+      "micro_cer": 0.06857142857142857,
+      "empty": 0,
+      "ocr_seconds": 4.209324999988894
+    },
+    "full_frame": {
+      "regions": 20,
+      "exact": 16,
+      "edits": 7,
+      "characters": 350,
+      "micro_cer": 0.02,
+      "empty": 0,
+      "ocr_seconds": 16.886393900000257
+    },
+    "load_seconds": 2.5142994999987422,
+    "selected": {
+      "scale": 1,
+      "psm": 7
+    },
+    "peak_cuda_allocated_bytes": null
+  },
+  "tesseract": {
+    "crop": {
+      "regions": 20,
+      "exact": 14,
+      "edits": 13,
+      "characters": 350,
+      "micro_cer": 0.037142857142857144,
+      "empty": 0,
+      "ocr_seconds": 1.6410820999954012
+    },
+    "full_frame": {
+      "regions": 20,
+      "exact": 10,
+      "edits": 77,
+      "characters": 350,
+      "micro_cer": 0.22,
+      "empty": 2,
+      "ocr_seconds": 1.4146899999977904
+    },
+    "load_seconds": 6.000009307172149e-07,
+    "selected": {
+      "scale": 1,
+      "psm": 13
+    },
+    "peak_cuda_allocated_bytes": null
+  }
+}
