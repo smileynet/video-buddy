@@ -1,6 +1,6 @@
 # S1 guide comparison: initial observations
 
-Date: 2026-10-24. Ticket: [12](../../../.tickets/12-spike-guide-task-completion.md). Verdict: **unresolved for task completion**; experiment is in progress. No production integration is justified yet.
+Date: 2026-10-24; reviewed 2026-10-25. Ticket: [12](../../../.tickets/12-spike-guide-task-completion.md). Verdict: **unresolved for task completion**. Initial bounded investigation is complete; the missing reader observation is tracked in [ticket 21](../../../.tickets/21-guide-reader-walkthrough.md). No production integration is justified.
 
 ## Question and options
 
@@ -35,4 +35,4 @@ Metadata: `vb-workspace/intermediates/frames_Qr3VsZYQy4s/frames_meta.json`. That
 2. Repeat on independent command/UI tasks; this conceptual demonstration alone cannot select the production guide contract.
 3. Record comparable costs and counterbalance task order before comparing formats.
 
-Until those observations exist, keep ticket 12 in progress and leave the guide-format winner unresolved. Preserve the probe on its throwaway branch; do not merge its scripts into the product.
+The initial investigation closes with an unresolved verdict, as allowed by the spike contract; the outstanding reader comparison remains explicit in ticket 21. This unblocks evidence-production experiments without treating the guide format as validated. Preserve the probe on its throwaway branch; do not merge its scripts into the product.
