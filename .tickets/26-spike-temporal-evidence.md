@@ -41,3 +41,7 @@ Automatic production integration, unsupported winners, and invented user/quality
 Verify actual supported input modality before running. Freeze essential action/order labels and compare ordered timestamped stills to targeted clips at disclosed evidence/compute budgets. Report action/order/transient-state recall, unsupported claims and incremental cost to close gaps. If no supported native-video harness is available, record it untested rather than relabeling still input as video.
 
 Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.
+
+## Provider coverage expansion
+
+Current-provider comparison is now explicit in29–34. Coordinate shared fixtures/metrics and consume those results rather than duplicating provider installs. Original tested shortlist is not comprehensive market coverage. Final integration28 depends on all coverage dispositions.

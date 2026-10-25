@@ -117,3 +117,67 @@ For official writing/evidence prior art, the prior workflow report already cites
 ## Handoff
 
 Research ticket 24 can close with this decision register while owning execution tickets remain open: 14 exact OCR, 15 speech/timing, 17 adaptation, 18 review UX, 21 fresh-performer usability, 23 model/runtime qualification, 25 subject-window seeking, 26 temporal input, 27 acquisition/recovery and 28 final feature/integration/architecture review. Tickets 19/20 are conditional. Every unresolved claim has a bounded deciding observation or a stated product/access limitation; no smoke result authorizes integration.
+
+## Current-provider coverage expansion (2026-10-25)
+
+Origin: user requested broader current-provider research and comparisons before integration. **The tested shortlist was not an exhaustive market survey.** This bounded refresh covers Google, Ai2, Ultralytics, IDEA and relevant NVIDIA offerings. It records documented contracts, not new inference or quality results. Research owner 29; execution 30–34; final review 28. Catalogs/package metadata were checked on this date. Recheck actual account/model availability when running, and preserve the exact returned version or checkpoint hash.
+
+### Google Gemini — hosted geometry and temporal evidence
+
+**High confidence, documented API; inference untested.** The [current catalog](https://ai.google.dev/gemini-api/docs/models) lists `gemini-4-argon` as flagship and `gemini-3.8-flash` as stable Flash. The [image guide](https://ai.google.dev/gemini-api/docs/image-understanding) examples use `model="gemini-3.8-flash"` for detection/segmentation, with boxes, masks and labels. The described polygon coordinates are “normalized to 0-1000”; boxes use `[ymin,xmin,ymax,xmax]`. Do not assume every model/API version returns a raster PNG mask. Validate schema, coordinates and geometry separately from label correctness.
+
+The [video guide](https://ai.google.dev/gemini-api/docs/video-understanding), updated 2026-10-13, documents “1 frame per second” default static sampling and separate agentic navigation for supported models. Rapid transitions may be absent. Compare ordered source stills, static clips and separately budgeted agentic seeking; record sampling, media resolution and processing mode. Model-native video does not mean every source frame was inspected.
+
+**Representative:** Flash first; Argon only as a conditional escalation after a consequential failure, not an automatic extra arm. Current PyPI `google-genai==2.33.0` is a candidate SDK pin, not a tested runtime. [API terms](https://ai.google.dev/gemini-api/terms) distinguish “Unpaid Services” and “Paid Services”, including different data-use handling. These are service terms, not an open-weights grant. Use public frozen fixtures and an established request/token/cost ceiling. Missing model access, credentials or budget leaves quality untested. Owner 30/26, policy 28.
+
+### Ai2 — general understanding, video pointing and GUI pointing are different jobs
+
+**High confidence, pinned source/cards; hardware fit unmeasured.** [Source revision f3cb1085fbb97c4a4d7fdcadd77cf871bf37a88a](https://github.com/allenai/molmo2/blob/f3cb1085fbb97c4a4d7fdcadd77cf871bf37a88a/README.md) covers Molmo2 and MolmoPoint. [MolmoPoint documentation](https://github.com/allenai/molmo2/blob/f3cb1085fbb97c4a4d7fdcadd77cf871bf37a88a/MOLMO_POINT_README.md) lists general, video and GUI variants; none is automatically an OCR or pixel-mask replacement.
+
+| Representative / exact revision | Supporting source and intended role |
+|---|---|
+| `allenai/Molmo2-4B`, `042abfa7a38879a376cec03d949eff0aefaa0600` | [Card](https://huggingface.co/allenai/Molmo2-4B/blob/042abfa7a38879a376cec03d949eff0aefaa0600/README.md) covers image, video and multi-image understanding; setup specifies `transformers==4.57.1`. Compare action explanations/grounded questions to tested Qwen3-VL 2B, not presumed exact OCR. |
+| `allenai/MolmoPoint-Vid-4B`, `b331ed6c6352e6db967325493c6dae515541a919` | [Card](https://huggingface.co/allenai/MolmoPoint-Vid-4B/blob/b331ed6c6352e6db967325493c6dae515541a919/README.md): “only trained for video pointing”. Compare point trajectories/association; use its grounding-token decoder and preserve object/frame conventions. |
+| `allenai/MolmoPoint-GUI-8B`, `0337d39b721d0ce6fa9b315b158ac11c63e0dedc` | [Card](https://huggingface.co/allenai/MolmoPoint-GUI-8B/blob/0337d39b721d0ce6fa9b315b158ac11c63e0dedc/README.md): “only supports single image input”, returning a point. Locate an instructed control, not a verified action. The example inconsistently names `MolmoPoint-Img-8B`; use the actual GUI repository identity. |
+
+All three card metadata declare Apache 2.0; their use notices warn of third-party datasets with “academic and non-commercial research use only” restrictions. [Code LICENSE](https://github.com/allenai/molmo2/blob/f3cb1085fbb97c4a4d7fdcadd77cf871bf37a88a/LICENSE) is Apache 2.0. Record complete notices/intended use rather than claiming blanket deployment clearance. Examples use `trust_remote_code=True`: review and pin implementation. Cards request torch/Pillow/einops/torchvision/accelerate/decord2; general Molmo2 also uses molmo_utils. Current Transformers 5.20.2 is not the card's 4.57.1 recipe.
+
+**Resource inference, not measured requirement:** 4B bf16 weights plus vision/activations may exceed roughly 8GB free on the 12GB RTX5070; 8B is less likely to fit entirely. No minimum VRAM or native-Windows recipe was established. Start with 4B, bounded visual inputs/output and documented CPU offload if necessary; quantization/offload is a separate configuration with transfer cost. Preserve runtime failure without assigning poor model quality. The older Molmo2-VideoPoint-4B is also pointing/counting-only; it is not a substitute general VLM. Owner 31, with 23/25/26 and review 28.
+
+### Ultralytics — current YOLOE-26 local grounding/segmentation
+
+**High confidence in documented mode; inference untested by research.** The [YOLOE guide](https://docs.ultralytics.com/models/yoloe), read 2026-10-25, recommends `YOLOE("yoloe-26s-seg.pt")` with text classes. Text/visual `*-seg.pt` and prompt-free `*-seg-pf.pt` differ; the latter rejects `set_classes()`. Visual prompts return generic labels such as `object0`. First text use downloads `mobileclip2_b.ts` and may install `ultralytics/CLIP`; pin/hash these auxiliary assets too.
+
+[Source pin aa1f778a75a610f7dd2aa4762df1c25f6a3063d7](https://github.com/ultralytics/ultralytics/tree/aa1f778a75a610f7dd2aa4762df1c25f6a3063d7), current PyPI `ultralytics==8.4.189`, and actual detector/encoder hashes provide the starting identity. [LICENSE](https://github.com/ultralytics/ultralytics/blob/aa1f778a75a610f7dd2aa4762df1c25f6a3063d7/LICENSE) is AGPL-3.0; vendor alternatives and each asset/dependency need intended-use review. The [official FAQ](https://docs.ultralytics.com/help/FAQ/) says YOLO27 is unavailable; previews are not executable comparison arms.
+
+**Representative:** small YOLOE-26 text-prompt checkpoint on the same natural-object, diagram/text and screenshot queries/negatives as SAM3/GroundingDINO. Compare intended extent and absence errors. Add a visual-box prompt only as a separate arm when language fails on a specific panel. Do not score it as OCR. Local VRAM/Windows throughput is not certified by documentation. Owner 32/25, review 28.
+
+### IDEA — newer hosted detectors were mentioned, not tested
+
+**High confidence, pinned API examples; service eligibility unverified.** [DINO-X API pin813c629437e5c34c3008669944b4b36ac16a6454](https://github.com/IDEA-Research/DINO-X-API/blob/813c629437e5c34c3008669944b4b36ac16a6454/README.md) documents text/visual/prompt-free detection and segmentation, moved clients to “API V2”, and requires an “API Token”. [Grounding-DINO1.5 API pin2be80fe64ab3ca7f105821c31840ef303fbc14b9](https://github.com/IDEA-Research/Grounding-DINO-1.5-API/blob/2be80fe64ab3ca7f105821c31840ef303fbc14b9/README.md) also describes1.6Pro. Tested tiny open-weight GroundingDINO does not include these hosted models.
+
+Both repos publish Apache 2.0 client/demo code, not a complete paid-service/retention agreement or necessarily downloadable weights. Docs require token application and describe quota purchase. Current PyPI `dds-cloudapi-sdk==0.5.3` is newer than early0.3.x samples; pin the working service/API/SDK. **Representative:** DINO-XPro for grounded detection/masks;1.6Pro is a detector-only fallback/comparison if accessible and materially distinct. No need to run every older1.5size. Compare old GroundingDINO+SAM and YOLOE on identical queries/regions, especially UI over-expansion. Missing access leaves service quality untested. Owner 33/25, review 28.
+
+### NVIDIA — current Cosmos3 is conditional on physical-action evidence
+
+**High confidence in family identity; runtime untested.** [Current source pin0c9e2f1330b235c87dc77d7af489c78a901c4c9e](https://github.com/NVIDIA/Cosmos/blob/0c9e2f1330b235c87dc77d7af489c78a901c4c9e/README.md) calls Cosmos3 the “current model family”; release notes identify May 2026 and Edge4B in July 2026. Cosmos-Reason2 is a predecessor, not the latest-provider representative. Separate reasoning from generation: generated footage cannot substitute for source evidence.
+
+[Cosmos3-Edge pin344d602b128d1bbdacb43b08d0a3626f46343e29](https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/README.md) describes 4B and a reasoner path using release-tested `vllm/vllm-openai:cosmos3`. The [root notice](https://github.com/NVIDIA/Cosmos/blob/0c9e2f1330b235c87dc77d7af489c78a901c4c9e/README.md#citation--license) covers source/models under OpenMDW 1.1, with third-party notices separate. Reasoner/generator metrics differ; H100/Jetson/RTXPro results do not establish RTX5070fit.
+
+**Conditional representative:** Edge reasoner for physical demonstration order/causality against Qwen/Molmo/manual labels; not an extra OCR/UI detector. No verified 12GB recipe, useful quantized checkpoint or Windows deployment was established. An anonymous request for standalone `nvidia/Cosmos3-Nano-Reasoner` metadata returned401; that proves neither nonexistent assets nor usable access. Pin an actually accessible reasoner path or preserve the concrete runtime/resource limitation. Owner 34/26, review 28.
+
+### Coverage states and remaining gaps
+
+| State | Required evidence |
+|---|---|
+| Documented | Primary-source contract with date/revision; no quality result |
+| Setup attempted | Reproducible environment/access attempt and failure; no inferred quality |
+| Inference observed | Frozen fixture/prompt, checkpoint/API identity, raw output |
+| Task-qualified | Comparable held-out job outcomes, negatives, costs and limits |
+| Integration selected | Review28 accepts a role with eligible assets, regression fixtures and implementation ticket |
+
+None of Google/Ai2/YOLOE/DINO-X/Cosmos becomes inference-observed from this research alone. Execution tickets 30–34 must update coverage from actual outputs. A point, mask, caption and OCR transcript are different contracts; compare downstream jobs, not one interchangeable score. Preserve coordinate conversions, sampling, negative queries, failures and cost. Human guide benefit remains 18/21.
+
+**Explicit unknowns:** hosted account availability/quota/retention, current-provider inference, complete transitive eligibility, representative UI/diagram/physical-action corpus, 12GB offload feasibility, and temporal/correction outcomes. These are assigned to 29–34/25/26/28; absence of another vendor is not evidence of inferiority. Recheck catalogs at execution time. No credential was read, model downloaded or provider called by this research pass.
+
+Provider-refresh traceability: package versions were checked against PyPI manifests for [ultralytics](https://pypi.org/pypi/ultralytics/json), [google-genai](https://pypi.org/pypi/google-genai/json), [dds-cloudapi-sdk](https://pypi.org/pypi/dds-cloudapi-sdk/json), and [transformers](https://pypi.org/pypi/transformers/json), accessed2026-10-25. These moving manifests are dated observations; experiment environments must preserve actual installed versions. IDEA client notices: [DINO-X pinned LICENSE](https://github.com/IDEA-Research/DINO-X-API/blob/813c629437e5c34c3008669944b4b36ac16a6454/LICENSE) and [Grounding-DINO1.5 pinned LICENSE](https://github.com/IDEA-Research/Grounding-DINO-1.5-API/blob/2be80fe64ab3ca7f105821c31840ef303fbc14b9/LICENSE). Independent audit: [provider coverage audit](provider-coverage-audit.md).

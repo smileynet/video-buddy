@@ -2,10 +2,16 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Completed: **24 — Open research**, with a cited decision register and independent audit. Completed **14 — bounded real-video OCR comparison**. Next: **23 — remaining image-model qualification**. Ticket 23 remains in progress; OCR14 has a bounded per-role verdict with human benefit unresolved. SAM 3 ran, SAM 3.1 has a session API blocker, DINOv3 access is now approved; inference pending. Final feature/integration/architecture review is ticket 28 after the primary qualification reports. Conditional tickets 19/20 remain backlog.
+Completed: **24 — Open research**, with a cited decision register and independent audit. Completed **14 — bounded real-video OCR comparison**. Current priority: **30–34 — current-provider comparisons**, alongside original model qualification23. Ticket 23 remains in progress; OCR14 has a bounded per-role verdict with human benefit unresolved. SAM 3 ran, SAM 3.1 has a session API blocker, DINOv3 access is now approved; inference pending. Final feature/integration/architecture review is ticket 28 after the primary qualification reports. Conditional tickets 19/20 remain backlog.
 
 | id | title | status |
 |---|---|---|
+| 29 | Verify current provider models and comparison eligibility | ✅ done |
+| 30 | Compare Gemini region grounding and temporal evidence | open |
+| 31 | Compare Ai2 pointing tracking and interface grounding | in_progress |
+| 32 | Compare YOLOE promptable detection and segmentation | in_progress |
+| 33 | Compare hosted DINO-X grounding against local baselines | open |
+| 34 | Evaluate NVIDIA reasoning for physical demonstration evidence | open |
 | 24 | Resolve open research questions before the next spike round | ✅ done |
 | 14 | Compare OCR for exact commands and settings | ✅ done |
 | 23 | Compare image element models by downstream evidence jobs | in_progress |
@@ -46,3 +52,9 @@ Latest evidence: [S2 results](architecture/spikes/s2-results.md). Ticket 22 trac
 Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). Thirteen accessible configurations ran; SAM 3.1 has an upstream runtime blocker and DINOv3 access is now approved; inference pending. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; models23 still require remaining qualification.
 
 Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Remaining primary spikes: models 23, subject-window seeking 25, temporal evidence 26, speech 15, adaptation 17, review UX 18, fresh-performer usability 21, acquisition/recovery 27. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
+
+## Expanded current-provider coverage
+
+User priority: research29, then eligible provider comparisons30–34 alongside original model23. Gemini30, Ai2 31, YOLOE32, hosted DINO-X33 and NVIDIA34 must be explicitly measured, blocked or deferred before integration review28. No universal market coverage claim follows from the original shortlist.
+
+Provider progress: research29 complete; YOLOE32 has bounded text/visual findings;31 has Molmo2NF4/Qwenimage probes but specialists/temporal qualification remain open.30/33 have no matching key after checked project/mise/HFCLI lookup;34 lacks a running supported reasoner endpoint. HF_TOKEN is saved in ignored.env.local and authenticated; distinct hosted API access remains unverified. Review28 retains these dependencies.

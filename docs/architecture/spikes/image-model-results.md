@@ -77,3 +77,7 @@ DINOv3 checkpoint access is now approved with the existing credential: `facebook
 ## Held-out real-video follow-up (S3)
 
 [Ticket 14 results](s3-ocr-results.md) supersede the synthetic-only ranking for these new inputs. On 20 held-out real lines, full-frame exact recovery was Paddle16, Easy13, Tesseract10; supplied crops were Tesseract14, Paddle11, Easy9. Keep separate full-frame/crop candidates; no universal replacement or observed human correction benefit. Prototype branch `codex/spike-real-video-ocr`, commit `4df4a8d`.
+
+## Current-provider expansion
+
+Research29 now includes Google, Ai2, Ultralytics, hosted IDEA and NVIDIA current representatives. [YOLOE results](provider-yoloe-results.md) and [Molmo2/Qwen pointing comparison](provider-ai2-results.md) provide new bounded inference. [Gemini](provider-gemini-results.md), [hosted DINO-X](provider-dinox-results.md) and [Cosmos3](provider-nvidia-results.md) remain unrun with explicit access/runtime gaps. This is expanded coverage, not an exhaustive market survey or automatic integration.

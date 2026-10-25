@@ -33,3 +33,11 @@ Compare a practical current Molmo2/MolmoPoint checkpoint for image pointing and 
 ## Out of scope
 
 Automatic production integration, blanket provider endorsement, fetching private media or exposing credentials.
+
+## Current execution evidence (2026-10-25)
+
+Pinned Molmo2-4B checkpoint has4.85B F32 parameters (~19.4GB download). Testing NF4 language/BF16vision, max2crops/max64tokens image-only configuration. First missingeinops fixed; all-linear quantization exposed ByteLayerNorm failure because vision dtype comes from quantized patch-embedding weight. Preserve failure and retry with vision_backbone excluded from quantization. This is a runtime/configuration observation, not model-quality evidence. GUI/video specialists remain unrun.
+
+## Comparison follow-up
+
+Completed Molmo2NF4language/BF16vision at64/128tokens and same-query Qwen3VL2B BF16/128baseline. Dog/absent-elephant sanity checks both pass qualitatively. Browsersearch versusOSsearch is ambiguous, not an accuracywin. Molmo settings output remains incomplete at both limits; Qwen XML complete. Raw outputs and pinned configurations preserved. MolmoPoint video/GUI and task qualification remain unrun, so keep31inprogress. Evidence commit ce811ed8, provider reports under docs/architecture/spikes/.

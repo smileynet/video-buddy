@@ -54,3 +54,7 @@ Record raw outputs, exact versions/configuration, failures and a per-job disposi
 ### Component eligibility gate
 
 Record exact code, checkpoint and dependency notices independently. OmniParser original icon_detect, icon_detect_v3, caption weights and root code are separate assets; a README badge is not a license for the whole stack. Use only components whose exact terms are established for the intended deployment; unknown eligibility stays unresolved. See the ticket 24 register for pinned sources. No blanket commercial eligibility claim follows from an MIT detector notice.
+
+## Provider coverage expansion
+
+Current-provider comparison is now explicit in29–34. Coordinate shared fixtures/metrics and consume those results rather than duplicating provider installs. Original tested shortlist is not comprehensive market coverage. Final integration28 depends on all coverage dispositions.

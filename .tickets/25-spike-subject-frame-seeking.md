@@ -42,3 +42,11 @@ Automatic production integration, unsupported winners, and invented user/quality
 Freeze short labeled windows for typing, scrolling, blur/occlusion, diagrams and transient UI. Enumerate all essential distinct readable states across decoded frames before scoring. Compare sparse baseline, box/crop seeking and optional masks/tracking. Report complete-state recall, missed revisions, association errors, exact-text recovery, redundancy and stage costs. Tune thresholds on separate windows; preserve revisions rather than selecting one frame per entire subject.
 
 Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.
+
+## Provider coverage expansion
+
+Current-provider comparison is now explicit in29–34. Coordinate shared fixtures/metrics and consume those results rather than duplicating provider installs. Original tested shortlist is not comprehensive market coverage. Final integration28 depends on all coverage dispositions.
+
+## Comparison follow-up
+
+Same-query providers chose browsersearch vsOSsearch on a screenshot containing both. Require task-scoped intended-region annotations (active app/window and desired action); generic subject names alone cannot define a valid accuracy comparison. Include strict geometry completeness checks before subject association. Evidence commit ce811ed8, provider reports under docs/architecture/spikes/.

@@ -2,7 +2,7 @@
 id: "28"
 title: "Review spike findings and decide app features and integration architecture"
 status: open
-blocked_by: ["14", "15", "17", "18", "21", "23", "24", "25", "26", "27"]
+blocked_by: ["14", "15", "17", "18", "21", "23", "24", "25", "26", "27", "29", "30", "31", "32", "33", "34"]
 spec: "apply-build"
 priority: high
 tags: ["workflow-spikes"]
@@ -35,3 +35,11 @@ Review model eligibility, default/fallback routing, resource budgets, component 
 ## Out of scope
 
 Production integration itself, automatically promoting prototype code, or selecting defaults from smoke results alone.
+
+## Expanded provider coverage gate
+
+Research29 and provider comparisons30–34 must have explicit reviewed dispositions before final integration. An unresolved provider experiment permits only an explicit deferral/exclusion, never an assertion of comprehensive market coverage. Reconcile these findings with original model23, seek25 and temporal26 results.
+
+## Comparison follow-up
+
+Review provider comparisons at their actual scope: YOLOEbounded natural/diagram observations, MolmoNF4general imagepoints vsQwenbaseline, and unrun specialist/hosted/runtime gaps. Require scoped referents and complete geometry before integrating; a generic search-field query can have multiple valid targets. Evidence commit ce811ed8, provider reports under docs/architecture/spikes/.

@@ -33,3 +33,7 @@ Evaluate current text/visual-prompt YOLOE against Grounding DINO and SAM3 for na
 ## Out of scope
 
 Automatic production integration, blanket provider endorsement, fetching private media or exposing credentials.
+
+## Current execution evidence (2026-10-25)
+
+YOLOE26s actual text-prompt probes at640/1280 and supplied-box probes at640 completed; same frozen images, negative elephant, raw boxes/masks/overlays captured. NoUIregions at eitherresolution; diagram at640 disappears1280. Manual code-panel seed recovers panel plus an extra almostfullframe. Broader held-out qualification remains25; report docs/architecture/spikes/provider-yoloe-results.md.
