@@ -1,0 +1,470 @@
+{
+  "scroll": {
+    "total": 3,
+    "fidelity": "Controlled; PSM7 diagnostic",
+    "budgets": {
+      "1": {
+        "grid": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "original": 1,
+        "static": 1,
+        "tracked_frequency": 1,
+        "events": 1
+      },
+      "2": {
+        "grid": [
+          2,
+          1,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 2
+      },
+      "3": {
+        "grid": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "original": 3,
+        "static": 3,
+        "tracked_frequency": 3,
+        "events": 3
+      },
+      "4": {
+        "grid": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "original": 3,
+        "static": 3,
+        "tracked_frequency": 3,
+        "events": 3
+      },
+      "6": {
+        "grid": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "original": 3,
+        "static": 3,
+        "tracked_frequency": 3,
+        "events": 3
+      },
+      "8": {
+        "grid": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "original": 3,
+        "static": 3,
+        "tracked_frequency": 3,
+        "events": 3
+      }
+    }
+  },
+  "motion": {
+    "total": 3,
+    "fidelity": "Controlled; PSM7 diagnostic",
+    "budgets": {
+      "1": {
+        "grid": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "original": 0,
+        "static": 0,
+        "tracked_frequency": 1,
+        "events": 1
+      },
+      "2": {
+        "grid": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "original": 0,
+        "static": 0,
+        "tracked_frequency": 2,
+        "events": 2
+      },
+      "3": {
+        "grid": [
+          1,
+          3,
+          3,
+          3
+        ],
+        "original": 0,
+        "static": 0,
+        "tracked_frequency": 3,
+        "events": 3
+      },
+      "4": {
+        "grid": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "original": 0,
+        "static": 0,
+        "tracked_frequency": 3,
+        "events": 3
+      },
+      "6": {
+        "grid": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "original": 0,
+        "static": 0,
+        "tracked_frequency": 3,
+        "events": 3
+      },
+      "8": {
+        "grid": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "original": 0,
+        "static": 0,
+        "tracked_frequency": 3,
+        "events": 3
+      }
+    }
+  },
+  "occlusion": {
+    "total": 3,
+    "fidelity": "Controlled; PSM7 diagnostic",
+    "budgets": {
+      "1": {
+        "grid": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "original": 1,
+        "static": 1,
+        "tracked_frequency": 1,
+        "events": 1
+      },
+      "2": {
+        "grid": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 2
+      },
+      "3": {
+        "grid": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 3
+      },
+      "4": {
+        "grid": [
+          2,
+          2,
+          3,
+          2
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 3
+      },
+      "6": {
+        "grid": [
+          2,
+          2,
+          2,
+          3
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 3
+      },
+      "8": {
+        "grid": [
+          3,
+          3,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 3
+      }
+    }
+  },
+  "brief": {
+    "total": 3,
+    "fidelity": "Controlled; PSM7 diagnostic",
+    "budgets": {
+      "1": {
+        "grid": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "original": 1,
+        "static": 1,
+        "tracked_frequency": 1,
+        "events": 1
+      },
+      "2": {
+        "grid": [
+          2,
+          2,
+          2,
+          1
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 2
+      },
+      "3": {
+        "grid": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 3
+      },
+      "4": {
+        "grid": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 3
+      },
+      "6": {
+        "grid": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 3
+      },
+      "8": {
+        "grid": [
+          2,
+          2,
+          2,
+          3
+        ],
+        "original": 2,
+        "static": 2,
+        "tracked_frequency": 2,
+        "events": 3
+      }
+    }
+  },
+  "filename-tune": {
+    "total": 2,
+    "fidelity": "Real; earlier frozen PSM13",
+    "budgets": {
+      "1": {
+        "grid": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "original": 1,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "2": {
+        "grid": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "original": 2,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "3": {
+        "grid": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "4": {
+        "grid": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "6": {
+        "grid": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "8": {
+        "grid": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "original": 2,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      }
+    }
+  },
+  "code-heldout": {
+    "total": 3,
+    "fidelity": "Real; earlier frozen PSM13",
+    "budgets": {
+      "1": {
+        "grid": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "original": 1,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "2": {
+        "grid": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "original": 1,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "3": {
+        "grid": [
+          2,
+          2,
+          2,
+          3
+        ],
+        "original": 2,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "4": {
+        "grid": [
+          2,
+          2,
+          3,
+          2
+        ],
+        "original": 3,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "6": {
+        "grid": [
+          3,
+          2,
+          3,
+          3
+        ],
+        "original": 3,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      },
+      "8": {
+        "grid": [
+          3,
+          3,
+          2,
+          3
+        ],
+        "original": 3,
+        "static": null,
+        "tracked_frequency": null,
+        "events": null
+      }
+    }
+  }
+}

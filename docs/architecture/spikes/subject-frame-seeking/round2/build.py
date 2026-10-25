@@ -71,12 +71,19 @@ for kind in CONFIG["clips"]:
             visible = []  # Explicit severe-blur exclusion; QA checks this assumption.
         im.paste(panel, (x, y))
         im.save(output / f"authored_{i:04d}.png")
+        content_state = visible[0] if visible else state
+        if kind == "scroll":
+            lx, ly = x + 28, y + 55 + round(7 + content_state * 70 - scroll)
+        else:
+            lx, ly = x + 28, y + 62
+        left, top, right, bottom = FONT.getbbox(CONFIG["texts"][content_state])
         frames.append(
             dict(
                 index=i,
                 pts_s=t,
                 visible=visible,
                 subject_box=[x + 20, y + 55, x + 560, y + 107],
+                content_box=[lx + left, ly + top, lx + right, ly + bottom],
                 header_box=[x, y, x + 580, y + 34],
                 obscured=obscured,
                 blurred=blurred,

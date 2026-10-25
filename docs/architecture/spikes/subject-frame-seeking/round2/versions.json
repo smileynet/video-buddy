@@ -1,0 +1,13 @@
+{
+  "python": "3.13.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "opencv-python": "4.13.0.92",
+    "Pillow": "12.2.0",
+    "numpy": "2.4.5",
+    "psutil": "7.2.2",
+    "yt-dlp": "2026.10.21"
+  },
+  "ffmpeg": "ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "tesseract": "tesseract v5.4.0.20240606"
+}

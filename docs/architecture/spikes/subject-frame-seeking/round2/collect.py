@@ -1,5 +1,6 @@
 """Frozen selectors consume decoded images and the first seeded box only."""
 
+import argparse
 import io
 import json
 from pathlib import Path
@@ -12,6 +13,9 @@ import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
+parser = argparse.ArgumentParser()
+parser.add_argument("--psm", type=int, default=13)
+args = parser.parse_args()
 WORK = Path(".scratch/seek-round2")
 config = json.loads((ROOT / "protocol.json").read_text())
 results = {}
@@ -51,7 +55,7 @@ for kind in config["clips"]:
                 crop.save(buf, format="PNG")
                 began = time.perf_counter()
                 text = subprocess.run(
-                    ["tesseract", "stdin", "stdout", "--psm", "13"],
+                    ["tesseract", "stdin", "stdout", "--psm", str(args.psm)],
                     input=buf.getvalue(),
                     capture_output=True,
                     check=True,
@@ -65,7 +69,9 @@ for kind in config["clips"]:
             row["observations"][mode] = cache[key]
         rows.append(row)
     results[kind] = rows
-    (ROOT / "observations.json").write_text(json.dumps(results, indent=2) + "\n")
+    (ROOT / f"observations-psm{args.psm}.json").write_text(
+        json.dumps(results, indent=2) + "\n"
+    )
     print(
         kind,
         "frames",

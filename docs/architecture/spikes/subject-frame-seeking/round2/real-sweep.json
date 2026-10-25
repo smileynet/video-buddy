@@ -1,0 +1,1284 @@
+{
+  "filename-tune": {
+    "total_states": 2,
+    "budgets": {
+      "1": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              59.0
+            ],
+            "times": [
+              59.025633
+            ],
+            "covered": [],
+            "recall": 0.0,
+            "redundant": 0,
+            "nonessential": 1
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              60.0
+            ],
+            "times": [
+              60.026633
+            ],
+            "covered": [],
+            "recall": 0.0,
+            "redundant": 0,
+            "nonessential": 1
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              61.0
+            ],
+            "times": [
+              61.027633
+            ],
+            "covered": [
+              "py"
+            ],
+            "recall": 0.5,
+            "redundant": 0,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              62.0
+            ],
+            "times": [
+              62.028633
+            ],
+            "covered": [
+              "notebook"
+            ],
+            "recall": 0.5,
+            "redundant": 0,
+            "nonessential": 0
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            61.027633
+          ],
+          "covered": [
+            "py"
+          ],
+          "recall": 0.5,
+          "redundant": 0,
+          "nonessential": 0
+        }
+      },
+      "2": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              59.0,
+              61.0
+            ],
+            "times": [
+              59.025633,
+              61.027633
+            ],
+            "covered": [
+              "py"
+            ],
+            "recall": 0.5,
+            "redundant": 0,
+            "nonessential": 1
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              59.5,
+              61.5
+            ],
+            "times": [
+              59.526133,
+              61.528133
+            ],
+            "covered": [
+              "py"
+            ],
+            "recall": 0.5,
+            "redundant": 0,
+            "nonessential": 1
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              60.0,
+              62.0
+            ],
+            "times": [
+              60.026633,
+              62.028633
+            ],
+            "covered": [
+              "notebook"
+            ],
+            "recall": 0.5,
+            "redundant": 0,
+            "nonessential": 1
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              60.5,
+              62.5
+            ],
+            "times": [
+              60.527133,
+              62.529133
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 0,
+            "nonessential": 0
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            61.027633,
+            61.5615
+          ],
+          "covered": [
+            "notebook",
+            "py"
+          ],
+          "recall": 1.0,
+          "redundant": 0,
+          "nonessential": 0
+        }
+      },
+      "3": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              59.0,
+              60.333333333333336,
+              61.666666666666664
+            ],
+            "times": [
+              59.025633,
+              60.3603,
+              61.694967
+            ],
+            "covered": [
+              "notebook"
+            ],
+            "recall": 0.5,
+            "redundant": 0,
+            "nonessential": 2
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              59.333333333333336,
+              60.666666666666664,
+              62.0
+            ],
+            "times": [
+              59.3593,
+              60.693967,
+              62.028633
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 0,
+            "nonessential": 1
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              59.666666666666664,
+              61.0,
+              62.333333333333336
+            ],
+            "times": [
+              59.692967,
+              61.027633,
+              62.3623
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 0,
+            "nonessential": 1
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              60.0,
+              61.333333333333336,
+              62.666666666666664
+            ],
+            "times": [
+              60.026633,
+              61.3613,
+              62.695967
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 0,
+            "nonessential": 1
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            61.027633,
+            61.5615,
+            61.628233
+          ],
+          "covered": [
+            "notebook",
+            "py"
+          ],
+          "recall": 1.0,
+          "redundant": 1,
+          "nonessential": 0
+        }
+      },
+      "4": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              59.0,
+              60.0,
+              61.0,
+              62.0
+            ],
+            "times": [
+              59.025633,
+              60.026633,
+              61.027633,
+              62.028633
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 0,
+            "nonessential": 2
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              59.25,
+              60.25,
+              61.25,
+              62.25
+            ],
+            "times": [
+              59.2592,
+              60.2602,
+              61.2612,
+              62.2622
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 0,
+            "nonessential": 2
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              59.5,
+              60.5,
+              61.5,
+              62.5
+            ],
+            "times": [
+              59.526133,
+              60.527133,
+              61.528133,
+              62.529133
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 1,
+            "nonessential": 1
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              59.75,
+              60.75,
+              61.75,
+              62.75
+            ],
+            "times": [
+              59.7597,
+              60.7607,
+              61.7617,
+              62.7627
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 1,
+            "nonessential": 1
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            61.027633,
+            61.5615,
+            61.628233,
+            62.228833
+          ],
+          "covered": [
+            "notebook",
+            "py"
+          ],
+          "recall": 1.0,
+          "redundant": 2,
+          "nonessential": 0
+        }
+      },
+      "6": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              59.0,
+              59.666666666666664,
+              60.333333333333336,
+              61.0,
+              61.666666666666664,
+              62.333333333333336
+            ],
+            "times": [
+              59.025633,
+              59.692967,
+              60.3603,
+              61.027633,
+              61.694967,
+              62.3623
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 1,
+            "nonessential": 3
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              59.166666666666664,
+              59.833333333333336,
+              60.5,
+              61.166666666666664,
+              61.833333333333336,
+              62.5
+            ],
+            "times": [
+              59.192467,
+              59.8598,
+              60.527133,
+              61.194467,
+              61.8618,
+              62.529133
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 2,
+            "nonessential": 2
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              59.333333333333336,
+              60.0,
+              60.666666666666664,
+              61.333333333333336,
+              62.0,
+              62.666666666666664
+            ],
+            "times": [
+              59.3593,
+              60.026633,
+              60.693967,
+              61.3613,
+              62.028633,
+              62.695967
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 2,
+            "nonessential": 2
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              59.5,
+              60.166666666666664,
+              60.833333333333336,
+              61.5,
+              62.166666666666664,
+              62.833333333333336
+            ],
+            "times": [
+              59.526133,
+              60.193467,
+              60.8608,
+              61.528133,
+              62.195467,
+              62.8628
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 1,
+            "nonessential": 3
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            59.1591,
+            59.8598,
+            61.027633,
+            61.5615,
+            61.628233,
+            62.228833
+          ],
+          "covered": [
+            "notebook",
+            "py"
+          ],
+          "recall": 1.0,
+          "redundant": 2,
+          "nonessential": 2
+        }
+      },
+      "8": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              59.0,
+              59.5,
+              60.0,
+              60.5,
+              61.0,
+              61.5,
+              62.0,
+              62.5
+            ],
+            "times": [
+              59.025633,
+              59.526133,
+              60.026633,
+              60.527133,
+              61.027633,
+              61.528133,
+              62.028633,
+              62.529133
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 3,
+            "nonessential": 3
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              59.125,
+              59.625,
+              60.125,
+              60.625,
+              61.125,
+              61.625,
+              62.125,
+              62.625
+            ],
+            "times": [
+              59.125733,
+              59.626233,
+              60.126733,
+              60.627233,
+              61.127733,
+              61.628233,
+              62.128733,
+              62.629233
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 2,
+            "nonessential": 4
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              59.25,
+              59.75,
+              60.25,
+              60.75,
+              61.25,
+              61.75,
+              62.25,
+              62.75
+            ],
+            "times": [
+              59.2592,
+              59.7597,
+              60.2602,
+              60.7607,
+              61.2612,
+              61.7617,
+              62.2622,
+              62.7627
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 3,
+            "nonessential": 3
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              59.375,
+              59.875,
+              60.375,
+              60.875,
+              61.375,
+              61.875,
+              62.375,
+              62.875
+            ],
+            "times": [
+              59.392667,
+              59.893167,
+              60.393667,
+              60.894167,
+              61.394667,
+              61.895167,
+              62.395667,
+              62.896167
+            ],
+            "covered": [
+              "notebook",
+              "py"
+            ],
+            "recall": 1.0,
+            "redundant": 3,
+            "nonessential": 3
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            59.1591,
+            59.8598,
+            61.027633,
+            61.5615,
+            61.628233,
+            62.228833
+          ],
+          "covered": [
+            "notebook",
+            "py"
+          ],
+          "recall": 1.0,
+          "redundant": 2,
+          "nonessential": 2
+        }
+      }
+    }
+  },
+  "code-heldout": {
+    "total_states": 3,
+    "budgets": {
+      "1": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              73.0
+            ],
+            "times": [
+              73.006267
+            ],
+            "covered": [
+              "single"
+            ],
+            "recall": 0.3333333333333333,
+            "redundant": 0,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              74.25
+            ],
+            "times": [
+              74.2742
+            ],
+            "covered": [
+              "single"
+            ],
+            "recall": 0.3333333333333333,
+            "redundant": 0,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              75.5
+            ],
+            "times": [
+              75.508767
+            ],
+            "covered": [
+              "single"
+            ],
+            "recall": 0.3333333333333333,
+            "redundant": 0,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              76.75
+            ],
+            "times": [
+              76.7767
+            ],
+            "covered": [
+              "multiple"
+            ],
+            "recall": 0.3333333333333333,
+            "redundant": 0,
+            "nonessential": 0
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            75.108367
+          ],
+          "covered": [
+            "single"
+          ],
+          "recall": 0.3333333333333333,
+          "redundant": 0,
+          "nonessential": 0
+        }
+      },
+      "2": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              73.0,
+              75.5
+            ],
+            "times": [
+              73.006267,
+              75.508767
+            ],
+            "covered": [
+              "single"
+            ],
+            "recall": 0.3333333333333333,
+            "redundant": 1,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              73.625,
+              76.125
+            ],
+            "times": [
+              73.640233,
+              76.142733
+            ],
+            "covered": [
+              "intermediate",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 0,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              74.25,
+              76.75
+            ],
+            "times": [
+              74.2742,
+              76.7767
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 0,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              74.875,
+              77.375
+            ],
+            "times": [
+              74.908167,
+              77.3773
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 0,
+            "nonessential": 0
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            74.340933,
+            75.108367
+          ],
+          "covered": [
+            "single"
+          ],
+          "recall": 0.3333333333333333,
+          "redundant": 1,
+          "nonessential": 0
+        }
+      },
+      "3": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              73.0,
+              74.66666666666667,
+              76.33333333333333
+            ],
+            "times": [
+              73.006267,
+              74.6746,
+              76.342933
+            ],
+            "covered": [
+              "intermediate",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 1,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              73.41666666666667,
+              75.08333333333333,
+              76.75
+            ],
+            "times": [
+              73.440033,
+              75.108367,
+              76.7767
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 1,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              73.83333333333333,
+              75.5,
+              77.16666666666667
+            ],
+            "times": [
+              73.840433,
+              75.508767,
+              77.1771
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 1,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              74.25,
+              75.91666666666667,
+              77.58333333333333
+            ],
+            "times": [
+              74.2742,
+              75.942533,
+              77.610867
+            ],
+            "covered": [
+              "intermediate",
+              "multiple",
+              "single"
+            ],
+            "recall": 1.0,
+            "redundant": 0,
+            "nonessential": 0
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            74.340933,
+            75.108367,
+            77.510767
+          ],
+          "covered": [
+            "multiple",
+            "single"
+          ],
+          "recall": 0.6666666666666666,
+          "redundant": 1,
+          "nonessential": 0
+        }
+      },
+      "4": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              73.0,
+              74.25,
+              75.5,
+              76.75
+            ],
+            "times": [
+              73.006267,
+              74.2742,
+              75.508767,
+              76.7767
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 2,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              73.3125,
+              74.5625,
+              75.8125,
+              77.0625
+            ],
+            "times": [
+              73.339933,
+              74.5745,
+              75.842433,
+              77.077
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 2,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              73.625,
+              74.875,
+              76.125,
+              77.375
+            ],
+            "times": [
+              73.640233,
+              74.908167,
+              76.142733,
+              77.3773
+            ],
+            "covered": [
+              "intermediate",
+              "multiple",
+              "single"
+            ],
+            "recall": 1.0,
+            "redundant": 1,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              73.9375,
+              75.1875,
+              76.4375,
+              77.6875
+            ],
+            "times": [
+              73.940533,
+              75.208467,
+              76.443033,
+              77.710967
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 2,
+            "nonessential": 0
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            74.340933,
+            75.108367,
+            75.909167,
+            77.510767
+          ],
+          "covered": [
+            "intermediate",
+            "multiple",
+            "single"
+          ],
+          "recall": 1.0,
+          "redundant": 1,
+          "nonessential": 0
+        }
+      },
+      "6": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              73.0,
+              73.83333333333333,
+              74.66666666666667,
+              75.5,
+              76.33333333333333,
+              77.16666666666667
+            ],
+            "times": [
+              73.006267,
+              73.840433,
+              74.6746,
+              75.508767,
+              76.342933,
+              77.1771
+            ],
+            "covered": [
+              "intermediate",
+              "multiple",
+              "single"
+            ],
+            "recall": 1.0,
+            "redundant": 3,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              73.20833333333333,
+              74.04166666666667,
+              74.875,
+              75.70833333333333,
+              76.54166666666667,
+              77.375
+            ],
+            "times": [
+              73.239833,
+              74.074,
+              74.908167,
+              75.708967,
+              76.543133,
+              77.3773
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 4,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              73.41666666666667,
+              74.25,
+              75.08333333333333,
+              75.91666666666667,
+              76.75,
+              77.58333333333333
+            ],
+            "times": [
+              73.440033,
+              74.2742,
+              75.108367,
+              75.942533,
+              76.7767,
+              77.610867
+            ],
+            "covered": [
+              "intermediate",
+              "multiple",
+              "single"
+            ],
+            "recall": 1.0,
+            "redundant": 3,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              73.625,
+              74.45833333333333,
+              75.29166666666667,
+              76.125,
+              76.95833333333333,
+              77.79166666666667
+            ],
+            "times": [
+              73.640233,
+              74.4744,
+              75.308567,
+              76.142733,
+              76.9769,
+              77.811067
+            ],
+            "covered": [
+              "intermediate",
+              "multiple",
+              "single"
+            ],
+            "recall": 1.0,
+            "redundant": 3,
+            "nonessential": 0
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            74.340933,
+            75.108367,
+            75.909167,
+            76.409667,
+            77.043633,
+            77.510767
+          ],
+          "covered": [
+            "intermediate",
+            "multiple",
+            "single"
+          ],
+          "recall": 1.0,
+          "redundant": 3,
+          "nonessential": 0
+        }
+      },
+      "8": {
+        "grid": [
+          {
+            "offset": 0,
+            "requested": [
+              73.0,
+              73.625,
+              74.25,
+              74.875,
+              75.5,
+              76.125,
+              76.75,
+              77.375
+            ],
+            "times": [
+              73.006267,
+              73.640233,
+              74.2742,
+              74.908167,
+              75.508767,
+              76.142733,
+              76.7767,
+              77.3773
+            ],
+            "covered": [
+              "intermediate",
+              "multiple",
+              "single"
+            ],
+            "recall": 1.0,
+            "redundant": 5,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.25,
+            "requested": [
+              73.15625,
+              73.78125,
+              74.40625,
+              75.03125,
+              75.65625,
+              76.28125,
+              76.90625,
+              77.53125
+            ],
+            "times": [
+              73.1731,
+              73.807067,
+              74.407667,
+              75.041633,
+              75.6756,
+              76.309567,
+              76.910167,
+              77.544133
+            ],
+            "covered": [
+              "intermediate",
+              "multiple",
+              "single"
+            ],
+            "recall": 1.0,
+            "redundant": 5,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.5,
+            "requested": [
+              73.3125,
+              73.9375,
+              74.5625,
+              75.1875,
+              75.8125,
+              76.4375,
+              77.0625,
+              77.6875
+            ],
+            "times": [
+              73.339933,
+              73.940533,
+              74.5745,
+              75.208467,
+              75.842433,
+              76.443033,
+              77.077,
+              77.710967
+            ],
+            "covered": [
+              "multiple",
+              "single"
+            ],
+            "recall": 0.6666666666666666,
+            "redundant": 6,
+            "nonessential": 0
+          },
+          {
+            "offset": 0.75,
+            "requested": [
+              73.46875,
+              74.09375,
+              74.71875,
+              75.34375,
+              75.96875,
+              76.59375,
+              77.21875,
+              77.84375
+            ],
+            "times": [
+              73.4734,
+              74.107367,
+              74.741333,
+              75.3753,
+              75.9759,
+              76.609867,
+              77.243833,
+              77.844433
+            ],
+            "covered": [
+              "intermediate",
+              "multiple",
+              "single"
+            ],
+            "recall": 1.0,
+            "redundant": 5,
+            "nonessential": 0
+          }
+        ],
+        "subject_frequency": {
+          "times": [
+            74.340933,
+            75.108367,
+            75.6756,
+            75.909167,
+            76.409667,
+            77.043633,
+            77.510767
+          ],
+          "covered": [
+            "intermediate",
+            "multiple",
+            "single"
+          ],
+          "recall": 1.0,
+          "redundant": 4,
+          "nonessential": 0
+        }
+      }
+    }
+  }
+}

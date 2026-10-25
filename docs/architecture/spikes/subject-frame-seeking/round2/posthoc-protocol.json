@@ -1,0 +1,6 @@
+{
+  "change": "PSM7 diagnostic on already observed fixtures; not held-out confirmation",
+  "reason": "PSM13 misread the first clear crop; PSM7 recovered it on a spot check",
+  "selection_and_tracking": "unchanged",
+  "metric_correction": "Text extent replaces padded viewport containment; grid exact text is null (not audited). Initial viewport score preserved."
+}

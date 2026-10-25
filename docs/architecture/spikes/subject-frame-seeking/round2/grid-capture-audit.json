@@ -1,0 +1,1370 @@
+{
+  "scroll": {
+    "unique_requests": {
+      "0.000000": {
+        "seconds": 0.07052979999934905,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 0
+      },
+      "1.500000": {
+        "seconds": 0.07312199999796576,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 30
+      },
+      "3.000000": {
+        "seconds": 0.0713145000008808,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 60
+      },
+      "4.500000": {
+        "seconds": 0.07367320000048494,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 90
+      },
+      "0.750000": {
+        "seconds": 0.06942070000150125,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 15
+      },
+      "3.750000": {
+        "seconds": 0.07455850000042119,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 75
+      },
+      "2.250000": {
+        "seconds": 0.07165660000100615,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 45
+      },
+      "5.250000": {
+        "seconds": 0.07399340000119992,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 105
+      },
+      "2.000000": {
+        "seconds": 0.07076120000056108,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 40
+      },
+      "4.000000": {
+        "seconds": 0.07279500000004191,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 80
+      },
+      "0.500000": {
+        "seconds": 0.0713261999990209,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 10
+      },
+      "2.500000": {
+        "seconds": 0.0726070000018808,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 50
+      },
+      "1.000000": {
+        "seconds": 0.07121280000137631,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 20
+      },
+      "5.000000": {
+        "seconds": 0.07257390000086161,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 100
+      },
+      "3.500000": {
+        "seconds": 0.07218439999996917,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 70
+      },
+      "5.500000": {
+        "seconds": 0.07358640000165906,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 110
+      },
+      "0.375000": {
+        "seconds": 0.07218090000242228,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 8
+      },
+      "1.875000": {
+        "seconds": 0.06994140000097104,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 38
+      },
+      "3.375000": {
+        "seconds": 0.07111739999891142,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 68
+      },
+      "4.875000": {
+        "seconds": 0.07290570000259322,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 98
+      },
+      "1.125000": {
+        "seconds": 0.07002210000064224,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 23
+      },
+      "2.625000": {
+        "seconds": 0.07152789999963716,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 53
+      },
+      "4.125000": {
+        "seconds": 0.07374210000125458,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 83
+      },
+      "5.625000": {
+        "seconds": 0.07361020000098506,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 113
+      },
+      "0.250000": {
+        "seconds": 0.07351080000080401,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 5
+      },
+      "1.250000": {
+        "seconds": 0.07027780000134953,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 25
+      },
+      "3.250000": {
+        "seconds": 0.07208940000055009,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 65
+      },
+      "4.250000": {
+        "seconds": 0.0746502000001783,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 85
+      },
+      "1.750000": {
+        "seconds": 0.06985530000019935,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 35
+      },
+      "2.750000": {
+        "seconds": 0.0727563000000373,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 55
+      },
+      "4.750000": {
+        "seconds": 0.07438019999972312,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 95
+      },
+      "5.750000": {
+        "seconds": 0.07466199999907985,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 115
+      },
+      "0.187500": {
+        "seconds": 0.07397090000085882,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 4
+      },
+      "0.937500": {
+        "seconds": 0.07154769999760902,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 19
+      },
+      "1.687500": {
+        "seconds": 0.07435400000031223,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 34
+      },
+      "2.437500": {
+        "seconds": 0.07433130000208621,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 49
+      },
+      "3.187500": {
+        "seconds": 0.07489070000156062,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 64
+      },
+      "3.937500": {
+        "seconds": 0.07369830000243383,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 79
+      },
+      "4.687500": {
+        "seconds": 0.07681290000255103,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 94
+      },
+      "5.437500": {
+        "seconds": 0.07954009999957634,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 109
+      },
+      "0.562500": {
+        "seconds": 0.07172799999898416,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 12
+      },
+      "1.312500": {
+        "seconds": 0.07246870000017225,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 27
+      },
+      "2.062500": {
+        "seconds": 0.07288289999996778,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 42
+      },
+      "2.812500": {
+        "seconds": 0.07339979999960633,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 57
+      },
+      "3.562500": {
+        "seconds": 0.07361429999946267,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 72
+      },
+      "4.312500": {
+        "seconds": 0.07695030000104452,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 87
+      },
+      "5.062500": {
+        "seconds": 0.07978219999858993,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 102
+      },
+      "5.812500": {
+        "seconds": 0.08665910000127042,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 117
+      }
+    },
+    "configurations": {
+      "1/0": {
+        "sum_unique_seek_cost_s": 0.07052979999934905,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.25": {
+        "sum_unique_seek_cost_s": 0.07312199999796576,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.5": {
+        "sum_unique_seek_cost_s": 0.0713145000008808,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.75": {
+        "sum_unique_seek_cost_s": 0.07367320000048494,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0": {
+        "sum_unique_seek_cost_s": 0.14184430000022985,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.25": {
+        "sum_unique_seek_cost_s": 0.14397920000192244,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.5": {
+        "sum_unique_seek_cost_s": 0.1467951999984507,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.75": {
+        "sum_unique_seek_cost_s": 0.14565000000220607,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0": {
+        "sum_unique_seek_cost_s": 0.21408599999995204,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.25": {
+        "sum_unique_seek_cost_s": 0.21760640000138665,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.5": {
+        "sum_unique_seek_cost_s": 0.21510120000311872,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.75": {
+        "sum_unique_seek_cost_s": 0.218892799999594,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0": {
+        "sum_unique_seek_cost_s": 0.28863949999868055,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.25": {
+        "sum_unique_seek_cost_s": 0.28614540000489797,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.5": {
+        "sum_unique_seek_cost_s": 0.2896292000041285,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.75": {
+        "sum_unique_seek_cost_s": 0.28890230000251904,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0": {
+        "sum_unique_seek_cost_s": 0.42918720000307076,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.25": {
+        "sum_unique_seek_cost_s": 0.436178200005088,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.5": {
+        "sum_unique_seek_cost_s": 0.43649920000098064,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.75": {
+        "sum_unique_seek_cost_s": 0.43563300000096206,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0": {
+        "sum_unique_seek_cost_s": 0.578268700002809,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.25": {
+        "sum_unique_seek_cost_s": 0.5991459000069881,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.5": {
+        "sum_unique_seek_cost_s": 0.575047700007417,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.75": {
+        "sum_unique_seek_cost_s": 0.6074852999990981,
+        "max_mean_absolute_pixel_error": 0.0
+      }
+    }
+  },
+  "motion": {
+    "unique_requests": {
+      "0.000000": {
+        "seconds": 0.08071759999802453,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 0
+      },
+      "1.500000": {
+        "seconds": 0.07618739999816171,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 30
+      },
+      "3.000000": {
+        "seconds": 0.08613590000095428,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 60
+      },
+      "4.500000": {
+        "seconds": 0.07797159999972791,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 90
+      },
+      "0.750000": {
+        "seconds": 0.07182639999882667,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 15
+      },
+      "3.750000": {
+        "seconds": 0.0757037000003038,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 75
+      },
+      "2.250000": {
+        "seconds": 0.07906580000053509,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 45
+      },
+      "5.250000": {
+        "seconds": 0.07700069999918924,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 105
+      },
+      "2.000000": {
+        "seconds": 0.07650500000090688,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 40
+      },
+      "4.000000": {
+        "seconds": 0.07439660000090953,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 80
+      },
+      "0.500000": {
+        "seconds": 0.07142580000072485,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 10
+      },
+      "2.500000": {
+        "seconds": 0.07270300000163843,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 50
+      },
+      "1.000000": {
+        "seconds": 0.07269540000197594,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 20
+      },
+      "5.000000": {
+        "seconds": 0.07639660000131698,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 100
+      },
+      "3.500000": {
+        "seconds": 0.08271160000003874,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 70
+      },
+      "5.500000": {
+        "seconds": 0.07707960000334424,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 110
+      },
+      "0.375000": {
+        "seconds": 0.07346400000096764,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 8
+      },
+      "1.875000": {
+        "seconds": 0.07848080000258051,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 38
+      },
+      "3.375000": {
+        "seconds": 0.0772209999995539,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 68
+      },
+      "4.875000": {
+        "seconds": 0.0772796000019298,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 98
+      },
+      "1.125000": {
+        "seconds": 0.07209050000165007,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 23
+      },
+      "2.625000": {
+        "seconds": 0.073559500000556,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 53
+      },
+      "4.125000": {
+        "seconds": 0.07426739999937126,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 83
+      },
+      "5.625000": {
+        "seconds": 0.07703850000325474,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 113
+      },
+      "0.250000": {
+        "seconds": 0.07249529999899096,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 5
+      },
+      "1.250000": {
+        "seconds": 0.07358770000064396,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 25
+      },
+      "3.250000": {
+        "seconds": 0.0747871000021405,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 65
+      },
+      "4.250000": {
+        "seconds": 0.07504449999760254,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 85
+      },
+      "1.750000": {
+        "seconds": 0.07260909999968135,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 35
+      },
+      "2.750000": {
+        "seconds": 0.07490810000308556,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 55
+      },
+      "4.750000": {
+        "seconds": 0.08096030000160681,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 95
+      },
+      "5.750000": {
+        "seconds": 0.0820434999986901,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 115
+      },
+      "0.187500": {
+        "seconds": 0.07116390000010142,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 4
+      },
+      "0.937500": {
+        "seconds": 0.07317859999966458,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 19
+      },
+      "1.687500": {
+        "seconds": 0.07512250000218046,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 34
+      },
+      "2.437500": {
+        "seconds": 0.0759753999991517,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 49
+      },
+      "3.187500": {
+        "seconds": 0.07388849999915692,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 64
+      },
+      "3.937500": {
+        "seconds": 0.0751916999979585,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 79
+      },
+      "4.687500": {
+        "seconds": 0.07717540000157896,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 94
+      },
+      "5.437500": {
+        "seconds": 0.07473300000128802,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 109
+      },
+      "0.562500": {
+        "seconds": 0.07119419999798993,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 12
+      },
+      "1.312500": {
+        "seconds": 0.07134899999800837,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 27
+      },
+      "2.062500": {
+        "seconds": 0.07491920000029495,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 42
+      },
+      "2.812500": {
+        "seconds": 0.076677799999743,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 57
+      },
+      "3.562500": {
+        "seconds": 0.07403939999858267,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 72
+      },
+      "4.312500": {
+        "seconds": 0.0802845999969577,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 87
+      },
+      "5.062500": {
+        "seconds": 0.0773715000032098,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 102
+      },
+      "5.812500": {
+        "seconds": 0.07634949999919627,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 117
+      }
+    },
+    "configurations": {
+      "1/0": {
+        "sum_unique_seek_cost_s": 0.08071759999802453,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.25": {
+        "sum_unique_seek_cost_s": 0.07618739999816171,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.5": {
+        "sum_unique_seek_cost_s": 0.08613590000095428,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.75": {
+        "sum_unique_seek_cost_s": 0.07797159999972791,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0": {
+        "sum_unique_seek_cost_s": 0.1668534999989788,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.25": {
+        "sum_unique_seek_cost_s": 0.14753009999913047,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.5": {
+        "sum_unique_seek_cost_s": 0.15415899999788962,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.75": {
+        "sum_unique_seek_cost_s": 0.15606649999972433,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0": {
+        "sum_unique_seek_cost_s": 0.23161919999984093,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.25": {
+        "sum_unique_seek_cost_s": 0.2221004000020912,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.5": {
+        "sum_unique_seek_cost_s": 0.2352279000042472,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.75": {
+        "sum_unique_seek_cost_s": 0.2359786000015447,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0": {
+        "sum_unique_seek_cost_s": 0.32101249999686843,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.25": {
+        "sum_unique_seek_cost_s": 0.30644540000503184,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.5": {
+        "sum_unique_seek_cost_s": 0.3035965999988548,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.75": {
+        "sum_unique_seek_cost_s": 0.2969559000048321,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0": {
+        "sum_unique_seek_cost_s": 0.46684710000408813,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.25": {
+        "sum_unique_seek_cost_s": 0.4519810999991023,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.5": {
+        "sum_unique_seek_cost_s": 0.4580790000036359,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.75": {
+        "sum_unique_seek_cost_s": 0.4580511000021943,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0": {
+        "sum_unique_seek_cost_s": 0.6246090999957232,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.25": {
+        "sum_unique_seek_cost_s": 0.5964290000010806,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.5": {
+        "sum_unique_seek_cost_s": 0.6034013000098639,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.75": {
+        "sum_unique_seek_cost_s": 0.6021851999939827,
+        "max_mean_absolute_pixel_error": 0.0
+      }
+    }
+  },
+  "occlusion": {
+    "unique_requests": {
+      "0.000000": {
+        "seconds": 0.06907259999934467,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 0
+      },
+      "1.500000": {
+        "seconds": 0.07297209999887855,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 30
+      },
+      "3.000000": {
+        "seconds": 0.07424899999750778,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 60
+      },
+      "4.500000": {
+        "seconds": 0.07700000000113505,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 90
+      },
+      "0.750000": {
+        "seconds": 0.07198010000138311,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 15
+      },
+      "3.750000": {
+        "seconds": 0.07765459999791346,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 75
+      },
+      "2.250000": {
+        "seconds": 0.07484420000037062,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 45
+      },
+      "5.250000": {
+        "seconds": 0.07683739999993122,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 105
+      },
+      "2.000000": {
+        "seconds": 0.07754910000221571,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 40
+      },
+      "4.000000": {
+        "seconds": 0.0828125000007276,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 80
+      },
+      "0.500000": {
+        "seconds": 0.07683540000289213,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 10
+      },
+      "2.500000": {
+        "seconds": 0.07605469999907655,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 50
+      },
+      "1.000000": {
+        "seconds": 0.07932609999988927,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 20
+      },
+      "5.000000": {
+        "seconds": 0.08038939999823924,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 100
+      },
+      "3.500000": {
+        "seconds": 0.07653109999955632,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 70
+      },
+      "5.500000": {
+        "seconds": 0.0841210000035062,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 110
+      },
+      "0.375000": {
+        "seconds": 0.07861319999938132,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 8
+      },
+      "1.875000": {
+        "seconds": 0.07502270000259159,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 38
+      },
+      "3.375000": {
+        "seconds": 0.07365389999904437,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 68
+      },
+      "4.875000": {
+        "seconds": 0.07653609999761102,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 98
+      },
+      "1.125000": {
+        "seconds": 0.07333889999790699,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 23
+      },
+      "2.625000": {
+        "seconds": 0.07357039999988046,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 53
+      },
+      "4.125000": {
+        "seconds": 0.074088400000619,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 83
+      },
+      "5.625000": {
+        "seconds": 0.07868859999871347,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 113
+      },
+      "0.250000": {
+        "seconds": 0.0716690999979619,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 5
+      },
+      "1.250000": {
+        "seconds": 0.07809070000075735,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 25
+      },
+      "3.250000": {
+        "seconds": 0.0736085999997158,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 65
+      },
+      "4.250000": {
+        "seconds": 0.08236589999796706,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 85
+      },
+      "1.750000": {
+        "seconds": 0.0781353999991552,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 35
+      },
+      "2.750000": {
+        "seconds": 0.07654460000048857,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 55
+      },
+      "4.750000": {
+        "seconds": 0.07584760000099777,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 95
+      },
+      "5.750000": {
+        "seconds": 0.07509290000234614,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 115
+      },
+      "0.187500": {
+        "seconds": 0.07206829999995534,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 4
+      },
+      "0.937500": {
+        "seconds": 0.07901629999832949,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 19
+      },
+      "1.687500": {
+        "seconds": 0.07347970000046189,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 34
+      },
+      "2.437500": {
+        "seconds": 0.07586930000252323,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 49
+      },
+      "3.187500": {
+        "seconds": 0.07502300000123796,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 64
+      },
+      "3.937500": {
+        "seconds": 0.07974610000019311,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 79
+      },
+      "4.687500": {
+        "seconds": 0.07411539999884553,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 94
+      },
+      "5.437500": {
+        "seconds": 0.07289410000157659,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 109
+      },
+      "0.562500": {
+        "seconds": 0.0717307000013534,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 12
+      },
+      "1.312500": {
+        "seconds": 0.0772274999981164,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 27
+      },
+      "2.062500": {
+        "seconds": 0.07159129999854486,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 42
+      },
+      "2.812500": {
+        "seconds": 0.07164579999880516,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 57
+      },
+      "3.562500": {
+        "seconds": 0.07307809999838355,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 72
+      },
+      "4.312500": {
+        "seconds": 0.07390469999882043,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 87
+      },
+      "5.062500": {
+        "seconds": 0.0737598000014259,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 102
+      },
+      "5.812500": {
+        "seconds": 0.07775959999707993,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 117
+      }
+    },
+    "configurations": {
+      "1/0": {
+        "sum_unique_seek_cost_s": 0.06907259999934467,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.25": {
+        "sum_unique_seek_cost_s": 0.07297209999887855,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.5": {
+        "sum_unique_seek_cost_s": 0.07424899999750778,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.75": {
+        "sum_unique_seek_cost_s": 0.07700000000113505,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0": {
+        "sum_unique_seek_cost_s": 0.14332159999685246,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.25": {
+        "sum_unique_seek_cost_s": 0.14963469999929657,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.5": {
+        "sum_unique_seek_cost_s": 0.1499721000000136,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.75": {
+        "sum_unique_seek_cost_s": 0.15168160000030184,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0": {
+        "sum_unique_seek_cost_s": 0.22943420000228798,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.25": {
+        "sum_unique_seek_cost_s": 0.22989010000310373,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.5": {
+        "sum_unique_seek_cost_s": 0.2339644999956363,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.75": {
+        "sum_unique_seek_cost_s": 0.23362420000194106,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0": {
+        "sum_unique_seek_cost_s": 0.29329369999686605,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.25": {
+        "sum_unique_seek_cost_s": 0.3038258999986283,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.5": {
+        "sum_unique_seek_cost_s": 0.3013162999995984,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.75": {
+        "sum_unique_seek_cost_s": 0.29968629999711993,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0": {
+        "sum_unique_seek_cost_s": 0.46339869999792427,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.25": {
+        "sum_unique_seek_cost_s": 0.45741589999670396,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.5": {
+        "sum_unique_seek_cost_s": 0.4635143000050448,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.75": {
+        "sum_unique_seek_cost_s": 0.45525520000228425,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0": {
+        "sum_unique_seek_cost_s": 0.5946099999964645,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.25": {
+        "sum_unique_seek_cost_s": 0.6022122000031231,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.5": {
+        "sum_unique_seek_cost_s": 0.6035121999957482,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.75": {
+        "sum_unique_seek_cost_s": 0.5906974999925296,
+        "max_mean_absolute_pixel_error": 0.0
+      }
+    }
+  },
+  "brief": {
+    "unique_requests": {
+      "0.000000": {
+        "seconds": 0.0691767999996955,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 0
+      },
+      "1.500000": {
+        "seconds": 0.07525689999965834,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 30
+      },
+      "3.000000": {
+        "seconds": 0.08000819999870146,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 60
+      },
+      "4.500000": {
+        "seconds": 0.0766089999997348,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 90
+      },
+      "0.750000": {
+        "seconds": 0.07506480000301963,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 15
+      },
+      "3.750000": {
+        "seconds": 0.07292059999963385,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 75
+      },
+      "2.250000": {
+        "seconds": 0.073336699999345,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 45
+      },
+      "5.250000": {
+        "seconds": 0.07439080000040121,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 105
+      },
+      "2.000000": {
+        "seconds": 0.07380360000024666,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 40
+      },
+      "4.000000": {
+        "seconds": 0.07580140000209212,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 80
+      },
+      "0.500000": {
+        "seconds": 0.0750170999999682,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 10
+      },
+      "2.500000": {
+        "seconds": 0.07414350000181003,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 50
+      },
+      "1.000000": {
+        "seconds": 0.07159780000074534,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 20
+      },
+      "5.000000": {
+        "seconds": 0.0748358000018925,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 100
+      },
+      "3.500000": {
+        "seconds": 0.07413900000028661,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 70
+      },
+      "5.500000": {
+        "seconds": 0.07536249999975553,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 110
+      },
+      "0.375000": {
+        "seconds": 0.07244519999949262,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 8
+      },
+      "1.875000": {
+        "seconds": 0.07084469999972498,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 38
+      },
+      "3.375000": {
+        "seconds": 0.07363939999777358,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 68
+      },
+      "4.875000": {
+        "seconds": 0.07381669999813312,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 98
+      },
+      "1.125000": {
+        "seconds": 0.07181700000001001,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 23
+      },
+      "2.625000": {
+        "seconds": 0.07477709999875515,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 53
+      },
+      "4.125000": {
+        "seconds": 0.07788910000090254,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 83
+      },
+      "5.625000": {
+        "seconds": 0.07927639999979874,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 113
+      },
+      "0.250000": {
+        "seconds": 0.07124490000205697,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 5
+      },
+      "1.250000": {
+        "seconds": 0.07828900000095018,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 25
+      },
+      "3.250000": {
+        "seconds": 0.07571489999827463,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 65
+      },
+      "4.250000": {
+        "seconds": 0.07501480000064475,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 85
+      },
+      "1.750000": {
+        "seconds": 0.07266979999985779,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 35
+      },
+      "2.750000": {
+        "seconds": 0.07350379999843426,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 55
+      },
+      "4.750000": {
+        "seconds": 0.07419879999724799,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 95
+      },
+      "5.750000": {
+        "seconds": 0.07292980000056559,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 115
+      },
+      "0.187500": {
+        "seconds": 0.06972620000306051,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 4
+      },
+      "0.937500": {
+        "seconds": 0.07223299999895971,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 19
+      },
+      "1.687500": {
+        "seconds": 0.07565360000080545,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 34
+      },
+      "2.437500": {
+        "seconds": 0.07471249999798601,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 49
+      },
+      "3.187500": {
+        "seconds": 0.07134109999969951,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 64
+      },
+      "3.937500": {
+        "seconds": 0.07717480000064825,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 79
+      },
+      "4.687500": {
+        "seconds": 0.0755219999991823,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 94
+      },
+      "5.437500": {
+        "seconds": 0.07690619999993942,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 109
+      },
+      "0.562500": {
+        "seconds": 0.06990729999961331,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 12
+      },
+      "1.312500": {
+        "seconds": 0.07265600000027916,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 27
+      },
+      "2.062500": {
+        "seconds": 0.07244210000135354,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 42
+      },
+      "2.812500": {
+        "seconds": 0.07461630000034347,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 57
+      },
+      "3.562500": {
+        "seconds": 0.07687939999959781,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 72
+      },
+      "4.312500": {
+        "seconds": 0.07301310000184458,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 87
+      },
+      "5.062500": {
+        "seconds": 0.07484300000214716,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 102
+      },
+      "5.812500": {
+        "seconds": 0.07217450000098324,
+        "mean_absolute_pixel_error": 0.0,
+        "expected_index": 117
+      }
+    },
+    "configurations": {
+      "1/0": {
+        "sum_unique_seek_cost_s": 0.0691767999996955,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.25": {
+        "sum_unique_seek_cost_s": 0.07525689999965834,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.5": {
+        "sum_unique_seek_cost_s": 0.08000819999870146,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "1/0.75": {
+        "sum_unique_seek_cost_s": 0.0766089999997348,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0": {
+        "sum_unique_seek_cost_s": 0.14918499999839696,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.25": {
+        "sum_unique_seek_cost_s": 0.14798540000265348,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.5": {
+        "sum_unique_seek_cost_s": 0.15186589999939315,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "2/0.75": {
+        "sum_unique_seek_cost_s": 0.14772749999974621,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0": {
+        "sum_unique_seek_cost_s": 0.2187818000020343,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.25": {
+        "sum_unique_seek_cost_s": 0.22576960000151303,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.5": {
+        "sum_unique_seek_cost_s": 0.2264418000013393,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "3/0.75": {
+        "sum_unique_seek_cost_s": 0.2247583999997005,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0": {
+        "sum_unique_seek_cost_s": 0.3010508999977901,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.25": {
+        "sum_unique_seek_cost_s": 0.2907459999951243,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.5": {
+        "sum_unique_seek_cost_s": 0.2957129000023997,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "4/0.75": {
+        "sum_unique_seek_cost_s": 0.30375959999946645,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0": {
+        "sum_unique_seek_cost_s": 0.4452236000033736,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.25": {
+        "sum_unique_seek_cost_s": 0.44799110000167275,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.5": {
+        "sum_unique_seek_cost_s": 0.4505280000012135,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "6/0.75": {
+        "sum_unique_seek_cost_s": 0.4412875999987591,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0": {
+        "sum_unique_seek_cost_s": 0.5967638000001898,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.25": {
+        "sum_unique_seek_cost_s": 0.5932694000002812,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.5": {
+        "sum_unique_seek_cost_s": 0.5945055999945907,
+        "max_mean_absolute_pixel_error": 0.0
+      },
+      "8/0.75": {
+        "sum_unique_seek_cost_s": 0.5865317000061623,
+        "max_mean_absolute_pixel_error": 0.0
+      }
+    }
+  }
+}

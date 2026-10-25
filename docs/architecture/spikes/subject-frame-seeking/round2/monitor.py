@@ -9,8 +9,9 @@ import time
 import psutil
 
 root = Path(__file__).resolve().parent
+psm = sys.argv[1] if len(sys.argv) > 1 else "13"
 start = time.perf_counter()
-p = subprocess.Popen([sys.executable, str(root / "collect.py")])
+p = subprocess.Popen([sys.executable, str(root / "collect.py"), "--psm", psm])
 proc = psutil.Process(p.pid)
 peak = 0
 samples = 0
@@ -28,7 +29,7 @@ while p.poll() is None:
         pass
     time.sleep(0.02)
 assert p.returncode == 0
-(root / "memory.json").write_text(
+(root / f"memory-psm{psm}.json").write_text(
     json.dumps(
         dict(
             peak_summed_tree_rss_bytes=peak,
