@@ -1,0 +1,30 @@
+{
+  "repository": "smileynet/video-buddy",
+  "scope": "new revision-boundary evidence only; no history or prior artifact audit",
+  "roles": {
+    "source": "Python scripts",
+    "frozen_reference": "protocol.json / reference.json / label-notes.json / selection-freeze.json",
+    "generated_evidence": "compressed OCR and comparison JSON, three small selected JPEGs",
+    "regenerable_local": ".scratch source captures and exhaustive ref sheets"
+  },
+  "storage": "ordinary Git for small scoped files; no LFS, uploads, untracking or history rewrite",
+  "source_recovery": {
+    "hashes": {
+      "SWYqp7iY_Tc": "a404e9e84132fde12cd77bbfc7d8183275f9ec31d97b28b3e5d4ea2dd2c723c1",
+      "hwP7WQkmECE": "fa8c3bec265e38ec3a8de4a8858ac3c31f1310d793eb4d66ef7646c3534dc734"
+    },
+    "retrieval": "repo experimental capture CLI with --download-source; validate source SHA before replay",
+    "limits": "exact source bytes retained locally; no independent remote backup verified; public URL may change"
+  },
+  "runtime": {
+    "python": "3.13.14",
+    "packages": {
+      "Pillow": "12.2.0",
+      "opencv-python": "4.13.0.92",
+      "numpy": "2.4.5",
+      "psutil": "7.2.2",
+      "yt-dlp": "2026.10.21"
+    }
+  },
+  "retention": "retain frozen evidence on spike branch through review28; local originals/sheets retained; no deletion authorized or performed"
+}

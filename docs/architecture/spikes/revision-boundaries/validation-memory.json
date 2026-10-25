@@ -1,0 +1,7 @@
+{
+  "peak_summed_tree_rss": 92979200,
+  "samples": 2997,
+  "nominal_interval_s": 0.02,
+  "wall_s": 108.03035429999727,
+  "exclusions": "decode, annotation, legacy, monitor; shared pages may double count"
+}

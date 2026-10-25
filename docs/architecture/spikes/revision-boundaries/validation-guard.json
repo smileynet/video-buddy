@@ -1,0 +1,17 @@
+{
+  "policies.py": {
+    "normalized_sha256": "f054258184cdcf3fa36cb0c91206ef64aa34480fc2c97169e6948cc073b1ba19",
+    "working_matches_frozen_commit": true,
+    "original_run_byte_sha256": "0d6412f13ffb4ca32f8558a394beeddd2684479c02dfd3ebd9cef75314e1fcc6"
+  },
+  "collect.py": {
+    "normalized_sha256": "d05beaad54f81f18ba940e7455de9d19a40b0d9f60e698354555f9ee4747c3d7",
+    "working_matches_frozen_commit": true,
+    "original_run_byte_sha256": "d05beaad54f81f18ba940e7455de9d19a40b0d9f60e698354555f9ee4747c3d7"
+  },
+  "reference.json": {
+    "normalized_sha256": "3e4cc705ece3eb3e9fe5da61310b9df4a67b74ab7a13ca132c60987c41230c13",
+    "working_matches_frozen_commit": true,
+    "original_run_byte_sha256": "f8b3d21c94cf64d326c2ab26fd82d38d870004e14448ab1c01f66a0f88de9ebe"
+  }
+}

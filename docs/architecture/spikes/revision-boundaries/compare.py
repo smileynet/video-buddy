@@ -76,7 +76,7 @@ def measure(ref, rows, selected):
         exact_literals=sorted(exact),
         selected=len(selected),
         redundant=duplicate,
-        prefix_only=prefix_only,
+        prefix_only=prefix_only if ref["phase"] == "development" else None,
         missed=[s["id"] for s in ref["states"] if s["id"] not in possible],
         evidence=evidence,
     )

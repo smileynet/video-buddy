@@ -1,0 +1,3020 @@
+{
+  "dev": {
+    "940.000000000": {
+      "verified_index": 0,
+      "request": 940.0,
+      "seconds": 0.09711280000192346,
+      "expected_index": 0,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 0,
+          "error": 0.0
+        },
+        {
+          "index": 1,
+          "error": 0.002927879050925926
+        }
+      ]
+    },
+    "941.500000000": {
+      "verified_index": 45,
+      "request": 941.5,
+      "seconds": 0.09515939999982947,
+      "expected_index": 45,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 44,
+          "error": 6.148726851851851e-05
+        },
+        {
+          "index": 45,
+          "error": 0.0
+        },
+        {
+          "index": 46,
+          "error": 0.0003121383101851852
+        }
+      ]
+    },
+    "943.000000000": {
+      "verified_index": 90,
+      "request": 943.0,
+      "seconds": 0.09748689999833005,
+      "expected_index": 90,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 89,
+          "error": 0.0006879340277777778
+        },
+        {
+          "index": 90,
+          "error": 0.0
+        },
+        {
+          "index": 91,
+          "error": 0.0006955295138888889
+        }
+      ]
+    },
+    "944.500000000": {
+      "verified_index": 135,
+      "request": 944.5,
+      "seconds": 0.08992349999971339,
+      "expected_index": 135,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 134,
+          "error": 0.00038194444444444446
+        },
+        {
+          "index": 135,
+          "error": 0.0
+        },
+        {
+          "index": 136,
+          "error": 0.0022529658564814817
+        }
+      ]
+    },
+    "940.750000000": {
+      "verified_index": 23,
+      "request": 940.75,
+      "seconds": 0.09398479999799747,
+      "expected_index": 23,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 22,
+          "error": 0.0003352864583333333
+        },
+        {
+          "index": 23,
+          "error": 0.0
+        },
+        {
+          "index": 24,
+          "error": 0.0007541232638888889
+        }
+      ]
+    },
+    "943.750000000": {
+      "verified_index": 113,
+      "request": 943.75,
+      "seconds": 0.09750269999858574,
+      "expected_index": 113,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 112,
+          "error": 0.0
+        },
+        {
+          "index": 113,
+          "error": 0.0
+        },
+        {
+          "index": 114,
+          "error": 1.736111111111111e-05
+        }
+      ]
+    },
+    "942.250000000": {
+      "verified_index": 68,
+      "request": 942.25,
+      "seconds": 0.0966630000002624,
+      "expected_index": 68,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 67,
+          "error": 0.0010861545138888889
+        },
+        {
+          "index": 68,
+          "error": 0.0
+        },
+        {
+          "index": 69,
+          "error": 0.0003616898148148148
+        }
+      ]
+    },
+    "945.250000000": {
+      "verified_index": 158,
+      "request": 945.25,
+      "seconds": 0.08988689999750932,
+      "expected_index": 158,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 157,
+          "error": 0.0011975549768518518
+        },
+        {
+          "index": 158,
+          "error": 0.0
+        },
+        {
+          "index": 159,
+          "error": 0.00022569444444444443
+        }
+      ]
+    },
+    "942.000000000": {
+      "verified_index": 60,
+      "request": 942.0,
+      "seconds": 0.09665779999704682,
+      "expected_index": 60,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 59,
+          "error": 0.00017614293981481482
+        },
+        {
+          "index": 60,
+          "error": 0.0
+        },
+        {
+          "index": 61,
+          "error": 0.0003978587962962963
+        }
+      ]
+    },
+    "944.000000000": {
+      "verified_index": 120,
+      "request": 944.0,
+      "seconds": 0.08457179999822984,
+      "expected_index": 120,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 119,
+          "error": 0.9174175347222222
+        },
+        {
+          "index": 120,
+          "error": 0.0
+        },
+        {
+          "index": 121,
+          "error": 0.024255280671296297
+        }
+      ]
+    },
+    "940.500000000": {
+      "verified_index": 15,
+      "request": 940.5,
+      "seconds": 0.09515839999949094,
+      "expected_index": 15,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 14,
+          "error": 0.00012803819444444446
+        },
+        {
+          "index": 15,
+          "error": 0.0
+        },
+        {
+          "index": 16,
+          "error": 0.00068359375
+        }
+      ]
+    },
+    "942.500000000": {
+      "verified_index": 75,
+      "request": 942.5,
+      "seconds": 0.09804919999805861,
+      "expected_index": 75,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 74,
+          "error": 0.01346969039351852
+        },
+        {
+          "index": 75,
+          "error": 0.0
+        },
+        {
+          "index": 76,
+          "error": 6.065604383680555
+        }
+      ]
+    },
+    "941.000000000": {
+      "verified_index": 30,
+      "request": 941.0,
+      "seconds": 0.09464890000162995,
+      "expected_index": 30,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 29,
+          "error": 0.0
+        },
+        {
+          "index": 30,
+          "error": 0.0
+        },
+        {
+          "index": 31,
+          "error": 0.0
+        }
+      ]
+    },
+    "945.000000000": {
+      "verified_index": 150,
+      "request": 945.0,
+      "seconds": 0.08900749999884283,
+      "expected_index": 150,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 149,
+          "error": 0.12836986400462963
+        },
+        {
+          "index": 150,
+          "error": 0.0
+        },
+        {
+          "index": 151,
+          "error": 0.0631029369212963
+        }
+      ]
+    },
+    "943.500000000": {
+      "verified_index": 105,
+      "request": 943.5,
+      "seconds": 0.09888539999883506,
+      "expected_index": 105,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 104,
+          "error": 0.008203486689814814
+        },
+        {
+          "index": 105,
+          "error": 0.0
+        },
+        {
+          "index": 106,
+          "error": 0.0014040798611111112
+        }
+      ]
+    },
+    "945.500000000": {
+      "verified_index": 165,
+      "request": 945.5,
+      "seconds": 0.09176169999773265,
+      "expected_index": 165,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 164,
+          "error": 0.17507414641203703
+        },
+        {
+          "index": 165,
+          "error": 0.0
+        },
+        {
+          "index": 166,
+          "error": 6.12836082175926
+        }
+      ]
+    },
+    "940.375000000": {
+      "verified_index": 12,
+      "request": 940.375,
+      "seconds": 0.09561730000132229,
+      "expected_index": 12,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 11,
+          "error": 0.024956235532407407
+        },
+        {
+          "index": 12,
+          "error": 0.0
+        },
+        {
+          "index": 13,
+          "error": 0.00019892939814814814
+        }
+      ]
+    },
+    "941.875000000": {
+      "verified_index": 57,
+      "request": 941.875,
+      "seconds": 0.09711329999845475,
+      "expected_index": 57,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 56,
+          "error": 0.0
+        },
+        {
+          "index": 57,
+          "error": 0.0
+        },
+        {
+          "index": 58,
+          "error": 0.00968894675925926
+        }
+      ]
+    },
+    "943.375000000": {
+      "verified_index": 102,
+      "request": 943.375,
+      "seconds": 0.09858080000049085,
+      "expected_index": 102,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 101,
+          "error": 0.004342447916666666
+        },
+        {
+          "index": 102,
+          "error": 0.0
+        },
+        {
+          "index": 103,
+          "error": 0.02456597222222222
+        }
+      ]
+    },
+    "944.875000000": {
+      "verified_index": 147,
+      "request": 944.875,
+      "seconds": 0.09122959999876912,
+      "expected_index": 147,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 146,
+          "error": 0.0
+        },
+        {
+          "index": 147,
+          "error": 0.0
+        },
+        {
+          "index": 148,
+          "error": 0.0
+        }
+      ]
+    },
+    "941.125000000": {
+      "verified_index": 34,
+      "request": 941.125,
+      "seconds": 0.10057660000165924,
+      "expected_index": 34,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 33,
+          "error": 0.0
+        },
+        {
+          "index": 34,
+          "error": 0.0
+        },
+        {
+          "index": 35,
+          "error": 6.076388888888889e-05
+        }
+      ]
+    },
+    "942.625000000": {
+      "verified_index": 79,
+      "request": 942.625,
+      "seconds": 0.10116750000088359,
+      "expected_index": 79,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 78,
+          "error": 0.004455295138888889
+        },
+        {
+          "index": 79,
+          "error": 0.0
+        },
+        {
+          "index": 80,
+          "error": 0.005028935185185185
+        }
+      ]
+    },
+    "944.125000000": {
+      "verified_index": 124,
+      "request": 944.125,
+      "seconds": 0.08844649999809917,
+      "expected_index": 124,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 123,
+          "error": 0.000701316550925926
+        },
+        {
+          "index": 124,
+          "error": 0.0
+        },
+        {
+          "index": 125,
+          "error": 0.0011787471064814816
+        }
+      ]
+    },
+    "945.625000000": {
+      "verified_index": 169,
+      "request": 945.625,
+      "seconds": 0.09076699999786797,
+      "expected_index": 169,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 168,
+          "error": 0.02166702835648148
+        },
+        {
+          "index": 169,
+          "error": 0.0
+        },
+        {
+          "index": 170,
+          "error": 0.005983072916666667
+        }
+      ]
+    },
+    "940.250000000": {
+      "verified_index": 8,
+      "request": 940.25,
+      "seconds": 0.09353320000082022,
+      "expected_index": 8,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 7,
+          "error": 0.0008485243055555556
+        },
+        {
+          "index": 8,
+          "error": 0.0
+        },
+        {
+          "index": 9,
+          "error": 0.005437644675925926
+        }
+      ]
+    },
+    "941.250000000": {
+      "verified_index": 38,
+      "request": 941.25,
+      "seconds": 0.09607640000103856,
+      "expected_index": 38,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 37,
+          "error": 0.000458984375
+        },
+        {
+          "index": 38,
+          "error": 0.0
+        },
+        {
+          "index": 39,
+          "error": 0.00015697337962962963
+        }
+      ]
+    },
+    "943.250000000": {
+      "verified_index": 98,
+      "request": 943.25,
+      "seconds": 0.09890559999985271,
+      "expected_index": 98,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 97,
+          "error": 0.0
+        },
+        {
+          "index": 98,
+          "error": 0.0
+        },
+        {
+          "index": 99,
+          "error": 0.0006481481481481481
+        }
+      ]
+    },
+    "944.250000000": {
+      "verified_index": 128,
+      "request": 944.25,
+      "seconds": 0.0889086999995925,
+      "expected_index": 128,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 127,
+          "error": 0.0007465277777777778
+        },
+        {
+          "index": 128,
+          "error": 0.0
+        },
+        {
+          "index": 129,
+          "error": 0.0001222511574074074
+        }
+      ]
+    },
+    "941.750000000": {
+      "verified_index": 53,
+      "request": 941.75,
+      "seconds": 0.09583589999965625,
+      "expected_index": 53,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 52,
+          "error": 2.604166666666667e-05
+        },
+        {
+          "index": 53,
+          "error": 0.0
+        },
+        {
+          "index": 54,
+          "error": 0.0004857494212962963
+        }
+      ]
+    },
+    "942.750000000": {
+      "verified_index": 83,
+      "request": 942.75,
+      "seconds": 0.0981309999988298,
+      "expected_index": 83,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 82,
+          "error": 0.0010872395833333333
+        },
+        {
+          "index": 83,
+          "error": 0.0
+        },
+        {
+          "index": 84,
+          "error": 0.0005530237268518519
+        }
+      ]
+    },
+    "944.750000000": {
+      "verified_index": 143,
+      "request": 944.75,
+      "seconds": 0.08987310000156867,
+      "expected_index": 143,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 142,
+          "error": 0.0
+        },
+        {
+          "index": 143,
+          "error": 0.0
+        },
+        {
+          "index": 144,
+          "error": 0.0001298466435185185
+        }
+      ]
+    },
+    "945.750000000": {
+      "verified_index": 173,
+      "request": 945.75,
+      "seconds": 0.09229400000185706,
+      "expected_index": 173,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 172,
+          "error": 0.0010539641203703705
+        },
+        {
+          "index": 173,
+          "error": 0.0
+        },
+        {
+          "index": 174,
+          "error": 0.0003616898148148148
+        }
+      ]
+    },
+    "940.187500000": {
+      "verified_index": 6,
+      "request": 940.1875,
+      "seconds": 0.09466239999892423,
+      "expected_index": 6,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 5,
+          "error": 0.0028226273148148147
+        },
+        {
+          "index": 6,
+          "error": 0.0
+        },
+        {
+          "index": 7,
+          "error": 0.0012235966435185186
+        }
+      ]
+    },
+    "940.937500000": {
+      "verified_index": 29,
+      "request": 940.9375,
+      "seconds": 0.09466210000027786,
+      "expected_index": 29,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 28,
+          "error": 0.0
+        },
+        {
+          "index": 29,
+          "error": 0.0
+        },
+        {
+          "index": 30,
+          "error": 0.0
+        }
+      ]
+    },
+    "941.687500000": {
+      "verified_index": 51,
+      "request": 941.6875,
+      "seconds": 0.09539930000028107,
+      "expected_index": 51,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 50,
+          "error": 0.02354058159722222
+        },
+        {
+          "index": 51,
+          "error": 0.0
+        },
+        {
+          "index": 52,
+          "error": 0.00021665219907407408
+        }
+      ]
+    },
+    "942.437500000": {
+      "verified_index": 74,
+      "request": 942.4375,
+      "seconds": 0.09726559999762685,
+      "expected_index": 74,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 73,
+          "error": 0.0008669704861111111
+        },
+        {
+          "index": 74,
+          "error": 0.0
+        },
+        {
+          "index": 75,
+          "error": 0.01346969039351852
+        }
+      ]
+    },
+    "943.187500000": {
+      "verified_index": 96,
+      "request": 943.1875,
+      "seconds": 0.09895250000045053,
+      "expected_index": 96,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 95,
+          "error": 0.0
+        },
+        {
+          "index": 96,
+          "error": 0.0
+        },
+        {
+          "index": 97,
+          "error": 0.0
+        }
+      ]
+    },
+    "943.937500000": {
+      "verified_index": 119,
+      "request": 943.9375,
+      "seconds": 0.10253190000003087,
+      "expected_index": 119,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 118,
+          "error": 1.736111111111111e-05
+        },
+        {
+          "index": 119,
+          "error": 0.0
+        },
+        {
+          "index": 120,
+          "error": 0.9174175347222222
+        }
+      ]
+    },
+    "944.687500000": {
+      "verified_index": 141,
+      "request": 944.6875,
+      "seconds": 0.09075080000184244,
+      "expected_index": 141,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 140,
+          "error": 0.0
+        },
+        {
+          "index": 141,
+          "error": 0.0
+        },
+        {
+          "index": 142,
+          "error": 0.0
+        }
+      ]
+    },
+    "945.437500000": {
+      "verified_index": 164,
+      "request": 945.4375,
+      "seconds": 0.0931918999995105,
+      "expected_index": 164,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 163,
+          "error": 6.159152922453703
+        },
+        {
+          "index": 164,
+          "error": 0.0
+        },
+        {
+          "index": 165,
+          "error": 0.17507414641203703
+        }
+      ]
+    },
+    "940.562500000": {
+      "verified_index": 17,
+      "request": 940.5625,
+      "seconds": 0.09302829999796813,
+      "expected_index": 17,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 16,
+          "error": 0.016770833333333332
+        },
+        {
+          "index": 17,
+          "error": 0.0
+        },
+        {
+          "index": 18,
+          "error": 8.499710648148148e-05
+        }
+      ]
+    },
+    "941.312500000": {
+      "verified_index": 40,
+      "request": 941.3125,
+      "seconds": 0.09501929999896674,
+      "expected_index": 40,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 39,
+          "error": 0.021471354166666668
+        },
+        {
+          "index": 40,
+          "error": 0.0
+        },
+        {
+          "index": 41,
+          "error": 4.6296296296296294e-05
+        }
+      ]
+    },
+    "942.062500000": {
+      "verified_index": 62,
+      "request": 942.0625,
+      "seconds": 0.09553339999911259,
+      "expected_index": 62,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 61,
+          "error": 0.01189380787037037
+        },
+        {
+          "index": 62,
+          "error": 0.0
+        },
+        {
+          "index": 63,
+          "error": 0.0003761574074074074
+        }
+      ]
+    },
+    "942.812500000": {
+      "verified_index": 85,
+      "request": 942.8125,
+      "seconds": 0.0968581000015547,
+      "expected_index": 85,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 84,
+          "error": 0.003404947916666667
+        },
+        {
+          "index": 85,
+          "error": 0.0
+        },
+        {
+          "index": 86,
+          "error": 0.004011863425925926
+        }
+      ]
+    },
+    "943.562500000": {
+      "verified_index": 107,
+      "request": 943.5625,
+      "seconds": 0.10044340000240481,
+      "expected_index": 107,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 106,
+          "error": 0.016981336805555556
+        },
+        {
+          "index": 107,
+          "error": 0.0
+        },
+        {
+          "index": 108,
+          "error": 0.0005457899305555555
+        }
+      ]
+    },
+    "944.312500000": {
+      "verified_index": 130,
+      "request": 944.3125,
+      "seconds": 0.08961520000229939,
+      "expected_index": 130,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 129,
+          "error": 0.022185691550925927
+        },
+        {
+          "index": 130,
+          "error": 0.0
+        },
+        {
+          "index": 131,
+          "error": 0.0007537615740740741
+        }
+      ]
+    },
+    "945.062500000": {
+      "verified_index": 152,
+      "request": 945.0625,
+      "seconds": 0.0916624999990745,
+      "expected_index": 152,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 151,
+          "error": 0.12014286747685185
+        },
+        {
+          "index": 152,
+          "error": 0.0
+        },
+        {
+          "index": 153,
+          "error": 0.03594437210648148
+        }
+      ]
+    },
+    "945.812500000": {
+      "verified_index": 175,
+      "request": 945.8125,
+      "seconds": 0.0933815999997023,
+      "expected_index": 175,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 174,
+          "error": 0.00025824652777777776
+        },
+        {
+          "index": 175,
+          "error": 0.0
+        },
+        {
+          "index": 176,
+          "error": 0.0006622540509259259
+        }
+      ]
+    }
+  },
+  "terminal": {
+    "856.000000000": {
+      "verified_index": 0,
+      "request": 856.0,
+      "seconds": 0.09475360000215005,
+      "expected_index": 0,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 0,
+          "error": 0.0
+        },
+        {
+          "index": 1,
+          "error": 0.0
+        }
+      ]
+    },
+    "858.000000000": {
+      "verified_index": 60,
+      "request": 858.0,
+      "seconds": 0.10279389999777777,
+      "expected_index": 60,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 59,
+          "error": 0.0001222511574074074
+        },
+        {
+          "index": 60,
+          "error": 0.0
+        },
+        {
+          "index": 61,
+          "error": 0.0
+        }
+      ]
+    },
+    "860.000000000": {
+      "verified_index": 120,
+      "request": 860.0,
+      "seconds": 0.0904158000012103,
+      "expected_index": 120,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 119,
+          "error": 0.12180772569444444
+        },
+        {
+          "index": 120,
+          "error": 0.0
+        },
+        {
+          "index": 121,
+          "error": 0.08039243344907407
+        }
+      ]
+    },
+    "862.000000000": {
+      "verified_index": 180,
+      "request": 862.0,
+      "seconds": 0.09866560000227764,
+      "expected_index": 180,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 179,
+          "error": 9.512442129629629e-05
+        },
+        {
+          "index": 180,
+          "error": 0.0
+        },
+        {
+          "index": 181,
+          "error": 0.0005067274305555555
+        }
+      ]
+    },
+    "857.000000000": {
+      "verified_index": 30,
+      "request": 857.0,
+      "seconds": 0.10015520000160905,
+      "expected_index": 30,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 29,
+          "error": 0.019543185763888887
+        },
+        {
+          "index": 30,
+          "error": 0.0
+        },
+        {
+          "index": 31,
+          "error": 0.019882450810185186
+        }
+      ]
+    },
+    "861.000000000": {
+      "verified_index": 150,
+      "request": 861.0,
+      "seconds": 0.092587299997831,
+      "expected_index": 150,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 149,
+          "error": 0.0002727141203703704
+        },
+        {
+          "index": 150,
+          "error": 0.0
+        },
+        {
+          "index": 151,
+          "error": 0.00044632523148148146
+        }
+      ]
+    },
+    "859.000000000": {
+      "verified_index": 90,
+      "request": 859.0,
+      "seconds": 0.08641759999954957,
+      "expected_index": 90,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 89,
+          "error": 0.7955258969907407
+        },
+        {
+          "index": 90,
+          "error": 0.0
+        },
+        {
+          "index": 91,
+          "error": 0.012925708912037037
+        }
+      ]
+    },
+    "863.000000000": {
+      "verified_index": 210,
+      "request": 863.0,
+      "seconds": 0.09682619999875897,
+      "expected_index": 210,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 209,
+          "error": 0.0
+        },
+        {
+          "index": 210,
+          "error": 0.0
+        },
+        {
+          "index": 211,
+          "error": 0.0
+        }
+      ]
+    },
+    "858.666666667": {
+      "verified_index": 81,
+      "request": 858.6666666666666,
+      "seconds": 0.09861860000091838,
+      "expected_index": 80,
+      "expected_error": 6.510416666666667e-05,
+      "neighboring_matches": [
+        {
+          "index": 79,
+          "error": 0.004729817708333334
+        },
+        {
+          "index": 80,
+          "error": 6.510416666666667e-05
+        },
+        {
+          "index": 81,
+          "error": 0.0
+        }
+      ]
+    },
+    "861.333333333": {
+      "verified_index": 161,
+      "request": 861.3333333333334,
+      "seconds": 0.09368690000337665,
+      "expected_index": 161,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 160,
+          "error": 0.0
+        },
+        {
+          "index": 161,
+          "error": 0.0
+        },
+        {
+          "index": 162,
+          "error": 0.0
+        }
+      ]
+    },
+    "856.666666667": {
+      "verified_index": 21,
+      "request": 856.6666666666666,
+      "seconds": 0.09762440000122297,
+      "expected_index": 20,
+      "expected_error": 0.0041388165509259256,
+      "neighboring_matches": [
+        {
+          "index": 19,
+          "error": 0.0041388165509259256
+        },
+        {
+          "index": 20,
+          "error": 0.0041388165509259256
+        },
+        {
+          "index": 21,
+          "error": 0.0
+        }
+      ]
+    },
+    "859.333333333": {
+      "verified_index": 101,
+      "request": 859.3333333333334,
+      "seconds": 0.08905769999910262,
+      "expected_index": 101,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 100,
+          "error": 0.0
+        },
+        {
+          "index": 101,
+          "error": 0.0
+        },
+        {
+          "index": 102,
+          "error": 0.0
+        }
+      ]
+    },
+    "857.333333333": {
+      "verified_index": 41,
+      "request": 857.3333333333334,
+      "seconds": 0.09680869999647257,
+      "expected_index": 41,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 40,
+          "error": 0.0
+        },
+        {
+          "index": 41,
+          "error": 0.0
+        },
+        {
+          "index": 42,
+          "error": 0.0
+        }
+      ]
+    },
+    "862.666666667": {
+      "verified_index": 201,
+      "request": 862.6666666666666,
+      "seconds": 0.09603170000264072,
+      "expected_index": 200,
+      "expected_error": 0.00010163483796296296,
+      "neighboring_matches": [
+        {
+          "index": 199,
+          "error": 0.0002517361111111111
+        },
+        {
+          "index": 200,
+          "error": 0.00010163483796296296
+        },
+        {
+          "index": 201,
+          "error": 0.0
+        }
+      ]
+    },
+    "860.666666667": {
+      "verified_index": 141,
+      "request": 860.6666666666666,
+      "seconds": 0.09325729999909527,
+      "expected_index": 140,
+      "expected_error": 0.006116536458333334,
+      "neighboring_matches": [
+        {
+          "index": 139,
+          "error": 0.014665436921296297
+        },
+        {
+          "index": 140,
+          "error": 0.006116536458333334
+        },
+        {
+          "index": 141,
+          "error": 0.0
+        }
+      ]
+    },
+    "863.333333333": {
+      "verified_index": 220,
+      "request": 863.3333333333334,
+      "seconds": 0.09518889999890234,
+      "expected_index": 221,
+      "expected_error": 0.004388744212962963,
+      "neighboring_matches": [
+        {
+          "index": 220,
+          "error": 0.0
+        },
+        {
+          "index": 221,
+          "error": 0.004388744212962963
+        },
+        {
+          "index": 222,
+          "error": 0.0044332320601851855
+        }
+      ]
+    },
+    "856.500000000": {
+      "verified_index": 15,
+      "request": 856.5,
+      "seconds": 0.09719810000024154,
+      "expected_index": 15,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 14,
+          "error": 0.0
+        },
+        {
+          "index": 15,
+          "error": 0.0
+        },
+        {
+          "index": 16,
+          "error": 0.0
+        }
+      ]
+    },
+    "858.500000000": {
+      "verified_index": 75,
+      "request": 858.5,
+      "seconds": 0.09908050000012736,
+      "expected_index": 75,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 74,
+          "error": 0.010873119212962964
+        },
+        {
+          "index": 75,
+          "error": 0.0
+        },
+        {
+          "index": 76,
+          "error": 6.046566116898148
+        }
+      ]
+    },
+    "860.500000000": {
+      "verified_index": 135,
+      "request": 860.5,
+      "seconds": 0.09385920000204351,
+      "expected_index": 135,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 134,
+          "error": 0.001087601273148148
+        },
+        {
+          "index": 135,
+          "error": 0.0
+        },
+        {
+          "index": 136,
+          "error": 0.001501736111111111
+        }
+      ]
+    },
+    "862.500000000": {
+      "verified_index": 195,
+      "request": 862.5,
+      "seconds": 0.09823419999884209,
+      "expected_index": 195,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 194,
+          "error": 0.00017180266203703704
+        },
+        {
+          "index": 195,
+          "error": 0.0
+        },
+        {
+          "index": 196,
+          "error": 0.0
+        }
+      ]
+    },
+    "857.500000000": {
+      "verified_index": 45,
+      "request": 857.5,
+      "seconds": 0.10089850000076694,
+      "expected_index": 45,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 44,
+          "error": 0.0
+        },
+        {
+          "index": 45,
+          "error": 0.0
+        },
+        {
+          "index": 46,
+          "error": 0.0
+        }
+      ]
+    },
+    "859.500000000": {
+      "verified_index": 105,
+      "request": 859.5,
+      "seconds": 0.09104970000043977,
+      "expected_index": 105,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 104,
+          "error": 0.0
+        },
+        {
+          "index": 105,
+          "error": 0.0
+        },
+        {
+          "index": 106,
+          "error": 0.00026222511574074077
+        }
+      ]
+    },
+    "861.500000000": {
+      "verified_index": 165,
+      "request": 861.5,
+      "seconds": 0.0947673999980907,
+      "expected_index": 165,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 164,
+          "error": 0.0005815972222222222
+        },
+        {
+          "index": 165,
+          "error": 0.0
+        },
+        {
+          "index": 166,
+          "error": 0.0014123987268518517
+        }
+      ]
+    },
+    "863.500000000": {
+      "verified_index": 225,
+      "request": 863.5,
+      "seconds": 0.095996500000183,
+      "expected_index": 225,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 224,
+          "error": 7.55931712962963e-05
+        },
+        {
+          "index": 225,
+          "error": 0.0
+        },
+        {
+          "index": 226,
+          "error": 0.0
+        }
+      ]
+    },
+    "856.333333333": {
+      "verified_index": 10,
+      "request": 856.3333333333334,
+      "seconds": 0.09896750000189058,
+      "expected_index": 11,
+      "expected_error": 0.00014033564814814814,
+      "neighboring_matches": [
+        {
+          "index": 10,
+          "error": 0.0
+        },
+        {
+          "index": 11,
+          "error": 0.00014033564814814814
+        },
+        {
+          "index": 12,
+          "error": 0.00014033564814814814
+        }
+      ]
+    },
+    "857.666666667": {
+      "verified_index": 51,
+      "request": 857.6666666666666,
+      "seconds": 0.09857149999879766,
+      "expected_index": 50,
+      "expected_error": 0.00033166956018518517,
+      "neighboring_matches": [
+        {
+          "index": 49,
+          "error": 0.00038049768518518516
+        },
+        {
+          "index": 50,
+          "error": 0.00033166956018518517
+        },
+        {
+          "index": 51,
+          "error": 0.0
+        }
+      ]
+    },
+    "860.333333333": {
+      "verified_index": 130,
+      "request": 860.3333333333334,
+      "seconds": 0.09022330000152579,
+      "expected_index": 131,
+      "expected_error": 0.002816478587962963,
+      "neighboring_matches": [
+        {
+          "index": 130,
+          "error": 0.0
+        },
+        {
+          "index": 131,
+          "error": 0.002816478587962963
+        },
+        {
+          "index": 132,
+          "error": 0.014045500578703704
+        }
+      ]
+    },
+    "861.666666667": {
+      "verified_index": 171,
+      "request": 861.6666666666666,
+      "seconds": 0.09531819999756408,
+      "expected_index": 170,
+      "expected_error": 6.480719762731481,
+      "neighboring_matches": [
+        {
+          "index": 169,
+          "error": 6.481068431712963
+        },
+        {
+          "index": 170,
+          "error": 6.480719762731481
+        },
+        {
+          "index": 171,
+          "error": 0.0
+        }
+      ]
+    },
+    "858.333333333": {
+      "verified_index": 70,
+      "request": 858.3333333333334,
+      "seconds": 0.10204950000115787,
+      "expected_index": 71,
+      "expected_error": 0.0019773582175925926,
+      "neighboring_matches": [
+        {
+          "index": 70,
+          "error": 0.0
+        },
+        {
+          "index": 71,
+          "error": 0.0019773582175925926
+        },
+        {
+          "index": 72,
+          "error": 0.007849030671296296
+        }
+      ]
+    },
+    "859.666666667": {
+      "verified_index": 110,
+      "request": 859.6666666666666,
+      "seconds": 0.0902170000008482,
+      "expected_index": 110,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 109,
+          "error": 0.0
+        },
+        {
+          "index": 110,
+          "error": 0.0
+        },
+        {
+          "index": 111,
+          "error": 0.0
+        }
+      ]
+    },
+    "862.333333333": {
+      "verified_index": 190,
+      "request": 862.3333333333334,
+      "seconds": 0.09629560000030324,
+      "expected_index": 191,
+      "expected_error": 0.0003533709490740741,
+      "neighboring_matches": [
+        {
+          "index": 190,
+          "error": 0.0
+        },
+        {
+          "index": 191,
+          "error": 0.0003533709490740741
+        },
+        {
+          "index": 192,
+          "error": 0.0016901765046296296
+        }
+      ]
+    },
+    "863.666666667": {
+      "verified_index": 231,
+      "request": 863.6666666666666,
+      "seconds": 0.09902549999969779,
+      "expected_index": 230,
+      "expected_error": 0.0002224392361111111,
+      "neighboring_matches": [
+        {
+          "index": 229,
+          "error": 0.0003989438657407407
+        },
+        {
+          "index": 230,
+          "error": 0.0002224392361111111
+        },
+        {
+          "index": 231,
+          "error": 0.0
+        }
+      ]
+    },
+    "856.250000000": {
+      "verified_index": 8,
+      "request": 856.25,
+      "seconds": 0.09478509999826201,
+      "expected_index": 8,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 7,
+          "error": 0.0005157696759259259
+        },
+        {
+          "index": 8,
+          "error": 0.0
+        },
+        {
+          "index": 9,
+          "error": 0.00028682002314814813
+        }
+      ]
+    },
+    "857.250000000": {
+      "verified_index": 38,
+      "request": 857.25,
+      "seconds": 0.09819960000095307,
+      "expected_index": 38,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 37,
+          "error": 0.0
+        },
+        {
+          "index": 38,
+          "error": 0.0
+        },
+        {
+          "index": 39,
+          "error": 0.0
+        }
+      ]
+    },
+    "858.250000000": {
+      "verified_index": 68,
+      "request": 858.25,
+      "seconds": 0.097082499996759,
+      "expected_index": 68,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 67,
+          "error": 0.001357421875
+        },
+        {
+          "index": 68,
+          "error": 0.0
+        },
+        {
+          "index": 69,
+          "error": 0.0003978587962962963
+        }
+      ]
+    },
+    "859.250000000": {
+      "verified_index": 98,
+      "request": 859.25,
+      "seconds": 0.09032950000255369,
+      "expected_index": 98,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 97,
+          "error": 0.0
+        },
+        {
+          "index": 98,
+          "error": 0.0
+        },
+        {
+          "index": 99,
+          "error": 0.0
+        }
+      ]
+    },
+    "860.250000000": {
+      "verified_index": 128,
+      "request": 860.25,
+      "seconds": 0.09176420000221697,
+      "expected_index": 128,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 127,
+          "error": 0.006743344907407407
+        },
+        {
+          "index": 128,
+          "error": 0.0
+        },
+        {
+          "index": 129,
+          "error": 0.002663845486111111
+        }
+      ]
+    },
+    "861.250000000": {
+      "verified_index": 158,
+      "request": 861.25,
+      "seconds": 0.09387000000060652,
+      "expected_index": 158,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 157,
+          "error": 0.00012044270833333334
+        },
+        {
+          "index": 158,
+          "error": 0.0
+        },
+        {
+          "index": 159,
+          "error": 0.0
+        }
+      ]
+    },
+    "862.250000000": {
+      "verified_index": 188,
+      "request": 862.25,
+      "seconds": 0.09400459999960731,
+      "expected_index": 188,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 187,
+          "error": 0.002980685763888889
+        },
+        {
+          "index": 188,
+          "error": 0.0
+        },
+        {
+          "index": 189,
+          "error": 0.004849537037037037
+        }
+      ]
+    },
+    "863.250000000": {
+      "verified_index": 218,
+      "request": 863.25,
+      "seconds": 0.09727550000025076,
+      "expected_index": 218,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 217,
+          "error": 0.0
+        },
+        {
+          "index": 218,
+          "error": 0.0
+        },
+        {
+          "index": 219,
+          "error": 0.00030635127314814815
+        }
+      ]
+    },
+    "856.750000000": {
+      "verified_index": 23,
+      "request": 856.75,
+      "seconds": 0.09600329999739188,
+      "expected_index": 23,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 22,
+          "error": 0.0
+        },
+        {
+          "index": 23,
+          "error": 0.0
+        },
+        {
+          "index": 24,
+          "error": 0.0
+        }
+      ]
+    },
+    "857.750000000": {
+      "verified_index": 53,
+      "request": 857.75,
+      "seconds": 0.09691340000063065,
+      "expected_index": 53,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 52,
+          "error": 0.00033962673611111113
+        },
+        {
+          "index": 53,
+          "error": 0.0
+        },
+        {
+          "index": 54,
+          "error": 0.0
+        }
+      ]
+    },
+    "858.750000000": {
+      "verified_index": 83,
+      "request": 858.75,
+      "seconds": 0.10196610000275541,
+      "expected_index": 83,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 82,
+          "error": 8.355034722222222e-05
+        },
+        {
+          "index": 83,
+          "error": 0.0
+        },
+        {
+          "index": 84,
+          "error": 0.0
+        }
+      ]
+    },
+    "859.750000000": {
+      "verified_index": 113,
+      "request": 859.75,
+      "seconds": 0.09098330000051646,
+      "expected_index": 113,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 112,
+          "error": 0.0
+        },
+        {
+          "index": 113,
+          "error": 0.0
+        },
+        {
+          "index": 114,
+          "error": 0.0
+        }
+      ]
+    },
+    "860.750000000": {
+      "verified_index": 143,
+      "request": 860.75,
+      "seconds": 0.09365759999855072,
+      "expected_index": 143,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 142,
+          "error": 0.023498625578703705
+        },
+        {
+          "index": 143,
+          "error": 0.0
+        },
+        {
+          "index": 144,
+          "error": 0.012409939236111112
+        }
+      ]
+    },
+    "861.750000000": {
+      "verified_index": 173,
+      "request": 861.75,
+      "seconds": 0.09846660000039265,
+      "expected_index": 173,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 172,
+          "error": 6.180370732060185
+        },
+        {
+          "index": 173,
+          "error": 0.0
+        },
+        {
+          "index": 174,
+          "error": 0.0045377604166666665
+        }
+      ]
+    },
+    "862.750000000": {
+      "verified_index": 203,
+      "request": 862.75,
+      "seconds": 0.09471859999757726,
+      "expected_index": 203,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 202,
+          "error": 3.580729166666667e-05
+        },
+        {
+          "index": 203,
+          "error": 0.0
+        },
+        {
+          "index": 204,
+          "error": 0.0
+        }
+      ]
+    },
+    "863.750000000": {
+      "verified_index": 233,
+      "request": 863.75,
+      "seconds": 0.09812650000094436,
+      "expected_index": 233,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 232,
+          "error": 0.0
+        },
+        {
+          "index": 233,
+          "error": 0.0
+        },
+        {
+          "index": 234,
+          "error": 0.0
+        }
+      ]
+    }
+  },
+  "ui": {
+    "33.000000000": {
+      "verified_index": 0,
+      "request": 33.0,
+      "seconds": 0.10676099999909638,
+      "expected_index": 0,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 0,
+          "error": 0.0
+        },
+        {
+          "index": 1,
+          "error": 0.009595871913580247
+        }
+      ]
+    },
+    "35.250000000": {
+      "verified_index": 67,
+      "request": 35.25,
+      "seconds": 0.11825170000156504,
+      "expected_index": 67,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 66,
+          "error": 0.00022167566872427984
+        },
+        {
+          "index": 67,
+          "error": 0.0
+        },
+        {
+          "index": 68,
+          "error": 0.00043000900205761316
+        }
+      ]
+    },
+    "37.500000000": {
+      "verified_index": 134,
+      "request": 37.5,
+      "seconds": 0.12501250000059372,
+      "expected_index": 134,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 133,
+          "error": 0.004363265174897119
+        },
+        {
+          "index": 134,
+          "error": 0.0
+        },
+        {
+          "index": 135,
+          "error": 0.0007753022119341564
+        }
+      ]
+    },
+    "39.750000000": {
+      "verified_index": 202,
+      "request": 39.75,
+      "seconds": 0.11144140000033076,
+      "expected_index": 202,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 201,
+          "error": 0.0006836741255144033
+        },
+        {
+          "index": 202,
+          "error": 0.0
+        },
+        {
+          "index": 203,
+          "error": 0.005581918724279836
+        }
+      ]
+    },
+    "34.125000000": {
+      "verified_index": 33,
+      "request": 34.125,
+      "seconds": 0.11059340000065276,
+      "expected_index": 33,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 32,
+          "error": 0.4334358924897119
+        },
+        {
+          "index": 33,
+          "error": 0.0
+        },
+        {
+          "index": 34,
+          "error": 0.41444219393004117
+        }
+      ]
+    },
+    "38.625000000": {
+      "verified_index": 168,
+      "request": 38.625,
+      "seconds": 0.10602680000010878,
+      "expected_index": 168,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 167,
+          "error": 2.003033532664609
+        },
+        {
+          "index": 168,
+          "error": 0.0
+        },
+        {
+          "index": 169,
+          "error": 2.1246064814814813
+        }
+      ]
+    },
+    "36.375000000": {
+      "verified_index": 101,
+      "request": 36.375,
+      "seconds": 0.12124079999921378,
+      "expected_index": 101,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 100,
+          "error": 0.0031111754115226336
+        },
+        {
+          "index": 101,
+          "error": 0.0
+        },
+        {
+          "index": 102,
+          "error": 0.0021357381687242796
+        }
+      ]
+    },
+    "40.875000000": {
+      "verified_index": 236,
+      "request": 40.875,
+      "seconds": 0.11598699999740347,
+      "expected_index": 236,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 235,
+          "error": 0.0019552147633744854
+        },
+        {
+          "index": 236,
+          "error": 0.0
+        },
+        {
+          "index": 237,
+          "error": 0.0028235918209876545
+        }
+      ]
+    },
+    "36.000000000": {
+      "verified_index": 89,
+      "request": 36.0,
+      "seconds": 0.11721330000000307,
+      "expected_index": 89,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 88,
+          "error": 0.0008195087448559671
+        },
+        {
+          "index": 89,
+          "error": 0.0
+        },
+        {
+          "index": 90,
+          "error": 0.00016268004115226338
+        }
+      ]
+    },
+    "39.000000000": {
+      "verified_index": 179,
+      "request": 39.0,
+      "seconds": 0.10615800000232412,
+      "expected_index": 179,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 178,
+          "error": 0.004478845164609053
+        },
+        {
+          "index": 179,
+          "error": 0.0
+        },
+        {
+          "index": 180,
+          "error": 0.004649562757201646
+        }
+      ]
+    },
+    "33.750000000": {
+      "verified_index": 22,
+      "request": 33.75,
+      "seconds": 0.1339241999994556,
+      "expected_index": 22,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 21,
+          "error": 0.003947563014403292
+        },
+        {
+          "index": 22,
+          "error": 0.0
+        },
+        {
+          "index": 23,
+          "error": 0.0011728395061728395
+        }
+      ]
+    },
+    "36.750000000": {
+      "verified_index": 112,
+      "request": 36.75,
+      "seconds": 0.12253000000055181,
+      "expected_index": 112,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 111,
+          "error": 0.01992460776748971
+        },
+        {
+          "index": 112,
+          "error": 0.0
+        },
+        {
+          "index": 113,
+          "error": 0.005984439300411522
+        }
+      ]
+    },
+    "34.500000000": {
+      "verified_index": 44,
+      "request": 34.5,
+      "seconds": 0.11487320000014734,
+      "expected_index": 44,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 43,
+          "error": 0.2546672453703704
+        },
+        {
+          "index": 44,
+          "error": 0.0
+        },
+        {
+          "index": 45,
+          "error": 0.01990692515432099
+        }
+      ]
+    },
+    "40.500000000": {
+      "verified_index": 224,
+      "request": 40.5,
+      "seconds": 0.11260790000233101,
+      "expected_index": 224,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 223,
+          "error": 0.004455697016460905
+        },
+        {
+          "index": 224,
+          "error": 0.0
+        },
+        {
+          "index": 225,
+          "error": 0.002254854681069959
+        }
+      ]
+    },
+    "38.250000000": {
+      "verified_index": 157,
+      "request": 38.25,
+      "seconds": 0.12888569999995525,
+      "expected_index": 157,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 156,
+          "error": 1.2829169881687243
+        },
+        {
+          "index": 157,
+          "error": 0.0
+        },
+        {
+          "index": 158,
+          "error": 1.396793499228395
+        }
+      ]
+    },
+    "41.250000000": {
+      "verified_index": 247,
+      "request": 41.25,
+      "seconds": 0.11588889999984531,
+      "expected_index": 247,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 246,
+          "error": 0.003207626028806584
+        },
+        {
+          "index": 247,
+          "error": 0.0
+        },
+        {
+          "index": 248,
+          "error": 0.0021784979423868315
+        }
+      ]
+    },
+    "33.562500000": {
+      "verified_index": 16,
+      "request": 33.5625,
+      "seconds": 0.10772870000073453,
+      "expected_index": 16,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 15,
+          "error": 0.00027215149176954733
+        },
+        {
+          "index": 16,
+          "error": 0.0
+        },
+        {
+          "index": 17,
+          "error": 0.0006944444444444445
+        }
+      ]
+    },
+    "35.812500000": {
+      "verified_index": 84,
+      "request": 35.8125,
+      "seconds": 0.11886759999833885,
+      "expected_index": 84,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 83,
+          "error": 0.0008027906378600823
+        },
+        {
+          "index": 84,
+          "error": 0.0
+        },
+        {
+          "index": 85,
+          "error": 0.0007056970164609054
+        }
+      ]
+    },
+    "38.062500000": {
+      "verified_index": 151,
+      "request": 38.0625,
+      "seconds": 0.12893560000156867,
+      "expected_index": 151,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 150,
+          "error": 0.5688818158436214
+        },
+        {
+          "index": 151,
+          "error": 0.0
+        },
+        {
+          "index": 152,
+          "error": 0.7446119470164609
+        }
+      ]
+    },
+    "40.312500000": {
+      "verified_index": 219,
+      "request": 40.3125,
+      "seconds": 0.11209559999770136,
+      "expected_index": 219,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 218,
+          "error": 0.0025686406893004115
+        },
+        {
+          "index": 219,
+          "error": 0.0
+        },
+        {
+          "index": 220,
+          "error": 0.004661779835390946
+        }
+      ]
+    },
+    "34.687500000": {
+      "verified_index": 50,
+      "request": 34.6875,
+      "seconds": 0.11302620000060415,
+      "expected_index": 50,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 49,
+          "error": 0.0028502764917695475
+        },
+        {
+          "index": 50,
+          "error": 0.0
+        },
+        {
+          "index": 51,
+          "error": 0.002717013888888889
+        }
+      ]
+    },
+    "36.937500000": {
+      "verified_index": 118,
+      "request": 36.9375,
+      "seconds": 0.1234946000004129,
+      "expected_index": 118,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 117,
+          "error": 0.028952546296296296
+        },
+        {
+          "index": 118,
+          "error": 0.0
+        },
+        {
+          "index": 119,
+          "error": 0.001711837705761317
+        }
+      ]
+    },
+    "39.187500000": {
+      "verified_index": 185,
+      "request": 39.1875,
+      "seconds": 0.10689589999674354,
+      "expected_index": 185,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 184,
+          "error": 0.001200488683127572
+        },
+        {
+          "index": 185,
+          "error": 0.0
+        },
+        {
+          "index": 186,
+          "error": 0.010223604681069958
+        }
+      ]
+    },
+    "41.437500000": {
+      "verified_index": 252,
+      "request": 41.4375,
+      "seconds": 0.1212152000007336,
+      "expected_index": 252,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 251,
+          "error": 0.0
+        },
+        {
+          "index": 252,
+          "error": 0.0
+        },
+        {
+          "index": 253,
+          "error": 0.0019552147633744854
+        }
+      ]
+    },
+    "33.375000000": {
+      "verified_index": 11,
+      "request": 33.375,
+      "seconds": 0.10900989999936428,
+      "expected_index": 11,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 10,
+          "error": 0.00019290123456790122
+        },
+        {
+          "index": 11,
+          "error": 0.0
+        },
+        {
+          "index": 12,
+          "error": 0.0012144740226337448
+        }
+      ]
+    },
+    "34.875000000": {
+      "verified_index": 56,
+      "request": 34.875,
+      "seconds": 0.11462200000096345,
+      "expected_index": 56,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 55,
+          "error": 0.0015406378600823045
+        },
+        {
+          "index": 56,
+          "error": 0.0
+        },
+        {
+          "index": 57,
+          "error": 0.015996495627572018
+        }
+      ]
+    },
+    "37.875000000": {
+      "verified_index": 146,
+      "request": 37.875,
+      "seconds": 0.12858870000127354,
+      "expected_index": 146,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 145,
+          "error": 0.44254388503086417
+        },
+        {
+          "index": 146,
+          "error": 0.0
+        },
+        {
+          "index": 147,
+          "error": 0.5182936278292181
+        }
+      ]
+    },
+    "39.375000000": {
+      "verified_index": 191,
+      "request": 39.375,
+      "seconds": 0.10906610000165529,
+      "expected_index": 191,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 190,
+          "error": 0.005439171810699589
+        },
+        {
+          "index": 191,
+          "error": 0.0
+        },
+        {
+          "index": 192,
+          "error": 0.004656153549382716
+        }
+      ]
+    },
+    "35.625000000": {
+      "verified_index": 78,
+      "request": 35.625,
+      "seconds": 0.11672579999867594,
+      "expected_index": 78,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 77,
+          "error": 0.0017041216563786008
+        },
+        {
+          "index": 78,
+          "error": 0.0
+        },
+        {
+          "index": 79,
+          "error": 0.00037985468106995884
+        }
+      ]
+    },
+    "37.125000000": {
+      "verified_index": 123,
+      "request": 37.125,
+      "seconds": 0.12489170000117156,
+      "expected_index": 123,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 122,
+          "error": 0.0014485275205761317
+        },
+        {
+          "index": 123,
+          "error": 0.0
+        },
+        {
+          "index": 124,
+          "error": 0.000780124742798354
+        }
+      ]
+    },
+    "40.125000000": {
+      "verified_index": 213,
+      "request": 40.125,
+      "seconds": 0.11288899999999558,
+      "expected_index": 213,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 212,
+          "error": 0.0019364068930041152
+        },
+        {
+          "index": 213,
+          "error": 0.0
+        },
+        {
+          "index": 214,
+          "error": 0.00015046296296296297
+        }
+      ]
+    },
+    "41.625000000": {
+      "verified_index": 258,
+      "request": 41.625,
+      "seconds": 0.12001450000025216,
+      "expected_index": 258,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 257,
+          "error": 0.007660751028806584
+        },
+        {
+          "index": 258,
+          "error": 0.0
+        },
+        {
+          "index": 259,
+          "error": 0.002358699845679012
+        }
+      ]
+    },
+    "33.281250000": {
+      "verified_index": 8,
+      "request": 33.28125,
+      "seconds": 0.10671979999824543,
+      "expected_index": 8,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 7,
+          "error": 0.0012649498456790123
+        },
+        {
+          "index": 8,
+          "error": 0.0
+        },
+        {
+          "index": 9,
+          "error": 0.0014756944444444444
+        }
+      ]
+    },
+    "34.406250000": {
+      "verified_index": 42,
+      "request": 34.40625,
+      "seconds": 0.11214259999906062,
+      "expected_index": 42,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 41,
+          "error": 0.37038403420781896
+        },
+        {
+          "index": 42,
+          "error": 0.0
+        },
+        {
+          "index": 43,
+          "error": 0.4211250964506173
+        }
+      ]
+    },
+    "35.531250000": {
+      "verified_index": 75,
+      "request": 35.53125,
+      "seconds": 0.11730570000145235,
+      "expected_index": 75,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 74,
+          "error": 0.0011643197016460904
+        },
+        {
+          "index": 75,
+          "error": 0.0
+        },
+        {
+          "index": 76,
+          "error": 0.0009035815329218107
+        }
+      ]
+    },
+    "36.656250000": {
+      "verified_index": 109,
+      "request": 36.65625,
+      "seconds": 0.12161700000069686,
+      "expected_index": 109,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 108,
+          "error": 1.072819894547325
+        },
+        {
+          "index": 109,
+          "error": 0.0
+        },
+        {
+          "index": 110,
+          "error": 0.527249871399177
+        }
+      ]
+    },
+    "37.781250000": {
+      "verified_index": 143,
+      "request": 37.78125,
+      "seconds": 0.1292579000000842,
+      "expected_index": 143,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 142,
+          "error": 0.3620119598765432
+        },
+        {
+          "index": 143,
+          "error": 0.0
+        },
+        {
+          "index": 144,
+          "error": 0.2895743312757202
+        }
+      ]
+    },
+    "38.906250000": {
+      "verified_index": 177,
+      "request": 38.90625,
+      "seconds": 0.105693199999223,
+      "expected_index": 177,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 176,
+          "error": 0.03284722222222222
+        },
+        {
+          "index": 177,
+          "error": 0.0
+        },
+        {
+          "index": 178,
+          "error": 0.009117316100823045
+        }
+      ]
+    },
+    "40.031250000": {
+      "verified_index": 210,
+      "request": 40.03125,
+      "seconds": 0.11271850000048289,
+      "expected_index": 210,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 209,
+          "error": 0.0014962705761316873
+        },
+        {
+          "index": 210,
+          "error": 0.0
+        },
+        {
+          "index": 211,
+          "error": 0.004651170267489712
+        }
+      ]
+    },
+    "41.156250000": {
+      "verified_index": 244,
+      "request": 41.15625,
+      "seconds": 0.11676150000130292,
+      "expected_index": 244,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 243,
+          "error": 0.0025350437242798356
+        },
+        {
+          "index": 244,
+          "error": 0.0
+        },
+        {
+          "index": 245,
+          "error": 0.0024167309670781894
+        }
+      ]
+    },
+    "33.843750000": {
+      "verified_index": 25,
+      "request": 33.84375,
+      "seconds": 0.10820049999892944,
+      "expected_index": 25,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 24,
+          "error": 0.021751382458847737
+        },
+        {
+          "index": 25,
+          "error": 0.0
+        },
+        {
+          "index": 26,
+          "error": 0.022729552469135803
+        }
+      ]
+    },
+    "34.968750000": {
+      "verified_index": 59,
+      "request": 34.96875,
+      "seconds": 0.11446809999688412,
+      "expected_index": 59,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 58,
+          "error": 0.011518614969135803
+        },
+        {
+          "index": 59,
+          "error": 0.0
+        },
+        {
+          "index": 60,
+          "error": 0.0003378986625514403
+        }
+      ]
+    },
+    "36.093750000": {
+      "verified_index": 92,
+      "request": 36.09375,
+      "seconds": 0.1194684000001871,
+      "expected_index": 92,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 91,
+          "error": 0.00037985468106995884
+        },
+        {
+          "index": 92,
+          "error": 0.0
+        },
+        {
+          "index": 93,
+          "error": 3.7615740740740744e-05
+        }
+      ]
+    },
+    "37.218750000": {
+      "verified_index": 126,
+      "request": 37.21875,
+      "seconds": 0.12387210000088089,
+      "expected_index": 126,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 125,
+          "error": 0.006012892232510288
+        },
+        {
+          "index": 126,
+          "error": 0.0
+        },
+        {
+          "index": 127,
+          "error": 0.005727719907407407
+        }
+      ]
+    },
+    "38.343750000": {
+      "verified_index": 160,
+      "request": 38.34375,
+      "seconds": 0.13141259999974864,
+      "expected_index": 160,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 159,
+          "error": 1.373657728909465
+        },
+        {
+          "index": 160,
+          "error": 0.0
+        },
+        {
+          "index": 161,
+          "error": 1.9336614261831275
+        }
+      ]
+    },
+    "39.468750000": {
+      "verified_index": 193,
+      "request": 39.46875,
+      "seconds": 0.10937330000160728,
+      "expected_index": 193,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 192,
+          "error": 0.03747701260288066
+        },
+        {
+          "index": 193,
+          "error": 0.0
+        },
+        {
+          "index": 194,
+          "error": 0.040274723508230456
+        }
+      ]
+    },
+    "40.593750000": {
+      "verified_index": 227,
+      "request": 40.59375,
+      "seconds": 0.11545900000055553,
+      "expected_index": 227,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 226,
+          "error": 0.0022890946502057614
+        },
+        {
+          "index": 227,
+          "error": 0.0
+        },
+        {
+          "index": 228,
+          "error": 0.0021158050411522636
+        }
+      ]
+    },
+    "41.718750000": {
+      "verified_index": 261,
+      "request": 41.71875,
+      "seconds": 0.11989660000108415,
+      "expected_index": 261,
+      "expected_error": 0.0,
+      "neighboring_matches": [
+        {
+          "index": 260,
+          "error": 0.00012811856995884773
+        },
+        {
+          "index": 261,
+          "error": 0.0
+        },
+        {
+          "index": 262,
+          "error": 0.0019552147633744854
+        }
+      ]
+    }
+  }
+}
