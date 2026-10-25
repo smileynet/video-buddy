@@ -8,13 +8,13 @@ Completed bounded research/OCR and local-model comparisons. Latest: [local follo
 |---|---|---|
 | 29 | Verify current provider models and comparison eligibility | ✅ done |
 | 30 | Compare Gemini region grounding and temporal evidence | open |
-| 31 | Compare Ai2 pointing tracking and interface grounding | in_progress |
+| 31 | Compare Ai2 pointing tracking and interface grounding | ✅ done |
 | 32 | Compare YOLOE promptable detection and segmentation | ✅ done |
 | 33 | Compare hosted DINO-X grounding against local baselines | open |
 | 34 | Evaluate NVIDIA reasoning for physical demonstration evidence | open |
 | 24 | Resolve open research questions before the next spike round | ✅ done |
 | 14 | Compare OCR for exact commands and settings | ✅ done |
-| 23 | Compare image element models by downstream evidence jobs | in_progress |
+| 23 | Compare image element models by downstream evidence jobs | ✅ done |
 | 25 | Find complete readable subject states by seeking within video windows | open |
 | 26 | Compare ordered frames and video input for action evidence | open |
 | 15 | Compare speech paths on implementation-critical details | open |
