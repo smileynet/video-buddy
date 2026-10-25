@@ -1,7 +1,7 @@
 ---
 id: "16"
 title: "Choose a state store using interruption and concurrency probes"
-status: open
+status: in_progress
 blocked_by: []
 spec: "apply-build"
 priority: medium
