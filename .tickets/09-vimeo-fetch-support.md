@@ -2,7 +2,7 @@
 id: "09"
 title: "Add Vimeo source support (player URL + Referer) alongside YouTube"
 status: open
-blocked_by: []
+blocked_by: ["28"]
 priority: medium
 validation_criteria:
   - "a Vimeo embed (player.vimeo.com/video/<id>) resolves and downloads via yt-dlp with --referer"
@@ -43,3 +43,7 @@ ffmpeg automatically.
 
 Progressive MP4 is often absent on modern Vimeo; rely on yt-dlp's HLS/DASH handling + ffmpeg mux.
 Format selector that worked in the field: `bv*[vcodec^=avc]+ba/b --merge-output-format mp4`.
+
+## Integration gate (2026-10-25)
+
+Implementation remains proposed. Use acquisition spike 27 and final architecture review 28 to confirm or replace this proposed approach.

@@ -48,3 +48,7 @@ A reproducible comparison that resolves the deciding question below, or explicit
 ## Execution record
 
 Not started. Record the actual experiment branch and evidence paths when work begins.
+
+## Reconciled remaining work (2026-10-25)
+
+Reassess earlier ASR benchmark conclusions using critical instruction/number recovery and evidence-location accuracy on matched passages. Preserve caption-source differences and model/license eligibility. Ticket 08 default change must await this verdict and final review 28. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.

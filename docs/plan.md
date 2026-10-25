@@ -2,33 +2,38 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Active: ticket 14 (real-video OCR qualification) and ticket 23 (per-job image models; three gated checkpoints pending approval). S1/S2 closed with bounded findings; human usability remains unresolved in ticket 21. [Spike definitions](architecture/spike-plan.md), [S1 evidence](architecture/spikes/s1-status.md), [dashboard](architecture-dashboard.html). Do not integrate a proposed feature before its relevant experiment reports an evidence-backed verdict.
+Next: **24 — Resolve open research questions**, explicitly requested by the user before resuming existing spike work. Tickets 14 and 23 retain in-progress evidence; neither is complete. SAM 3 ran, SAM 3.1 has a session API blocker, DINOv3 remains gated. Final feature/integration/architecture review is ticket 28 after the primary qualification reports. Conditional tickets 19/20 remain backlog.
 
 | id | title | status |
 |---|---|---|
+| 24 | Resolve open research questions before the next spike round | open |
+| 14 | Compare OCR for exact commands and settings | in_progress |
+| 23 | Compare image element models by downstream evidence jobs | in_progress |
+| 25 | Find complete readable subject states by seeking within video windows | open |
+| 26 | Compare ordered frames and video input for action evidence | open |
+| 15 | Compare speech paths on implementation-critical details | open |
+| 17 | Evaluate evidence-preserving adaptation to a target environment | open |
+| 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
+| 21 | Measure guide versus note usability with a fresh task performer | open |
+| 27 | Qualify source acquisition and recovery before integration | open |
+| 22 | Restore CLI startup in a clean checkout by resolving the missing breakdown helper | open |
+| 28 | Review spike findings and decide app features and integration architecture | open |
+| 07 | Re-transcribe rate-limited digest videos with CrisperWhisper on GPU | open |
+| 08 | Make CrisperWhisper the default engine in workspace config | open |
+| 09 | Add Vimeo source support (player URL + Referer) alongside YouTube | open |
+| 10 | Verify downloaded video integrity with ffprobe (do not trust yt-dlp exit code) | open |
+| 11 | Make batch digest resumable with --download-archive + archive-vs-disk reconciliation | open |
+| 19 | Evaluate attribution only when it changes the next action | backlog |
+| 20 | Evaluate retrieval when saved solutions become hard to find | backlog |
 | 01 | Evaluate CrisperWhisper against current Whisper pipeline | ✅ done |
 | 02 | Add WhisperX backend for word-level timestamps + diarization | ✅ done |
 | 03 | Add CrisperWhisper isolated backend for verbatim + hallucination detection | ✅ done |
 | 04 | Extend transcript JSON schema for word-level timestamps and disfluency metadata | ✅ done |
 | 05 | Execute ASR benchmark: faster-whisper vs WhisperX vs CrisperWhisper on test corpus | ✅ done |
 | 06 | Auto-select CrisperWhisper when monolith is reachable | ✅ done |
-| 07 | Re-transcribe rate-limited digest videos with CrisperWhisper on GPU | open |
-| 08 | Make CrisperWhisper the default engine in workspace config | open |
-| 09 | Add Vimeo source support (player URL + Referer) alongside YouTube | open |
-| 10 | Verify downloaded video integrity with ffprobe (do not trust yt-dlp exit code) | open |
-| 11 | Make batch digest resumable with --download-archive + archive-vs-disk reconciliation | open |
 | 12 | Evaluate whether implementation guides improve task completion | ✅ done |
 | 13 | Find the minimum visual evidence needed to reproduce actions | ✅ done |
-| 14 | Compare OCR for exact commands and settings | open |
-| 15 | Compare speech paths on implementation-critical details | open |
 | 16 | Choose a state store using interruption and concurrency probes | ✅ done |
-| 17 | Evaluate evidence-preserving adaptation to a target environment | open |
-| 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
-| 19 | Evaluate attribution only when it changes the next action | backlog |
-| 20 | Evaluate retrieval when saved solutions become hard to find | backlog |
-| 21 | Measure guide versus note usability with a fresh task performer | backlog |
-| 22 | Restore CLI startup in a clean checkout by resolving the missing breakdown helper | open |
-| 23 | Compare image element models by downstream evidence jobs | in_progress |
 
 ## Spike ordering
 
@@ -38,4 +43,6 @@ A completed report can record an unresolved verdict, but do not treat it as appr
 
 Latest evidence: [S2 results](architecture/spikes/s2-results.md). Ticket 22 tracks clean-checkout CLI startup; experimental helper/flags stay on the spike branch. A closed spike with an unresolved verdict does not validate a production feature.
 
-Image-model evidence: [initial per-job results](architecture/spikes/image-model-results.md). Twelve accessible configurations ran. Gated SAM 3/3.1 and DINOv3 have concrete 403 access limits, not model-quality failures; keep ticket 23 in progress. Ticket 14 still needs held-out real-video qualification beyond the smoke set.
+Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). Thirteen accessible configurations ran; SAM 3.1 has an upstream runtime blocker and DINOv3 remains gated. Tickets 14/23 require real-domain qualification.
+
+Research 24 is next by explicit user instruction. Remaining primary spikes: OCR 14, models 23, subject-window seeking 25, temporal evidence 26, speech 15, adaptation 17, review UX 18, fresh-performer usability 21, acquisition/recovery 27. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.

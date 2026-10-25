@@ -64,3 +64,7 @@ See [architecture proposal](workflow-proposal.md) and [tool research](../agents/
 ## Execution record
 
 Not started. Record the actual experiment branch and evidence paths when work begins.
+
+## Reconciled remaining work (2026-10-25)
+
+Observe evidence lookup, blocked-step correction and return-after-interruption with equivalent artifacts; compare Markdown/chat to an adjacent-evidence prototype. Keep mocked extraction controls labeled; coordinate participant needs with 21. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.

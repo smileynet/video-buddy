@@ -48,3 +48,7 @@ A reproducible comparison that resolves the deciding question below, or explicit
 ## Execution record
 
 2026-10-25: exploratory Tesseract/EasyOCR/PaddleOCR runs completed on 30 controlled single-line crops plus one real settings crop. See [results](../docs/architecture/spikes/image-model-results.md) and branch `codex/spike-image-models`, commit `16c970bacec751f96f2f4a68c73dfbeaf4289e9a`. Exact controlled recovery: 23/30, 2/30, 28/30 respectively; Paddle also recovered the real crop exactly. No held-out real-video corpus or correction-time study yet; keep in progress rather than treating a smoke set as full qualification. Source/subject-aware seeking design is informed by the new image-element research.
+
+## Reconciled remaining work (2026-10-25)
+
+Complete held-out real-video OCR qualification: approximately 30 manually labeled terminal/code/settings/UI regions with tuning/held-out separation. Measure exact-match/CER, missed regions, preprocessing costs and correction effort. Synthetic smoke results alone do not select a default. Coordinate window labels with ticket 25. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.

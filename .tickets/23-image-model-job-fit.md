@@ -38,3 +38,7 @@ Later access recheck: SAM 3 and SAM 3.1 approved using the existing credential; 
 Final SAM 3.1 retry retained checkpoint bucket size 16 and loaded weights, then failed in upstream start_session: init_state rejects offload_state_to_cpu. This is an explicit unresolved runtime/API limitation, not a tracking result. DINOv3 still awaits approval. SAM 3 completed inference; see updated results report. Keep in progress for remaining qualification.
 
 Final additional evidence: `codex/spike-image-models` commit `fd948102c21f4d3b69a29c46cfd22c9366e9c874`, approved checkpoint probes, Linux environment, SAM 3 masks and SAM 3.1 failures. Pre-commit/secret checks passed; dashboard interaction, keyboard, mobile and local-link checks passed.
+
+## Reconciled remaining work (2026-10-25)
+
+Finish real-domain job qualification beyond upstream demo fixtures: UI controls, diagrams, natural objects, regional matching and subject tracking. SAM 3 ran; SAM 3.1 checkpoint loads but upstream start_session rejects offload_state_to_cpu; DINOv3 still gated. Research 24 owns compatibility/access/license investigation; this ticket owns inference probes. Preserve concrete unresolved limits and evaluate long-window drift/occlusion only where needed for ticket 25. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.

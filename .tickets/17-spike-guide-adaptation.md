@@ -48,3 +48,7 @@ A reproducible comparison that resolves the deciding question below, or explicit
 ## Execution record
 
 Not started. Record the actual experiment branch and evidence paths when work begins.
+
+## Reconciled remaining work (2026-10-25)
+
+Evaluate target-platform/version adaptation separately from source observations, with official references for changes and a disposable target walkthrough. Keep unsupported changes visibly unverified. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.

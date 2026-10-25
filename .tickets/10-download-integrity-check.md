@@ -2,7 +2,7 @@
 id: "10"
 title: "Verify downloaded video integrity with ffprobe (do not trust yt-dlp exit code)"
 status: open
-blocked_by: []
+blocked_by: ["28"]
 priority: high
 validation_criteria:
   - "download_video verifies the output via ffprobe: duration > 0 and has a video stream before returning"
@@ -39,3 +39,7 @@ files (valid duration + video + audio streams) from a deliberately truncated one
 - [ ] A truncated/zero-duration file raises before frame extraction runs
 - [ ] yt-dlp options include `--abort-on-unavailable-fragment`
 - [ ] Existing tests pass; a test simulates a bad file and asserts the raise
+
+## Integration gate (2026-10-25)
+
+Implementation remains proposed. Use acquisition spike 27 and final architecture review 28 to confirm or replace this proposed approach.

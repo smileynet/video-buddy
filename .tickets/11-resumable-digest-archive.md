@@ -2,7 +2,7 @@
 id: "11"
 title: "Make batch digest resumable with --download-archive + archive-vs-disk reconciliation"
 status: open
-blocked_by: ["10"]
+blocked_by: ["10", "28"]
 priority: medium
 validation_criteria:
   - "batch digest downloads use yt-dlp --download-archive so re-runs skip completed items"
@@ -38,3 +38,7 @@ Blocked by 10 because the repair step depends on the integrity check being the s
 - [ ] Re-running an interrupted batch skips verified-complete items (zero redundant downloads)
 - [ ] Reconcile re-fetches any missing/bad item and clears its stale archive line
 - [ ] Reconcile on a fully-good batch is a no-op
+
+## Integration gate (2026-10-25)
+
+Implementation remains proposed. Use acquisition spike 27 and final architecture review 28 to confirm or replace this proposed approach.

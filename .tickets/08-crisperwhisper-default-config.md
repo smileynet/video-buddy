@@ -2,7 +2,7 @@
 id: "08"
 title: "Make CrisperWhisper the default engine in workspace config"
 status: open
-blocked_by: ["06"]
+blocked_by: ["06", "28"]
 priority: high
 ---
 
@@ -32,3 +32,7 @@ reflect CrisperWhisper as the recommended default. This is a config/docs change,
 
 - Fresh clone + `uv sync` + workspace init → `transcribe` auto-selects CrisperWhisper
 - Documentation is accurate and complete enough for someone else to set up a GPU backend
+
+## Integration gate (2026-10-25)
+
+Implementation remains proposed. Use speech spike 15 and final architecture review 28 before changing defaults.
