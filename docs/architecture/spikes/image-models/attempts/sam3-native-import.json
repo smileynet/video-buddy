@@ -1,0 +1,8 @@
+{
+  "status": "runtime_or_setup_failure",
+  "platform": "native Windows",
+  "operation": "import sam3.model_builder",
+  "error_type": "ModuleNotFoundError",
+  "error": "No module named 'triton'",
+  "resolution": "Run upstream model in installed Ubuntu WSL GPU runtime; no production backend changes"
+}

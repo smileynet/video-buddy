@@ -1,0 +1,20 @@
+{
+  "family": "sam3.1",
+  "status": "runtime_or_setup_failure",
+  "observations": [],
+  "checkpoint": {
+    "repo": "facebook/sam3.1",
+    "revision": "daa63191845a41281374e725f4c9e51c7a824460",
+    "file": "sam3.1_multiplex.pt"
+  },
+  "environment": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.9",
+    "torch": "2.11.0+cu128"
+  },
+  "error_type": "TypeError",
+  "error": "Sam3MultiplexTrackingWithInteractivity.init_state() got an unexpected keyword argument 'offload_state_to_cpu'",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/image-models/sam3_bench.py\", line 90, in <module>\n    session = predictor.handle_request(\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/d/.codex/worktrees/spike-state-comparison/video-buddy/.venvs/sam3-linux/lib/python3.12/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/d/.codex/worktrees/spike-state-comparison/video-buddy/.scratch/models/sam3/sam3/model/sam3_base_predictor.py\", line 59, in handle_request\n    return self.start_session(\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/d/.codex/worktrees/spike-state-comparison/video-buddy/.scratch/models/sam3/sam3/model/sam3_base_predictor.py\", line 157, in start_session\n    inference_state = self.model.init_state(**init_kwargs)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/d/.codex/worktrees/spike-state-comparison/video-buddy/.venvs/sam3-linux/lib/python3.12/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nTypeError: Sam3MultiplexTrackingWithInteractivity.init_state() got an unexpected keyword argument 'offload_state_to_cpu'\n",
+  "total_seconds": 36.14392332500006,
+  "peak_cuda_allocated_bytes": 3926040576
+}

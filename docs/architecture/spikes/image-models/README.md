@@ -6,7 +6,7 @@
 
 OCR: Tesseract 5.4, EasyOCR 1.7.2 and PaddleOCR 3.7 with PP-OCRv5 mobile detection/English recognition. Vision: original SAM ViT-B, SAM 2.1 Hiera tiny, EfficientSAM-Ti, EfficientTAM-Ti 512, Grounding DINO tiny, Grounding DINO→SAM 2 composition, Florence-2-base-ft, OmniParser v3 detector and official icon-caption components, DINOv2-small, Qwen3-VL-2B-Instruct. SAM 2/EfficientTAM temporal propagation also ran on four captured diagram frames.
 
-SAM 3, SAM 3.1 and DINOv3 ViT-S/16 were probed with the user's existing authenticated Hugging Face credential. All checkpoint requests returned gated-access 403. `gated-access.json` records the specific limitation; no inference or quality result is claimed for them. No credential is written to this evidence directory. The user was given the access-request links.
+SAM 3, SAM 3.1 and DINOv3 ViT-S/16 were probed with the user's existing authenticated Hugging Face credential. Initial checkpoint requests returned gated-access 403 (`gated-access.json`). A later authenticated check approved SAM 3/3.1 (`gated-access-final.json`); DINOv3 remains gated. SAM 3 subsequently ran on the frozen image fixtures; SAM 3.1 loaded its approved checkpoint but its upstream session wrapper failed with an unsupported `offload_state_to_cpu` argument. No tracking-quality verdict is claimed; `sam3.1.json` preserves the failure. No credential is written to this evidence directory. The user was given the access-request links.
 
 ## Fixtures and scoring
 
@@ -43,3 +43,11 @@ Example runs (after preparing those environments and clones):
 ## Interpretation
 
 Use the main-checkout results report for the provisional per-job retention recommendation. A model completing inference is not proof of adequate quality. A gated or failed setup is not a negative model-quality result. Single-run warm/cold timings and allocator memory are observations, not production latency/VRAM requirements. No automatic integration or wholesale retirement of an existing engine follows from this spike.
+
+## Checkpoint access update
+
+A later authenticated check approved SAM 3 and SAM 3.1; DINOv3 remained HTTP 403. See gated-access-final.json. Native Windows SAM 3 import requires Triton, so the additional probes use the installed Ubuntu WSL GPU runtime. wsl_sam_runner.py forwards the existing token through the process environment only. These probes are experimental and do not change production backend configuration.
+
+SAM 3 image observations: cat/dog found, absent elephant rejected, 15 UI button boxes and two search-field boxes. Diagram/text and line-chart prompts returned no regions at fixed defaults. The dog prompt also returned a broader candidate with a higher score; confidence alone does not establish intended subject extent. Raw observations and masks are in `sam3.json` and `sam3-*-mask.png`.
+
+SAM 3.1 requires the checkpoint-compatible multiplex bucket size 16; overriding to four caused tensor-shape mismatches (`attempts/sam3.1-multiplex4.json`). Retrying at 16 loaded the checkpoint but failed starting a session because the upstream wrapper passes an unsupported argument to `init_state`. This is an unresolved source/API compatibility limitation, not measured tracking quality.

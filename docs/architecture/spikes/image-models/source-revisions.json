@@ -18,5 +18,9 @@
   "omniparser": {
     "remote": "https://github.com/microsoft/OmniParser.git",
     "sha": "354021201345a96178360b28733573e27269f2de"
+  },
+  "sam3": {
+    "remote": "https://github.com/facebookresearch/sam3.git",
+    "sha": "f1647e8d0c1d280991f4d1b7d974c2704537fe66"
   }
 }

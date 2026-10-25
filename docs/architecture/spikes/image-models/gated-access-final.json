@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "facebook/sam3",
+    "revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+    "access": "approved",
+    "bytes": 3439938512
+  },
+  {
+    "repo": "facebook/sam3.1",
+    "revision": "daa63191845a41281374e725f4c9e51c7a824460",
+    "access": "approved",
+    "bytes": 3502755717
+  },
+  {
+    "repo": "facebook/dinov3-vits16-pretrain-lvd1689m",
+    "access": "unresolved",
+    "error_type": "GatedRepoError",
+    "http_status": 403
+  }
+]
