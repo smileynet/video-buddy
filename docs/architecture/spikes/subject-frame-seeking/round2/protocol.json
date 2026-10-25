@@ -1,0 +1,17 @@
+{
+  "question": "Does seeded subject seeking retain complete visible states more reliably than a time grid under temporal and spatial perturbations?",
+  "fidelity": "Controlled generated UI clips; not natural tutorial qualification",
+  "fps": 20,
+  "duration_s": 6,
+  "budgets": [1, 2, 3, 4, 6, 8],
+  "grid_offsets": [0, 0.25, 0.5, 0.75],
+  "clips": ["scroll", "motion", "occlusion", "brief"],
+  "texts": ["Stage A: prepare", "Stage B: configure", "Stage C: verify"],
+  "static_frequency": {"min_total_frames": 6, "rank": "descending frequency, sharpest representative"},
+  "tracked_frequency": {"min_total_frames": 6, "rank": "descending frequency, sharpest representative"},
+  "tracked_events": {"min_consecutive_frames": 2, "rank": "first occurrence, sharpest representative per exact OCR string"},
+  "tracking": "One manually seeded invariant header template, full-frame normalized template matching each frame; threshold 0.8; no truth boxes consumed",
+  "ocr": "Tesseract PSM13, whitespace collapse only; no oracle text filter",
+  "selection_uses_truth": false,
+  "limitations": ["one designed fixture per phenomenon", "same font and invariant header", "no parameter tuning on these clips", "brief state deliberately tests original six-frame support rule", "labels are renderer geometry and occlusion truth, with visual QA", "human correction and task completion not measured"]
+}
