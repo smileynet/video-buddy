@@ -13,6 +13,12 @@ validation_criteria:
 
 # Review spike findings and decide app features and integration architecture
 
+## Reconciled decision gates — 2026-10-25
+
+Ticket 25 now exits through a linked evidence/limitations synthesis; ticket 37 holds deliberately deferred broader tracking research. Review may retain the baseline and exclude unqualified masks/tracking without executing 37. Do not claim those features are validated.
+
+Required before final recommendations: bounded dispositions for speech 15, adaptation 17, review UX 18, fresh-performer usability 21, temporal evidence 26 and acquisition/recovery 27, plus closure of the frame synthesis 25. Unavailable participants or modalities yield an explicit unresolved verdict and constrained feature claims, never invented success. Providers 30/33/34 remain required access/runtime dispositions; their tests have not been waived or completed. Keep existing dependency edges until each ticket records its reviewed outcome. Ticket 22 is a clean-CLI prerequisite where a proposed experiment uses the production CLI; it is not a reason to overwrite pending user changes. Ticket 35 remains an implementation proposal after this review, not a circular prerequisite.
+
 ## Ticket36 bounded comparison completed
 
 Consume `docs/architecture/spikes/revision-boundary-results.md`. Legacy, settled-run and command/response packet alternatives plus grid offsets/budgets were compared with180 development and509 locked validation frames. Preferred packets fixed the observed case but missed the later validation checkpoint (2–3/4); settled runs/grid reached4/4 at cap4. Other-source visual fallback and literal OCR remain separate from verified instructions. No policy retuned on validation; no new default adopted. Keep settled selection conditional and packet heuristic rejected as default;25 still owns wider temporal/geometry/reference/task gaps. Raw branch `codex/spike-revision-boundaries`, commit `842189be2c9480a8c228c7d87917713dc5acb0be`.

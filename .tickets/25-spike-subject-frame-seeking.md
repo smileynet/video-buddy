@@ -17,7 +17,15 @@ validation_criteria:
 
 Intent source: user request on 2026-10-25 to capture every remaining spike, put open research next, then review integration, features and architecture. Read docs/architecture/spike-plan.md, docs/architecture/workflow-proposal.md and docs/architecture/spikes/image-model-results.md. Primary job: apply a technique/build something and verify the result. Preserve unrelated working-tree changes. Prototype code stays on isolated spike branches; no production integration in a spike.
 
-## What to build
+## Current bounded exit — reconciliation 2026-10-25
+
+This section supersedes earlier open-ended “Next” instructions below; historical evidence remains intact. Finish with a synthesis of existing observations, not another selector or model sweep. Timebox: half an active day, no new inference required.
+
+Create a disposition table in `docs/architecture/spikes/subject-frame-seeking-results.md` linking the first matched-window, controlled stress, fresh real validation and ticket 36 reports. For each original acceptance criterion, state measured evidence versus unresolved limitations. Preserve the failed candidate verdict, conditional settled-run result, grid offsets/budgets, inexact OCR, seeded geometry and non-independent references. Account for missing stage measurements explicitly rather than inventing them.
+
+Closure means each scoped question has an evidence-backed answer or explicit unresolved disposition, NOT a winning selector. Retain baseline/default behavior; review 28 decides any future change. Remaining broader tracking experiments are deliberately deferred to ticket 37. Temporal modality comparison stays 26; measured correction/task outcomes stay 21 and review UX 18. Independent references are required before a future generalization claim, not grounds to rerun these frozen experiments indefinitely.
+
+## What to build (original experiment scope)
 
 Evidence that seeking across all decoded frames inside a subject window recovers complete readable states better than the existing sparse strategy.
 

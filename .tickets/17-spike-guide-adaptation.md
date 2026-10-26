@@ -51,7 +51,7 @@ Not started. Record the actual experiment branch and evidence paths when work be
 
 ## Reconciled remaining work (2026-10-25)
 
-Evaluate target-platform/version adaptation separately from source observations, with official references for changes and a disposable target walkthrough. Keep unsupported changes visibly unverified. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+Evaluate target-platform/version adaptation separately from source observations, with official references for changes and a disposable target walkthrough. Keep unsupported changes visibly unverified. Research ticket 24 is complete; use its recorded contract. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
 
 ## Ticket 24 research execution contract (2026-10-25)
 

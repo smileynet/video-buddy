@@ -2,37 +2,38 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Ticket **36 comparison complete**: [revision-boundary results](architecture/spikes/revision-boundary-results.md) separate 180 development frames from 509 locked validation frames. Preferred packets solved development but retained only2–3/4 terminal validation states; settled runs and the grid reached4/4 at cap4. Other-source UI reached3/3 visually via fallback, with inexact writing. No new default or integration. Ticket25 retains wider qualification;35 owns the production selector failure. Review28 consumes the negative/conditional verdict and still depends on the remaining spikes.
+Ticket **36 comparison complete**: [revision-boundary results](architecture/spikes/revision-boundary-results.md) separate 180 development frames from 509 locked validation frames. Preferred packets solved development but retained only2–3/4 terminal validation states; settled runs and the grid reached4/4 at cap4. Other-source UI reached3/3 visually via fallback, with inexact writing. No new default or integration. Ticket 25 now finishes with a synthesis of existing evidence; broader tracking research is deliberately deferred to 37. Ticket 35 owns the production selector failure. Review28 consumes the negative/conditional verdict and still depends on the remaining spikes.
 
 | id | title | status |
 |---|---|---|
-| 29 | Verify current provider models and comparison eligibility | ✅ done |
-| 30 | Compare Gemini region grounding and temporal evidence | open |
-| 31 | Compare Ai2 pointing tracking and interface grounding | ✅ done |
-| 32 | Compare YOLOE promptable detection and segmentation | ✅ done |
-| 33 | Compare hosted DINO-X grounding against local baselines | open |
-| 35 | Preserve useful low-edge code frames in frame selection | open |
-| 34 | Evaluate NVIDIA reasoning for physical demonstration evidence | open |
-| 24 | Resolve open research questions before the next spike round | ✅ done |
-| 14 | Compare OCR for exact commands and settings | ✅ done |
-| 23 | Compare image element models by downstream evidence jobs | ✅ done |
 | 25 | Find complete readable subject states by seeking within video windows | in_progress |
-| 36 | Spike revision boundaries for typing and scrolling without prefix budget loss | ✅ done |
-| 26 | Compare ordered frames and video input for action evidence | open |
 | 15 | Compare speech paths on implementation-critical details | open |
 | 17 | Evaluate evidence-preserving adaptation to a target environment | open |
 | 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
 | 21 | Measure guide versus note usability with a fresh task performer | open |
+| 26 | Compare ordered frames and video input for action evidence | open |
 | 27 | Qualify source acquisition and recovery before integration | open |
 | 22 | Restore CLI startup in a clean checkout by resolving the missing breakdown helper | open |
+| 30 | Compare Gemini region grounding and temporal evidence | open |
+| 33 | Compare hosted DINO-X grounding against local baselines | open |
+| 34 | Evaluate NVIDIA reasoning for physical demonstration evidence | open |
 | 28 | Review spike findings and decide app features and integration architecture | open |
+| 35 | Preserve useful low-edge code frames in frame selection | open |
 | 07 | Re-transcribe rate-limited digest videos with CrisperWhisper on GPU | open |
 | 08 | Make CrisperWhisper the default engine in workspace config | open |
 | 09 | Add Vimeo source support (player URL + Referer) alongside YouTube | open |
 | 10 | Verify downloaded video integrity with ffprobe (do not trust yt-dlp exit code) | open |
 | 11 | Make batch digest resumable with --download-archive + archive-vs-disk reconciliation | open |
+| 37 | Qualify broader subject tracking only when a concrete task requires it | backlog |
 | 19 | Evaluate attribution only when it changes the next action | backlog |
 | 20 | Evaluate retrieval when saved solutions become hard to find | backlog |
+| 29 | Verify current provider models and comparison eligibility | ✅ done |
+| 31 | Compare Ai2 pointing tracking and interface grounding | ✅ done |
+| 32 | Compare YOLOE promptable detection and segmentation | ✅ done |
+| 24 | Resolve open research questions before the next spike round | ✅ done |
+| 14 | Compare OCR for exact commands and settings | ✅ done |
+| 23 | Compare image element models by downstream evidence jobs | ✅ done |
+| 36 | Spike revision boundaries for typing and scrolling without prefix budget loss | ✅ done |
 | 01 | Evaluate CrisperWhisper against current Whisper pipeline | ✅ done |
 | 02 | Add WhisperX backend for word-level timestamps + diarization | ✅ done |
 | 03 | Add CrisperWhisper isolated backend for verbatim + hallucination detection | ✅ done |
@@ -53,7 +54,7 @@ Latest frame evidence: [locked revision-boundary comparison](architecture/spikes
 
 Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). DINOv3 and SAM3.1 now have bounded inference records. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; complete-state and task qualification remain25/26.
 
-Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Remaining primary spikes: subject-window qualification25, temporal evidence26, speech15, adaptation17, review UX18, fresh-performer usability21 and acquisition/recovery27. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
+Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Remaining primary work: frame evidence synthesis 25, then speech 15, adaptation 17, review UX 18, fresh-performer usability 21, temporal evidence 26 and acquisition/recovery 27. This order finishes the live frame thread, then earlier commitments in the same workflow stream. Ticket 22 remains the clean-CLI prerequisite where needed. Broader tracking research 37 is deferred until a concrete failed task justifies it, alongside conditional 19/20. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
 
 ## Expanded current-provider coverage
 

@@ -51,7 +51,7 @@ Not started. Record the actual experiment branch and evidence paths when work be
 
 ## Reconciled remaining work (2026-10-25)
 
-Reassess earlier ASR benchmark conclusions using critical instruction/number recovery and evidence-location accuracy on matched passages. Preserve caption-source differences and model/license eligibility. Ticket 08 default change must await this verdict and final review 28. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+Reassess earlier ASR benchmark conclusions using critical instruction/number recovery and evidence-location accuracy on matched passages. Preserve caption-source differences and model/license eligibility. Ticket 08 default change must await this verdict and final review 28. Research ticket 24 is complete; use its recorded contract. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
 
 ## Ticket 24 research execution contract (2026-10-25)
 

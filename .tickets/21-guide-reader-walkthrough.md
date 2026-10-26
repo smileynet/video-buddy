@@ -27,7 +27,7 @@ Read `docs/architecture/spikes/s1-status.md` and `docs/architecture/spike-plan.m
 
 ## Reconciled remaining work (2026-10-25)
 
-Promoted into the current qualification cycle for final review 28. Participant availability is an external execution limitation, not fabricated usability evidence. Prepare comparable command/UI tasks and a reproducible protocol; if a fresh performer is unavailable record an unresolved verdict and constrain final feature claims. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+Promoted into the current qualification cycle for final review 28. Participant availability is an external execution limitation, not fabricated usability evidence. Prepare comparable command/UI tasks and a reproducible protocol; if a fresh performer is unavailable record an unresolved verdict and constrain final feature claims. Research ticket 24 is complete; use its recorded contract. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
 
 ## Ticket 24 research execution contract (2026-10-25)
 

@@ -67,7 +67,7 @@ Not started. Record the actual experiment branch and evidence paths when work be
 
 ## Reconciled remaining work (2026-10-25)
 
-Observe evidence lookup, blocked-step correction and return-after-interruption with equivalent artifacts; compare Markdown/chat to an adjacent-evidence prototype. Keep mocked extraction controls labeled; coordinate participant needs with 21. Research ticket 24 is next by explicit user instruction. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
+Observe evidence lookup, blocked-step correction and return-after-interruption with equivalent artifacts; compare Markdown/chat to an adjacent-evidence prototype. Keep mocked extraction controls labeled; coordinate participant needs with 21. Research ticket 24 is complete; use its recorded contract. Final synthesis is ticket 28; no model/default or feature integration is authorized by a smoke result.
 
 ## Ticket 24 research execution contract (2026-10-25)
 
