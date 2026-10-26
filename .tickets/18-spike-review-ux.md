@@ -63,7 +63,7 @@ See [architecture proposal](workflow-proposal.md) and [tool research](../agents/
 
 ## Execution record
 
-Not started. Record the actual experiment branch and evidence paths when work begins.
+Started 2026-10-26. Prepared formative pack on codex/spike-review-ux, pinned commit2898fe9b7505b0d668661b531fc03b4a450bbe59, docs/architecture/spikes/review-ux/prototype.html and README.md. Durable preparation/limits: docs/architecture/spikes/s7-review-ux-preparation.md. Same guide/evidence in linear linked-document rendering and adjacent evidence; no backend or command execution. Browser checks and pre-commit passed. Reader invited; no human responses, comparative success/time result or winner yet. Ticket remains in_progress. Familiarity, repeated-task learning and HTML-baseline proxy limit interpretation;21 retains fresh task qualification.
 
 ## Reconciled remaining work (2026-10-25)
 
