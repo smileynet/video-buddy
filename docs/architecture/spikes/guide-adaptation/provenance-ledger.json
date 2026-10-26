@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-26",
+  "source_observations": [
+    "S1:touch index.html",
+    "S2:touch app.js"
+  ],
+  "source_observation_actor": "agent visual inspection; no independent human attestation",
+  "target_profile": "PowerShell7.6.9 native-only child PATH,ordinary fixed filenames,writable folder",
+  "changes": [
+    {
+      "id": "A1",
+      "change": "New-Item File with fixed Path dot and Name",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "support": "Microsoft New-Item7.5",
+      "executed_cases": [
+        "adapted_native_fresh",
+        "adapted_native_existing"
+      ],
+      "status": "tested_here_for_declared_cases"
+    },
+    {
+      "id": "A2",
+      "change": "Test-Path LiteralPath existence guard",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "support": "Microsoft Test-Path7.5",
+      "executed_cases": [
+        "adapted_native_existing"
+      ],
+      "status": "tested_here_for_ordinary_names_not_general_wildcard_names"
+    },
+    {
+      "id": "A3",
+      "change": "Reject existing directory where file required",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "support": "Test-Path PathType Leaf plus declared target outcome",
+      "executed_cases": [
+        "adapted_directory_conflict"
+      ],
+      "status": "tested_here"
+    },
+    {
+      "id": "A4",
+      "change": "Do not request Force overwrite",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "support": "New-Item existing-file Force documentation",
+      "executed_cases": [
+        "adapted_native_existing",
+        "force_negative_control"
+      ],
+      "status": "guarded_no_force_combination_tested;not_a_causal_isolation_of_each_flag"
+    },
+    {
+      "id": "A5",
+      "change": "Creation uses ErrorAction Stop",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "support": "Microsoft CommonParameters7.5",
+      "executed_cases": [],
+      "status": "documentation_supported;generic_creation_error_paths_not_exercised"
+    }
+  ],
+  "semantic_difference": {
+    "aspect": "Existing file modification time",
+    "source": "GNU touch updates; observed in source_bash_existing under currentCoreutils8.32",
+    "adaptation": "Guard leaves unchanged; observed in adapted_native_existing",
+    "equivalence": "bounded creation/content goal only;not_touch_emulation"
+  },
+  "source_and_adaptation_code_blocks_match_execution_inputs": true,
+  "reader_label_comprehension": "not observed; static traceability is not a reader study",
+  "conditions_not_qualified": [
+    "arbitrary filenames",
+    "symlinks",
+    "concurrency",
+    "permissions/ACL failures",
+    "cross-platform PowerShell",
+    "full Git workflow",
+    "exact2017source runtime"
+  ]
+}

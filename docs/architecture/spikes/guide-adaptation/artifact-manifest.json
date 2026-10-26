@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-26",
+  "scope": "guide-adaptation immediate files; final staging inspector separately discloses candidates,not whole repo/history",
+  "files": [
+    {
+      "path": "adapted.ps1",
+      "bytes": 438,
+      "sha256": "77b572e0d93a5388e73b799ea6e9f8ba1bfd403a5e824b85977f091fded9279d",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "frozen-inputs.zip",
+      "bytes": 5869,
+      "sha256": "1fe7cfcf14863973ee59b9b7739ce216f1b413c0546dd0466ec35e2aa3f4c3aa",
+      "role": "exact frozen pre-execution text-byte bundle",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "guide-a-source-faithful.md",
+      "bytes": 1856,
+      "sha256": "a0b29b281907ae7683f40197868cab7dea55a4c6045fc146856d05124a6ad73c",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "guide-b-two-layer.md",
+      "bytes": 3811,
+      "sha256": "ad3e61e1d35b5d12d75137500a9e211d0d21220c4c3cd3eb614038498c8d8180",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 3856,
+      "sha256": "9ad9236db6d81a7ff712b5663f15fcb508897c976102d5615bda181bdb3caf37",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "provenance-ledger.json",
+      "bytes": 2829,
+      "sha256": "171942c530ff60e6ba06bb63fb8bea7a76f2dcb9d335e0defd46e69e3ad57c98",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3954,
+      "sha256": "cf0906b0229c1bd88ac958b352dc753134cbd525d5299f0461e01d80cb82159d",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "results.json",
+      "bytes": 13498,
+      "sha256": "3a7837f9aa795113899eb05f18e4b3aadafddf2bf28fc245b07b95af52b7f71e",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "run.py",
+      "bytes": 9223,
+      "sha256": "d3ce717314feb3581ebe50c55c5f1a7d7d1bd26c17a30cce21257cdc5dacb47b",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "source-10m38s.jpg",
+      "bytes": 141743,
+      "sha256": "0d4b7d335d5ad9ba233de977685f5b27c6fe6a7f656b35ae5b3692c8ecc7c8de",
+      "role": "selected source visual reference",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "source-packet.json",
+      "bytes": 1594,
+      "sha256": "a42bd640b5c2233632ea2aeb1a30d960d13e92918b930a466a5b1c3c7b91db97",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1682,
+      "sha256": "cd23f14b1509d9b78a67a966afb617908b561d2550af5989529d882f92a9b0e9",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 5606,
+      "sha256": "65362bd2fb7f1a37efec48a0f84b259186b41cf2a72f8a024c8c933246a18c83",
+      "role": "throwaway artifact,code or compact experiment evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    }
+  ],
+  "original_media": {
+    "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+    "local_ignored_path": ".scratch/seek-retained-source/SWYqp7iY_Tc.mp4",
+    "sha256": "a404e9e84132fde12cd77bbfc7d8183275f9ec31d97b28b3e5d4ea2dd2c723c1",
+    "role": "retained local source original;not committed;no independent backup claim"
+  },
+  "recovery": "Restore5text files from frozen-inputs.zip before replay;WindowsCRLF bytes differ from Git-normalized text. Restore self-check passes. RetainedJPEGhash preserves exact visual reference;future source encodes may differ. Run generates fresh owned fixtures then verify rechecks their postconditions.",
+  "excluded": "Ignored case folders,full source media,capture intermediates,OS side effects,earlier history and billing are not covered by final staged source inspection."
+}

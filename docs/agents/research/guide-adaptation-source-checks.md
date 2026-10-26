@@ -22,13 +22,13 @@ if (-not (Test-Path -LiteralPath '.gitignore')) {
 }
 ```
 
-This expresses “ensure a path exists without replacing existing contents.” It intentionally leaves existing timestamps alone and is not a complete touch emulator. Use an additional leaf check to reject an existing directory if a file is required. The test/create sequence is not atomic; omitting Force keeps a concurrent creator from being silently overwritten. `New-Item -Path` supports wildcards, so do not generalize this fixed-name example into arbitrary literal-path creation without separately handling names containing wildcard characters.
+This expresses “ensure a path exists without replacing existing contents.” It intentionally leaves existing timestamps alone and is not a complete touch emulator. Use an additional leaf check to reject an existing directory if a file is required. The test/create sequence is not atomic; omitting Force avoids requesting overwrite, but concurrency is not qualified. The earlier blanket claim that New-Item Path supports wildcards is withdrawn: the cited page's Path parameter says it works like LiteralPath and does not interpret wildcards, while Example6 demonstrates wildcard expansion across directories. Those sections conflict. This note does not resolve general path behavior; the actual adaptation uses a fixed Path of dot plus fixed Name values, so it does not rely on wildcard expansion.
 
 Version caveat: host PowerShell reports 7.6.9; cited documentation is the explicitly selected 7.5 view. No exact 7.6 implementation comparison was performed.
 
 ### LiteralPath is the correct existence guard for exact names — high confidence
 
-[Microsoft Test-Path documentation](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/test-path?view=powershell-7.5), PowerShell 7.5 view: “No characters are interpreted as wildcard characters.” Its Path parameter description says: “Wildcard characters are permitted.” Quoting a string alone therefore does not provide literal-path semantics. Use `-LiteralPath` for the guard; this does not change the separately documented wildcard behavior of New-Item's Path parameter. The same host/documentation version mismatch applies.
+[Microsoft Test-Path documentation](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/test-path?view=powershell-7.5), PowerShell 7.5 view: “No characters are interpreted as wildcard characters.” Its Path parameter description says: “Wildcard characters are permitted.” Quoting a string alone therefore does not provide literal-path semantics. Use `-LiteralPath` for the Test-Path guard. New-Item is a separate cmdlet whose cited page has the internal conflict described above; no blanket general-path claim is retained. The same host/documentation version mismatch applies.
 
 ### Git configuration can be isolated without editing user configuration — high confidence
 
@@ -50,3 +50,7 @@ Version caveat: host Git reports 2.53.0.windows.2. git-status's documented versi
 - No exact Coreutils build/version match or live touch behavioral run was made. v9.7 source establishes upstream semantics only.
 - No full guide or fixture execution was performed here. This source check changed only this note and did not install software, run uv, alter environment variables, or edit Git configuration.
 - Source text was treated as evidence, not instructions. Recommendations above are explicitly scoped inferences for the adapting guide.
+
+## Execution/audit follow-up
+
+The first audit caught the overbroad New-Item wildcard statement. It was corrected before the final verdict, with the page's internal conflict retained rather than selecting a convenient description. No frozen guide command or execution result changed. Actual host runs report Coreutils8.32 and PowerShell7.6.9, so v9.7/v7.5 documentation remains background support; fixed-case empirical behavior is the runtime evidence. Git environment/index suggestions were not exercised because the bounded experiment stops after file preparation, without initializing repositories.

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-26",
+  "frozen_inputs": "b442b1b",
+  "frozen_guide_and_source_hashes_verified": true,
+  "persisted_files_independently_rechecked": true,
+  "case_checks": [
+    {
+      "case": "source_bash_fresh",
+      "verified": true,
+      "observation": "fresh placeholders verified"
+    },
+    {
+      "case": "source_powershell_host_fresh",
+      "verified": true,
+      "observation": "fresh placeholders verified"
+    },
+    {
+      "case": "source_powershell_native_fresh",
+      "verified": true,
+      "observation": "blocked with exit0; no false task success"
+    },
+    {
+      "case": "adapted_native_fresh",
+      "verified": true,
+      "observation": "fresh placeholders verified"
+    },
+    {
+      "case": "source_bash_existing",
+      "verified": true,
+      "observation": "contents preserved; declared timestamp behavior verified"
+    },
+    {
+      "case": "adapted_native_existing",
+      "verified": true,
+      "observation": "contents preserved; declared timestamp behavior verified"
+    },
+    {
+      "case": "force_negative_control",
+      "verified": true,
+      "observation": "owned canary erased; negative control not recommended"
+    },
+    {
+      "case": "adapted_directory_conflict",
+      "verified": true,
+      "observation": "blocked explicitly; sentinel preserved"
+    }
+  ],
+  "all_checks_passed": true,
+  "human_reader_observed": false,
+  "frozen_text_files_restored": 5,
+  "source_and_adapted_blocks_match": true,
+  "adaptation_labels_and_support_links_present": true,
+  "limits": "Checks establish these fixture postconditions only, not universal translation or usability."
+}

@@ -1,0 +1,407 @@
+{
+  "date": "2026-10-26",
+  "run_root": ".scratch/guide-adaptation/run-7a250a1b5d",
+  "protocol_sha256": "9ad9236db6d81a7ff712b5663f15fcb508897c976102d5615bda181bdb3caf37",
+  "source_packet_sha256": "a42bd640b5c2233632ea2aeb1a30d960d13e92918b930a466a5b1c3c7b91db97",
+  "guide_hashes": {
+    "guide-a-source-faithful.md": "a0b29b281907ae7683f40197868cab7dea55a4c6045fc146856d05124a6ad73c",
+    "guide-b-two-layer.md": "ad3e61e1d35b5d12d75137500a9e211d0d21220c4c3cd3eb614038498c8d8180",
+    "adapted.ps1": "77b572e0d93a5388e73b799ea6e9f8ba1bfd403a5e824b85977f091fded9279d"
+  },
+  "platform": "Windows-11-10.0.26300-SP0",
+  "profiles": {
+    "host": {
+      "powershell": "7.6.9",
+      "touch_available": true,
+      "touch_source": "C:\\Program Files\\Git\\usr\\bin\\touch.exe",
+      "new_item_available": true,
+      "test_path_available": true
+    },
+    "native": {
+      "powershell": "7.6.9",
+      "touch_available": false,
+      "touch_source": null,
+      "new_item_available": true,
+      "test_path_available": true
+    }
+  },
+  "versions": {
+    "git": "git version 2.53.0.windows.2",
+    "bash": "GNU bash, version 5.2.37(1)-release (x86_64-pc-msys)",
+    "touch": "touch (GNU coreutils) 8.32"
+  },
+  "native_child_path": "C:\\Program Files\\PowerShell\\7;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\System32",
+  "parent_path_unchanged": true,
+  "records": [
+    {
+      "case": {
+        "id": "source_bash_fresh",
+        "program": "source",
+        "shell": "bash",
+        "profile": "host",
+        "seed": "fresh",
+        "expected": "two empty regular files"
+      },
+      "profile": {
+        "powershell": "7.6.9",
+        "touch_available": true,
+        "touch_source": "C:\\Program Files\\Git\\usr\\bin\\touch.exe",
+        "new_item_available": true,
+        "test_path_available": true
+      },
+      "before": [],
+      "after": [
+        {
+          "path": "app.js",
+          "kind": "file",
+          "mtime_ns": 1793017377744339100,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 1793017377729638500,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.093980300007388,
+      "gates": {
+        "two_empty_files": true,
+        "no_extra_entries": true,
+        "exit_zero": true
+      },
+      "expectations_matched": true
+    },
+    {
+      "case": {
+        "id": "source_powershell_host_fresh",
+        "program": "source",
+        "shell": "powershell",
+        "profile": "host",
+        "seed": "fresh",
+        "expected": "two empty regular files; counterexample to blanket PowerShell incompatibility"
+      },
+      "profile": {
+        "powershell": "7.6.9",
+        "touch_available": true,
+        "touch_source": "C:\\Program Files\\Git\\usr\\bin\\touch.exe",
+        "new_item_available": true,
+        "test_path_available": true
+      },
+      "before": [],
+      "after": [
+        {
+          "path": "app.js",
+          "kind": "file",
+          "mtime_ns": 1793017377941025900,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 1793017377926868800,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.22466750000603497,
+      "gates": {
+        "two_empty_files": true,
+        "no_extra_entries": true,
+        "exit_zero": true
+      },
+      "expectations_matched": true
+    },
+    {
+      "case": {
+        "id": "source_powershell_native_fresh",
+        "program": "source",
+        "shell": "powershell",
+        "profile": "native",
+        "seed": "fresh",
+        "expected": "touch unavailable; no requested files; exit status alone not decisive"
+      },
+      "profile": {
+        "powershell": "7.6.9",
+        "touch_available": false,
+        "touch_source": null,
+        "new_item_available": true,
+        "test_path_available": true
+      },
+      "before": [],
+      "after": [],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "touch: D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\.scratch\\guide-adaptation\\run-7a250a1b5d\\source.ps1:1\nLine |\n   1 |  touch index.html\n     |  ~~~~~\n     | The term 'touch' is not recognized as a name of a cmdlet, function, script file, or executable program. Check\n     | the spelling of the name, or if a path was included, verify that the path is correct and try again.\ntouch: D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\.scratch\\guide-adaptation\\run-7a250a1b5d\\source.ps1:2\nLine |\n   2 |  touch app.js\n     |  ~~~~~\n     | The term 'touch' is not recognized as a name of a cmdlet, function, script file, or executable program. Check\n     | the spelling of the name, or if a path was included, verify that the path is correct and try again.\n",
+      "seconds": 0.42719750000105705,
+      "gates": {
+        "touch_unavailable": true,
+        "no_requested_files": true,
+        "diagnostic_errors_present": true
+      },
+      "expectations_matched": true
+    },
+    {
+      "case": {
+        "id": "adapted_native_fresh",
+        "program": "adapted",
+        "shell": "powershell",
+        "profile": "native",
+        "seed": "fresh",
+        "expected": "two empty regular files"
+      },
+      "profile": {
+        "powershell": "7.6.9",
+        "touch_available": false,
+        "touch_source": null,
+        "new_item_available": true,
+        "test_path_available": true
+      },
+      "before": [],
+      "after": [
+        {
+          "path": "app.js",
+          "kind": "file",
+          "mtime_ns": 1793017378620064500,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 1793017378617533600,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.25296569999773055,
+      "gates": {
+        "two_empty_files": true,
+        "no_extra_entries": true,
+        "exit_zero": true
+      },
+      "expectations_matched": true
+    },
+    {
+      "case": {
+        "id": "source_bash_existing",
+        "program": "source",
+        "shell": "bash",
+        "profile": "host",
+        "seed": "existing",
+        "expected": "existing bytes preserved, missing file created,mtime updated"
+      },
+      "profile": {
+        "powershell": "7.6.9",
+        "touch_available": true,
+        "touch_source": "C:\\Program Files\\Git\\usr\\bin\\touch.exe",
+        "new_item_available": true,
+        "test_path_available": true
+      },
+      "before": [
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 946684800000000000,
+          "bytes": 16,
+          "sha256": "70c135d445c5d3f9eeb009b6534197dfe194424bad1017b779b1a772b5deea0a"
+        }
+      ],
+      "after": [
+        {
+          "path": "app.js",
+          "kind": "file",
+          "mtime_ns": 1793017378708277500,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 1793017378693314700,
+          "bytes": 16,
+          "sha256": "70c135d445c5d3f9eeb009b6534197dfe194424bad1017b779b1a772b5deea0a"
+        }
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.049609300011070445,
+      "gates": {
+        "canary_bytes_preserved": true,
+        "missing_file_created": true,
+        "timestamp_semantics": true,
+        "exit_zero": true
+      },
+      "expectations_matched": true
+    },
+    {
+      "case": {
+        "id": "adapted_native_existing",
+        "program": "adapted",
+        "shell": "powershell",
+        "profile": "native",
+        "seed": "existing",
+        "expected": "existing bytes andmtime preserved,missing file created"
+      },
+      "profile": {
+        "powershell": "7.6.9",
+        "touch_available": false,
+        "touch_source": null,
+        "new_item_available": true,
+        "test_path_available": true
+      },
+      "before": [
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 946684800000000000,
+          "bytes": 16,
+          "sha256": "70c135d445c5d3f9eeb009b6534197dfe194424bad1017b779b1a772b5deea0a"
+        }
+      ],
+      "after": [
+        {
+          "path": "app.js",
+          "kind": "file",
+          "mtime_ns": 1793017378893613300,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 946684800000000000,
+          "bytes": 16,
+          "sha256": "70c135d445c5d3f9eeb009b6534197dfe194424bad1017b779b1a772b5deea0a"
+        }
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.21670350000204053,
+      "gates": {
+        "canary_bytes_preserved": true,
+        "missing_file_created": true,
+        "timestamp_semantics": true,
+        "exit_zero": true
+      },
+      "expectations_matched": true
+    },
+    {
+      "case": {
+        "id": "force_negative_control",
+        "program": "force",
+        "shell": "powershell",
+        "profile": "native",
+        "seed": "existing",
+        "expected": "Force truncates owned canary; negative control,not a recommended step"
+      },
+      "profile": {
+        "powershell": "7.6.9",
+        "touch_available": false,
+        "touch_source": null,
+        "new_item_available": true,
+        "test_path_available": true
+      },
+      "before": [
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 946684800000000000,
+          "bytes": 16,
+          "sha256": "70c135d445c5d3f9eeb009b6534197dfe194424bad1017b779b1a772b5deea0a"
+        }
+      ],
+      "after": [
+        {
+          "path": "index.html",
+          "kind": "file",
+          "mtime_ns": 1793017379128215500,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.23063050000928342,
+      "gates": {
+        "canary_truncated": true,
+        "no_second_file": true
+      },
+      "expectations_matched": true
+    },
+    {
+      "case": {
+        "id": "adapted_directory_conflict",
+        "program": "adapted",
+        "shell": "powershell",
+        "profile": "native",
+        "seed": "directory",
+        "expected": "explicit failure,preserve directory sentinel,no false success"
+      },
+      "profile": {
+        "powershell": "7.6.9",
+        "touch_available": false,
+        "touch_source": null,
+        "new_item_available": true,
+        "test_path_available": true
+      },
+      "before": [
+        {
+          "path": "index.html",
+          "kind": "directory",
+          "mtime_ns": 1793017379163702100
+        },
+        {
+          "path": "index.html/keep.txt",
+          "kind": "file",
+          "mtime_ns": 1793017379163702100,
+          "bytes": 16,
+          "sha256": "70c135d445c5d3f9eeb009b6534197dfe194424bad1017b779b1a772b5deea0a"
+        }
+      ],
+      "after": [
+        {
+          "path": "index.html",
+          "kind": "directory",
+          "mtime_ns": 1793017379163702100
+        },
+        {
+          "path": "index.html/keep.txt",
+          "kind": "file",
+          "mtime_ns": 1793017379163702100,
+          "bytes": 16,
+          "sha256": "70c135d445c5d3f9eeb009b6534197dfe194424bad1017b779b1a772b5deea0a"
+        }
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Exception: D:\\.codex\\worktrees\\spike-state-comparison\\video-buddy\\docs\\architecture\\spikes\\guide-adaptation\\adapted.ps1:5\nLine |\n   5 |              throw \"$name exists but is not a file. Stop and resolve t \u2026\n     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n     | index.html exists but is not a file. Stop and resolve the conflict.\n",
+      "seconds": 0.3058193000033498,
+      "gates": {
+        "directory_preserved": true,
+        "sentinel_preserved": true,
+        "no_false_second_file": true,
+        "explicit_failure": true
+      },
+      "expectations_matched": true
+    }
+  ],
+  "all_case_expectations_matched": true,
+  "human_reader_observed": false,
+  "timing_scope": "One subprocess run per case; includes startup, not reader time or a guide-efficiency comparison."
+}
