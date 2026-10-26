@@ -69,3 +69,7 @@ Consume `docs/architecture/spikes/s4-speech-results.md`: known-corpus prose WER 
 ## Speech reference lineage — 2026-10-25
 
 Consume `docs/architecture/spikes/s4-reference-provenance.md`. Original caption track is verified ASR; publisher/manual track labels do not certify human review. MIT matching cue records and CS50 matching decoded words cannot provide two independent validation references. Ticket15 has a55-second independent-listening pack but no completed human reference or new speech score. Ticket39 proposes durable caption provenance after this review; no blocker39 edge is added.
+
+## Ticket15 bounded audio-model comparison completed
+
+Consume `docs/architecture/spikes/s4-model-reviewed-results.md`: a runnable independent-family SenseVoice audio pass and locked machine-reference comparison now exist. Model-reviewed provisional remains distinct from human-verified. Its code spelling disagreements and token timing cannot certify exact commands or word boundaries; conditional WER is only agreement. Retain baseline and exclude unsupported exact-command/accuracy claims. Ticket40 defers human-verified qualification until a concrete speech/default/alignment change requires it. No automatic integration follows closure of15; preserve38/39 recovery/provenance proposals.

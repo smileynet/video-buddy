@@ -19,7 +19,7 @@ Discovered during user-requested ticket15 continuation2026-10-25. Read `docs/arc
 
 ## What to build
 
-After review28 decides artifact contracts, preserve enough caption provenance that consumers can distinguish track origin from human-review status and avoid treating duplicate publisher copies as independent validation. Record selected source namespace, language, kind/automatic indicator, track identity/content hash and observation time where available, with unknown/missing states. Keep publisher origin, review attestations and model-generated text separate. Do not persist signed caption URLs or unrelated full metadata by default. Preserve compatibility with older artifacts lacking provenance.
+After review28 decides artifact contracts, preserve enough caption provenance that consumers can distinguish track origin from human-review status and avoid treating duplicate publisher copies as independent validation. Record selected source namespace, language, kind/automatic indicator, track identity/content hash and observation time where available, with unknown/missing states. Keep publisher origin, review attestations and model-generated text separate. Represent model-reviewed provisional references with reviewer model/checkpoint and human_verified:false; a machine review must never create a human attestation. Do not persist signed caption URLs or unrelated full metadata by default. Preserve compatibility with older artifacts lacking provenance.
 
 ## Acceptance criteria
 

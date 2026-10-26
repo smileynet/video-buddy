@@ -1,5 +1,7 @@
 # Speech references: caption origin verified, listening still required
 
+**Later user-authorized continuation:** [audio-model review](s4-model-reviewed-results.md) permits provisional machine-reference comparison without a human attestation. The listening gate below remains relevant to human-verified accuracy, not a blocker for explicitly model-reviewed work.
+
 **Ticket 15 · 25 October 2026 · provenance measured; new speech references unreviewed. No new model scores or default change.** The previous speech report remains [first-round evidence](s4-speech-results.md). This update resolves caption-origin and duplicate-reference questions, and prepares a bounded listening check rather than another proxy score.
 
 ## Verified caption origins

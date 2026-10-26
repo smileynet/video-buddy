@@ -1,6 +1,6 @@
 # Speech details comparison — ticket 15
 
-**Latest follow-up:** [caption provenance and independent-reference preparation](s4-reference-provenance.md) verifies track origin/duplicate references and prepares55seconds for listening. No new model scores or independent auditory truth are claimed in that follow-up.
+**Latest follow-up:** [audio-model review and bounded ticket15 disposition](s4-model-reviewed-results.md). User-authorized machine references were frozen before new Whisper comparisons; model-reviewed remains distinct from human-verified. Earlier [caption provenance](s4-reference-provenance.md) retains its historical scope.
 
 **Measured first round; ticket 15 remains in progress. No default or production change.** Small retained all seven controlled instruction phrases; base and turbo each changed `git add` to `git at`. All three preserved the four controlled number/negation phrases. Natural read-speech errors favored turbo on four known-corpus passages, but that did not predict command reliability. A real tutorial/caption probe recovered only two of three task-backed terms for every option; independent auditory word/number references and timing remain unqualified.
 
