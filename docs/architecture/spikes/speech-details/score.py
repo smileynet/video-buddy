@@ -34,7 +34,7 @@ def edit_counts(reference, hypothesis):
 references = json.loads((HERE / "references.json").read_text())["fixtures"]
 scores = []
 for path in sorted(HERE.glob("raw-*.json")):
-    if path.stem.endswith(("-natural", "-tutorial")):
+    if path.stem.endswith(("-natural", "-tutorial", "-model-reviewed")):
         continue
     raw = json.loads(path.read_text())
     rows = []

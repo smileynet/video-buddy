@@ -332,8 +332,8 @@
     },
     {
       "path": "score.py",
-      "bytes": 10632,
-      "sha256": "4333afc0d99aaabd1e1df0e03e85be6c1202214c84c1c994529102736dd8bfb0",
+      "bytes": 10651,
+      "sha256": "accf71085138e3353bff7c41972a182770e36f5c09050facc2db72de5cccf530",
       "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
