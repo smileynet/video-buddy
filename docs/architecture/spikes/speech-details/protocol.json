@@ -1,0 +1,44 @@
+{
+  "question": "Which eligible speech configuration preserves critical commands, numbers and evidence location?",
+  "status": "frozen before predictions",
+  "options": [
+    {
+      "id": "base",
+      "repo": "Systran/faster-whisper-base",
+      "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "device": "cpu",
+      "compute_type": "int8"
+    },
+    {
+      "id": "small",
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "device": "cpu",
+      "compute_type": "int8"
+    },
+    {
+      "id": "turbo",
+      "repo": "mobiuslabsgmbh/faster-whisper-large-v3-turbo",
+      "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+      "device": "cpu",
+      "compute_type": "int8"
+    }
+  ],
+  "settings": {
+    "language": "en",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "vad_filter": true,
+    "condition_on_previous_text": true,
+    "cpu_threads": 8,
+    "num_workers": 1
+  },
+  "references": "Synthetic authored diagnostic text and energy envelopes, not independently heard natural tutorial truth. JFK public historical speech: official Whisper test has Americans crossing 1.8 seconds; no full-transcript WER claim for JFK.",
+  "selection": "No predictions inspected before freeze. David development one phrase; Zira validation two sequences; silence and authored tones negative controls; JFK fixed upstream integration check. No tuning.",
+  "normalization": "WER/CER lowercase ASCII words; apostrophes retained; punctuation ignored; numerals NOT expanded for WER. Critical phrase aliases separately declared in fixtures; no post-hoc aliases.",
+  "timing": "For synthetic phrases, align complete lexical word sequences via preregistered aliases, compare union start/end to independent energy envelope. Word-level natural accuracy remains unknown. JFK target Americans must span 1.8 seconds (upstream test).",
+  "cost": "Separate synthesis/download/setup/model load/inference. Sample root+child RSS at 20 ms; no GPU/full-pipeline or steady-state claim.",
+  "missing": "No verified local CrisperWhisper/WhisperX; no captions on controlled fixtures. These are eligibility gaps, not quality losses.",
+  "timebox": "one active day excluding setup/download; this run bounded to existing cached checkpoints"
+}

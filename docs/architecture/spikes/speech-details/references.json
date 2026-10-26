@@ -1,0 +1,157 @@
+{
+  "preparation_seconds": 4.313242100004572,
+  "fixtures": [
+    {
+      "id": "development",
+      "kind": "synthetic-authored",
+      "split": "development",
+      "path": ".scratch/speech-details/development.wav",
+      "voice": "Microsoft David Desktop",
+      "sha256": "76ea33d185c6f25a35b89b0b64f180a50caaaf96d50de6f2b5ec6bce9f1ed92c",
+      "duration": 3.20925,
+      "text": "Run git status.",
+      "phrases": [
+        {
+          "text": "Run git status.",
+          "aliases": [
+            "run git status"
+          ],
+          "start": 0.6015625,
+          "end": 1.6465625,
+          "timing_reference": "amplitude >100 of 32768; phrase envelope, not phonetic word boundaries"
+        }
+      ]
+    },
+    {
+      "id": "commands",
+      "kind": "synthetic-authored",
+      "split": "validation",
+      "path": ".scratch/speech-details/commands.wav",
+      "voice": "Microsoft Zira Desktop",
+      "sha256": "df4f22877dec37be3f5cd57458914cef077dc62f07addb3433a6b62374a68870",
+      "duration": 10.8573125,
+      "text": "Run git status. Then run git add index dot h t m l. Finally run git status again.",
+      "phrases": [
+        {
+          "text": "Run git status.",
+          "aliases": [
+            "run git status"
+          ],
+          "start": 0.5965,
+          "end": 1.6510625,
+          "timing_reference": "amplitude >100 of 32768; phrase envelope, not phonetic word boundaries"
+        },
+        {
+          "text": "Then run git add index dot h t m l.",
+          "aliases": [
+            "then run git add index dot h t m l",
+            "then run git add index html",
+            "then run git add index h t m l"
+          ],
+          "start": 3.300875,
+          "end": 5.9165,
+          "timing_reference": "amplitude >100 of 32768; phrase envelope, not phonetic word boundaries"
+        },
+        {
+          "text": "Finally run git status again.",
+          "aliases": [
+            "finally run git status again"
+          ],
+          "start": 7.559875,
+          "end": 9.317499999999999,
+          "timing_reference": "amplitude >100 of 32768; phrase envelope, not phonetic word boundaries"
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "kind": "synthetic-authored",
+      "split": "validation",
+      "path": ".scratch/speech-details/numbers.wav",
+      "voice": "Microsoft Zira Desktop",
+      "sha256": "438602eac777e507eb1b09820b6ec489f04cd77b7560d7da166ea2adffd29224",
+      "duration": 14.5564375,
+      "text": "Set the port to eight thousand and eighty. Set the timeout to thirty seconds. Use Python three point twelve. Do not set retries to zero.",
+      "phrases": [
+        {
+          "text": "Set the port to eight thousand and eighty.",
+          "aliases": [
+            "set the port to eight thousand and eighty",
+            "set the port to 8080",
+            "set the port to 8 080"
+          ],
+          "start": 0.6014375,
+          "end": 2.5263125,
+          "timing_reference": "amplitude >100 of 32768; phrase envelope, not phonetic word boundaries"
+        },
+        {
+          "text": "Set the timeout to thirty seconds.",
+          "aliases": [
+            "set the timeout to thirty seconds",
+            "set the timeout to 30 seconds"
+          ],
+          "start": 4.1655625,
+          "end": 6.1290625,
+          "timing_reference": "amplitude >100 of 32768; phrase envelope, not phonetic word boundaries"
+        },
+        {
+          "text": "Use Python three point twelve.",
+          "aliases": [
+            "use python three point twelve",
+            "use python 3 12"
+          ],
+          "start": 7.7751875,
+          "end": 9.628562500000001,
+          "timing_reference": "amplitude >100 of 32768; phrase envelope, not phonetic word boundaries"
+        },
+        {
+          "text": "Do not set retries to zero.",
+          "aliases": [
+            "do not set retries to zero",
+            "do not set retries to 0"
+          ],
+          "start": 11.2673125,
+          "end": 13.020249999999999,
+          "timing_reference": "amplitude >100 of 32768; phrase envelope, not phonetic word boundaries"
+        }
+      ]
+    },
+    {
+      "id": "silence",
+      "kind": "authored-negative",
+      "split": "validation",
+      "path": ".scratch/speech-details/silence.wav",
+      "sha256": "190415015d40eef0cd797e1b59ffe00846b01873050b12d44b3a216de3faa2a9",
+      "duration": 8,
+      "text": "",
+      "phrases": []
+    },
+    {
+      "id": "tones",
+      "kind": "authored-negative",
+      "split": "validation",
+      "path": ".scratch/speech-details/tones.wav",
+      "sha256": "4a5e5e7b2f8764342d93c546fa7b84039d428994df0f4950586550ff1c48dbc7",
+      "duration": 8,
+      "text": "",
+      "phrases": []
+    },
+    {
+      "id": "jfk",
+      "kind": "natural-upstream-integration",
+      "split": "validation",
+      "path": ".scratch/speech-details/jfk.flac",
+      "sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+      "source": "https://raw.githubusercontent.com/openai/whisper/86098128c0b4f24f0e2aa2994de830614b474227/tests/jfk.flac",
+      "test_source": "https://raw.githubusercontent.com/openai/whisper/86098128c0b4f24f0e2aa2994de830614b474227/tests/test_transcribe.py",
+      "test_sha256": "39b1b2318bd29e16c5d64954bbe70fa560db4eeedd96aaab0f9cfbcce74acd6b",
+      "text": null,
+      "phrases": [],
+      "target": {
+        "word": "americans",
+        "contains_time": 1.8
+      },
+      "limitation": "A known model test, likely contaminated/familiar; no independent tutorial command/number or WER reference."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "checked": "2026-10-25",
+  "models": [
+    {
+      "id": "base",
+      "repo": "Systran/faster-whisper-base",
+      "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "device": "cpu",
+      "compute_type": "int8",
+      "model_card": "https://huggingface.co/Systran/faster-whisper-base/raw/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/README.md",
+      "resolved_url": "https://huggingface.co/Systran/faster-whisper-base/raw/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/README.md",
+      "card_sha256": "b922acef3616e27b1d416260b63ba7114c732f0315012006781af2da69cd1ebf",
+      "mit_declared": true,
+      "conversion_source_lines": [
+        "license: mit",
+        "This repository contains the conversion of [openai/whisper-base](https://huggingface.co/openai/whisper-base) to the [CTranslate2](https://github.com/OpenNMT/CTranslate2) model format.",
+        "ct2-transformers-converter --model openai/whisper-base --output_dir faster-whisper-base \\",
+        "**For more information about the original model, see its [model card](https://huggingface.co/openai/whisper-base).**"
+      ],
+      "eligible_for_this_local_probe": true
+    },
+    {
+      "id": "small",
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "device": "cpu",
+      "compute_type": "int8",
+      "model_card": "https://huggingface.co/Systran/faster-whisper-small/raw/536b0662742c02347bc0e980a01041f333bce120/README.md",
+      "resolved_url": "https://huggingface.co/Systran/faster-whisper-small/raw/536b0662742c02347bc0e980a01041f333bce120/README.md",
+      "card_sha256": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+      "mit_declared": true,
+      "conversion_source_lines": [
+        "license: mit",
+        "This repository contains the conversion of [openai/whisper-small](https://huggingface.co/openai/whisper-small) to the [CTranslate2](https://github.com/OpenNMT/CTranslate2) model format.",
+        "ct2-transformers-converter --model openai/whisper-small --output_dir faster-whisper-small \\",
+        "**For more information about the original model, see its [model card](https://huggingface.co/openai/whisper-small).**"
+      ],
+      "eligible_for_this_local_probe": true
+    },
+    {
+      "id": "turbo",
+      "repo": "mobiuslabsgmbh/faster-whisper-large-v3-turbo",
+      "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+      "device": "cpu",
+      "compute_type": "int8",
+      "model_card": "https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo/raw/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/README.md",
+      "resolved_url": "https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo/raw/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/README.md",
+      "card_sha256": "b3068692728faed23580cce5cd569fc47ff76c690c032b2641ffd5554ea64d8f",
+      "mit_declared": true,
+      "conversion_source_lines": [
+        "license: mit",
+        "This repository contains the conversion of [openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo) to the [CTranslate2](https://github.com/OpenNMT/CTranslate2) model format.",
+        "ct2-transformers-converter --model openai/whisper-large-v3-turbo --output_dir faster-whisper-large-v3-turbo \\",
+        "For more information about the original model, see its [model card](https://huggingface.co/openai/whisper-large-v3-turbo)."
+      ],
+      "eligible_for_this_local_probe": true
+    }
+  ],
+  "runtime": {
+    "faster-whisper": {
+      "version": "1.2.1",
+      "license": "MIT"
+    },
+    "ctranslate2": {
+      "version": "4.7.1",
+      "license": "MIT"
+    }
+  },
+  "upstream_terms": "https://github.com/openai/whisper/blob/main/LICENSE",
+  "missing": {
+    "crisperwhisper": "not installed, no configured remote identity",
+    "whisperx": "not installed; conditional alignment only"
+  },
+  "alias_check": "installed faster_whisper.utils maps turbo and large-v3-turbo to mobiuslabsgmbh/faster-whisper-large-v3-turbo; run local pinned snapshots, not aliases"
+}
