@@ -1,0 +1,841 @@
+[
+  {
+    "option": "base",
+    "validation_critical_phrases": {
+      "recovered": 6,
+      "total": 7
+    },
+    "validation_word_counts": {
+      "reference": 43,
+      "hypothesis": 36,
+      "errors": 15,
+      "substitutions": 8,
+      "deletions": 7,
+      "insertions": 0
+    },
+    "validation_wer": 0.3488372093023256,
+    "validation_character_counts": {
+      "reference": 169,
+      "hypothesis": 127,
+      "errors": 53,
+      "substitutions": 11,
+      "deletions": 42,
+      "insertions": 0
+    },
+    "validation_cer": 0.3136094674556213,
+    "mean_absolute_phrase_boundary_error": 0.24321874999999993,
+    "max_absolute_phrase_boundary_error": 0.5551875000000006,
+    "timing_phrases": 6,
+    "load_seconds_sum": 1.7071839000054752,
+    "inference_seconds_sum": 2.2193156000066665,
+    "worker_wall_seconds_sum": 7.326620499989076,
+    "peak_sampled_root_children_rss": 417583104,
+    "rows": [
+      {
+        "fixture": "development",
+        "kind": "synthetic-authored",
+        "split": "development",
+        "text": " Run git status",
+        "word_timestamps_present": true,
+        "duration": 3.20925,
+        "seconds": 0.42345709999790415,
+        "worker_wall_seconds": 1.2798955000034766,
+        "phrases": [
+          {
+            "text": "Run git status.",
+            "recovered": true,
+            "reference_start": 0.6015625,
+            "reference_end": 1.6465625,
+            "matched_alias": "run git status",
+            "start": 0.21,
+            "end": 1.43,
+            "start_error": -0.39156250000000004,
+            "end_error": -0.2165625
+          }
+        ],
+        "word_counts": {
+          "reference": 3,
+          "hypothesis": 3,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 12,
+          "hypothesis": 12,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "commands",
+        "kind": "synthetic-authored",
+        "split": "validation",
+        "text": " Run git status  Then run git at index.html  Finally run git status again",
+        "word_timestamps_present": true,
+        "duration": 10.8573125,
+        "seconds": 0.47236790000170004,
+        "worker_wall_seconds": 1.3123237999971025,
+        "phrases": [
+          {
+            "text": "Run git status.",
+            "recovered": true,
+            "reference_start": 0.5965,
+            "reference_end": 1.6510625,
+            "matched_alias": "run git status",
+            "start": 0.21,
+            "end": 1.55,
+            "start_error": -0.38650000000000007,
+            "end_error": -0.10106250000000006
+          },
+          {
+            "text": "Then run git add index dot h t m l.",
+            "recovered": false,
+            "reference_start": 3.300875,
+            "reference_end": 5.9165
+          },
+          {
+            "text": "Finally run git status again.",
+            "recovered": true,
+            "reference_start": 7.559875,
+            "reference_end": 9.317499999999999,
+            "matched_alias": "finally run git status again",
+            "start": 7.21,
+            "end": 9.15,
+            "start_error": -0.34987499999999994,
+            "end_error": -0.16749999999999865
+          }
+        ],
+        "word_counts": {
+          "reference": 18,
+          "hypothesis": 14,
+          "errors": 6,
+          "substitutions": 2,
+          "deletions": 4,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 61,
+          "hypothesis": 57,
+          "errors": 5,
+          "substitutions": 1,
+          "deletions": 4,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "numbers",
+        "kind": "synthetic-authored",
+        "split": "validation",
+        "text": " Set the port to 8,080.  Set the timeout to 30 seconds.  Use Python 3.12.  Do not set retries to 0.",
+        "word_timestamps_present": true,
+        "duration": 14.5564375,
+        "seconds": 0.5573708000010811,
+        "worker_wall_seconds": 1.3972634999954607,
+        "phrases": [
+          {
+            "text": "Set the port to eight thousand and eighty.",
+            "recovered": true,
+            "reference_start": 0.6014375,
+            "reference_end": 2.5263125,
+            "matched_alias": "set the port to 8 080",
+            "start": 0.34,
+            "end": 2.4,
+            "start_error": -0.26143749999999993,
+            "end_error": -0.12631250000000005
+          },
+          {
+            "text": "Set the timeout to thirty seconds.",
+            "recovered": true,
+            "reference_start": 4.1655625,
+            "reference_end": 6.1290625,
+            "matched_alias": "set the timeout to 30 seconds",
+            "start": 3.62,
+            "end": 6.08,
+            "start_error": -0.5455625,
+            "end_error": -0.04906249999999979
+          },
+          {
+            "text": "Use Python three point twelve.",
+            "recovered": true,
+            "reference_start": 7.7751875,
+            "reference_end": 9.628562500000001,
+            "matched_alias": "use python 3 12",
+            "start": 7.22,
+            "end": 9.54,
+            "start_error": -0.5551875000000006,
+            "end_error": -0.08856250000000188
+          },
+          {
+            "text": "Do not set retries to zero.",
+            "recovered": true,
+            "reference_start": 11.2673125,
+            "reference_end": 13.020249999999999,
+            "matched_alias": "do not set retries to 0",
+            "start": 11.16,
+            "end": 12.84,
+            "start_error": -0.10731249999999903,
+            "end_error": -0.18024999999999913
+          }
+        ],
+        "word_counts": {
+          "reference": 25,
+          "hypothesis": 22,
+          "errors": 9,
+          "substitutions": 6,
+          "deletions": 3,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 108,
+          "hypothesis": 70,
+          "errors": 48,
+          "substitutions": 10,
+          "deletions": 38,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "silence",
+        "kind": "authored-negative",
+        "split": "validation",
+        "text": "",
+        "word_timestamps_present": false,
+        "duration": 8.0,
+        "seconds": 0.12494130000413861,
+        "worker_wall_seconds": 0.9767878999991808,
+        "phrases": [],
+        "word_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "tones",
+        "kind": "authored-negative",
+        "split": "validation",
+        "text": "",
+        "word_timestamps_present": false,
+        "duration": 8.0,
+        "seconds": 0.119766099996923,
+        "worker_wall_seconds": 0.9862718999938807,
+        "phrases": [],
+        "word_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "jfk",
+        "kind": "natural-upstream-integration",
+        "split": "validation",
+        "text": " And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+        "word_timestamps_present": true,
+        "duration": 11.0,
+        "seconds": 0.5214124000049196,
+        "worker_wall_seconds": 1.3740778999999748,
+        "phrases": [],
+        "upstream_timing_check": {
+          "target_time": 1.8,
+          "matches": [
+            {
+              "start": 1.58,
+              "end": 2.1,
+              "word": " Americans,",
+              "probability": 0.9317654371261597
+            }
+          ],
+          "passes": true
+        }
+      }
+    ]
+  },
+  {
+    "option": "small",
+    "validation_critical_phrases": {
+      "recovered": 7,
+      "total": 7
+    },
+    "validation_word_counts": {
+      "reference": 43,
+      "hypothesis": 35,
+      "errors": 13,
+      "substitutions": 5,
+      "deletions": 8,
+      "insertions": 0
+    },
+    "validation_wer": 0.3023255813953488,
+    "validation_character_counts": {
+      "reference": 169,
+      "hypothesis": 131,
+      "errors": 47,
+      "substitutions": 9,
+      "deletions": 38,
+      "insertions": 0
+    },
+    "validation_cer": 0.2781065088757396,
+    "mean_absolute_phrase_boundary_error": 0.472705357142857,
+    "max_absolute_phrase_boundary_error": 1.5055625,
+    "timing_phrases": 7,
+    "load_seconds_sum": 4.822445100006007,
+    "inference_seconds_sum": 5.249917399996775,
+    "worker_wall_seconds_sum": 13.516570500010857,
+    "peak_sampled_root_children_rss": 735371264,
+    "rows": [
+      {
+        "fixture": "development",
+        "kind": "synthetic-authored",
+        "split": "development",
+        "text": " Run git status",
+        "word_timestamps_present": true,
+        "duration": 3.20925,
+        "seconds": 1.0973088000027929,
+        "worker_wall_seconds": 2.441033900002367,
+        "phrases": [
+          {
+            "text": "Run git status.",
+            "recovered": true,
+            "reference_start": 0.6015625,
+            "reference_end": 1.6465625,
+            "matched_alias": "run git status",
+            "start": 0.21,
+            "end": 1.43,
+            "start_error": -0.39156250000000004,
+            "end_error": -0.2165625
+          }
+        ],
+        "word_counts": {
+          "reference": 3,
+          "hypothesis": 3,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 12,
+          "hypothesis": 12,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "commands",
+        "kind": "synthetic-authored",
+        "split": "validation",
+        "text": " Run git status  Then run git add index.html  Finally run git status again",
+        "word_timestamps_present": true,
+        "duration": 10.8573125,
+        "seconds": 1.217751500000304,
+        "worker_wall_seconds": 2.699160500000289,
+        "phrases": [
+          {
+            "text": "Run git status.",
+            "recovered": true,
+            "reference_start": 0.5965,
+            "reference_end": 1.6510625,
+            "matched_alias": "run git status",
+            "start": 0.21,
+            "end": 1.41,
+            "start_error": -0.38650000000000007,
+            "end_error": -0.24106250000000018
+          },
+          {
+            "text": "Then run git add index dot h t m l.",
+            "recovered": true,
+            "reference_start": 3.300875,
+            "reference_end": 5.9165,
+            "matched_alias": "then run git add index html",
+            "start": 2.71,
+            "end": 5.77,
+            "start_error": -0.590875,
+            "end_error": -0.14650000000000052
+          },
+          {
+            "text": "Finally run git status again.",
+            "recovered": true,
+            "reference_start": 7.559875,
+            "reference_end": 9.317499999999999,
+            "matched_alias": "finally run git status again",
+            "start": 7.15,
+            "end": 9.15,
+            "start_error": -0.40987499999999955,
+            "end_error": -0.16749999999999865
+          }
+        ],
+        "word_counts": {
+          "reference": 18,
+          "hypothesis": 14,
+          "errors": 5,
+          "substitutions": 1,
+          "deletions": 4,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 61,
+          "hypothesis": 58,
+          "errors": 3,
+          "substitutions": 0,
+          "deletions": 3,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "numbers",
+        "kind": "synthetic-authored",
+        "split": "validation",
+        "text": " Set the port to 8080, set the timeout to 30 seconds, use Python 3.12, do not set  retries to zero.",
+        "word_timestamps_present": true,
+        "duration": 14.5564375,
+        "seconds": 1.3497569999963162,
+        "worker_wall_seconds": 2.7287520000027143,
+        "phrases": [
+          {
+            "text": "Set the port to eight thousand and eighty.",
+            "recovered": true,
+            "reference_start": 0.6014375,
+            "reference_end": 2.5263125,
+            "matched_alias": "set the port to 8080",
+            "start": 0.34,
+            "end": 2.4,
+            "start_error": -0.26143749999999993,
+            "end_error": -0.12631250000000005
+          },
+          {
+            "text": "Set the timeout to thirty seconds.",
+            "recovered": true,
+            "reference_start": 4.1655625,
+            "reference_end": 6.1290625,
+            "matched_alias": "set the timeout to 30 seconds",
+            "start": 2.66,
+            "end": 6.16,
+            "start_error": -1.5055625,
+            "end_error": 0.030937500000000284
+          },
+          {
+            "text": "Use Python three point twelve.",
+            "recovered": true,
+            "reference_start": 7.7751875,
+            "reference_end": 9.628562500000001,
+            "matched_alias": "use python 3 12",
+            "start": 6.28,
+            "end": 9.52,
+            "start_error": -1.4951875000000001,
+            "end_error": -0.10856250000000145
+          },
+          {
+            "text": "Do not set retries to zero.",
+            "recovered": true,
+            "reference_start": 11.2673125,
+            "reference_end": 13.020249999999999,
+            "matched_alias": "do not set retries to zero",
+            "start": 10.34,
+            "end": 12.8,
+            "start_error": -0.9273124999999993,
+            "end_error": -0.22024999999999828
+          }
+        ],
+        "word_counts": {
+          "reference": 25,
+          "hypothesis": 21,
+          "errors": 8,
+          "substitutions": 4,
+          "deletions": 4,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 108,
+          "hypothesis": 73,
+          "errors": 44,
+          "substitutions": 9,
+          "deletions": 35,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "silence",
+        "kind": "authored-negative",
+        "split": "validation",
+        "text": "",
+        "word_timestamps_present": false,
+        "duration": 8.0,
+        "seconds": 0.12551969999913126,
+        "worker_wall_seconds": 1.4940906000047107,
+        "phrases": [],
+        "word_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "tones",
+        "kind": "authored-negative",
+        "split": "validation",
+        "text": "",
+        "word_timestamps_present": false,
+        "duration": 8.0,
+        "seconds": 0.11982619999616873,
+        "worker_wall_seconds": 1.4608242999966023,
+        "phrases": [],
+        "word_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "jfk",
+        "kind": "natural-upstream-integration",
+        "split": "validation",
+        "text": " And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+        "word_timestamps_present": true,
+        "duration": 11.0,
+        "seconds": 1.3397542000020621,
+        "worker_wall_seconds": 2.692709200004174,
+        "phrases": [],
+        "upstream_timing_check": {
+          "target_time": 1.8,
+          "matches": [
+            {
+              "start": 1.52,
+              "end": 2.12,
+              "word": " Americans,",
+              "probability": 0.9494609236717224
+            }
+          ],
+          "passes": true
+        }
+      }
+    ]
+  },
+  {
+    "option": "turbo",
+    "validation_critical_phrases": {
+      "recovered": 6,
+      "total": 7
+    },
+    "validation_word_counts": {
+      "reference": 43,
+      "hypothesis": 35,
+      "errors": 14,
+      "substitutions": 6,
+      "deletions": 8,
+      "insertions": 0
+    },
+    "validation_wer": 0.32558139534883723,
+    "validation_character_counts": {
+      "reference": 169,
+      "hypothesis": 130,
+      "errors": 49,
+      "substitutions": 10,
+      "deletions": 39,
+      "insertions": 0
+    },
+    "validation_cer": 0.28994082840236685,
+    "mean_absolute_phrase_boundary_error": 0.30155208333333333,
+    "max_absolute_phrase_boundary_error": 0.6473125,
+    "timing_phrases": 6,
+    "load_seconds_sum": 14.771440399999847,
+    "inference_seconds_sum": 15.099948800001584,
+    "worker_wall_seconds_sum": 33.513374599999224,
+    "peak_sampled_root_children_rss": 2055372800,
+    "rows": [
+      {
+        "fixture": "development",
+        "kind": "synthetic-authored",
+        "split": "development",
+        "text": " Run git status",
+        "word_timestamps_present": true,
+        "duration": 3.20925,
+        "seconds": 3.650564299998223,
+        "worker_wall_seconds": 6.71195070000249,
+        "phrases": [
+          {
+            "text": "Run git status.",
+            "recovered": true,
+            "reference_start": 0.6015625,
+            "reference_end": 1.6465625,
+            "matched_alias": "run git status",
+            "start": 0.21,
+            "end": 1.49,
+            "start_error": -0.39156250000000004,
+            "end_error": -0.15656249999999994
+          }
+        ],
+        "word_counts": {
+          "reference": 3,
+          "hypothesis": 3,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 12,
+          "hypothesis": 12,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "commands",
+        "kind": "synthetic-authored",
+        "split": "validation",
+        "text": " Run git status  Then run git at index.html  Finally run git status again",
+        "word_timestamps_present": true,
+        "duration": 10.8573125,
+        "seconds": 3.7277582000024267,
+        "worker_wall_seconds": 6.8355177999983425,
+        "phrases": [
+          {
+            "text": "Run git status.",
+            "recovered": true,
+            "reference_start": 0.5965,
+            "reference_end": 1.6510625,
+            "matched_alias": "run git status",
+            "start": 0.21,
+            "end": 1.51,
+            "start_error": -0.38650000000000007,
+            "end_error": -0.1410625000000001
+          },
+          {
+            "text": "Then run git add index dot h t m l.",
+            "recovered": false,
+            "reference_start": 3.300875,
+            "reference_end": 5.9165
+          },
+          {
+            "text": "Finally run git status again.",
+            "recovered": true,
+            "reference_start": 7.559875,
+            "reference_end": 9.317499999999999,
+            "matched_alias": "finally run git status again",
+            "start": 7.27,
+            "end": 9.11,
+            "start_error": -0.2898750000000003,
+            "end_error": -0.20749999999999957
+          }
+        ],
+        "word_counts": {
+          "reference": 18,
+          "hypothesis": 14,
+          "errors": 6,
+          "substitutions": 2,
+          "deletions": 4,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 61,
+          "hypothesis": 57,
+          "errors": 5,
+          "substitutions": 1,
+          "deletions": 4,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "numbers",
+        "kind": "synthetic-authored",
+        "split": "validation",
+        "text": " set the port to 8080  set the timeout to 30 seconds  use python 3.12  do not set retries to zero",
+        "word_timestamps_present": true,
+        "duration": 14.5564375,
+        "seconds": 3.6953601999994135,
+        "worker_wall_seconds": 6.782817300001625,
+        "phrases": [
+          {
+            "text": "Set the port to eight thousand and eighty.",
+            "recovered": true,
+            "reference_start": 0.6014375,
+            "reference_end": 2.5263125,
+            "matched_alias": "set the port to 8080",
+            "start": 0.34,
+            "end": 2.4,
+            "start_error": -0.26143749999999993,
+            "end_error": -0.12631250000000005
+          },
+          {
+            "text": "Set the timeout to thirty seconds.",
+            "recovered": true,
+            "reference_start": 4.1655625,
+            "reference_end": 6.1290625,
+            "matched_alias": "set the timeout to 30 seconds",
+            "start": 3.62,
+            "end": 6.0,
+            "start_error": -0.5455625,
+            "end_error": -0.12906249999999986
+          },
+          {
+            "text": "Use Python three point twelve.",
+            "recovered": true,
+            "reference_start": 7.7751875,
+            "reference_end": 9.628562500000001,
+            "matched_alias": "use python 3 12",
+            "start": 7.2,
+            "end": 9.52,
+            "start_error": -0.5751875000000002,
+            "end_error": -0.10856250000000145
+          },
+          {
+            "text": "Do not set retries to zero.",
+            "recovered": true,
+            "reference_start": 11.2673125,
+            "reference_end": 13.020249999999999,
+            "matched_alias": "do not set retries to zero",
+            "start": 10.62,
+            "end": 12.82,
+            "start_error": -0.6473125,
+            "end_error": -0.2002499999999987
+          }
+        ],
+        "word_counts": {
+          "reference": 25,
+          "hypothesis": 21,
+          "errors": 8,
+          "substitutions": 4,
+          "deletions": 4,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 108,
+          "hypothesis": 73,
+          "errors": 44,
+          "substitutions": 9,
+          "deletions": 35,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "silence",
+        "kind": "authored-negative",
+        "split": "validation",
+        "text": "",
+        "word_timestamps_present": false,
+        "duration": 8.0,
+        "seconds": 0.13347690000227885,
+        "worker_wall_seconds": 3.2112911000003805,
+        "phrases": [],
+        "word_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "tones",
+        "kind": "authored-negative",
+        "split": "validation",
+        "text": "",
+        "word_timestamps_present": false,
+        "duration": 8.0,
+        "seconds": 0.12187870000343537,
+        "worker_wall_seconds": 3.111394699997618,
+        "phrases": [],
+        "word_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 0,
+          "hypothesis": 0,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "jfk",
+        "kind": "natural-upstream-integration",
+        "split": "validation",
+        "text": " And so, my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+        "word_timestamps_present": true,
+        "duration": 11.0,
+        "seconds": 3.770910499995807,
+        "worker_wall_seconds": 6.860402999998769,
+        "phrases": [],
+        "upstream_timing_check": {
+          "target_time": 1.8,
+          "matches": [
+            {
+              "start": 1.54,
+              "end": 2.12,
+              "word": " Americans,",
+              "probability": 0.9800596833229065
+            }
+          ],
+          "passes": true
+        }
+      }
+    ]
+  }
+]

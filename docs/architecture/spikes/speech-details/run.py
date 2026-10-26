@@ -1,6 +1,8 @@
 """THROWAWAY: same-machine/model-settings speech probe; no production integration."""
 
 import argparse
+import subprocess
+import sys
 import hashlib
 import json
 from pathlib import Path
@@ -8,7 +10,6 @@ import platform
 import threading
 import time
 
-from faster_whisper import WhisperModel
 from huggingface_hub import snapshot_download
 import psutil
 
@@ -22,9 +23,12 @@ def sha(path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("option")
+    parser.add_argument("--natural", action="store_true")
     args = parser.parse_args()
+    reference_file = "references-natural.json" if args.natural else "references.json"
+    suffix = "-natural" if args.natural else ""
     protocol = json.loads((HERE / "protocol.json").read_text())
-    refs = json.loads((HERE / "references.json").read_text())
+    refs = json.loads((HERE / reference_file).read_text())
     config = next(o for o in protocol["options"] if o["id"] == args.option)
     for fixture in refs["fixtures"]:
         assert sha(Path(fixture["path"])) == fixture["sha256"]
@@ -53,36 +57,38 @@ def main():
 
     worker = threading.Thread(target=monitor, daemon=True)
     worker.start()
-    start = time.perf_counter()
-    model = WhisperModel(
-        str(model_path),
-        device=config["device"],
-        compute_type=config["compute_type"],
-        cpu_threads=8,
-        num_workers=1,
-    )
-    load_seconds = time.perf_counter() - start
+    load_seconds = 0
     outputs = []
     try:
         for fixture in refs["fixtures"]:
             start = time.perf_counter()
-            settings = {
-                k: v
-                for k, v in protocol["settings"].items()
-                if k not in ["cpu_threads", "num_workers"]
-            }
-            segments, info = model.transcribe(fixture["path"], **settings)
-            segments = [s._asdict() for s in segments]
-            for segment in segments:
-                if segment["words"] is not None:
-                    segment["words"] = [w._asdict() for w in segment["words"]]
+            output_path = (
+                Path(".scratch/speech-details")
+                / f"worker-{args.option}-{fixture['id']}.json"
+            )
+            command = [
+                sys.executable,
+                "workers/transcribe_worker.py",
+                fixture["path"],
+                "--output",
+                str(output_path),
+                "--model",
+                str(model_path),
+                "--device",
+                config["device"],
+                "--compute-type",
+                config["compute_type"],
+                "--spike-config",
+                str(HERE / "protocol.json"),
+            ]
+            subprocess.run(command, check=True, capture_output=True)
+            result = json.loads(output_path.read_text())
+            load_seconds += result["load_seconds"]
             outputs.append(
                 {
                     "fixture": fixture["id"],
-                    "seconds": time.perf_counter() - start,
-                    "duration": info.duration,
-                    "duration_after_vad": info.duration_after_vad,
-                    "segments": segments,
+                    "worker_wall_seconds": time.perf_counter() - start,
+                    **result,
                 }
             )
             print(
@@ -102,7 +108,7 @@ def main():
         "option": config,
         "settings": protocol["settings"],
         "protocol_sha256": sha(HERE / "protocol.json"),
-        "references_sha256": sha(HERE / "references.json"),
+        "references_sha256": sha(HERE / reference_file),
         "host": {
             "platform": platform.platform(),
             "processor": platform.processor(),
@@ -114,7 +120,7 @@ def main():
         "sampling_seconds": 0.02,
         "outputs": outputs,
     }
-    (HERE / f"raw-{args.option}.json").write_text(json.dumps(output, indent=2) + "\n")
+    (HERE / f"raw-{args.option}{suffix}.json").write_text(json.dumps(output, indent=2) + "\n")
 
 
 if __name__ == "__main__":

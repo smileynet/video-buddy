@@ -1,0 +1,668 @@
+{
+  "option": {
+    "id": "turbo",
+    "repo": "mobiuslabsgmbh/faster-whisper-large-v3-turbo",
+    "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+    "device": "cpu",
+    "compute_type": "int8",
+    "model_files": {
+      "config.json": "b0253ea6c0d3bea6b1e19e91a02acfd3b53f4467362efcb5a3e6b16c9b3a9b7e",
+      "model.bin": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+      "preprocessor_config.json": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+      "tokenizer.json": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd",
+      "vocabulary.json": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1"
+    }
+  },
+  "settings": {
+    "language": "en",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "vad_filter": true,
+    "condition_on_previous_text": true,
+    "cpu_threads": 8,
+    "num_workers": 1
+  },
+  "protocol_sha256": "c2f4ae1467856e4b498017a1994703fbaab6d7ea1cd96f8a418c0e05f9d55eb3",
+  "references_sha256": "0eefadb7bc986766f4e9fdfbeb52867c48b296f03450625f0a9dc7856228354e",
+  "host": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "logical_cpu": 20
+  },
+  "load_seconds": 2.706683399999747,
+  "peak_sampled_root_children_rss": 1899266048,
+  "rss_samples": 369,
+  "sampling_seconds": 0.02,
+  "outputs": [
+    {
+      "fixture": "development",
+      "seconds": 3.8933668000026955,
+      "duration": 3.20925,
+      "duration_after_vad": 3.00125,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.21,
+          "end": 1.49,
+          "text": " Run git status",
+          "tokens": [
+            50365,
+            8950,
+            18331,
+            6558,
+            50465
+          ],
+          "avg_logprob": -0.32210270563761395,
+          "compression_ratio": 0.6363636363636364,
+          "no_speech_prob": 6.486745819309081e-13,
+          "words": [
+            {
+              "start": 0.21,
+              "end": 0.85,
+              "word": " Run",
+              "probability": 0.9315566420555115
+            },
+            {
+              "start": 0.85,
+              "end": 1.01,
+              "word": " git",
+              "probability": 0.5360023975372314
+            },
+            {
+              "start": 1.01,
+              "end": 1.49,
+              "word": " status",
+              "probability": 0.9824272990226746
+            }
+          ],
+          "temperature": 0
+        }
+      ]
+    },
+    {
+      "fixture": "commands",
+      "seconds": 3.860957099997904,
+      "duration": 10.8573125,
+      "duration_after_vad": 10.6493125,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.21,
+          "end": 1.51,
+          "text": " Run git status",
+          "tokens": [
+            50365,
+            8950,
+            18331,
+            6558,
+            50465
+          ],
+          "avg_logprob": -0.39489389243333234,
+          "compression_ratio": 1.1666666666666667,
+          "no_speech_prob": 2.290473312318436e-13,
+          "words": [
+            {
+              "start": 0.21,
+              "end": 0.79,
+              "word": " Run",
+              "probability": 0.6089146137237549
+            },
+            {
+              "start": 0.79,
+              "end": 1.01,
+              "word": " git",
+              "probability": 0.8532312512397766
+            },
+            {
+              "start": 1.01,
+              "end": 1.51,
+              "word": " status",
+              "probability": 0.9036503434181213
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 2.77,
+          "end": 5.81,
+          "text": " Then run git at index.html",
+          "tokens": [
+            50498,
+            1396,
+            1190,
+            18331,
+            412,
+            8186,
+            13,
+            357,
+            15480,
+            50648
+          ],
+          "avg_logprob": -0.39489389243333234,
+          "compression_ratio": 1.1666666666666667,
+          "no_speech_prob": 2.290473312318436e-13,
+          "words": [
+            {
+              "start": 2.77,
+              "end": 3.43,
+              "word": " Then",
+              "probability": 0.45813313126564026
+            },
+            {
+              "start": 3.43,
+              "end": 3.71,
+              "word": " run",
+              "probability": 0.9545612335205078
+            },
+            {
+              "start": 3.71,
+              "end": 3.93,
+              "word": " git",
+              "probability": 0.9391148686408997
+            },
+            {
+              "start": 3.93,
+              "end": 4.15,
+              "word": " at",
+              "probability": 0.2951628267765045
+            },
+            {
+              "start": 4.15,
+              "end": 4.51,
+              "word": " index",
+              "probability": 0.9744812250137329
+            },
+            {
+              "start": 4.51,
+              "end": 5.81,
+              "word": ".html",
+              "probability": 0.8300055265426636
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 7.27,
+          "end": 9.11,
+          "text": " Finally run git status again",
+          "tokens": [
+            50727,
+            6288,
+            1190,
+            18331,
+            6558,
+            797,
+            50827
+          ],
+          "avg_logprob": -0.39489389243333234,
+          "compression_ratio": 1.1666666666666667,
+          "no_speech_prob": 2.290473312318436e-13,
+          "words": [
+            {
+              "start": 7.27,
+              "end": 7.93,
+              "word": " Finally",
+              "probability": 0.8802127838134766
+            },
+            {
+              "start": 7.93,
+              "end": 8.17,
+              "word": " run",
+              "probability": 0.9128097295761108
+            },
+            {
+              "start": 8.17,
+              "end": 8.41,
+              "word": " git",
+              "probability": 0.9795473217964172
+            },
+            {
+              "start": 8.41,
+              "end": 8.81,
+              "word": " status",
+              "probability": 0.9957318902015686
+            },
+            {
+              "start": 8.81,
+              "end": 9.11,
+              "word": " again",
+              "probability": 0.9953580498695374
+            }
+          ],
+          "temperature": 0
+        }
+      ]
+    },
+    {
+      "fixture": "numbers",
+      "seconds": 3.879780800001754,
+      "duration": 14.5564375,
+      "duration_after_vad": 14.2204375,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.34,
+          "end": 2.4,
+          "text": " set the port to 8080",
+          "tokens": [
+            50365,
+            992,
+            264,
+            2436,
+            281,
+            4688,
+            4702,
+            50465
+          ],
+          "avg_logprob": -0.3676973572548698,
+          "compression_ratio": 1.1625,
+          "no_speech_prob": 1.7471247159509679e-13,
+          "words": [
+            {
+              "start": 0.34,
+              "end": 0.84,
+              "word": " set",
+              "probability": 0.6075504422187805
+            },
+            {
+              "start": 0.84,
+              "end": 0.98,
+              "word": " the",
+              "probability": 0.9988301396369934
+            },
+            {
+              "start": 0.98,
+              "end": 1.22,
+              "word": " port",
+              "probability": 0.9608281254768372
+            },
+            {
+              "start": 1.22,
+              "end": 1.38,
+              "word": " to",
+              "probability": 0.9922481775283813
+            },
+            {
+              "start": 1.38,
+              "end": 2.4,
+              "word": " 8080",
+              "probability": 0.9667304158210754
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 3.62,
+          "end": 6.0,
+          "text": " set the timeout to 30 seconds",
+          "tokens": [
+            50545,
+            992,
+            264,
+            565,
+            346,
+            281,
+            2217,
+            3949,
+            50645
+          ],
+          "avg_logprob": -0.3676973572548698,
+          "compression_ratio": 1.1625,
+          "no_speech_prob": 1.7471247159509679e-13,
+          "words": [
+            {
+              "start": 3.62,
+              "end": 4.38,
+              "word": " set",
+              "probability": 0.9030320644378662
+            },
+            {
+              "start": 4.38,
+              "end": 4.58,
+              "word": " the",
+              "probability": 0.9989074468612671
+            },
+            {
+              "start": 4.58,
+              "end": 5.0,
+              "word": " timeout",
+              "probability": 0.8924780786037445
+            },
+            {
+              "start": 5.0,
+              "end": 5.16,
+              "word": " to",
+              "probability": 0.997169554233551
+            },
+            {
+              "start": 5.16,
+              "end": 5.4,
+              "word": " 30",
+              "probability": 0.9873349666595459
+            },
+            {
+              "start": 5.4,
+              "end": 6.0,
+              "word": " seconds",
+              "probability": 0.9755423665046692
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 7.2,
+          "end": 9.52,
+          "text": " use python 3.12",
+          "tokens": [
+            50720,
+            764,
+            38797,
+            805,
+            13,
+            4762,
+            50820
+          ],
+          "avg_logprob": -0.3676973572548698,
+          "compression_ratio": 1.1625,
+          "no_speech_prob": 1.7471247159509679e-13,
+          "words": [
+            {
+              "start": 7.2,
+              "end": 7.96,
+              "word": " use",
+              "probability": 0.9010142087936401
+            },
+            {
+              "start": 7.96,
+              "end": 8.38,
+              "word": " python",
+              "probability": 0.8020337224006653
+            },
+            {
+              "start": 8.38,
+              "end": 8.76,
+              "word": " 3",
+              "probability": 0.8416522145271301
+            },
+            {
+              "start": 8.76,
+              "end": 9.52,
+              "word": ".12",
+              "probability": 0.9928961396217346
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "start": 10.62,
+          "end": 12.82,
+          "text": " do not set retries to zero",
+          "tokens": [
+            50895,
+            360,
+            406,
+            992,
+            1533,
+            2244,
+            281,
+            4018,
+            50995
+          ],
+          "avg_logprob": -0.3676973572548698,
+          "compression_ratio": 1.1625,
+          "no_speech_prob": 1.7471247159509679e-13,
+          "words": [
+            {
+              "start": 10.62,
+              "end": 11.38,
+              "word": " do",
+              "probability": 0.7179269790649414
+            },
+            {
+              "start": 11.38,
+              "end": 11.64,
+              "word": " not",
+              "probability": 0.9959600567817688
+            },
+            {
+              "start": 11.64,
+              "end": 11.88,
+              "word": " set",
+              "probability": 0.9976321458816528
+            },
+            {
+              "start": 11.88,
+              "end": 12.38,
+              "word": " retries",
+              "probability": 0.9644442796707153
+            },
+            {
+              "start": 12.38,
+              "end": 12.54,
+              "word": " to",
+              "probability": 0.9966092109680176
+            },
+            {
+              "start": 12.54,
+              "end": 12.82,
+              "word": " zero",
+              "probability": 0.5965075492858887
+            }
+          ],
+          "temperature": 0
+        }
+      ]
+    },
+    {
+      "fixture": "silence",
+      "seconds": 0.024106199998641387,
+      "duration": 8.0,
+      "duration_after_vad": 0.0,
+      "segments": []
+    },
+    {
+      "fixture": "tones",
+      "seconds": 0.04287349999503931,
+      "duration": 8.0,
+      "duration_after_vad": 0.0,
+      "segments": []
+    },
+    {
+      "fixture": "jfk",
+      "seconds": 3.9208308000015677,
+      "duration": 11.0,
+      "duration_after_vad": 11.0,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.0,
+          "end": 10.34,
+          "text": " And so, my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+          "tokens": [
+            50365,
+            400,
+            370,
+            11,
+            452,
+            7177,
+            6280,
+            11,
+            1029,
+            406,
+            437,
+            428,
+            1941,
+            393,
+            360,
+            337,
+            291,
+            11,
+            1029,
+            437,
+            291,
+            393,
+            360,
+            337,
+            428,
+            1941,
+            13,
+            50884
+          ],
+          "avg_logprob": -0.08839400986145282,
+          "compression_ratio": 1.35,
+          "no_speech_prob": 1.1100659974561111e-10,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.52,
+              "word": " And",
+              "probability": 0.7691414952278137
+            },
+            {
+              "start": 0.52,
+              "end": 0.86,
+              "word": " so,",
+              "probability": 0.9954988360404968
+            },
+            {
+              "start": 1.08,
+              "end": 1.2,
+              "word": " my",
+              "probability": 0.9985890984535217
+            },
+            {
+              "start": 1.2,
+              "end": 1.54,
+              "word": " fellow",
+              "probability": 0.999043881893158
+            },
+            {
+              "start": 1.54,
+              "end": 2.12,
+              "word": " Americans,",
+              "probability": 0.9800596833229065
+            },
+            {
+              "start": 2.76,
+              "end": 3.78,
+              "word": " ask",
+              "probability": 0.987310528755188
+            },
+            {
+              "start": 3.78,
+              "end": 4.34,
+              "word": " not",
+              "probability": 0.9820579290390015
+            },
+            {
+              "start": 4.34,
+              "end": 5.56,
+              "word": " what",
+              "probability": 0.9860206246376038
+            },
+            {
+              "start": 5.56,
+              "end": 5.8,
+              "word": " your",
+              "probability": 0.9951745867729187
+            },
+            {
+              "start": 5.8,
+              "end": 6.24,
+              "word": " country",
+              "probability": 0.9992899894714355
+            },
+            {
+              "start": 6.24,
+              "end": 6.62,
+              "word": " can",
+              "probability": 0.9996285438537598
+            },
+            {
+              "start": 6.62,
+              "end": 6.82,
+              "word": " do",
+              "probability": 0.9996901750564575
+            },
+            {
+              "start": 6.82,
+              "end": 7.06,
+              "word": " for",
+              "probability": 0.999421238899231
+            },
+            {
+              "start": 7.06,
+              "end": 7.4,
+              "word": " you,",
+              "probability": 0.999762237071991
+            },
+            {
+              "start": 7.78,
+              "end": 8.52,
+              "word": " ask",
+              "probability": 0.9977492690086365
+            },
+            {
+              "start": 8.52,
+              "end": 8.8,
+              "word": " what",
+              "probability": 0.999534010887146
+            },
+            {
+              "start": 8.8,
+              "end": 9.04,
+              "word": " you",
+              "probability": 0.996757447719574
+            },
+            {
+              "start": 9.04,
+              "end": 9.34,
+              "word": " can",
+              "probability": 0.9998524188995361
+            },
+            {
+              "start": 9.34,
+              "end": 9.56,
+              "word": " do",
+              "probability": 0.9995238780975342
+            },
+            {
+              "start": 9.56,
+              "end": 9.78,
+              "word": " for",
+              "probability": 0.9997285008430481
+            },
+            {
+              "start": 9.78,
+              "end": 9.96,
+              "word": " your",
+              "probability": 0.9993626475334167
+            },
+            {
+              "start": 9.96,
+              "end": 10.34,
+              "word": " country.",
+              "probability": 0.9998071789741516
+            }
+          ],
+          "temperature": 0
+        }
+      ]
+    }
+  ]
+}

@@ -84,6 +84,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--model", default="base")
     parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
     parser.add_argument("--compute-type", default="auto", choices=COMPUTE_TYPES)
+    parser.add_argument(
+        "--spike-config",
+        type=Path,
+        help="THROWAWAY speech probe: pinned settings and word-level raw JSON",
+    )
     args = parser.parse_args(argv)
     audio_path = Path(args.audio_path)
     if not audio_path.exists():
@@ -91,9 +96,45 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     try:
         device, compute_type = resolve_execution(args.device, args.compute_type)
-        captions = transcribe_audio(
-            audio_path, model_name=args.model, device=device, compute_type=compute_type
-        )
+        if args.spike_config:
+            from dataclasses import asdict
+            import time
+            from faster_whisper import WhisperModel
+
+            config = json.loads(args.spike_config.read_text())
+            settings = config["settings"]
+            start = time.perf_counter()
+            model = WhisperModel(
+                args.model,
+                device=device,
+                compute_type=compute_type,
+                cpu_threads=settings["cpu_threads"],
+                num_workers=settings["num_workers"],
+            )
+            load_seconds = time.perf_counter() - start
+            start = time.perf_counter()
+            segments, info = model.transcribe(
+                str(audio_path),
+                **{
+                    k: v
+                    for k, v in settings.items()
+                    if k not in ["cpu_threads", "num_workers"]
+                },
+            )
+            captions = {
+                "segments": [asdict(segment) for segment in segments],
+                "load_seconds": load_seconds,
+                "seconds": time.perf_counter() - start,
+                "duration": info.duration,
+                "duration_after_vad": info.duration_after_vad,
+            }
+        else:
+            captions = transcribe_audio(
+                audio_path,
+                model_name=args.model,
+                device=device,
+                compute_type=compute_type,
+            )
     except Exception as error:
         print(f"Error: {error}", file=sys.stderr)
         return 1

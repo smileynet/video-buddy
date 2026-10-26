@@ -1,0 +1,1 @@
+{"failures":[{"stage":"first base output serialization","error":"Segment._asdict recursively produced word dictionaries; second _asdict failed","retained_predictions":false,"repair":"dataclasses.asdict; no inference setting/reference/alias changed","comparison_effect":"failed inference/setup time excluded from successful-run latency; no quality output inspected"}]}
