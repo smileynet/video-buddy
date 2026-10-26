@@ -1,7 +1,7 @@
 ---
 id: "17"
 title: "Evaluate evidence-preserving adaptation to a target environment"
-status: open
+status: in_progress
 blocked_by: ["12"]
 spec: "apply-build"
 priority: medium
