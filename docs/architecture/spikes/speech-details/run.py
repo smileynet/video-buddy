@@ -24,9 +24,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("option")
     parser.add_argument("--natural", action="store_true")
+    parser.add_argument("--tutorial", action="store_true")
     args = parser.parse_args()
-    reference_file = "references-natural.json" if args.natural else "references.json"
-    suffix = "-natural" if args.natural else ""
+    reference_file = "references-tutorial.json" if args.tutorial else ("references-natural.json" if args.natural else "references.json")
+    suffix = "-tutorial" if args.tutorial else ("-natural" if args.natural else "")
     protocol = json.loads((HERE / "protocol.json").read_text())
     refs = json.loads((HERE / reference_file).read_text())
     config = next(o for o in protocol["options"] if o["id"] == args.option)
@@ -38,7 +39,7 @@ def main():
         )
     )
     config["model_files"] = {
-        p.name: sha(p) for p in model_path.iterdir() if p.is_file()
+        p.name: {"sha256": sha(p)} for p in model_path.iterdir() if p.is_file()
     }
     stop = threading.Event()
     peaks = []
@@ -120,7 +121,9 @@ def main():
         "sampling_seconds": 0.02,
         "outputs": outputs,
     }
-    (HERE / f"raw-{args.option}{suffix}.json").write_text(json.dumps(output, indent=2) + "\n")
+    (HERE / f"raw-{args.option}{suffix}.json").write_text(
+        json.dumps(output, indent=2) + "\n"
+    )
 
 
 if __name__ == "__main__":

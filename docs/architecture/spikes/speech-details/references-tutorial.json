@@ -1,0 +1,92 @@
+{
+  "fixtures": [
+    {
+      "id": "git-tutorial-852-868",
+      "kind": "natural-tutorial-proxy",
+      "split": "validation",
+      "path": ".scratch/speech-details/tutorial.wav",
+      "sha256": "85186254895d6377b74421636dcb0c378e071ce734fdc9ec609e55ff2bc4407b",
+      "text": null,
+      "phrases": [],
+      "source": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+      "source_start": 852,
+      "source_end": 868,
+      "source_media_sha256": "a404e9e84132fde12cd77bbfc7d8183275f9ec31d97b28b3e5d4ea2dd2c723c1",
+      "caption_cues": [
+        {
+          "duration": 4.709,
+          "start": 849.56,
+          "text": "and do that so if we say get RM and we\nwant to add the dash dash cached option"
+        },
+        {
+          "duration": 0.01,
+          "start": 854.269,
+          "text": "want to add the dash dash cached option"
+        },
+        {
+          "duration": 3.831,
+          "start": 854.279,
+          "text": "want to add the dash dash cached option\nand then"
+        },
+        {
+          "duration": 0.01,
+          "start": 861.269,
+          "text": "index.html okay and now if we do get"
+        },
+        {
+          "duration": 2.47,
+          "start": 861.279,
+          "text": "index.html okay and now if we do get\nstatus you'll see that both files are"
+        },
+        {
+          "duration": 0.01,
+          "start": 863.749,
+          "text": "status you'll see that both files are"
+        },
+        {
+          "duration": 2.591,
+          "start": 863.759,
+          "text": "status you'll see that both files are\nnow untracked now there's different ways"
+        },
+        {
+          "duration": 0.01,
+          "start": 866.35,
+          "text": "now untracked now there's different ways"
+        },
+        {
+          "duration": 2.029,
+          "start": 866.36,
+          "text": "now untracked now there's different ways\nyou can add files for instance we could"
+        }
+      ],
+      "caption_provenance": "Existing video-buddy fetch CLI; has_captions true, 1392 cues in full payload. Current schema does not retain manual/automatic track identity. Overlapping/repeated cues and get for Git observed. Not WER or timing gold.",
+      "source_task_targets": [
+        {
+          "name": "cached option",
+          "aliases": [
+            "cached"
+          ]
+        },
+        {
+          "name": "index.html",
+          "aliases": [
+            "index html",
+            "index dot html",
+            "index dot h t m l"
+          ]
+        },
+        {
+          "name": "git status",
+          "aliases": [
+            "git status"
+          ]
+        }
+      ],
+      "reference_basis": "Task targets grounded in prior full-context terminal-frame inspection from ticket36 and independently frozen before speech predictions for this clip; captions informed span choice, not transcript correctness. Not an auditory reference.",
+      "duration": 16,
+      "preparation_seconds": 0.29186160000244854,
+      "retention": "Audio stays ignored; recover with recorded ffmpeg command from source and verify hash. No remote media backup claim."
+    }
+  ],
+  "selection": "Third phase: fixed852\u2013868s after controlled/natural results, before this clip inference; same models/settings, no tuning. Task-term coverage, not word-accuracy or independent timing truth."
+}

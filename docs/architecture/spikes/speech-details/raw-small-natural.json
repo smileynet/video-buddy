@@ -1,0 +1,791 @@
+{
+  "option": {
+    "id": "small",
+    "repo": "Systran/faster-whisper-small",
+    "revision": "536b0662742c02347bc0e980a01041f333bce120",
+    "device": "cpu",
+    "compute_type": "int8",
+    "model_files": {
+      "config.json": {
+        "sha256": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+      },
+      "model.bin": {
+        "sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671"
+      },
+      "tokenizer.json": {
+        "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "vocabulary.txt": {
+        "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+      }
+    }
+  },
+  "settings": {
+    "language": "en",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "vad_filter": true,
+    "condition_on_previous_text": true,
+    "cpu_threads": 8,
+    "num_workers": 1
+  },
+  "protocol_sha256": "c2f4ae1467856e4b498017a1994703fbaab6d7ea1cd96f8a418c0e05f9d55eb3",
+  "references_sha256": "09f4d5efb063619a8f9406ee586e64e28ed413ad05a143b3146b062485c7290e",
+  "host": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "logical_cpu": 20
+  },
+  "load_seconds": 3.3256400000027497,
+  "peak_sampled_root_children_rss": 754970624,
+  "rss_samples": 229,
+  "sampling_seconds": 0.02,
+  "outputs": [
+    {
+      "fixture": "1272-128104-0000",
+      "worker_wall_seconds": 2.6865127999990364,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.18,
+          "end": 5.22,
+          "text": " Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his Gospel.",
+          "tokens": [
+            50364,
+            2221,
+            13,
+            2326,
+            388,
+            391,
+            307,
+            264,
+            31467,
+            306,
+            295,
+            264,
+            10775,
+            9471,
+            279,
+            11,
+            293,
+            321,
+            366,
+            5404,
+            281,
+            2928,
+            702,
+            23163,
+            13,
+            50628
+          ],
+          "avg_logprob": -0.21210927654195716,
+          "compression_ratio": 1.0476190476190477,
+          "no_speech_prob": 0.011651912704110146,
+          "words": [
+            {
+              "start": 0.18,
+              "end": 0.72,
+              "word": " Mr.",
+              "probability": 0.8466630578041077
+            },
+            {
+              "start": 0.9,
+              "end": 1.18,
+              "word": " Quilter",
+              "probability": 0.8844921390215555
+            },
+            {
+              "start": 1.18,
+              "end": 1.4,
+              "word": " is",
+              "probability": 0.9927307963371277
+            },
+            {
+              "start": 1.4,
+              "end": 1.52,
+              "word": " the",
+              "probability": 0.9894267320632935
+            },
+            {
+              "start": 1.52,
+              "end": 2.12,
+              "word": " Apostle",
+              "probability": 0.6659613847732544
+            },
+            {
+              "start": 2.12,
+              "end": 2.26,
+              "word": " of",
+              "probability": 0.9980345368385315
+            },
+            {
+              "start": 2.26,
+              "end": 2.38,
+              "word": " the",
+              "probability": 0.9898320436477661
+            },
+            {
+              "start": 2.38,
+              "end": 2.56,
+              "word": " Middle",
+              "probability": 0.8954138159751892
+            },
+            {
+              "start": 2.56,
+              "end": 3.26,
+              "word": " Classes,",
+              "probability": 0.9657590389251709
+            },
+            {
+              "start": 3.34,
+              "end": 3.44,
+              "word": " and",
+              "probability": 0.9892677664756775
+            },
+            {
+              "start": 3.44,
+              "end": 3.6,
+              "word": " we",
+              "probability": 0.9975866079330444
+            },
+            {
+              "start": 3.6,
+              "end": 3.68,
+              "word": " are",
+              "probability": 0.9522894024848938
+            },
+            {
+              "start": 3.68,
+              "end": 3.94,
+              "word": " glad",
+              "probability": 0.9881269335746765
+            },
+            {
+              "start": 3.94,
+              "end": 4.2,
+              "word": " to",
+              "probability": 0.9966727495193481
+            },
+            {
+              "start": 4.2,
+              "end": 4.5,
+              "word": " welcome",
+              "probability": 0.9975632429122925
+            },
+            {
+              "start": 4.5,
+              "end": 4.78,
+              "word": " his",
+              "probability": 0.9381465315818787
+            },
+            {
+              "start": 4.78,
+              "end": 5.22,
+              "word": " Gospel.",
+              "probability": 0.6392523050308228
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "load_seconds": 0.8776133999999729,
+      "seconds": 1.2290409999986878,
+      "duration": 5.855,
+      "duration_after_vad": 5.679
+    },
+    {
+      "fixture": "1272-128104-0001",
+      "worker_wall_seconds": 2.536411399996723,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.14,
+          "end": 4.16,
+          "text": " Nor is Mr. Quilter's manner less interesting than his matter.",
+          "tokens": [
+            50364,
+            6966,
+            307,
+            2221,
+            13,
+            2326,
+            388,
+            391,
+            311,
+            9060,
+            1570,
+            1880,
+            813,
+            702,
+            1871,
+            13,
+            50576
+          ],
+          "avg_logprob": -0.2243889653020435,
+          "compression_ratio": 0.953125,
+          "no_speech_prob": 0.03301093354821205,
+          "words": [
+            {
+              "start": 0.14,
+              "end": 0.74,
+              "word": " Nor",
+              "probability": 0.9251698851585388
+            },
+            {
+              "start": 0.74,
+              "end": 0.98,
+              "word": " is",
+              "probability": 0.9906520843505859
+            },
+            {
+              "start": 0.98,
+              "end": 1.28,
+              "word": " Mr.",
+              "probability": 0.9664856195449829
+            },
+            {
+              "start": 1.44,
+              "end": 1.82,
+              "word": " Quilter's",
+              "probability": 0.9390446543693542
+            },
+            {
+              "start": 1.82,
+              "end": 2.1,
+              "word": " manner",
+              "probability": 0.7767602205276489
+            },
+            {
+              "start": 2.1,
+              "end": 2.48,
+              "word": " less",
+              "probability": 0.994979202747345
+            },
+            {
+              "start": 2.48,
+              "end": 3.14,
+              "word": " interesting",
+              "probability": 0.9950389266014099
+            },
+            {
+              "start": 3.14,
+              "end": 3.44,
+              "word": " than",
+              "probability": 0.9895364046096802
+            },
+            {
+              "start": 3.44,
+              "end": 3.72,
+              "word": " his",
+              "probability": 0.9939025640487671
+            },
+            {
+              "start": 3.72,
+              "end": 4.16,
+              "word": " matter.",
+              "probability": 0.6208407878875732
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "load_seconds": 0.7896552000020165,
+      "seconds": 1.1741610999961267,
+      "duration": 4.815,
+      "duration_after_vad": 4.671
+    },
+    {
+      "fixture": "1272-128104-0002",
+      "worker_wall_seconds": 2.809543700001086,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.21,
+          "end": 6.25,
+          "text": " He tells us that at this festive season of the year, with Christmas and roast beef looming",
+          "tokens": [
+            50364,
+            634,
+            5112,
+            505,
+            300,
+            412,
+            341,
+            42729,
+            3196,
+            295,
+            264,
+            1064,
+            11,
+            365,
+            5272,
+            293,
+            12904,
+            9256,
+            450,
+            10539,
+            50662
+          ],
+          "avg_logprob": -0.14333326937187285,
+          "compression_ratio": 1.3511450381679388,
+          "no_speech_prob": 0.003010785672813654,
+          "words": [
+            {
+              "start": 0.21,
+              "end": 0.67,
+              "word": " He",
+              "probability": 0.8543609380722046
+            },
+            {
+              "start": 0.67,
+              "end": 0.91,
+              "word": " tells",
+              "probability": 0.9884980320930481
+            },
+            {
+              "start": 0.91,
+              "end": 1.23,
+              "word": " us",
+              "probability": 0.9967637062072754
+            },
+            {
+              "start": 1.23,
+              "end": 1.53,
+              "word": " that",
+              "probability": 0.9815719127655029
+            },
+            {
+              "start": 1.53,
+              "end": 1.75,
+              "word": " at",
+              "probability": 0.75614994764328
+            },
+            {
+              "start": 1.75,
+              "end": 2.01,
+              "word": " this",
+              "probability": 0.9814536571502686
+            },
+            {
+              "start": 2.01,
+              "end": 2.41,
+              "word": " festive",
+              "probability": 0.9993222951889038
+            },
+            {
+              "start": 2.41,
+              "end": 2.93,
+              "word": " season",
+              "probability": 0.9975138902664185
+            },
+            {
+              "start": 2.93,
+              "end": 3.17,
+              "word": " of",
+              "probability": 0.9953386783599854
+            },
+            {
+              "start": 3.17,
+              "end": 3.33,
+              "word": " the",
+              "probability": 0.9917530417442322
+            },
+            {
+              "start": 3.33,
+              "end": 3.67,
+              "word": " year,",
+              "probability": 0.9967589974403381
+            },
+            {
+              "start": 3.91,
+              "end": 4.37,
+              "word": " with",
+              "probability": 0.9820335507392883
+            },
+            {
+              "start": 4.37,
+              "end": 4.79,
+              "word": " Christmas",
+              "probability": 0.9585021734237671
+            },
+            {
+              "start": 4.79,
+              "end": 5.13,
+              "word": " and",
+              "probability": 0.975667417049408
+            },
+            {
+              "start": 5.13,
+              "end": 5.35,
+              "word": " roast",
+              "probability": 0.9736862778663635
+            },
+            {
+              "start": 5.35,
+              "end": 5.73,
+              "word": " beef",
+              "probability": 0.987905740737915
+            },
+            {
+              "start": 5.73,
+              "end": 6.25,
+              "word": " looming",
+              "probability": 0.9843414127826691
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 6.25,
+          "end": 11.87,
+          "text": " before us, symbolies drawn from eating and its results occur most readily to the mind.",
+          "tokens": [
+            50662,
+            949,
+            505,
+            11,
+            5986,
+            530,
+            10117,
+            490,
+            3936,
+            293,
+            1080,
+            3542,
+            5160,
+            881,
+            26336,
+            281,
+            264,
+            1575,
+            13,
+            50951
+          ],
+          "avg_logprob": -0.14333326937187285,
+          "compression_ratio": 1.3511450381679388,
+          "no_speech_prob": 0.003010785672813654,
+          "words": [
+            {
+              "start": 6.25,
+              "end": 6.53,
+              "word": " before",
+              "probability": 0.9963527917861938
+            },
+            {
+              "start": 6.53,
+              "end": 6.91,
+              "word": " us,",
+              "probability": 0.9960495829582214
+            },
+            {
+              "start": 7.59,
+              "end": 8.29,
+              "word": " symbolies",
+              "probability": 0.5774388909339905
+            },
+            {
+              "start": 8.29,
+              "end": 8.53,
+              "word": " drawn",
+              "probability": 0.9934771656990051
+            },
+            {
+              "start": 8.53,
+              "end": 8.75,
+              "word": " from",
+              "probability": 0.997096061706543
+            },
+            {
+              "start": 8.75,
+              "end": 9.09,
+              "word": " eating",
+              "probability": 0.9897880554199219
+            },
+            {
+              "start": 9.09,
+              "end": 9.41,
+              "word": " and",
+              "probability": 0.8629799485206604
+            },
+            {
+              "start": 9.41,
+              "end": 9.53,
+              "word": " its",
+              "probability": 0.9577643871307373
+            },
+            {
+              "start": 9.53,
+              "end": 9.97,
+              "word": " results",
+              "probability": 0.9931930899620056
+            },
+            {
+              "start": 9.97,
+              "end": 10.45,
+              "word": " occur",
+              "probability": 0.9865348935127258
+            },
+            {
+              "start": 10.45,
+              "end": 10.75,
+              "word": " most",
+              "probability": 0.9675874710083008
+            },
+            {
+              "start": 10.75,
+              "end": 11.13,
+              "word": " readily",
+              "probability": 0.9986075758934021
+            },
+            {
+              "start": 11.13,
+              "end": 11.43,
+              "word": " to",
+              "probability": 0.9961502552032471
+            },
+            {
+              "start": 11.43,
+              "end": 11.57,
+              "word": " the",
+              "probability": 0.9883602857589722
+            },
+            {
+              "start": 11.57,
+              "end": 11.87,
+              "word": " mind.",
+              "probability": 0.9980968832969666
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "load_seconds": 0.8715918000016245,
+      "seconds": 1.3598592999987886,
+      "duration": 12.485,
+      "duration_after_vad": 12.277
+    },
+    {
+      "fixture": "1272-128104-0003",
+      "worker_wall_seconds": 2.682303800000227,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.18,
+          "end": 6.24,
+          "text": " He has grave doubts whether Sir Frederick Layton's work is really Greek after all and",
+          "tokens": [
+            50364,
+            634,
+            575,
+            12525,
+            22618,
+            1968,
+            6144,
+            35617,
+            20084,
+            1756,
+            311,
+            589,
+            307,
+            534,
+            10281,
+            934,
+            439,
+            293,
+            50668
+          ],
+          "avg_logprob": -0.20296895416343913,
+          "compression_ratio": 1.1785714285714286,
+          "no_speech_prob": 0.009109294041991234,
+          "words": [
+            {
+              "start": 0.18,
+              "end": 0.68,
+              "word": " He",
+              "probability": 0.9416681528091431
+            },
+            {
+              "start": 0.68,
+              "end": 0.86,
+              "word": " has",
+              "probability": 0.9888756275177002
+            },
+            {
+              "start": 0.86,
+              "end": 1.14,
+              "word": " grave",
+              "probability": 0.5620869994163513
+            },
+            {
+              "start": 1.14,
+              "end": 1.52,
+              "word": " doubts",
+              "probability": 0.9955125451087952
+            },
+            {
+              "start": 1.52,
+              "end": 1.96,
+              "word": " whether",
+              "probability": 0.9107006192207336
+            },
+            {
+              "start": 1.96,
+              "end": 2.36,
+              "word": " Sir",
+              "probability": 0.9502938985824585
+            },
+            {
+              "start": 2.36,
+              "end": 2.66,
+              "word": " Frederick",
+              "probability": 0.8532797694206238
+            },
+            {
+              "start": 2.66,
+              "end": 3.24,
+              "word": " Layton's",
+              "probability": 0.9202643235524496
+            },
+            {
+              "start": 3.24,
+              "end": 3.48,
+              "word": " work",
+              "probability": 0.9878994822502136
+            },
+            {
+              "start": 3.48,
+              "end": 3.8,
+              "word": " is",
+              "probability": 0.9897195100784302
+            },
+            {
+              "start": 3.8,
+              "end": 4.14,
+              "word": " really",
+              "probability": 0.9523181915283203
+            },
+            {
+              "start": 4.14,
+              "end": 4.64,
+              "word": " Greek",
+              "probability": 0.9479068517684937
+            },
+            {
+              "start": 4.64,
+              "end": 5.08,
+              "word": " after",
+              "probability": 0.9540054202079773
+            },
+            {
+              "start": 5.08,
+              "end": 5.44,
+              "word": " all",
+              "probability": 0.9945966005325317
+            },
+            {
+              "start": 5.44,
+              "end": 6.24,
+              "word": " and",
+              "probability": 0.5418943762779236
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 6.24,
+          "end": 9.22,
+          "text": " can discover in it but little of rocky Ithaca.",
+          "tokens": [
+            50668,
+            393,
+            4411,
+            294,
+            309,
+            457,
+            707,
+            295,
+            33301,
+            286,
+            392,
+            6628,
+            13,
+            50828
+          ],
+          "avg_logprob": -0.20296895416343913,
+          "compression_ratio": 1.1785714285714286,
+          "no_speech_prob": 0.009109294041991234,
+          "words": [
+            {
+              "start": 6.24,
+              "end": 6.4,
+              "word": " can",
+              "probability": 0.9959642887115479
+            },
+            {
+              "start": 6.4,
+              "end": 6.84,
+              "word": " discover",
+              "probability": 0.9827682375907898
+            },
+            {
+              "start": 6.84,
+              "end": 7.12,
+              "word": " in",
+              "probability": 0.980496346950531
+            },
+            {
+              "start": 7.12,
+              "end": 7.24,
+              "word": " it",
+              "probability": 0.992465615272522
+            },
+            {
+              "start": 7.24,
+              "end": 7.48,
+              "word": " but",
+              "probability": 0.890409529209137
+            },
+            {
+              "start": 7.48,
+              "end": 7.82,
+              "word": " little",
+              "probability": 0.9956701993942261
+            },
+            {
+              "start": 7.82,
+              "end": 8.14,
+              "word": " of",
+              "probability": 0.9943414926528931
+            },
+            {
+              "start": 8.14,
+              "end": 8.68,
+              "word": " rocky",
+              "probability": 0.5751883387565613
+            },
+            {
+              "start": 8.68,
+              "end": 9.22,
+              "word": " Ithaca.",
+              "probability": 0.9246411720911661
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "load_seconds": 0.7867795999991358,
+      "seconds": 1.3319706999973278,
+      "duration": 9.9,
+      "duration_after_vad": 9.724
+    }
+  ]
+}

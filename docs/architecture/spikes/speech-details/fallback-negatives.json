@@ -1,0 +1,74 @@
+[
+  {
+    "option": "base",
+    "fixture": "silence",
+    "worker_wall_seconds": 1.9526106999983313,
+    "mode": "existing worker default: VAD true, then retry VAD false when empty; no spike-config",
+    "returncode": 0,
+    "captions": [
+      {
+        "start": 0.0,
+        "duration": 2.0,
+        "text": "You"
+      }
+    ],
+    "stderr": ""
+  },
+  {
+    "option": "base",
+    "fixture": "tones",
+    "worker_wall_seconds": 3.25498769999831,
+    "mode": "existing worker default: VAD true, then retry VAD false when empty; no spike-config",
+    "returncode": 0,
+    "captions": [],
+    "stderr": ""
+  },
+  {
+    "option": "small",
+    "fixture": "silence",
+    "worker_wall_seconds": 24.45886320000136,
+    "mode": "existing worker default: VAD true, then retry VAD false when empty; no spike-config",
+    "returncode": 0,
+    "captions": [],
+    "stderr": ""
+  },
+  {
+    "option": "small",
+    "fixture": "tones",
+    "worker_wall_seconds": 4.577463399997214,
+    "mode": "existing worker default: VAD true, then retry VAD false when empty; no spike-config",
+    "returncode": 0,
+    "captions": [],
+    "stderr": ""
+  },
+  {
+    "option": "turbo",
+    "fixture": "silence",
+    "worker_wall_seconds": 16.45993539999472,
+    "mode": "existing worker default: VAD true, then retry VAD false when empty; no spike-config",
+    "returncode": 0,
+    "captions": [
+      {
+        "start": 0.0,
+        "duration": 2.0,
+        "text": "You"
+      }
+    ],
+    "stderr": ""
+  },
+  {
+    "option": "turbo",
+    "fixture": "tones",
+    "worker_wall_seconds": 16.230860100004065,
+    "mode": "existing worker default: VAD true, then retry VAD false when empty; no spike-config",
+    "returncode": 0,
+    "captions": [
+      {
+        "start": 0.0,
+        "duration": 29.98,
+        "text": "Thank you."
+      }
+    ],
+    "stderr": ""
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "fixture": "development",
+    "sha256": "76ea33d185c6f25a35b89b0b64f180a50caaaf96d50de6f2b5ec6bce9f1ed92c",
+    "restored": true
+  },
+  {
+    "fixture": "commands",
+    "sha256": "df4f22877dec37be3f5cd57458914cef077dc62f07addb3433a6b62374a68870",
+    "restored": true
+  },
+  {
+    "fixture": "numbers",
+    "sha256": "438602eac777e507eb1b09820b6ec489f04cd77b7560d7da166ea2adffd29224",
+    "restored": true
+  },
+  {
+    "fixture": "silence",
+    "sha256": "190415015d40eef0cd797e1b59ffe00846b01873050b12d44b3a216de3faa2a9",
+    "restored": true
+  },
+  {
+    "fixture": "tones",
+    "sha256": "4a5e5e7b2f8764342d93c546fa7b84039d428994df0f4950586550ff1c48dbc7",
+    "restored": true
+  },
+  {
+    "fixture": "jfk",
+    "sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+    "restored": true
+  },
+  {
+    "fixture": "1272-128104-0000",
+    "sha256": "4e25e22555cd16e90edb0a3b49fdcf1fe652b2a1250ab643634db33895c75b41",
+    "restored": true
+  },
+  {
+    "fixture": "1272-128104-0001",
+    "sha256": "46a9d58622b4675b29564da2d9ba73e702241c5fa969f12c387cad4aa984276a",
+    "restored": true
+  },
+  {
+    "fixture": "1272-128104-0002",
+    "sha256": "59bf7bb1129c11734a8dd362ad52b4e10ae31c03f0879fc92f7107ecd513513f",
+    "restored": true
+  },
+  {
+    "fixture": "1272-128104-0003",
+    "sha256": "60d72657439cd3092fc2313efe0fabd31f0cd2f28f8ca46a21380c290b2e031d",
+    "restored": true
+  }
+]

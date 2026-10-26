@@ -1,0 +1,323 @@
+[
+  {
+    "option": "base",
+    "word_counts": {
+      "reference": 83,
+      "hypothesis": 84,
+      "errors": 6,
+      "substitutions": 5,
+      "deletions": 0,
+      "insertions": 1
+    },
+    "wer": 0.07228915662650602,
+    "character_counts": {
+      "reference": 378,
+      "hypothesis": 373,
+      "errors": 18,
+      "substitutions": 3,
+      "deletions": 10,
+      "insertions": 5
+    },
+    "cer": 0.047619047619047616,
+    "inference_seconds": 2.0054601000010734,
+    "worker_wall_seconds": 5.353924599992752,
+    "load_seconds": 1.137739199999487,
+    "peak_sampled_root_children_rss": 406630400,
+    "rows": [
+      {
+        "fixture": "1272-128104-0000",
+        "text": " Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+        "word_counts": {
+          "reference": 17,
+          "hypothesis": 17,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 73,
+          "hypothesis": 69,
+          "errors": 4,
+          "substitutions": 0,
+          "deletions": 4,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "1272-128104-0001",
+        "text": " Nor is Mr. Quilter's manner less interesting than his matter.",
+        "word_counts": {
+          "reference": 10,
+          "hypothesis": 10,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 54,
+          "hypothesis": 50,
+          "errors": 4,
+          "substitutions": 0,
+          "deletions": 4,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "1272-128104-0002",
+        "text": " He tells us that at this festive season of the year, with Christmas and roast beef looming  before us, similarly is drawn from eating and its results occur most readily to the mind.",
+        "word_counts": {
+          "reference": 32,
+          "hypothesis": 33,
+          "errors": 2,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 1
+        },
+        "character_counts": {
+          "reference": 141,
+          "hypothesis": 145,
+          "errors": 5,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 4
+        }
+      },
+      {
+        "fixture": "1272-128104-0003",
+        "text": " He has graved doubts whether Sir Frederick Layton's work is really Greek after all and can discover in it  But little of Rocky Ithaca",
+        "word_counts": {
+          "reference": 24,
+          "hypothesis": 24,
+          "errors": 2,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 110,
+          "hypothesis": 109,
+          "errors": 5,
+          "substitutions": 2,
+          "deletions": 2,
+          "insertions": 1
+        }
+      }
+    ]
+  },
+  {
+    "option": "small",
+    "word_counts": {
+      "reference": 83,
+      "hypothesis": 83,
+      "errors": 4,
+      "substitutions": 4,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "wer": 0.04819277108433735,
+    "character_counts": {
+      "reference": 378,
+      "hypothesis": 370,
+      "errors": 16,
+      "substitutions": 4,
+      "deletions": 10,
+      "insertions": 2
+    },
+    "cer": 0.042328042328042326,
+    "inference_seconds": 5.095032099990931,
+    "worker_wall_seconds": 10.714771699997073,
+    "load_seconds": 3.3256400000027497,
+    "peak_sampled_root_children_rss": 754970624,
+    "rows": [
+      {
+        "fixture": "1272-128104-0000",
+        "text": " Mr. Quilter is the Apostle of the Middle Classes, and we are glad to welcome his Gospel.",
+        "word_counts": {
+          "reference": 17,
+          "hypothesis": 17,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 73,
+          "hypothesis": 69,
+          "errors": 4,
+          "substitutions": 0,
+          "deletions": 4,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "1272-128104-0001",
+        "text": " Nor is Mr. Quilter's manner less interesting than his matter.",
+        "word_counts": {
+          "reference": 10,
+          "hypothesis": 10,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 54,
+          "hypothesis": 50,
+          "errors": 4,
+          "substitutions": 0,
+          "deletions": 4,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "1272-128104-0002",
+        "text": " He tells us that at this festive season of the year, with Christmas and roast beef looming  before us, symbolies drawn from eating and its results occur most readily to the mind.",
+        "word_counts": {
+          "reference": 32,
+          "hypothesis": 32,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 141,
+          "hypothesis": 143,
+          "errors": 4,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 2
+        }
+      },
+      {
+        "fixture": "1272-128104-0003",
+        "text": " He has grave doubts whether Sir Frederick Layton's work is really Greek after all and  can discover in it but little of rocky Ithaca.",
+        "word_counts": {
+          "reference": 24,
+          "hypothesis": 24,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 110,
+          "hypothesis": 108,
+          "errors": 4,
+          "substitutions": 2,
+          "deletions": 2,
+          "insertions": 0
+        }
+      }
+    ]
+  },
+  {
+    "option": "turbo",
+    "word_counts": {
+      "reference": 83,
+      "hypothesis": 83,
+      "errors": 3,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "wer": 0.03614457831325301,
+    "character_counts": {
+      "reference": 378,
+      "hypothesis": 368,
+      "errors": 12,
+      "substitutions": 2,
+      "deletions": 10,
+      "insertions": 0
+    },
+    "cer": 0.031746031746031744,
+    "inference_seconds": 15.06202339999436,
+    "worker_wall_seconds": 27.395822300000873,
+    "load_seconds": 9.89247439999599,
+    "peak_sampled_root_children_rss": 1998581760,
+    "rows": [
+      {
+        "fixture": "1272-128104-0000",
+        "text": " Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+        "word_counts": {
+          "reference": 17,
+          "hypothesis": 17,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 73,
+          "hypothesis": 69,
+          "errors": 4,
+          "substitutions": 0,
+          "deletions": 4,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "1272-128104-0001",
+        "text": " Nor is Mr. Quilter's manner less interesting than his matter.",
+        "word_counts": {
+          "reference": 10,
+          "hypothesis": 10,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 54,
+          "hypothesis": 50,
+          "errors": 4,
+          "substitutions": 0,
+          "deletions": 4,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "1272-128104-0002",
+        "text": " he tells us that at this festive season of the year with christmas and roast beef looming before us similes drawn from eating and its results occur most readily to the mind",
+        "word_counts": {
+          "reference": 32,
+          "hypothesis": 32,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 141,
+          "hypothesis": 141,
+          "errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      },
+      {
+        "fixture": "1272-128104-0003",
+        "text": " He has grave doubts whether Sir Frederick Layton's work is really Greek after all and can discover in it  But little of rocky Ithaca",
+        "word_counts": {
+          "reference": 24,
+          "hypothesis": 24,
+          "errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        "character_counts": {
+          "reference": 110,
+          "hypothesis": 108,
+          "errors": 4,
+          "substitutions": 2,
+          "deletions": 2,
+          "insertions": 0
+        }
+      }
+    ]
+  }
+]

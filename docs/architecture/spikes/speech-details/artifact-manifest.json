@@ -1,0 +1,190 @@
+{
+  "scope": "speech-details immediate files only; not repository history or ignored intermediate media",
+  "files": [
+    {
+      "path": "eligibility.json",
+      "bytes": 4117,
+      "sha256": "8234a8a0b280bc527fdec3c59d13423b14b8536b7bbec2947b23e70ba7d88004",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "fallback-negatives.json",
+      "bytes": 1915,
+      "sha256": "b9e8d101db10874f0094dd22e3b17c00d8f3421cc77e213b77a671dc1d33b428",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "fixtures.zip",
+      "bytes": 1579707,
+      "sha256": "38bc5b1de74506ca17477bb0847ee74e2200a46fdc3a5ad3de286568497b1bef",
+      "role": "frozen reference audio bundle",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "natural-fixtures.zip",
+      "bytes": 641924,
+      "sha256": "c1ecc6dc48cc856b3a4f4b7cf1e11d87066dd19aaf5d69d0b8d1531de0a9769d",
+      "role": "frozen reference audio bundle",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "pilot-raw-base.json",
+      "bytes": 18233,
+      "sha256": "2513f4ea61e024f3fca31cef942bdc9c6b96ada5a37972c57850c37f3fd16e27",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "pilot-raw-small.json",
+      "bytes": 17186,
+      "sha256": "da21605fb8e7a6b41d233c3f73ad56cb3aba3c98d78432c4e014b6ac3ffcdd5e",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "pilot-raw-turbo.json",
+      "bytes": 18047,
+      "sha256": "c10916200fc18bac28be0c4acbdff316dce427129c442a3f7de5104240aa1e9d",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 6684,
+      "sha256": "e9ce66d613a6dd711ee22be2fff3b6ed600d61f9d7af780246986df0ab92a6d8",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 2363,
+      "sha256": "c2f4ae1467856e4b498017a1994703fbaab6d7ea1cd96f8a418c0e05f9d55eb3",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-base-natural.json",
+      "bytes": 21665,
+      "sha256": "6ac20c99a3914f3b68c313d6780ab436f3a792859e401e3652448f460b78da2d",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-base.json",
+      "bytes": 18792,
+      "sha256": "08aac820d1040684f1fffa713a1a1b278da9c610d7de1e78a8a772a364e81f08",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-small-natural.json",
+      "bytes": 21526,
+      "sha256": "fd3fa9cccc3fba54d5fdcc4ed313ec757b26167f9805265366512e5d958ebc41",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-small.json",
+      "bytes": 17738,
+      "sha256": "b2cef75cf9bb99c0ec9afbe3d6509c24662ad08305726286d7a6576913762531",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-turbo-natural.json",
+      "bytes": 21133,
+      "sha256": "bf8ead987cbe6c71a37670bd578cdb601c4717e73e1a307eb2aca0ccf354313a",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-turbo.json",
+      "bytes": 18595,
+      "sha256": "aeed21ec2318cac723d960e98ba853826aa7269f1b241ee9209d3ef6e8a1502e",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3020,
+      "sha256": "61a3a685b8fbf6f6211970f89abb8c70bb554827899641a3a757b8690fbea44e",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "references-natural.json",
+      "bytes": 4523,
+      "sha256": "09f4d5efb063619a8f9406ee586e64e28ed413ad05a143b3146b062485c7290e",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "references.json",
+      "bytes": 5741,
+      "sha256": "0eefadb7bc986766f4e9fdfbeb52867c48b296f03450625f0a9dc7856228354e",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "restore-check.json",
+      "bytes": 1470,
+      "sha256": "81e755d926bb74d93ad450914109059737c86c44e4896e0e8cf006dc4dfd290b",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "run.py",
+      "bytes": 4124,
+      "sha256": "a24678e4e762b95edd88fa747485b4f2e746b803d10dc987eba254ff0836ae36",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "score-check.json",
+      "bytes": 145,
+      "sha256": "9a5370617b291eefa2a15c9e65efd54f536eafc96a44a21fb2f8eec622484b23",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "score.py",
+      "bytes": 8655,
+      "sha256": "9de3dcfdf0d6cd60d7ef6848b14838c668ac230fa3ad6d7167abc2bd78ac43b7",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "scores-natural.json",
+      "bytes": 9286,
+      "sha256": "58b0f2e08e8ea2dcc2b344928d27067ca340fc5f2af05e88a25ef7f0bcfa137d",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "scores.json",
+      "bytes": 26102,
+      "sha256": "d59df57b519f44abe3e07bfac60bf42b908fbb96cd7c2ea159f2df892ed3bafc",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "setup-failures.json",
+      "bytes": 369,
+      "sha256": "242792972f5edb1704ad23693d901adfa69e14f245b9a8eb678fec63180cd758",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 3150,
+      "sha256": "f39a857d86711a1a71cce6102ba9f9f50d786ed2fb93859854806d8ee76b2a77",
+      "role": "throwaway code or compact reference/result evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    }
+  ],
+  "recovery": "Clone pinned spike commit, extract fixtures.zip and natural-fixtures.zip into .scratch/speech-details; compare ten file hashes in references*.json. Restore check passed into empty temporary directories. Synthesis may vary across Windows voices; use frozen bundle for exact replay.",
+  "source_attribution": "Synthetic scripts authored in this spike, Windows David/Zira output; JFK from pinned OpenAI Whisper test; LibriSpeech/OpenSLR 12 CC BY 4.0 via pinned Hugging Face cached dataset revision.",
+  "large_intermediates": "Per-phrase synthesis and worker temporary outputs remain ignored; reference bundles retain all inference inputs. No claim of independent remote backup for ignored intermediates."
+}
