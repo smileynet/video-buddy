@@ -10,7 +10,6 @@ Ticket **36 comparison complete**: [revision-boundary results](architecture/spik
 
 | id | title | status |
 |---|---|---|
-| 17 | Evaluate evidence-preserving adaptation to a target environment | open |
 | 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
 | 21 | Measure guide versus note usability with a fresh task performer | open |
 | 26 | Compare ordered frames and video input for action evidence | open |
@@ -32,6 +31,7 @@ Ticket **36 comparison complete**: [revision-boundary results](architecture/spik
 | 40 | Qualify speech changes with human-verified commands, numbers and timing | backlog |
 | 19 | Evaluate attribution only when it changes the next action | backlog |
 | 20 | Evaluate retrieval when saved solutions become hard to find | backlog |
+| 17 | Evaluate evidence-preserving adaptation to a target environment | ✅ done |
 | 29 | Verify current provider models and comparison eligibility | ✅ done |
 | 31 | Compare Ai2 pointing tracking and interface grounding | ✅ done |
 | 32 | Compare YOLOE promptable detection and segmentation | ✅ done |
