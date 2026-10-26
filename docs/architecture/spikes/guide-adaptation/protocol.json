@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-26",
+  "question": "Can this bounded source procedure be adapted to a declared target profile without hiding unsupported changes?",
+  "source_commands": [
+    "touch index.html",
+    "touch app.js"
+  ],
+  "source_packet_sha256": "a42bd640b5c2233632ea2aeb1a30d960d13e92918b930a466a5b1c3c7b91db97",
+  "options": [
+    "A:source-faithful with explicit target gap",
+    "B:unchanged source plus separately labeled native adaptation"
+  ],
+  "target": "PowerShell7 NoProfile, child-only PATH contains pwsh,Git cmd,System32; GNU usr/bin absent. Host normal PATH does contain touch. No global environment/config changes.",
+  "fixed_names": [
+    "index.html",
+    "app.js"
+  ],
+  "canary": "Keep this work.\n",
+  "old_mtime_epoch": 946684800,
+  "active_budget_minutes": 60,
+  "budget_scope": "After fixture preparation; source reading/guide drafting costs not a controlled generation benchmark. B gets explicit additional verification budget.",
+  "cases": [
+    {
+      "id": "source_bash_fresh",
+      "program": "source",
+      "shell": "bash",
+      "profile": "host",
+      "seed": "fresh",
+      "expected": "two empty regular files"
+    },
+    {
+      "id": "source_powershell_host_fresh",
+      "program": "source",
+      "shell": "powershell",
+      "profile": "host",
+      "seed": "fresh",
+      "expected": "two empty regular files; counterexample to blanket PowerShell incompatibility"
+    },
+    {
+      "id": "source_powershell_native_fresh",
+      "program": "source",
+      "shell": "powershell",
+      "profile": "native",
+      "seed": "fresh",
+      "expected": "touch unavailable; no requested files; exit status alone not decisive"
+    },
+    {
+      "id": "adapted_native_fresh",
+      "program": "adapted",
+      "shell": "powershell",
+      "profile": "native",
+      "seed": "fresh",
+      "expected": "two empty regular files"
+    },
+    {
+      "id": "source_bash_existing",
+      "program": "source",
+      "shell": "bash",
+      "profile": "host",
+      "seed": "existing",
+      "expected": "existing bytes preserved, missing file created,mtime updated"
+    },
+    {
+      "id": "adapted_native_existing",
+      "program": "adapted",
+      "shell": "powershell",
+      "profile": "native",
+      "seed": "existing",
+      "expected": "existing bytes andmtime preserved,missing file created"
+    },
+    {
+      "id": "force_negative_control",
+      "program": "force",
+      "shell": "powershell",
+      "profile": "native",
+      "seed": "existing",
+      "expected": "Force truncates owned canary; negative control,not a recommended step"
+    },
+    {
+      "id": "adapted_directory_conflict",
+      "program": "adapted",
+      "shell": "powershell",
+      "profile": "native",
+      "seed": "directory",
+      "expected": "explicit failure,preserve directory sentinel,no false success"
+    }
+  ],
+  "checks": [
+    "Filesystem bytes/types independently inspected by Python,not script exit alone.",
+    "No target commands outside uniquely owned scratch case directories.",
+    "Source and adaptation provenance remain distinct.",
+    "Retain all outputs/failures,negative controls are not successful user tasks."
+  ],
+  "human_reader_observed": false,
+  "limits": [
+    "One fixed ordinary-file preparation job,not full Git tutorial.",
+    "Current toolchain replay is not exact historical source execution.",
+    "No general path,symlink,permissions,concurrency or human UX qualification."
+  ],
+  "guide_hashes": {
+    "guide-a-source-faithful.md": "a0b29b281907ae7683f40197868cab7dea55a4c6045fc146856d05124a6ad73c",
+    "guide-b-two-layer.md": "ad3e61e1d35b5d12d75137500a9e211d0d21220c4c3cd3eb614038498c8d8180",
+    "adapted.ps1": "77b572e0d93a5388e73b799ea6e9f8ba1bfd403a5e824b85977f091fded9279d"
+  }
+}

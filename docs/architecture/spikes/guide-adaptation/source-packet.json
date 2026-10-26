@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-26",
+  "source_url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+  "source_title": "Git & GitHub Crash Course For Beginners, Traversy Media",
+  "frame": "source-10m38s.jpg",
+  "frame_sha256": "0d4b7d335d5ad9ba233de977685f5b27c6fe6a7f656b35ae5b3692c8ecc7c8de",
+  "nominal_timestamp_s": 638,
+  "observation_type": "agent visual inspection of CLI-captured full frame; not human attestation",
+  "observations": [
+    {
+      "id": "S1",
+      "command": "touch index.html",
+      "modality": "visible completed terminal history"
+    },
+    {
+      "id": "S2",
+      "command": "touch app.js",
+      "modality": "visible completed terminal history"
+    }
+  ],
+  "source_environment": "Windows MINGW64/Git Bash visible; actual installed Git/Coreutils versions unknown",
+  "not_source_facts": [
+    "Current host touch availability",
+    "Native-only target profile",
+    "PowerShell adaptation",
+    "Byte-exact zero-length proof from Explorer0KB display",
+    "Existing-file preservation from video; this comes from GNU docs"
+  ],
+  "capture_cli": "uv run --no-sync video-buddy --json frames --video-json vb-workspace/intermediates/video_SWYqp7iY_Tc.json --media-file .scratch/seek-retained-source/SWYqp7iY_Tc.mp4 --at 624 632 638 --max-frames 3 --ocr off --intermediates .scratch/adaptation-source-frames",
+  "capture_limit": "Earlier624s frame shows partial typing and is not used as completed-command evidence. Initial capture with an overridden intermediates directory lacked an explicit video-json and failed; corrected call succeeded."
+}
