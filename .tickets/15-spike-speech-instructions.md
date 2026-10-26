@@ -1,7 +1,7 @@
 ---
 id: "15"
 title: "Compare speech paths on implementation-critical details"
-status: open
+status: in_progress
 blocked_by: ["12"]
 spec: "apply-build"
 priority: medium
