@@ -61,3 +61,7 @@ Research29 and provider comparisons30–34 must have explicit reviewed dispositi
 ## Comparison follow-up
 
 Review provider comparisons at their actual scope: YOLOEbounded natural/diagram observations, MolmoNF4general imagepoints vsQwenbaseline, and unrun specialist/hosted/runtime gaps. Require scoped referents and complete geometry before integrating; a generic search-field query can have multiple valid targets. Evidence commit ce811ed8, provider reports under docs/architecture/spikes/.
+
+## Speech first-round finding — 2026-10-25
+
+Consume `docs/architecture/spikes/s4-speech-results.md`: known-corpus prose WER did not predict controlled command reliability, and default VAD-empty retry produced unsupported silent/tonal text, including a beyond-duration caption. Ticket38 is the post-review regression proposal. Ticket15 stays open for natural tutorial/caption qualification; do not treat its first round or a model's empty negative output as a validated default. No extra blocker38 edge is added: this review decides policy before implementation.

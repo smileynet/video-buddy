@@ -47,7 +47,7 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Execution record
 
-Started 2026-10-25 after user-directed closure of 25. Local runtime/cache/backend probes and the next bounded protocol are recorded in `docs/architecture/spikes/s4-speech-results.md`. Existing worktree branch `codex/spike-revision-boundaries` supplied read-only preflight only; no speech prototype branch, scored predictions or frozen references yet. CrisperWhisper/WhisperX absent locally; only local backend configured. Cached faster-whisper checkpoint identities recorded; terms and actual inference remain to verify.
+Started 2026-10-25 after user-directed closure of 25. Report: `docs/architecture/spikes/s4-speech-results.md`. Actual experiment branch `codex/spike-speech-details`, final raw commit `b5030a893e465dd2d8aca532aa048b6d109e7e32`; raw replay/code/references under `docs/architecture/spikes/speech-details/`. Three faster-whisper model scales ran; CrisperWhisper/WhisperX remain unavailable locally. This ticket remains in progress for independent natural spoken/number references and caption provenance; no ASR default changed.
 
 ## Reconciled remaining work (2026-10-25)
 
@@ -64,3 +64,15 @@ Record raw outputs, exact versions/configuration, failures and a per-job disposi
 ### Installed speech identity before comparison
 
 The committed worker defaults to model alias `turbo` and imports `crisperwhisper.CrisperWhisperModel`; neither pins a checkpoint nor proves the remote worker version. Capture installed package version, alias resolution, checkpoint revision and applicable weights terms for each eligible configured backend before scoring. Upstream v1 card redirects/supersession must not silently substitute v2; preserve historical benchmark identities. If runtime identity cannot be established, mark that option ineligible/unresolved rather than selecting a default.
+
+## Measured first comparison — 2026-10-25
+
+Report: `docs/architecture/spikes/s4-speech-results.md`. Freeze controlled references/settings at 9a23e51; natural extension at 07d746a before its predictions. Three pinned MIT-declared faster-whisper conversions ran through the repository worker CLI at matched CPU/int8 settings. Ten inputs / 88.678 seconds include authored speech/negative controls, a familiar JFK timing check and four published-transcript LibriSpeech items. No retuning or synthetic reference presented as natural human truth.
+
+Small recovered 7/7 controlled phrases, base/turbo 6/7 (`git add`→`git at`); all four number/negation phrases recovered. Natural prose WER: base6/83, small4/83, turbo3/83. Phrase timing is waveform-envelope location only; early start error up to1.506s, not calibrated natural word boundaries. Actual default-worker retry emitted unsupported text on silence/tones; ticket38 owns reviewed regression work. Three model versions are not three transcription engines. Captions absent for controlled fixtures, CrisperWhisper/WhisperX ineligible locally; no universal winner/default adopted.
+
+Keep in progress: next freeze independently checked real tutorial command/number passages and spoken boundaries, compare eligible available captions, and decide alignment only from an observed evidence-location failure. Known-corpus prose and synthetic phrases do not satisfy that remaining natural tutorial qualification. Model/runtime access limitations may receive explicit unresolved final dispositions, never invented measurements. Raw final evidence: `codex/spike-speech-details`, `b5030a893e465dd2d8aca532aa048b6d109e7e32`. Transcription tests8passed; scoring checks54passed; ten restored media hashes matched.
+
+### Real tutorial extension
+
+Freeze845991e reserved852–868s of the Git tutorial before its speech predictions, using prior visual task referents rather than an auditory transcript. Existing fetch CLI returned captions with lost manual/automatic provenance and overlapping cues. Available captions and all three models each retained2/3 task terms; all rendered git status as get status. No real-tutorial WER or timing gold claimed. Natural numeric settings and independently checked spoken boundaries remain open. Eleven retained inputs now total104.678s; all11 restore hashes passed. No additional parameter tuning or default change.

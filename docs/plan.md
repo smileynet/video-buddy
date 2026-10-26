@@ -2,6 +2,8 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
+Ticket **15 first round measured**: [speech findings](architecture/spikes/s4-speech-results.md). Small recovered7/7 controlled instruction phrases; base/turbo6/7; four numeric/negation phrases recovered by all. Default-worker silence/tones produced unsupported text (38). The real tutorial/caption probe retained2/3 task-backed terms for every option. Independent spoken/number references, caption track provenance and natural word boundaries remain open; no default change.
+
 Ticket **36 comparison complete**: [revision-boundary results](architecture/spikes/revision-boundary-results.md) separate 180 development frames from 509 locked validation frames. Preferred packets solved development but retained only2–3/4 terminal validation states; settled runs and the grid reached4/4 at cap4. Other-source UI reached3/3 visually via fallback, with inexact writing. No new default or integration. Ticket 25 is closed with an evidence-linked synthesis and explicit unresolved limits; broader tracking research is deliberately deferred to 37. Ticket 35 owns the production selector failure. Review28 consumes the negative/conditional verdict and still depends on the remaining spikes.
 
 | id | title | status |
@@ -19,6 +21,7 @@ Ticket **36 comparison complete**: [revision-boundary results](architecture/spik
 | 34 | Evaluate NVIDIA reasoning for physical demonstration evidence | open |
 | 28 | Review spike findings and decide app features and integration architecture | open |
 | 35 | Preserve useful low-edge code frames in frame selection | open |
+| 38 | Prevent no-speech retries from publishing unsupported transcript text | open |
 | 07 | Re-transcribe rate-limited digest videos with CrisperWhisper on GPU | open |
 | 08 | Make CrisperWhisper the default engine in workspace config | open |
 | 09 | Add Vimeo source support (player URL + Referer) alongside YouTube | open |
@@ -54,7 +57,7 @@ Latest frame evidence: [locked revision-boundary comparison](architecture/spikes
 
 Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). DINOv3 and SAM3.1 now have bounded inference records. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; complete-state and task qualification remain25/26.
 
-Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Frame evidence synthesis 25 is complete. Remaining primary work: speech 15 (started; local runtime/checkpoint preflight only), adaptation 17, review UX 18, fresh-performer usability 21, temporal evidence 26 and acquisition/recovery 27. This order finishes the live frame thread, then earlier commitments in the same workflow stream. Ticket 22 remains the clean-CLI prerequisite where needed. Broader tracking research 37 is deferred until a concrete failed task justifies it, alongside conditional 19/20. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
+Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Frame evidence synthesis 25 is complete. Remaining primary work: speech 15 (first comparison measured; natural tutorial/caption and word-boundary gaps remain), adaptation 17, review UX 18, fresh-performer usability 21, temporal evidence 26 and acquisition/recovery 27. This order finishes the live frame thread, then earlier commitments in the same workflow stream. Ticket 22 remains the clean-CLI prerequisite where needed. Broader tracking research 37 is deferred until a concrete failed task justifies it, alongside conditional 19/20. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
 
 ## Expanded current-provider coverage
 
