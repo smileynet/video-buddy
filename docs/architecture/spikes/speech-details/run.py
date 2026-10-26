@@ -25,13 +25,26 @@ def main():
     parser.add_argument("option")
     parser.add_argument("--natural", action="store_true")
     parser.add_argument("--tutorial", action="store_true")
+    parser.add_argument("--model-reviewed", action="store_true")
     args = parser.parse_args()
     reference_file = (
-        "references-tutorial.json"
+        "model-reviewed-references.json"
+        if args.model_reviewed
+        else "references-tutorial.json"
         if args.tutorial
-        else ("references-natural.json" if args.natural else "references.json")
+        else "references-natural.json"
+        if args.natural
+        else "references.json"
     )
-    suffix = "-tutorial" if args.tutorial else ("-natural" if args.natural else "")
+    suffix = (
+        "-model-reviewed"
+        if args.model_reviewed
+        else "-tutorial"
+        if args.tutorial
+        else "-natural"
+        if args.natural
+        else ""
+    )
     protocol = json.loads((HERE / "protocol.json").read_text())
     refs = json.loads((HERE / reference_file).read_text())
     config = next(o for o in protocol["options"] if o["id"] == args.option)

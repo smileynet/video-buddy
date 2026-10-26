@@ -2,297 +2,388 @@
   "scope": "speech-details immediate files only; not repository history or ignored intermediate media",
   "files": [
     {
+      "path": "audio-review-eligibility.json",
+      "bytes": 1961,
+      "sha256": "3bd2e2a4eca2e52a24a26595f374aca49799d645020d691bfbdbfbe39bb8c9a1",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "bounded-review-diagnostic.json",
+      "bytes": 10489,
+      "sha256": "5b136257b2201cf8b7a19d6d0d9a66f123bd4a96f5c91012edc6ec87ac8c0774",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "bounded-review-protocol.json",
+      "bytes": 4433,
+      "sha256": "d9378bdadea7b9227572028b039ce75ccd98b027fff9524a93b2fe2458b92426",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
       "path": "caption-provenance.json",
       "bytes": 1277,
       "sha256": "792ded21743997dd34865ae507a332cdbce31d5031c6f03abd4a1df2922bc12d",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "compare_model_review.py",
+      "bytes": 7479,
+      "sha256": "9ad574910db88d29e2d1778cf731e7451489fae56e0206a215ba5c1aa160337b",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "eligibility.json",
       "bytes": 4117,
       "sha256": "8234a8a0b280bc527fdec3c59d13423b14b8536b7bbec2947b23e70ba7d88004",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "fallback-negatives.json",
       "bytes": 1915,
       "sha256": "b9e8d101db10874f0094dd22e3b17c00d8f3421cc77e213b77a671dc1d33b428",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "fixtures.zip",
       "bytes": 1579707,
       "sha256": "38bc5b1de74506ca17477bb0847ee74e2200a46fdc3a5ad3de286568497b1bef",
-      "role": "frozen reference audio bundle",
+      "role": "retained audio reference bundle",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "model-review-comparison.json",
+      "bytes": 18892,
+      "sha256": "22f4c3ace32e456020b76afa82f7d893f9ebbdd2ff3536d8d5e9b292be049aba",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "model-review-protocol.json",
+      "bytes": 4337,
+      "sha256": "2f7c56214a483930a40652aaa03ac6df676cd8198a18fff65e908ec26018e830",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "model-review-raw.json",
+      "bytes": 16486,
+      "sha256": "4f6412a790b0ee3117e56c9ae80cc66716b69b2400f505b4be00f5e42197079a",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "model-review-verification.json",
+      "bytes": 272,
+      "sha256": "f37a6bf946880d7ef7ddea187e92d991b159de9e931e47007fa4298fd9a50ffb",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "model-reviewed-references.json",
+      "bytes": 11680,
+      "sha256": "6cb1b654f96f6ac6ebb7f427f2a46e84eb35f94e5886cb543fb7b872265d23ff",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "natural-fixtures.zip",
       "bytes": 641924,
       "sha256": "c1ecc6dc48cc856b3a4f4b7cf1e11d87066dd19aaf5d69d0b8d1531de0a9769d",
-      "role": "frozen reference audio bundle",
+      "role": "retained audio reference bundle",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "pilot-raw-base.json",
       "bytes": 18353,
       "sha256": "a0ad475d36fc7e8bc4ec910a050e200cd020f53f08ba1ebfe4c101f682779749",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "pilot-raw-small.json",
       "bytes": 17306,
       "sha256": "fb8ba0521d371d3b352c70a27a125d586ffc394ecf4b912626c367987754bce1",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "pilot-raw-turbo.json",
       "bytes": 18197,
       "sha256": "7b72079ee58439cdc3ba2a3f96d02a1add77bf2c4f535bd0be5c75910a86500f",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "prepare.py",
       "bytes": 6684,
       "sha256": "e9ce66d613a6dd711ee22be2fff3b6ed600d61f9d7af780246986df0ab92a6d8",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "protocol.json",
       "bytes": 2363,
       "sha256": "c2f4ae1467856e4b498017a1994703fbaab6d7ea1cd96f8a418c0e05f9d55eb3",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "publisher-caption-provenance.json",
       "bytes": 1690,
       "sha256": "193f272f7a7027f743d3638855089049f72a5ae02093567e6ff34756279d8329",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-base-model-reviewed.json",
+      "bytes": 45029,
+      "sha256": "1cbbd19eb7677c01feb8af0a64e6f63f5df6e5927298e8ded07a9c67f3712876",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-base-natural.json",
       "bytes": 21785,
       "sha256": "679b2516e8b5618b4e9a9bd03173d4c2489d478b177b893df21517b996c2f1a6",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-base-tutorial.json",
       "bytes": 9821,
       "sha256": "12fd71d96749bf70b5bfa9c29ebedcba39d51f7822b4c1c09ff2fe0357788d8c",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-base.json",
       "bytes": 18912,
       "sha256": "060f9aac2ac60fb8d4ec4c2a831f355c53c3d785c9a70782eb588e337d66d8c7",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-small-model-reviewed.json",
+      "bytes": 47057,
+      "sha256": "5361cd0c85714be55caf205ba0fa66aa924e3565c3975e13928780f71f5f40ca",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-small-natural.json",
       "bytes": 21646,
       "sha256": "064cab9a5972f77c74365f013e10b2220143b73e2e7a345b923e3982274d8096",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-small-tutorial.json",
       "bytes": 9102,
       "sha256": "4e3c09549bf21d5b092e8bcac25568686657866a115ae3061e6ebcbb49ef4454",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-small.json",
       "bytes": 17858,
       "sha256": "15b58d3e17abe88c87222ccf2354b1068b0e09ace83b985d44f264f7f8d3e47f",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "raw-turbo-model-reviewed.json",
+      "bytes": 45680,
+      "sha256": "ea057def5400be4e391f58de533c357115f98dc6a35fb1cef7748cb71db8b777",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-turbo-natural.json",
       "bytes": 21283,
       "sha256": "9f09977211b223397de0a8372201839afc34901c477323a0f925da96524503cb",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-turbo-tutorial.json",
       "bytes": 9537,
       "sha256": "6e85d1c65e555489b9fa01b31845df1ffc9f19c99d1659ec976a41d2761f4325",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "raw-turbo.json",
       "bytes": 18745,
       "sha256": "61d77bf773592006cdc439bedede4ee11660011960536cd07b1060acbca1a440",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "README.md",
-      "bytes": 6466,
-      "sha256": "88ad4a500ea330d4f8491b130c47ddf11f3aa1923e927c7909f0a7d20e30815e",
-      "role": "throwaway review/provenance code or compact evidence",
+      "bytes": 9064,
+      "sha256": "f36481c69d92dcdb4bb0abde8c0dc59473893033a43e5a5485bb8cb72d856fae",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "reference-review.html",
-      "bytes": 15515,
-      "sha256": "d4c10d66c3b03ccfd13fa31856a7febcae06dd98a70f18f007f5e3afdfc3ddf7",
-      "role": "throwaway review/provenance code or compact evidence",
+      "bytes": 15700,
+      "sha256": "bf4319781ec7e35a70c1a276d63c752d132c5ffc957ffea041701232c9fd2af0",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "references-natural.json",
       "bytes": 4523,
       "sha256": "09f4d5efb063619a8f9406ee586e64e28ed413ad05a143b3146b062485c7290e",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "references-tutorial.json",
       "bytes": 3429,
       "sha256": "278173386ca21a5270736fb83d024b71dc88ca13cefcd33e42549de30d926d43",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "references.json",
       "bytes": 5741,
       "sha256": "0eefadb7bc986766f4e9fdfbeb52867c48b296f03450625f0a9dc7856228354e",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "restore-check.json",
       "bytes": 1626,
       "sha256": "b982cc70a84b81fd95ee8e5bf7efb9de4e381625bb74268e3eb29f020f17055a",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "review-attribution.md",
       "bytes": 3675,
       "sha256": "78b6541fab9c46d6875135e9c995e1db7a85b6f1e58f3cfd7ed6e017e5386695",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "review-inputs-cs50-cp-two.zip",
       "bytes": 305163,
       "sha256": "9868fac2a6323c7f7f953c51abde24041782f215f0cae264ead728238548d6c8",
-      "role": "frozen unreviewed listening-pack input",
+      "role": "frozen unreviewed human-listening input",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "review-inputs-cs50-mkdir-pset2.zip",
       "bytes": 285085,
       "sha256": "f3755331b2ca537d96051eea312d04a93ec5239c8d332205a28ab079230491d2",
-      "role": "frozen unreviewed listening-pack input",
+      "role": "frozen unreviewed human-listening input",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "review-inputs-mit-status-three.zip",
       "bytes": 854829,
       "sha256": "530e484b0394181d1b10f214932d592db2975ce47e02d126313dbd647e2b210d",
-      "role": "frozen unreviewed listening-pack input",
+      "role": "frozen unreviewed human-listening input",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "review-manifest.json",
       "bytes": 7983,
       "sha256": "5da2536aef603189adb0dbd1f758dbbf63bf3d3f89f3a8940f137a918fac96f0",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "review-restore-check.json",
       "bytes": 333,
       "sha256": "6be31a8f0d1715cffe28f51515448578398d4d653752eca06fb99e627e340f27",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "review-setup-note.json",
       "bytes": 710,
       "sha256": "0d311fa58482c86ae0463a294df6332eb41e4100a78da4318d750cdd184c90bf",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "run.py",
-      "bytes": 4319,
-      "sha256": "624ab43a4efe41da2624aaa9ac7a184592ef88743e1dae4ffb632fb7aba33f9c",
-      "role": "throwaway review/provenance code or compact evidence",
+      "bytes": 4596,
+      "sha256": "39004dd1c17674c86bcb2f7f4f800fe029303cd9b9baf0a1eca042f7b30f2378",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "score-check.json",
       "bytes": 145,
       "sha256": "9a5370617b291eefa2a15c9e65efd54f536eafc96a44a21fb2f8eec622484b23",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "score.py",
       "bytes": 10632,
       "sha256": "4333afc0d99aaabd1e1df0e03e85be6c1202214c84c1c994529102736dd8bfb0",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "scores-natural.json",
       "bytes": 9286,
       "sha256": "58b0f2e08e8ea2dcc2b344928d27067ca340fc5f2af05e88a25ef7f0bcfa137d",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "scores-tutorial.json",
       "bytes": 16570,
       "sha256": "b34866e81e99653306d2a5c7629b851a4dded4495cf1530a98f5beb87d9a69cd",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "scores.json",
       "bytes": 26102,
       "sha256": "d59df57b519f44abe3e07bfac60bf42b908fbb96cd7c2ea159f2df892ed3bafc",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "setup-failures.json",
       "bytes": 369,
       "sha256": "242792972f5edb1704ad23693d901adfa69e14f245b9a8eb678fec63180cd758",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "tutorial-fixture.zip",
       "bytes": 393447,
       "sha256": "844c9706eeee8aaae93a08c362ea5afe7f122b31fd1e7de076834e9e8c2c995d",
-      "role": "frozen reference audio bundle",
+      "role": "retained audio reference bundle",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     },
     {
       "path": "verify.py",
       "bytes": 5803,
       "sha256": "bd2e0204637c4a1ec3cb1759d1923c7414b400ad0dcca11d93004a429b8c3c88",
-      "role": "throwaway review/provenance code or compact evidence",
+      "role": "throwaway code or compact model/provenance/reference evidence",
+      "retention": "ordinary Git on spike branch; no prototype promotion"
+    },
+    {
+      "path": "verify_model_review.py",
+      "bytes": 3644,
+      "sha256": "0ee578c19fe5a72fcfd26836385132830efc99234d7288723b7fc99daf640e08",
+      "role": "throwaway code or compact model/provenance/reference evidence",
       "retention": "ordinary Git on spike branch; no prototype promotion"
     }
   ],
@@ -306,5 +397,14 @@
     "recovery": "Extract the three review-inputs-*.zip bundles into .scratch/speech-details/provenance/review and run verify.py;3empty-folder hashes and embedded manifest passed.",
     "source_terms": "MIT/CS50 derived source audio/text retain CC BY-NC-SA4.0 and named credits in review-attribution.md.",
     "excluded": "Ignored full source audio, signed metadata, full captions and QA-only export files are outside committed evidence; no backup or human-review claim for them."
+  },
+  "audio_model_review": {
+    "reference_type": "model_reviewed_provisional",
+    "human_verified": false,
+    "freeze": "a18749f",
+    "reviewer_weights": "ignored .scratch/models/sensevoice; official archive URL and exact model/token/archive hashes in audio-review-eligibility.json",
+    "recovery": "Original55seconds are the3existing review-input bundles;verify original hashes. Reviewer weights retrieved separately, then worker CLI replay. No new audio payload committed.",
+    "bounded_diagnostic": "2post-hoc windows are deterministic cuts of original MIT31s input. They did not replace machine references or candidate scores.",
+    "excluded": "Installed environments, model weights, ignored originals, previous history and QA-only exports are not covered by final staged source inspection."
   }
 }

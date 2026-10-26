@@ -1,0 +1,27 @@
+# Audio model reference reviewer audit
+
+Audited 2026-10-25 independently under `research-audit`. Scope: cited availability, interface, timing, architecture and licensing claims in `audio-model-reference-review.md`. Re-fetched primary sources; no installation, model download, inference, environment changes or lock changes.
+
+**Overall trust: 9/10 — pass with minor wording/provenance findings.** The proposed experiment is documented, but its operation and recognition quality remain untested. Model-reviewed references remain automatic hypotheses; neither architecture diversity nor recognizer agreement establishes human-verified ground truth.
+
+## Claim verdicts
+
+| Claim | Verdict | Re-fetched evidence and limits |
+| --- | --- | --- |
+| sherpa-onnx 1.13.6 has a Windows x64 CPython 3.13 wheel, 2.3 MB, uploaded 2026-08-18 | supported | [Versioned PyPI page](https://pypi.org/project/sherpa-onnx/1.13.6/) lists the exact `cp313-cp313-win_amd64` wheel, matching tags, size and upload date. This establishes availability only. [2.0.0](https://pypi.org/project/sherpa-onnx/2.0.0/) also exists. |
+| Official decoding example takes float waveform audio without importing Torch | supported | [Current example](https://raw.githubusercontent.com/k2-fsa/sherpa-onnx/master/python-api-examples/offline-sense-voice-ctc-decode-files.py) reads float32 using soundfile, takes channel zero, calls `accept_waveform` and decodes. The [v1.13.6 example](https://raw.githubusercontent.com/k2-fsa/sherpa-onnx/v1.13.6/python-api-examples/offline-sense-voice-ctc-decode-files.py) matches these calls and the named int8 model/token paths. This does not prove all transitive dependencies or this machine's runtime. |
+| Official dated int8 archive exists at 163002883 bytes | supported | Re-fetched [maintainer release API](https://api.github.com/repos/k2-fsa/sherpa-onnx/releases/tags/asr-models) directly: exact named asset, size and download URL match. About 155.5 MiB is correct. Archive contents, hashes and packaged notices were not inspected. |
+| Output example supplies token timestamps rather than guaranteed word intervals | supported | [Official Python documentation](https://k2-fsa.github.io/sherpa/onnx/sense-voice/python-api.html) pairs tokens and timestamps and shows `"words": []`; it also demonstrates Silero-VAD subtitles. This example establishes neither English word intervals nor reliable human boundaries. The source document appropriately avoids both claims. |
+| SenseVoiceSmall is non-autoregressive and the released checkpoint supports five named languages | supported | [Checkpoint card](https://huggingface.co/FunAudioLLM/SenseVoiceSmall/raw/main/README.md) identifies the architecture and Mandarin, Cantonese, English, Japanese and Korean release scope. Broader 50-language marketing is correctly excluded. Architecture difference is not evidence of independent errors, better accuracy or ground truth. |
+| Upstream direct inference documents a 30-second limit | supported | [Upstream README](https://raw.githubusercontent.com/FunAudioLLM/SenseVoice/main/README.md), direct-inference section, explicitly specifies at most 30 seconds. It describes another runtime path; the findings correctly avoid claiming a measured sherpa export limit. Overlapping windows are a conservative experiment design, not validated accuracy evidence. |
+| Apache software terms differ from checkpoint terms | supported | [sherpa LICENSE](https://raw.githubusercontent.com/k2-fsa/sherpa-onnx/master/LICENSE) is Apache 2.0. [Checkpoint metadata](https://huggingface.co/FunAudioLLM/SenseVoiceSmall/raw/main/README.md) instead declares a custom model license and links FunASR. This establishes the upstream distinction, not the exact notices inside the ONNX archive. |
+| Linked agreement requires attribution/model names and has custom restrictions | supported | [FunASR agreement](https://raw.githubusercontent.com/modelscope/FunASR/main/MODEL_LICENSE), version 1.1, contains attribution/model-name requirements, reference/learning language, conduct-based license forfeiture, termination and automatic revisions. No registration prerequisite appears in that text. The local-use interpretation is labeled as interpretation and should remain so. |
+| This is the smallest clearly verified next experiment | weak | Only one candidate is fully qualified; the cited evidence does not establish a size ranking. Replace “smallest clearly verified” with “a documented, bounded next experiment.” |
+
+## Findings for the producer
+
+1. Remove the unsupported comparative adjective “smallest”; alternatives were explicitly not qualified.
+2. Prefer the linked **v1.13.6** decoding example over moving master for the pinned recommendation. Save commit/revision identifiers and applicable terms when executing the experiment; current main/master and a check date alone do not preserve reproducible source state.
+3. Keep the archive-license caveat. No evidence here verifies its embedded notices or proves that every exported file has exactly the upstream checkpoint terms. Inspect and record provenance/notices before redistribution; Apache package licensing cannot fill that gap.
+
+No claim relies solely on secondary sources. The absence of local measurements and of reliable adjudicator evidence is correctly disclosed. Blind input, frozen provenance and unresolved-span labeling are methodological safeguards, not claims that the sources certify model output as truth.

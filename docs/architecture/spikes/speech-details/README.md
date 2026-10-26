@@ -37,3 +37,21 @@ All three models and available captions recover only two of three scoped task te
 `reference-review.html`, `review-manifest.json`, and `review-inputs-*.zip` prepare three NEW real tutorial inputs,55seconds, **unreviewed and unscored**. See `review-attribution.md` for source credits, separate source-excerpt CC terms, recovery and required human listening. `verify.py` verifies the original eleven inputs plus three new draft-review inputs. QA-only exports are explicitly marked and remain ignored; they are never speech-reference evidence. No new model predictions or independent word-timing claims result from this preparation. Music-only classification is explicit, separate from the prior synthetic silence/tones.
 
 A research verification command inadvertently refreshed the experimental dependency resolution; the worktree lock was restored and core versions rechecked (faster-whisper1.2.1,CTranslate2 4.7.1,yt-dlp2026.10.21). No new model inference followed that event. Full transitive environment restoration is not asserted; reverify runtime before the next locked comparison. See `review-setup-note.json`. Use `uvx pre-commit` or `uv run --no-sync` as appropriate, without resynchronizing this experiment incidentally.
+
+## Audio-model reviewed references (user-authorized continuation)
+
+The user authorized an audio-capable tool to review the55-second pack, keeping model-reviewed separate from human-verified. This removes the prior requirement to wait for a human before continuing a *machine-reference* comparison; it does not waive the distinction in any output.
+
+`sherpa-onnx1.13.6` plus SenseVoiceSmall int8 runs in `.venvs/audio-review`, separate from the existing faster-whisper environment. The package is Apache2.0; the model has custom FunASR1.1 terms, recorded with hashes, source attribution and no production deployment approval. Model weights stay ignored under `.scratch/models/sensevoice`; retrieve the official archive and verify `audio-review-eligibility.json` hashes.
+
+Freeze `e6a6de9` records the blind waveform protocol, no captions/targets/grammar hints to the recognizer. Run:
+
+```powershell
+.venvs/audio-review/Scripts/python.exe workers/sensevoice_review_worker.py --protocol docs/architecture/spikes/speech-details/model-review-protocol.json --model .scratch/models/sensevoice/model.int8.onnx --tokens .scratch/models/sensevoice/tokens.txt --output docs/architecture/spikes/speech-details/model-review-raw.json
+```
+
+`a18749f` locks raw outputs and **provisional model-reviewed references** before any new Whisper predictions. Preserve `human_verified:false`; do not import them into the human review UI or mark a person as having listened. No publisher/candidate-driven cleanup of gi/mkd/pet2 was performed. These are ASR-generated machine references, not an instruction-following audio judge's certification.
+
+Replay the unchanged candidates with `run.py base --model-reviewed`, then small and turbo. All mechanical inference uses worker CLIs. `compare_model_review.py` reports conditional edit distance against SenseVoice and separate canonical-target/caption diagnostics; `verify_model_review.py` validates hashes/identity/arithmetic. Conditional WER is model agreement, not human accuracy. The cp term is unconfirmed at the clipped boundary, so absence is not an accuracy error. Token starts are not human word intervals.
+
+The31s input exceeds upstream's <=30s direct-inference recommendation. `bounded-review-protocol.json` and `bounded-review-diagnostic.json` retain a separate post-hoc20/12s overlapping diagnostic; recover those WAVs by cutting the original frozen MIT WAV at0s for20s and19s for12s. This diagnostic did not replace references or candidate scores. All original reference inputs remain in the retained bundles; no new source-media bundle is needed.

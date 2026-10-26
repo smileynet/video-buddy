@@ -1,0 +1,1661 @@
+{
+  "option": {
+    "id": "base",
+    "repo": "Systran/faster-whisper-base",
+    "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+    "device": "cpu",
+    "compute_type": "int8",
+    "model_files": {
+      "config.json": {
+        "sha256": "56a6d8110d311f19c8f0471e562832c7527f146b567275bfca59fcf7c184da9a"
+      },
+      "model.bin": {
+        "sha256": "d01c3014881c9c6f3133c182f3d2887eb6ca1c789a7538c5c007196857a0a6a9"
+      },
+      "tokenizer.json": {
+        "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "vocabulary.txt": {
+        "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+      }
+    }
+  },
+  "settings": {
+    "language": "en",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "vad_filter": true,
+    "condition_on_previous_text": true,
+    "cpu_threads": 8,
+    "num_workers": 1
+  },
+  "protocol_sha256": "c2f4ae1467856e4b498017a1994703fbaab6d7ea1cd96f8a418c0e05f9d55eb3",
+  "references_sha256": "6cb1b654f96f6ac6ebb7f427f2a46e84eb35f94e5886cb543fb7b872265d23ff",
+  "host": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "logical_cpu": 20
+  },
+  "load_seconds": 1.0296530999985407,
+  "peak_sampled_root_children_rss": 435077120,
+  "rss_samples": 180,
+  "sampling_seconds": 0.02,
+  "outputs": [
+    {
+      "fixture": "mit-status-three",
+      "worker_wall_seconds": 5.071686099996441,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.46,
+          "end": 2.8,
+          "text": " So I do git status, which is always a good thing to do.",
+          "tokens": [
+            50364,
+            407,
+            286,
+            360,
+            18331,
+            6558,
+            11,
+            597,
+            307,
+            1009,
+            257,
+            665,
+            551,
+            281,
+            360,
+            13,
+            50506
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 0.46,
+              "end": 0.9,
+              "word": " So",
+              "probability": 0.38714033365249634
+            },
+            {
+              "start": 0.9,
+              "end": 0.98,
+              "word": " I",
+              "probability": 0.5262356400489807
+            },
+            {
+              "start": 0.98,
+              "end": 1.06,
+              "word": " do",
+              "probability": 0.9774791598320007
+            },
+            {
+              "start": 1.06,
+              "end": 1.2,
+              "word": " git",
+              "probability": 0.2987572252750397
+            },
+            {
+              "start": 1.2,
+              "end": 1.58,
+              "word": " status,",
+              "probability": 0.9807477593421936
+            },
+            {
+              "start": 1.84,
+              "end": 1.96,
+              "word": " which",
+              "probability": 0.9343332052230835
+            },
+            {
+              "start": 1.96,
+              "end": 2.04,
+              "word": " is",
+              "probability": 0.9792997241020203
+            },
+            {
+              "start": 2.04,
+              "end": 2.14,
+              "word": " always",
+              "probability": 0.957322895526886
+            },
+            {
+              "start": 2.14,
+              "end": 2.3,
+              "word": " a",
+              "probability": 0.9775740504264832
+            },
+            {
+              "start": 2.3,
+              "end": 2.36,
+              "word": " good",
+              "probability": 0.9964290261268616
+            },
+            {
+              "start": 2.36,
+              "end": 2.52,
+              "word": " thing",
+              "probability": 0.9805445671081543
+            },
+            {
+              "start": 2.52,
+              "end": 2.64,
+              "word": " to",
+              "probability": 0.9844114184379578
+            },
+            {
+              "start": 2.64,
+              "end": 2.8,
+              "word": " do.",
+              "probability": 0.9974775910377502
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 3.34,
+          "end": 7.12,
+          "text": " Like between every command that you execute,",
+          "tokens": [
+            50506,
+            1743,
+            1296,
+            633,
+            5622,
+            300,
+            291,
+            14483,
+            11,
+            50720
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 3.34,
+              "end": 3.42,
+              "word": " Like",
+              "probability": 0.3045101463794708
+            },
+            {
+              "start": 3.42,
+              "end": 3.78,
+              "word": " between",
+              "probability": 0.7790558934211731
+            },
+            {
+              "start": 3.78,
+              "end": 4.1,
+              "word": " every",
+              "probability": 0.9781614542007446
+            },
+            {
+              "start": 4.1,
+              "end": 4.46,
+              "word": " command",
+              "probability": 0.9821841716766357
+            },
+            {
+              "start": 4.46,
+              "end": 5.4,
+              "word": " that",
+              "probability": 0.8539383411407471
+            },
+            {
+              "start": 5.4,
+              "end": 6.48,
+              "word": " you",
+              "probability": 0.8724383115768433
+            },
+            {
+              "start": 6.48,
+              "end": 7.12,
+              "word": " execute,",
+              "probability": 0.9865462779998779
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 7.36,
+          "end": 10.16,
+          "text": " that you ask get to do before you should do a status",
+          "tokens": [
+            50720,
+            300,
+            291,
+            1029,
+            483,
+            281,
+            360,
+            949,
+            291,
+            820,
+            360,
+            257,
+            6558,
+            50856
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 7.36,
+              "end": 7.62,
+              "word": " that",
+              "probability": 0.9074038863182068
+            },
+            {
+              "start": 7.62,
+              "end": 7.74,
+              "word": " you",
+              "probability": 0.9888491630554199
+            },
+            {
+              "start": 7.74,
+              "end": 8.04,
+              "word": " ask",
+              "probability": 0.9429594874382019
+            },
+            {
+              "start": 8.04,
+              "end": 8.74,
+              "word": " get",
+              "probability": 0.4494529068470001
+            },
+            {
+              "start": 8.74,
+              "end": 8.9,
+              "word": " to",
+              "probability": 0.9369950294494629
+            },
+            {
+              "start": 8.9,
+              "end": 9.06,
+              "word": " do",
+              "probability": 0.9916394352912903
+            },
+            {
+              "start": 9.06,
+              "end": 9.4,
+              "word": " before",
+              "probability": 0.6423540711402893
+            },
+            {
+              "start": 9.4,
+              "end": 9.64,
+              "word": " you",
+              "probability": 0.9913071990013123
+            },
+            {
+              "start": 9.64,
+              "end": 9.76,
+              "word": " should",
+              "probability": 0.917765200138092
+            },
+            {
+              "start": 9.76,
+              "end": 9.84,
+              "word": " do",
+              "probability": 0.931225597858429
+            },
+            {
+              "start": 9.84,
+              "end": 9.9,
+              "word": " a",
+              "probability": 0.7459760904312134
+            },
+            {
+              "start": 9.9,
+              "end": 10.16,
+              "word": " status",
+              "probability": 0.9852209687232971
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "start": 10.16,
+          "end": 11.26,
+          "text": " and after you should do a status,",
+          "tokens": [
+            50856,
+            293,
+            934,
+            291,
+            820,
+            360,
+            257,
+            6558,
+            11,
+            50922
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 10.16,
+              "end": 10.3,
+              "word": " and",
+              "probability": 0.680935263633728
+            },
+            {
+              "start": 10.3,
+              "end": 10.56,
+              "word": " after",
+              "probability": 0.9846484661102295
+            },
+            {
+              "start": 10.56,
+              "end": 10.68,
+              "word": " you",
+              "probability": 0.9870641231536865
+            },
+            {
+              "start": 10.68,
+              "end": 10.8,
+              "word": " should",
+              "probability": 0.9829151630401611
+            },
+            {
+              "start": 10.8,
+              "end": 10.88,
+              "word": " do",
+              "probability": 0.9711270332336426
+            },
+            {
+              "start": 10.88,
+              "end": 10.94,
+              "word": " a",
+              "probability": 0.9761202931404114
+            },
+            {
+              "start": 10.94,
+              "end": 11.26,
+              "word": " status,",
+              "probability": 0.9925091862678528
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 5,
+          "seek": 0,
+          "start": 11.52,
+          "end": 13.74,
+          "text": " which means that since I wanted to execute status",
+          "tokens": [
+            50922,
+            597,
+            1355,
+            300,
+            1670,
+            286,
+            1415,
+            281,
+            14483,
+            6558,
+            51052
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 11.52,
+              "end": 11.74,
+              "word": " which",
+              "probability": 0.9888836741447449
+            },
+            {
+              "start": 11.74,
+              "end": 11.92,
+              "word": " means",
+              "probability": 0.9941569566726685
+            },
+            {
+              "start": 11.92,
+              "end": 12.12,
+              "word": " that",
+              "probability": 0.9541121125221252
+            },
+            {
+              "start": 12.12,
+              "end": 12.26,
+              "word": " since",
+              "probability": 0.9754396080970764
+            },
+            {
+              "start": 12.26,
+              "end": 12.42,
+              "word": " I",
+              "probability": 0.9885442852973938
+            },
+            {
+              "start": 12.42,
+              "end": 12.82,
+              "word": " wanted",
+              "probability": 0.9157752990722656
+            },
+            {
+              "start": 12.82,
+              "end": 12.98,
+              "word": " to",
+              "probability": 0.9708635807037354
+            },
+            {
+              "start": 12.98,
+              "end": 13.32,
+              "word": " execute",
+              "probability": 0.9978431463241577
+            },
+            {
+              "start": 13.32,
+              "end": 13.74,
+              "word": " status",
+              "probability": 0.9781842827796936
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 6,
+          "seek": 0,
+          "start": 13.74,
+          "end": 16.6,
+          "text": " to show you, I should have done git status three times.",
+          "tokens": [
+            51052,
+            281,
+            855,
+            291,
+            11,
+            286,
+            820,
+            362,
+            1096,
+            18331,
+            6558,
+            1045,
+            1413,
+            13,
+            51208
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 13.74,
+              "end": 14.26,
+              "word": " to",
+              "probability": 0.8720362782478333
+            },
+            {
+              "start": 14.26,
+              "end": 14.52,
+              "word": " show",
+              "probability": 0.9959281086921692
+            },
+            {
+              "start": 14.52,
+              "end": 14.74,
+              "word": " you,",
+              "probability": 0.9858669638633728
+            },
+            {
+              "start": 14.94,
+              "end": 15.12,
+              "word": " I",
+              "probability": 0.9885513186454773
+            },
+            {
+              "start": 15.12,
+              "end": 15.26,
+              "word": " should",
+              "probability": 0.9902291893959045
+            },
+            {
+              "start": 15.26,
+              "end": 15.36,
+              "word": " have",
+              "probability": 0.7219875454902649
+            },
+            {
+              "start": 15.36,
+              "end": 15.48,
+              "word": " done",
+              "probability": 0.9686236381530762
+            },
+            {
+              "start": 15.48,
+              "end": 15.62,
+              "word": " git",
+              "probability": 0.9256193041801453
+            },
+            {
+              "start": 15.62,
+              "end": 15.9,
+              "word": " status",
+              "probability": 0.997268557548523
+            },
+            {
+              "start": 15.9,
+              "end": 16.2,
+              "word": " three",
+              "probability": 0.9352105855941772
+            },
+            {
+              "start": 16.2,
+              "end": 16.6,
+              "word": " times.",
+              "probability": 0.9989318251609802
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 7,
+          "seek": 0,
+          "start": 17.3,
+          "end": 18.8,
+          "text": " One for the, before the git status,",
+          "tokens": [
+            51208,
+            1485,
+            337,
+            264,
+            11,
+            949,
+            264,
+            18331,
+            6558,
+            11,
+            51288
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 17.3,
+              "end": 17.44,
+              "word": " One",
+              "probability": 0.2778078317642212
+            },
+            {
+              "start": 17.44,
+              "end": 17.6,
+              "word": " for",
+              "probability": 0.8953768014907837
+            },
+            {
+              "start": 17.6,
+              "end": 17.76,
+              "word": " the,",
+              "probability": 0.9622554183006287
+            },
+            {
+              "start": 17.8,
+              "end": 18.16,
+              "word": " before",
+              "probability": 0.9746726751327515
+            },
+            {
+              "start": 18.16,
+              "end": 18.32,
+              "word": " the",
+              "probability": 0.7120734453201294
+            },
+            {
+              "start": 18.32,
+              "end": 18.44,
+              "word": " git",
+              "probability": 0.956261932849884
+            },
+            {
+              "start": 18.44,
+              "end": 18.8,
+              "word": " status,",
+              "probability": 0.9968288540840149
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 8,
+          "seek": 0,
+          "start": 18.96,
+          "end": 20.9,
+          "text": " one to execute the git status and one after",
+          "tokens": [
+            51288,
+            472,
+            281,
+            14483,
+            264,
+            18331,
+            6558,
+            293,
+            472,
+            934,
+            51416
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 18.96,
+              "end": 19.04,
+              "word": " one",
+              "probability": 0.8483545780181885
+            },
+            {
+              "start": 19.04,
+              "end": 19.18,
+              "word": " to",
+              "probability": 0.6266645789146423
+            },
+            {
+              "start": 19.18,
+              "end": 19.38,
+              "word": " execute",
+              "probability": 0.9442812204360962
+            },
+            {
+              "start": 19.38,
+              "end": 19.5,
+              "word": " the",
+              "probability": 0.7388429045677185
+            },
+            {
+              "start": 19.5,
+              "end": 19.62,
+              "word": " git",
+              "probability": 0.9735059142112732
+            },
+            {
+              "start": 19.62,
+              "end": 19.94,
+              "word": " status",
+              "probability": 0.9986973404884338
+            },
+            {
+              "start": 19.94,
+              "end": 20.36,
+              "word": " and",
+              "probability": 0.4626427888870239
+            },
+            {
+              "start": 20.36,
+              "end": 20.5,
+              "word": " one",
+              "probability": 0.9884827733039856
+            },
+            {
+              "start": 20.5,
+              "end": 20.9,
+              "word": " after",
+              "probability": 0.986386775970459
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 9,
+          "seek": 0,
+          "start": 21.4,
+          "end": 23.54,
+          "text": " just so that you like get a really good feeling",
+          "tokens": [
+            51416,
+            445,
+            370,
+            300,
+            291,
+            411,
+            483,
+            257,
+            534,
+            665,
+            2633,
+            51531
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 21.4,
+              "end": 21.58,
+              "word": " just",
+              "probability": 0.29915910959243774
+            },
+            {
+              "start": 21.58,
+              "end": 21.72,
+              "word": " so",
+              "probability": 0.9926725029945374
+            },
+            {
+              "start": 21.72,
+              "end": 21.84,
+              "word": " that",
+              "probability": 0.8852548003196716
+            },
+            {
+              "start": 21.84,
+              "end": 21.98,
+              "word": " you",
+              "probability": 0.9875868558883667
+            },
+            {
+              "start": 21.98,
+              "end": 22.14,
+              "word": " like",
+              "probability": 0.44907376170158386
+            },
+            {
+              "start": 22.14,
+              "end": 22.6,
+              "word": " get",
+              "probability": 0.8664044141769409
+            },
+            {
+              "start": 22.6,
+              "end": 22.7,
+              "word": " a",
+              "probability": 0.979178786277771
+            },
+            {
+              "start": 22.7,
+              "end": 23.04,
+              "word": " really",
+              "probability": 0.9962338805198669
+            },
+            {
+              "start": 23.04,
+              "end": 23.22,
+              "word": " good",
+              "probability": 0.9972500205039978
+            },
+            {
+              "start": 23.22,
+              "end": 23.54,
+              "word": " feeling",
+              "probability": 0.9956549406051636
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 10,
+          "seek": 0,
+          "start": 23.54,
+          "end": 24.72,
+          "text": " for what the status is.",
+          "tokens": [
+            51531,
+            337,
+            437,
+            264,
+            6558,
+            307,
+            13,
+            51592
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 23.54,
+              "end": 23.86,
+              "word": " for",
+              "probability": 0.9901407361030579
+            },
+            {
+              "start": 23.86,
+              "end": 24.0,
+              "word": " what",
+              "probability": 0.9928749799728394
+            },
+            {
+              "start": 24.0,
+              "end": 24.12,
+              "word": " the",
+              "probability": 0.9963191747665405
+            },
+            {
+              "start": 24.12,
+              "end": 24.42,
+              "word": " status",
+              "probability": 0.9972934126853943
+            },
+            {
+              "start": 24.42,
+              "end": 24.72,
+              "word": " is.",
+              "probability": 0.9782065153121948
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 11,
+          "seek": 0,
+          "start": 26.04,
+          "end": 28.02,
+          "text": " And you should actually read it a bunch of times.",
+          "tokens": [
+            51658,
+            400,
+            291,
+            820,
+            767,
+            1401,
+            309,
+            257,
+            3840,
+            295,
+            1413,
+            13,
+            51750
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 26.04,
+              "end": 26.4,
+              "word": " And",
+              "probability": 0.8879179358482361
+            },
+            {
+              "start": 26.4,
+              "end": 26.48,
+              "word": " you",
+              "probability": 0.989946186542511
+            },
+            {
+              "start": 26.48,
+              "end": 26.6,
+              "word": " should",
+              "probability": 0.9981448650360107
+            },
+            {
+              "start": 26.6,
+              "end": 26.9,
+              "word": " actually",
+              "probability": 0.99472576379776
+            },
+            {
+              "start": 26.9,
+              "end": 27.12,
+              "word": " read",
+              "probability": 0.9962177872657776
+            },
+            {
+              "start": 27.12,
+              "end": 27.3,
+              "word": " it",
+              "probability": 0.991860568523407
+            },
+            {
+              "start": 27.3,
+              "end": 27.52,
+              "word": " a",
+              "probability": 0.9798009395599365
+            },
+            {
+              "start": 27.52,
+              "end": 27.62,
+              "word": " bunch",
+              "probability": 0.9852414727210999
+            },
+            {
+              "start": 27.62,
+              "end": 27.76,
+              "word": " of",
+              "probability": 0.9919473528862
+            },
+            {
+              "start": 27.76,
+              "end": 28.02,
+              "word": " times.",
+              "probability": 0.9989553689956665
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 12,
+          "seek": 0,
+          "start": 28.2,
+          "end": 29.52,
+          "text": " So git status, that's the command I type.",
+          "tokens": [
+            51750,
+            407,
+            18331,
+            6558,
+            11,
+            300,
+            311,
+            264,
+            5622,
+            286,
+            2010,
+            13,
+            51844
+          ],
+          "avg_logprob": -0.19299242022086163,
+          "compression_ratio": 2.003731343283582,
+          "no_speech_prob": 0.09023291617631912,
+          "words": [
+            {
+              "start": 28.2,
+              "end": 28.28,
+              "word": " So",
+              "probability": 0.9946910738945007
+            },
+            {
+              "start": 28.28,
+              "end": 28.4,
+              "word": " git",
+              "probability": 0.8718868494033813
+            },
+            {
+              "start": 28.4,
+              "end": 28.74,
+              "word": " status,",
+              "probability": 0.9909653663635254
+            },
+            {
+              "start": 28.84,
+              "end": 28.96,
+              "word": " that's",
+              "probability": 0.9832749366760254
+            },
+            {
+              "start": 28.96,
+              "end": 29.0,
+              "word": " the",
+              "probability": 0.7327827215194702
+            },
+            {
+              "start": 29.0,
+              "end": 29.18,
+              "word": " command",
+              "probability": 0.9977660179138184
+            },
+            {
+              "start": 29.18,
+              "end": 29.32,
+              "word": " I",
+              "probability": 0.7441715598106384
+            },
+            {
+              "start": 29.32,
+              "end": 29.52,
+              "word": " type.",
+              "probability": 0.7442640066146851
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 13,
+          "seek": 2906,
+          "start": 29.52,
+          "end": 30.8,
+          "text": " On branch master.",
+          "tokens": [
+            50388,
+            1282,
+            9819,
+            4505,
+            13,
+            50438
+          ],
+          "avg_logprob": -0.6836411782673427,
+          "compression_ratio": 0.68,
+          "no_speech_prob": 0.12011086940765381,
+          "words": [
+            {
+              "start": 29.52,
+              "end": 30.14,
+              "word": " On",
+              "probability": 0.03038165159523487
+            },
+            {
+              "start": 30.14,
+              "end": 30.4,
+              "word": " branch",
+              "probability": 0.0846037045121193
+            },
+            {
+              "start": 30.4,
+              "end": 30.8,
+              "word": " master.",
+              "probability": 0.794408917427063
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "load_seconds": 0.4353472000002512,
+      "seconds": 1.8585886000000755,
+      "duration": 31.0,
+      "duration_after_vad": 30.536
+    },
+    {
+      "fixture": "cs50-mkdir-pset2",
+      "worker_wall_seconds": 1.487400099998922,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.0,
+          "end": 8.4,
+          "text": " do, but I also do it at the command line pretty quickly by typing mkdir, space, pset2.",
+          "tokens": [
+            50364,
+            360,
+            11,
+            457,
+            286,
+            611,
+            360,
+            309,
+            412,
+            264,
+            5622,
+            1622,
+            1238,
+            2661,
+            538,
+            18444,
+            275,
+            74,
+            35043,
+            11,
+            1901,
+            11,
+            280,
+            3854,
+            17,
+            13,
+            50828
+          ],
+          "avg_logprob": -0.4032732990052965,
+          "compression_ratio": 1.2820512820512822,
+          "no_speech_prob": 0.15746602416038513,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.08,
+              "word": " do,",
+              "probability": 0.12081489711999893
+            },
+            {
+              "start": 0.34,
+              "end": 0.54,
+              "word": " but",
+              "probability": 0.9753255248069763
+            },
+            {
+              "start": 0.54,
+              "end": 0.66,
+              "word": " I",
+              "probability": 0.9197499752044678
+            },
+            {
+              "start": 0.66,
+              "end": 0.86,
+              "word": " also",
+              "probability": 0.8090458512306213
+            },
+            {
+              "start": 0.86,
+              "end": 0.98,
+              "word": " do",
+              "probability": 0.9838136434555054
+            },
+            {
+              "start": 0.98,
+              "end": 1.06,
+              "word": " it",
+              "probability": 0.981788158416748
+            },
+            {
+              "start": 1.06,
+              "end": 1.12,
+              "word": " at",
+              "probability": 0.9518215656280518
+            },
+            {
+              "start": 1.12,
+              "end": 1.2,
+              "word": " the",
+              "probability": 0.9904738068580627
+            },
+            {
+              "start": 1.2,
+              "end": 1.38,
+              "word": " command",
+              "probability": 0.9946394562721252
+            },
+            {
+              "start": 1.38,
+              "end": 1.5,
+              "word": " line",
+              "probability": 0.9780417084693909
+            },
+            {
+              "start": 1.5,
+              "end": 1.7,
+              "word": " pretty",
+              "probability": 0.9325808882713318
+            },
+            {
+              "start": 1.7,
+              "end": 2.06,
+              "word": " quickly",
+              "probability": 0.9945841431617737
+            },
+            {
+              "start": 2.06,
+              "end": 2.24,
+              "word": " by",
+              "probability": 0.9507470726966858
+            },
+            {
+              "start": 2.24,
+              "end": 2.48,
+              "word": " typing",
+              "probability": 0.9955723285675049
+            },
+            {
+              "start": 2.48,
+              "end": 3.28,
+              "word": " mkdir,",
+              "probability": 0.4703163107236226
+            },
+            {
+              "start": 3.68,
+              "end": 4.58,
+              "word": " space,",
+              "probability": 0.9020634293556213
+            },
+            {
+              "start": 5.08,
+              "end": 8.4,
+              "word": " pset2.",
+              "probability": 0.5725167542695999
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 8.98,
+          "end": 11.98,
+          "text": " If I hit enter, and then I list the contents of my directory...",
+          "tokens": [
+            50828,
+            759,
+            286,
+            2045,
+            3242,
+            11,
+            293,
+            550,
+            286,
+            1329,
+            264,
+            15768,
+            295,
+            452,
+            21120,
+            485,
+            50964
+          ],
+          "avg_logprob": -0.4032732990052965,
+          "compression_ratio": 1.2820512820512822,
+          "no_speech_prob": 0.15746602416038513,
+          "words": [
+            {
+              "start": 8.98,
+              "end": 9.34,
+              "word": " If",
+              "probability": 0.9578503370285034
+            },
+            {
+              "start": 9.34,
+              "end": 9.4,
+              "word": " I",
+              "probability": 0.9805185794830322
+            },
+            {
+              "start": 9.4,
+              "end": 9.56,
+              "word": " hit",
+              "probability": 0.9963292479515076
+            },
+            {
+              "start": 9.56,
+              "end": 9.92,
+              "word": " enter,",
+              "probability": 0.7076424956321716
+            },
+            {
+              "start": 10.26,
+              "end": 10.44,
+              "word": " and",
+              "probability": 0.9171749949455261
+            },
+            {
+              "start": 10.44,
+              "end": 10.52,
+              "word": " then",
+              "probability": 0.84858238697052
+            },
+            {
+              "start": 10.52,
+              "end": 10.62,
+              "word": " I",
+              "probability": 0.9362221956253052
+            },
+            {
+              "start": 10.62,
+              "end": 10.74,
+              "word": " list",
+              "probability": 0.9797892570495605
+            },
+            {
+              "start": 10.74,
+              "end": 10.9,
+              "word": " the",
+              "probability": 0.9865778684616089
+            },
+            {
+              "start": 10.9,
+              "end": 11.16,
+              "word": " contents",
+              "probability": 0.9738732576370239
+            },
+            {
+              "start": 11.16,
+              "end": 11.34,
+              "word": " of",
+              "probability": 0.9928350448608398
+            },
+            {
+              "start": 11.34,
+              "end": 11.44,
+              "word": " my",
+              "probability": 0.9922505021095276
+            },
+            {
+              "start": 11.44,
+              "end": 11.98,
+              "word": " directory...",
+              "probability": 0.5602501630783081
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "load_seconds": 0.296943100001954,
+      "seconds": 0.5999272999979439,
+      "duration": 12.0,
+      "duration_after_vad": 12.0
+    },
+    {
+      "fixture": "cs50-cp-two",
+      "worker_wall_seconds": 1.8263643000027514,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.0,
+          "end": 4.76,
+          "text": " we've seen before, takes two arguments, a source, the name of the file that you",
+          "tokens": [
+            50364,
+            321,
+            600,
+            1612,
+            949,
+            11,
+            2516,
+            732,
+            12869,
+            11,
+            257,
+            4009,
+            11,
+            264,
+            1315,
+            295,
+            264,
+            3991,
+            300,
+            291,
+            50602
+          ],
+          "avg_logprob": -0.2538913061672991,
+          "compression_ratio": 1.407079646017699,
+          "no_speech_prob": 0.09218630939722061,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.26,
+              "word": " we've",
+              "probability": 0.5509322211146355
+            },
+            {
+              "start": 0.26,
+              "end": 0.36,
+              "word": " seen",
+              "probability": 0.9884092807769775
+            },
+            {
+              "start": 0.36,
+              "end": 0.72,
+              "word": " before,",
+              "probability": 0.997147262096405
+            },
+            {
+              "start": 1.14,
+              "end": 1.32,
+              "word": " takes",
+              "probability": 0.8823428153991699
+            },
+            {
+              "start": 1.32,
+              "end": 1.9,
+              "word": " two",
+              "probability": 0.977380633354187
+            },
+            {
+              "start": 1.9,
+              "end": 2.5,
+              "word": " arguments,",
+              "probability": 0.9972585439682007
+            },
+            {
+              "start": 2.86,
+              "end": 2.94,
+              "word": " a",
+              "probability": 0.9917578101158142
+            },
+            {
+              "start": 2.94,
+              "end": 3.38,
+              "word": " source,",
+              "probability": 0.9723090529441833
+            },
+            {
+              "start": 3.82,
+              "end": 3.98,
+              "word": " the",
+              "probability": 0.9935803413391113
+            },
+            {
+              "start": 3.98,
+              "end": 4.08,
+              "word": " name",
+              "probability": 0.9967279434204102
+            },
+            {
+              "start": 4.08,
+              "end": 4.2,
+              "word": " of",
+              "probability": 0.9970495700836182
+            },
+            {
+              "start": 4.2,
+              "end": 4.3,
+              "word": " the",
+              "probability": 0.9922791719436646
+            },
+            {
+              "start": 4.3,
+              "end": 4.52,
+              "word": " file",
+              "probability": 0.9982075691223145
+            },
+            {
+              "start": 4.52,
+              "end": 4.68,
+              "word": " that",
+              "probability": 0.9358474612236023
+            },
+            {
+              "start": 4.68,
+              "end": 4.76,
+              "word": " you",
+              "probability": 0.9976736903190613
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 4.76,
+          "end": 10.42,
+          "text": " want to copy, and a destination where you want to copy the file to. It's pretty",
+          "tokens": [
+            50602,
+            528,
+            281,
+            5055,
+            11,
+            293,
+            257,
+            12236,
+            689,
+            291,
+            528,
+            281,
+            5055,
+            264,
+            3991,
+            281,
+            13,
+            467,
+            311,
+            1238,
+            50886
+          ],
+          "avg_logprob": -0.2538913061672991,
+          "compression_ratio": 1.407079646017699,
+          "no_speech_prob": 0.09218630939722061,
+          "words": [
+            {
+              "start": 4.76,
+              "end": 4.98,
+              "word": " want",
+              "probability": 0.9981999397277832
+            },
+            {
+              "start": 4.98,
+              "end": 5.14,
+              "word": " to",
+              "probability": 0.9922663569450378
+            },
+            {
+              "start": 5.14,
+              "end": 5.44,
+              "word": " copy,",
+              "probability": 0.998446524143219
+            },
+            {
+              "start": 5.82,
+              "end": 6.06,
+              "word": " and",
+              "probability": 0.9874604940414429
+            },
+            {
+              "start": 6.06,
+              "end": 6.16,
+              "word": " a",
+              "probability": 0.8852769136428833
+            },
+            {
+              "start": 6.16,
+              "end": 6.62,
+              "word": " destination",
+              "probability": 0.9983914494514465
+            },
+            {
+              "start": 6.62,
+              "end": 6.98,
+              "word": " where",
+              "probability": 0.8767394423484802
+            },
+            {
+              "start": 6.98,
+              "end": 7.16,
+              "word": " you",
+              "probability": 0.998764157295227
+            },
+            {
+              "start": 7.16,
+              "end": 7.3,
+              "word": " want",
+              "probability": 0.949699878692627
+            },
+            {
+              "start": 7.3,
+              "end": 7.4,
+              "word": " to",
+              "probability": 0.9710977077484131
+            },
+            {
+              "start": 7.4,
+              "end": 7.7,
+              "word": " copy",
+              "probability": 0.9986808896064758
+            },
+            {
+              "start": 7.7,
+              "end": 7.84,
+              "word": " the",
+              "probability": 0.9969755411148071
+            },
+            {
+              "start": 7.84,
+              "end": 8.2,
+              "word": " file",
+              "probability": 0.9936275482177734
+            },
+            {
+              "start": 8.2,
+              "end": 8.72,
+              "word": " to.",
+              "probability": 0.5689393281936646
+            },
+            {
+              "start": 9.62,
+              "end": 10.12,
+              "word": " It's",
+              "probability": 0.9896494150161743
+            },
+            {
+              "start": 10.12,
+              "end": 10.42,
+              "word": " pretty",
+              "probability": 0.9927086234092712
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 1042,
+          "start": 10.42,
+          "end": 11.98,
+          "text": " easy to copy a file, so...",
+          "tokens": [
+            50364,
+            1858,
+            281,
+            5055,
+            257,
+            3991,
+            11,
+            370,
+            485,
+            50444
+          ],
+          "avg_logprob": -0.47180739316073333,
+          "compression_ratio": 0.7647058823529411,
+          "no_speech_prob": 0.10347089916467667,
+          "words": [
+            {
+              "start": 10.42,
+              "end": 10.7,
+              "word": " easy",
+              "probability": 0.22285452485084534
+            },
+            {
+              "start": 10.7,
+              "end": 10.84,
+              "word": " to",
+              "probability": 0.9894075989723206
+            },
+            {
+              "start": 10.84,
+              "end": 11.1,
+              "word": " copy",
+              "probability": 0.9959339499473572
+            },
+            {
+              "start": 11.1,
+              "end": 11.24,
+              "word": " a",
+              "probability": 0.9595766067504883
+            },
+            {
+              "start": 11.24,
+              "end": 11.48,
+              "word": " file,",
+              "probability": 0.9976056814193726
+            },
+            {
+              "start": 11.66,
+              "end": 11.98,
+              "word": " so...",
+              "probability": 0.7252061516046524
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "load_seconds": 0.2973627999963355,
+      "seconds": 0.9419697999983327,
+      "duration": 12.0,
+      "duration_after_vad": 12.0
+    }
+  ]
+}

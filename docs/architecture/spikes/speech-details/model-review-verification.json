@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "independent_edit_distance_checks": 18,
+  "audio_hashes": 3,
+  "reference_freeze": "a18749f",
+  "original_model_reference_unchanged": true,
+  "human_verified": false,
+  "claim": "provenance and arithmetic verified, not spoken correctness"
+}

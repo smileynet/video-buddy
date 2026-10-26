@@ -1,0 +1,430 @@
+{
+  "label": "Conditional agreement with locked machine reference; not human-verified accuracy",
+  "human_verified": false,
+  "reference_sha256": "6cb1b654f96f6ac6ebb7f427f2a46e84eb35f94e5886cb543fb7b872265d23ff",
+  "candidates": [
+    {
+      "option": "base",
+      "reference_type": "model_reviewed_provisional",
+      "human_verified": false,
+      "reference_words": 180,
+      "word_edit_distance": 19,
+      "conditional_wer": 0.10555555555555556,
+      "conditional_cer": 0.05263157894736842,
+      "inference_seconds": 3.400485699996352,
+      "worker_wall_seconds": 8.385450499998115,
+      "model_load_seconds": 1.0296530999985407,
+      "peak_sampled_root_children_rss": 435077120,
+      "records": [
+        {
+          "clip": "mit-status-three",
+          "text": " So I do git status, which is always a good thing to do.  Like between every command that you execute,  that you ask get to do before you should do a status  and after you should do a status,  which means that since I wanted to execute status  to show you, I should have done git status three times.  One for the, before the git status,  one to execute the git status and one after  just so that you like get a really good feeling  for what the status is.  And you should actually read it a bunch of times.  So git status, that's the command I type.  On branch master.",
+          "reference_words": 109,
+          "hypothesis_words": 111,
+          "word_edit_distance": 9,
+          "reference_chars": 420,
+          "character_edit_distance": 15,
+          "targets": [
+            {
+              "target": "git_status",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "three_times",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": true,
+              "human_verified": false,
+              "candidate_word_start": 15.9,
+              "reviewer_token_start": 16.139999389648438,
+              "start_difference_seconds": -0.23999938964843714,
+              "timing_label": "model-to-model start disagreement, not word-boundary error"
+            }
+          ],
+          "self_correction_marker": false,
+          "source_and_destination_markers": false,
+          "inference_seconds": 1.8585886000000755,
+          "worker_wall_seconds": 5.071686099996441
+        },
+        {
+          "clip": "cs50-mkdir-pset2",
+          "text": " do, but I also do it at the command line pretty quickly by typing mkdir, space, pset2.  If I hit enter, and then I list the contents of my directory...",
+          "reference_words": 35,
+          "hypothesis_words": 30,
+          "word_edit_distance": 9,
+          "reference_chars": 125,
+          "character_edit_distance": 19,
+          "targets": [
+            {
+              "target": "mkdir",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "pset2",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            }
+          ],
+          "self_correction_marker": false,
+          "source_and_destination_markers": false,
+          "inference_seconds": 0.5999272999979439,
+          "worker_wall_seconds": 1.487400099998922
+        },
+        {
+          "clip": "cs50-cp-two",
+          "text": " we've seen before, takes two arguments, a source, the name of the file that you  want to copy, and a destination where you want to copy the file to. It's pretty  easy to copy a file, so...",
+          "reference_words": 36,
+          "hypothesis_words": 37,
+          "word_edit_distance": 1,
+          "reference_chars": 139,
+          "character_edit_distance": 2,
+          "targets": [
+            {
+              "target": "cp",
+              "literal_present": false,
+              "spoken_alias_present": false,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "two_arguments",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": true,
+              "human_verified": false,
+              "candidate_word_start": 1.32,
+              "reviewer_token_start": 1.559999942779541,
+              "start_difference_seconds": -0.23999994277954095,
+              "timing_label": "model-to-model start disagreement, not word-boundary error"
+            }
+          ],
+          "self_correction_marker": false,
+          "source_and_destination_markers": true,
+          "inference_seconds": 0.9419697999983327,
+          "worker_wall_seconds": 1.8263643000027514
+        }
+      ]
+    },
+    {
+      "option": "small",
+      "reference_type": "model_reviewed_provisional",
+      "human_verified": false,
+      "reference_words": 180,
+      "word_edit_distance": 14,
+      "conditional_wer": 0.07777777777777778,
+      "conditional_cer": 0.03508771929824561,
+      "inference_seconds": 7.834337799999048,
+      "worker_wall_seconds": 12.183906699989166,
+      "model_load_seconds": 2.5594968000077643,
+      "peak_sampled_root_children_rss": 698228736,
+      "records": [
+        {
+          "clip": "mit-status-three",
+          "text": " So I do git status, which is always a good thing to do.  Like between every command that you execute,  that you ask git to do before you should do a status  and after you should do a status,  which means that since I wanted to execute status  to show you, I should have done git status three times.  One for the, before the git status,  one to execute the git status, and one after.  Just so that you like get a really good feeling  for what the status is.  And you should actually read it a bunch of times.  So git status, that's the command I typed.  On Branch Master.",
+          "reference_words": 109,
+          "hypothesis_words": 111,
+          "word_edit_distance": 9,
+          "reference_chars": 420,
+          "character_edit_distance": 15,
+          "targets": [
+            {
+              "target": "git_status",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "three_times",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": true,
+              "human_verified": false,
+              "candidate_word_start": 15.96,
+              "reviewer_token_start": 16.139999389648438,
+              "start_difference_seconds": -0.17999938964843665,
+              "timing_label": "model-to-model start disagreement, not word-boundary error"
+            }
+          ],
+          "self_correction_marker": false,
+          "source_and_destination_markers": false,
+          "inference_seconds": 4.59416659999988,
+          "worker_wall_seconds": 6.0415767999948
+        },
+        {
+          "clip": "cs50-mkdir-pset2",
+          "text": " But I can also do it at the command line pretty quickly by typing mkdir space.  I typed in n, but space pset2.  If I hit Enter, and then I list the contents of my directory.",
+          "reference_words": 35,
+          "hypothesis_words": 36,
+          "word_edit_distance": 4,
+          "reference_chars": 125,
+          "character_edit_distance": 7,
+          "targets": [
+            {
+              "target": "mkdir",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "pset2",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            }
+          ],
+          "self_correction_marker": true,
+          "source_and_destination_markers": false,
+          "inference_seconds": 1.5636110999985249,
+          "worker_wall_seconds": 2.991611400000693
+        },
+        {
+          "clip": "cs50-cp-two",
+          "text": " we've seen before, takes two arguments.  A source, the name of the file that you want to copy, and a destination,  where you want to copy the file to.  It's pretty easy to copy a file, so.",
+          "reference_words": 36,
+          "hypothesis_words": 37,
+          "word_edit_distance": 1,
+          "reference_chars": 139,
+          "character_edit_distance": 2,
+          "targets": [
+            {
+              "target": "cp",
+              "literal_present": false,
+              "spoken_alias_present": false,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "two_arguments",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": true,
+              "human_verified": false,
+              "candidate_word_start": 1.36,
+              "reviewer_token_start": 1.559999942779541,
+              "start_difference_seconds": -0.19999994277954092,
+              "timing_label": "model-to-model start disagreement, not word-boundary error"
+            }
+          ],
+          "self_correction_marker": false,
+          "source_and_destination_markers": true,
+          "inference_seconds": 1.6765601000006427,
+          "worker_wall_seconds": 3.1507184999936726
+        }
+      ]
+    },
+    {
+      "option": "turbo",
+      "reference_type": "model_reviewed_provisional",
+      "human_verified": false,
+      "reference_words": 180,
+      "word_edit_distance": 19,
+      "conditional_wer": 0.10555555555555556,
+      "conditional_cer": 0.0804093567251462,
+      "inference_seconds": 17.434333499993954,
+      "worker_wall_seconds": 27.16887670000142,
+      "model_load_seconds": 7.836561900003289,
+      "peak_sampled_root_children_rss": 2048909312,
+      "records": [
+        {
+          "clip": "mit-status-three",
+          "text": " So I do git status, which is always a good thing to do.  Between every command that you ask git to do, before you  should do a status and after you should do a status.  Which means that since I wanted to execute status to  show you, I should have done git status three times.  Before the git status, one to execute the git status, and  one after, just so that you get a really good feeling for  what the status is.  And you should actually read it a bunch of times.  So git status, that's the command I typed.  On Branch Master.",
+          "reference_words": 109,
+          "hypothesis_words": 103,
+          "word_edit_distance": 13,
+          "reference_chars": 420,
+          "character_edit_distance": 34,
+          "targets": [
+            {
+              "target": "git_status",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "three_times",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": true,
+              "human_verified": false,
+              "candidate_word_start": 15.98,
+              "reviewer_token_start": 16.139999389648438,
+              "start_difference_seconds": -0.15999938964843707,
+              "timing_label": "model-to-model start disagreement, not word-boundary error"
+            }
+          ],
+          "self_correction_marker": false,
+          "source_and_destination_markers": false,
+          "inference_seconds": 8.617503199995554,
+          "worker_wall_seconds": 11.796798900002614
+        },
+        {
+          "clip": "cs50-mkdir-pset2",
+          "text": " But I can also do it at the command line pretty quickly  by typing mkdir, space, I typed an N, but space, pset2.  If I hit Enter, and then I list the contents of my directory again.",
+          "reference_words": 35,
+          "hypothesis_words": 37,
+          "word_edit_distance": 4,
+          "reference_chars": 125,
+          "character_edit_distance": 11,
+          "targets": [
+            {
+              "target": "mkdir",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "pset2",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            }
+          ],
+          "self_correction_marker": true,
+          "source_and_destination_markers": false,
+          "inference_seconds": 4.382847399996535,
+          "worker_wall_seconds": 7.602108999999473
+        },
+        {
+          "clip": "cs50-cp-two",
+          "text": " commands we've seen before takes two arguments, a source,  the name of the file that you want to copy,  and a destination, where you want to copy the file to.  It's pretty easy to copy a file.  So.",
+          "reference_words": 36,
+          "hypothesis_words": 38,
+          "word_edit_distance": 2,
+          "reference_chars": 139,
+          "character_edit_distance": 10,
+          "targets": [
+            {
+              "target": "cp",
+              "literal_present": false,
+              "spoken_alias_present": false,
+              "model_reference_alias_present": false,
+              "human_verified": false
+            },
+            {
+              "target": "two_arguments",
+              "literal_present": true,
+              "spoken_alias_present": true,
+              "model_reference_alias_present": true,
+              "human_verified": false,
+              "candidate_word_start": 1.38,
+              "reviewer_token_start": 1.559999942779541,
+              "start_difference_seconds": -0.17999994277954112,
+              "timing_label": "model-to-model start disagreement, not word-boundary error"
+            }
+          ],
+          "self_correction_marker": false,
+          "source_and_destination_markers": true,
+          "inference_seconds": 4.433982900001865,
+          "worker_wall_seconds": 7.769968799999333
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "clip": "mit-status-three",
+      "text": "So I did Git status, which\nis always a good thing to do. Between every command\nthat you execute, that you ask Git to do,\nbefore you should do a status, and after you\nshould do a status. Which means that since I wanted\nto execute status to show you, I should have done Git\nstatus three times. One before the Git\nstatus, one to execute the Git status, and one after. Just so that you get\na really good feeling for what the status is. And you should actually\nread it a bunch of times. So Git status, that's\nthe command I type. On branch master,\nmaster's a branch.",
+      "reference_type": "publisher/manual-classified caption, human verification unestablished",
+      "targets": [
+        {
+          "target": "git_status",
+          "literal_present": true,
+          "spoken_alias_present": true
+        },
+        {
+          "target": "three_times",
+          "literal_present": true,
+          "spoken_alias_present": true
+        }
+      ],
+      "edge_overhang": true,
+      "wer": null,
+      "wer_reason": "Whole cue overhang and shared publisher lineage; no forced word clipping to manufacture a full-transcript comparison."
+    },
+    {
+      "clip": "cs50-mkdir-pset2",
+      "text": "That would work too. But then I also do it at the\ncommand line pretty quickly, by typing mkdir, space-- I\ntyped in n, but-- space pset2. If I hit Enter and then I list the\ncontents of my directory again,",
+      "reference_type": "publisher/manual-classified caption, human verification unestablished",
+      "targets": [
+        {
+          "target": "mkdir",
+          "literal_present": true,
+          "spoken_alias_present": true
+        },
+        {
+          "target": "pset2",
+          "literal_present": true,
+          "spoken_alias_present": true
+        }
+      ],
+      "edge_overhang": true,
+      "wer": null,
+      "wer_reason": "Whole cue overhang and shared publisher lineage; no forced word clipping to manufacture a full-transcript comparison."
+    },
+    {
+      "clip": "cs50-cp-two",
+      "text": "Copy, unlike all the other\ncommands we've seen before, takes two arguments, a source, the\nname of the file that you want to copy, and a destination, where you\nwant to copy the file to. It's pretty easy to copy\na file, so let's do that.",
+      "reference_type": "publisher/manual-classified caption, human verification unestablished",
+      "targets": [
+        {
+          "target": "cp",
+          "literal_present": false,
+          "spoken_alias_present": false
+        },
+        {
+          "target": "two_arguments",
+          "literal_present": true,
+          "spoken_alias_present": true
+        }
+      ],
+      "edge_overhang": true,
+      "wer": null,
+      "wer_reason": "Whole cue overhang and shared publisher lineage; no forced word clipping to manufacture a full-transcript comparison."
+    }
+  ],
+  "reference_target_presence": [
+    {
+      "target": "git_status",
+      "model_reference_alias_present": false
+    },
+    {
+      "target": "three_times",
+      "model_reference_alias_present": true
+    },
+    {
+      "target": "mkdir",
+      "model_reference_alias_present": false
+    },
+    {
+      "target": "pset2",
+      "model_reference_alias_present": false
+    },
+    {
+      "target": "cp",
+      "model_reference_alias_present": false
+    },
+    {
+      "target": "two_arguments",
+      "model_reference_alias_present": true
+    }
+  ],
+  "limits": [
+    "Known code lexeme disagreements remain uncorrected in model reference.",
+    "cp expected target is at a clip edge and unconfirmed; do not treat absence as a scored audio error.",
+    "SenseVoice token start points are not human word intervals."
+  ]
+}
