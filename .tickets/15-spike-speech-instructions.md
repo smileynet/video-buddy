@@ -1,7 +1,7 @@
 ---
 id: "15"
 title: "Compare speech paths on implementation-critical details"
-status: in_progress
+status: done
 blocked_by: ["12"]
 spec: "apply-build"
 priority: medium
@@ -40,10 +40,10 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Acceptance criteria
 
-- [ ] A durable report identifies the deciding question, actual compared options and frozen fixtures.
-- [ ] Every evaluated option records environment, observations, costs and evidence locations.
-- [ ] The report states the verdict and distinguishes observed results from unresolved limitations.
-- [ ] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
+- [x] A durable report identifies the deciding question, actual compared options and frozen fixtures.
+- [x] Every evaluated option records environment, observations, costs and evidence locations.
+- [x] The report states the verdict and distinguishes observed results from unresolved limitations.
+- [x] Evidence supports the downstream user job; no integration or user-study success is claimed without observation.
 
 ## Execution record
 
@@ -84,3 +84,22 @@ New decision record: `docs/architecture/spikes/s4-reference-provenance.md`. Orig
 Prepared three new real tutorial excerpts (MIT status/three times; CS50 mkdir/pset2/self-correction; cp/two arguments),55seconds, fixed audio hashes, publisher-draft cues and an offline listening/export pack. No new predictions, WER or timing-accuracy claims. Three empty-folder restores and embedded-manifest hash checks passed. User clarification: designated empty tracks are music-only; exclude from spoken-reference scoring, keep as non-speech controls distinct from authored silence/tones.
 
 Still requires independent listening: no audio-listening tool is available in this session and no reviewed spoken/timestamp record has been supplied. Next concrete step is the review pack, then lock corrected references before inference. Keep in progress; do not repeat proxy model runs to paper over that missing input. New39 owns provenance preservation after review28. Raw evidence/review pack: `codex/spike-speech-details`, commit `18cae9f23631a136cfe2a54108ae29c238ab6461`; `docs/architecture/spikes/speech-details/reference-review.html`. Original11-input checks and3new restores passed; offline review format/partial/invalid-bound/music classification checks passed. Final staged artifact scope15files/1,513,284logicalGit-blob bytes, complete metadata/content and no findings; excludes earlier commits/history/ignored originals.
+
+## User-authorized audio-model continuation — final bounded disposition
+
+The latest user request explicitly authorizes model-reviewed references distinct from human-verified ones. This supersedes the previous listening-only gate for machine-reference comparisons; it does not certify human accuracy.
+
+`docs/architecture/spikes/s4-model-reviewed-results.md` records the executed SenseVoiceSmall int8 / sherpa-onnx1.13.6 audio-only review. Protocol/eligibility frozen e6a6de9; exact blind machine references frozen a18749f before candidate inference. All references preserve model-reviewed-provisional and human_verified:false; no publisher/candidate-driven spelling cleanup. Same three pinned Whisper candidates ran through worker CLIs on the same55seconds.
+
+All three candidate outputs contain the five declared canonical strings for Git, mkdir, pset2 and the two number phrases. SenseVoice has gi/mkd/pet2 spelling disagreements; cp is an unscored boundary/reference problem. Conditional edits versus180 machine-reference words: base19,small14,turbo19; this is agreement, not actual accuracy. Six numeric-start pairs differ0.16–0.24s; token points are not human word boundaries. Source<=30s guidance and the31s input are explicit; a separate post-hoc20/12s diagnostic did not replace frozen references. The original human pack remains unfilled.
+
+Disposition: bounded comparison complete, retain baseline, no new default/reference authority adopted. Model-assisted audio review is demonstrated; human-verified accuracy, representative numeric parameters, actual task outcomes and eligible CrisperWhisper remain unresolved, with deliberate follow-up40. Review28 consumes these limits;38/39 remain post-review implementation proposals. Final raw evidence: `codex/spike-speech-details`, `17ed579dcb741e00d23f41712ed75e771a7a3b1f`, speech-details README and model-review-comparison.json. Verification:18new independent score checks, model identity/3audio hashes and unchanged a18749f references;54prior score checks,14input restores,3unchanged historical score hashes;8transcription tests; pre-commit and offline dashboard/review-form checks passed. Result staging15files/238,598logicalGit-blob bytes inspected completely without findings, excluding earlier commits, weights/history/ignored originals.
+
+## Resolution (2026-10-26)
+
+Completed bounded speech comparison including blind SenseVoice audio review and frozen provisional references before candidate inference. Model-reviewed is explicitly not human-verified. Canonical code disagreements, conditional transcript agreement, token timing and boundary defects are recorded. Retain baseline; no winner/default/reference authority adopted. Human-verified qualification remains deliberately deferred40; recovery/provenance38/39 and integration review28 consume limits.
+
+### Verification
+1. ✓ A durable spike report records options, evidence and limitations — "s4-model-reviewed-results.md records options, frozen55second corpus and explicit machine/human limits; raw17ed579"
+2. ✓ Every evaluated option records its fixture, environment and observations — "Per-option versions, settings, outputs, costs and failures in report/raw;8transcription tests,18new score checks,14restores,pre-commit and dashboard checks passed"
+3. ✓ The report states an adopt, retain, reject or unresolved verdict — "Report disposition retains baseline, rejects model reference as authority, preserves unresolved human accuracy/Crisper/parameters;follow-up40;no default integration"
