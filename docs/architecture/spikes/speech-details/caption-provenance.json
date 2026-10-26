@@ -1,0 +1,23 @@
+{
+  "checked": "2026-10-25",
+  "source": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+  "extractor": "yt-dlp",
+  "version": "2026.10.21",
+  "manual_tracks": [],
+  "automatic_language_count": 157,
+  "selected_namespace": "automatic_captions",
+  "selected_language": "en",
+  "selected_name": "English",
+  "selected_format": "vtt",
+  "selected_kind": [
+    "asr"
+  ],
+  "selection_basis": "Current fetch_captions code prefers manual en/en-US/en-GB; none present, so automatic en VTT is selected. Explicit yt-dlp --write-auto-subs --sub-langs en --sub-format vtt downloaded verification track.",
+  "fetch_source_sha256": "52016b716bdc8fc255f0dc051ed406ddead0099c031b56edea0d8b55ceea2813",
+  "vtt_sha256": "544dfc6ae1ee1f00da788325612c5451a385677962d6205d99c6c2e2878dda67",
+  "parsed_cue_count": 1392,
+  "prior_scoped_cues_match": true,
+  "prior_frozen_reference_sha256": "278173386ca21a5270736fb83d024b71dc88ca13cefcd33e42549de30d926d43",
+  "provenance_disposition": "Verified current selected track is ASR, not independent human reference. Scoped match links current observation to prior evidence, without retroactively adding schema fields.",
+  "privacy": "Full metadata/signed caption URLs stay ignored; only nonsensitive provenance fields retained."
+}

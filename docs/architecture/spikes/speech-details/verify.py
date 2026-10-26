@@ -112,3 +112,44 @@ assert not subprocess.check_output(
 print(
     f"PASS: {checks} edit-distance checks, {len(restored)} restored inputs, raw/frozen reference hashes"
 )
+
+review_path = HERE / "review-manifest.json"
+if review_path.exists():
+    packet = json.loads(review_path.read_text())
+    restored_review = []
+    with tempfile.TemporaryDirectory(prefix="vb-speech-listening-") as target:
+        for clip in packet["clips"]:
+            with zipfile.ZipFile(HERE / f"review-inputs-{clip['id']}.zip") as archive:
+                path = Path(target) / Path(clip["audio"]).name
+                path.write_bytes(archive.read(path.name))
+                assert hashlib.sha256(path.read_bytes()).hexdigest() == clip["sha256"]
+                restored_review.append(clip["id"])
+    html = (HERE / "reference-review.html").read_text()
+    embedded = json.loads(
+        html.split('<script id="reference-data" type="application/json">')[1].split(
+            "</script>"
+        )[0]
+    )
+    assert (
+        embedded["manifest_sha256"]
+        == hashlib.sha256(review_path.read_bytes()).hexdigest()
+    )
+    assert embedded["clips"] == packet["clips"]
+    (HERE / "review-restore-check.json").write_text(
+        json.dumps(
+            {
+                "restored": restored_review,
+                "count": len(restored_review),
+                "total_seconds": sum(c["duration"] for c in packet["clips"]),
+                "manifest_sha256": embedded["manifest_sha256"],
+                "embedded_manifest_matches": True,
+                "human_review_completed": False,
+                "new_model_inference": False,
+            },
+            indent=2,
+        )
+        + "\n"
+    )
+    print(
+        "PASS:3 additional listening-pack restores and embedded manifest; human review remains unverified"
+    )

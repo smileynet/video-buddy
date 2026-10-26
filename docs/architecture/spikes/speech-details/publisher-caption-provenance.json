@@ -1,0 +1,37 @@
+[
+  {
+    "source": "mit",
+    "selected_namespace": "subtitles",
+    "language": "en",
+    "name": "English",
+    "kind_query": null,
+    "human_review_of_specific_file": "unverified; manual-caption classification alone is not a human-review record",
+    "youtube_vtt_sha256": "c05edd691447b6cfe8c7dd56d7774f9c49b7192bfe14dff94fb5b99d2f8a20d7",
+    "publisher_caption_sha256": "adc2c730654ed528cc4496c254f3afc72a9042b2916317e0b5b50c086b7bc5a5",
+    "youtube_cues": 959,
+    "publisher_cues": 959,
+    "entire_cue_objects_equal": true,
+    "normalized_full_text_equal": true,
+    "lineage_disposition": "Matching copies cannot be independent validation; human word boundary truth remains unknown. If different, differences alone do not prove independent creation."
+  },
+  {
+    "source": "cs50",
+    "selected_namespace": "subtitles",
+    "language": "en",
+    "name": "English",
+    "kind_query": null,
+    "human_review_of_specific_file": "unverified; manual-caption classification alone is not a human-review record",
+    "youtube_vtt_sha256": "e305b9ebd0f25e295ae95d1f37f9199f6e6698dc9fae69ac539b0c24f009524f",
+    "publisher_caption_sha256": "08bf78f2c02d3d5cdd9480f26355296770d81addc1cd7b2999b44d7b14108223",
+    "youtube_cues": 371,
+    "publisher_cues": 371,
+    "entire_cue_objects_equal": false,
+    "normalized_full_text_equal": false,
+    "lineage_disposition": "Matching copies cannot be independent validation; human word boundary truth remains unknown. If different, differences alone do not prove independent creation.",
+    "html_decoded_word_sequences_equal": true,
+    "html_decoded_word_counts": [
+      3694,
+      3694
+    ]
+  }
+]

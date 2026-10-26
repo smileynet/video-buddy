@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "created": "2026-10-25",
+  "purpose": "Human-listening reference preparation before any new model predictions; not a scored comparison",
+  "sources": {
+    "mit": {
+      "video": "https://www.youtube.com/watch?v=g2NoQCEgsCM",
+      "page": "https://ocw.mit.edu/courses/6-370-the-battlecode-programming-competition-january-iap-2013/resources/lecture-4-git-repository/",
+      "captions": "https://ocw.mit.edu/courses/6-370-the-battlecode-programming-competition-january-iap-2013/829d1c78b97055d9bc1377c2ad892521_g2NoQCEgsCM.vtt",
+      "provenance": "Official MIT publisher VTT; documented institutional human editing workflow, but specific-file review and human word timing unverified.",
+      "caption_sha256": "adc2c730654ed528cc4496c254f3afc72a9042b2916317e0b5b50c086b7bc5a5",
+      "youtube_manual_languages": [
+        "en"
+      ],
+      "youtube_automatic_languages": [
+        "en",
+        "en-orig"
+      ],
+      "audio_source_sha256": "300c09b97729d13bfd295f9322905777a96c25d3c4ec78509cbba704ee62fcb9"
+    },
+    "cs50": {
+      "video": "https://www.youtube.com/watch?v=BnJ013X02b8",
+      "page": "https://cs50.harvard.edu/x/shorts/command_line/",
+      "captions": "https://cdn.cs50.net/2017/fall/shorts/command_line/lang/en/command_line.srt",
+      "provenance": "Official CS50 2017 publisher SRT linked by current course page; human review of this file unverified.",
+      "caption_sha256": "08bf78f2c02d3d5cdd9480f26355296770d81addc1cd7b2999b44d7b14108223",
+      "youtube_manual_languages": [
+        "en"
+      ],
+      "youtube_automatic_languages": [
+        "en",
+        "en-orig"
+      ],
+      "audio_source_sha256": "a328907932cd23973f1315d213fafbfba0be301e791bbbb910d5cae8363b8abb"
+    }
+  },
+  "clips": [
+    {
+      "id": "mit-status-three",
+      "source_key": "mit",
+      "source_nominal_start": 1267,
+      "source_nominal_end": 1298,
+      "duration": 31,
+      "audio": ".scratch/speech-details/provenance/review/mit-status-three.wav",
+      "sha256": "a4a30735a4774c9e859023e034b15bf389c26c334db8d148eb72830e3f598ed2",
+      "publisher_draft_cues": [
+        {
+          "start": 1267.86,
+          "duration": 2.72,
+          "text": "So I did Git status, which\nis always a good thing to do."
+        },
+        {
+          "start": 1270.58,
+          "duration": 3.8,
+          "text": "Between every command\nthat you execute,"
+        },
+        {
+          "start": 1274.38,
+          "duration": 2.79,
+          "text": "that you ask Git to do,\nbefore you should do a status,"
+        },
+        {
+          "start": 1277.17,
+          "duration": 1.47,
+          "text": "and after you\nshould do a status."
+        },
+        {
+          "start": 1278.64,
+          "duration": 3.255,
+          "text": "Which means that since I wanted\nto execute status to show you,"
+        },
+        {
+          "start": 1281.895,
+          "duration": 2.425,
+          "text": "I should have done Git\nstatus three times."
+        },
+        {
+          "start": 1284.32,
+          "duration": 1.99,
+          "text": "One before the Git\nstatus, one to execute"
+        },
+        {
+          "start": 1286.31,
+          "duration": 2.21,
+          "text": "the Git status, and one after."
+        },
+        {
+          "start": 1288.52,
+          "duration": 2.31,
+          "text": "Just so that you get\na really good feeling"
+        },
+        {
+          "start": 1290.83,
+          "duration": 2.319,
+          "text": "for what the status is."
+        },
+        {
+          "start": 1293.149,
+          "duration": 2.041,
+          "text": "And you should actually\nread it a bunch of times."
+        },
+        {
+          "start": 1295.19,
+          "duration": 1.85,
+          "text": "So Git status, that's\nthe command I type."
+        },
+        {
+          "start": 1297.04,
+          "duration": 2.55,
+          "text": "On branch master,\nmaster's a branch."
+        }
+      ],
+      "critical_targets_for_listening": [
+        "git status",
+        "three times"
+      ],
+      "reference_status": "unreviewed publisher draft; no independent listening or model prediction yet",
+      "boundary_status": "publisher cue groups only; reviewer must mark acoustic target ranges relative to clip, with uncertainty; source offset is nominal container time",
+      "conversion_seconds": 1.6239248999991105
+    },
+    {
+      "id": "cs50-mkdir-pset2",
+      "source_key": "cs50",
+      "source_nominal_start": 506,
+      "source_nominal_end": 518,
+      "duration": 12,
+      "audio": ".scratch/speech-details/provenance/review/cs50-mkdir-pset2.wav",
+      "sha256": "8863efa26c4380b44e3515d9c782b5e550c6d6c1783475d3d9fd56c2a9d29ab7",
+      "publisher_draft_cues": [
+        {
+          "start": 505.34,
+          "duration": 0.9,
+          "text": "That would work too."
+        },
+        {
+          "start": 506.24,
+          "duration": 2.375,
+          "text": "But then I also do it at the\ncommand line pretty quickly,"
+        },
+        {
+          "start": 508.615,
+          "duration": 6.434,
+          "text": "by typing mkdir, space-- I\ntyped in n, but-- space pset2."
+        },
+        {
+          "start": 515.049,
+          "duration": 3.61,
+          "text": "If I hit Enter and then I list the\ncontents of my directory again,"
+        }
+      ],
+      "critical_targets_for_listening": [
+        "mkdir",
+        "pset2",
+        "spoken self-correction"
+      ],
+      "reference_status": "unreviewed publisher draft; no independent listening or model prediction yet",
+      "boundary_status": "publisher cue groups only; reviewer must mark acoustic target ranges relative to clip, with uncertainty; source offset is nominal container time",
+      "conversion_seconds": 0.6893783999985317
+    },
+    {
+      "id": "cs50-cp-two",
+      "source_key": "cs50",
+      "source_nominal_start": 546,
+      "source_nominal_end": 558,
+      "duration": 12,
+      "audio": ".scratch/speech-details/provenance/review/cs50-cp-two.wav",
+      "sha256": "b2f7e4433b108c0b84ef6422834ece1af6504222177ca4d72541b819aa63b355",
+      "publisher_draft_cues": [
+        {
+          "start": 543.65,
+          "duration": 3.31,
+          "text": "Copy, unlike all the other\ncommands we've seen before,"
+        },
+        {
+          "start": 546.96,
+          "duration": 4.84,
+          "text": "takes two arguments, a source, the\nname of the file that you want to copy,"
+        },
+        {
+          "start": 551.8,
+          "duration": 4.01,
+          "text": "and a destination, where you\nwant to copy the file to."
+        },
+        {
+          "start": 555.81,
+          "duration": 3.68,
+          "text": "It's pretty easy to copy\na file, so let's do that."
+        }
+      ],
+      "critical_targets_for_listening": [
+        "cp",
+        "two arguments",
+        "source and destination"
+      ],
+      "reference_status": "unreviewed publisher draft; no independent listening or model prediction yet",
+      "boundary_status": "publisher cue groups only; reviewer must mark acoustic target ranges relative to clip, with uncertainty; source offset is nominal container time",
+      "conversion_seconds": 0.7394253000020399
+    }
+  ],
+  "total_seconds": 55,
+  "human_review_required": true,
+  "rules": [
+    "Do not count publisher hosting or manual YouTube flags as file-level human review proof.",
+    "Do not replace a spoken self-correction with an ideal executable command.",
+    "Mark word timing by listening; publisher cue timing is not word truth.",
+    "Lock corrected references before inference; no model output is shown in this pack.",
+    "Numeric scope is procedure counts and pset filename digits, not port/version or numeric parameter generalization."
+  ]
+}

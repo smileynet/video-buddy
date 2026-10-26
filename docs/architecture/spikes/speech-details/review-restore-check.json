@@ -1,0 +1,13 @@
+{
+  "restored": [
+    "mit-status-three",
+    "cs50-mkdir-pset2",
+    "cs50-cp-two"
+  ],
+  "count": 3,
+  "total_seconds": 55,
+  "manifest_sha256": "5da2536aef603189adb0dbd1f758dbbf63bf3d3f89f3a8940f137a918fac96f0",
+  "embedded_manifest_matches": true,
+  "human_review_completed": false,
+  "new_model_inference": false
+}

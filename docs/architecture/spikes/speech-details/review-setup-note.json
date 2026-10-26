@@ -1,0 +1,11 @@
+{
+  "event": "Research and audit verification attempted uv run pre-commit without --no-sync; command missing and dependency resolution refreshed experimental uv.lock/environment.",
+  "correction": "Unintended worktree-only lock change backed up under ignored .scratch and restored from current spike HEAD; primary checkout user changes untouched. Subsequent checks use uvx pre-commit.",
+  "new_model_predictions_after_event": false,
+  "observed_packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.7.1",
+    "yt-dlp": "2026.10.21"
+  },
+  "limits": "No claim all transitive installed packages were restored; future model comparisons must reverify the runtime against frozen settings."
+}
