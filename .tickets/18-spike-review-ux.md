@@ -1,7 +1,7 @@
 ---
 id: "18"
 title: "Compare Markdown and adjacent-evidence review for blocked steps"
-status: open
+status: in_progress
 blocked_by: ["12"]
 spec: "apply-build"
 priority: medium
