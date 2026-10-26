@@ -2,12 +2,12 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Ticket **36 comparison complete**: [revision-boundary results](architecture/spikes/revision-boundary-results.md) separate 180 development frames from 509 locked validation frames. Preferred packets solved development but retained only2–3/4 terminal validation states; settled runs and the grid reached4/4 at cap4. Other-source UI reached3/3 visually via fallback, with inexact writing. No new default or integration. Ticket 25 now finishes with a synthesis of existing evidence; broader tracking research is deliberately deferred to 37. Ticket 35 owns the production selector failure. Review28 consumes the negative/conditional verdict and still depends on the remaining spikes.
+Ticket **36 comparison complete**: [revision-boundary results](architecture/spikes/revision-boundary-results.md) separate 180 development frames from 509 locked validation frames. Preferred packets solved development but retained only2–3/4 terminal validation states; settled runs and the grid reached4/4 at cap4. Other-source UI reached3/3 visually via fallback, with inexact writing. No new default or integration. Ticket 25 is closed with an evidence-linked synthesis and explicit unresolved limits; broader tracking research is deliberately deferred to 37. Ticket 35 owns the production selector failure. Review28 consumes the negative/conditional verdict and still depends on the remaining spikes.
 
 | id | title | status |
 |---|---|---|
-| 25 | Find complete readable subject states by seeking within video windows | in_progress |
 | 15 | Compare speech paths on implementation-critical details | open |
+| 25 | Find complete readable subject states by seeking within video windows | ✅ done |
 | 17 | Evaluate evidence-preserving adaptation to a target environment | open |
 | 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
 | 21 | Measure guide versus note usability with a fresh task performer | open |
@@ -54,7 +54,7 @@ Latest frame evidence: [locked revision-boundary comparison](architecture/spikes
 
 Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). DINOv3 and SAM3.1 now have bounded inference records. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; complete-state and task qualification remain25/26.
 
-Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Remaining primary work: frame evidence synthesis 25, then speech 15, adaptation 17, review UX 18, fresh-performer usability 21, temporal evidence 26 and acquisition/recovery 27. This order finishes the live frame thread, then earlier commitments in the same workflow stream. Ticket 22 remains the clean-CLI prerequisite where needed. Broader tracking research 37 is deferred until a concrete failed task justifies it, alongside conditional 19/20. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
+Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Frame evidence synthesis 25 is complete. Remaining primary work: speech 15 (started; local runtime/checkpoint preflight only), adaptation 17, review UX 18, fresh-performer usability 21, temporal evidence 26 and acquisition/recovery 27. This order finishes the live frame thread, then earlier commitments in the same workflow stream. Ticket 22 remains the clean-CLI prerequisite where needed. Broader tracking research 37 is deferred until a concrete failed task justifies it, alongside conditional 19/20. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
 
 ## Expanded current-provider coverage
 

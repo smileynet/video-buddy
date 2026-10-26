@@ -47,7 +47,7 @@ A reproducible comparison that resolves the deciding question below, or explicit
 
 ## Execution record
 
-Not started. Record the actual experiment branch and evidence paths when work begins.
+Started 2026-10-25 after user-directed closure of 25. Local runtime/cache/backend probes and the next bounded protocol are recorded in `docs/architecture/spikes/s4-speech-results.md`. Existing worktree branch `codex/spike-revision-boundaries` supplied read-only preflight only; no speech prototype branch, scored predictions or frozen references yet. CrisperWhisper/WhisperX absent locally; only local backend configured. Cached faster-whisper checkpoint identities recorded; terms and actual inference remain to verify.
 
 ## Reconciled remaining work (2026-10-25)
 
