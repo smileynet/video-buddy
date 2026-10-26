@@ -26,7 +26,11 @@ def main():
     parser.add_argument("--natural", action="store_true")
     parser.add_argument("--tutorial", action="store_true")
     args = parser.parse_args()
-    reference_file = "references-tutorial.json" if args.tutorial else ("references-natural.json" if args.natural else "references.json")
+    reference_file = (
+        "references-tutorial.json"
+        if args.tutorial
+        else ("references-natural.json" if args.natural else "references.json")
+    )
     suffix = "-tutorial" if args.tutorial else ("-natural" if args.natural else "")
     protocol = json.loads((HERE / "protocol.json").read_text())
     refs = json.loads((HERE / reference_file).read_text())

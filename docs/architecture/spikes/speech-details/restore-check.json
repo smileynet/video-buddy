@@ -48,5 +48,10 @@
     "fixture": "1272-128104-0003",
     "sha256": "60d72657439cd3092fc2313efe0fabd31f0cd2f28f8ca46a21380c290b2e031d",
     "restored": true
+  },
+  {
+    "fixture": "git-tutorial-852-868",
+    "sha256": "85186254895d6377b74421636dcb0c378e071ce734fdc9ec609e55ff2bc4407b",
+    "restored": true
   }
 ]

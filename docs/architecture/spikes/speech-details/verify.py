@@ -69,6 +69,23 @@ for rfile, sfile, bundle in [
             assert distance(a, b) == row["word_counts"]["errors"]
             assert distance("".join(a), "".join(b)) == row["character_counts"]["errors"]
             checks += 2
+tutorial_refs = json.loads((HERE / "references-tutorial.json").read_text())["fixtures"]
+with tempfile.TemporaryDirectory(prefix="vb-speech-restore-") as target:
+    with zipfile.ZipFile(HERE / "tutorial-fixture.zip") as archive:
+        for ref in tutorial_refs:
+            name = Path(ref["path"]).name
+            path = Path(target) / name
+            path.write_bytes(archive.read(name))
+            assert hashlib.sha256(path.read_bytes()).hexdigest() == ref["sha256"]
+            restored.append(
+                {"fixture": ref["id"], "sha256": ref["sha256"], "restored": True}
+            )
+for option in ["base", "small", "turbo"]:
+    raw = json.loads((HERE / f"raw-{option}-tutorial.json").read_text())
+    assert (
+        raw["references_sha256"]
+        == hashlib.sha256((HERE / "references-tutorial.json").read_bytes()).hexdigest()
+    )
 assert not subprocess.check_output(
     [
         "git",

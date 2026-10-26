@@ -1,0 +1,675 @@
+[
+  {
+    "option": "available-captions",
+    "text": "and do that so if we say get RM and we\nwant to add the dash dash cached option want to add the dash dash cached option want to add the dash dash cached option\nand then index.html okay and now if we do get index.html okay and now if we do get\nstatus you'll see that both files are status you'll see that both files are status you'll see that both files are\nnow untracked now there's different ways now untracked now there's different ways now untracked now there's different ways\nyou can add files for instance we could",
+    "targets": [
+      {
+        "target": "cached option",
+        "recovered": true
+      },
+      {
+        "target": "index.html",
+        "recovered": true
+      },
+      {
+        "target": "git status",
+        "recovered": false
+      }
+    ],
+    "provenance": "Existing video-buddy fetch CLI; has_captions true, 1392 cues in full payload. Current schema does not retain manual/automatic track identity. Overlapping/repeated cues and get for Git observed. Not WER or timing gold."
+  },
+  {
+    "option": "base",
+    "text": " cached option and then index.html  okay and now if we do get status  you'll see that both files are now untracked.  Now there's different ways you can add files for instance",
+    "targets": [
+      {
+        "target": "cached option",
+        "recovered": true
+      },
+      {
+        "target": "index.html",
+        "recovered": true
+      },
+      {
+        "target": "git status",
+        "recovered": false
+      }
+    ],
+    "inference_seconds": 0.6545312000016565,
+    "worker_wall_seconds": 1.5662153999946895,
+    "peak_sampled_root_children_rss": 369020928,
+    "word_boundaries": [
+      {
+        "start": 0.02,
+        "end": 0.88,
+        "word": " cached",
+        "probability": 0.5740398392081261
+      },
+      {
+        "start": 0.88,
+        "end": 1.72,
+        "word": " option",
+        "probability": 0.8449548482894897
+      },
+      {
+        "start": 1.72,
+        "end": 2.42,
+        "word": " and",
+        "probability": 0.5477713346481323
+      },
+      {
+        "start": 2.42,
+        "end": 2.58,
+        "word": " then",
+        "probability": 0.9531657695770264
+      },
+      {
+        "start": 2.58,
+        "end": 2.98,
+        "word": " index",
+        "probability": 0.9908851981163025
+      },
+      {
+        "start": 2.98,
+        "end": 4.08,
+        "word": ".html",
+        "probability": 0.8295861085255941
+      },
+      {
+        "start": 6.65,
+        "end": 7.17,
+        "word": " okay",
+        "probability": 0.15118668973445892
+      },
+      {
+        "start": 7.17,
+        "end": 7.41,
+        "word": " and",
+        "probability": 0.619117259979248
+      },
+      {
+        "start": 7.41,
+        "end": 7.55,
+        "word": " now",
+        "probability": 0.9892255663871765
+      },
+      {
+        "start": 7.55,
+        "end": 7.75,
+        "word": " if",
+        "probability": 0.9868975877761841
+      },
+      {
+        "start": 7.75,
+        "end": 7.83,
+        "word": " we",
+        "probability": 0.9947366118431091
+      },
+      {
+        "start": 7.83,
+        "end": 8.03,
+        "word": " do",
+        "probability": 0.9953932762145996
+      },
+      {
+        "start": 8.03,
+        "end": 8.33,
+        "word": " get",
+        "probability": 0.90118807554245
+      },
+      {
+        "start": 8.33,
+        "end": 9.21,
+        "word": " status",
+        "probability": 0.9762756824493408
+      },
+      {
+        "start": 10.01,
+        "end": 10.53,
+        "word": " you'll",
+        "probability": 0.7902788817882538
+      },
+      {
+        "start": 10.53,
+        "end": 10.69,
+        "word": " see",
+        "probability": 0.9986516833305359
+      },
+      {
+        "start": 10.69,
+        "end": 10.85,
+        "word": " that",
+        "probability": 0.9980853796005249
+      },
+      {
+        "start": 10.85,
+        "end": 11.13,
+        "word": " both",
+        "probability": 0.9917305111885071
+      },
+      {
+        "start": 11.13,
+        "end": 11.55,
+        "word": " files",
+        "probability": 0.9941896200180054
+      },
+      {
+        "start": 11.55,
+        "end": 11.71,
+        "word": " are",
+        "probability": 0.999235987663269
+      },
+      {
+        "start": 11.71,
+        "end": 11.91,
+        "word": " now",
+        "probability": 0.9989789724349976
+      },
+      {
+        "start": 11.91,
+        "end": 12.69,
+        "word": " untracked.",
+        "probability": 0.8253674308458964
+      },
+      {
+        "start": 13.25,
+        "end": 13.57,
+        "word": " Now",
+        "probability": 0.9420130252838135
+      },
+      {
+        "start": 13.57,
+        "end": 13.81,
+        "word": " there's",
+        "probability": 0.9391178786754608
+      },
+      {
+        "start": 13.81,
+        "end": 14.03,
+        "word": " different",
+        "probability": 0.9979931116104126
+      },
+      {
+        "start": 14.03,
+        "end": 14.29,
+        "word": " ways",
+        "probability": 0.9942857623100281
+      },
+      {
+        "start": 14.29,
+        "end": 14.51,
+        "word": " you",
+        "probability": 0.9810473322868347
+      },
+      {
+        "start": 14.51,
+        "end": 14.63,
+        "word": " can",
+        "probability": 0.9933985471725464
+      },
+      {
+        "start": 14.63,
+        "end": 14.85,
+        "word": " add",
+        "probability": 0.9879100322723389
+      },
+      {
+        "start": 14.85,
+        "end": 15.29,
+        "word": " files",
+        "probability": 0.9945507645606995
+      },
+      {
+        "start": 15.29,
+        "end": 15.61,
+        "word": " for",
+        "probability": 0.7169204354286194
+      },
+      {
+        "start": 15.61,
+        "end": 15.87,
+        "word": " instance",
+        "probability": 0.9967795014381409
+      }
+    ],
+    "timing_accuracy": "Unscored: no independent auditory word-boundary reference. Values are model outputs only."
+  },
+  {
+    "option": "small",
+    "text": " cached option and then index.html okay and now if we do get status  You'll see that both files are now on tracked now. There's different ways you can add files for instance",
+    "targets": [
+      {
+        "target": "cached option",
+        "recovered": true
+      },
+      {
+        "target": "index.html",
+        "recovered": true
+      },
+      {
+        "target": "git status",
+        "recovered": false
+      }
+    ],
+    "inference_seconds": 1.4316354999973555,
+    "worker_wall_seconds": 2.842561100005696,
+    "peak_sampled_root_children_rss": 717987840,
+    "word_boundaries": [
+      {
+        "start": 0.02,
+        "end": 0.96,
+        "word": " cached",
+        "probability": 0.6803742945194244
+      },
+      {
+        "start": 0.96,
+        "end": 1.66,
+        "word": " option",
+        "probability": 0.8263720273971558
+      },
+      {
+        "start": 1.66,
+        "end": 2.44,
+        "word": " and",
+        "probability": 0.7267246842384338
+      },
+      {
+        "start": 2.44,
+        "end": 2.56,
+        "word": " then",
+        "probability": 0.9682769179344177
+      },
+      {
+        "start": 2.56,
+        "end": 3.0,
+        "word": " index",
+        "probability": 0.9709779620170593
+      },
+      {
+        "start": 3.0,
+        "end": 4.1,
+        "word": ".html",
+        "probability": 0.9019670089085897
+      },
+      {
+        "start": 4.1,
+        "end": 5.2,
+        "word": " okay",
+        "probability": 0.09075640887022018
+      },
+      {
+        "start": 7.21,
+        "end": 7.41,
+        "word": " and",
+        "probability": 0.5254098773002625
+      },
+      {
+        "start": 7.41,
+        "end": 7.57,
+        "word": " now",
+        "probability": 0.9950976967811584
+      },
+      {
+        "start": 7.57,
+        "end": 7.75,
+        "word": " if",
+        "probability": 0.9807809591293335
+      },
+      {
+        "start": 7.75,
+        "end": 7.83,
+        "word": " we",
+        "probability": 0.9974516034126282
+      },
+      {
+        "start": 7.83,
+        "end": 8.03,
+        "word": " do",
+        "probability": 0.9936124682426453
+      },
+      {
+        "start": 8.03,
+        "end": 8.37,
+        "word": " get",
+        "probability": 0.7656823992729187
+      },
+      {
+        "start": 8.37,
+        "end": 9.23,
+        "word": " status",
+        "probability": 0.929888904094696
+      },
+      {
+        "start": 10.05,
+        "end": 10.53,
+        "word": " You'll",
+        "probability": 0.5265986230224371
+      },
+      {
+        "start": 10.53,
+        "end": 10.69,
+        "word": " see",
+        "probability": 0.998207688331604
+      },
+      {
+        "start": 10.69,
+        "end": 10.89,
+        "word": " that",
+        "probability": 0.9995923638343811
+      },
+      {
+        "start": 10.89,
+        "end": 11.13,
+        "word": " both",
+        "probability": 0.9986649751663208
+      },
+      {
+        "start": 11.13,
+        "end": 11.55,
+        "word": " files",
+        "probability": 0.9941548705101013
+      },
+      {
+        "start": 11.55,
+        "end": 11.75,
+        "word": " are",
+        "probability": 0.9981228709220886
+      },
+      {
+        "start": 11.75,
+        "end": 11.93,
+        "word": " now",
+        "probability": 0.9992280006408691
+      },
+      {
+        "start": 11.93,
+        "end": 12.17,
+        "word": " on",
+        "probability": 0.5633052587509155
+      },
+      {
+        "start": 12.17,
+        "end": 12.53,
+        "word": " tracked",
+        "probability": 0.49593624472618103
+      },
+      {
+        "start": 12.53,
+        "end": 13.55,
+        "word": " now.",
+        "probability": 0.5227229595184326
+      },
+      {
+        "start": 13.59,
+        "end": 13.81,
+        "word": " There's",
+        "probability": 0.9928682148456573
+      },
+      {
+        "start": 13.81,
+        "end": 14.05,
+        "word": " different",
+        "probability": 0.999344527721405
+      },
+      {
+        "start": 14.05,
+        "end": 14.31,
+        "word": " ways",
+        "probability": 0.9983479976654053
+      },
+      {
+        "start": 14.31,
+        "end": 14.51,
+        "word": " you",
+        "probability": 0.7642605900764465
+      },
+      {
+        "start": 14.51,
+        "end": 14.65,
+        "word": " can",
+        "probability": 0.9982699155807495
+      },
+      {
+        "start": 14.65,
+        "end": 14.89,
+        "word": " add",
+        "probability": 0.9963485598564148
+      },
+      {
+        "start": 14.89,
+        "end": 15.37,
+        "word": " files",
+        "probability": 0.9957373142242432
+      },
+      {
+        "start": 15.37,
+        "end": 15.63,
+        "word": " for",
+        "probability": 0.8873994946479797
+      },
+      {
+        "start": 15.63,
+        "end": 15.83,
+        "word": " instance",
+        "probability": 0.9975202679634094
+      }
+    ],
+    "timing_accuracy": "Unscored: no independent auditory word-boundary reference. Values are model outputs only."
+  },
+  {
+    "option": "turbo",
+    "text": " cached option and then index.html okay and now if we do get status you'll see  that both files are now untracked now there's different ways you can add files  for instance",
+    "targets": [
+      {
+        "target": "cached option",
+        "recovered": true
+      },
+      {
+        "target": "index.html",
+        "recovered": true
+      },
+      {
+        "target": "git status",
+        "recovered": false
+      }
+    ],
+    "inference_seconds": 4.234713999998348,
+    "worker_wall_seconds": 7.548367499999586,
+    "peak_sampled_root_children_rss": 1973112832,
+    "word_boundaries": [
+      {
+        "start": 0.02,
+        "end": 0.92,
+        "word": " cached",
+        "probability": 0.7306338995695114
+      },
+      {
+        "start": 0.92,
+        "end": 1.62,
+        "word": " option",
+        "probability": 0.8256118893623352
+      },
+      {
+        "start": 1.62,
+        "end": 2.42,
+        "word": " and",
+        "probability": 0.7140039801597595
+      },
+      {
+        "start": 2.42,
+        "end": 2.58,
+        "word": " then",
+        "probability": 0.9740715622901917
+      },
+      {
+        "start": 2.58,
+        "end": 3.08,
+        "word": " index",
+        "probability": 0.9639999270439148
+      },
+      {
+        "start": 3.08,
+        "end": 4.16,
+        "word": ".html",
+        "probability": 0.869076689084371
+      },
+      {
+        "start": 4.16,
+        "end": 5.12,
+        "word": " okay",
+        "probability": 0.17948077619075775
+      },
+      {
+        "start": 7.13,
+        "end": 7.39,
+        "word": " and",
+        "probability": 0.879574716091156
+      },
+      {
+        "start": 7.39,
+        "end": 7.55,
+        "word": " now",
+        "probability": 0.9978309273719788
+      },
+      {
+        "start": 7.55,
+        "end": 7.75,
+        "word": " if",
+        "probability": 0.989621639251709
+      },
+      {
+        "start": 7.75,
+        "end": 7.83,
+        "word": " we",
+        "probability": 0.9984660148620605
+      },
+      {
+        "start": 7.83,
+        "end": 8.05,
+        "word": " do",
+        "probability": 0.9872801899909973
+      },
+      {
+        "start": 8.05,
+        "end": 8.37,
+        "word": " get",
+        "probability": 0.4506368637084961
+      },
+      {
+        "start": 8.37,
+        "end": 9.27,
+        "word": " status",
+        "probability": 0.9407377243041992
+      },
+      {
+        "start": 9.27,
+        "end": 10.53,
+        "word": " you'll",
+        "probability": 0.9714144766330719
+      },
+      {
+        "start": 10.53,
+        "end": 10.69,
+        "word": " see",
+        "probability": 0.9986483454704285
+      },
+      {
+        "start": 10.69,
+        "end": 10.89,
+        "word": " that",
+        "probability": 0.9995088577270508
+      },
+      {
+        "start": 10.89,
+        "end": 11.13,
+        "word": " both",
+        "probability": 0.9992944002151489
+      },
+      {
+        "start": 11.13,
+        "end": 11.55,
+        "word": " files",
+        "probability": 0.9991381168365479
+      },
+      {
+        "start": 11.55,
+        "end": 11.73,
+        "word": " are",
+        "probability": 0.9993501305580139
+      },
+      {
+        "start": 11.73,
+        "end": 11.91,
+        "word": " now",
+        "probability": 0.9939250349998474
+      },
+      {
+        "start": 11.91,
+        "end": 12.63,
+        "word": " untracked",
+        "probability": 0.9440900484720866
+      },
+      {
+        "start": 12.63,
+        "end": 13.53,
+        "word": " now",
+        "probability": 0.6623038649559021
+      },
+      {
+        "start": 13.53,
+        "end": 13.81,
+        "word": " there's",
+        "probability": 0.985967367887497
+      },
+      {
+        "start": 13.81,
+        "end": 14.07,
+        "word": " different",
+        "probability": 0.9989635944366455
+      },
+      {
+        "start": 14.07,
+        "end": 14.29,
+        "word": " ways",
+        "probability": 0.9992758631706238
+      },
+      {
+        "start": 14.29,
+        "end": 14.49,
+        "word": " you",
+        "probability": 0.9984904527664185
+      },
+      {
+        "start": 14.49,
+        "end": 14.65,
+        "word": " can",
+        "probability": 0.9996669292449951
+      },
+      {
+        "start": 14.65,
+        "end": 14.89,
+        "word": " add",
+        "probability": 0.9981752634048462
+      },
+      {
+        "start": 14.89,
+        "end": 15.37,
+        "word": " files",
+        "probability": 0.9986228942871094
+      },
+      {
+        "start": 15.37,
+        "end": 15.63,
+        "word": " for",
+        "probability": 0.9719563126564026
+      },
+      {
+        "start": 15.63,
+        "end": 15.83,
+        "word": " instance",
+        "probability": 0.9984050393104553
+      }
+    ],
+    "timing_accuracy": "Unscored: no independent auditory word-boundary reference. Values are model outputs only."
+  }
+]

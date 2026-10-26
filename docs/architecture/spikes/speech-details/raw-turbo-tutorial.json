@@ -1,0 +1,341 @@
+{
+  "option": {
+    "id": "turbo",
+    "repo": "mobiuslabsgmbh/faster-whisper-large-v3-turbo",
+    "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+    "device": "cpu",
+    "compute_type": "int8",
+    "model_files": {
+      "config.json": {
+        "sha256": "b0253ea6c0d3bea6b1e19e91a02acfd3b53f4467362efcb5a3e6b16c9b3a9b7e"
+      },
+      "model.bin": {
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da"
+      },
+      "preprocessor_config.json": {
+        "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711"
+      },
+      "tokenizer.json": {
+        "sha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "vocabulary.json": {
+        "sha256": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1"
+      }
+    }
+  },
+  "settings": {
+    "language": "en",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "vad_filter": true,
+    "condition_on_previous_text": true,
+    "cpu_threads": 8,
+    "num_workers": 1
+  },
+  "protocol_sha256": "c2f4ae1467856e4b498017a1994703fbaab6d7ea1cd96f8a418c0e05f9d55eb3",
+  "references_sha256": "278173386ca21a5270736fb83d024b71dc88ca13cefcd33e42549de30d926d43",
+  "host": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "logical_cpu": 20
+  },
+  "load_seconds": 2.5904349999982514,
+  "peak_sampled_root_children_rss": 1973112832,
+  "rss_samples": 151,
+  "sampling_seconds": 0.02,
+  "outputs": [
+    {
+      "fixture": "git-tutorial-852-868",
+      "worker_wall_seconds": 7.548367499999586,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.02,
+          "end": 10.69,
+          "text": " cached option and then index.html okay and now if we do get status you'll see",
+          "tokens": [
+            50365,
+            269,
+            15095,
+            3614,
+            293,
+            550,
+            8186,
+            13,
+            357,
+            15480,
+            1392,
+            293,
+            586,
+            498,
+            321,
+            360,
+            483,
+            6558,
+            291,
+            603,
+            536,
+            50799
+          ],
+          "avg_logprob": -0.24086662608644235,
+          "compression_ratio": 1.3852459016393444,
+          "no_speech_prob": 5.893999481185186e-13,
+          "words": [
+            {
+              "start": 0.02,
+              "end": 0.92,
+              "word": " cached",
+              "probability": 0.7306338995695114
+            },
+            {
+              "start": 0.92,
+              "end": 1.62,
+              "word": " option",
+              "probability": 0.8256118893623352
+            },
+            {
+              "start": 1.62,
+              "end": 2.42,
+              "word": " and",
+              "probability": 0.7140039801597595
+            },
+            {
+              "start": 2.42,
+              "end": 2.58,
+              "word": " then",
+              "probability": 0.9740715622901917
+            },
+            {
+              "start": 2.58,
+              "end": 3.08,
+              "word": " index",
+              "probability": 0.9639999270439148
+            },
+            {
+              "start": 3.08,
+              "end": 4.16,
+              "word": ".html",
+              "probability": 0.869076689084371
+            },
+            {
+              "start": 4.16,
+              "end": 5.12,
+              "word": " okay",
+              "probability": 0.17948077619075775
+            },
+            {
+              "start": 7.13,
+              "end": 7.39,
+              "word": " and",
+              "probability": 0.879574716091156
+            },
+            {
+              "start": 7.39,
+              "end": 7.55,
+              "word": " now",
+              "probability": 0.9978309273719788
+            },
+            {
+              "start": 7.55,
+              "end": 7.75,
+              "word": " if",
+              "probability": 0.989621639251709
+            },
+            {
+              "start": 7.75,
+              "end": 7.83,
+              "word": " we",
+              "probability": 0.9984660148620605
+            },
+            {
+              "start": 7.83,
+              "end": 8.05,
+              "word": " do",
+              "probability": 0.9872801899909973
+            },
+            {
+              "start": 8.05,
+              "end": 8.37,
+              "word": " get",
+              "probability": 0.4506368637084961
+            },
+            {
+              "start": 8.37,
+              "end": 9.27,
+              "word": " status",
+              "probability": 0.9407377243041992
+            },
+            {
+              "start": 9.27,
+              "end": 10.53,
+              "word": " you'll",
+              "probability": 0.9714144766330719
+            },
+            {
+              "start": 10.53,
+              "end": 10.69,
+              "word": " see",
+              "probability": 0.9986483454704285
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 10.69,
+          "end": 15.37,
+          "text": " that both files are now untracked now there's different ways you can add files",
+          "tokens": [
+            50799,
+            300,
+            1293,
+            7098,
+            366,
+            586,
+            1701,
+            81,
+            25949,
+            586,
+            456,
+            311,
+            819,
+            2098,
+            291,
+            393,
+            909,
+            7098,
+            51024
+          ],
+          "avg_logprob": -0.24086662608644235,
+          "compression_ratio": 1.3852459016393444,
+          "no_speech_prob": 5.893999481185186e-13,
+          "words": [
+            {
+              "start": 10.69,
+              "end": 10.89,
+              "word": " that",
+              "probability": 0.9995088577270508
+            },
+            {
+              "start": 10.89,
+              "end": 11.13,
+              "word": " both",
+              "probability": 0.9992944002151489
+            },
+            {
+              "start": 11.13,
+              "end": 11.55,
+              "word": " files",
+              "probability": 0.9991381168365479
+            },
+            {
+              "start": 11.55,
+              "end": 11.73,
+              "word": " are",
+              "probability": 0.9993501305580139
+            },
+            {
+              "start": 11.73,
+              "end": 11.91,
+              "word": " now",
+              "probability": 0.9939250349998474
+            },
+            {
+              "start": 11.91,
+              "end": 12.63,
+              "word": " untracked",
+              "probability": 0.9440900484720866
+            },
+            {
+              "start": 12.63,
+              "end": 13.53,
+              "word": " now",
+              "probability": 0.6623038649559021
+            },
+            {
+              "start": 13.53,
+              "end": 13.81,
+              "word": " there's",
+              "probability": 0.985967367887497
+            },
+            {
+              "start": 13.81,
+              "end": 14.07,
+              "word": " different",
+              "probability": 0.9989635944366455
+            },
+            {
+              "start": 14.07,
+              "end": 14.29,
+              "word": " ways",
+              "probability": 0.9992758631706238
+            },
+            {
+              "start": 14.29,
+              "end": 14.49,
+              "word": " you",
+              "probability": 0.9984904527664185
+            },
+            {
+              "start": 14.49,
+              "end": 14.65,
+              "word": " can",
+              "probability": 0.9996669292449951
+            },
+            {
+              "start": 14.65,
+              "end": 14.89,
+              "word": " add",
+              "probability": 0.9981752634048462
+            },
+            {
+              "start": 14.89,
+              "end": 15.37,
+              "word": " files",
+              "probability": 0.9986228942871094
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 15.37,
+          "end": 15.83,
+          "text": " for instance",
+          "tokens": [
+            51024,
+            337,
+            5197,
+            51161
+          ],
+          "avg_logprob": -0.24086662608644235,
+          "compression_ratio": 1.3852459016393444,
+          "no_speech_prob": 5.893999481185186e-13,
+          "words": [
+            {
+              "start": 15.37,
+              "end": 15.63,
+              "word": " for",
+              "probability": 0.9719563126564026
+            },
+            {
+              "start": 15.63,
+              "end": 15.83,
+              "word": " instance",
+              "probability": 0.9984050393104553
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "load_seconds": 2.5904349999982514,
+      "seconds": 4.234713999998348,
+      "duration": 16.0,
+      "duration_after_vad": 13.968
+    }
+  ]
+}

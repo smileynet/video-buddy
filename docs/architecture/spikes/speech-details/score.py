@@ -34,7 +34,7 @@ def edit_counts(reference, hypothesis):
 references = json.loads((HERE / "references.json").read_text())["fixtures"]
 scores = []
 for path in sorted(HERE.glob("raw-*.json")):
-    if path.stem.endswith("-natural"):
+    if path.stem.endswith(("-natural", "-tutorial")):
         continue
     raw = json.loads(path.read_text())
     rows = []
@@ -234,3 +234,59 @@ for path in sorted(HERE.glob("raw-*-natural.json")):
 (HERE / "scores-natural.json").write_text(json.dumps(natural_scores, indent=2) + "\n")
 for row in natural_scores:
     print(json.dumps({k: v for k, v in row.items() if k != "rows"}))
+
+tutorial = json.loads((HERE / "references-tutorial.json").read_text())["fixtures"][0]
+
+
+def term_hits(text):
+    words = tokens(text)
+    return [
+        {
+            "target": t["name"],
+            "recovered": any(
+                any(
+                    words[i : i + len(tokens(a))] == tokens(a)
+                    for i in range(len(words) - len(tokens(a)) + 1)
+                )
+                for a in t["aliases"]
+            ),
+        }
+        for t in tutorial["source_task_targets"]
+    ]
+
+
+tutorial_scores = [
+    {
+        "option": "available-captions",
+        "text": " ".join(c["text"] for c in tutorial["caption_cues"]),
+        "targets": term_hits(" ".join(c["text"] for c in tutorial["caption_cues"])),
+        "provenance": tutorial["caption_provenance"],
+    }
+]
+for path in sorted(HERE.glob("raw-*-tutorial.json")):
+    raw = json.loads(path.read_text())
+    output = raw["outputs"][0]
+    text = " ".join(s["text"] for s in output["segments"])
+    tutorial_scores.append(
+        {
+            "option": raw["option"]["id"],
+            "text": text,
+            "targets": term_hits(text),
+            "inference_seconds": output["seconds"],
+            "worker_wall_seconds": output["worker_wall_seconds"],
+            "peak_sampled_root_children_rss": raw["peak_sampled_root_children_rss"],
+            "word_boundaries": [w for s in output["segments"] for w in s["words"]],
+            "timing_accuracy": "Unscored: no independent auditory word-boundary reference. Values are model outputs only.",
+        }
+    )
+(HERE / "scores-tutorial.json").write_text(json.dumps(tutorial_scores, indent=2) + "\n")
+for row in tutorial_scores:
+    print(
+        json.dumps(
+            {
+                "option": row["option"],
+                "task_terms": sum(t["recovered"] for t in row["targets"]),
+                "total": len(row["targets"]),
+            }
+        )
+    )
