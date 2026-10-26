@@ -2,7 +2,7 @@
 
 Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
 
-Ticket **15 first round measured**: [speech findings](architecture/spikes/s4-speech-results.md). Small recovered7/7 controlled instruction phrases; base/turbo6/7; four numeric/negation phrases recovered by all. Default-worker silence/tones produced unsupported text (38). The real tutorial/caption probe retained2/3 task-backed terms for every option. Independent spoken/number references, caption track provenance and natural word boundaries remain open; no default change.
+Ticket **15 first round measured**: [speech findings](architecture/spikes/s4-speech-results.md). Small recovered7/7 controlled instruction phrases; base/turbo6/7; four numeric/negation phrases recovered by all. Default-worker silence/tones produced unsupported text (38). The real tutorial/caption probe retained2/3 task-backed terms for every option. Current caption origin is now verified: original Git ASR; MIT/CS50 manual-classified, with duplicate publisher/reference content. A55-second listening pack is prepared, but independent spoken/number and word-boundary checks remain open.39 tracks provenance persistence. No new model scores or default change.
 
 Ticket **36 comparison complete**: [revision-boundary results](architecture/spikes/revision-boundary-results.md) separate 180 development frames from 509 locked validation frames. Preferred packets solved development but retained only2–3/4 terminal validation states; settled runs and the grid reached4/4 at cap4. Other-source UI reached3/3 visually via fallback, with inexact writing. No new default or integration. Ticket 25 is closed with an evidence-linked synthesis and explicit unresolved limits; broader tracking research is deliberately deferred to 37. Ticket 35 owns the production selector failure. Review28 consumes the negative/conditional verdict and still depends on the remaining spikes.
 
@@ -22,6 +22,7 @@ Ticket **36 comparison complete**: [revision-boundary results](architecture/spik
 | 28 | Review spike findings and decide app features and integration architecture | open |
 | 35 | Preserve useful low-edge code frames in frame selection | open |
 | 38 | Prevent no-speech retries from publishing unsupported transcript text | open |
+| 39 | Preserve caption origin and reference lineage in source artifacts | open |
 | 07 | Re-transcribe rate-limited digest videos with CrisperWhisper on GPU | open |
 | 08 | Make CrisperWhisper the default engine in workspace config | open |
 | 09 | Add Vimeo source support (player URL + Referer) alongside YouTube | open |

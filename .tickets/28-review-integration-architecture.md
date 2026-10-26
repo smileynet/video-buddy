@@ -65,3 +65,7 @@ Review provider comparisons at their actual scope: YOLOEbounded natural/diagram 
 ## Speech first-round finding — 2026-10-25
 
 Consume `docs/architecture/spikes/s4-speech-results.md`: known-corpus prose WER did not predict controlled command reliability, and default VAD-empty retry produced unsupported silent/tonal text, including a beyond-duration caption. Ticket38 is the post-review regression proposal. Ticket15 stays open for natural tutorial/caption qualification; do not treat its first round or a model's empty negative output as a validated default. No extra blocker38 edge is added: this review decides policy before implementation.
+
+## Speech reference lineage — 2026-10-25
+
+Consume `docs/architecture/spikes/s4-reference-provenance.md`. Original caption track is verified ASR; publisher/manual track labels do not certify human review. MIT matching cue records and CS50 matching decoded words cannot provide two independent validation references. Ticket15 has a55-second independent-listening pack but no completed human reference or new speech score. Ticket39 proposes durable caption provenance after this review; no blocker39 edge is added.

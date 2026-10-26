@@ -30,17 +30,28 @@ Preserve measured/proposed distinctions; do not append another home-page history
 <main>
 <section id="latest" class="tabpanel" role="tabpanel" aria-labelledby="tab-latest">
 <div class="latest-hero">
-<div class="meta"><span class="pill">Measured experiment · ticket 15 in progress</span><span>Latest update / 25 Oct 2026 · speech first round</span></div>
-<h2>Keep the command correct.<br>Keep silence silent.</h2>
-<p>Small preserved all seven controlled instruction phrases; base and turbo changed “git add” to “git at.” Better prose accuracy did not guarantee a correct command. The existing retry path also invented text from silence and tones. No default changed.</p>
-<div class="actions"><a class="link-button" href="architecture/spikes/s4-speech-results.md">Read the speech findings →</a><a class="secondary-link" href="#speech-comparison">Compare models and gaps</a></div>
+<div class="meta"><span class="pill">Provenance checked · ticket 15 in progress</span><span>Latest update / 25 Oct 2026 · listening references prepared</span></div>
+<h2>Check the reference<br>before scoring speech.</h2>
+<p>The original Git captions are automatic. MIT’s publisher captions and YouTube manual track contain the same cue records; CS50’s copies contain the same words. Copies and track labels cannot replace independent listening. No new speech score or default change.</p>
+<div class="actions"><a class="link-button" href="architecture/spikes/s4-reference-provenance.md">Reference findings and listening pack →</a><a class="secondary-link" href="#reference-status">See what is verified</a></div>
 </div>
 <div class="grid three">
-<article class="card"><div class="kicker">CONTROLLED INSTRUCTIONS</div><h3>7/7 small · 6/7 base and turbo</h3><p>All three preserved four number/negation phrases. Base and turbo altered the add command.</p><small>Authored synthetic speech, two validation sequences. This does not qualify natural tutorial commands.</small></article>
-<article class="card"><div class="kicker">NO-SPEECH RECOVERY FAILURE</div><h3>Silence became text</h3><p>The default retry emitted “You” from silence. Turbo also gave eight seconds of tones a 29.98-second “Thank you” caption.</p><small>VAD-only probes hid this behavior. Ticket 38 records the reviewed fix; no production change yet.</small></article>
-<article class="card"><div class="kicker">EVIDENCE TIMING</div><h3>Phrase starts up to 1.51 s early</h3><p>All three passed the familiar JFK timing check. Controlled phrase envelopes still showed early starts.</p><small>Not independent natural word-boundary truth. Alignment benefit and user correction effort remain unknown.</small></article>
+<article class="card"><div class="kicker">ORIGINAL GIT SOURCE</div><h3>Automatic captions confirmed</h3><p>No manual tracks. The selected English track is marked ASR, and the frozen local cues match the explicit download.</p><small>Caption origin is now known. This does not make those words an independent human reference.</small></article>
+<article class="card"><div class="kicker">DUPLICATE REFERENCE CONTENT</div><h3>959 MIT cue records match</h3><p>Official captions and the YouTube manual track agree exactly after parsing. CS50’s copies have the same 3,694 decoded words.</p><small>A manual-track label alone does not certify who checked a file or its word timing.</small></article>
+<article class="card"><div class="kicker">NEXT REQUIRED CHECK</div><h3>55 seconds ready for listening</h3><p>Three real excerpts cover commands, counts, filename digits and a spoken correction. No new predictions were generated for them.</p><small>Heard words and timing remain unverified. Designated music-only tracks are kept out of speech references.</small></article>
 </div>
-<details id="speech-comparison"><summary>Speech comparison · results, eligibility and remaining gaps</summary><div>
+<details id="reference-status"><summary>Reference status · origin, lineage and the listening gap</summary><div>
+<p><span class="badge">Measured provenance · prepared references · no new accuracy result</span></p>
+<div class="tablewrap"><table><thead><tr><th>Source</th><th>Verified origin / relation</th><th>Remaining check</th></tr></thead><tbody>
+<tr><td>Traversy Git</td><td>Automatic English ASR · no manual track · frozen cues match</td><td>Independent spoken-command and timing reference</td></tr>
+<tr><td>MIT Git lecture · 2013</td><td>Manual-classified YouTube / official publisher · 959 equal parsed cue records</td><td>Specific-file human review and word boundaries not certified</td></tr>
+<tr><td>CS50 Command Line · 2017</td><td>Manual-classified YouTube / official publisher · identical decoded word sequence</td><td>Formatting differences are not independent validation</td></tr>
+</tbody></table></div>
+<p>The offline review pack contains three excerpts: git status / three times; mkdir / pset2 with a correction; cp / two arguments. It records literal heard words, target times and uncertainty. Publisher drafts stay unverified until checked by listening.</p>
+<p>No audio-listening tool or completed review record is available in this session. Music-only controls are separate from speech references and the earlier synthetic silence/tones. Numeric scope here is counts and filenames, not representative numeric configuration parameters.</p>
+<a href="architecture/spikes/s4-reference-provenance.md">Open the reference findings, local listening pack and exact remaining step →</a>
+</div></details>
+<details id="speech-comparison"><summary>Previous measured speech comparison · results and eligibility</summary><div>
 <p><span class="badge">Measured · matched CPU/int8 settings · three model sizes in one engine</span></p>
 <div class="tablewrap"><table id="speech-results"><thead><tr><th>Checkpoint</th><th>Controlled phrases</th><th>Natural prose word errors</th><th>Natural prose CER</th><th>Maximum sampled RSS</th></tr></thead><tbody>
 <tr><td>Base</td><td>6/7</td><td>6/83 · 7.2%</td><td>4.8%</td><td>398 MiB</td></tr>
@@ -64,10 +75,11 @@ Preserve measured/proposed distinctions; do not append another home-page history
 <div class="section-label">Where this fits</div>
 <div class="grid">
 <article class="card"><div class="kicker">THE BIGGER DESIGN</div><h3>Recover evidence, then help someone act</h3><p>OCR is one part of a source → evidence → guide → verified result workflow. A sharp frame or fluent note doesn’t prove the user can finish the task.</p><a href="#current">Explore the architecture →</a><br><a class="secondary-link" href="architecture/workflow-proposal.md">Read the full proposal</a></article>
-<article class="card"><div class="kicker">NEXT IN THE PLAN</div><h3>Finish natural speech qualification · 15</h3><p>Controlled, known-corpus and one real tutorial/caption probe are measured. Next: independently checked spoken command/number references and boundaries, plus caption track provenance. CrisperWhisper access/identity remains unresolved. Review 28 decides policy; 38 records the no-speech fix proposal.</p><a href="plan.md">Open the comparison plan →</a><br><a class="secondary-link" href="#plan">See the path to integration</a></article>
+<article class="card"><div class="kicker">NEXT IN THE PLAN</div><h3>Listen, lock references, then compare · 15</h3><p>Caption origin and duplicate reference content are checked. Next: complete the 55-second listening pack, then lock corrected references before inference. CrisperWhisper access/identity remains unresolved. Review 28 decides policy; 38/39 track no-speech recovery and provenance proposals.</p><a href="plan.md">Open the comparison plan →</a><br><a class="secondary-link" href="#plan">See the path to integration</a></article>
 </div>
 <div class="section-label">Choose your depth</div>
 <ul class="doc-list">
+<li><a href="architecture/spikes/s4-reference-provenance.md">Latest · reference provenance and listening pack</a><small>Automatic versus manual-classified tracks, duplicate publisher content and the uncompleted listening check.</small></li>
 <li><a href="architecture/spikes/s4-speech-results.md">Speech comparison · 15 first findings</a><small>Pinned models, controlled commands/numbers, natural prose, timing and the silent-input failure.</small></li>
 <li><a href="architecture/spikes/subject-frame-seeking-results.md#final-ticket-25-synthesis--25-october-2026">Frame comparison summary · 25 complete</a><small>All four evidence rounds, acceptance-criterion dispositions and remaining owners.</small></li>
 <li><a href="architecture/spikes/revision-boundary-results.md">Previous frame experiment</a><small>Completed-command and checkpoint policies, locked validation, exact text and stage costs.</small></li>
