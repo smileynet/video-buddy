@@ -1,0 +1,121 @@
+{
+  "status": "frozen before audio-model review and candidate inference",
+  "created": "2026-10-25",
+  "authorization": "User explicitly requested audio-capable model/tool review with model-reviewed references separate from human-verified ones.",
+  "reviewer": "SenseVoiceSmall int8 2024-07-17, sherpa-onnx1.13.6, CPU8threads; custom checkpoint terms recorded separately",
+  "input_rule": "Only frozen mono16k waveform and English language flag; no text prompt, publisher draft, grammar/hotword list or Whisper predictions passed to recognizer.",
+  "settings": {
+    "language": "en",
+    "use_itn": false,
+    "provider": "cpu",
+    "num_threads": 8,
+    "decoding_method": "greedy_search"
+  },
+  "manifest_sha256": "5da2536aef603189adb0dbd1f758dbbf63bf3d3f89f3a8940f137a918fac96f0",
+  "clips": [
+    {
+      "id": "mit-status-three",
+      "path": ".scratch/speech-details/provenance/review/mit-status-three.wav",
+      "sha256": "a4a30735a4774c9e859023e034b15bf389c26c334db8d148eb72830e3f598ed2",
+      "duration": 31
+    },
+    {
+      "id": "cs50-mkdir-pset2",
+      "path": ".scratch/speech-details/provenance/review/cs50-mkdir-pset2.wav",
+      "sha256": "8863efa26c4380b44e3515d9c782b5e550c6d6c1783475d3d9fd56c2a9d29ab7",
+      "duration": 12
+    },
+    {
+      "id": "cs50-cp-two",
+      "path": ".scratch/speech-details/provenance/review/cs50-cp-two.wav",
+      "sha256": "b2f7e4433b108c0b84ef6422834ece1af6504222177ca4d72541b819aa63b355",
+      "duration": 12
+    }
+  ],
+  "reference_policy": "Freeze exact blind-review output before candidates. Preserve raw recognition; no post-hoc reference cleanup from Whisper or silent publisher correction. Model-reviewed means provisional machine reference, not human truth. Publisher overlap/lineage is separate.",
+  "comparison": "Same three pinned faster-whisper scales/settings as prior protocol; fresh process worker CLI; available manual caption tracks compared to model reference with shared-publisher provenance visible. WER/CER are agreement with machine reference, not calibrated accuracy.",
+  "timing": "SenseVoice emits token time points; no acoustic word interval or human-boundary truth. Report diagnostic start-time disagreement only on exactly matched lexical spans; no timing-accuracy/forced-alignment win claim.",
+  "targets": [
+    {
+      "id": "git_status",
+      "clip": "mit-status-three",
+      "literal": [
+        "git status"
+      ],
+      "spoken": [
+        "git status"
+      ]
+    },
+    {
+      "id": "three_times",
+      "clip": "mit-status-three",
+      "literal": [
+        "three times",
+        "3 times"
+      ],
+      "spoken": [
+        "three times",
+        "3 times"
+      ]
+    },
+    {
+      "id": "mkdir",
+      "clip": "cs50-mkdir-pset2",
+      "literal": [
+        "mkdir"
+      ],
+      "spoken": [
+        "mkdir",
+        "make dir",
+        "make directory",
+        "m k d i r"
+      ]
+    },
+    {
+      "id": "pset2",
+      "clip": "cs50-mkdir-pset2",
+      "literal": [
+        "pset2"
+      ],
+      "spoken": [
+        "pset2",
+        "pset 2",
+        "pset two",
+        "p set two",
+        "p set 2"
+      ]
+    },
+    {
+      "id": "cp",
+      "clip": "cs50-cp-two",
+      "literal": [
+        "cp"
+      ],
+      "spoken": [
+        "cp",
+        "c p",
+        "see pee"
+      ]
+    },
+    {
+      "id": "two_arguments",
+      "clip": "cs50-cp-two",
+      "literal": [
+        "two arguments",
+        "2 arguments"
+      ],
+      "spoken": [
+        "two arguments",
+        "2 arguments"
+      ]
+    }
+  ],
+  "qualitative_only": [
+    "Spoken self-correction preservation, without forced ideal command rewrite.",
+    "Source/destination explanation: publisher cues overlap clip edges; do not assume complete referent speech is within clip."
+  ],
+  "human_verified": false,
+  "music_policy": "User-designated music-only tracks excluded from speech-reference scoring; synthetic silence/tones remain separate controls.",
+  "stop_rule": "One blind reviewer pass, freeze, one pass per eligible candidate; failures/disagreements remain explicit. No search/tuning on this corpus.",
+  "resource_policy": "Separate reviewer download/load/inference and candidate costs; no serving/default integration."
+}

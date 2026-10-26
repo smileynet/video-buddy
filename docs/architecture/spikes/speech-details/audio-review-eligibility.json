@@ -1,0 +1,39 @@
+{
+  "checked": "2026-10-25",
+  "reviewer": "SenseVoiceSmall int8 2024-07-17 via sherpa-onnx",
+  "software": {
+    "sherpa-onnx": "1.13.6",
+    "sherpa-onnx-core": "1.13.6",
+    "numpy": "2.5.4",
+    "psutil": "7.2.2"
+  },
+  "software_license": "Apache-2.0",
+  "model_terms": "FunASR Model Open Source License Agreement1.1; custom, not Apache; attributed local reference/learning evaluation only; deployment unresolved",
+  "model_terms_url": "https://raw.githubusercontent.com/modelscope/FunASR/main/MODEL_LICENSE",
+  "model_terms_sha256": "7dba975a2069691db4992b0592d70828b330d2f8a30a71450f4e152a554e84f8",
+  "archive_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17.tar.bz2",
+  "archive_sha256": "7d1efa2138a65b0b488df37f8b89e3d91a60676e416f515b952358d83dfd347e",
+  "archive_bytes": 163002883,
+  "download_seconds": 2.700810000002093,
+  "files": {
+    "LICENSE": {
+      "bytes": 71,
+      "sha256": "221c6df10b0931a5629adad671ea48fb7747e034c414b6d2bfa275bc3dd4ea17"
+    },
+    "model.int8.onnx": {
+      "bytes": 239233841,
+      "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51"
+    },
+    "README.md": {
+      "bytes": 104,
+      "sha256": "763991a00edaea534ab36bf1b7cf89e61e911666dcfabbba71f91f9f7c593a63"
+    },
+    "tokens.txt": {
+      "bytes": 315894,
+      "sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc"
+    }
+  },
+  "from_sense_voice_signature": "(model: str, tokens: str, num_threads: int = 1, sample_rate: int = 16000, feature_dim: int = 80, decoding_method: str = 'greedy_search', debug: bool = False, provider: str = 'cpu', language: str = '', use_itn: bool = False, rule_fsts: str = '', rule_fars: str = '', hr_dict_dir: str = '', hr_rule_fsts: str = '', hr_lexicon: str = '')",
+  "reference_kind": "model reviewed; not human verified",
+  "word_timing_truth": false
+}
