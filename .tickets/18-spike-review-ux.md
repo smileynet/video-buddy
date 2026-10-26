@@ -76,3 +76,7 @@ Observe evidence lookup, blocked-step correction and return-after-interruption w
 Use identical completed artifact in linked Markdown/chat and adjacent-evidence view. Counterbalance tasks to locate setting, identify missing prerequisite, correct a step and resume. Record observed completion, evidence lookup time/actions and wrong support/tested interpretations. No participant means prepared protocol, not usability proof.
 
 Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.
+
+## Candidate fixture from17
+
+Use `docs/architecture/spikes/s6-adaptation-results.md` and its frozen guide/provenance ledger as a candidate for distinguishing observed, documented-adapted and tested-here states. Native source-copy exit0/no-files and directory-conflict cases supply concrete blocked-step/recovery examples. Ticket17's same-agent walkthrough is not reader evidence; keep this study's source/format budgets and counterbalancing explicit.

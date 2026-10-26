@@ -73,3 +73,7 @@ Consume `docs/architecture/spikes/s4-reference-provenance.md`. Original caption 
 ## Ticket15 bounded audio-model comparison completed
 
 Consume `docs/architecture/spikes/s4-model-reviewed-results.md`: a runnable independent-family SenseVoice audio pass and locked machine-reference comparison now exist. Model-reviewed provisional remains distinct from human-verified. Its code spelling disagreements and token timing cannot certify exact commands or word boundaries; conditional WER is only agreement. Retain baseline and exclude unsupported exact-command/accuracy claims. Ticket40 defers human-verified qualification until a concrete speech/default/alignment change requires it. No automatic integration follows closure of15; preserve38/39 recovery/provenance proposals.
+
+## Guide adaptation17 bounded disposition
+
+Consume `docs/architecture/spikes/s6-adaptation-results.md`. Conditional native procedure succeeded with byte/type checkpoints, preserved existing work and stated its timestamp difference. Host already has touch; the no-GNU profile is declared, not a blanket PowerShell incompatibility. Source commands remain separate from documented adaptations and tested-here scopes. Exit0/no-files and Force truncation show why result postconditions and content preservation matter. No fresh-reader UX result or general translator is validated;18/21 remain required dispositions. Review contracts rather than promoting prototype scripts.

@@ -36,3 +36,7 @@ Promoted into the current qualification cycle for final review 28. Participant a
 Use two independent command/UI tasks with frozen references. Counterbalance guide/note formats and disclose familiarity/order. Record real checkpoint success, interventions and source lookups. No fabricated timings or implied representative study; unavailable participants yield explicit unresolved verdict.
 
 Record raw outputs, exact versions/configuration, failures and a per-job disposition. Report metrics even if they do not favor a candidate; no invented quality threshold. Research register: `docs/agents/research/open-questions.md`.
+
+## Candidate command task from17
+
+The bounded file-preparation adaptation report/guide variants (`docs/architecture/spikes/s6-adaptation-results.md`) add a real source-command fixture.17validated machine postconditions only; it did not measure fresh-performer success or label comprehension. Use it only after freezing comparable task/evidence budgets and counterbalancing; do not count its8machine cases as human trials.

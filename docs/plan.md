@@ -1,6 +1,8 @@
 # Work plan
 
-Ticket state projection, updated 2026-10-25. Ticket files are the detailed execution record.
+Ticket state projection, updated 2026-10-26. Ticket files are the detailed execution record.
+
+Ticket **17 bounded walkthrough complete**: [adaptation findings](architecture/spikes/s6-adaptation-results.md). The labeled native route creates the two source placeholders and preserves existing work in a declared no-GNU profile. Original lines work on the normal host; exit0/no-files and Force truncation controls reinforce postcondition checks. Reader comprehension remains18/21; no general translator or production integration.
 
 Ticket **15 bounded comparison complete**: [audio-model review findings](architecture/spikes/s4-model-reviewed-results.md). SenseVoice reviewed the55-second pack; raw model references were frozen before Whisper comparisons and remain model-reviewed provisional, never human-verified. Code spelling and token timing limits prevent an accuracy/default winner. Human qualification is deliberately deferred in40;38/39 own recovery/provenance proposals.
 
@@ -59,7 +61,7 @@ Latest frame evidence: [locked revision-boundary comparison](architecture/spikes
 
 Image-model evidence: [per-job results](architecture/spikes/image-model-results.md). DINOv3 and SAM3.1 now have bounded inference records. [OCR14 results](architecture/spikes/s3-ocr-results.md) cover20 held-out real lines; complete-state and task qualification remain25/26.
 
-Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Frame evidence synthesis 25 is complete. Speech15 now has a bounded qualified disposition. Remaining primary work: adaptation17, review UX 18, fresh-performer usability 21, temporal evidence 26 and acquisition/recovery 27. This order finishes the live frame thread, then earlier commitments in the same workflow stream. Ticket 22 remains the clean-CLI prerequisite where needed. Broader tracking research 37 is deferred until a concrete failed task justifies it, alongside conditional 19/20. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
+Research 24 is complete: [decision register](agents/research/open-questions.md), [independent audit](agents/research/open-questions-audit.md). Original model comparison23 has a bounded disposition. Frame evidence synthesis 25 is complete. Speech15 now has a bounded qualified disposition. Adaptation17 now has a conditional, scoped disposition. Remaining primary work: review UX18, fresh-performer usability 21, temporal evidence 26 and acquisition/recovery 27. This order finishes the live frame thread, then earlier commitments in the same workflow stream. Ticket 22 remains the clean-CLI prerequisite where needed. Broader tracking research 37 is deferred until a concrete failed task justifies it, alongside conditional 19/20. Review 28 depends on these reports; it decides final scope and creates integration tickets. Conditional attribution/retrieval 19/20 are reviewed for deferral, without blocking the primary job.
 
 ## Expanded current-provider coverage
 
