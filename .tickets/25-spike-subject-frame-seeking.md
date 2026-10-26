@@ -1,7 +1,7 @@
 ---
 id: "25"
 title: "Find complete readable subject states by seeking within video windows"
-status: in_progress
+status: done
 blocked_by: []
 spec: "apply-build"
 priority: high
@@ -33,11 +33,11 @@ Compare sparse/time-selected baseline, dense box/crop scoring, and optional mask
 
 ## Acceptance criteria
 
-- [ ] Report complete-state recall against exhaustive window labels.
-- [ ] Report missed revisions, duplicate evidence and wrong subject associations.
-- [ ] Report exact settings/command recovery and human correction effort where observed.
-- [ ] Compare frame count, decode/detection/recognition/tracking cost and memory separately.
-- [ ] Show whether boxes suffice and where masks/tracking add measurable benefit; retain explicit gaps.
+- [x] Report complete-state recall against exhaustive window labels.
+- [x] Report missed revisions, duplicate evidence and wrong subject associations.
+- [x] Report exact settings/command recovery and human correction effort where observed.
+- [x] Compare frame count, decode/detection/recognition/tracking cost and memory separately.
+- [x] Show whether boxes suffice and where masks/tracking add measurable benefit; retain explicit gaps.
 
 ## Out of scope
 
@@ -100,3 +100,11 @@ Do not adopt the candidate as default. New ticket36 owns the separate revision-b
 See `docs/architecture/spikes/revision-boundary-results.md`, raw `codex/spike-revision-boundaries` commit `842189be2c9480a8c228c7d87917713dc5acb0be`. The comparison separated180 observed development frames from509 locked validation frames across two windows/sources. Preferred packets improved development to3/3 but retained2–3/4 terminal validation states, losing repeated-command occurrence identity after scrolling. Settled runs and the grid retained4/4 at cap4; the other-source UI3/3 used a visual fallback. Exact filename/symbol/emoji writing remains unreliable.
 
 Keep36's bounded negative/conditional verdict distinct from broader25 qualification. Remaining questions: temporal occurrence identity under repeated commands/history loss; dynamic text extent outside a manually seeded viewport; independent references and more sources; masks/semantic association; correction effort and actual task outcomes. Do not infer success from a returned prompt or UI image. Review28 gates all adoption.
+
+## Resolution (2026-10-26)
+
+Completed bounded evidence synthesis. Reject frozen event/packet candidates as defaults; settled selection remains conditional and grid advantage unproven. Exact text, independent references, association and task outcomes remain explicit gaps, owned by 37/26/21/18. No production integration.
+
+### Verification
+1. ✓ docs/architecture/spikes/subject-frame-seeking-results.md exists and records evidence, limitations and a disposition for each scoped question — "subject-frame-seeking-results.md final synthesis maps all five scoped questions to four linked evidence rounds, limitations and owners; no winning/default claim"
+2. ✓ tkt validate exits 0 — "tkt validate --brief passed with zero findings"
