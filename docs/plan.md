@@ -8,8 +8,6 @@ Ticket **36 comparison complete**: [revision-boundary results](architecture/spik
 
 | id | title | status |
 |---|---|---|
-| 15 | Compare speech paths on implementation-critical details | open |
-| 25 | Find complete readable subject states by seeking within video windows | ✅ done |
 | 17 | Evaluate evidence-preserving adaptation to a target environment | open |
 | 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
 | 21 | Measure guide versus note usability with a fresh task performer | open |
@@ -37,8 +35,10 @@ Ticket **36 comparison complete**: [revision-boundary results](architecture/spik
 | 32 | Compare YOLOE promptable detection and segmentation | ✅ done |
 | 24 | Resolve open research questions before the next spike round | ✅ done |
 | 14 | Compare OCR for exact commands and settings | ✅ done |
+| 15 | Compare speech paths on implementation-critical details | ✅ done |
 | 23 | Compare image element models by downstream evidence jobs | ✅ done |
 | 36 | Spike revision boundaries for typing and scrolling without prefix budget loss | ✅ done |
+| 25 | Find complete readable subject states by seeking within video windows | ✅ done |
 | 01 | Evaluate CrisperWhisper against current Whisper pipeline | ✅ done |
 | 02 | Add WhisperX backend for word-level timestamps + diarization | ✅ done |
 | 03 | Add CrisperWhisper isolated backend for verbatim + hallucination detection | ✅ done |
