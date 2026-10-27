@@ -1,5 +1,5 @@
 {
-  "fixture": "ticket18-narration-decisions-v5",
+  "fixture": "ticket18-narration-local-v6",
   "date": "2026-10-27",
   "source_url": "https://www.youtube.com/watch?v=ABeo1kKueRs",
   "source_title": "I tested the big AI voice models so you don't have to",
@@ -12,8 +12,8 @@
   "files": [
     {
       "path": "sample-guide.md",
-      "bytes": 15237,
-      "sha256": "fc0d5c36183d09fe730575e2fa4e1eb3df0af2e7822dd0e104b33fc33c87927d",
+      "bytes": 19408,
+      "sha256": "f224ea95422acb8064efad24cf0c66ca9b15a71a687f170763df8a0828c75f17",
       "hash_encoding": "UTF-8 normalized LF text; independent of checkout line endings"
     },
     {
@@ -23,5 +23,6 @@
     }
   ],
   "researched_extension": "Official starting routes added equally in A/B; documentary support, not tested implementation",
-  "choice_basis": "Qualitative fit, setup and total-cost judgments for a first short hosted narration; pricing checked2026-10-27, not a measured user/account quote"
+  "choice_basis": "Qualitative fit, setup and total-cost judgments for a first short hosted narration; pricing checked2026-10-27, not a measured user/account quote",
+  "local_options": "Qwen3-TTS-12Hz-0.6B-Base and Chatterbox-Turbo documented candidates; no inference/hardware/offline qualification"
 }

@@ -8,7 +8,7 @@ Make a short narration, replace one paragraph, and keep its captions aligned. Yo
 
 Bring a short script and a voice you have permission to use. This guide focuses on prerecorded narration, such as a product demo or training lesson.
 
-**Recommended starting point: an ElevenLabs Studio audio project.** Studio is ElevenLabs' browser-based editor for generating, editing and exporting narration. Start here if you want to finish your first passage with little setup. It keeps the work in one interface, so you can learn the paragraph-revision workflow before writing automation. [Studio guide](https://elevenlabs.io/docs/eleven-creative/products/studio).
+**Recommended for a quick hosted trial: an ElevenLabs Studio audio project.** Studio is ElevenLabs' browser-based editor for generating, editing and exporting narration. Start here if you want to finish your first passage with little setup. It keeps the work in one interface, so you can learn the paragraph-revision workflow before writing automation. [Studio guide](https://elevenlabs.io/docs/eleven-creative/products/studio).
 
 **What it costs:**
 
@@ -20,6 +20,8 @@ Bring a short script and a voice you have permission to use. This guide focuses 
 
 **Your first action:** create an audio project, add one paragraph, select a voice/model and generate it. Listen, change one sentence, then export the revision. If your own voice is essential, choose a plan with cloning before step 2.
 
+**Prefer local execution?** Start with **Qwen3-TTS 0.6B Base** for reference-voice narration across its ten documented languages, or **Chatterbox-Turbo** for English narration. Choose a local trial when audio handling, offline use after setup, control or existing hardware makes local execution a better fit. Expect model downloads, runtime setup and local compute costs. The comparison and setup notes below give you concrete entry points.
+
 <details id="gap-starting-points">
 <summary>Alternative starting points</summary>
 
@@ -29,8 +31,32 @@ Bring a short script and a voice you have permission to use. This guide focuses 
 |---|---|---|---|---|
 | **ElevenLabs Studio** | First narration, occasional projects, hands-on editing | Low: browser, account and project settings | Free exploration; paid features for own-voice cloning/commercial use; generation credits and retakes | **Start here** for this sample |
 | **ElevenLabs Python SDK + audio-joining tools** | Repeated jobs, automated batches, explicit file/revision tracking | Higher: Python, API credentials, ordered files, retries and exports | API usage plus development and maintenance time; a free SDK does not make generation free | Choose when a working manual process needs automation |
+| [Qwen3-TTS 0.6B Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base) · local candidate | Reference-voice narration in ten documented languages | Higher: Python/device setup, model downloads and output checks | Your compute, storage and setup time; selected code/checkpoint declare Apache 2.0 | Start here for a multilingual local cloning trial |
+| [Chatterbox-Turbo](https://huggingface.co/ResembleAI/chatterbox-turbo) · local candidate | English reference-voice narration | Higher: Python/device setup, checkpoint download and output checks | Your compute, storage and setup time; selected code/checkpoint declare MIT | Try its official example for an English local workflow |
 
-**When neither fits:** if audio must stay on your machine, start a separate local-model trial. Check model terms, hardware needs and end-to-end local handling first. For live replies or converting a recorded performance, use the separate workflow pointers below.
+**Use constraints to choose:** when audio must stay local, rule out both hosted routes and qualify one of the named local candidates. If cloud handling is acceptable and setup time matters most, start with Studio. Compare accepted output and total effort before scaling; no local quality, speed or memory winner has been measured here.
+
+</details>
+
+<details id="local-model-setup">
+<summary>Local model setup: quickstarts, downloads and terms</summary>
+
+**Qwen3-TTS:** use the exact cloning checkpoint `Qwen/Qwen3-TTS-12Hz-0.6B-Base`. Follow the [official voice-cloning quickstart](https://github.com/QwenLM/Qwen3-TTS#quickstart) in an isolated environment, provide a permitted local reference recording and its matching text, generate one paragraph and save the WAV. The documented languages are Chinese, English, Japanese, Korean, German, French, Russian, Portuguese, Spanish and Italian. VoiceDesign and CustomVoice are different tasks/checkpoints.
+
+The example uses CUDA, bfloat16 and FlashAttention 2; check compatibility before installing optional acceleration. Load a downloaded model directory when testing offline use. The [code license](https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE) and [selected checkpoint metadata](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base) declare Apache 2.0.
+
+**Chatterbox-Turbo:** follow the [official Turbo example](https://github.com/resemble-ai/chatterbox#usage), load `ChatterboxTurboTTS`, provide a permitted local reference and save one generated paragraph. The selected `ResembleAI/chatterbox-turbo` checkpoint is English TTS. Its [code license](https://github.com/resemble-ai/chatterbox/blob/master/LICENSE) and [checkpoint metadata](https://huggingface.co/ResembleAI/chatterbox-turbo) declare MIT. Other Chatterbox variants serve different needs; this is a bounded starting shortlist.
+
+**Plan the setup:** download the required model/tokenizer files before an offline trial. The examples use CUDA; this guide has not qualified memory needs, Windows installation, CPU speed or output quality. Model parameter counts do not establish those results. Inspect the complete runtime's file/network behavior when local handling is required, and check dependencies and recording permissions for your use.
+
+**Plan the cost:** running downloaded weights on your own machine avoids a hosted TTS per-request bill for that route. Include compute/electricity, storage, retries and your setup time; rented GPUs or hosted inference add their own charges. Use the same short script/reference for your first comparison, then record setup effort, generation time, resource use and listening corrections.
+
+**First local win:** save one paragraph, revise one sentence, then carry the accepted audio into joining and caption checks. These are researched candidates, ready for a small trial rather than validated local defaults.
+
+</details>
+
+<details id="automation-depth">
+<summary>Automation details: generation, joining and timing</summary>
 
 #### Build automation from documented examples
 
@@ -64,7 +90,7 @@ Each paragraph is a replaceable audio unit. Arrange accepted units in script ord
 
 ### 1. Choose the route for your first project
 
-**Do — adaptation:** choose one real script, its audience, and whether its audio may leave your machine. For a short hosted narration with little setup, use the recommended ElevenLabs Studio route. Move to the SDK when repeated jobs justify coding and maintenance.
+**Do — adaptation:** choose one real script, its audience, and whether its audio may leave your machine. For a short hosted narration with little setup, use ElevenLabs Studio. For local control or a local-handling requirement, use the Qwen3-TTS/Chatterbox trial above. Move to SDK automation when repeated jobs justify coding and maintenance.
 
 **Why:** a route that fits your work is more useful than a voice chosen only for its similarity score.
 
@@ -109,7 +135,12 @@ format: mp3_44100_192
 
 Use your own voice ID. The remaining values show the creator's application settings. To automate them, translate the fields through the current API schema; look up how the chosen model expresses stability before mapping `natural`.
 
+<details>
+<summary>Map these settings to the API and export format</summary>
+
 **Docs:** speech requests use `text`, `model_id` and optional `voice_settings`, with output format as a request option. The documented 192 kbps MP3 API option requires Creator tier or above. Studio export quality follows its own plan settings. [Speech API](https://elevenlabs.io/docs/api-reference/text-to-speech/convert), [models](https://elevenlabs.io/docs/overview/models), [Studio export options](https://elevenlabs.io/docs/eleven-creative/products/studio).
+
+</details>
 
 **Why:** reusable settings keep the voice choice consistent across the script and make revisions easier to trace.
 
@@ -117,7 +148,7 @@ Use your own voice ID. The remaining values show the creator's application setti
 
 ### 5. Generate and keep accepted paragraphs
 
-**Do:** write as you speak and split the script into natural paragraphs. In Studio, generate and review project paragraphs, using generation history or paragraph locking to retain accepted work. For the SDK route, save numbered files such as `001`, `002` and `003`, with text/settings recorded in a manifest.
+**Do:** write as you speak and split the script into natural paragraphs. In Studio, generate and review project paragraphs, using generation history or paragraph locking to retain accepted work. For an SDK or local-model route, save numbered files such as `001`, `002` and `003`, with text/settings recorded in a manifest.
 
 **Why:** accepted paragraph units let you revise a passage while keeping the rest of the narration.
 
@@ -172,7 +203,8 @@ Your replacement paragraph is longer. Which accepted work can you keep, and what
 | Repeat the approved voice choice | Reuse project settings or your saved voice/model/API settings |
 | Revise one passage | Keep accepted takes; regenerate the changed passage |
 | Keep captions in sync | Recheck timing against the revised final audio |
-| Automate repeated jobs | Start with the official SDK, then add file tracking, joining and retries |
+| Try local voice cloning | Use the Qwen3-TTS Base or Chatterbox-Turbo quickstart and test one paragraph |
+| Automate repeated jobs | Start with the official SDK or local-model client, then add file tracking, joining and retries |
 
 <details>
 <summary>Get unstuck and check the evidence</summary>

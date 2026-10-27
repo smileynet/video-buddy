@@ -1,0 +1,17 @@
+# Audit: local narration starting points
+
+Checked **27 October 2026** independently of the producer. **Trust: 9/10 — usable for selecting a small local trial, not a runtime or privacy qualification.** Primary sources were re-fetched; all consequential documentary findings are supported. No model was installed or executed.
+
+| Finding | Verdict | Independent check |
+|---|---|---|
+| Qwen exact checkpoint/task/languages | Supported | [Official Base checkpoint card](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/raw/main/README.md) identifies 0.6B Base, reference-audio cloning, ten named languages, CUDA/bfloat16 example and WAV output. Distinguishing Base from CustomVoice/VoiceDesign is justified. |
+| Qwen code and checkpoint licenses | Supported | [Repository LICENSE](https://raw.githubusercontent.com/QwenLM/Qwen3-TTS/main/LICENSE) is Apache2.0; selected checkpoint metadata separately declares apache-2.0. This does not clear voice/input rights or all dependencies. |
+| Qwen local loading and setup | Supported, runtime untested | [Official README](https://raw.githubusercontent.com/QwenLM/Qwen3-TTS/main/README.md) documents manual downloads, local directory loading, isolated setup and FlashAttention-compatible hardware. No minimum VRAM, Windows compatibility, CPU speed or offline test follows from that example. |
+| Chatterbox-Turbo exact checkpoint/task/language | Supported | [Official checkpoint card](https://huggingface.co/ResembleAI/chatterbox-turbo/raw/main/README.md) identifies 350M English TTS and a reference-clip generation example. Text/reference-to-new-speech is correctly distinguished from a qualified performance-conversion pipeline. |
+| Chatterbox licenses and setup | Supported | [Code LICENSE](https://raw.githubusercontent.com/resemble-ai/chatterbox/master/LICENSE) is MIT; checkpoint metadata separately declares MIT. [Current README](https://raw.githubusercontent.com/resemble-ai/chatterbox/master/README.md) shows Turbo CUDA use and development on Python3.11/Debian11. Current Nano and multilingualV3 are acknowledged, so the shortlist is not falsely presented as exhaustive/newest. |
+| Chatterbox local loader/reference requirement | Supported, privacy unqualified | [Turbo source](https://raw.githubusercontent.com/resemble-ai/chatterbox/master/src/chatterbox/tts_turbo.py) defines from_local, loads weights/tokenizer from a checkpoint directory, and has from_pretrained call snapshot_download. It enforces a reference longer than5seconds. Prefetch/local input paths are useful starting steps but do not prove the full runtime is offline or private. |
+| Fit/complexity/cost recommendations | Reasoned synthesis | Direct local execution avoids a hosted TTS-provider request bill for that path, while compute, storage, downloads, retries and setup remain costs. Neither parameter count nor code licensing establishes a cheaper or better accepted result. The report labels the proposed trial and leaves performance/quality unmeasured. |
+
+## Publication conditions
+
+No correction required. Keep exact checkpoint names and their code/checkpoint license distinction; link official quickstarts. Preserve the limits on hardware, Windows, offline behavior, privacy and commercial eligibility. Do not turn upstream latency/VRAM marketing claims or the suggested reference filename into a measured requirement or winner. Record package/checkpoint revisions when a real trial is run; this audit checked moving main/master documentation.
