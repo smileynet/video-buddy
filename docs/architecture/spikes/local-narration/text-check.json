@@ -1,0 +1,107 @@
+{
+  "reviewer": "SenseVoiceSmall int8 2024-07-17; waveform-only English, CPU8threads, greedy, no ITN",
+  "runtime": "1.13.6",
+  "model_sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+  "tokens_sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc",
+  "human_listening": false,
+  "naturalness_or_speaker_similarity_judged": false,
+  "limits": "Agreement with intended text is a machine diagnostic; ASR mistakes and TTS errors are not independently adjudicated. No voice preference, fidelity or accent quality inferred.",
+  "records": [
+    {
+      "file": "chatterbox-cold-outcome.wav",
+      "audio_sha256": "56369c2d3897d9b2b90f628df93624d73ed410f13830feb55b87e53f66348452",
+      "pcm_sha256": "11910944f002392b1a45ec3ee35de6b66f8a39ed01faf0da9eb168711ec9f64b",
+      "text": "make a short narration replace one paragraph and keep its captions aligned you are done when the revised audio plays in order the unchanged takes are attained and the captions match what you hear",
+      "decode_s": 0.1093657000164967,
+      "intended": "Make a short narration, replace one paragraph, and keep its captions aligned. You are done when the revised audio plays in order, the unchanged takes are retained, and the captions match what you hear.",
+      "reference_words": 34,
+      "edits": 1,
+      "normalized_edit_rate": 0.029411764705882353,
+      "exact_normalized_agreement": false
+    },
+    {
+      "file": "chatterbox-warm-mechanism-repeat.wav",
+      "audio_sha256": "1fb071fd96c75529f638f029aafa8d3514ace86dcf36e85b1ef019f9d6f6d831",
+      "pcm_sha256": "c3a25ad2d0c2df1f8b159577db8565ff4ab467d91004cfff86e390e042019694",
+      "text": "each paragraph is a replaceable audio unit arrange accepted units in script order then derive caption and visual timing from the final narration a longer replacement can shift the timing of everything after it",
+      "decode_s": 0.11411590001080185,
+      "intended": "Each paragraph is a replaceable audio unit. Arrange accepted units in script order, then derive caption and visual timing from the final narration. A longer replacement can shift the timing of everything after it.",
+      "reference_words": 34,
+      "edits": 0,
+      "normalized_edit_rate": 0.0,
+      "exact_normalized_agreement": true
+    },
+    {
+      "file": "chatterbox-warm-mechanism.wav",
+      "audio_sha256": "35957af8eaebde9ec6eef0565482c8c897177e56ae81476be2ecac06711a4a09",
+      "pcm_sha256": "e6c678af8376a35dbfa884ffca9deba3b938b2f90b18546b5e9a4901dfbec69a",
+      "text": "each paragraph is a replaceable audio unit arrange accepted units in script order then derive caption and visual timing from the final narration a longer replacement can shift the timing of everything after it",
+      "decode_s": 0.11080470000160858,
+      "intended": "Each paragraph is a replaceable audio unit. Arrange accepted units in script order, then derive caption and visual timing from the final narration. A longer replacement can shift the timing of everything after it.",
+      "reference_words": 34,
+      "edits": 0,
+      "normalized_edit_rate": 0.0,
+      "exact_normalized_agreement": true
+    },
+    {
+      "file": "chatterbox-warm-outcome.wav",
+      "audio_sha256": "8d2e8925bbf770223abdd59763980b26d6d1340477f7e5d91997aa6a51100887",
+      "pcm_sha256": "12d2365b5a8018148410e03c592f3bee0a4a63feebf71a1b504254127c4af3c1",
+      "text": "make a short narration replace one paragraph and keep its captions aligned you are done when the revised audio plays in order the unchanged takes are retained and the captions match what you hear",
+      "decode_s": 0.1040359000035096,
+      "intended": "Make a short narration, replace one paragraph, and keep its captions aligned. You are done when the revised audio plays in order, the unchanged takes are retained, and the captions match what you hear.",
+      "reference_words": 34,
+      "edits": 0,
+      "normalized_edit_rate": 0.0,
+      "exact_normalized_agreement": true
+    },
+    {
+      "file": "qwen-cold-outcome.wav",
+      "audio_sha256": "ffe346018b69dca1ebd8877f7e64b50053711856dce9096119a17c23ec2039eb",
+      "pcm_sha256": "b07527f40de8db7c5c45d0657f02cdfaa2367ab56679cd5cec4e80e393d9f43a",
+      "text": "make a short narration replace one paragraph and keep its captions aligned you are done when the revised audio plays in order the unchanged takes are retained and the captions match what you hear",
+      "decode_s": 0.09148460000869818,
+      "intended": "Make a short narration, replace one paragraph, and keep its captions aligned. You are done when the revised audio plays in order, the unchanged takes are retained, and the captions match what you hear.",
+      "reference_words": 34,
+      "edits": 0,
+      "normalized_edit_rate": 0.0,
+      "exact_normalized_agreement": true
+    },
+    {
+      "file": "qwen-warm-mechanism-repeat.wav",
+      "audio_sha256": "2dcabc956a6fb909817f82509acc53f080d4daffee3b42507d380a424a24d481",
+      "pcm_sha256": "bb33892ebe2fc08dadfd98ae7116197ce7e690e29bc7e54571b7a8fe059726a1",
+      "text": "each paragraph is a replaceable audio unit arrange accepted units in script order then derive caption and visual timing from the final narration a longer replacement can shift the timing of everything after it",
+      "decode_s": 0.10347849997924641,
+      "intended": "Each paragraph is a replaceable audio unit. Arrange accepted units in script order, then derive caption and visual timing from the final narration. A longer replacement can shift the timing of everything after it.",
+      "reference_words": 34,
+      "edits": 0,
+      "normalized_edit_rate": 0.0,
+      "exact_normalized_agreement": true
+    },
+    {
+      "file": "qwen-warm-mechanism.wav",
+      "audio_sha256": "2343a5f9678a26689f4c0bc7e8445ee01fcac769f99ad82cba0a86725a31c778",
+      "pcm_sha256": "28e76f6cc8f8cbc08c447c278e6475e7de1a39cd30fb323e5f8984e4c11659c0",
+      "text": "each paragraph is a replaceable audio unit arrange accepted units in script order then derive caption and visual timing from the final narration a longer replacement can shift the timing of everything after it",
+      "decode_s": 0.099415400007274,
+      "intended": "Each paragraph is a replaceable audio unit. Arrange accepted units in script order, then derive caption and visual timing from the final narration. A longer replacement can shift the timing of everything after it.",
+      "reference_words": 34,
+      "edits": 0,
+      "normalized_edit_rate": 0.0,
+      "exact_normalized_agreement": true
+    },
+    {
+      "file": "qwen-warm-outcome.wav",
+      "audio_sha256": "eb9a635d56119654b3bc4444abb63f688d4008478ff3826f0395425467651305",
+      "pcm_sha256": "6173f0e205e75f65dfbeebe53f9789d16746f67b43fab7cb2cf1c44511e5c241",
+      "text": "make a short narration replace one paragraph and keep its captions aligned you are done when the revised audio plays in order the unchanged takes are retained and the captions match what you hear",
+      "decode_s": 0.08778820000588894,
+      "intended": "Make a short narration, replace one paragraph, and keep its captions aligned. You are done when the revised audio plays in order, the unchanged takes are retained, and the captions match what you hear.",
+      "reference_words": 34,
+      "edits": 0,
+      "normalized_edit_rate": 0.0,
+      "exact_normalized_agreement": true
+    }
+  ]
+}

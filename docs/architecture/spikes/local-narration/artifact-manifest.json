@@ -1,0 +1,85 @@
+{
+  "roles": {
+    "protocol.json": "frozen protocol and model identities",
+    "reference.wav": "common official demo reference, standardized PCM16",
+    "audio/*.flac": "lossless listening evidence of all eight generated PCM16 WAVs",
+    "*-results.json": "measured generation/resource receipts; not human listening",
+    "*-requirements.txt": "actual isolated environments; upstream Chatterbox Torch override disclosed"
+  },
+  "freeze_commit": "e5004d9",
+  "source_media_or_weights_committed": false,
+  "audio": [
+    {
+      "file": "audio/qwen-cold-outcome.flac",
+      "sha256": "6906209790b0564615fd9a0881f58941876ba35e67106c543c02e19a6bbf1d22",
+      "bytes": 285621,
+      "pcm_sha256": "b07527f40de8db7c5c45d0657f02cdfaa2367ab56679cd5cec4e80e393d9f43a",
+      "sample_rate": 24000,
+      "source_wav_sha256": "ffe346018b69dca1ebd8877f7e64b50053711856dce9096119a17c23ec2039eb",
+      "decoded_matches_original_pcm": true
+    },
+    {
+      "file": "audio/qwen-warm-mechanism.flac",
+      "sha256": "9b6ec8a7372f04d059adabfe63d67a163a6b064a31fc4c4e8df06ca3af60453b",
+      "bytes": 303891,
+      "pcm_sha256": "28e76f6cc8f8cbc08c447c278e6475e7de1a39cd30fb323e5f8984e4c11659c0",
+      "sample_rate": 24000,
+      "source_wav_sha256": "2343a5f9678a26689f4c0bc7e8445ee01fcac769f99ad82cba0a86725a31c778",
+      "decoded_matches_original_pcm": true
+    },
+    {
+      "file": "audio/qwen-warm-outcome.flac",
+      "sha256": "f829ee0fd01e72a067ed92b510de7047c81ec2f67ac875b30c6f0db439aa5da3",
+      "bytes": 267789,
+      "pcm_sha256": "6173f0e205e75f65dfbeebe53f9789d16746f67b43fab7cb2cf1c44511e5c241",
+      "sample_rate": 24000,
+      "source_wav_sha256": "eb9a635d56119654b3bc4444abb63f688d4008478ff3826f0395425467651305",
+      "decoded_matches_original_pcm": true
+    },
+    {
+      "file": "audio/qwen-warm-mechanism-repeat.flac",
+      "sha256": "ce0a25637c1270b03f7a66606965e06796e54c3c09426462e7e5d4dd8ca5c7ff",
+      "bytes": 329860,
+      "pcm_sha256": "bb33892ebe2fc08dadfd98ae7116197ce7e690e29bc7e54571b7a8fe059726a1",
+      "sample_rate": 24000,
+      "source_wav_sha256": "2dcabc956a6fb909817f82509acc53f080d4daffee3b42507d380a424a24d481",
+      "decoded_matches_original_pcm": true
+    },
+    {
+      "file": "audio/chatterbox-cold-outcome.flac",
+      "sha256": "68dc710f874b7ae58dd54188dbdceadfeed1f5898ecef247b51825599c0d865d",
+      "bytes": 280796,
+      "pcm_sha256": "11910944f002392b1a45ec3ee35de6b66f8a39ed01faf0da9eb168711ec9f64b",
+      "sample_rate": 24000,
+      "source_wav_sha256": "56369c2d3897d9b2b90f628df93624d73ed410f13830feb55b87e53f66348452",
+      "decoded_matches_original_pcm": true
+    },
+    {
+      "file": "audio/chatterbox-warm-mechanism.flac",
+      "sha256": "6c3f9f1f53f9873541f603c9cfadd5a3af32931eb40a9e80b0ed05aeb8075c96",
+      "bytes": 315153,
+      "pcm_sha256": "e6c678af8376a35dbfa884ffca9deba3b938b2f90b18546b5e9a4901dfbec69a",
+      "sample_rate": 24000,
+      "source_wav_sha256": "35957af8eaebde9ec6eef0565482c8c897177e56ae81476be2ecac06711a4a09",
+      "decoded_matches_original_pcm": true
+    },
+    {
+      "file": "audio/chatterbox-warm-outcome.flac",
+      "sha256": "2f05fb8b56d4ff4eb018ff0fa82d0cc3613637b074cd31d61fdd17e87c28f315",
+      "bytes": 287568,
+      "pcm_sha256": "12d2365b5a8018148410e03c592f3bee0a4a63feebf71a1b504254127c4af3c1",
+      "sample_rate": 24000,
+      "source_wav_sha256": "8d2e8925bbf770223abdd59763980b26d6d1340477f7e5d91997aa6a51100887",
+      "decoded_matches_original_pcm": true
+    },
+    {
+      "file": "audio/chatterbox-warm-mechanism-repeat.flac",
+      "sha256": "ca63917c050ccdd66739c4a15bc8d3afb7289626c1bfbca1e154b81131746bf5",
+      "bytes": 307790,
+      "pcm_sha256": "c3a25ad2d0c2df1f8b159577db8565ff4ab467d91004cfff86e390e042019694",
+      "sample_rate": 24000,
+      "source_wav_sha256": "1fb071fd96c75529f638f029aafa8d3514ace86dcf36e85b1ef019f9d6f6d831",
+      "decoded_matches_original_pcm": true
+    }
+  ]
+}

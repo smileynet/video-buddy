@@ -20,7 +20,7 @@ Bring a short script and a voice you have permission to use. This guide focuses 
 
 **Your first action:** create an audio project, add one paragraph, select a voice/model and generate it. Listen, change one sentence, then export the revision. If your own voice is essential, choose a plan with cloning before step 2.
 
-**Prefer local execution?** Start with **Qwen3-TTS 0.6B Base** for reference-voice narration across its ten documented languages, or **Chatterbox-Turbo** for English narration. Choose a local trial when audio handling, offline use after setup, control or existing hardware makes local execution a better fit. Expect model downloads, runtime setup and local compute costs. The comparison and setup notes below give you concrete entry points.
+**Prefer local execution?** For a short English trial with the model kept loaded, try **Chatterbox-Turbo** first if its listening samples suit your project. It generated speech much faster in our local run, while **Qwen3-TTS 0.6B Base** used less measured process RAM. Qwen remains a documented multilingual candidate; this spike tested English only. Choose a local trial when audio handling, offline use after setup, control or existing hardware makes local execution a better fit. Expect model downloads, runtime setup and local compute costs. Use the measured comparison and listening samples below, then the setup notes for your chosen route.
 
 <details id="gap-starting-points">
 <summary>Alternative starting points</summary>
@@ -31,10 +31,43 @@ Bring a short script and a voice you have permission to use. This guide focuses 
 |---|---|---|---|---|
 | **ElevenLabs Studio** | First narration, occasional projects, hands-on editing | Low: browser, account and project settings | Free exploration; paid features for own-voice cloning/commercial use; generation credits and retakes | **Start here** for this sample |
 | **ElevenLabs Python SDK + audio-joining tools** | Repeated jobs, automated batches, explicit file/revision tracking | Higher: Python, API credentials, ordered files, retries and exports | API usage plus development and maintenance time; a free SDK does not make generation free | Choose when a working manual process needs automation |
-| [Qwen3-TTS 0.6B Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base) · local candidate | Reference-voice narration in ten documented languages | Higher: Python/device setup, model downloads and output checks | Your compute, storage and setup time; selected code/checkpoint declare Apache 2.0 | Start here for a multilingual local cloning trial |
-| [Chatterbox-Turbo](https://huggingface.co/ResembleAI/chatterbox-turbo) · local candidate | English reference-voice narration | Higher: Python/device setup, checkpoint download and output checks | Your compute, storage and setup time; selected code/checkpoint declare MIT | Try its official example for an English local workflow |
+| [Qwen3-TTS 0.6B Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base) · local candidate | Reference-voice narration in ten documented languages | Higher: Python/device setup, model downloads and output checks | Your compute, storage and setup time; selected code/checkpoint declare Apache 2.0 | Try for multilingual needs; only English and lower process RAM measured here |
+| [Chatterbox-Turbo](https://huggingface.co/ResembleAI/chatterbox-turbo) · local candidate | English reference-voice narration | Higher: Python/device setup, checkpoint download and output checks | Your compute, storage and setup time; selected code/checkpoint declare MIT | Next English local trial for warm speed; check listening quality and setup override |
 
-**Use constraints to choose:** when audio must stay local, rule out both hosted routes and qualify one of the named local candidates. If cloud handling is acceptable and setup time matters most, start with Studio. Compare accepted output and total effort before scaling; no local quality, speed or memory winner has been measured here.
+**Use constraints to choose:** when audio must stay local, rule out both hosted routes and qualify one of the named local candidates. If cloud handling is acceptable and setup time matters most, start with Studio. Compare accepted output and total effort before scaling. The local trial below measures speed/resources on one machine; listening preference remains open.
+
+</details>
+
+<details id="local-measured-findings">
+<summary>Measured local comparison and listening samples</summary>
+
+**Same sample, same reference:** both models generated the guide's outcome and mechanism paragraphs, using one official demo reference and two seeds. Four cases each ran on Windows with an RTX 5070 / 12 GB. This is a short English trial, not a full narration/caption export.
+
+| Measured here | Qwen3-TTS 0.6B Base | Chatterbox-Turbo |
+|---|---|---|
+| Warm generation, 3 calls | 19.3–26.4 seconds | 3.2–3.4 seconds |
+| Speech produced in those calls | 10.2–12.0 seconds | 12.4–13.2 seconds |
+| Seconds of work per second of speech | 1.79–2.30 | 0.254–0.264 |
+| Peak sampled process RAM | 2.35 GiB | 4.66 GiB |
+| Peak Torch-allocated GPU memory during generation | 2.64 GiB | 3.13 GiB |
+| Model load / reference preparation | 13.4 / 3.0 seconds | 61.4 / 15.0 seconds |
+| Recognizer disagreements with intended words | 0 / 136 word presentations | 1 / 136 word presentations |
+
+**Choose by the job:** Chatterbox is the stronger next warm English trial for speed; Qwen used less process RAM here and supports a documented multilingual path. Chatterbox required a PyTorch compatibility override on this GPU. A one-off passage also pays model/startup costs. Other GPU activity remained present, so these are observed runs rather than an isolated benchmark or minimum-hardware claim.
+
+**Listen before choosing quality.** Both samples below read the same outcome paragraph. The voice comes from an official model demo, not the video creator or the user. Listen for clarity, pacing, the joins between phrases and whether the intended words were spoken.
+
+Qwen3-TTS — first take:
+
+<audio controls preload="none" src="../local-narration/audio/qwen-cold-outcome.flac" aria-label="Qwen3-TTS reading the outcome paragraph"></audio>
+
+Chatterbox-Turbo — first take:
+
+<audio controls preload="none" src="../local-narration/audio/chatterbox-cold-outcome.flac" aria-label="Chatterbox-Turbo reading the same outcome paragraph"></audio>
+
+**What to inspect:** the recognizer heard “attained” instead of the intended “retained” in Chatterbox's first take; its other takes matched after normalization. All Qwen takes matched the script in this machine check. This does not establish which model sounds better or prove the word was spoken incorrectly. No human naturalness, speaker-similarity or preference score has been collected. All eight outputs were finite and unclipped.
+
+[All eight listening samples, raw measurements, setup details and replay instructions](../local-narration/README.md). Generation timings include each model's normal returned audio path; saving is separate. Qwen used SDPA/bfloat16, Chatterbox its normal generation/watermark path; native defaults differ. Longer scripts, other languages, CPU use and full export need their own trials.
 
 </details>
 
@@ -47,11 +80,11 @@ The example uses CUDA, bfloat16 and FlashAttention 2; check compatibility before
 
 **Chatterbox-Turbo:** follow the [official Turbo example](https://github.com/resemble-ai/chatterbox#usage), load `ChatterboxTurboTTS`, provide a permitted local reference and save one generated paragraph. The selected `ResembleAI/chatterbox-turbo` checkpoint is English TTS. Its [code license](https://github.com/resemble-ai/chatterbox/blob/master/LICENSE) and [checkpoint metadata](https://huggingface.co/ResembleAI/chatterbox-turbo) declare MIT. Other Chatterbox variants serve different needs; this is a bounded starting shortlist.
 
-**Plan the setup:** download the required model/tokenizer files before an offline trial. The examples use CUDA; this guide has not qualified memory needs, Windows installation, CPU speed or output quality. Model parameter counts do not establish those results. Inspect the complete runtime's file/network behavior when local handling is required, and check dependencies and recording permissions for your use.
+**Plan the setup:** download the required model/tokenizer files before an offline trial. The tested CUDA paths ran on this Windows machine. Use the replay record for exact versions and the Chatterbox Torch override; minimum hardware, CPU performance and other platforms still need qualification. Model parameter counts do not establish those results. Inspect the complete runtime's file/network behavior when local handling is required, and check dependencies and recording permissions for your use.
 
 **Plan the cost:** running downloaded weights on your own machine avoids a hosted TTS per-request bill for that route. Include compute/electricity, storage, retries and your setup time; rented GPUs or hosted inference add their own charges. Use the same short script/reference for your first comparison, then record setup effort, generation time, resource use and listening corrections.
 
-**First local win:** save one paragraph, revise one sentence, then carry the accepted audio into joining and caption checks. These are researched candidates, ready for a small trial rather than validated local defaults.
+**First local win:** save one paragraph, revise one sentence, then carry the accepted audio into joining and caption checks. Use the measured English samples as a starting point, then try your own permitted reference and paragraph. These runs do not select a production default.
 
 </details>
 
@@ -218,7 +251,7 @@ Your replacement paragraph is longer. Which accepted work can you keep, and what
 | Captions drift after an edit | Check affected timing against the new final audio |
 | Unclear client handling or permitted use | Confirm the exact plan/model terms and handling requirements |
 
-**Evidence status:** the settings frame was visually inspected, and linked documentation was reviewed on 27 October 2026. The workflow and cost rankings are recommendations based on fit and setup effort; no generation, end-to-end export, listening quality or user completion was measured here. The creator's exact wrapper and settings mapping remain unavailable.
+**Evidence status:** the settings frame was visually inspected, and linked documentation was reviewed on 27 October 2026. The workflow and cost rankings are recommendations based on fit and setup effort; local generation and resource use were measured in the linked spike; full captioned export, human listening quality and user completion remain to be checked. The creator's exact wrapper and settings mapping remain unavailable.
 
 Use the dated price examples to plan a small trial, then confirm [current plan](https://elevenlabs.io/pricing) and [API pricing](https://elevenlabs.io/pricing/api) in your account. Compare the cost of your accepted output, including retakes and your time.
 

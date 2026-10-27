@@ -1,0 +1,17 @@
+{
+  "verified_audio_cases": [
+    "qwen-cold-outcome.wav",
+    "qwen-warm-mechanism.wav",
+    "qwen-warm-outcome.wav",
+    "qwen-warm-mechanism-repeat.wav",
+    "chatterbox-cold-outcome.wav",
+    "chatterbox-warm-mechanism.wav",
+    "chatterbox-warm-outcome.wav",
+    "chatterbox-warm-mechanism-repeat.wav"
+  ],
+  "frozen_protocol_equal": true,
+  "pcm_and_audio_hashes_match": true,
+  "summary_receipts_checked": true,
+  "human_listening": false,
+  "quality_winner": null
+}

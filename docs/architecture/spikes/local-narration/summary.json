@@ -1,0 +1,118 @@
+{
+  "qwen": {
+    "phases": {
+      "imports_cuda_init_s": 8.886529500014149,
+      "model_load_s": 13.398539200017694,
+      "reference_conditioning_s": 3.041133399994578
+    },
+    "cases": [
+      {
+        "id": "cold-outcome",
+        "wall_s": 24.141545099992072,
+        "audio_s": 10.56,
+        "rtf": 2.2861311647719766,
+        "cuda_peak_allocated_gib": 2.5999598503112793,
+        "cuda_peak_reserved_gib": 2.890625
+      },
+      {
+        "id": "warm-mechanism",
+        "wall_s": 26.36561409998103,
+        "audio_s": 11.44,
+        "rtf": 2.3046865472011393,
+        "cuda_peak_allocated_gib": 2.626396656036377,
+        "cuda_peak_reserved_gib": 3.060546875
+      },
+      {
+        "id": "warm-outcome",
+        "wall_s": 19.299237100000028,
+        "audio_s": 10.24,
+        "rtf": 1.8846911230468777,
+        "cuda_peak_allocated_gib": 2.590641498565674,
+        "cuda_peak_reserved_gib": 3.060546875
+      },
+      {
+        "id": "warm-mechanism-repeat",
+        "wall_s": 21.52414629998384,
+        "audio_s": 12.0,
+        "rtf": 1.7936788583319867,
+        "cuda_peak_allocated_gib": 2.641291618347168,
+        "cuda_peak_reserved_gib": 3.236328125
+      }
+    ],
+    "warm_wall_range_s": [
+      19.299237100000028,
+      26.36561409998103
+    ],
+    "warm_rtf_range": [
+      1.7936788583319867,
+      2.3046865472011393
+    ],
+    "warm_median_rtf": 1.8846911230468777,
+    "warm_total_rtf": 1.9949227286212856,
+    "sampled_peak_rss_gib": 2.3527183532714844,
+    "sampled_peak_device_mib": 9344.0,
+    "download_wall_s": 48.27964970000903,
+    "snapshot_payload_bytes": 2516106051,
+    "text_edits": 0,
+    "intended_word_presentations": 136,
+    "all_outputs_finite_unclipped": true
+  },
+  "chatterbox": {
+    "phases": {
+      "imports_cuda_init_s": 15.69011429999955,
+      "model_load_s": 61.40838979999535,
+      "reference_conditioning_s": 14.989448599983007
+    },
+    "cases": [
+      {
+        "id": "cold-outcome",
+        "wall_s": 4.344279999990249,
+        "audio_s": 11.6,
+        "rtf": 0.37450689655088354,
+        "cuda_peak_allocated_gib": 3.0987887382507324,
+        "cuda_peak_reserved_gib": 3.18359375
+      },
+      {
+        "id": "warm-mechanism",
+        "wall_s": 3.4483397000003606,
+        "audio_s": 13.08,
+        "rtf": 0.2636345336391713,
+        "cuda_peak_allocated_gib": 3.129025936126709,
+        "cuda_peak_reserved_gib": 3.3203125
+      },
+      {
+        "id": "warm-outcome",
+        "wall_s": 3.1665775000001304,
+        "audio_s": 12.4,
+        "rtf": 0.25536915322581694,
+        "cuda_peak_allocated_gib": 3.11395263671875,
+        "cuda_peak_reserved_gib": 3.3203125
+      },
+      {
+        "id": "warm-mechanism-repeat",
+        "wall_s": 3.343492400017567,
+        "audio_s": 13.16,
+        "rtf": 0.25406477203780903,
+        "cuda_peak_allocated_gib": 3.130830764770508,
+        "cuda_peak_reserved_gib": 3.3203125
+      }
+    ],
+    "warm_wall_range_s": [
+      3.1665775000001304,
+      3.4483397000003606
+    ],
+    "warm_rtf_range": [
+      0.25406477203780903,
+      0.2636345336391713
+    ],
+    "warm_median_rtf": 0.25536915322581694,
+    "warm_total_rtf": 0.25772281573545697,
+    "sampled_peak_rss_gib": 4.65618896484375,
+    "sampled_peak_device_mib": 8953.0,
+    "download_wall_s": 93.3866603000206,
+    "snapshot_payload_bytes": 4044184736,
+    "text_edits": 1,
+    "intended_word_presentations": 136,
+    "all_outputs_finite_unclipped": true
+  }
+}
