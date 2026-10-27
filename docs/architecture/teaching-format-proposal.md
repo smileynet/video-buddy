@@ -39,6 +39,8 @@ No fixed step count. A source's chapter structure need not become the guide stru
 
 ## Applied to the narration sample
 
+Historical implementation-oriented example: the following describes what is now the optional worked-example companion, not the source-first main guide's promised outcome. Use the current [authoring guidance](../agents/video-guide-authoring.md) and [user pathways proposal](user-pathways-proposal.md) when designing the main learning experience. The example below is retained as design history.
+
 **Result:** produce narration that can be revised one paragraph at a time while keeping captions aligned. The current sample describes this outcome; it has not executed it.
 
 **How it works:** each paragraph is a replaceable audio unit. Joining fixes their order; timing is derived from the final joined narration, so duration changes affect downstream cues.
@@ -78,9 +80,9 @@ Do not import Teach Me's Preact shell, learner-profile machinery, topic DAGs, qu
 
 Also omit universal quotas such as a diagram for every concept, three glossary terms or three citations per page. Match explanation and evidence to the claim. Keep important gaps plainly visible; useful next actions must not hide unverified execution behind reassuring prose.
 
-## Small adoption experiment
+## Historical adoption experiment
 
-After the current layout review, revise the sample's authoring structure once and apply it identically to A and B. Do not improve only B's content. Ask the reader to explain the revision rule, identify the missing automation dependency, and perform one revision if an authorized working environment exists. Observe lookup effort, corrections and actual result separately. Keep ticket18 focused on review layout,21 on fresh task performance, and28 on integration scope. No new learning-platform dependency is proposed.
+Historical proposal, superseded by the source-first sample and critic-driven pathway revision. Explanation checks and execution tasks require separate observations. Original experiment: after the layout review, revise the sample's authoring structure once and apply it identically to A and B. Do not improve only B's content. Ask the reader to explain the revision rule, identify the missing automation dependency, and perform one revision if an authorized working environment exists. Observe lookup effort, corrections and actual result separately. Keep ticket18 focused on review layout,21 on fresh task performance, and28 on integration scope. No new learning-platform dependency is proposed.
 
 ## Inspected sources
 

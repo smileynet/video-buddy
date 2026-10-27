@@ -4,6 +4,12 @@ Updated 2026-10-27 at the user's request. Ticket18 remains in progress; no reade
 
 The walkthrough now teaches the source's decision framework and production-pattern illustration. Both views use seven identical topics; topic 6 has the inspected settings frame at 6:42. Our implementation plan and measured model comparison are separate optional companions. No reader outcome or layout winner is claimed.
 
+## Latest: critic recommendations applied — pathways v9
+
+Active authoring guidance now separates internal routing from the reader experience contract. The reusable template selects one conceptual or source-walkthrough body, keeps immediate recovery visible, bounds research to a useful next action and distinguishes readiness from executed results. The narration sample adds a setup-free first action, local-only fit guidance, the missing-program blocker and recovery prompts. Both layouts share the same revised canonical text.
+
+Optional example links open a separate tab with the originating variant/topic. Return focuses the original tab when available; its fallback restores the exact topic, not unsaved notes. Evidence returns to the selected topic. Notes remain memory-only; no reload/cross-device persistence or human outcome is claimed. Review links use revision=pathways-v9. Pack pinned at 14c3c77f53529942d7d7671f88a8f2876a8c77ee. Seven-topic parity, source frame at topic 6, exact-topic evidence/companion return, retained in-page draft, mobile widths, local links, fixture hashes and dashboard/listening behavior passed. Pre-commit passed; canonical note finalized through the CLI. The implementation plan and measured local model comparison remain optional; joining/captioned export is unbuilt.
+
 ## Source-first teaching and optional listening review
 
 Tickets 42/43 add private blind-label listening and clarify teaching versus building. [Review notes](blind-listening-review.md) cover reveal/export, matched levels and study limits. No real user preference was entered by the agent. Source learning, implementation status and tool measurements are distinct outcomes. Guide/companion pinned be4cbf793bedcd4ca21885ade9eec86053aed4a9; reading the lesson does not start a build.

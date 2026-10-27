@@ -2,6 +2,10 @@
 
 Use this workflow when a user wants to learn from a video and apply its ideas or procedure. Use [the guide template](../templates/video-guide.md); adapt its shape to the source and the user's goal. Learning from a guide and executing an implementation are distinct activities.
 
+## Agent decisions and reader pathways
+
+Infer format from the user's goal. Source types, artifact classes, skills and CLI stages are internal decisions. Give the reader one useful next action. Use the separate [reader experience contract](video-guide-user-pathways.md) for navigation, recovery and optional branches. Ordinary intake/digest retains its note workflow unless teaching/application help is requested.
+
 ## Teaching and worked examples
 
 Classify the source before authoring: concept explanation, decision/comparison, demonstration, or worked walkthrough. Keep what the video teaches as the main guide. For a conceptual/decision video, explain its ideas, evidence and tradeoffs, then help the reader apply the reasoning. Do not turn it into a new engineering project simply because the source mentions tools or shows a pipeline.
@@ -22,6 +26,14 @@ Keep three outcomes distinct: **understanding** (explain/apply the idea), **exam
 6. **Teach the mechanism in the appropriate form.** For concepts/decisions, explain the idea, show its evidence or illustration, and give a way to apply/check the reasoning. For source walkthroughs, use Do / Why / Check steps. Add rationale where it changes understanding. Name files/environment for executable material; distinguish complete code from configuration/illustration. Keep unsupported additions separate from the source.
 7. **Disclose optional depth.** Follow the hierarchy below. Add an optional transfer task with a hint and observable criteria, then a compact work-time reference. Keep the task tied to the promised result; no compulsory quiz or course machinery.
 8. **Verify and publish.** Check sources, links, code provenance, prerequisites, dates, prices and observable checks. Actual runtime/quality evidence must name the environment and result; syntax or documentary checks do not imply task completion. For interactive views, check desktop/mobile, source links, keyboard behavior and consistent content. Follow CLI finalize/enrichment rules for the canonical note and pre-commit requirements for changed files. Preserve notes/fixtures separately from private reader responses.
+
+## Research bounds and completion
+
+Each research detour names the next user action it unblocks. Stop once a credible next step and its limits are established. Scope broader comparisons separately when uncertainty changes the decision and the user has authorized that work.
+
+When current documentation or user constraints conflict with the source, distinguish **In the video** from **For your setup** beside the affected instruction. Preserve the creator's meaning, cite the current basis and recommend the suitable action. Promote the fitting alternative when a hard constraint excludes the default.
+
+Use separate gates: **ready to read** means authoring checks pass; **ready to try** means usable instructions, prerequisites, checks and recovery are present; **executed under stated conditions** names the observed component or end-to-end result. State partial readiness plainly: “Local generation tested; joining/export still to build.” Human learning and task success require separate observation. A written plan alone does not establish execution readiness.
 
 ## Wording and information hierarchy
 
@@ -52,3 +64,11 @@ Keep important uncertainty next to the affected instruction; consolidate general
 - Learning checks assess understanding/application. Implementation checks belong to the relevant walkthrough or optional example; optional depth supports rather than interrupts the teaching.
 - Source, researched additions, target adaptations and actual execution remain distinct.
 - Comparison views use identical canonical content; copy improvements are not attributed to one layout.
+
+## Navigation and recovery check
+
+Keep the immediate “If this check fails…” action beside each required check. Required recovery and the selected alternative are primary content; deeper explanation can expand. Keep source classification and research bookkeeping out of reader headings.
+
+Optional branches state purpose, requirements, effort/cost, exact readiness and one next action. Return to the originating topic without losing current work when supported; state actual persistence limits. A new-tab companion preserves an open original page, not reload/crash recovery.
+
+Check ten-minute understanding, one bounded attempt, failed-step recovery, local-only constraints, command lookup and missing-program cases. Record authoring checks separately from observed reader outcomes.

@@ -1,99 +1,90 @@
-# {{What the video helps the reader understand or do}}
+# {{What this helps you understand or do}}
 
-Source: [{{creator and video title}}]({{video_url}}). Prepared {{readable_date}} for {{audience / target environment}}.
+<!-- Author instructions: infer the goal. Choose ONE body below, delete unused blocks and all comments. Internal source classifications and skills stay out of reader headings. -->
 
-Guide type: {{concept / decision / demonstration / source worked walkthrough}}.
+Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {{audience / situation}}.
 
-## What you will learn
+{{Concrete learning or demonstrated result. Essential fit constraints and missing dependencies.}}
 
-{{What the reader can explain, decide or apply after this guide. For a source worked walkthrough, include its demonstrated result.}}
+**Start here:** {{one useful action and its check; no setup required for a conceptual lesson}}.
 
-**Check your understanding:** {{a concrete explanation, decision or application of the central idea}}.
+<!-- BODY A: concepts/decisions. Use instead of BODY B. -->
+
+## {{Main idea}}
+
+{{Explain reasoning and a source example/illustration.}}
+
+**Use the idea:** {{small application to the reader's situation}}.
+
+**Check:** {{observable explanation or decision criterion}}.
+
+**If you're stuck:** {{immediate useful prompt/recovery}}.
+
+**In the video:** [{{source moment}}]({{timestamp_url}}).
+
+<!-- BODY B: source worked walkthrough. Use instead of BODY A. -->
 
 ## Before you start
 
-{{Only prerequisites needed to understand/follow this source. Do not require building our optional example to read the lesson.}}
+{{Only required inputs, environment, effort, costs and blockers for this route.}}
 
-{{Include the recommendation/cost/comparison block below only where the video or user's job calls for choosing a route. Move implementation-only choices to the optional companion.}}
+## {{Demonstrated step}}
 
-**Recommended starting point: {{named product/provider or local model}}.** {{What it does, why it fits this job and when another route is preferable.}}
+**Do:** {{action, context/file and material adaptation}}.
 
-**Cost and effort:** {{free exploration versus required paid features; ongoing usage/retakes or local compute/hardware; approximate setup burden. Date and cite price/terms claims.}}
+**Why:** {{reason where useful}}.
 
-**First action:** {{smallest useful thing to try and its check}}.
+**Check:** {{expected observable result}}.
+
+**If this fails:** {{immediate recovery action; deeper troubleshooting can expand below}}.
+
+**In the video:** [{{source moment}}]({{timestamp_url}}).
+
+<!-- SHARED OPTIONAL BLOCKS: include only where useful. Repeat concepts/steps as needed, no quota. -->
+
+**For your setup:** {{consequential difference from source, suitable action, primary citation and check date}}.
+
+<!-- Include tool choice only when it serves the reader's next action. Promote fitting alternatives when constraints exclude the default. -->
+
+**Recommended starting point: {{provider/product or local model}}.** {{What it does and why it fits}}.
+
+**Cost and effort:** {{required paid features, usage/retakes or local resources/setup/upkeep; cite/date unstable claims}}.
 
 <details>
 <summary>Alternative starting points</summary>
 
-| Route | Best fit | Setup and upkeep | Cost / constraints | Choose it when |
-|---|---|---|---|---|
-| {{recommended}} | {{fit}} | {{effort}} | {{cost}} | {{reason}} |
-| {{meaningful alternative; local if relevant}} | {{fit}} | {{effort}} | {{cost}} | {{reason}} |
+| Route | Fit | Setup/upkeep | Total cost / constraints | Choose when |
+| --- | --- | --- | --- | --- |
+| {{meaningful alternative}} | {{fit}} | {{effort}} | {{cost}} | {{reason}} |
 
-{{For each route: primary quickstart/prior art, what it supplies, remaining work, next action and completion check. Group components under their route.}}
-
-</details>
-
-## How it works
-
-{{A short explanation of the mechanism. Add a purposeful visual only when useful.}}
-
-## {{Main idea or source walkthrough step}}
-
-{{For a conceptual/decision source: explain the idea, its evidence/illustration and how to apply/check the reasoning. For a source worked walkthrough, use Do / Why / Check below. Delete the unused shape.}}
-
-**Do:** {{instructions with target/file/context. Label material adaptations.}}
-
-**Why:** {{brief mechanism or decision rationale where helpful}}.
-
-**Check:** {{expected observable result; next action if it fails}}.
-
-**Source / Docs:** [{{relevant moment or primary page}}]({{url}}). {{Material difference or local uncertainty, if applicable.}}
-
-<details>
-<summary>{{Specific optional explanation or setup}}</summary>
-
-{{Depth needed only by this branch: implementation, version mapping, alternatives or troubleshooting.}}
-
-</details>
-
-{{Repeat only as many concepts or demonstrated steps as the source/learning outcome needs.}}
-
-## Apply the idea — optional
-
-{{A short reasoning/application task tied to the learning outcome. It need not require an installation or a new project.}}
-
-<details>
-<summary>Hint</summary>
-
-{{Point toward the reasoning.}}
+{{Relevant local/hosted routes; components grouped together. Added starting point: supplies, remaining work, next action/check and primary citation.}}
 
 </details>
 
 <details>
-<summary>What a successful result includes</summary>
+<summary>{{Specific optional explanation or deeper troubleshooting}}</summary>
 
-{{Observable criteria; keep explanation and executed result distinct.}}
+{{Branch-specific depth; keep immediate required recovery visible above.}}
 
 </details>
 
 ## Keep handy
 
-| When you need to… | Next action / setting / decision rule |
-|---|---|
-| {{lookup need}} | {{concise usable answer}} |
+| When you need to… | Answer / action / exact topic link |
+| --- | --- |
+| {{lookup need}} | {{concise answer}} |
 
-## Optional worked example
+## {{Optional: try an additional worked example}}
 
-{{Offer a separate companion only if it helps apply the idea. State what it demonstrates, prerequisites, likely effort/cost and status: proposed / written / partly executed / validated. Link the companion rather than burying the source teaching in a new build.}}
+{{Purpose, prerequisites, likely effort/cost and exact readiness: instructions prepared; named component tested; remaining work. Source-demonstrated builds remain in main body.}}
 
-{{For an example already demonstrated in the video, keep it in the main walkthrough instead; label extensions separately.}}
+**Next action:** [{{read the separate example}}]({{companion_link}}). {{Offer a build request where useful; authoring alone does not start execution.}}
 
-**Next action:** {{read the example, ask for a proposal, or explicitly request its implementation. Authoring the guide alone does not trigger a build.}}
+{{Companion returns to exact originating topic. Preserve current work where supported; state actual persistence limits.}}
 
 <details>
-<summary>Get unstuck and check the evidence</summary>
+<summary>Sources and execution details</summary>
 
-{{Symptom → next action table; primary references/check dates; brief tested environment/results or validation still needed.}}
+{{Source versus additions, current references and exact executed inputs/environment/result. Keep model/human review distinct. Avoid an overall validated badge for partial execution.}}
 
 </details>
