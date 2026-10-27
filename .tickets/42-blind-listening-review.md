@@ -1,7 +1,7 @@
 ---
 id: "42"
 title: "Add a personal blind listening review to the dashboard"
-status: open
+status: in_progress
 blocked_by: []
 validation_criteria:
   - "Anonymous paired playback, reference and ratings work before model reveal"
