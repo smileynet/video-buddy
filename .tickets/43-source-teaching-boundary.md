@@ -1,7 +1,7 @@
 ---
 id: "43"
 title: "Separate source teaching from optional worked examples"
-status: open
+status: in_progress
 blocked_by: []
 validation_criteria:
   - "Primary narration guide teaches the source rather than requiring our build"
