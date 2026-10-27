@@ -2,85 +2,103 @@
 
 ### Your result
 
-Produce narration you can revise one paragraph at a time, with captions that still match the final audio. **Done means:** one paragraph has been replaced, the other accepted takes are retained, the rebuilt narration plays correctly, and caption timing has been checked.
+Make a short narration, replace one paragraph, and keep its captions aligned. You are done when the revised audio plays in order, the unchanged takes are retained, and the captions match what you hear.
 
 ### Before you start
 
-Use this guide for prerecorded narration, such as a product demo or training lesson. Have a short script, a voice you have permission to use, access to a suitable voice service or local workflow, and an audio/video editor. Establish whether source audio may leave your machine before selecting the route.
+Bring a short script and a voice you have permission to use. This guide focuses on prerecorded narration, such as a product demo or training lesson.
 
-**Start with one paragraph:** open a [Studio audio project](https://elevenlabs.io/docs/eleven-creative/products/studio), add a short passage from your script and choose your voice/model. Generate it, listen, then change one sentence and export the revision. Check the generation cost in your account before starting. When you're ready to automate, use the examples below to build the pieces supplied by the creator's custom program.
+**Recommended starting point: an ElevenLabs Studio audio project.** Studio is ElevenLabs' browser-based editor for generating, editing and exporting narration. Start here if you want to finish your first passage with little setup. It keeps the work in one interface, so you can learn the paragraph-revision workflow before writing automation. [Studio guide](https://elevenlabs.io/docs/eleven-creative/products/studio).
+
+**What it costs:**
+
+- **Explore:** the $0 plan includes 10,000 credits per month and three Studio projects. Try an available stock voice to learn the workflow.
+- **Use your own voice or publish commercially:** those features are listed under paid Starter. Its pricing card displays $6 per month alongside introductory offers; confirm the recurring charge at checkout.
+- **Budget for retakes:** generation uses credits. Compare the cost of an accepted passage, including revisions, before scaling up.
+
+<p class="subtle">Prices checked 27 October 2026. Confirm features and current offers on the <a href="https://elevenlabs.io/pricing">ElevenLabs pricing page</a>.</p>
+
+**Your first action:** create an audio project, add one paragraph, select a voice/model and generate it. Listen, change one sentence, then export the revision. If your own voice is essential, choose a plan with cloning before step 2.
 
 <details id="gap-starting-points">
-<summary>Choose a starting point and try it</summary>
+<summary>Alternative starting points</summary>
 
-**Choose a starting point.** Use Studio to make your first narration, or start with the SDK examples to build a repeatable workflow. Each route below gives you a concrete first action and shows what to add as you go.
+**How to choose:** first match the workflow to your goal and audio-handling requirements. Then weigh setup effort and the cost of producing and revising your actual script. These are qualitative recommendations, not benchmark scores.
 
-| Route | What it supplies | Your smallest next action | What to add or check |
-|---|---|---|---|
-| [Studio audio project](https://elevenlabs.io/docs/eleven-creative/products/studio) | Script editing, generation/regeneration and export in a visual editor | Create/import a short script, select voice/model, revise one passage and export | Listen, inspect joins/captions and confirm the project fits your use; its project model is not the creator's file cache |
-| [Official Python SDK](https://github.com/elevenlabs/elevenlabs-python) | A documented text-to-speech client/example | Start from its TTS example and save one paragraph's returned audio | Pin the SDK, select available voice/model, and add ordered files, retries, acceptance and revision handling |
-| [Official paragraph-stitching recipe](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) | An example paragraph loop with previous-request context | Inspect the model and request-ID constraints before adapting the loop | Durable file storage and physical joining; context conditioning is not a finished export |
+| Starting point | Fit | Setup and upkeep | Cost to consider | Recommendation |
+|---|---|---|---|---|
+| **ElevenLabs Studio** | First narration, occasional projects, hands-on editing | Low: browser, account and project settings | Free exploration; paid features for own-voice cloning/commercial use; generation credits and retakes | **Start here** for this sample |
+| **ElevenLabs Python SDK + audio-joining tools** | Repeated jobs, automated batches, explicit file/revision tracking | Higher: Python, API credentials, ordered files, retries and exports | API usage plus development and maintenance time; a free SDK does not make generation free | Choose when a working manual process needs automation |
 
-**Build it in small steps:** one approved paragraph → save its audio and a manifest of text/settings/order → generate the remaining paragraphs → accept/listen to takes → join compatible files → derive/check timing from the final narration → replace one paragraph and recheck. The examples are building blocks, not a drop-in replacement for the creator's wrapper.
+**When neither fits:** if audio must stay on your machine, start a separate local-model trial. Check model terms, hardware needs and end-to-end local handling first. For live replies or converting a recorded performance, use the separate workflow pointers below.
 
-**Joining:** [FFmpeg's concat demuxer](https://github.com/FFmpeg/FFmpeg/blob/master/doc/demuxers.texi#L70) reads an ordered file list. Its streams must match, including codecs/time bases; standardize audio format and check compatibility or normalize before joining. Matching filename extensions alone are insufficient. Listen to the final file; a successful join does not prove the narration is good.
+#### Build automation from documented examples
 
-**Continuity:** the stitching cookbook currently shows `eleven_v4`, excludes `eleven_v3`, and says request IDs should be no older than two hours. Prior audio must finish processing before its ID is reused. Check the selected model/privacy setup; request-ID stitching depends on retained request history. Listen on both sides of a replacement. Studio's plan-dependent export quality must not be inferred from the API format rules shown later in this guide.
+Start with the [official ElevenLabs Python SDK](https://github.com/elevenlabs/elevenlabs-python): generate and save one paragraph. Then inspect the [paragraph-stitching example](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) for continuity between requests. It is a component of the SDK route, rather than another competing product.
 
-**Timing:** if the final audio matches an approved spoken transcript, [forced alignment](https://elevenlabs.io/docs/api-reference/forced-alignment/create) is another starting point alongside transcription. Supply the final audio and matching text, then inspect word times; alignment is not independent proof that every intended word was spoken. The provider's overview and endpoint disagree about large-file limits; resolve that before a large upload.
+Add features in this order: save an accepted take → record its text/settings and position → generate the remaining takes → join them → check timing → revise one passage. Keep a manifest so you can find the right file when something changes.
 
-**Different job?** For live replies, begin with [conversation/turn-taking guidance](https://elevenlabs.io/docs/eleven-agents/overview). For changing an existing performance, inspect [voice conversion](https://elevenlabs.io/docs/overview/capabilities/voice-changer). These are separate trials, not additional steps required for prerecorded narration. The hosted routes do not meet a local-only requirement by themselves.
+**Budget the API route:** the public API page currently advertises Eleven v4 at $0.08 per 1,000 characters. Use that as a starting estimate, then check the applicable account rate, retakes, extra timing calls and taxes. Engineering time is additional. [API pricing](https://elevenlabs.io/pricing/api). There is no measured cost advantage for automation in this sample.
 
-**Check progress:** finish one exported passage, change it once, retain accepted work and verify the final listening/timing result. Use this small trial to check that the workflow fits your project.
+#### Add joining and timing
 
-<p class="subtle">Documentation reviewed 27 October 2026. These are researched alternatives to the creator's custom program; end-to-end generation and export still need a hands-on check.</p>
+- **Join accepted files:** [FFmpeg's concat demuxer](https://github.com/FFmpeg/FFmpeg/blob/master/doc/demuxers.texi#L70) reads an ordered list. Standardize and check codecs, sample rates, channels and time bases, or normalize the files before joining. Listen across every boundary.
+- **Keep delivery consistent:** the stitching example shows `eleven_v4`, excludes `eleven_v3`, and calls for completed requests with IDs no older than two hours. Check the chosen model/privacy setup. Accepted audio can remain useful after its request ID expires; listen on both sides of a replacement.
+- **Create timing:** use transcription, or [forced alignment](https://elevenlabs.io/docs/api-reference/forced-alignment/create) when you have a transcript that matches the final audio. Check names, numbers and joins. Resolve the provider's conflicting large-file limits before a large upload.
+
+Studio handles projects differently from a file-per-paragraph program. Select export quality from your Studio plan; its limits differ from API format options.
+
+#### Explore a different end result
+
+For live replies, begin with [turn-taking and conversation guidance](https://elevenlabs.io/docs/eleven-agents/overview). To change the voice of an existing performance, inspect [voice conversion](https://elevenlabs.io/docs/overview/capabilities/voice-changer). Pick these branches when the end result calls for them; prerecorded narration can stay with the simpler path above.
+
+<p class="subtle">Documentation reviewed 27 October 2026. These researched routes provide alternatives to the creator's custom program. Try one exported passage to establish fit; end-to-end generation, quality and cost have not been measured for this sample.</p>
 
 </details>
 
 ### How it works
 
-Each paragraph is a replaceable audio unit. You assemble accepted units in script order, then derive caption and visual timing from that final narration. Replacing one unit preserves the others, but a duration change can shift the timing of everything after it.
+Each paragraph is a replaceable audio unit. Arrange accepted units in script order, then derive caption and visual timing from the final narration. A longer replacement can shift the timing of everything after it.
 
-**Evidence labels:** Source identifies what the creator describes or shows. Adaptation identifies our added procedure. Docs checked identifies provider guidance checked 27 October 2026. A citation, a successful API request and a listener-approved result are different kinds of evidence.
+**Reading the evidence:** “Source” points to the creator's description or a retained frame. “Adaptation” identifies the practical procedure added for this guide. “Docs” links to current provider guidance. The proposed checks describe what to verify in your own trial.
 
-### 1. Choose the job before the model
+### 1. Choose the route for your first project
 
-**Do — adaptation:** choose one real script, its audience, whether audio may leave your machine, and your monthly production volume. Use your own voice or one you have permission to use.
+**Do — adaptation:** choose one real script, its audience, and whether its audio may leave your machine. For a short hosted narration with little setup, use the recommended ElevenLabs Studio route. Move to the SDK when repeated jobs justify coding and maintenance.
 
-| Need | Starting route | What to establish |
-|---|---|---|
-| Prerecorded narration with little setup | Try hosted TTS | Listening fit and actual cost for your script |
-| Audio must stay on your machine | Evaluate a local workflow | Local handling in practice, hardware and applicable terms |
-| Change the sound of an acted/sung performance | Evaluate voice conversion | Conversion preserves the performance you need |
-| Live spoken replies | Test a low-latency system separately | End-to-end delay and interruption handling |
+**Why:** a route that fits your work is more useful than a voice chosen only for its similarity score.
 
-**Why:** The required result and handling constraints determine which voice workflow is suitable; a voice-similarity score cannot choose that for you.
+**Check:** write down your route, why it fits, and your trial budget. If local handling is required, plan that trial before uploading audio.
 
-**Check:** write one sentence explaining your route. The creator's hosted preference is a candidate to test, not a universal winner. **Source:** [5:44 decision questions](https://www.youtube.com/watch?v=ABeo1kKueRs&t=344s).
+**Source:** [5:44 — choosing a workflow](https://www.youtube.com/watch?v=ABeo1kKueRs&t=344s). The route ranking is our recommendation for this sample.
 
-### 2. Create one voice from clean speech
+### 2. Choose a voice or create your own
 
-**Do:** record the delivery you intend to use. For this hosted example, open Voices, the plus control and Instant Voice Clone; upload/record your sample, name the voice, complete the rights/consent confirmation and save its voice ID.
+**Do:** for a low-cost first trial, select an available stock voice. If your own voice is the goal, use an account plan with Instant Voice Cloning. In ElevenLabs, open Voices, choose the plus control and Instant Voice Clone, then follow the recording, naming and consent steps.
 
-**Docs checked:** the provider recommends roughly 1–2 minutes of clear, consistent audio and at least one minute. Use that guidance here. The video's successful 30-second example is the creator's result, not this guide's recording target. [Cloning instructions and recording guidance](https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/instant-voice-cloning).
+Record about 1–2 minutes of clear, consistent speech in the delivery you want. The current docs recommend at least one minute; use that guidance as your starting point. The creator reports a successful 30-second example. [Cloning and recording guidance](https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/instant-voice-cloning).
 
-**Why:** Consistent recording and delivery give the cloning system a clearer example of the voice you intend to use.
+**Why:** consistent speech gives the system a clearer example of your intended voice and delivery.
 
-**Check:** the voice is available in your account and you know its ID. No voice was enrolled while preparing this sample.
+**Check:** the selected voice works for a short preview. For your own clone, save its voice ID for the project.
 
-### 3. Approve one paragraph before a whole script
+### 3. Approve a paragraph before the whole script
 
-**Do — adaptation:** choose a paragraph containing a product name, a number and the intended delivery. Compare eligible candidates on the same text. Hide provider labels if someone can prepare the samples for you.
+**Do — adaptation:** choose a paragraph with a product name, a number and the intended delivery. Generate it and listen for accuracy, pronunciation, pacing and pauses. If comparing candidates, use the same passage and hide labels when practical.
 
-Listen for word accuracy, pronunciation, pacing, pauses and audience fit. Record the correction you would make. If delivery is exaggerated, simplify the direction and change one factor at a time.
+If delivery is exaggerated, simplify the direction and change one factor at a time. Keep a note of the adjustment that helped.
 
-**Why:** A short real passage exposes pronunciation and delivery problems before you spend effort on a full script.
+**Why:** a small, realistic passage reveals problems while revisions are still cheap.
 
-**Check:** a listener accepts the passage, including names and numbers. If not, revise before batching. **Source:** [1:13 listening versus similarity](https://www.youtube.com/watch?v=ABeo1kKueRs&t=73s), [2:34 delivery direction](https://www.youtube.com/watch?v=ABeo1kKueRs&t=154s). This proposed procedure is not a rerun of his experiment.
+**Check:** you or another listener can accept the words and delivery. Revise this passage before generating the rest.
 
-### 4. Save the approved settings
+**Source:** [1:13 — listening versus similarity](https://www.youtube.com/watch?v=ABeo1kKueRs&t=73s), [2:34 — delivery direction](https://www.youtube.com/watch?v=ABeo1kKueRs&t=154s).
 
-**Source frame — 6:42:** his `voice.md` shows:
+### 4. Save settings you can reuse
+
+**Do — adaptation:** save the selected voice, model, delivery settings and output format. In Studio, keep them with the project. In a custom client, record the voice ID and API settings with the script.
+
+**Source frame — 6:42:** the creator's `voice.md` shows:
 
 ```yaml
 voice_id: YOUR_OWN_VOICE_ID
@@ -89,89 +107,87 @@ stability: natural
 format: mp3_44100_192
 ```
 
-The ID above is a replacement placeholder. Other values are visually observed, but this is **his application's configuration**, not an API payload. Do not copy his personal voice ID.
+Use your own voice ID. The remaining values show the creator's application settings. To automate them, translate the fields through the current API schema; look up how the chosen model expresses stability before mapping `natural`.
 
-**Do — adaptation:** save your voice ID, selected model, approved delivery settings and output format together. Start with provider defaults where you have not approved a value. If automating, translate the configuration through the current API schema; do not assume `natural` is a numeric API setting.
+**Docs:** speech requests use `text`, `model_id` and optional `voice_settings`, with output format as a request option. The documented 192 kbps MP3 API option requires Creator tier or above. Studio export quality follows its own plan settings. [Speech API](https://elevenlabs.io/docs/api-reference/text-to-speech/convert), [models](https://elevenlabs.io/docs/overview/models), [Studio export options](https://elevenlabs.io/docs/eleven-creative/products/studio).
 
-**Docs checked:** the API accepts `text`, `model_id` and optional `voice_settings`; audio format is a request option. Query supported models rather than guessing IDs. Its documented 192 kbps MP3 option requires Creator tier or above. [Speech endpoint](https://elevenlabs.io/docs/api-reference/text-to-speech/convert), [model documentation](https://elevenlabs.io/docs/overview/models).
+**Why:** reusable settings keep the voice choice consistent across the script and make revisions easier to trace.
 
-**Why:** Shared settings let you reproduce a voice choice across paragraphs; application labels still need translation into provider request fields.
+**Check:** you can find the project's voice/model and explain how saved application labels map to the generation tool you use.
 
-**Check:** you can distinguish saved application settings from the request sent to the provider.
+### 5. Generate and keep accepted paragraphs
 
-### 5. Generate numbered paragraphs
+**Do:** write as you speak and split the script into natural paragraphs. In Studio, generate and review project paragraphs, using generation history or paragraph locking to retain accepted work. For the SDK route, save numbered files such as `001`, `002` and `003`, with text/settings recorded in a manifest.
 
-**Do:** write as you speak, split the script into natural paragraphs and generate one audio file per paragraph. For your first pass, generate/download them individually in the provider interface.
+**Why:** accepted paragraph units let you revise a passage while keeping the rest of the narration.
 
-**Adaptation:** name outputs `001`, `002`, `003`; retain a manifest mapping each file to its text and approved settings. Listen before accepting each file. Keep the original take when comparing a replacement.
+**Check:** every paragraph has an accepted take in the right order. Keep the original while comparing a replacement.
 
-**Why:** Separate accepted files let you replace a changed passage while keeping the other takes.
+**Source:** [6:44 — paragraph generation](https://www.youtube.com/watch?v=ABeo1kKueRs&t=404s). Studio project handling is the researched alternative to the creator's files. His displayed `python anim.py speak <slug>` belongs to a custom program; use the SDK examples under Alternative starting points to build your own automation.
 
-**Check:** every paragraph has an accepted file, in script order. **Source:** [6:44 paragraph-to-file workflow](https://www.youtube.com/watch?v=ABeo1kKueRs&t=404s).
+### 6. Export, listen and check timing
 
-**Automation gap:** the frame shows `python anim.py speak <slug>`, a custom program not supplied by this video or guide. It is not a generic ElevenLabs command. A working client, retries and join implementation must be supplied separately.
+**Do:** export your Studio narration, or join accepted files in order in your editor/custom workflow. Listen across boundaries for missing words, repeats, volume changes and awkward pauses.
 
-### 6. Join, listen, then derive timing
+Create captions/timing from the final audio. Use transcription, or align a matching spoken transcript. Check names, numbers and transitions, then position captions and visual cues with the corrected times.
 
-**Do:** join accepted files in order in your audio/video editor. Listen across joins for missing or repeated words, level changes and awkward pauses.
+**Why:** captions and visuals follow the assembled timeline. A duration change can move later cues.
 
-Run transcription/timing on the **joined final audio**, then compare captions with what you hear. Inspect names, numbers and transitions. Use corrected timing for captions and visual cues. The creator uses Whisper; his claim of exact word timing is not independently validated here.
+**Check:** the narration plays in order and the captions match what you hear. Recheck affected timing whenever a passage changes.
 
-**Why:** Captions and visual cues depend on the final assembled timeline, so a changed duration can move downstream cues.
+**Source:** [6:54 — assembly and timing](https://www.youtube.com/watch?v=ABeo1kKueRs&t=414s). The creator uses Whisper; Studio export and alignment are researched options. Validate timing in your output.
 
-**Check:** narration plays in order and captions match it. If an edit changes duration, refresh/recheck downstream timing. **Source:** [6:54 joining and timing](https://www.youtube.com/watch?v=ABeo1kKueRs&t=414s). Join checks and revision rules are adaptations.
+### 7. Try a one-paragraph revision
 
-### 7. Test a one-paragraph revision
+**Do — adaptation:** change one paragraph. Regenerate that passage, retain the other accepted takes, then export/rebuild the narration and refresh affected timing.
 
-**Do — adaptation:** change one paragraph, regenerate only its file, rebuild the narration and refresh affected timing. Keep the other approved takes.
+**Why:** a small revision lets you see whether the workflow delivers its main benefit.
 
-**Why:** One controlled revision checks whether the workflow actually delivers its promised benefit.
+**Check:** you can update one passage, hear a clean result and keep captions aligned. Record what needed extra work so your next project starts with better settings.
 
-**Check:** you can update one passage without rerecording the whole script and the final captions still align. This is the working-result test, not an observed outcome of this sample. **Source use case:** [7:15 reusable narration](https://www.youtube.com/watch?v=ABeo1kKueRs&t=435s).
+**Source use case:** [7:15 — reusable narration](https://www.youtube.com/watch?v=ABeo1kKueRs&t=435s).
 
 ### Try one change — optional
 
-Your replacement paragraph is longer than the original. Which work can you keep, and what must you check again? Explain your plan before looking at the hint. If you have a working environment, try the revision and record the actual result separately from your explanation.
+Your replacement paragraph is longer. Which accepted work can you keep, and what needs another check? Write your plan, then try it if you have a working project.
 
 <details>
 <summary>Hint</summary>
-<p>Separate the accepted paragraph files from the timeline made by joining them.</p>
+<p>Separate the accepted takes from the timeline built by assembling them.</p>
 </details>
 
 <details>
 <summary>What a successful result includes</summary>
-<ul><li>Keep unchanged accepted takes and replace the changed paragraph.</li><li>Rebuild the final narration in the intended order.</li><li>Refresh or inspect affected caption and visual timing against the new final audio.</li><li>Listen at the joins and check names, numbers and caption alignment.</li></ul>
-<p>A correct explanation is not proof of a successful export. Record execution and listening checks only if you performed them.</p>
+<ul><li>Keep unchanged accepted takes and replace the changed passage.</li><li>Export or rebuild the final narration in order.</li><li>Refresh or check affected caption and visual timing.</li><li>Listen at the joins and verify names, numbers and alignment.</li></ul>
+<p>Record your explanation and hands-on result separately so you know what still needs practice.</p>
 </details>
 
 ### Keep handy
 
-| When you need to… | Look up or do this |
+| When you want to… | Next action |
 |---|---|
-| Reproduce a voice choice | Keep your voice ID, model, approved settings and audio format together |
-| Interpret the source settings | The frame shows app configuration; it is not an API request body |
-| Track a take | Map numbered paragraph files to their text and settings |
-| Revise a passage | Replace that take; keep the other accepted takes |
-| Restore synchronization | Rebuild/recheck final audio and affected caption/visual timing |
-| Automate the manual workflow | Start with Studio or the official SDK/stitching examples above; the custom anim.py remains absent |
+| Finish a first passage with little setup | Use an ElevenLabs Studio audio project |
+| Explore before paying for cloning | Try an available stock voice within Free-plan credits |
+| Use your own voice | Check a plan with Instant Voice Cloning, then record clean speech |
+| Repeat the approved voice choice | Reuse project settings or your saved voice/model/API settings |
+| Revise one passage | Keep accepted takes; regenerate the changed passage |
+| Keep captions in sync | Recheck timing against the revised final audio |
+| Automate repeated jobs | Start with the official SDK, then add file tracking, joining and retries |
 
 <details>
-<summary>If you get stuck: recovery steps and remaining gaps</summary>
+<summary>Get unstuck and check the evidence</summary>
 
-### If you get stuck
-
-| Symptom | Next action |
+| What you notice | Try next |
 |---|---|
-| Similar voice, wrong delivery | Simplify direction; compare the same short passage again |
-| Missing/mispronounced words | Correct before accepting that paragraph |
-| Local setup exceeds your budget | Revisit the route; his hardware does not establish every model's requirements |
-| Captions drift after an edit | Recheck timing against the revised final audio |
-| Client handling or permitted use unclear | Establish the exact provider/model terms and handling requirements before choosing |
+| Similar voice, wrong delivery | Simplify direction and compare the same short passage |
+| Missing or mispronounced words | Correct that paragraph before accepting it |
+| More retakes than expected | Record the useful settings and include retakes in the trial budget |
+| Local setup exceeds your budget | Revisit hardware/model requirements before investing more time |
+| Captions drift after an edit | Check affected timing against the new final audio |
+| Unclear client handling or permitted use | Confirm the exact plan/model terms and handling requirements |
 
-### What remains unverified
+**Evidence status:** the settings frame was visually inspected, and linked documentation was reviewed on 27 October 2026. The workflow and cost rankings are recommendations based on fit and setup effort; no generation, end-to-end export, listening quality or user completion was measured here. The creator's exact wrapper and settings mapping remain unavailable.
 
-No enrollment, paid generation, joining, listening assessment or timing-quality test was performed here. The wrapper source and mapping of `natural` are absent. Individual local-model licenses and installation requirements were not checked, so no specific local model is endorsed for commercial work.
-
-Treat hardware costs, rankings and included-hour estimates in the video as dated claims. Current [pricing](https://elevenlabs.io/pricing) distinguishes plans, credits and promotions; calculate cost for your chosen model and usage instead of assuming fixed finished hours. This is a starting workflow, not a demonstrated best purchase for this user.
+Use the dated price examples to plan a small trial, then confirm [current plan](https://elevenlabs.io/pricing) and [API pricing](https://elevenlabs.io/pricing/api) in your account. Compare the cost of your accepted output, including retakes and your time.
 
 </details>
