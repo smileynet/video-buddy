@@ -8,20 +8,20 @@ Produce narration you can revise one paragraph at a time, with captions that sti
 
 Use this guide for prerecorded narration, such as a product demo or training lesson. Have a short script, a voice you have permission to use, access to a suitable voice service or local workflow, and an audio/video editor. Establish whether source audio may leave your machine before selecting the route.
 
-**Missing creator program — a starting point:** you do not need his private `anim.py` to try this outcome. For a first finished narration, start with a [Studio audio project](https://elevenlabs.io/docs/eleven-creative/products/studio): use your script, choose the voice/model explicitly, generate a short passage and try one revision before exporting. This is a researched alternative, not a replay of his program. Generation uses your provider account; inspect the applicable cost before starting.
+**Start with one paragraph:** open a [Studio audio project](https://elevenlabs.io/docs/eleven-creative/products/studio), add a short passage from your script and choose your voice/model. Generate it, listen, then change one sentence and export the revision. Check the generation cost in your account before starting. When you're ready to automate, use the examples below to build the pieces supplied by the creator's custom program.
 
 <details id="gap-starting-points">
-<summary>Fill the automation gap: examples, components and next actions</summary>
+<summary>Choose a starting point and try it</summary>
 
-**Researched extension — checked27October2026.** The following prior art supplies a starting point. None of these routes was installed, generated, joined, listened to or exported while preparing this guide.
+**Choose a starting point.** Use Studio to make your first narration, or start with the SDK examples to build a repeatable workflow. Each route below gives you a concrete first action and shows what to add as you go.
 
-| Route | What it supplies | Your smallest next action | What remains yours |
+| Route | What it supplies | Your smallest next action | What to add or check |
 |---|---|---|---|
 | [Studio audio project](https://elevenlabs.io/docs/eleven-creative/products/studio) | Script editing, generation/regeneration and export in a visual editor | Create/import a short script, select voice/model, revise one passage and export | Listen, inspect joins/captions and confirm the project fits your use; its project model is not the creator's file cache |
 | [Official Python SDK](https://github.com/elevenlabs/elevenlabs-python) | A documented text-to-speech client/example | Start from its TTS example and save one paragraph's returned audio | Pin the SDK, select available voice/model, and add ordered files, retries, acceptance and revision handling |
 | [Official paragraph-stitching recipe](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) | An example paragraph loop with previous-request context | Inspect the model and request-ID constraints before adapting the loop | Durable file storage and physical joining; context conditioning is not a finished export |
 
-**Small automation plan — our synthesis:** one approved paragraph → save its audio and a manifest of text/settings/order → generate the remaining paragraphs → accept/listen to takes → join compatible files → derive/check timing from the final narration → replace one paragraph and recheck. The examples are building blocks, not a drop-in replacement for the creator's wrapper.
+**Build it in small steps:** one approved paragraph → save its audio and a manifest of text/settings/order → generate the remaining paragraphs → accept/listen to takes → join compatible files → derive/check timing from the final narration → replace one paragraph and recheck. The examples are building blocks, not a drop-in replacement for the creator's wrapper.
 
 **Joining:** [FFmpeg's concat demuxer](https://github.com/FFmpeg/FFmpeg/blob/master/doc/demuxers.texi#L70) reads an ordered file list. Its streams must match, including codecs/time bases; standardize audio format and check compatibility or normalize before joining. Matching filename extensions alone are insufficient. Listen to the final file; a successful join does not prove the narration is good.
 
@@ -31,18 +31,17 @@ Use this guide for prerecorded narration, such as a product demo or training les
 
 **Different job?** For live replies, begin with [conversation/turn-taking guidance](https://elevenlabs.io/docs/eleven-agents/overview). For changing an existing performance, inspect [voice conversion](https://elevenlabs.io/docs/overview/capabilities/voice-changer). These are separate trials, not additional steps required for prerecorded narration. The hosted routes do not meet a local-only requirement by themselves.
 
-**Check progress:** finish one exported passage, change it once, retain accepted work and verify the final listening/timing result. That trial, not the existence of a library, establishes whether the gap is filled for your project.
+**Check progress:** finish one exported passage, change it once, retain accepted work and verify the final listening/timing result. Use this small trial to check that the workflow fits your project.
+
+<p class="subtle">Documentation reviewed 27 October 2026. These are researched alternatives to the creator's custom program; end-to-end generation and export still need a hands-on check.</p>
 
 </details>
-
-**Still untested here:** voice enrollment, paid generation, joining, listening and export. The creator's exact settings translation and implementation remain absent. Start small with the route above; use the SDK route when repeatable automation is the job.
-
 
 ### How it works
 
 Each paragraph is a replaceable audio unit. You assemble accepted units in script order, then derive caption and visual timing from that final narration. Replacing one unit preserves the others, but a duration change can shift the timing of everything after it.
 
-**Evidence labels:** Source identifies what the creator describes or shows. Adaptation identifies our added procedure. Docs checked identifies provider guidance checked27October2026. A citation, a successful API request and a listener-approved result are different kinds of evidence.
+**Evidence labels:** Source identifies what the creator describes or shows. Adaptation identifies our added procedure. Docs checked identifies provider guidance checked 27 October 2026. A citation, a successful API request and a listener-approved result are different kinds of evidence.
 
 ### 1. Choose the job before the model
 

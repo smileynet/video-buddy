@@ -25,3 +25,5 @@ The finalized workspace sample was updated through the CLI finalize workflow. No
 ## Researched gap help v4 (2026-10-27)
 
 User requested related topics/prior art as starting points for incomplete areas. Both views now show a short Studio starting route and a Fill the automation gap drill-in: official SDK/paragraph example, required glue, compatible audio joining, matching-transcript alignment, and optional live/conversion branches. Distinct researched-extension status retained; no creator code recovered, paid generation or final export tested. Research and independent audit are in docs/agents/research/narration-gap-starting-points{,-audit}.md. Audit supports seven documentary findings with model/history, file compatibility, Studio/API export and alignment-size conflict limits. No new reader outcome; content additions are identical in A/B.
+
+Copy refinement: lead with a first paragraph and a concrete route; use readable dates and an optional, brief documentation/validation note. Both views share the edited copy; evidence status is preserved.

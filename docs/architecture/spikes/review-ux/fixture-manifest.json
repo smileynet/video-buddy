@@ -12,8 +12,8 @@
   "files": [
     {
       "path": "sample-guide.md",
-      "bytes": 15388,
-      "sha256": "136974d8ad495801dca5867a9cb79941a0072892dfee0a71d558a965341b79f0",
+      "bytes": 15189,
+      "sha256": "adaef1af837f5c96dcc9a7eacb4f7d2a92336a226eff69a7ca1de80539aab242",
       "hash_encoding": "UTF-8 normalized LF text; independent of checkout line endings"
     },
     {
