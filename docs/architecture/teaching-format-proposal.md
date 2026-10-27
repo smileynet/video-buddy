@@ -54,6 +54,16 @@ No fixed step count. A source's chapter structure need not become the guide stru
 
 **Reference:** voice/model/settings, paragraph naming/order, regeneration rule, caption check, missing custom automation dependency. Keep the creator's application configuration separate from provider API fields.
 
+## When the source leaves a gap
+
+For a missing tool, prerequisite, explanation or implementation, provide a researched starting point alongside the gap. Name what is absent, then show the smallest useful path using official documentation or inspectable prior art. Prefer one recommended route for the stated job and one meaningful alternative over a large tool list.
+
+Each starting point should say what it supplies, what the user still needs to supply, the next concrete action, and how to check progress. Identify version/model/format constraints that could invalidate the route. Link directly to an example or relevant documentation section. Preserve both sides of any difference between the source procedure and current documentation.
+
+Label this material as **researched extension**, separate from the video's procedure and from tested implementation. Do not treat finding a library as recovering the creator's missing program. Offer adjacent workflows such as live speech or voice conversion only as optional branches when they serve a different end result. Keep prerequisites and a short next action visible; put detailed alternatives behind a drill-in.
+
+This extension was requested after the first teaching-format sample. It changes both A/B views equally and does not establish a layout or execution winner.
+
 ## What to defer
 
 Do not import Teach Me's Preact shell, learner-profile machinery, topic DAGs, quizzes, spaced repetition, Anki exports or separate lesson/reference publishing pipeline. A shared Markdown-first guide can support the present linked and adjacent-evidence views. Consider additional machinery only after a real task demonstrates the need.

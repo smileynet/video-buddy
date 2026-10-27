@@ -2,7 +2,7 @@
 
 Ticket state projection, updated 2026-10-27. Ticket files are the detailed execution record.
 
-Ticket **18 review pack prepared, reader review pending**: [procedure and limits](architecture/spikes/s7-review-ux-preparation.md). Both narration views now use the shared teaching format: result, prerequisites, mechanism, Do/Why/Check, optional practice and reference; browser checks establish operation, not usability. No winner or integration. Next action: collect the invited formative review;21 retains fresh-performer qualification.
+Ticket **18 review pack prepared, reader review pending**: [procedure and limits](architecture/spikes/s7-review-ux-preparation.md). Both narration views now use the shared teaching format: result, prerequisites, mechanism, Do/Why/Check, optional practice and reference, plus researched starting points for missing automation; browser checks establish operation, not usability. No winner or integration. Next action: collect the invited formative review;21 retains fresh-performer qualification.
 
 Ticket **17 bounded walkthrough complete**: [adaptation findings](architecture/spikes/s6-adaptation-results.md). The labeled native route creates the two source placeholders and preserves existing work in a declared no-GNU profile. Original lines work on the normal host; exit0/no-files and Force truncation controls reinforce postcondition checks. Reader comprehension remains18/21; no general translator or production integration.
 

@@ -4,9 +4,15 @@ Updated2026-10-27 at the user's request. Ticket18 remains in progress; no reader
 
 The walkthrough now uses the completed seven-step narration sample for ABeo1kKueRs. A presents a linear linked guide and evidence appendix; B shows the selected step beside timestamped video evidence. Step4 includes the inspected full settings frame at requested6:42. Other steps link to source passages without claiming retained/independently inspected visuals. Both views offer the same text and evidence; B stacks on mobile.
 
+## Latest: researched starting points for incomplete areas
+
+Both views now include a visible Studio starting route and an optional “Fill the automation gap” section: official SDK and paragraph-context example, remaining implementation work, FFmpeg joining constraints, matching-transcript alignment, and separate live/conversion pointers. [Research findings](../../agents/research/narration-gap-starting-points.md) and [independent audit](../../agents/research/narration-gap-starting-points-audit.md) support seven documentary findings; no assembled implementation, audio quality or reader result was tested. Model/history, compatible-stream, Studio/API export and alignment-size disagreements remain explicit. Latest pinned pack: da5a7957c63830ab5bdd7cb644a8c3bcd908058d. Prior v3 remains recoverable.
+
+The authoring proposal now calls for a researched starting point, concrete next action and completion check whenever an essential source gap is identified. This extends both views equally; ticket18 remains in progress.
+
 ## Try it
 
-[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/7fffe44da39afd5d20043393dc647434fb48ed37/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
+[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/da5a7957c63830ab5bdd7cb644a8c3bcd908058d/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
 
 Identify shown settings versus application/API fields, the missing automation dependency, and what changes after a one-paragraph revision. Write a next action, pause/return, then switch views and describe lookup friction. No enrollment, upload, paid generation or command execution is connected. Copy notes before leaving; they are memory-only.
 
