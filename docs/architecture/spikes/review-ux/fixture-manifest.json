@@ -1,0 +1,25 @@
+{
+  "fixture": "ticket18-narration-v2",
+  "date": "2026-10-27",
+  "source_url": "https://www.youtube.com/watch?v=ABeo1kKueRs",
+  "source_title": "I tested the big AI voice models so you don't have to",
+  "guide_role": "frozen completed sample guide, source/adaptation/docs labels preserved",
+  "frame_role": "CLI-captured full source frame, visually inspected at requested 402 seconds; no OCR",
+  "recovery": "Guide and frame retained in this spike branch. For source refresh use video-buddy fetch and frames --video-json <source JSON> --at 402 --ocr off. Remote source may change; retained hashes identify this fixture.",
+  "video_bundled": false,
+  "production_run_verified": false,
+  "reader_observed": false,
+  "files": [
+    {
+      "path": "sample-guide.md",
+      "bytes": 7750,
+      "sha256": "b9aeda0061407e4394050c9076c43352282dd44695e4da45dfeb36ea7ebee774",
+      "hash_encoding": "UTF-8 normalized LF text; independent of checkout line endings"
+    },
+    {
+      "path": "frame_00402000.jpg",
+      "bytes": 221398,
+      "sha256": "14920cfa62770b09b3caba6bedbdeb766af265ad000e6f42aabfd05b570f14b1"
+    }
+  ]
+}
