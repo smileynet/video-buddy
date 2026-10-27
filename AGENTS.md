@@ -63,6 +63,8 @@ Digest is a transcript-based analysis workflow. Every video gets a full breakdow
 
 ## Agent-owned work
 
+For a practical video guide or runbook, read [video-guide authoring guidance](docs/agents/video-guide-authoring.md) and use [the reusable guide template](docs/templates/video-guide.md). Lead with a clear recommendation, weigh relevant hosted/local alternatives by fit, complexity and cost, research missing pieces, and disclose optional depth in callouts. Keep using the CLI workflow below for mechanical work.
+
 The CLI handles the mechanical pipeline. The agent owns:
 - Quick Summary
 - Key Concepts

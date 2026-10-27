@@ -4,6 +4,14 @@ Updated2026-10-27 at the user's request. Ticket18 remains in progress; no reader
 
 The walkthrough now uses the completed seven-step narration sample for ABeo1kKueRs. A presents a linear linked guide and evidence appendix; B shows the selected step beside timestamped video evidence. Step4 includes the inspected full settings frame at requested6:42. Other steps link to source passages without claiming retained/independently inspected visuals. Both views offer the same text and evidence; B stacks on mobile.
 
+## Latest: local choices and reusable authoring
+
+The comparison now names Qwen3-TTS0.6BBase and Chatterbox-Turbo as researched local cloning candidates, with task/language fit, setup and compute costs. Studio remains conditional on hosted handling and quick setup. Alternative comparison, local-model quickstarts and automation details are separate sibling callouts; required constraints remain visible. Step4 discloses API/export mapping near its example. [Local research](../../agents/research/narration-local-starting-points.md) and [independent audit](../../agents/research/narration-local-starting-points-audit.md) support documented capabilities and selected code/checkpoint license declarations, not inference, Windows/VRAM, quality, offline or privacy outcomes.
+
+User requested this format for future videos. [Reusable template](../../templates/video-guide.md), [agent guidance](../../agents/video-guide-authoring.md) and the AGENTS.md routing pointer now capture proactive wording, researched gap-fillers, weighted recommendations including relevant local alternatives, and progressive disclosure. They preserve existing CLI mechanics. The reference proposal remains design rationale rather than a competing instruction owner. No production schema or automatic generation feature was integrated.
+
+Pinned prototype521affef738586bce3e079f96032c6730c0f3338. Both views and the finalized workspace guide use identical v6 content. Offline/mobile/parity/disclosure checks passed; no reader result or local model execution. Ticket18 stays in progress for the invited review.
+
 ## Current review: proactive wording and weighted choices
 
 The whole guide now leads with useful actions and observable checks. Recommended first route is explicitly ElevenLabs Studio, with provider, browser-based purpose, low setup, free exploration and paid own-voice features explained. Alternative starting points compares two real routes on fit, setup/upkeep, provider costs and engineering effort; stitching/FFmpeg are components of the SDK route. Studio project handling and custom-client file handling stay distinct throughout all seven steps. Hosted routes are excluded when local handling is required.
@@ -18,7 +26,7 @@ The authoring proposal now calls for a researched starting point, concrete next 
 
 ## Try it
 
-[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/f445286b4ca4ad8c8652d0fa8e671de7f506c57e/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
+[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/521affef738586bce3e079f96032c6730c0f3338/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
 
 Identify shown settings versus application/API fields, the missing automation dependency, and what changes after a one-paragraph revision. Write a next action, pause/return, then switch views and describe lookup friction. No enrollment, upload, paid generation or command execution is connected. Copy notes before leaving; they are memory-only.
 

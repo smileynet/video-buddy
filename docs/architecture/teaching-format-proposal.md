@@ -1,6 +1,6 @@
 # A small teaching format for video-derived guides
 
-2026-10-27. Proposal only; no guide, prototype or production behavior changed.
+2026-10-27. Design rationale. The adopted authoring workflow is [video-guide authoring](../agents/video-guide-authoring.md), with a [reusable template](../templates/video-guide.md), routed from AGENTS.md. The narration prototype applies it; production feature integration remains separate.
 
 ## Recommendation
 
