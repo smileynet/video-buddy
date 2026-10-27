@@ -8,7 +8,35 @@ Produce narration you can revise one paragraph at a time, with captions that sti
 
 Use this guide for prerecorded narration, such as a product demo or training lesson. Have a short script, a voice you have permission to use, access to a suitable voice service or local workflow, and an audio/video editor. Establish whether source audio may leave your machine before selecting the route.
 
-**Missing dependency:** the creator's custom automation program is not supplied. You can try a manual paragraph-by-paragraph workflow; automated generation and joining require a separate implementation. This sample has not enrolled a voice, generated audio or verified an export. Live dialogue and performance conversion need separate workflows.
+**Missing creator program — a starting point:** you do not need his private `anim.py` to try this outcome. For a first finished narration, start with a [Studio audio project](https://elevenlabs.io/docs/eleven-creative/products/studio): use your script, choose the voice/model explicitly, generate a short passage and try one revision before exporting. This is a researched alternative, not a replay of his program. Generation uses your provider account; inspect the applicable cost before starting.
+
+<details id="gap-starting-points">
+<summary>Fill the automation gap: examples, components and next actions</summary>
+
+**Researched extension — checked27October2026.** The following prior art supplies a starting point. None of these routes was installed, generated, joined, listened to or exported while preparing this guide.
+
+| Route | What it supplies | Your smallest next action | What remains yours |
+|---|---|---|---|
+| [Studio audio project](https://elevenlabs.io/docs/eleven-creative/products/studio) | Script editing, generation/regeneration and export in a visual editor | Create/import a short script, select voice/model, revise one passage and export | Listen, inspect joins/captions and confirm the project fits your use; its project model is not the creator's file cache |
+| [Official Python SDK](https://github.com/elevenlabs/elevenlabs-python) | A documented text-to-speech client/example | Start from its TTS example and save one paragraph's returned audio | Pin the SDK, select available voice/model, and add ordered files, retries, acceptance and revision handling |
+| [Official paragraph-stitching recipe](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) | An example paragraph loop with previous-request context | Inspect the model and request-ID constraints before adapting the loop | Durable file storage and physical joining; context conditioning is not a finished export |
+
+**Small automation plan — our synthesis:** one approved paragraph → save its audio and a manifest of text/settings/order → generate the remaining paragraphs → accept/listen to takes → join compatible files → derive/check timing from the final narration → replace one paragraph and recheck. The examples are building blocks, not a drop-in replacement for the creator's wrapper.
+
+**Joining:** [FFmpeg's concat demuxer](https://github.com/FFmpeg/FFmpeg/blob/master/doc/demuxers.texi#L70) reads an ordered file list. Its streams must match, including codecs/time bases; standardize audio format and check compatibility or normalize before joining. Matching filename extensions alone are insufficient. Listen to the final file; a successful join does not prove the narration is good.
+
+**Continuity:** the stitching cookbook currently shows `eleven_v4`, excludes `eleven_v3`, and says request IDs should be no older than two hours. Prior audio must finish processing before its ID is reused. Check the selected model/privacy setup; request-ID stitching depends on retained request history. Listen on both sides of a replacement. Studio's plan-dependent export quality must not be inferred from the API format rules shown later in this guide.
+
+**Timing:** if the final audio matches an approved spoken transcript, [forced alignment](https://elevenlabs.io/docs/api-reference/forced-alignment/create) is another starting point alongside transcription. Supply the final audio and matching text, then inspect word times; alignment is not independent proof that every intended word was spoken. The provider's overview and endpoint disagree about large-file limits; resolve that before a large upload.
+
+**Different job?** For live replies, begin with [conversation/turn-taking guidance](https://elevenlabs.io/docs/eleven-agents/overview). For changing an existing performance, inspect [voice conversion](https://elevenlabs.io/docs/overview/capabilities/voice-changer). These are separate trials, not additional steps required for prerecorded narration. The hosted routes do not meet a local-only requirement by themselves.
+
+**Check progress:** finish one exported passage, change it once, retain accepted work and verify the final listening/timing result. That trial, not the existence of a library, establishes whether the gap is filled for your project.
+
+</details>
+
+**Still untested here:** voice enrollment, paid generation, joining, listening and export. The creator's exact settings translation and implementation remain absent. Start small with the route above; use the SDK route when repeatable automation is the job.
+
 
 ### How it works
 
@@ -126,7 +154,7 @@ Your replacement paragraph is longer than the original. Which work can you keep,
 | Track a take | Map numbered paragraph files to their text and settings |
 | Revise a passage | Replace that take; keep the other accepted takes |
 | Restore synchronization | Rebuild/recheck final audio and affected caption/visual timing |
-| Automate the manual workflow | Supply a client and joining implementation; the custom anim.py is absent |
+| Automate the manual workflow | Start with Studio or the official SDK/stitching examples above; the custom anim.py remains absent |
 
 <details>
 <summary>If you get stuck: recovery steps and remaining gaps</summary>
