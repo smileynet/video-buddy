@@ -6,7 +6,7 @@ The walkthrough now uses the completed seven-step narration sample for ABeo1kKue
 
 ## Try it
 
-[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/b4bab3d14f281258a03ab117edb831a7e378d9a6/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
+[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/7fffe44da39afd5d20043393dc647434fb48ed37/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
 
 Identify shown settings versus application/API fields, the missing automation dependency, and what changes after a one-paragraph revision. Write a next action, pause/return, then switch views and describe lookup friction. No enrollment, upload, paid generation or command execution is connected. Copy notes before leaving; they are memory-only.
 
@@ -19,3 +19,9 @@ Pre-commit and fixture hashes passed. Text hash normalizes line endings; JPEG ha
 Familiarity and repeated tasks prevent causal claims. HTML baseline is a proxy for linked Markdown, not an editor benchmark. Events miss outside reading/help and cannot establish success. Pause is open-page resumption, not crash/reload recovery. No voice-generation, listening or timing-quality outcome was tested. Provider guidance retains its sample-preparation check date; this layout update does not re-audit it.
 
 Verdict unresolved pending reader evidence. Ticket21 retains fresh-performer qualification and28 retains integration review. No reader benefit or product integration claimed.
+
+## Shared teaching format v3
+
+User authorized applying the [teaching proposal](../teaching-format-proposal.md) to both views on2026-10-27. Each uses the same outcome, prerequisites, mechanism explanation, seven Do/Why/Check steps, optional paragraph-revision task with expandable hint/criteria, and quick reference. Missing automation remains visible before starting. The source labels and unverified execution scope are retained. The workspace sample was finalized again through the CLI.
+
+Pinned prototype commit7fffe44da39afd5d20043393dc647434fb48ed37. Narration v2 remains at b4bab3d14f281258a03ab117edb831a7e378d9a6. Teaching/content improvements apply equally; they are not evidence that B performs better. Offline browser/mobile, same step content, teaching sections, hint/criteria, local evidence, note retention and pre-commit checks passed. No reader responses or production run. Hosted playback remains unverified.
