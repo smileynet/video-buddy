@@ -15,3 +15,9 @@ Ordinary Git retains the small frozen guide, generated static comparison, manife
 ## Checks
 
 Offline Playwright: seven equivalent guide steps in both structures; selected step across switches; local frame/links; no unsolicited video request; player URL start402; pause removes player; notes/export;390px mobile without horizontal overflow; no page errors. First mobile pass found a wide selector and tables; constrained selector and scrollable table containers corrected the layout. Synthetic QA notes discarded. Hosted playback not verified. Screenshots remain ignored under .scratch/review-ux. Verdict unresolved pending the invited formative review; no product integration.
+
+## Teaching-format revision v3 (2026-10-27)
+
+User authorized applying the lightweight Teach Me proposal identically to both views. Shared guide now starts with Your result / Before you start / How it works. Each of seven steps has Do, Why and Check, retaining source/adaptation/docs labels. Optional longer-paragraph transfer task has collapsed hint and observable criteria; Keep handy provides a lookup table. Recovery details are optional; required missing prerequisites remain at the top. Both layouts render the same data; teaching improvements are not attributed to B. Original narration v2 remains recoverable at b4bab3d14f281258a03ab117edb831a7e378d9a6.
+
+The finalized workspace sample was updated through the CLI finalize workflow. No new provider claims, generation, reader outcome or integration. Offline browser/mobile, note/step retention, frame/player fallback, teaching sections and three progressive details checks passed. Pre-commit passed. No reader responses recorded; familiar repeated-task confound remains.

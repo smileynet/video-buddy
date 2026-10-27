@@ -1,10 +1,20 @@
 ## Sample guide: build a repeatable narration workflow
 
-**Finish with:** a narrated script you can revise one paragraph at a time, plus captions checked against the final audio.
+### Your result
 
-**Assumed use:** prerecorded narration in your own voice, such as a product demo or training lesson. This is a sample procedure, not an executed production run. Live conversations and performance conversion need separate workflows.
+Produce narration you can revise one paragraph at a time, with captions that still match the final audio. **Done means:** one paragraph has been replaced, the other accepted takes are retained, the rebuilt narration plays correctly, and caption timing has been checked.
 
-**Evidence labels:** Source links identify the creator's observations or descriptions. Adaptation identifies practical steps added here. Docs checked identifies current provider guidance, checked 27 October 2026. No generated audio or listening quality has been verified here.
+### Before you start
+
+Use this guide for prerecorded narration, such as a product demo or training lesson. Have a short script, a voice you have permission to use, access to a suitable voice service or local workflow, and an audio/video editor. Establish whether source audio may leave your machine before selecting the route.
+
+**Missing dependency:** the creator's custom automation program is not supplied. You can try a manual paragraph-by-paragraph workflow; automated generation and joining require a separate implementation. This sample has not enrolled a voice, generated audio or verified an export. Live dialogue and performance conversion need separate workflows.
+
+### How it works
+
+Each paragraph is a replaceable audio unit. You assemble accepted units in script order, then derive caption and visual timing from that final narration. Replacing one unit preserves the others, but a duration change can shift the timing of everything after it.
+
+**Evidence labels:** Source identifies what the creator describes or shows. Adaptation identifies our added procedure. Docs checked identifies provider guidance checked27October2026. A citation, a successful API request and a listener-approved result are different kinds of evidence.
 
 ### 1. Choose the job before the model
 
@@ -17,7 +27,9 @@
 | Change the sound of an acted/sung performance | Evaluate voice conversion | Conversion preserves the performance you need |
 | Live spoken replies | Test a low-latency system separately | End-to-end delay and interruption handling |
 
-**Checkpoint:** write one sentence explaining your route. The creator's hosted preference is a candidate to test, not a universal winner. **Source:** [5:44 decision questions](https://www.youtube.com/watch?v=ABeo1kKueRs&t=344s).
+**Why:** The required result and handling constraints determine which voice workflow is suitable; a voice-similarity score cannot choose that for you.
+
+**Check:** write one sentence explaining your route. The creator's hosted preference is a candidate to test, not a universal winner. **Source:** [5:44 decision questions](https://www.youtube.com/watch?v=ABeo1kKueRs&t=344s).
 
 ### 2. Create one voice from clean speech
 
@@ -25,7 +37,9 @@
 
 **Docs checked:** the provider recommends roughly 1–2 minutes of clear, consistent audio and at least one minute. Use that guidance here. The video's successful 30-second example is the creator's result, not this guide's recording target. [Cloning instructions and recording guidance](https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/instant-voice-cloning).
 
-**Checkpoint:** the voice is available in your account and you know its ID. No voice was enrolled while preparing this sample.
+**Why:** Consistent recording and delivery give the cloning system a clearer example of the voice you intend to use.
+
+**Check:** the voice is available in your account and you know its ID. No voice was enrolled while preparing this sample.
 
 ### 3. Approve one paragraph before a whole script
 
@@ -33,7 +47,9 @@
 
 Listen for word accuracy, pronunciation, pacing, pauses and audience fit. Record the correction you would make. If delivery is exaggerated, simplify the direction and change one factor at a time.
 
-**Checkpoint:** a listener accepts the passage, including names and numbers. If not, revise before batching. **Source:** [1:13 listening versus similarity](https://www.youtube.com/watch?v=ABeo1kKueRs&t=73s), [2:34 delivery direction](https://www.youtube.com/watch?v=ABeo1kKueRs&t=154s). This proposed procedure is not a rerun of his experiment.
+**Why:** A short real passage exposes pronunciation and delivery problems before you spend effort on a full script.
+
+**Check:** a listener accepts the passage, including names and numbers. If not, revise before batching. **Source:** [1:13 listening versus similarity](https://www.youtube.com/watch?v=ABeo1kKueRs&t=73s), [2:34 delivery direction](https://www.youtube.com/watch?v=ABeo1kKueRs&t=154s). This proposed procedure is not a rerun of his experiment.
 
 ### 4. Save the approved settings
 
@@ -52,7 +68,9 @@ The ID above is a replacement placeholder. Other values are visually observed, b
 
 **Docs checked:** the API accepts `text`, `model_id` and optional `voice_settings`; audio format is a request option. Query supported models rather than guessing IDs. Its documented 192 kbps MP3 option requires Creator tier or above. [Speech endpoint](https://elevenlabs.io/docs/api-reference/text-to-speech/convert), [model documentation](https://elevenlabs.io/docs/overview/models).
 
-**Checkpoint:** you can distinguish saved application settings from the request sent to the provider.
+**Why:** Shared settings let you reproduce a voice choice across paragraphs; application labels still need translation into provider request fields.
+
+**Check:** you can distinguish saved application settings from the request sent to the provider.
 
 ### 5. Generate numbered paragraphs
 
@@ -60,7 +78,9 @@ The ID above is a replacement placeholder. Other values are visually observed, b
 
 **Adaptation:** name outputs `001`, `002`, `003`; retain a manifest mapping each file to its text and approved settings. Listen before accepting each file. Keep the original take when comparing a replacement.
 
-**Checkpoint:** every paragraph has an accepted file, in script order. **Source:** [6:44 paragraph-to-file workflow](https://www.youtube.com/watch?v=ABeo1kKueRs&t=404s).
+**Why:** Separate accepted files let you replace a changed passage while keeping the other takes.
+
+**Check:** every paragraph has an accepted file, in script order. **Source:** [6:44 paragraph-to-file workflow](https://www.youtube.com/watch?v=ABeo1kKueRs&t=404s).
 
 **Automation gap:** the frame shows `python anim.py speak <slug>`, a custom program not supplied by this video or guide. It is not a generic ElevenLabs command. A working client, retries and join implementation must be supplied separately.
 
@@ -70,13 +90,46 @@ The ID above is a replacement placeholder. Other values are visually observed, b
 
 Run transcription/timing on the **joined final audio**, then compare captions with what you hear. Inspect names, numbers and transitions. Use corrected timing for captions and visual cues. The creator uses Whisper; his claim of exact word timing is not independently validated here.
 
-**Checkpoint:** narration plays in order and captions match it. If an edit changes duration, refresh/recheck downstream timing. **Source:** [6:54 joining and timing](https://www.youtube.com/watch?v=ABeo1kKueRs&t=414s). Join checks and revision rules are adaptations.
+**Why:** Captions and visual cues depend on the final assembled timeline, so a changed duration can move downstream cues.
+
+**Check:** narration plays in order and captions match it. If an edit changes duration, refresh/recheck downstream timing. **Source:** [6:54 joining and timing](https://www.youtube.com/watch?v=ABeo1kKueRs&t=414s). Join checks and revision rules are adaptations.
 
 ### 7. Test a one-paragraph revision
 
 **Do — adaptation:** change one paragraph, regenerate only its file, rebuild the narration and refresh affected timing. Keep the other approved takes.
 
-**Done when:** you can update one passage without rerecording the whole script and the final captions still align. This is the working-result test, not an observed outcome of this sample. **Source use case:** [7:15 reusable narration](https://www.youtube.com/watch?v=ABeo1kKueRs&t=435s).
+**Why:** One controlled revision checks whether the workflow actually delivers its promised benefit.
+
+**Check:** you can update one passage without rerecording the whole script and the final captions still align. This is the working-result test, not an observed outcome of this sample. **Source use case:** [7:15 reusable narration](https://www.youtube.com/watch?v=ABeo1kKueRs&t=435s).
+
+### Try one change — optional
+
+Your replacement paragraph is longer than the original. Which work can you keep, and what must you check again? Explain your plan before looking at the hint. If you have a working environment, try the revision and record the actual result separately from your explanation.
+
+<details>
+<summary>Hint</summary>
+<p>Separate the accepted paragraph files from the timeline made by joining them.</p>
+</details>
+
+<details>
+<summary>What a successful result includes</summary>
+<ul><li>Keep unchanged accepted takes and replace the changed paragraph.</li><li>Rebuild the final narration in the intended order.</li><li>Refresh or inspect affected caption and visual timing against the new final audio.</li><li>Listen at the joins and check names, numbers and caption alignment.</li></ul>
+<p>A correct explanation is not proof of a successful export. Record execution and listening checks only if you performed them.</p>
+</details>
+
+### Keep handy
+
+| When you need to… | Look up or do this |
+|---|---|
+| Reproduce a voice choice | Keep your voice ID, model, approved settings and audio format together |
+| Interpret the source settings | The frame shows app configuration; it is not an API request body |
+| Track a take | Map numbered paragraph files to their text and settings |
+| Revise a passage | Replace that take; keep the other accepted takes |
+| Restore synchronization | Rebuild/recheck final audio and affected caption/visual timing |
+| Automate the manual workflow | Supply a client and joining implementation; the custom anim.py is absent |
+
+<details>
+<summary>If you get stuck: recovery steps and remaining gaps</summary>
 
 ### If you get stuck
 
@@ -93,3 +146,5 @@ Run transcription/timing on the **joined final audio**, then compare captions wi
 No enrollment, paid generation, joining, listening assessment or timing-quality test was performed here. The wrapper source and mapping of `natural` are absent. Individual local-model licenses and installation requirements were not checked, so no specific local model is endorsed for commercial work.
 
 Treat hardware costs, rankings and included-hour estimates in the video as dated claims. Current [pricing](https://elevenlabs.io/pricing) distinguishes plans, credits and promotions; calculate cost for your chosen model and usage instead of assuming fixed finished hours. This is a starting workflow, not a demonstrated best purchase for this user.
+
+</details>
