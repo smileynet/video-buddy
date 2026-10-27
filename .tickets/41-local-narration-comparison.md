@@ -1,7 +1,7 @@
 ---
 id: "41"
 title: "Compare Qwen3-TTS and Chatterbox-Turbo for paragraph narration"
-status: open
+status: in_progress
 blocked_by: []
 tags: ["workflow-spikes"]
 ---
