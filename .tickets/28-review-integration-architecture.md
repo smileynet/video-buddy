@@ -77,3 +77,7 @@ Consume `docs/architecture/spikes/s4-model-reviewed-results.md`: a runnable inde
 ## Guide adaptation17 bounded disposition
 
 Consume `docs/architecture/spikes/s6-adaptation-results.md`. Conditional native procedure succeeded with byte/type checkpoints, preserved existing work and stated its timestamp difference. Host already has touch; the no-GNU profile is declared, not a blanket PowerShell incompatibility. Source commands remain separate from documented adaptations and tested-here scopes. Exit0/no-files and Force truncation show why result postconditions and content preservation matter. No fresh-reader UX result or general translator is validated;18/21 remain required dispositions. Review contracts rather than promoting prototype scripts.
+
+## Local narration evidence from41
+
+User-authorized Qwen3-TTS/Chatterbox-Turbo execution now has docs/architecture/spikes/local-narration-results.md and pinned raw/listening evidence. Same two English paragraphs/reference, four cases each. Chatterbox faster warm generation, higher process RAM/longer initialization; Qwen lower measured RAM. ASR agreement is not listening quality; first Chatterbox retained/attained disagreement remains unadjudicated. Both guide layouts have the same measured findings/audio. Keep human acceptance distinct from model timing/ASR and from layout benefit. No production defaults or integration. Source protocol frozen e5004d9; retained results45e5ba848975958bce74c0f13624e1a112d92960.

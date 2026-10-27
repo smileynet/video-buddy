@@ -4,6 +4,12 @@ Updated2026-10-27 at the user's request. Ticket18 remains in progress; no reader
 
 The walkthrough now uses the completed seven-step narration sample for ABeo1kKueRs. A presents a linear linked guide and evidence appendix; B shows the selected step beside timestamped video evidence. Step4 includes the inspected full settings frame at requested6:42. Other steps link to source passages without claiming retained/independently inspected visuals. Both views offer the same text and evidence; B stacks on mobile.
 
+## Local model execution now available — ticket 41
+
+[Measured local narration comparison](local-narration-results.md) adds real generated audio, speed/resource receipts and machine text checks to both views. Four cases each on the same two English paragraphs/reference; Chatterbox faster warm generation, Qwen less process RAM. Listen in the measured-comparison callout; no human quality ranking. ASR's first Chatterbox “attained”/intended “retained” disagreement is unresolved. Raw receipts and eight lossless files are pinned under codex/spike-local-narration45e5ba848975958bce74c0f13624e1a112d92960. Existing local page path is unchanged; revision measured-v7.
+
+This is model execution evidence, separate from ticket18's layout/reader results. Both layouts still share identical guide content. Full export, naturalness, multilingual/CPU qualification and integration remain outside the measured scope.
+
 ## Latest: local choices and reusable authoring
 
 The comparison now names Qwen3-TTS0.6BBase and Chatterbox-Turbo as researched local cloning candidates, with task/language fit, setup and compute costs. Studio remains conditional on hosted handling and quick setup. Alternative comparison, local-model quickstarts and automation details are separate sibling callouts; required constraints remain visible. Step4 discloses API/export mapping near its example. [Local research](../../agents/research/narration-local-starting-points.md) and [independent audit](../../agents/research/narration-local-starting-points-audit.md) support documented capabilities and selected code/checkpoint license declarations, not inference, Windows/VRAM, quality, offline or privacy outcomes.
@@ -26,7 +32,7 @@ The authoring proposal now calls for a researched starting point, concrete next 
 
 ## Try it
 
-[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/521affef738586bce3e079f96032c6730c0f3338/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
+[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/45e5ba848975958bce74c0f13624e1a112d92960/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
 
 Identify shown settings versus application/API fields, the missing automation dependency, and what changes after a one-paragraph revision. Write a next action, pause/return, then switch views and describe lookup friction. No enrollment, upload, paid generation or command execution is connected. Copy notes before leaving; they are memory-only.
 

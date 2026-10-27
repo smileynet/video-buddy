@@ -40,3 +40,7 @@ Record raw outputs, exact versions/configuration, failures and a per-job disposi
 ## Candidate command task from17
 
 The bounded file-preparation adaptation report/guide variants (`docs/architecture/spikes/s6-adaptation-results.md`) add a real source-command fixture.17validated machine postconditions only; it did not measure fresh-performer success or label comprehension. Use it only after freezing comparable task/evidence budgets and counterbalancing; do not count its8machine cases as human trials.
+
+## Local narration evidence from41
+
+User-authorized Qwen3-TTS/Chatterbox-Turbo execution now has docs/architecture/spikes/local-narration-results.md and pinned raw/listening evidence. Same two English paragraphs/reference, four cases each. Chatterbox faster warm generation, higher process RAM/longer initialization; Qwen lower measured RAM. ASR agreement is not listening quality; first Chatterbox retained/attained disagreement remains unadjudicated. Both guide layouts have the same measured findings/audio. Keep human acceptance distinct from model timing/ASR and from layout benefit. No production defaults or integration. Source protocol frozen e5004d9; retained results45e5ba848975958bce74c0f13624e1a112d92960.
