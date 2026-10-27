@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-27",
+  "task": "Produce/replace the narration guide paragraphs on the same local GPU; bounded comparison, not production integration",
+  "texts": {
+    "outcome": "Make a short narration, replace one paragraph, and keep its captions aligned. You are done when the revised audio plays in order, the unchanged takes are retained, and the captions match what you hear.",
+    "mechanism": "Each paragraph is a replaceable audio unit. Arrange accepted units in script order, then derive caption and visual timing from the final narration. A longer replacement can shift the timing of everything after it."
+  },
+  "models": {
+    "qwen": {
+      "repo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+      "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "config.json",
+        "generation_config.json",
+        "merges.txt",
+        "model.safetensors",
+        "preprocessor_config.json",
+        "speech_tokenizer/config.json",
+        "speech_tokenizer/configuration.json",
+        "speech_tokenizer/model.safetensors",
+        "speech_tokenizer/preprocessor_config.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    "chatterbox": {
+      "repo": "ResembleAI/chatterbox-turbo",
+      "revision": "749d1c1a46eb10492095d68fbcf55691ccf137cd",
+      "files": [
+        ".gitattributes",
+        "README.md",
+        "added_tokens.json",
+        "conds.pt",
+        "merges.txt",
+        "s3gen.safetensors",
+        "s3gen_meanflow.safetensors",
+        "special_tokens_map.json",
+        "t3_turbo_v1.safetensors",
+        "t3_turbo_v1.yaml",
+        "tokenizer_config.json",
+        "ve.safetensors",
+        "vocab.json"
+      ]
+    }
+  },
+  "reference": {
+    "source": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav",
+    "provenance": "Official Qwen voice-clone demo/reference transcript; not creator or user voice; no independent human transcript annotation",
+    "source_sha256": "480f55f41c71c3d79c2a9acc48f0bfb3c5a46222e6e9ebf3e2888e93501a6b5c",
+    "file": "reference.wav",
+    "sha256": "d4c104a551cd2fe2973ab8680f88d4cd7a246153903b1c84bee01275ce0d5df5",
+    "transcript": "Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.",
+    "conversion": "ffmpeg mono 24000Hz PCM16; same converted bytes for both"
+  },
+  "cases": [
+    {
+      "id": "cold-outcome",
+      "text": "outcome",
+      "seed": 1729
+    },
+    {
+      "id": "warm-mechanism",
+      "text": "mechanism",
+      "seed": 1729
+    },
+    {
+      "id": "warm-outcome",
+      "text": "outcome",
+      "seed": 1730
+    },
+    {
+      "id": "warm-mechanism-repeat",
+      "text": "mechanism",
+      "seed": 1730
+    }
+  ],
+  "generation": {
+    "qwen": "English, bfloat16 CUDA, SDPA, checkpoint generation defaults; prompt creation separated; log effective config",
+    "chatterbox": "CUDA, official Turbo defaults including loudness normalization and watermark; log signatures; no default stripping"
+  },
+  "measurement": "One process/model; load, conditioning and each generation separately. CUDA synchronize before/after timing; returned waveform processing/watermark included. Process RSS sampled, total device memory/utilization sampled, allocator peaks separately. Walltime/audio duration=RTF; idle competing device use recorded. No isolated-machine throughput claim.",
+  "quality": "Retain WAV/FLAC, sample duration/peak/RMS/clipping, independent ASR exact/critical text as machine check. Blind audio-capable model review if available; human preference/speaker similarity unqualified without human listening. No quality winner from ASR alone.",
+  "budget": "One bounded setup/inference pass per model, four frozen cases; routine compatibility repairs logged. Failures not inferior quality. No paid API calls.",
+  "cache_root": "C:\\Users\\uosmi\\.cache\\video-buddy\\local-tts-spike\\models",
+  "environment": "Separate isolated Python3.12 environments; torch/torchaudio2.11.0+cu128 in both; Chatterbox torch2.6 pin override recorded for RTX5070/Blackwell."
+}
