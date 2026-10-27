@@ -2,7 +2,7 @@
 
 Ticket state projection, updated 2026-10-27. Ticket files are the detailed execution record.
 
-Ticket **41 local narration comparison measured**: [findings and listening evidence](architecture/spikes/local-narration-results.md). Both candidates ran four cases on the same paragraphs/reference. Chatterbox warm generation was faster; Qwen used less process RAM. No human quality winner; machine-text disagreement remains for listening review. Guide/dashboard updated; no production engine/default integration.
+Ticket **41 bounded local narration comparison complete**: [findings and listening evidence](architecture/spikes/local-narration-results.md). Both candidates ran four cases on the same paragraphs/reference. Chatterbox warm generation was faster; Qwen used less process RAM. No human quality winner; machine-text disagreement remains for listening review. Guide/dashboard updated; no production engine/default integration.
 
 Ticket **18 review pack prepared, reader review pending**: [procedure and limits](architecture/spikes/s7-review-ux-preparation.md). Both narration views now use the shared teaching format: result, prerequisites, mechanism, Do/Why/Check, optional practice and reference, plus researched starting points for missing automation; browser checks establish operation, not usability. No winner or integration. Next action: collect the invited formative review;21 retains fresh-performer qualification.
 
@@ -35,6 +35,7 @@ Ticket **36 comparison complete**: [revision-boundary results](architecture/spik
 | 40 | Qualify speech changes with human-verified commands, numbers and timing | backlog |
 | 19 | Evaluate attribution only when it changes the next action | backlog |
 | 20 | Evaluate retrieval when saved solutions become hard to find | backlog |
+| 41 | Compare Qwen3-TTS and Chatterbox-Turbo for paragraph narration | ✅ done |
 | 17 | Evaluate evidence-preserving adaptation to a target environment | ✅ done |
 | 29 | Verify current provider models and comparison eligibility | ✅ done |
 | 31 | Compare Ai2 pointing tracking and interface grounding | ✅ done |
