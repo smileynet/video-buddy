@@ -88,7 +88,7 @@ result = {
     "model_sha256": hashlib.sha256(
         (args.model / "model.int8.onnx").read_bytes()
     ).hexdigest(),
-    "tokens_sha256": hashlib.sha256(
+    "vocabulary_file_sha256": hashlib.sha256(
         (args.model / "tokens.txt").read_bytes()
     ).hexdigest(),
     "human_listening": False,

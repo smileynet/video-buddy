@@ -2,7 +2,6 @@
   "reviewer": "SenseVoiceSmall int8 2024-07-17; waveform-only English, CPU8threads, greedy, no ITN",
   "runtime": "1.13.6",
   "model_sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
-  "tokens_sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc",
   "human_listening": false,
   "naturalness_or_speaker_similarity_judged": false,
   "limits": "Agreement with intended text is a machine diagnostic; ASR mistakes and TTS errors are not independently adjudicated. No voice preference, fidelity or accent quality inferred.",
@@ -103,5 +102,6 @@
       "normalized_edit_rate": 0.0,
       "exact_normalized_agreement": true
     }
-  ]
+  ],
+  "vocabulary_file_sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc"
 }
