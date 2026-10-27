@@ -62,6 +62,8 @@ Each starting point should say what it supplies, what the user still needs to su
 
 Label this material as **researched extension**, separate from the video's procedure and from tested implementation. Do not treat finding a library as recovering the creator's missing program. Offer adjacent workflows such as live speech or voice conversion only as optional branches when they serve a different end result. Keep prerequisites and a short next action visible; put detailed alternatives behind a drill-in.
 
+Lead with a concrete action that helps the reader learn or try the technique. Use plain labels such as “Choose a starting point” and “What to add or check”; keep research dates readable and validation status brief, near the supporting details. Avoid opening with a catalogue of work that was not performed. Preserve meaningful limits without letting them obscure the next useful step.
+
 This extension was requested after the first teaching-format sample. It changes both A/B views equally and does not establish a layout or execution winner.
 
 ## What to defer
