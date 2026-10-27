@@ -80,3 +80,9 @@ Record raw outputs, exact versions/configuration, failures and a per-job disposi
 ## Candidate fixture from17
 
 Use `docs/architecture/spikes/s6-adaptation-results.md` and its frozen guide/provenance ledger as a candidate for distinguishing observed, documented-adapted and tested-here states. Native source-copy exit0/no-files and directory-conflict cases supply concrete blocked-step/recovery examples. Ticket17's same-agent walkthrough is not reader evidence; keep this study's source/format budgets and counterbalancing explicit.
+
+## Narration fixture revision (2026-10-27)
+
+User requested the sample guide in the walkthrough. Replaced Git task with seven-step narration guide for ABeo1kKueRs. A is linear linked guide; B is selected step beside matching source evidence. Same text, timestamps, opt-in player and full settings frame; notes/selected step retained on switch. Pinned codex/spike-review-ux commit b4bab3d14f281258a03ab117edb831a7e378d9a6, docs/architecture/spikes/review-ux. Previous fixture remains at2898fe9.
+
+Offline browser/mobile, local links, step/content, opt-in player/pause, note/export, fixture hash and pre-commit checks passed. Hosted playback unverified with direct-link fallback. No reader evidence, paid generation or integration. Dashboard/report updated; remains in_progress for invited review.21 retains fresh-performer qualification.
