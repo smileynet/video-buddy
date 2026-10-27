@@ -4,6 +4,12 @@ Updated2026-10-27 at the user's request. Ticket18 remains in progress; no reader
 
 The walkthrough now uses the completed seven-step narration sample for ABeo1kKueRs. A presents a linear linked guide and evidence appendix; B shows the selected step beside timestamped video evidence. Step4 includes the inspected full settings frame at requested6:42. Other steps link to source passages without claiming retained/independently inspected visuals. Both views offer the same text and evidence; B stacks on mobile.
 
+## Current review: proactive wording and weighted choices
+
+The whole guide now leads with useful actions and observable checks. Recommended first route is explicitly ElevenLabs Studio, with provider, browser-based purpose, low setup, free exploration and paid own-voice features explained. Alternative starting points compares two real routes on fit, setup/upkeep, provider costs and engineering effort; stitching/FFmpeg are components of the SDK route. Studio project handling and custom-client file handling stay distinct throughout all seven steps. Hosted routes are excluded when local handling is required.
+
+[Pricing research](../../agents/research/narration-starting-point-costs.md) and [independent audit](../../agents/research/narration-starting-point-costs-audit.md) distinguish displayed offers from renewal and headline API rates from account quotes. Qualitative recommendations are reasoned judgments, not measured cost/quality winners. Both views use identical v5 content. Offline/mobile, recommendation/provider/cost labels, alternative heading, guide parity, note/step retention and pre-commit checks passed. No generation or reader outcome. Pinned pack f445286b4ca4ad8c8652d0fa8e671de7f506c57e.
+
 ## Latest: researched starting points for incomplete areas
 
 Both views now include a visible Studio starting route and an optional “Fill the automation gap” section: official SDK and paragraph-context example, remaining implementation work, FFmpeg joining constraints, matching-transcript alignment, and separate live/conversion pointers. [Research findings](../../agents/research/narration-gap-starting-points.md) and [independent audit](../../agents/research/narration-gap-starting-points-audit.md) support seven documentary findings; no assembled implementation, audio quality or reader result was tested. Model/history, compatible-stream, Studio/API export and alignment-size disagreements remain explicit. Latest pinned pack: da5a7957c63830ab5bdd7cb644a8c3bcd908058d. Prior v3 remains recoverable.
@@ -12,7 +18,7 @@ The authoring proposal now calls for a researched starting point, concrete next 
 
 ## Try it
 
-[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/53ea0d382ee9e52851d86c3567790fb3291344a2/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
+[Start A](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=A) or [inspect B at settings](file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html?variant=B&step=3). Local links use this machine's experimental checkout. [Pinned pack and procedure](https://github.com/smileynet/video-buddy/tree/f445286b4ca4ad8c8652d0fa8e671de7f506c57e/docs/architecture/spikes/review-ux) allow recovery: check out that commit in a disposable checkout and open prototype.html. Previous Git fixture remains at2898fe9b7505b0d668661b531fc03b4a450bbe59.
 
 Identify shown settings versus application/API fields, the missing automation dependency, and what changes after a one-paragraph revision. Write a next action, pause/return, then switch views and describe lookup friction. No enrollment, upload, paid generation or command execution is connected. Copy notes before leaving; they are memory-only.
 
