@@ -1,5 +1,5 @@
 {
-  "fixture": "ticket18-narration-measured-v7",
+  "fixture": "ticket18-source-learning-v8",
   "date": "2026-10-27",
   "source_url": "https://www.youtube.com/watch?v=ABeo1kKueRs",
   "source_title": "I tested the big AI voice models so you don't have to",
@@ -11,18 +11,25 @@
   "reader_observed": false,
   "files": [
     {
-      "path": "sample-guide.md",
-      "bytes": 22801,
-      "sha256": "431615fd1753885dfd988ee658f3479c4d63b0787f42005ecbe93304af392494",
-      "hash_encoding": "UTF-8 normalized LF text; independent of checkout line endings"
-    },
-    {
       "path": "frame_00402000.jpg",
       "bytes": 221398,
       "sha256": "14920cfa62770b09b3caba6bedbdeb766af265ad000e6f42aabfd05b570f14b1"
+    },
+    {
+      "path": "sample-guide.md",
+      "bytes": 8828,
+      "sha256": "e47e00ad1c69fcaa478b60f49ceafcc6c9aea0190e3cff93750caf25fd709123",
+      "hash_encoding": "UTF-8 normalized LF text"
+    },
+    {
+      "path": "worked-example.md",
+      "bytes": 23232,
+      "sha256": "0d93c89f7f172e9f9a21e12df395c29ed5d8033fdc1ed8abccba27dec8930587",
+      "hash_encoding": "UTF-8 normalized LF text"
     }
   ],
   "researched_extension": "Official starting routes added equally in A/B; documentary support, not tested implementation",
   "choice_basis": "Qualitative fit, setup and total-cost judgments for a first short hosted narration; pricing checked2026-10-27, not a measured user/account quote",
-  "local_options": "Eight measured English generation cases; machine ASR agreement, no human quality winner; replay ../local-narration/README.md"
+  "local_options": "Eight measured English generation cases; machine ASR agreement, no human quality winner; replay ../local-narration/README.md",
+  "guide_mode": "Decision/concept teaching first. Proposed worked example and measured tool qualification are separate optional material."
 }
