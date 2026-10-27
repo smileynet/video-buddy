@@ -108,3 +108,7 @@ Reusable docs/templates/video-guide.md and docs/agents/video-guide-authoring.md 
 ## Local narration evidence from41
 
 User-authorized Qwen3-TTS/Chatterbox-Turbo execution now has docs/architecture/spikes/local-narration-results.md and pinned raw/listening evidence. Same two English paragraphs/reference, four cases each. Chatterbox faster warm generation, higher process RAM/longer initialization; Qwen lower measured RAM. ASR agreement is not listening quality; first Chatterbox retained/attained disagreement remains unadjudicated. Both guide layouts have the same measured findings/audio. Keep human acceptance distinct from model timing/ASR and from layout benefit. No production defaults or integration. Source protocol frozen e5004d9; retained results45e5ba848975958bce74c0f13624e1a112d92960.
+
+## Source-first and personal listening review
+
+Tickets42/43 add private blind-label listening and refocus primary A/B content on the video. Implementation is a separate optional companion, partly executed only at the local TTS component. Source worked walkthroughs remain primary when that is the source type. UI tests used synthetic responses; no human results manufactured. Personal records stay private until shared. Layout, learning, example execution and model preference are distinct evidence. Prototype/companion pinned be4cbf793bedcd4ca21885ade9eec86053aed4a9. See docs/architecture/spikes/blind-listening-review.md.

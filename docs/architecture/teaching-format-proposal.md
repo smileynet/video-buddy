@@ -2,6 +2,10 @@
 
 2026-10-27. Design rationale. The adopted authoring workflow is [video-guide authoring](../agents/video-guide-authoring.md), with a [reusable template](../templates/video-guide.md), routed from AGENTS.md. The narration prototype applies it; production feature integration remains separate.
 
+## Teaching and building are different activities
+
+The main guide teaches the source's concepts, decisions or demonstrated walkthrough. Proposed worked examples, their implementation and tool qualification belong in optional companions. When a video itself is a worked walkthrough, its demonstrated steps remain the core; extensions are labeled separately. Learning checks test explanation/application, implementation checks test the artifact, and model measurements qualify a component. A model spike must not become the lesson's main content merely because it was useful during authoring.
+
 ## Recommendation
 
 Adopt **one practical outcome, a short explanation, an action and a check**. Keep one canonical guide with an optional quick-reference view and per-step evidence. The goal is to help someone apply a technique in their project, recover when blocked, and later look up how it works.

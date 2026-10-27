@@ -25,6 +25,8 @@ Lower real-time factor is faster: Chatterbox generated these warm cases faster t
 
 ## Quality: listen alongside the machine checks
 
+The dashboard now offers a [personal blind-label listening review](blind-listening-review.md): level-matched A/B takes, reference audio, three ratings and private saved/exported preference. No human preference has been collected by the agent. The implementation plan and model comparison are optional companions to the source-focused lesson.
+
 All eight outputs were finite and unclipped. SenseVoiceSmall int8 / sherpa-onnx 1.13.6 decoded each waveform without the intended text as a prompt. After decoding, normalized transcripts were compared to the intended script. In Chatterbox's first outcome take, the recognizer returned **“attained”** for intended **“retained”**; its other takes matched. Qwen's four takes matched in this check.
 
 That single disagreement could be generation or recognition error. It has not been independently adjudicated. Neither zero edit distance nor an unclipped waveform proves naturalness, pronunciation quality or speaker likeness. No human or instruction-following audio-model preference score was collected. These two ordinary English paragraphs do not stress numbers, code spelling, technical names, other languages or long-form continuity.

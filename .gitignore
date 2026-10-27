@@ -41,3 +41,6 @@ vb-workspace/
 .references/
 benchmark/audio/
 .scratch/
+
+# Private exported listening preferences
+video-buddy-listening-review*.json

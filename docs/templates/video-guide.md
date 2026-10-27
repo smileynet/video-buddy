@@ -1,16 +1,20 @@
-# {{Action and useful result}}
+# {{What the video helps the reader understand or do}}
 
 Source: [{{creator and video title}}]({{video_url}}). Prepared {{readable_date}} for {{audience / target environment}}.
 
-## Your result
+Guide type: {{concept / decision / demonstration / source worked walkthrough}}.
 
-{{What the reader will produce, change or decide.}}
+## What you will learn
 
-**Done when:** {{observable checks for this scope}}.
+{{What the reader can explain, decide or apply after this guide. For a source worked walkthrough, include its demonstrated result.}}
+
+**Check your understanding:** {{a concrete explanation, decision or application of the central idea}}.
 
 ## Before you start
 
-{{Essential inputs, tools, versions, access, budget and missing prerequisites.}}
+{{Only prerequisites needed to understand/follow this source. Do not require building our optional example to read the lesson.}}
+
+{{Include the recommendation/cost/comparison block below only where the video or user's job calls for choosing a route. Move implementation-only choices to the optional companion.}}
 
 **Recommended starting point: {{named product/provider or local model}}.** {{What it does, why it fits this job and when another route is preferable.}}
 
@@ -34,7 +38,9 @@ Source: [{{creator and video title}}]({{video_url}}). Prepared {{readable_date}}
 
 {{A short explanation of the mechanism. Add a purposeful visual only when useful.}}
 
-## 1. {{Action}}
+## {{Main idea or source walkthrough step}}
+
+{{For a conceptual/decision source: explain the idea, its evidence/illustration and how to apply/check the reasoning. For a source worked walkthrough, use Do / Why / Check below. Delete the unused shape.}}
 
 **Do:** {{instructions with target/file/context. Label material adaptations.}}
 
@@ -51,11 +57,11 @@ Source: [{{creator and video title}}]({{video_url}}). Prepared {{readable_date}}
 
 </details>
 
-{{Repeat only as many steps as the outcome needs.}}
+{{Repeat only as many concepts or demonstrated steps as the source/learning outcome needs.}}
 
-## Try one change — optional
+## Apply the idea — optional
 
-{{Apply the mechanism to the reader's goal, changing one meaningful condition.}}
+{{A short reasoning/application task tied to the learning outcome. It need not require an installation or a new project.}}
 
 <details>
 <summary>Hint</summary>
@@ -76,6 +82,14 @@ Source: [{{creator and video title}}]({{video_url}}). Prepared {{readable_date}}
 | When you need to… | Next action / setting / decision rule |
 |---|---|
 | {{lookup need}} | {{concise usable answer}} |
+
+## Optional worked example
+
+{{Offer a separate companion only if it helps apply the idea. State what it demonstrates, prerequisites, likely effort/cost and status: proposed / written / partly executed / validated. Link the companion rather than burying the source teaching in a new build.}}
+
+{{For an example already demonstrated in the video, keep it in the main walkthrough instead; label extensions separately.}}
+
+**Next action:** {{read the example, ask for a proposal, or explicitly request its implementation. Authoring the guide alone does not trigger a build.}}
 
 <details>
 <summary>Get unstuck and check the evidence</summary>

@@ -1,0 +1,63 @@
+{
+  "version": "blind-listening-v1",
+  "source_commit": "45e5ba848975958bce74c0f13624e1a112d92960",
+  "selection": "First take/seed1729 of both frozen English paragraphs, unchanged selection for both models",
+  "role": "Curated, constant-gain level-matched listening copies; originals retained in spike branch",
+  "processing": "One fixed gain per clip to common RMS, target -24dBFS limited by shared -1dBFS peak constraint; 24kHz mono PCM16 FLAC; no timing/pitch/dynamics edits. RMS matching does not guarantee identical perceived loudness.",
+  "target_rms": 0.06309573444801933,
+  "reference": "Official Qwen demo, different text; neither user nor video creator voice",
+  "blinding": "UI hides model assignment until saved preference/reveal; prior exposure and inspectable local source mean personal comparison, not independent research blinding",
+  "user_feedback": "Private browser state/export, not committed with these assets",
+  "files": [
+    {
+      "file": "reference.flac",
+      "role": "reference",
+      "source_sha256": "d4c104a551cd2fe2973ab8680f88d4cd7a246153903b1c84bee01275ce0d5df5",
+      "sha256": "8ba86127a623072be14c661f1b5050b0e5c38b8b23608121922eac1d28f82bfb",
+      "bytes": 189913,
+      "duration_s": 8.08,
+      "constant_gain_db": -1.4644924579354557,
+      "output_rms": 0.06309572467578639
+    },
+    {
+      "file": "clip01.flac",
+      "role": "qwen/outcome",
+      "source_sha256": "6906209790b0564615fd9a0881f58941876ba35e67106c543c02e19a6bbf1d22",
+      "sha256": "1cafb8bbc9e1fd096bdcf48f982db830db187b437c4e5cfaa57ce9c628e4c4d7",
+      "bytes": 283657,
+      "duration_s": 10.56,
+      "constant_gain_db": 0.6618852457703912,
+      "output_rms": 0.06309579817986895
+    },
+    {
+      "file": "clip02.flac",
+      "role": "chatterbox/outcome",
+      "source_sha256": "68dc710f874b7ae58dd54188dbdceadfeed1f5898ecef247b51825599c0d865d",
+      "sha256": "f73f98c59e9c388fa0902b4337fab0b07329cb3a3ba30cd69e2f0318f881d44d",
+      "bytes": 296764,
+      "duration_s": 11.6,
+      "constant_gain_db": 3.6086065991907503,
+      "output_rms": 0.06309572144070186
+    },
+    {
+      "file": "clip03.flac",
+      "role": "qwen/mechanism",
+      "source_sha256": "9b6ec8a7372f04d059adabfe63d67a163a6b064a31fc4c4e8df06ca3af60453b",
+      "sha256": "9353751e692e5f6470c045318b74b9cc5e5aa2409c0d17c3eb6824dea5bb5434",
+      "bytes": 303409,
+      "duration_s": 11.44,
+      "constant_gain_db": 1.0517469155494064,
+      "output_rms": 0.06309569378525086
+    },
+    {
+      "file": "clip04.flac",
+      "role": "chatterbox/mechanism",
+      "source_sha256": "6c3f9f1f53f9873541f603c9cfadd5a3af32931eb40a9e80b0ed05aeb8075c96",
+      "sha256": "d54bb120847ec191f472dee8f86d4f4e49806e72c634ededb9142e0e5f3f226a",
+      "bytes": 326061,
+      "duration_s": 13.08,
+      "constant_gain_db": 2.4265417439748123,
+      "output_rms": 0.06309573301806909
+    }
+  ]
+}

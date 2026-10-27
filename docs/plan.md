@@ -2,6 +2,8 @@
 
 Ticket state projection, updated 2026-10-27. Ticket files are the detailed execution record.
 
+Tickets **42/43 review artifacts ready**: [personal listening and source-first teaching](architecture/spikes/blind-listening-review.md). Rate anonymous audio and save/export a private preference. Primary teaching, optional builds and model qualification are separated; no human response was collected by the agent. Ticket18 remains a reader/layout question.
+
 Ticket **41 bounded local narration comparison complete**: [findings and listening evidence](architecture/spikes/local-narration-results.md). Both candidates ran four cases on the same paragraphs/reference. Chatterbox warm generation was faster; Qwen used less process RAM. No human quality winner; machine-text disagreement remains for listening review. Guide/dashboard updated; no production engine/default integration.
 
 Ticket **18 review pack prepared, reader review pending**: [procedure and limits](architecture/spikes/s7-review-ux-preparation.md). Both narration views now use the shared teaching format: result, prerequisites, mechanism, Do/Why/Check, optional practice and reference, plus researched starting points for missing automation; browser checks establish operation, not usability. No winner or integration. Next action: collect the invited formative review;21 retains fresh-performer qualification.
