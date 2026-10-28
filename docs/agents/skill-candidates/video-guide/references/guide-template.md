@@ -4,7 +4,7 @@
 
 Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {{audience / situation}}.
 
-{{Concrete learning or demonstrated result. Essential fit constraints and missing dependencies.}}
+{{Learner’s real-world task and usable result. Essential fit constraints and missing dependencies. Explain whether practical steps are source-demonstrated or our application guidance.}}
 
 <!-- Include this orientation only when useful and researched; descriptive labels are our framing. -->
 
@@ -48,7 +48,7 @@ Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {
 </details>
 
 <details class="reading-block check">
-<summary><strong>Check:</strong> {{observable explanation or decision criterion}}</summary>
+<summary><strong>Check:</strong> {{what to inspect in the result or decision; expected usable behavior}}</summary>
 
 {{How to inspect the result, expected outcome, counterexample and limits of the check.}}
 

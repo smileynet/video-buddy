@@ -23,3 +23,5 @@ Before section navigation, show the whole approach in a brief synthesis and a sm
 Separate the opening's roles visually: “Where this fits” gives category and relationships; “The whole approach at a glance” supplies the source synthesis. Related-approach comparison expands on demand. Use labeled action/check/recovery blocks with consistent, restrained color and readable contrast. Keep the selected topic and immediate next action easy to find without opening the complete topic index.
 
 Try, Check and If stuck blocks are expandable help: the closed summary remains a useful immediate action, criterion or recovery step. Opening reveals concrete topic-specific instructions and troubleshooting. Readers can use the summaries alone or expand the part they need; keyboard operation and A/B topic/open-state continuity remain available within the page.
+
+For practical lessons, follow the learner’s job from useful input to usable result. Checks help inspect the work; recovery supplies a next adjustment. Written answers, ratings and explanations are optional unless assessment is the requested experience. Keep review-study forms visibly separate from the lesson.

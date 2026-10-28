@@ -6,6 +6,12 @@ Use this workflow when a user wants to learn from a video and apply its ideas or
 
 Infer format from the user's goal. Source types, artifact classes, skills and CLI stages are internal decisions. Give the reader one useful next action. Use the separate [reader experience contract](video-guide-user-pathways.md) for navigation, recovery and optional branches. Ordinary intake/digest retains its note workflow unless teaching/application help is requested.
 
+## Start from the learner’s task
+
+Name the real-world progress the learner wants and the usable result they are trying to produce. Organize teaching around doing that job, with the source’s comparisons and concepts explaining decisions along the path. A comparison video can support an applied lesson without becoming a model benchmark or an invented source walkthrough. Label added practical steps as our application guidance.
+
+Use Try for a bounded useful action, Check for inspecting its output, and If stuck for a concrete adjustment or fallback. An ordinary lesson should not require written justifications, criteria worksheets or scores to advance. Reflection/retrieval can be optional when it helps; use assessment-led teaching when the learner requests it. A decision lesson may culminate in a choice rather than a generated artifact. Preserve source limits and distinguish instructions from executed results.
+
 ## Teaching and worked examples
 
 Classify the source before authoring: concept explanation, decision/comparison, demonstration, or worked walkthrough. Keep what the video teaches as the main guide. For a conceptual/decision video, explain its ideas, evidence and tradeoffs, then help the reader apply the reasoning. Do not turn it into a new engineering project simply because the source mentions tools or shows a pipeline.
