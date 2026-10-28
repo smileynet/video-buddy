@@ -7,6 +7,33 @@
 select{max-width:100%;min-width:0}.review-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px;align-items:start}.review-grid>article{min-width:0}.review-grid aside{position:sticky;top:16px;min-width:0}.review-grid aside section{margin:0}iframe{width:100%;aspect-ratio:16/9;border:0}table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{padding:9px;text-align:left;border-bottom:1px solid #c9d9ec}.table-wrap{overflow:auto}.step-links{display:flex;gap:8px;flex-wrap:wrap}.step-links a{padding:6px 10px;border:1px solid #c9d9ec;border-radius:6px}.active-step{outline:2px solid #387aca}#evidence summary{margin-bottom:12px}.source-note{border-left:3px solid #6d97c3;padding-left:12px}#guide{max-width:none}.guide-intro h2{margin-top:0}@media(max-width:760px){.review-grid{grid-template-columns:1fr}.review-grid aside{position:static}table{min-width:430px}}
 .guide-intro>p{max-width:85ch}.linear>article,.linear>#evidence{max-width:850px}
 </style>
+<style id="guide-dark-theme">
+:root{color-scheme:dark;color:#dce9fa;background:#091422}
+body{color:#dce9fa;background:#091422}
+header{color:#dce9fa}
+main,section,article,.box,.guide-intro,#actions{background:#102136;color:#dce9fa;border-color:#324e70}
+main>section,main>article{background:#13263e}
+h1,h2,h3,h4,strong,label,th,summary{color:#edf5ff}
+a{color:#87bdff}a:visited{color:#b9b6ff}
+.tag,.subtle,.muted{color:#a7bed9}
+details{background:#152a43;border-color:#365575;color:#dce9fa}
+summary{color:#bdd9ff}
+button,select,textarea,input{color:#e6f1ff;background:#193653;border:1px solid #597da5}
+button:hover{background:#244969}button:disabled{background:#21344a;color:#a4b5c9}
+textarea::placeholder,input::placeholder{color:#a7bad1;opacity:1}
+select option{background:#142a42;color:#e6f1ff}
+pre,code{background:#0b192b;color:#c5e1ff;border-color:#365575}
+td,th,table{border-color:#365575}
+h2{border-color:#365575}
+.notice,.source-note{border-color:#68adff}
+#pause{background:#193b60;border-color:#73b6ff;color:#e6f1ff}
+.switcher{background:#173d66;color:#edf5ff;border:1px solid #608bb7;box-shadow:0 4px 24px #0008}
+.switcher span{color:#edf5ff}
+.step-links a{background:#152c46;border-color:#456587}
+.active-step{outline-color:#85bfff}
+a:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #86c4ff;outline-offset:3px}
+::selection{background:#315c88;color:#fff}
+</style>
 <header><div class="tag">Guide review · real source · no production integration</div><h1>Use browser features before adding dependencies</h1><p>Compare <strong>A, the linked guide</strong>, with <strong>B, a topic beside its video evidence</strong>. Both contain the same teaching. The runnable order-board example stays in a separate page.</p><p><a href="guide.html">Read the guide without review controls</a> · <a href="file:///D:/.codex/worktrees/spike-state-comparison/video-buddy/docs/architecture/spikes/review-ux/prototype.html">Narration review</a></p><p class="subtle">Notes stay in this open page only. Switching views retains your topic and draft; refreshing loses them. Video loads only on Play and needs internet. Guide and retained slides work offline.</p></header><main><section><details><summary>Review this layout — optional prompts</summary><p>Use the video’s ideas to answer:</p><ol><li>Which behavior would you replace with a native feature, and what would you check first?</li><li>Why do tab messages alone not solve persistence or stale writes?</li><li>What should happen when the coordinator closes or a new tab opens?</li></ol><p>Explain what the source supports and what is still untested. No account, hardware or running example is needed for this reading review.</p></details><div class="toolbar"><button id="begin">Begin review</button><label for="step-select">Explore topic</label><select id="step-select"></select><button id="inspect">Inspect evidence</button><button id="pause-button">Pause</button></div><p id="notice" role="status">Review has not started.</p></section>
 <div id="pause" hidden><h2>Paused</h2><p>Look away briefly, then return to your next action. This simulates interruption within an open page, not crash recovery.</p><button id="resume">Return to my step</button></div>
 <div id="guide"></div>
