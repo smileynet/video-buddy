@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.youtube.com/watch?v=I6tOlNK_HS4",
-  "source_title": "Delete Your Dependencies: What the Browser Can Do Now \u2014 Paul Conroy",
+  "source_title": "Delete Your Dependencies: What the Browser Can Do Now — Paul Conroy",
   "caption_provenance": "Source-supplied captions recovered by CLI; not independent human listening",
   "source_json_sha256": "6ca8fcd6abf6c3709f916732acfc40092159a508307f68e8c70355960846772b",
   "transcript_json_sha256": "1ee536e824c4fa52526feaab82a64065c3c632adbb8b1d1af3b7a3836255a3b3",
@@ -28,11 +28,11 @@
   ],
   "runtime_results": "verification.json",
   "ab_review": {
-    "fixture": "ticket18-native-browser-context-v3",
+    "fixture": "ticket18-native-browser-help-v4",
     "topic_count": 6,
-    "guide_sha256": "18b53a0745871aab4c2584a77287935f42a4715fc5b35f712dc6beaa8781e489",
+    "guide_sha256": "d08f376d2dbcd4679508fcd49fb4fe95f5e5deda1669a6bcbc05b339bddc998a",
     "notes": "One identical teaching fixture for A/B; runnable example separate; video loaded only on request; memory-only drafts"
   },
-  "guide_sha256": "18b53a0745871aab4c2584a77287935f42a4715fc5b35f712dc6beaa8781e489",
+  "guide_sha256": "d08f376d2dbcd4679508fcd49fb4fe95f5e5deda1669a6bcbc05b339bddc998a",
   "presentation": "Whole-source overview before detail; concise takeaways, explanatory visuals and visible actions/checks/recovery; shared fixture in A/B; worked example separate"
 }

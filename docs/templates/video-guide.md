@@ -40,11 +40,26 @@ Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {
 
 </details>
 
-**Use the idea:** {{small application to the reader's situation}}.
+<details class="reading-block action">
+<summary><strong>Try:</strong> {{small application to the reader's situation}}</summary>
 
-**Check:** {{observable explanation or decision criterion}}.
+{{Concrete application steps, relevant inputs/context and supporting explanation.}}
 
-**If you're stuck:** {{immediate useful prompt/recovery}}.
+</details>
+
+<details class="reading-block check">
+<summary><strong>Check:</strong> {{observable explanation or decision criterion}}</summary>
+
+{{How to inspect the result, expected outcome, counterexample and limits of the check.}}
+
+</details>
+
+<details class="reading-block recovery">
+<summary><strong>If stuck:</strong> {{immediate useful prompt/recovery}}</summary>
+
+{{Symptom-based recovery steps and where to resume. Keep the immediate action in the summary.}}
+
+</details>
 
 **In the video:** [{{source moment}}]({{timestamp_url}}).
 
@@ -67,6 +82,8 @@ Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {
 **If this fails:** {{immediate recovery action; deeper troubleshooting can expand below}}.
 
 **In the video:** [{{source moment}}]({{timestamp_url}}).
+
+<!-- In walkthroughs, the same expandable pattern can support Do/Check/If this fails, with essential steps visible in summaries. -->
 
 <!-- SHARED OPTIONAL BLOCKS: include only where useful. Repeat concepts/steps as needed, no quota. -->
 

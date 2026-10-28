@@ -45,11 +45,11 @@ Native does not mean universally available or production-ready for your app. The
 
 <figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="Capture, then Select region, then Draw canvas, then Share tab"><span>Capture</span><b aria-hidden="true">→</b><span>Select region</span><b aria-hidden="true">→</b><span>Draw canvas</span><b aria-hidden="true">→</b><span>Share tab</span></div><figcaption>Our decomposition of the creator’s screen-sharing example.</figcaption></figure>
 
-**Try:** Trace capture → select region → draw → share.
+<details class="reading-block action" data-help-key="0-try"><summary><strong>Try:</strong> Trace capture → select region → draw → share.<span class="help-hint">Steps and supporting detail</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Write the exact behavior you want: share only the emulator area, for example.</li><li>Break it into capture, region selection, repeated drawing and a shareable output.</li><li>For an implementation attempt, use the linked creator project or a disposable page; reading this diagram requires neither.</li></ol></div></details>
 
-**Check:** Permissions, resizing, stopping and supported browsers all meet the job.
+<details class="reading-block check" data-help-key="0-check"><summary><strong>Check:</strong> Permissions, resizing, stopping and supported browsers all meet the job.<span class="help-hint">Success criteria and limits</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Change the captured region and confirm the output stays live. Resize or move the source and inspect the selected area again.</li><li>Cancel capture and stop sharing: the interface should remain usable and stop implying it is live. Check the actual target browser/device.</li></ol></div></details>
 
-**If stuck:** Identify the one remaining capability that justifies a dependency.
+<details class="reading-block recovery" data-help-key="0-recovery"><summary><strong>If stuck:</strong> Identify the one remaining capability that justifies a dependency.<span class="help-hint">Troubleshooting and next steps</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>If the output freezes, revisit the source-video visibility issue described in the source context.</li><li>If capture is unavailable or denied, keep the normal application/window sharing route. Isolate the missing capability before choosing a library.</li></ol></div></details>
 
 <details>
 <summary>Why this works · source context</summary>
@@ -74,11 +74,11 @@ The talk reports a frozen-canvas problem when its source video was hidden with `
 
 
 
-**Try:** Keep labeled fields and ordinary buttons, then enhance sizing or popovers.
+<details class="reading-block action" data-help-key="1-try"><summary><strong>Try:</strong> Keep labeled fields and ordinary buttons, then enhance sizing or popovers.<span class="help-hint">Steps and supporting detail</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Begin with a labeled textarea and normal action buttons that work without enhancement.</li><li>Add content sizing or popover behavior one feature at a time, in a test copy.</li><li>Enter a long note, open the action panel and resize the page.</li></ol></div></details>
 
-**Check:** Keyboard use, dismissal, long content and narrow layouts remain usable.
+<details class="reading-block check" data-help-key="1-check"><summary><strong>Check:</strong> Keyboard use, dismissal, long content and narrow layouts remain usable.<span class="help-hint">Success criteria and limits</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Reach actions with Tab and activate with the keyboard. Dismiss a supported popover with Escape.</li><li>Confirm long text is readable and required controls remain reachable at a narrow width. Test without the enhancement too.</li></ol></div></details>
 
-**If stuck:** Keep manual resizing and visible actions when an enhancement is unavailable.
+<details class="reading-block recovery" data-help-key="1-recovery"><summary><strong>If stuck:</strong> Keep manual resizing and visible actions when an enhancement is unavailable.<span class="help-hint">Troubleshooting and next steps</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>If sizing is unsupported, retain manual resizing and scrolling.</li><li>If the popover path fails, keep visible ordinary buttons. Check placement separately from opening/closing behavior.</li></ol></div></details>
 
 <details>
 <summary>Why this works · source context</summary>
@@ -101,11 +101,11 @@ Check [HTML popovers](https://html.spec.whatwg.org/multipage/popover.html) and [
 
 <figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="One lock-holder, then Broadcast snapshot, then Listening tabs"><span>One lock-holder</span><b aria-hidden="true">→</b><span>Broadcast snapshot</span><b aria-hidden="true">→</b><span>Listening tabs</span></div><figcaption>Our architecture sketch; messaging does not supply persistence.</figcaption></figure><figure class="teaching-visual"><a href="evidence/frame_01050000.jpg" target="_blank"><img src="evidence/frame_01050000.jpg" alt="Source polling loop inside Web Locks at 17:30"></a><figcaption>Source screengrab · 17:30. Awaited work and delay keep this from being a busy loop.</figcaption></figure>
 
-**Try:** Follow a change from the lock-holder through a broadcast to listening tabs.
+<details class="reading-block action" data-help-key="2-try"><summary><strong>Try:</strong> Follow a change from the lock-holder through a broadcast to listening tabs.<span class="help-hint">Steps and supporting detail</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Use the separate order-board walkthrough if you want a runnable attempt; it explains the localhost requirement.</li><li>Open the same URL in two tabs in one browser profile. Identify the coordinator and listener.</li><li>Update the order, close the coordinator, then open a new tab. Observe one change at a time.</li></ol></div></details>
 
-**Check:** Check updates, takeover and a fresh snapshot for a new tab.
+<details class="reading-block check" data-help-key="2-check"><summary><strong>Check:</strong> Check updates, takeover and a fresh snapshot for a new tab.<span class="help-hint">Success criteria and limits</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Both tabs should show the edit, and the initiating tab should update too.</li><li>After the coordinator closes, the remaining tab should take over. A new tab should receive a current snapshot, not depend on old broadcasts.</li><li>These observations qualify the small memory-only exercise, not a durable backend or multi-device service.</li></ol></div></details>
 
-**If stuck:** Use the same origin/profile; preserve server correctness before optimizing polling.
+<details class="reading-block recovery" data-help-key="2-recovery"><summary><strong>If stuck:</strong> Use the same origin/profile; preserve server correctness before optimizing polling.<span class="help-hint">Troubleshooting and next steps</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Compare scheme, host, port and browser profile; different origins do not share this channel.</li><li>Check the example capability message and use localhost rather than a file URL.</li><li>If state disappears after all tabs close, that is the documented memory-only boundary. Preserve server persistence and conflict handling in a real app.</li></ol></div></details>
 
 <details>
 <summary>Why this works · source context</summary>
@@ -140,11 +140,11 @@ At [15:00](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=900s), the creator send
 
 
 
-**Try:** Identify the widget to keep visible or the object to track across navigation.
+<details class="reading-block action" data-help-key="3-try"><summary><strong>Try:</strong> Identify the widget to keep visible or the object to track across navigation.<span class="help-hint">Steps and supporting detail</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Choose one widget whose visibility matters during the current task.</li><li>Sketch its normal-page location and what should happen when a floating view closes.</li><li>For navigation, identify the same object across two pages before considering a transition effect.</li></ol></div></details>
 
-**Check:** Closing floating content restores it; normal links work without animation.
+<details class="reading-block check" data-help-key="3-check"><summary><strong>Check:</strong> Closing floating content restores it; normal links work without animation.<span class="help-hint">Success criteria and limits</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Close the floating view and confirm the widget returns to its usable main-page location.</li><li>Use normal navigation when enhancement is absent. Check reduced-motion behavior separately from correctness.</li></ol></div></details>
 
-**If stuck:** Keep the widget in the main page; respect reduced motion and ordinary navigation.
+<details class="reading-block recovery" data-help-key="3-recovery"><summary><strong>If stuck:</strong> Keep the widget in the main page; respect reduced motion and ordinary navigation.<span class="help-hint">Troubleshooting and next steps</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>If Document Picture-in-Picture is unavailable, leave the widget in the page.</li><li>If animation fails, keep the link and destination correct. Video PiP and document PiP are different capabilities.</li></ol></div></details>
 
 <details>
 <summary>Why this works · source context</summary>
@@ -163,11 +163,11 @@ The talk uses Document Picture-in-Picture to keep an order widget visible, and c
 
 <figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="Task + target, then Native capability?, then Keep baseline, then Fill real gap"><span>Task + target</span><b aria-hidden="true">→</b><span>Native capability?</span><b aria-hidden="true">→</b><span>Keep baseline</span><b aria-hidden="true">→</b><span>Fill real gap</span></div><figcaption>Our adoption checklist. A dependency may be the right answer.</figcaption></figure>
 
-**Try:** Distinguish a detected face, a smile, a QR code and a device command.
+<details class="reading-block action" data-help-key="4-try"><summary><strong>Try:</strong> Distinguish a detected face, a smile, a QR code and a device command.<span class="help-hint">Steps and supporting detail</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>State the signal you need: face presence, an expression estimate, a decoded QR value or a device command.</li><li>Identify the required API/model, permissions and hardware before choosing an implementation route.</li><li>Keep a manual equivalent visible for this teaching example.</li></ol></div></details>
 
-**Check:** The capability, permission and hardware fit the signal you need.
+<details class="reading-block check" data-help-key="4-check"><summary><strong>Check:</strong> The capability, permission and hardware fit the signal you need.<span class="help-hint">Success criteria and limits</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Test cancellation, absence of permission and absence of the required device/API.</li><li>For a physical device, confirm its actual service/characteristic/protocol; a Bluetooth connection alone is not a successful command.</li><li>Treat a face or smile signal as its limited task output, not identity, emotion or consent.</li></ol></div></details>
 
-**If stuck:** Offer manual entry or the ordinary action when the capability is unavailable.
+<details class="reading-block recovery" data-help-key="4-recovery"><summary><strong>If stuck:</strong> Offer manual entry or the ordinary action when the capability is unavailable.<span class="help-hint">Troubleshooting and next steps</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Use manual loyalty entry or the ordinary discount action when detection is unavailable.</li><li>Separate API support, model loading and device protocol failures; they need different fixes.</li><li>Use the linked creator demo for broader experiments rather than assuming the small order board implements them.</li></ol></div></details>
 
 <details>
 <summary>Why this works · source context</summary>
@@ -186,11 +186,11 @@ The smile-discount example separates detecting a face from detecting an expressi
 
 
 
-**Try:** Specify the task’s input/output and check its API/model availability.
+<details class="reading-block action" data-help-key="5-try"><summary><strong>Try:</strong> Specify the task’s input/output and check its API/model availability.<span class="help-hint">Steps and supporting detail</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Write one example input and the exact output your application needs.</li><li>Check the current vendor API status and the intended device/model eligibility.</li><li>Keep a manual or conventional route; do not require a model download merely to read this lesson.</li></ol></div></details>
 
-**Check:** A useful manual or conventional route remains when AI cannot run.
+<details class="reading-block check" data-help-key="5-check"><summary><strong>Check:</strong> A useful manual or conventional route remains when AI cannot run.<span class="help-hint">Success criteria and limits</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>A target-device attempt should handle unavailable API, unavailable model and failed/cancelled download clearly.</li><li>Review the actual result against the input; a well-formed response can still be wrong.</li><li>This guide does not claim browser AI was executed or qualified here.</li></ol></div></details>
 
-**If stuck:** Use current documentation rather than an assistant’s recalled API shape.
+<details class="reading-block recovery" data-help-key="5-recovery"><summary><strong>If stuck:</strong> Use current documentation rather than an assistant’s recalled API shape.<span class="help-hint">Troubleshooting and next steps</span></summary><div class="help-body"><p class="help-origin">Application help</p><ol><li>Check current primary documentation rather than copying a recalled API shape.</li><li>If the task is unavailable, keep the conventional route and record the specific blocker.</li><li>Avoid redesigning the whole app around a capability that has not passed the intended task check.</li></ol></div></details>
 
 **For your setup:** Chrome's built-in AI has API-specific availability, device/download requirements and release conditions. “The browser can do it” does not imply it is enabled on every visitor's device. Check the [current Chrome built-in AI documentation](https://developer.chrome.com/docs/ai/built-in) before designing the route. Keep AI-generated classifications subject to review where mistakes affect decisions.
 

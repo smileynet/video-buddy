@@ -15,7 +15,11 @@
     "whole approach and connected section map precede first action",
     "visual hierarchy shared across A/B; optional examples separate",
     "researched context distinguishes platform capability from adoption strategy",
-    "expanded related-approach comparison checked at390px"
+    "expanded related-approach comparison checked at390px",
+    "Try/Check/If stuck summaries remain visible while closed",
+    "topic-specific supporting instructions expand with native keyboard disclosures",
+    "expanded-help state and private draft retained across A/B switching",
+    "all expanded panels fit390px layout"
   ],
   "limits": [
     "synthetic checks only",
@@ -23,5 +27,5 @@
     "notes do not survive reload",
     "runnable order-board execution recorded separately in verification.json"
   ],
-  "fixture": "ticket18-native-browser-context-v3"
+  "fixture": "ticket18-native-browser-help-v4"
 }
