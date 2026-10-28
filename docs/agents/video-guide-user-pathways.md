@@ -13,3 +13,7 @@ Each optional branch shows its purpose, requirements, likely effort/cost, exact 
 Use plain labels: “In the video”, “For your setup”, “Added starting point”. Explain what added help supplies and what remains. Keep internal tickets, model receipts and authoring machinery behind maintainer references. A reader can finish the lesson without installing tools or opening benchmarks.
 
 Validate these tasks: understand in ten minutes without setup; try one passage; recover from failure; respect local-only audio; retrieve a command; handle a missing creator program. Distinguish comprehension, navigation, execution and preference. A document check does not establish reader success.
+
+## Read at two depths
+
+A reader can skim the outcome, topic takeaway, useful visual, next action and success check. A reader who needs explanation can expand a specifically named callout without losing the action. Keep essential prerequisites, risk to the current work, experimental status and immediate recovery in the skim path. Use captioned screengrabs for visual decisions and diagrams for relationships; source moments and originals remain reachable. Text equivalents keep the guide usable without the image. Dense text moved wholesale behind a generic “More” panel is not a clear hierarchy.

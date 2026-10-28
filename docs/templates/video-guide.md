@@ -12,7 +12,16 @@ Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {
 
 ## {{Main idea}}
 
-{{Explain reasoning and a source example/illustration.}}
+**{{One-sentence takeaway}}**
+
+{{Choose a useful diagram, captioned source screengrab or comparison when it clarifies this idea. Label its origin, exact source time where relevant and what the reader should notice; provide alt text/text equivalent.}}
+
+<details>
+<summary>{{Specific deeper question this explanation answers}}</summary>
+
+{{Expanded reasoning/source context. Keep required action/check/recovery visible below.}}
+
+</details>
 
 **Use the idea:** {{small application to the reader's situation}}.
 
@@ -29,6 +38,8 @@ Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {
 {{Only required inputs, environment, effort, costs and blockers for this route.}}
 
 ## {{Demonstrated step}}
+
+{{Where visual recognition matters: show the relevant UI/state or expected result with a brief caption and source time.}}
 
 **Do:** {{action, context/file and material adaptation}}.
 

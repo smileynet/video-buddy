@@ -72,3 +72,13 @@ Keep the immediate “If this check fails…” action beside each required chec
 Optional branches state purpose, requirements, effort/cost, exact readiness and one next action. Return to the originating topic without losing current work when supported; state actual persistence limits. A new-tab companion preserves an open original page, not reload/crash recovery.
 
 Check ten-minute understanding, one bounded attempt, failed-step recovery, local-only constraints, command lookup and missing-program cases. Record authoring checks separately from observed reader outcomes.
+
+## Visual teaching and a skimmable path
+
+Plan the reading hierarchy before drafting: outcome and first action → concise takeaway per topic → action/check/recovery → optional explanation and provenance. Keep required constraints and experimental status visible. Use descriptive headings; avoid repeating long explanations in both an introduction and its steps.
+
+Choose visuals for a teaching job: a flow diagram for sequence/dependency, a labeled screengrab for UI/settings, a comparison for before/after or alternatives, and an artifact preview for an expected result. Use the source frame when visual evidence matters; seek a clearer frame when it is unreadable. A screenshot should direct attention to a named feature through nearby caption/callouts, not serve as decoration. Keep the original and exact timestamp available. Label explanatory diagrams and our examples separately from source evidence.
+
+Prefer a short takeaway, one useful action and an observable check over several dense paragraphs. Move background, expanded rationale and less likely troubleshooting behind specific disclosures. Preserve immediate recovery outside them. Do not solve text overload by hiding every paragraph or shrinking the type.
+
+Use simple offline HTML/SVG diagrams where appropriate; require no external renderer to understand the lesson. Give diagrams a text equivalent and images meaningful alt text/captions. Preserve readable mobile sizing and keyboard disclosures. Avoid mandatory visual quotas: a single fact may need only a sentence. Review the skim path without opening disclosures, then inspect the details path. A/B layouts must share the same revised teaching and visuals; aesthetic improvement alone establishes no learning or layout winner.
