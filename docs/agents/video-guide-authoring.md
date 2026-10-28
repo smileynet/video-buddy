@@ -82,3 +82,9 @@ Choose visuals for a teaching job: a flow diagram for sequence/dependency, a lab
 Prefer a short takeaway, one useful action and an observable check over several dense paragraphs. Move background, expanded rationale and less likely troubleshooting behind specific disclosures. Preserve immediate recovery outside them. Do not solve text overload by hiding every paragraph or shrinking the type.
 
 Use simple offline HTML/SVG diagrams where appropriate; require no external renderer to understand the lesson. Give diagrams a text equivalent and images meaningful alt text/captions. Preserve readable mobile sizing and keyboard disclosures. Avoid mandatory visual quotas: a single fact may need only a sentence. Review the skim path without opening disclosures, then inspect the details path. A/B layouts must share the same revised teaching and visuals; aesthetic improvement alone establishes no learning or layout winner.
+
+## Give the whole approach before the sections
+
+For a process, argument or decision framework, synthesize the complete source before drafting its opening. Give the reader the main recommendation/mechanism, how the major ideas connect, the intended result and the consequential exceptions. Then provide a compact map to the sections. Do not imitate a video's delayed reveal or replace the synthesis with chapter titles, a teaser or a tool inventory. Do not infer why a creator chose that presentation order.
+
+Use a plain heading such as “The whole approach at a glance”. Keep it concise enough to orient the reader; section detail explains and substantiates it. Distinguish the creator’s demonstrated method, preference and speculative experiment. State essential limits up front, and keep optional builds separate. The overview is an explanation scaffold, not a new execution promise. Check that a reader can describe the central idea and how the sections fit together before expanding details.

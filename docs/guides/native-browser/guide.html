@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Use browser features before adding dependencies · Video Buddy guide</title><style> :root{font:17px/1.65 system-ui;color:#173251;background:#edf5ff}*{box-sizing:border-box}body{margin:0}main,header{max-width:930px;margin:auto;padding:24px}header{padding-bottom:0}h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.2}h2{font-size:1.4rem;margin-top:2.3em;padding-top:12px;border-top:1px solid #b9d3ed}a{color:#155eb2}a:focus-visible,summary:focus-visible{outline:3px solid #539ff1;outline-offset:4px}main{background:white;border:1px solid #c4d9ee;border-radius:14px;padding:32px;margin:20px auto 50px}details{background:#f1f7ff;padding:16px;border:1px solid #c4d9ee;border-radius:10px;margin:20px 0}summary{cursor:pointer;font-weight:600}code{overflow-wrap:anywhere;background:#edf4fb;padding:2px 5px;border-radius:4px}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:16px;background:#edf4fb}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #c4d9ee}nav{display:flex;gap:14px;flex-wrap:wrap}li{margin-bottom:10px}.tag{color:#315e90}img{max-width:100%;height:auto}@media(max-width:650px){main{margin:12px;padding:18px}header{padding:18px}table{min-width:600px}}</style>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Use browser features before adding dependencies · Video Buddy guide</title><style> :root{font:17px/1.65 system-ui;color:#173251;background:#edf5ff}*{box-sizing:border-box}body{margin:0}main,header{max-width:930px;margin:auto;padding:24px}header{padding-bottom:0}h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.2}h2{font-size:1.4rem;margin-top:2.3em;padding-top:12px;border-top:1px solid #b9d3ed}a{color:#155eb2}a:focus-visible,summary:focus-visible{outline:3px solid #539ff1;outline-offset:4px}main{background:white;border:1px solid #c4d9ee;border-radius:14px;padding:32px;margin:20px auto 50px}details{background:#f1f7ff;padding:16px;border:1px solid #c4d9ee;border-radius:10px;margin:20px 0}summary{cursor:pointer;font-weight:600}code{overflow-wrap:anywhere;background:#edf4fb;padding:2px 5px;border-radius:4px}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:16px;background:#edf4fb}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #c4d9ee}nav{display:flex;gap:14px;flex-wrap:wrap}li{margin-bottom:10px}.tag{color:#315e90}img{max-width:100%;height:auto}@media(max-width:650px){main{margin:12px;padding:18px}header{padding:18px}table{min-width:600px}}</style><style>.overview-map{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:0}.overview-map li{padding:14px;border:1px solid #476a90;border-radius:10px;background:#17324f;margin:0}.overview-map strong{display:block;color:#c5e1ff;margin-bottom:8px}@media(max-width:760px){.overview-map{grid-template-columns:1fr}}</style><style id="visual-hierarchy">.teaching-visual{margin:18px 0;padding:16px;background:#152d48;border:1px solid #41658a;border-radius:12px}.visual-flow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.visual-flow span{padding:9px 12px;background:#20456b;border:1px solid #608bb6;border-radius:8px;color:#edf5ff;font-weight:600}.visual-flow b{color:#8fc5ff}.teaching-visual img{display:block;max-height:260px;width:100%;object-fit:contain;margin-top:12px}figcaption{font-size:.85rem;color:#b2c9e3;margin-top:10px}article>p,main>p{max-width:76ch}article>details{margin-top:18px}article>h2{margin-top:0}@media(max-width:650px){.teaching-visual{padding:12px}.visual-flow{gap:6px}.visual-flow span{padding:7px;font-size:.9rem}}</style>
 <style id="guide-dark-theme">
 :root{color-scheme:dark;color:#dce9fa;background:#091422}
 body{color:#dce9fa;background:#091422}
@@ -28,33 +28,54 @@ a:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible
 </style><header><p class="tag">Video guide · optional runnable example</p><nav aria-label="Guide shortcuts"><a href="review.html?variant=A">Compare A/B with video evidence</a><a href="#1-start-with-the-job-not-the-package">Understand the idea</a><a href="#worked-example">Try the worked example</a><a href="#keep-handy">Find a capability</a></nav></header><main><h1 id="replace-a-dependency-with-a-browser-featureone-useful-change-at-a-time">Replace a dependency with a browser feature—one useful change at a time</h1>
 <p>Based on <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4">Paul Conroy's <em>Delete Your Dependencies: What the Browser Can Do Now</em></a>, HelloStavanger 2026. Prepared 27 October 2026 for web developers improving an existing app.</p>
 <p>You will learn how to recognize a native-browser alternative, decide whether it fits your users, and check the result before removing a library. The title is an invitation to investigate dependencies, not to remove every one.</p>
+<h2 id="the-whole-approach-at-a-glance">The whole approach at a glance</h2>
+<p>Start with <strong>one user behavior</strong>, check whether a <strong>native capability fits the target environment</strong>, then add only what is still missing. Keep a usable baseline and verify the behavior before deleting a dependency.</p>
+<ul class="overview-map">
+<li><strong>Interface (topic 2):</strong> native controls and CSS can replace small UI helpers.</li>
+<li><strong>Continuity (topics 1, 3–4):</strong> capture a region, coordinate tabs and retain useful context without a wholesale rewrite.</li>
+<li><strong>Capability limits (topics 5–6):</strong> detection, hardware and AI need their own support, permission and task checks.</li>
+</ul>
+<p>Native does not mean universally available or production-ready for your app. The separate two-tab example tests one mechanism, not every feature in the talk.</p>
 <p><strong>Start here:</strong> name one job in your app—keep two tabs current, open a small action panel, or share one part of a screen. Write the behavior your users need and the browsers they use. Choose the smallest native replacement that meets that behavior.</p>
 <p><strong>Want to try something now?</strong> <a href="#worked-example">Open the two-tab coffee-order worked example</a>. It adapts the talk's BroadcastChannel and Web Locks ideas into a small runnable page. No hardware, account, API key or package installation is needed; a local static server is required (Python 3 or an existing static-server tool). It is separate from the lesson and does not implement the creator's complete coffee-shop application.</p>
 <h2 id="1-start-with-the-job-not-the-package">1. Start with the job, not the package</h2>
+<p><strong>Break the user’s job into capabilities before searching for a package.</strong></p>
+<figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="Capture, then Select region, then Draw canvas, then Share tab"><span>Capture</span><b aria-hidden="true">→</b><span>Select region</span><b aria-hidden="true">→</b><span>Draw canvas</span><b aria-hidden="true">→</b><span>Share tab</span></div><figcaption>Our decomposition of the creator’s screen-sharing example.</figcaption></figure>
+<p><strong>Try:</strong> Trace capture → select region → draw → share.</p>
+<p><strong>Check:</strong> Permissions, resizing, stopping and supported browsers all meet the job.</p>
+<p><strong>If stuck:</strong> Identify the one remaining capability that justifies a dependency.</p>
+<details>
+<summary>Why this works · source context</summary>
 <p>The opening example is a client demo: show the emulator region, not the entire IDE. Conroy combines screen capture, a selected rectangle and a canvas preview. The transferable move is to break the desired behavior into capabilities before searching for a plugin.</p>
-<p><strong>Use the idea:</strong> write a short chain: capture a permitted display → select a region → draw that region repeatedly → share the resulting tab. Each arrow is a concrete requirement to check.</p>
-<p><strong>Check:</strong> can your replacement do the actual job, including permissions, resizing, stopping and supported browsers? A smaller bundle alone is insufficient.</p>
-<p><strong>If you are stuck:</strong> list the one capability the browser cannot yet supply. Keep a dependency for that gap instead of recreating it poorly.</p>
+</details>
 <p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=73s">1:13—demo problem</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=211s">3:31—capture and canvas</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=470s">7:50—dependencies can still be necessary</a>.</p>
 <details><summary>Try the creator's screen-sharing project</summary>
 <p>The creator publishes <a href="https://github.com/conroyp/screen-portal">Screen Portal</a>, a region-capture tool packaged as a Chrome extension. This is actual prior art, not a missing program we must invent. Read its installation and permissions instructions before trying it. We inspected its public project page; this guide does not claim an installation, capture session or successful meeting share.</p>
 <p>The talk reports a frozen-canvas problem when its source video was hidden with <code>display: none</code>, and shows a tiny rendered/transparent source as its workaround. Treat that as an implementation observation to reproduce on your target, not a guaranteed browser rule. Check that the cropped output stays live while the original region changes. Permission to capture the desktop does not mean every pixel should be shown to your audience.</p>
 </details>
 <h2 id="2-let-html-and-css-own-simple-interface-behavior">2. Let HTML and CSS own simple interface behavior</h2>
+<p><strong>HTML behavior and CSS placement are separate enhancements.</strong></p>
+<p><strong>Try:</strong> Keep labeled fields and ordinary buttons, then enhance sizing or popovers.</p>
+<p><strong>Check:</strong> Keyboard use, dismissal, long content and narrow layouts remain usable.</p>
+<p><strong>If stuck:</strong> Keep manual resizing and visible actions when an enhancement is unavailable.</p>
+<details>
+<summary>Why this works · source context</summary>
 <p>The coffee-shop example starts with an order-notes field, then an action panel. <code>field-sizing: content</code> lets a supported text field size to its content; popover markup supplies opening/closing behavior; CSS anchor positioning handles placement near the trigger. These are different capabilities, with different compatibility requirements.</p>
-<p><strong>Use the idea:</strong> start with a plain, labeled textarea and ordinary action buttons. Add content sizing or a popover as an enhancement. Avoid replacing a usable baseline with an unsupported feature.</p>
-<p><strong>Check:</strong> keyboard users can reach the actions; Escape dismisses a supported popover; long text and narrow layouts remain usable.</p>
-<p><strong>If this fails:</strong> retain the resizable field and visible buttons. Do not hide required actions merely because popover or anchor positioning is unavailable. Popover behavior alone is not a complete accessible application-menu implementation.</p>
+</details>
 <p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=625s">10:25—growing notes</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=714s">11:54—popover and anchor placement</a>.</p>
 <details><summary>Implementation references</summary>
 <p>Check <a href="https://html.spec.whatwg.org/multipage/popover.html">HTML popovers</a> and <a href="https://drafts.csswg.org/css-ui/#field-sizing">CSS field sizing</a>. Feature-detect specific behavior; a single “modern browser” label does not qualify all three features. The worked example keeps a normal button path when popovers are absent and leaves the textarea manually resizable.</p>
 </details>
 <h2 id="3-keep-tabs-current-without-asking-every-tab-to-poll">3. Keep tabs current without asking every tab to poll</h2>
+<p><strong>One coordinator can update many local views.</strong></p>
+<figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="One lock-holder, then Broadcast snapshot, then Listening tabs"><span>One lock-holder</span><b aria-hidden="true">→</b><span>Broadcast snapshot</span><b aria-hidden="true">→</b><span>Listening tabs</span></div><figcaption>Our architecture sketch; messaging does not supply persistence.</figcaption></figure><figure class="teaching-visual"><a href="evidence/frame_01050000.jpg" target="_blank"><img src="evidence/frame_01050000.jpg" alt="Source polling loop inside Web Locks at 17:30"></a><figcaption>Source screengrab · 17:30. Awaited work and delay keep this from being a busy loop.</figcaption></figure>
+<p><strong>Try:</strong> Follow a change from the lock-holder through a broadcast to listening tabs.</p>
+<p><strong>Check:</strong> Check updates, takeover and a fresh snapshot for a new tab.</p>
+<p><strong>If stuck:</strong> Use the same origin/profile; preserve server correctness before optimizing polling.</p>
+<details>
+<summary>Why this works · source context</summary>
 <p>A user opens the same order in several tabs. Each page can become stale, and saving an old copy can overwrite a newer edit. The talk introduces <code>BroadcastChannel</code> for messages among eligible browsing contexts and Web Locks to assign one tab the responsibility for fetching updates.</p>
-<p><strong>The mechanism:</strong> one tab holds a named lock while doing the shared work. It broadcasts the result. Other tabs listen and render it; when the holder closes, another waiting tab can acquire the lock.</p>
-<p><strong>For your app:</strong> same-origin communication is also subject to storage partitioning. It is not cross-device messaging. These APIs coordinate browser work; they do not replace server persistence, authentication or database concurrency checks. Keep server versions/ETags or equivalent conflict handling when real writes matter.</p>
-<p><strong>Check:</strong> change the order in one tab and watch the other update; close the coordinator and see another tab take over. Reopen a tab and confirm it gets current state, rather than assuming messages are replayed.</p>
-<p><strong>If this fails:</strong> use the identical localhost URL, port and browser profile in both tabs. Check support and secure-context status. For a production fallback, preserve refresh/server correctness before optimizing polling.</p>
+</details>
 <p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=766s">12:46—stale order copies</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=865s">14:25—BroadcastChannel</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=990s">16:30—one coordinator with Web Locks</a>.</p>
 <details><summary>Hold the lock without blocking the page</summary>
 <p>The lock lasts while its callback's returned promise is pending. Use asynchronous work or a pending promise, not a synchronous infinite loop. The example below holds the lock until the page closes. Production work also needs cancellation, stale-result handling and lifecycle tests.</p>
@@ -66,23 +87,36 @@ a:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible
 <p><img src="evidence/frame_01050000.jpg" alt="Source slide at 17:30 showing the asynchronous lock-held polling loop" /></p>
 </details>
 <h2 id="4-improve-continuity-without-migrating-the-whole-app">4. Improve continuity without migrating the whole app</h2>
+<p><strong>Add continuity while preserving the ordinary page.</strong></p>
+<p><strong>Try:</strong> Identify the widget to keep visible or the object to track across navigation.</p>
+<p><strong>Check:</strong> Closing floating content restores it; normal links work without animation.</p>
+<p><strong>If stuck:</strong> Keep the widget in the main page; respect reduced motion and ordinary navigation.</p>
+<details>
+<summary>Why this works · source context</summary>
 <p>The talk uses Document Picture-in-Picture to keep an order widget visible, and cross-document view transitions to animate navigation in an existing multipage app. Neither idea requires turning the application into a new frontend architecture.</p>
-<p><strong>Use the idea:</strong> identify what should remain visible, or what should look like the same object across navigation. Add the enhancement while keeping the normal page usable.</p>
-<p><strong>Check:</strong> closing the floating window restores its content; unavailable animation still leaves correct navigation. Respect reduced-motion preferences. Do not confuse video Picture-in-Picture with the API for arbitrary document content.</p>
-<p><strong>If this fails:</strong> keep the widget in the main page and keep ordinary links. The polish is optional; access to the work is essential.</p>
-<p><strong>Current implementation references:</strong> <a href="https://developer.chrome.com/docs/web-platform/document-picture-in-picture">Document Picture-in-Picture</a> and <a href="https://developer.chrome.com/docs/web-platform/view-transitions/cross-document">cross-document view transitions</a>.</p>
+</details>
 <p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1127s">18:47—document picture-in-picture</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1260s">21:00—view-transition scenario</a>.</p>
 <h2 id="5-know-when-native-capabilities-stop-being-enough">5. Know when native capabilities stop being enough</h2>
+<p><strong>Add a dependency when it fills an actual capability gap.</strong></p>
+<figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="Task + target, then Native capability?, then Keep baseline, then Fill real gap"><span>Task + target</span><b aria-hidden="true">→</b><span>Native capability?</span><b aria-hidden="true">→</b><span>Keep baseline</span><b aria-hidden="true">→</b><span>Fill real gap</span></div><figcaption>Our adoption checklist. A dependency may be the right answer.</figcaption></figure>
+<p><strong>Try:</strong> Distinguish a detected face, a smile, a QR code and a device command.</p>
+<p><strong>Check:</strong> The capability, permission and hardware fit the signal you need.</p>
+<p><strong>If stuck:</strong> Offer manual entry or the ordinary action when the capability is unavailable.</p>
+<details>
+<summary>Why this works · source context</summary>
 <p>The smile-discount example separates detecting a face from detecting an expression. The talk first explores the preview face-detection interface, then adds MediaPipe for finer-grained expression information. It is a deliberate dependency serving a specific gap. QR detection and Bluetooth examples likewise need suitable APIs, permission and, for Bluetooth, compatible devices and device-specific protocols.</p>
-<p><strong>Use the idea:</strong> distinguish “a face exists” from identity, emotion or permission to use its image. A smile score is not proof that someone is happy. A generic Bluetooth connection also does not tell you how to control any arbitrary printer or bulb.</p>
-<p><strong>Check:</strong> the feature exists on the intended browser/device, handles cancellation and produces the signal your use case actually needs. Provide an ordinary alternative for a customer who cannot or does not want to use the capability.</p>
-<p><strong>If this fails:</strong> retain manual loyalty entry or an ordinary discount action. Do not require buying hardware or enabling preview features to follow this lesson.</p>
+</details>
 <p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1500s">25:00—face versus smile</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1645s">27:25—MediaPipe</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1757s">29:17—QR detection</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1880s">31:20—Bluetooth scenario</a>.</p>
 <h2 id="6-treat-browser-ai-as-a-capability-to-qualify">6. Treat browser AI as a capability to qualify</h2>
-<p>The closing examples use browser-hosted models to analyze reviews and describe exposing application actions to agents. The useful lesson is to know the available materials and check current documentation when an assistant confidently describes an outdated API.</p>
+<p><strong>Qualify browser AI on the actual target device.</strong></p>
+<p><strong>Try:</strong> Specify the task’s input/output and check its API/model availability.</p>
+<p><strong>Check:</strong> A useful manual or conventional route remains when AI cannot run.</p>
+<p><strong>If stuck:</strong> Use current documentation rather than an assistant’s recalled API shape.</p>
 <p><strong>For your setup:</strong> Chrome's built-in AI has API-specific availability, device/download requirements and release conditions. “The browser can do it” does not imply it is enabled on every visitor's device. Check the <a href="https://developer.chrome.com/docs/ai/built-in">current Chrome built-in AI documentation</a> before designing the route. Keep AI-generated classifications subject to review where mistakes affect decisions.</p>
-<p><strong>Check:</strong> can the actual target device run the required task, and is there a useful path when it cannot? Keep a conventional form or manual review route.</p>
-<p><strong>If you are stuck:</strong> specify the desired input/output first; isolate AI availability behind a capability check rather than making the whole app depend on it. WebMCP and changing agent APIs need their own current implementation check; this guide does not ship an agent integration.</p>
+<details>
+<summary>Why this works · source context</summary>
+<p>The closing examples use browser-hosted models to analyze reviews and describe exposing application actions to agents. The useful lesson is to know the available materials and check current documentation when an assistant confidently describes an outdated API.</p>
+</details>
 <p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=2247s">37:27—review analysis</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=2486s">41:26—WebMCP anecdote</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=2574s">42:54—know your materials</a>.</p>
 <details><summary>Alternative starting point: explore the creator's full application</summary>
 <p>The author links <a href="https://github.com/conroyp/delete-your-dependencies">the Daily Grind demo repository</a> from <a href="https://www.conroyp.com/speaking/delete-your-dependencies-what-the-browser-can-do-now">his talk page</a>. Choose it for broader examples rather than the single mechanism below. Its documented development route uses Node.js, <code>npm install</code> and <code>npm run dev</code>. That adds tooling and downloads; some demonstrations also require models, device permissions or hardware. We inspected the public instructions, but did not install or execute that app.</p>
@@ -90,7 +124,7 @@ a:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible
 <p>The repository also includes file-access examples. Those are useful extensions from the author's material; they are not presented here as a recovered spoken walkthrough.</p>
 </details>
 <h2 id="keep-handy">Keep handy</h2>
-<div class="tablewrap"><table>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th>Your job</th>

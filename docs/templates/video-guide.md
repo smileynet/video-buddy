@@ -6,6 +6,10 @@ Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {
 
 {{Concrete learning or demonstrated result. Essential fit constraints and missing dependencies.}}
 
+## The whole approach at a glance
+
+{{Synthesize the complete source: its main method/recommendation, connected major ideas and intended result. State consequential exceptions or experimental parts. Use a compact relationship diagram or small map to sections where useful; chapter titles alone are insufficient. Keep optional builds distinct.}}
+
 **Start here:** {{one useful action and its check; no setup required for a conceptual lesson}}.
 
 <!-- BODY A: concepts/decisions. Use instead of BODY B. -->

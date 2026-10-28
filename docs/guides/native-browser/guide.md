@@ -4,19 +4,39 @@ Based on [Paul Conroy's *Delete Your Dependencies: What the Browser Can Do Now*]
 
 You will learn how to recognize a native-browser alternative, decide whether it fits your users, and check the result before removing a library. The title is an invitation to investigate dependencies, not to remove every one.
 
+## The whole approach at a glance
+
+Start with **one user behavior**, check whether a **native capability fits the target environment**, then add only what is still missing. Keep a usable baseline and verify the behavior before deleting a dependency.
+
+- **Interface (topic 2):** native controls and CSS can replace small UI helpers.
+- **Continuity (topics 1, 3–4):** capture a region, coordinate tabs and retain useful context without a wholesale rewrite.
+- **Capability limits (topics 5–6):** detection, hardware and AI need their own support, permission and task checks.
+
+Native does not mean universally available or production-ready for your app. The separate two-tab example tests one mechanism, not every feature in the talk.
+
 **Start here:** name one job in your app—keep two tabs current, open a small action panel, or share one part of a screen. Write the behavior your users need and the browsers they use. Choose the smallest native replacement that meets that behavior.
 
 **Want to try something now?** [Open the two-tab coffee-order worked example](#worked-example). It adapts the talk's BroadcastChannel and Web Locks ideas into a small runnable page. No hardware, account, API key or package installation is needed; a local static server is required (Python 3 or an existing static-server tool). It is separate from the lesson and does not implement the creator's complete coffee-shop application.
 
+
 ## 1. Start with the job, not the package
+
+**Break the user’s job into capabilities before searching for a package.**
+
+<figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="Capture, then Select region, then Draw canvas, then Share tab"><span>Capture</span><b aria-hidden="true">→</b><span>Select region</span><b aria-hidden="true">→</b><span>Draw canvas</span><b aria-hidden="true">→</b><span>Share tab</span></div><figcaption>Our decomposition of the creator’s screen-sharing example.</figcaption></figure>
+
+**Try:** Trace capture → select region → draw → share.
+
+**Check:** Permissions, resizing, stopping and supported browsers all meet the job.
+
+**If stuck:** Identify the one remaining capability that justifies a dependency.
+
+<details>
+<summary>Why this works · source context</summary>
 
 The opening example is a client demo: show the emulator region, not the entire IDE. Conroy combines screen capture, a selected rectangle and a canvas preview. The transferable move is to break the desired behavior into capabilities before searching for a plugin.
 
-**Use the idea:** write a short chain: capture a permitted display → select a region → draw that region repeatedly → share the resulting tab. Each arrow is a concrete requirement to check.
-
-**Check:** can your replacement do the actual job, including permissions, resizing, stopping and supported browsers? A smaller bundle alone is insufficient.
-
-**If you are stuck:** list the one capability the browser cannot yet supply. Keep a dependency for that gap instead of recreating it poorly.
+</details>
 
 **In the video:** [1:13—demo problem](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=73s), [3:31—capture and canvas](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=211s), [7:50—dependencies can still be necessary](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=470s).
 
@@ -30,13 +50,22 @@ The talk reports a frozen-canvas problem when its source video was hidden with `
 
 ## 2. Let HTML and CSS own simple interface behavior
 
+**HTML behavior and CSS placement are separate enhancements.**
+
+
+
+**Try:** Keep labeled fields and ordinary buttons, then enhance sizing or popovers.
+
+**Check:** Keyboard use, dismissal, long content and narrow layouts remain usable.
+
+**If stuck:** Keep manual resizing and visible actions when an enhancement is unavailable.
+
+<details>
+<summary>Why this works · source context</summary>
+
 The coffee-shop example starts with an order-notes field, then an action panel. `field-sizing: content` lets a supported text field size to its content; popover markup supplies opening/closing behavior; CSS anchor positioning handles placement near the trigger. These are different capabilities, with different compatibility requirements.
 
-**Use the idea:** start with a plain, labeled textarea and ordinary action buttons. Add content sizing or a popover as an enhancement. Avoid replacing a usable baseline with an unsupported feature.
-
-**Check:** keyboard users can reach the actions; Escape dismisses a supported popover; long text and narrow layouts remain usable.
-
-**If this fails:** retain the resizable field and visible buttons. Do not hide required actions merely because popover or anchor positioning is unavailable. Popover behavior alone is not a complete accessible application-menu implementation.
+</details>
 
 **In the video:** [10:25—growing notes](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=625s), [11:54—popover and anchor placement](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=714s).
 
@@ -48,15 +77,22 @@ Check [HTML popovers](https://html.spec.whatwg.org/multipage/popover.html) and [
 
 ## 3. Keep tabs current without asking every tab to poll
 
+**One coordinator can update many local views.**
+
+<figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="One lock-holder, then Broadcast snapshot, then Listening tabs"><span>One lock-holder</span><b aria-hidden="true">→</b><span>Broadcast snapshot</span><b aria-hidden="true">→</b><span>Listening tabs</span></div><figcaption>Our architecture sketch; messaging does not supply persistence.</figcaption></figure><figure class="teaching-visual"><a href="evidence/frame_01050000.jpg" target="_blank"><img src="evidence/frame_01050000.jpg" alt="Source polling loop inside Web Locks at 17:30"></a><figcaption>Source screengrab · 17:30. Awaited work and delay keep this from being a busy loop.</figcaption></figure>
+
+**Try:** Follow a change from the lock-holder through a broadcast to listening tabs.
+
+**Check:** Check updates, takeover and a fresh snapshot for a new tab.
+
+**If stuck:** Use the same origin/profile; preserve server correctness before optimizing polling.
+
+<details>
+<summary>Why this works · source context</summary>
+
 A user opens the same order in several tabs. Each page can become stale, and saving an old copy can overwrite a newer edit. The talk introduces `BroadcastChannel` for messages among eligible browsing contexts and Web Locks to assign one tab the responsibility for fetching updates.
 
-**The mechanism:** one tab holds a named lock while doing the shared work. It broadcasts the result. Other tabs listen and render it; when the holder closes, another waiting tab can acquire the lock.
-
-**For your app:** same-origin communication is also subject to storage partitioning. It is not cross-device messaging. These APIs coordinate browser work; they do not replace server persistence, authentication or database concurrency checks. Keep server versions/ETags or equivalent conflict handling when real writes matter.
-
-**Check:** change the order in one tab and watch the other update; close the coordinator and see another tab take over. Reopen a tab and confirm it gets current state, rather than assuming messages are replayed.
-
-**If this fails:** use the identical localhost URL, port and browser profile in both tabs. Check support and secure-context status. For a production fallback, preserve refresh/server correctness before optimizing polling.
+</details>
 
 **In the video:** [12:46—stale order copies](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=766s), [14:25—BroadcastChannel](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=865s), [16:30—one coordinator with Web Locks](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=990s).
 
@@ -80,39 +116,70 @@ At [15:00](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=900s), the creator send
 
 ## 4. Improve continuity without migrating the whole app
 
+**Add continuity while preserving the ordinary page.**
+
+
+
+**Try:** Identify the widget to keep visible or the object to track across navigation.
+
+**Check:** Closing floating content restores it; normal links work without animation.
+
+**If stuck:** Keep the widget in the main page; respect reduced motion and ordinary navigation.
+
+<details>
+<summary>Why this works · source context</summary>
+
 The talk uses Document Picture-in-Picture to keep an order widget visible, and cross-document view transitions to animate navigation in an existing multipage app. Neither idea requires turning the application into a new frontend architecture.
 
-**Use the idea:** identify what should remain visible, or what should look like the same object across navigation. Add the enhancement while keeping the normal page usable.
-
-**Check:** closing the floating window restores its content; unavailable animation still leaves correct navigation. Respect reduced-motion preferences. Do not confuse video Picture-in-Picture with the API for arbitrary document content.
-
-**If this fails:** keep the widget in the main page and keep ordinary links. The polish is optional; access to the work is essential.
-
-**Current implementation references:** [Document Picture-in-Picture](https://developer.chrome.com/docs/web-platform/document-picture-in-picture) and [cross-document view transitions](https://developer.chrome.com/docs/web-platform/view-transitions/cross-document).
+</details>
 
 **In the video:** [18:47—document picture-in-picture](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=1127s), [21:00—view-transition scenario](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=1260s).
 
+
+
 ## 5. Know when native capabilities stop being enough
+
+**Add a dependency when it fills an actual capability gap.**
+
+<figure class="teaching-visual"><div class="visual-flow" role="img" aria-label="Task + target, then Native capability?, then Keep baseline, then Fill real gap"><span>Task + target</span><b aria-hidden="true">→</b><span>Native capability?</span><b aria-hidden="true">→</b><span>Keep baseline</span><b aria-hidden="true">→</b><span>Fill real gap</span></div><figcaption>Our adoption checklist. A dependency may be the right answer.</figcaption></figure>
+
+**Try:** Distinguish a detected face, a smile, a QR code and a device command.
+
+**Check:** The capability, permission and hardware fit the signal you need.
+
+**If stuck:** Offer manual entry or the ordinary action when the capability is unavailable.
+
+<details>
+<summary>Why this works · source context</summary>
 
 The smile-discount example separates detecting a face from detecting an expression. The talk first explores the preview face-detection interface, then adds MediaPipe for finer-grained expression information. It is a deliberate dependency serving a specific gap. QR detection and Bluetooth examples likewise need suitable APIs, permission and, for Bluetooth, compatible devices and device-specific protocols.
 
-**Use the idea:** distinguish “a face exists” from identity, emotion or permission to use its image. A smile score is not proof that someone is happy. A generic Bluetooth connection also does not tell you how to control any arbitrary printer or bulb.
-
-**Check:** the feature exists on the intended browser/device, handles cancellation and produces the signal your use case actually needs. Provide an ordinary alternative for a customer who cannot or does not want to use the capability.
-
-**If this fails:** retain manual loyalty entry or an ordinary discount action. Do not require buying hardware or enabling preview features to follow this lesson.
+</details>
 
 **In the video:** [25:00—face versus smile](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=1500s), [27:25—MediaPipe](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=1645s), [29:17—QR detection](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=1757s), [31:20—Bluetooth scenario](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=1880s).
 
+
+
 ## 6. Treat browser AI as a capability to qualify
 
-The closing examples use browser-hosted models to analyze reviews and describe exposing application actions to agents. The useful lesson is to know the available materials and check current documentation when an assistant confidently describes an outdated API.
+**Qualify browser AI on the actual target device.**
+
+
+
+**Try:** Specify the task’s input/output and check its API/model availability.
+
+**Check:** A useful manual or conventional route remains when AI cannot run.
+
+**If stuck:** Use current documentation rather than an assistant’s recalled API shape.
 
 **For your setup:** Chrome's built-in AI has API-specific availability, device/download requirements and release conditions. “The browser can do it” does not imply it is enabled on every visitor's device. Check the [current Chrome built-in AI documentation](https://developer.chrome.com/docs/ai/built-in) before designing the route. Keep AI-generated classifications subject to review where mistakes affect decisions.
 
-**Check:** can the actual target device run the required task, and is there a useful path when it cannot? Keep a conventional form or manual review route.
+<details>
+<summary>Why this works · source context</summary>
 
-**If you are stuck:** specify the desired input/output first; isolate AI availability behind a capability check rather than making the whole app depend on it. WebMCP and changing agent APIs need their own current implementation check; this guide does not ship an agent integration.
+The closing examples use browser-hosted models to analyze reviews and describe exposing application actions to agents. The useful lesson is to know the available materials and check current documentation when an assistant confidently describes an outdated API.
+
+</details>
 
 **In the video:** [37:27—review analysis](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=2247s), [41:26—WebMCP anecdote](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=2486s), [42:54—know your materials](https://www.youtube.com/watch?v=I6tOlNK_HS4&t=2574s).
 

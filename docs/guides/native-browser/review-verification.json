@@ -11,12 +11,15 @@
     "evidence returns to selected topic",
     "runnable example opens separately and returns to originating topic",
     "in-page notes survive switching, pause and companion return",
-    "390px layouts and file opening"
+    "390px layouts and file opening",
+    "whole approach and connected section map precede first action",
+    "visual hierarchy shared across A/B; optional examples separate"
   ],
   "limits": [
     "synthetic checks only",
     "no human comprehension or layout preference",
     "notes do not survive reload",
     "runnable order-board execution recorded separately in verification.json"
-  ]
+  ],
+  "fixture": "ticket18-native-browser-visual-v2"
 }

@@ -75,3 +75,7 @@ User authorized applying the [teaching proposal](../teaching-format-proposal.md)
 Pinned prototype commit7fffe44da39afd5d20043393dc647434fb48ed37. Narration v2 remains at b4bab3d14f281258a03ab117edb831a7e378d9a6. Teaching/content improvements apply equally; they are not evidence that B performs better. Offline browser/mobile, same step content, teaching sections, hint/criteria, local evidence, note retention and pre-commit checks passed. No reader responses or production run. Hosted playback remains unverified.
 
 Copy refinement: lead with one short passage to generate/revise, use “Choose a starting point and try it”, format the research date as 27 October 2026, and retain a brief validation note inside optional details. Same copy in A/B; no new execution or reader claim. Pinned53ea0d382ee9e52851d86c3567790fb3291344a2.
+
+## Whole-source overview and visual hierarchy — 28 October 2026
+
+Narration and browser guides now use the same reading hierarchy as the modeling guide: compact synthesis before sections, concise topic takeaways, purposeful diagrams/source images, visible Try/Check/recovery and expandable context. Modeling's opening maps shape-building, feedback setup and deliberate refinement, with the hair experiment clearly optional. All three retain a single teaching fixture across A/B and separate worked examples. Narration revision visual-v10, browser visual-v2, modeling overview-v3. Browser checks establish operation/parity, not learning effectiveness or a layout winner.

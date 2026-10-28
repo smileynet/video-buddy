@@ -17,3 +17,5 @@ Validate these tasks: understand in ten minutes without setup; try one passage; 
 ## Read at two depths
 
 A reader can skim the outcome, topic takeaway, useful visual, next action and success check. A reader who needs explanation can expand a specifically named callout without losing the action. Keep essential prerequisites, risk to the current work, experimental status and immediate recovery in the skim path. Use captioned screengrabs for visual decisions and diagrams for relationships; source moments and originals remain reachable. Text equivalents keep the guide usable without the image. Dense text moved wholesale behind a generic “More” panel is not a clear hierarchy.
+
+Before section navigation, show the whole approach in a brief synthesis and a small map: what the ideas add up to, how they connect and where the important limits are. The reader should know what they are learning before following its parts. Keep the full explanation in the relevant sections; avoid recreating the video's suspense or turning the opening into another wall of text.
