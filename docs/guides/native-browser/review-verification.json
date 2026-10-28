@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-28",
+  "browser": "Chromium 151.0.7922.34, headless Playwright on Windows",
+  "source": "I6tOlNK_HS4",
+  "passed": true,
+  "checks": [
+    "six identical teaching topics across A/B",
+    "correct source ID and selected 14:25 playback",
+    "retained frames at 15:00 and 17:30",
+    "video loaded only on Play",
+    "evidence returns to selected topic",
+    "runnable example opens separately and returns to originating topic",
+    "in-page notes survive switching, pause and companion return",
+    "390px layouts and file opening"
+  ],
+  "limits": [
+    "synthetic checks only",
+    "no human comprehension or layout preference",
+    "notes do not survive reload",
+    "runnable order-board execution recorded separately in verification.json"
+  ]
+}

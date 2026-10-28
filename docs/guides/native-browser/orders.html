@@ -15,6 +15,14 @@
 <details><summary>What this example does—and what remains</summary><p>BroadcastChannel carries messages; Web Locks selects one coordinator. The coordinator renders its own changes and sends snapshots to peers. A joining tab requests a snapshot because broadcasts have no replay history.</p><p>State lives in memory in open tabs. Closing all tabs or reloading the last tab loses the order. There is no backend persistence, authentication, multi-device synchronization, reliable suspended-tab detection or transaction recovery. The note field stays in this tab only. Do not enter real orders or credentials.</p><p>Only the order-board behavior is exercised here. The textarea's sizing and popover are progressive enhancements: manual resizing and visible checks remain usable without them. This does not implement the talk's camera, screen share, Bluetooth or AI examples.</p><p><a href="guide.html#worked-example">Return to the guide and source moments</a> · <a href="orders.html" download>Download this single-page example</a></p></details>
 <script>
 const $=id=>document.getElementById(id);
+const reviewParams=new URLSearchParams(location.search);
+if(reviewParams.get('review')==='1'){
+ const back=document.createElement('a'),v=reviewParams.get('variant')==='B'?'B':'A',n=Math.max(0,Math.min(5,Number(reviewParams.get('step'))||0));
+ back.href=`review.html?variant=${v}&step=${n}#step-${n+1}`;back.textContent='← Return to my A/B review topic';
+ back.onclick=e=>{try{if(window.opener&&!window.opener.closed&&window.opener.location.pathname.endsWith('/native-browser/review.html')){window.opener.focus();window.close();e.preventDefault();}}catch(_){}};
+ document.querySelector('header').append(back);
+}
+
 const supported=location.protocol!=='file:'&&isSecureContext&&'BroadcastChannel'in window&&!!navigator.locks;
 if(!supported){$('capability').textContent='Serve this folder on localhost first: python -m http.server 8876 --bind 127.0.0.1, then open http://127.0.0.1:8876/orders.html in two tabs. This exercise needs BroadcastChannel and Web Locks in a secure context. If you served the repository root, include /docs/guides/native-browser/orders.html. The guide remains readable without those APIs.';}
 else{

@@ -26,5 +26,11 @@
     "https://github.com/conroyp/delete-your-dependencies",
     "https://github.com/conroyp/screen-portal"
   ],
-  "runtime_results": "verification.json"
+  "runtime_results": "verification.json",
+  "ab_review": {
+    "fixture": "ticket18-native-browser-v1",
+    "topic_count": 6,
+    "guide_sha256": "9eab7621520578cecb44d5336c3a6edd761ec1c7f233199ffd1948b1acab96fc",
+    "notes": "One identical teaching fixture for A/B; runnable example separate; video loaded only on request; memory-only drafts"
+  }
 }

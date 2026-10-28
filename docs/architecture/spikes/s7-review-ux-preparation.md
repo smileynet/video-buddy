@@ -4,6 +4,18 @@ Updated 2026-10-27 at the user's request. Ticket18 remains in progress; no reade
 
 The walkthrough now teaches the source's decision framework and production-pattern illustration. Both views use seven identical topics; topic 6 has the inspected settings frame at 6:42. Our implementation plan and measured model comparison are separate optional companions. No reader outcome or layout winner is claimed.
 
+## Noggi: local third-source review — 28 October 2026
+
+A personal guide and seven-topic A/B review are prepared under the active worktree's ignored `vb-workspace/notes/guides/noggi-modeling/`. The members-only source was accessed through the existing authorized Firefox session. Caption retrieval was unavailable/rate-limited; the CLI produced small.en CPU/int8 transcription. Six frames were visually inspected; exact requested frame times remain distinct from topic playback times. These are machine-generated references, not human-verified listening.
+
+The separate original three-object Blender lab checks linked versus independent mesh data and object transforms. It was saved/rendered in Blender 5.2.0 LTS; its verification record names the exact scope. No finished character, armature, Line Art or hair bake was executed. The source's hair method is kept explicitly experimental rather than presented as a validated recipe.
+
+Browser QA passed seven-topic A/B parity (normalizing contextual return links), source/time/frame mapping, optional playback, separate lab/topic return, retained in-page draft, local links/fragments and mobile/file opening. Private source media and artifacts remain local, outside Git; the durable dashboard contains review links. No human outcome/layout winner.
+
+## Latest: second-source A/B review — 28 October 2026
+
+The native-browser guide now has [A, linked reading](../../guides/native-browser/review.html?variant=A), and [B, adjacent evidence](../../guides/native-browser/review.html?variant=B&step=2). Six identical teaching topics use their source timestamps; topic 3 has inspected BroadcastChannel/Web Locks frames at 15:00 and 17:30. The existing runnable order board opens separately and returns to its originating review topic. Notes remain memory-only. Browser checks passed exact parity, source/time/frame mapping, opt-in player, return/navigation, mobile/file opening and original draft retention. No reader outcome or layout winner is claimed.
+
 ## Latest: critic recommendations applied — pathways v9
 
 Active authoring guidance now separates internal routing from the reader experience contract. The reusable template selects one conceptual or source-walkthrough body, keeps immediate recovery visible, bounds research to a useful next action and distinguishes readiness from executed results. The narration sample adds a setup-free first action, local-only fit guidance, the missing-program blocker and recovery prompts. Both layouts share the same revised canonical text.
