@@ -72,7 +72,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return
 $('begin').onclick=()=>{if(started)return;started=true;log('begin');$('notice').textContent='Review started. Record where you need help.'};
 $('inspect').onclick=()=>{if(!paused)inspect()};
 $('pause-button').onclick=()=>{paused=true;log('pause');$('pause').hidden=false;$('guide').hidden=true;const frame=document.querySelector('iframe');if(frame)frame.remove();$('resume').focus()};
-$('resume').onclick=()=>{paused=false;render();log('resume');$('pause').hidden=true;$('answer').focus()};
+$('resume').onclick=()=>{paused=false;render();log('resume');$('pause').hidden=true;const topic=$('step-'+(step+1));topic.tabIndex=-1;topic.focus();topic.scrollIntoView()};
 $('record').onclick=()=>{records.push({variant,step:step+1,answer:$('answer').value,friction:$('friction').value,resumption:$('return-note').value});log('record_self_report');$('notice').textContent='Recorded in memory. Copy the review before leaving.'};
 $('export').onclick=()=>{log('show_export');$('output').hidden=false;$('output').textContent=JSON.stringify({study:'ticket18-native-browser-help-v4',source:'I6tOlNK_HS4',automatic_success_scoring:false,limitations:['familiar participant','same-task learning','self-report and local events only','memory-only notes'],records,current_draft:{variant,step:step+1,answer:$('answer').value,friction:$('friction').value,resumption:$('return-note').value},events},null,2);$('output').focus()};
 render();log('view_shown');

@@ -1,6 +1,6 @@
 # Skills after the single-source guide iteration
 
-28 October 2026. This is a packaging decision and a concrete candidate for review, not a global skill installation. Current project behavior remains routed through AGENTS.md and the active authoring documents.
+28 October 2026. The initial proposal below is retained as its decision record. The user subsequently authorized building and installing the skill; see the installation and adversarial trial record at the end. Project behavior remains routed through AGENTS.md and the active authoring documents.
 
 ## One skill worth creating
 
@@ -37,3 +37,15 @@ A further practical need is a shared guide-presentation helper: repeated scratch
 ## Validation in this pass
 
 The candidate passed the skill-creator structural validator and repository pre-commit checks. The revised narration/browser guides passed A/B parity, source/evidence/return navigation, expanded comparison and mobile checks, but those are artifact checks under current guidance—not a behavioral qualification of an installed skill. Independent source auditing supported the context blocks; a request-stitching clarification was incorporated. No global skill was installed or modified.
+
+## Installation and adversarial trial — 28 October 2026
+
+Installed `video-guide` at `C:/Users/uosmi/.codex/skills/video-guide` at the user’s explicit request. The tracked package remains [here](skill-candidates/video-guide/SKILL.md). Normal automatic discovery is enabled by default; explicit invocation is `$video-guide`. The entrypoint selects current project guidance when present, otherwise its bundled authoring, reader-pathway and template references. Bundled files are generated portable snapshots from the project documents: when behavior changes, refresh them and reinstall the package together; project copies remain authoritative in this repo. No private media, credentials or reader responses are packaged.
+
+Structural validation passed for the installed package. An independent adversarial critic is evaluating the actual browser guide and a bounded conceptual-source fixture using the installed skill. This is an agent behavioral trial and artifact review, not human learning validation.
+
+### Critic results and corrections
+
+The independent critic identified a confirmed P2 navigation defect: Resume focused the response form instead of the selected topic. Restored focus/scroll to the topic. Its alleged broken opening example link was rejected after inspecting the parsed fixture: the review already links to `guide.html#worked-example` in another tab; the critic confused the canonical Markdown fragment with the review URL. The unnecessary proposed anchor was removed. The critic also flagged unconditional Video Buddy wording in the bundled fallback; it now uses workspace tools and makes CLI publishing conditional.
+
+The bounded behavioral trial used only a supplied conceptual-video summary (rough shape → early pose → silhouette feedback → revision). It produced an overview and expandable Try/Check/If stuck instructions, marked application guidance and unavailable exact timestamps/commands, offered a sketch-based reasoning route, and avoided unsupported execution claims or an unrequested build. The critic found the actual browser guide’s expanded help topic-specific and useful, and the optional order-board example clearly separate. This establishes a limited agent trial, not broad skill qualification or observed reader success.

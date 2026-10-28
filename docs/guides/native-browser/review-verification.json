@@ -27,5 +27,9 @@
     "notes do not survive reload",
     "runnable order-board execution recorded separately in verification.json"
   ],
-  "fixture": "ticket18-native-browser-help-v4"
+  "fixture": "ticket18-native-browser-help-v4",
+  "adversarial_corrections": [
+    "Opening example route inspected: existing separate guide target retained",
+    "Resume restores selected topic focus and scroll"
+  ]
 }

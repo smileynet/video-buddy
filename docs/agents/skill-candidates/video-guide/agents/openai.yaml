@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Guide"
+  short_description: "Teach and apply videos with clear evidence and steps"
+  default_prompt: "Use $video-guide to turn this video into a practical learning guide."
