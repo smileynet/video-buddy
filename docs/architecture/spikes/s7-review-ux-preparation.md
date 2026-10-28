@@ -83,3 +83,9 @@ Narration and browser guides now use the same reading hierarchy as the modeling 
 ## Current single-source iteration: context and reading levels — 28 October 2026
 
 Noggi context-v4 adopts the researched “Where this fits” introduction and an optional related-approach comparison, previously only proposed. It distinguishes feedback strategy from edit reversibility and keeps the original video as the main teaching source. Distinct labeled context/overview/action/check/recovery/source treatments, restrained colors, more spacing and a collapsed topic index address the flat reading hierarchy. Both A/B views share identical teaching; the lab remains separate. Ticket44's broader knowledge-management exploration remains unstarted follow-up work. No reader effectiveness or layout winner is claimed.
+
+## Context applied to narration and browser guides — 28 October 2026
+
+Narration context-v11 now distinguishes speech-generation task, voice identity and production/revision workflow; browser context-v3 relates native capabilities to progressive enhancement, feature detection and dependency evaluation. Both use the researched context/optional comparison, whole-source overview and labeled semantic colors. Expanded rationale remains optional and worked examples stay separate. The narration introduction's repeated main-idea explanation was folded into creator/test context; the provider's hosted role remains visible.
+
+The context research and independent audit are in `docs/agents/research/guide-contexts-narration-browser*`. No new provider trial, caption/export qualification or knowledge-management work was performed. A `video-guide` skill candidate and packaging review are available under maintainer links; the candidate is structurally checked but not globally installed. Project authoring guidance remains active.

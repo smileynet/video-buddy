@@ -4,6 +4,26 @@ Based on [Paul Conroy's *Delete Your Dependencies: What the Browser Can Do Now*]
 
 You will learn how to recognize a native-browser alternative, decide whether it fits your users, and check the result before removing a library. The title is an invitation to investigate dependencies, not to remove every one.
 
+<section class="guide-context" aria-labelledby="context-title">
+<p class="eyebrow">Where this fits</p>
+<h2 id="context-title">Web-platform-first development</h2>
+<p>Start with the behavior users need and investigate what the browser supplies. Progressive enhancement is a related adoption strategy: keep essential content and functionality usable, then add supported capabilities. A native feature is a candidate to qualify, not proof that every dependency should disappear.</p>
+<div class="concept-contrast"><div><strong>Platform capability</strong><p>What can this API or HTML/CSS feature do on the target browser and device?</p></div><div><strong>Adoption strategy</strong><p>What usable path remains when that capability is missing, denied or unsuitable?</p></div></div>
+<p class="context-caption">“Web-platform-first” is our descriptive framing. Progressive enhancement is an established principle; neither guarantees compatibility or removes your application’s responsibilities.</p>
+<details><summary>Compare related approaches</summary>
+
+| Related direction | The job it serves | Important distinction |
+| --- | --- | --- |
+| Progressive enhancement | Keep a usable core while adding capabilities | An enhancement must not hide required actions from unsupported users |
+| Feature detection | Select a path based on available functionality | Existence alone does not qualify permissions, performance or the full task |
+| Dependency evaluation | Decide whether a package fills a real gap | Native and library implementations both need maintenance and behavior checks |
+| Browser-local AI | Run an eligible task with an available on-device model | Eligibility, hardware and downloads still matter; keep a useful alternative |
+
+Starting references: [progressive-enhancement definition](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement), [Chrome built-in AI](https://developer.chrome.com/docs/ai/built-in) and [its eligibility/setup requirements](https://developer.chrome.com/docs/ai/get-started). These add orientation around the source’s demonstrations; they are not a claim that every API was tested here.
+
+</details>
+</section>
+
 ## The whole approach at a glance
 
 Start with **one user behavior**, check whether a **native capability fits the target environment**, then add only what is still missing. Keep a usable baseline and verify the behavior before deleting a dependency.

@@ -13,7 +13,9 @@
     "in-page notes survive switching, pause and companion return",
     "390px layouts and file opening",
     "whole approach and connected section map precede first action",
-    "visual hierarchy shared across A/B; optional examples separate"
+    "visual hierarchy shared across A/B; optional examples separate",
+    "researched context distinguishes platform capability from adoption strategy",
+    "expanded related-approach comparison checked at390px"
   ],
   "limits": [
     "synthetic checks only",
@@ -21,5 +23,5 @@
     "notes do not survive reload",
     "runnable order-board execution recorded separately in verification.json"
   ],
-  "fixture": "ticket18-native-browser-visual-v2"
+  "fixture": "ticket18-native-browser-context-v3"
 }
