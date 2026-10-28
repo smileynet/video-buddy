@@ -1,6 +1,6 @@
 # Proposal: place a guide in its wider learning context
 
-28 October 2026. Proposal for review, not an applied change to the guides. Supporting research: [modeling context findings](../agents/research/iterative-character-modeling-context.md), independently [audited with limitations](../agents/research/iterative-character-modeling-context-audit.md).
+28 October 2026. Adopted in the local Noggi single-source guide and both A/B views, with a visible category/distinction and an optional related-approach comparison. Supporting research: [modeling context findings](../agents/research/iterative-character-modeling-context.md), independently [audited with limitations](../agents/research/iterative-character-modeling-context-audit.md).
 
 ## Recommendation for Noggi
 
@@ -60,4 +60,4 @@ Before adoption, check whether the reader can distinguish the feedback strategy 
 
 ## Review disposition
 
-Independent audit supported the bounded technical distinctions. Historical/WIP practitioner guidance remains labeled as prior art; the Arc publisher page could not be independently re-fetched by the auditor, so it supports an optional historical pointer rather than technical lineage. The proposed opening was shortened to avoid repeating the existing whole-approach overview. Sculpting is called an editing route rather than a different representation. The official release-branch references retain the inspected commit hash/date; a later attempt to use commit-qualified raw URLs returned403 in this environment, so no successful re-fetch is claimed for those alternative URLs. Active guides and agent instructions are unchanged pending adoption.
+Independent audit supported the bounded technical distinctions. Historical/WIP practitioner guidance remains labeled as prior art; the Arc publisher page could not be independently re-fetched by the auditor, so it supports an optional historical pointer rather than technical lineage. The proposed opening was shortened to avoid repeating the existing whole-approach overview. Sculpting is called an editing route rather than a different representation. The official release-branch references retain the inspected commit hash/date; a later attempt to use commit-qualified raw URLs returned403 in this environment, so no successful re-fetch is claimed for those alternative URLs. The current single-source guide and reusable authoring guidance now apply the bounded context block and comparison; the broader knowledge-management exploration remains follow-up ticket44.

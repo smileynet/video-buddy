@@ -79,3 +79,7 @@ Copy refinement: lead with one short passage to generate/revise, use “Choose a
 ## Whole-source overview and visual hierarchy — 28 October 2026
 
 Narration and browser guides now use the same reading hierarchy as the modeling guide: compact synthesis before sections, concise topic takeaways, purposeful diagrams/source images, visible Try/Check/recovery and expandable context. Modeling's opening maps shape-building, feedback setup and deliberate refinement, with the hair experiment clearly optional. All three retain a single teaching fixture across A/B and separate worked examples. Narration revision visual-v10, browser visual-v2, modeling overview-v3. Browser checks establish operation/parity, not learning effectiveness or a layout winner.
+
+## Current single-source iteration: context and reading levels — 28 October 2026
+
+Noggi context-v4 adopts the researched “Where this fits” introduction and an optional related-approach comparison, previously only proposed. It distinguishes feedback strategy from edit reversibility and keeps the original video as the main teaching source. Distinct labeled context/overview/action/check/recovery/source treatments, restrained colors, more spacing and a collapsed topic index address the flat reading hierarchy. Both A/B views share identical teaching; the lab remains separate. Ticket44's broader knowledge-management exploration remains unstarted follow-up work. No reader effectiveness or layout winner is claimed.

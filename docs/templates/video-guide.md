@@ -6,6 +6,19 @@ Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {
 
 {{Concrete learning or demonstrated result. Essential fit constraints and missing dependencies.}}
 
+<!-- Include this orientation only when useful and researched; descriptive labels are our framing. -->
+
+## Where this fits · {{broader category}}
+
+{{Brief relationship explanation and one misconception-preventing distinction. Keep this separate from the source's complete-method overview.}}
+
+<details>
+<summary>Compare related approaches</summary>
+
+{{A compact comparison of related directions, the learner need each serves, and relevant primary links. No automatic new research/build task.}}
+
+</details>
+
 ## The whole approach at a glance
 
 {{Synthesize the complete source: its main method/recommendation, connected major ideas and intended result. State consequential exceptions or experimental parts. Use a compact relationship diagram or small map to sections where useful; chapter titles alone are insufficient. Keep optional builds distinct.}}
