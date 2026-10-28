@@ -65,3 +65,9 @@ Compare a lightweight file/link collection, a structured concept/claim index and
 ## Sequencing and boundaries
 
 Open follow-up in the knowledge-management workstream. It can be researched independently and is not added as a mandatory blocker to integration review28. Coordinate any proposed production integration with28; implementation should follow the exploration's disposition and separately scoped tickets. No new project, provider subscription, background research automation or production schema change is authorized by creating this ticket alone.
+
+## Separate-project handoff — 28 October 2026
+
+The user authorized initialization of the separate **Learning Library** exploration at `D:/code/learning-library`. Its committed `docs/project-brief.md` preserves the outcome/boundary, `docs/context/video-buddy-44.md` snapshots this intent, and `docs/plan.md` orders local tickets 01–04: learner path, concept/claim provenance, research reuse and multi-source composition, then architecture disposition. Repository setup and tracker checks passed; no exploration ticket is claimed or completed.
+
+Detailed execution is tracked in Learning Library. Keep this originating ticket open as the cross-project disposition checkpoint until the exploration returns its findings; initialization alone does not satisfy its research acceptance criteria. No production integration dependency is added to review28. The new repo is local-only, with no remote configured.
