@@ -1,0 +1,170 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Use browser features before adding dependencies · Video Buddy guide</title><style> :root{font:17px/1.65 system-ui;color:#173251;background:#edf5ff}*{box-sizing:border-box}body{margin:0}main,header{max-width:930px;margin:auto;padding:24px}header{padding-bottom:0}h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.2}h2{font-size:1.4rem;margin-top:2.3em;padding-top:12px;border-top:1px solid #b9d3ed}a{color:#155eb2}a:focus-visible,summary:focus-visible{outline:3px solid #539ff1;outline-offset:4px}main{background:white;border:1px solid #c4d9ee;border-radius:14px;padding:32px;margin:20px auto 50px}details{background:#f1f7ff;padding:16px;border:1px solid #c4d9ee;border-radius:10px;margin:20px 0}summary{cursor:pointer;font-weight:600}code{overflow-wrap:anywhere;background:#edf4fb;padding:2px 5px;border-radius:4px}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:16px;background:#edf4fb}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #c4d9ee}nav{display:flex;gap:14px;flex-wrap:wrap}li{margin-bottom:10px}.tag{color:#315e90}img{max-width:100%;height:auto}@media(max-width:650px){main{margin:12px;padding:18px}header{padding:18px}table{min-width:600px}}</style><header><p class="tag">Video guide · optional runnable example</p><nav aria-label="Guide shortcuts"><a href="#1-start-with-the-job-not-the-package">Understand the idea</a><a href="#worked-example">Try the worked example</a><a href="#keep-handy">Find a capability</a></nav></header><main><h1 id="replace-a-dependency-with-a-browser-featureone-useful-change-at-a-time">Replace a dependency with a browser feature—one useful change at a time</h1>
+<p>Based on <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4">Paul Conroy's <em>Delete Your Dependencies: What the Browser Can Do Now</em></a>, HelloStavanger 2026. Prepared 27 October 2026 for web developers improving an existing app.</p>
+<p>You will learn how to recognize a native-browser alternative, decide whether it fits your users, and check the result before removing a library. The title is an invitation to investigate dependencies, not to remove every one.</p>
+<p><strong>Start here:</strong> name one job in your app—keep two tabs current, open a small action panel, or share one part of a screen. Write the behavior your users need and the browsers they use. Choose the smallest native replacement that meets that behavior.</p>
+<p><strong>Want to try something now?</strong> <a href="#worked-example">Open the two-tab coffee-order worked example</a>. It adapts the talk's BroadcastChannel and Web Locks ideas into a small runnable page. No hardware, account, API key or package installation is needed; a local static server is required (Python 3 or an existing static-server tool). It is separate from the lesson and does not implement the creator's complete coffee-shop application.</p>
+<h2 id="1-start-with-the-job-not-the-package">1. Start with the job, not the package</h2>
+<p>The opening example is a client demo: show the emulator region, not the entire IDE. Conroy combines screen capture, a selected rectangle and a canvas preview. The transferable move is to break the desired behavior into capabilities before searching for a plugin.</p>
+<p><strong>Use the idea:</strong> write a short chain: capture a permitted display → select a region → draw that region repeatedly → share the resulting tab. Each arrow is a concrete requirement to check.</p>
+<p><strong>Check:</strong> can your replacement do the actual job, including permissions, resizing, stopping and supported browsers? A smaller bundle alone is insufficient.</p>
+<p><strong>If you are stuck:</strong> list the one capability the browser cannot yet supply. Keep a dependency for that gap instead of recreating it poorly.</p>
+<p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=73s">1:13—demo problem</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=211s">3:31—capture and canvas</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=470s">7:50—dependencies can still be necessary</a>.</p>
+<details><summary>Try the creator's screen-sharing project</summary>
+<p>The creator publishes <a href="https://github.com/conroyp/screen-portal">Screen Portal</a>, a region-capture tool packaged as a Chrome extension. This is actual prior art, not a missing program we must invent. Read its installation and permissions instructions before trying it. We inspected its public project page; this guide does not claim an installation, capture session or successful meeting share.</p>
+<p>The talk reports a frozen-canvas problem when its source video was hidden with <code>display: none</code>, and shows a tiny rendered/transparent source as its workaround. Treat that as an implementation observation to reproduce on your target, not a guaranteed browser rule. Check that the cropped output stays live while the original region changes. Permission to capture the desktop does not mean every pixel should be shown to your audience.</p>
+</details>
+<h2 id="2-let-html-and-css-own-simple-interface-behavior">2. Let HTML and CSS own simple interface behavior</h2>
+<p>The coffee-shop example starts with an order-notes field, then an action panel. <code>field-sizing: content</code> lets a supported text field size to its content; popover markup supplies opening/closing behavior; CSS anchor positioning handles placement near the trigger. These are different capabilities, with different compatibility requirements.</p>
+<p><strong>Use the idea:</strong> start with a plain, labeled textarea and ordinary action buttons. Add content sizing or a popover as an enhancement. Avoid replacing a usable baseline with an unsupported feature.</p>
+<p><strong>Check:</strong> keyboard users can reach the actions; Escape dismisses a supported popover; long text and narrow layouts remain usable.</p>
+<p><strong>If this fails:</strong> retain the resizable field and visible buttons. Do not hide required actions merely because popover or anchor positioning is unavailable. Popover behavior alone is not a complete accessible application-menu implementation.</p>
+<p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=625s">10:25—growing notes</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=714s">11:54—popover and anchor placement</a>.</p>
+<details><summary>Implementation references</summary>
+<p>Check <a href="https://html.spec.whatwg.org/multipage/popover.html">HTML popovers</a> and <a href="https://drafts.csswg.org/css-ui/#field-sizing">CSS field sizing</a>. Feature-detect specific behavior; a single “modern browser” label does not qualify all three features. The worked example keeps a normal button path when popovers are absent and leaves the textarea manually resizable.</p>
+</details>
+<h2 id="3-keep-tabs-current-without-asking-every-tab-to-poll">3. Keep tabs current without asking every tab to poll</h2>
+<p>A user opens the same order in several tabs. Each page can become stale, and saving an old copy can overwrite a newer edit. The talk introduces <code>BroadcastChannel</code> for messages among eligible browsing contexts and Web Locks to assign one tab the responsibility for fetching updates.</p>
+<p><strong>The mechanism:</strong> one tab holds a named lock while doing the shared work. It broadcasts the result. Other tabs listen and render it; when the holder closes, another waiting tab can acquire the lock.</p>
+<p><strong>For your app:</strong> same-origin communication is also subject to storage partitioning. It is not cross-device messaging. These APIs coordinate browser work; they do not replace server persistence, authentication or database concurrency checks. Keep server versions/ETags or equivalent conflict handling when real writes matter.</p>
+<p><strong>Check:</strong> change the order in one tab and watch the other update; close the coordinator and see another tab take over. Reopen a tab and confirm it gets current state, rather than assuming messages are replayed.</p>
+<p><strong>If this fails:</strong> use the identical localhost URL, port and browser profile in both tabs. Check support and secure-context status. For a production fallback, preserve refresh/server correctness before optimizing polling.</p>
+<p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=766s">12:46—stale order copies</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=865s">14:25—BroadcastChannel</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=990s">16:30—one coordinator with Web Locks</a>.</p>
+<details><summary>Hold the lock without blocking the page</summary>
+<p>The lock lasts while its callback's returned promise is pending. Use asynchronous work or a pending promise, not a synchronous infinite loop. The example below holds the lock until the page closes. Production work also needs cancellation, stale-result handling and lifecycle tests.</p>
+<p>Primary references: <a href="https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts">BroadcastChannel standard</a> and <a href="https://www.w3.org/TR/web-locks/">Web Locks specification</a>. No broadcast history is promised; the example explicitly requests a fresh snapshot on joining.</p>
+</details>
+<details><summary>See the source slides for this mechanism</summary>
+<p>At <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=900s">15:00</a>, the creator sends an order-update message. At <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1050s">17:30</a>, the lock callback contains asynchronous fetching and an awaited delay; the loop is not a busy wait. Our smaller example uses a simulated counter instead of fetching orders.</p>
+<p><img src="evidence/frame_00900000.jpg" alt="Source slide at 15:00 showing BroadcastChannel and order update" /></p>
+<p><img src="evidence/frame_01050000.jpg" alt="Source slide at 17:30 showing the asynchronous lock-held polling loop" /></p>
+</details>
+<h2 id="4-improve-continuity-without-migrating-the-whole-app">4. Improve continuity without migrating the whole app</h2>
+<p>The talk uses Document Picture-in-Picture to keep an order widget visible, and cross-document view transitions to animate navigation in an existing multipage app. Neither idea requires turning the application into a new frontend architecture.</p>
+<p><strong>Use the idea:</strong> identify what should remain visible, or what should look like the same object across navigation. Add the enhancement while keeping the normal page usable.</p>
+<p><strong>Check:</strong> closing the floating window restores its content; unavailable animation still leaves correct navigation. Respect reduced-motion preferences. Do not confuse video Picture-in-Picture with the API for arbitrary document content.</p>
+<p><strong>If this fails:</strong> keep the widget in the main page and keep ordinary links. The polish is optional; access to the work is essential.</p>
+<p><strong>Current implementation references:</strong> <a href="https://developer.chrome.com/docs/web-platform/document-picture-in-picture">Document Picture-in-Picture</a> and <a href="https://developer.chrome.com/docs/web-platform/view-transitions/cross-document">cross-document view transitions</a>.</p>
+<p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1127s">18:47—document picture-in-picture</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1260s">21:00—view-transition scenario</a>.</p>
+<h2 id="5-know-when-native-capabilities-stop-being-enough">5. Know when native capabilities stop being enough</h2>
+<p>The smile-discount example separates detecting a face from detecting an expression. The talk first explores the preview face-detection interface, then adds MediaPipe for finer-grained expression information. It is a deliberate dependency serving a specific gap. QR detection and Bluetooth examples likewise need suitable APIs, permission and, for Bluetooth, compatible devices and device-specific protocols.</p>
+<p><strong>Use the idea:</strong> distinguish “a face exists” from identity, emotion or permission to use its image. A smile score is not proof that someone is happy. A generic Bluetooth connection also does not tell you how to control any arbitrary printer or bulb.</p>
+<p><strong>Check:</strong> the feature exists on the intended browser/device, handles cancellation and produces the signal your use case actually needs. Provide an ordinary alternative for a customer who cannot or does not want to use the capability.</p>
+<p><strong>If this fails:</strong> retain manual loyalty entry or an ordinary discount action. Do not require buying hardware or enabling preview features to follow this lesson.</p>
+<p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1500s">25:00—face versus smile</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1645s">27:25—MediaPipe</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1757s">29:17—QR detection</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=1880s">31:20—Bluetooth scenario</a>.</p>
+<h2 id="6-treat-browser-ai-as-a-capability-to-qualify">6. Treat browser AI as a capability to qualify</h2>
+<p>The closing examples use browser-hosted models to analyze reviews and describe exposing application actions to agents. The useful lesson is to know the available materials and check current documentation when an assistant confidently describes an outdated API.</p>
+<p><strong>For your setup:</strong> Chrome's built-in AI has API-specific availability, device/download requirements and release conditions. “The browser can do it” does not imply it is enabled on every visitor's device. Check the <a href="https://developer.chrome.com/docs/ai/built-in">current Chrome built-in AI documentation</a> before designing the route. Keep AI-generated classifications subject to review where mistakes affect decisions.</p>
+<p><strong>Check:</strong> can the actual target device run the required task, and is there a useful path when it cannot? Keep a conventional form or manual review route.</p>
+<p><strong>If you are stuck:</strong> specify the desired input/output first; isolate AI availability behind a capability check rather than making the whole app depend on it. WebMCP and changing agent APIs need their own current implementation check; this guide does not ship an agent integration.</p>
+<p><strong>In the video:</strong> <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=2247s">37:27—review analysis</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=2486s">41:26—WebMCP anecdote</a>, <a href="https://www.youtube.com/watch?v=I6tOlNK_HS4&amp;t=2574s">42:54—know your materials</a>.</p>
+<details><summary>Alternative starting point: explore the creator's full application</summary>
+<p>The author links <a href="https://github.com/conroyp/delete-your-dependencies">the Daily Grind demo repository</a> from <a href="https://www.conroyp.com/speaking/delete-your-dependencies-what-the-browser-can-do-now">his talk page</a>. Choose it for broader examples rather than the single mechanism below. Its documented development route uses Node.js, <code>npm install</code> and <code>npm run dev</code>. That adds tooling and downloads; some demonstrations also require models, device permissions or hardware. We inspected the public instructions, but did not install or execute that app.</p>
+<p>Our one-page example is the recommended first attempt for understanding tab coordination: smaller setup and no hardware/model prerequisite. The creator's repository is the richer route when you want its original UI and additional demonstrations. Explore locally; deployment is a separate choice.</p>
+<p>The repository also includes file-access examples. Those are useful extensions from the author's material; they are not presented here as a recovered spoken walkthrough.</p>
+</details>
+<h2 id="keep-handy">Keep handy</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Your job</th>
+<th>First capability to investigate</th>
+<th>Boundary to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Share only a region</td>
+<td>Display capture + canvas; creator's Screen Portal</td>
+<td>Permission, live rendering, meeting behavior</td>
+</tr>
+<tr>
+<td>Grow an input</td>
+<td>CSS field sizing</td>
+<td>Keep manual sizing when unsupported</td>
+</tr>
+<tr>
+<td>Show simple actions</td>
+<td>HTML popover, optional CSS anchors</td>
+<td>Keyboard behavior and placement are separate</td>
+</tr>
+<tr>
+<td>Notify sibling tabs</td>
+<td>BroadcastChannel</td>
+<td>Same eligible origin/partition; no replay/durability</td>
+</tr>
+<tr>
+<td>Assign one browser worker</td>
+<td>Web Locks</td>
+<td>Hold an async callback; lifecycle and takeover</td>
+</tr>
+<tr>
+<td>Keep a widget visible</td>
+<td>Document Picture-in-Picture</td>
+<td>Distinct from video PiP; restore content</td>
+</tr>
+<tr>
+<td>Animate multipage navigation</td>
+<td>View transitions</td>
+<td>Normal navigation and reduced motion</td>
+</tr>
+<tr>
+<td>Detect a smile</td>
+<td>Appropriate model/dependency</td>
+<td>Face presence is not smile/identity/emotion</td>
+</tr>
+<tr>
+<td>Read a loyalty QR</td>
+<td>Barcode capability or a suitable library</td>
+<td>Browser support and manual entry</td>
+</tr>
+<tr>
+<td>Signal a physical device</td>
+<td>Web Bluetooth</td>
+<td>Hardware, permissions and device protocol</td>
+</tr>
+<tr>
+<td>Analyze reviews locally</td>
+<td>A supported browser AI task</td>
+<td>Device/model/API availability and review</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="worked-example">Worked example</h2>
+<p><strong>Build a tiny two-tab order board.</strong> This is our reduced adaptation of the talk's coffee-shop scenario. It demonstrates a native message channel, one lock-holder and takeover. It is not the creator's original code and is not a production order service.</p>
+<p><strong>Recommended starting point:</strong> run the supplied <a href="orders.html">orders.html</a> in two tabs on the same local server. It uses browser APIs and no third-party runtime package. Budget roughly 10–15 minutes to explore it; no paid service is required. A browser with BroadcastChannel, Web Locks and localhost secure-context support is required. Use the capability message in the page rather than assuming support.</p>
+<ol>
+<li>Serve this folder: <code>python -m http.server 8876 --bind 127.0.0.1</code>. Open <code>http://127.0.0.1:8876/orders.html</code>. If serving the repository root instead, include <code>/docs/guides/native-browser/orders.html</code> in the URL.</li>
+<li>Open the same URL in a second tab in the same browser profile. One should say <strong>Coordinator</strong> and the other <strong>Listener</strong>. The coordinator generates a simulated incoming-work counter every two seconds; both pages show it.</li>
+<li>Mark order 150 ready in either tab. Both should show <strong>Ready</strong>. The initiating page updates too: BroadcastChannel does not send a message back to its own sending channel object, so the coordinator renders locally as well as broadcasting.</li>
+<li>Close the coordinator tab. The remaining page should become coordinator and its counter should keep increasing. This demonstrates takeover of browser responsibility, not database failover.</li>
+<li>Open a fresh tab. It requests a snapshot and should show the existing order status. This explicit handshake supplies state that past broadcasts do not retain.</li>
+</ol>
+<details><summary>Read the three pieces of the implementation</summary>
+<p>These are excerpts from our adaptation. The complete runnable code is in <code>orders.html</code>.</p>
+<ol>
+<li>The coordinator renders its own state and sends a snapshot to peers:</li>
+</ol>
+<pre><code class="language-js">function publish() {
+  render();
+  bus.postMessage({ kind: 'state', state });
+}
+</code></pre>
+<ol start="2">
+<li>
+<p>A joining page asks for the current state with <code>bus.postMessage({ kind: 'hello' })</code>. The coordinator replies with a snapshot. This replaces an assumption that new tabs receive past messages.</p>
+</li>
+<li>
+<p><code>navigator.locks.request('vb-native-orders-coordinator-v1', async () =&gt; { ... })</code> selects one holder. Its callback runs the simulated counter and awaits a pending promise; the page remains responsive while it holds the lock. Closing the page ends that ownership and permits another waiter to run.</p>
+</li>
+</ol>
+<p>Try editing the two-second interval or adding a second order only after you can explain the first update and takeover. A new business rule belongs in the coordinator rather than independent conflicting edits in every tab.</p>
+</details>
+<p><strong>If it fails:</strong> verify the same scheme, host and port, then the page's feature check. If port 8876 is occupied, choose another port and use it in both tabs. A double-clicked <code>file:</code> page shows instructions instead of claiming this cross-tab exercise works there.</p>
+<p><strong>What is saved?</strong> Orders and the counter live only in open tabs. Closing every tab or reloading the last one loses them. Edits are serialized by one coordinator in this exercise; it does not solve durable transactions, suspended-tab liveness, crash recovery, multiple devices or server conflicts.</p>
+<p><strong>Try one change:</strong> replace the simulated counter inside the coordinator with an asynchronous read from your own test endpoint. First establish server-side versions and failures; keep credentials out of the example. Do not remove existing persistence just because the two-tab demonstration works.</p>
+<p><a href="orders.html">Open the worked example</a> · <a href="#3-keep-tabs-current-without-asking-every-tab-to-poll">Return to cross-tab reasoning</a></p>
+<details><summary>Sources, additions and execution details</summary>
+<p>The guide uses the video's supplied captions and selected source frames. Captions are source-provided text, not independently human-verified listening. The small order-board implementation and its recovery/validation checks are our additions. The talk's description mentions file-system access, but it was not found in the recovered spoken captions; this guide does not invent a missing file-system walkthrough.</p>
+<p><a href="https://speakerdeck.com/conroyp/delete-your-dependencies-what-the-browser-can-do-now">Creator's slides</a> and <a href="https://github.com/conroyp/screen-portal">Screen Portal repository</a> provide starting points. Primary implementation references were checked on 27 October 2026. The supplied order board passed browser checks for updates, takeover and late-join snapshots in headless Chromium; this is execution evidence for the small adaptation, not human learning or production qualification. See <a href="provenance.json">source provenance</a> and <a href="verification.json">verification</a> for exactly what was executed; other APIs are teaching/reference coverage, not tested implementations in this guide. No complete coffee-shop app, Bluetooth session, AI inference, meeting share or production dependency migration is claimed.</p>
+</details>
+</main></html>

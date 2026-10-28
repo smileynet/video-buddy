@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Two-tab coffee orders · native browser worked example</title>
+<style>
+:root{font:17px/1.55 system-ui;color:#173251;background:#edf5ff}*{box-sizing:border-box}body{max-width:880px;margin:auto;padding:24px}h1{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.2}a{color:#155eb2}section{background:white;padding:22px;border:1px solid #b9d3ed;border-radius:12px;margin:20px 0}button,textarea{font:inherit}button{padding:10px 16px;background:#155eb2;color:white;border:0;border-radius:8px;cursor:pointer}button:disabled{background:#637d96;cursor:default}a:focus-visible,button:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #539ff1;outline-offset:4px}textarea{width:100%;padding:12px;min-height:90px;max-height:220px;resize:vertical;field-sizing:content;border:1px solid #8baccf;border-radius:8px}.tag{color:#315e90}.notice{border-left:4px solid #3281cd;padding-left:14px}code{overflow-wrap:anywhere}summary{cursor:pointer;font-weight:600}[hidden]{display:none!important}.stats{display:flex;gap:24px;flex-wrap:wrap}.stats strong{display:block;font-size:1.3rem}#status{min-height:1.5em}#actions{max-width:360px;padding:24px;border:1px solid #8baccf;border-radius:12px}ul{padding-left:22px}
+</style>
+<header><p class="tag">Worked example · our adaptation of the video</p><h1>One order, two tabs, one coordinator</h1><p>Watch one tab coordinate shared work and send updates to the other. Then close it and watch responsibility move.</p><p><a href="guide.html#worked-example">← Return to the walkthrough</a> · <a href="guide.html#3-keep-tabs-current-without-asking-every-tab-to-poll">Why tabs need coordination</a></p></header>
+<p id="capability" class="notice" role="status">Checking browser capabilities…</p>
+<main id="demo" hidden>
+<section><h2>1. Open the same page in two tabs</h2><p>Both must use the same host, port and browser profile. <a id="another" href="orders.html" target="_blank" rel="noopener">Open a second tab ↗</a></p><div class="stats"><div>Your role<strong id="role">Waiting</strong></div><div>Simulated incoming-work ticks<strong id="ticks">0</strong></div><div>Order version<strong id="version">0</strong></div></div><p>The coordinator increments a counter every two seconds to stand in for a server read. It does not contact a server for order data.</p></section>
+<section><h2>2. Update order 150</h2><p>Order status: <strong id="order-state">Preparing</strong></p><button id="ready">Mark ready</button> <button id="reset">Mark preparing</button><p id="status" role="status">Waiting for a snapshot from the coordinator.</p><label for="note">Your observation (private to this tab, not sent or saved)</label><textarea id="note" placeholder="What happened in the other tab?"></textarea></section>
+<section><h2>3. Close the coordinator tab</h2><p>Keep the listener open. It should become <strong>Coordinator</strong>, keep the order status and continue the counter. Open another tab to check that it receives a fresh snapshot.</p><p><strong>If nothing changes:</strong> compare both URLs and capability messages. Browser suspension may delay work; this exercise does not establish production leader liveness.</p><button id="actions-trigger" popovertarget="actions">What did I just test?</button><div id="actions" popover><h3>Check the result</h3><ul><li>Exactly one coordinator in these tabs.</li><li>An edit appears in both views.</li><li>The remaining tab takes over.</li><li>A new tab receives current state.</li></ul><p>Escape or click outside to dismiss.</p></div></section>
+</main>
+<details><summary>What this example does—and what remains</summary><p>BroadcastChannel carries messages; Web Locks selects one coordinator. The coordinator renders its own changes and sends snapshots to peers. A joining tab requests a snapshot because broadcasts have no replay history.</p><p>State lives in memory in open tabs. Closing all tabs or reloading the last tab loses the order. There is no backend persistence, authentication, multi-device synchronization, reliable suspended-tab detection or transaction recovery. The note field stays in this tab only. Do not enter real orders or credentials.</p><p>Only the order-board behavior is exercised here. The textarea's sizing and popover are progressive enhancements: manual resizing and visible checks remain usable without them. This does not implement the talk's camera, screen share, Bluetooth or AI examples.</p><p><a href="guide.html#worked-example">Return to the guide and source moments</a> · <a href="orders.html" download>Download this single-page example</a></p></details>
+<script>
+const $=id=>document.getElementById(id);
+const supported=location.protocol!=='file:'&&isSecureContext&&'BroadcastChannel'in window&&!!navigator.locks;
+if(!supported){$('capability').textContent='Serve this folder on localhost first: python -m http.server 8876 --bind 127.0.0.1, then open http://127.0.0.1:8876/orders.html in two tabs. This exercise needs BroadcastChannel and Web Locks in a secure context. If you served the repository root, include /docs/guides/native-browser/orders.html. The guide remains readable without those APIs.';}
+else{
+ $('demo').hidden=false;$('capability').textContent='Capabilities available. Use two tabs at this exact URL. Orders and notes are memory-only; nothing is sent to an external service.';
+ const bus=new BroadcastChannel('vb-native-orders-learning-v1');
+ let leader=false,state={ready:false,ticks:0,version:0},received=false;
+ function render(){ $('order-state').textContent=state.ready?'Ready':'Preparing';$('ticks').textContent=state.ticks;$('version').textContent=state.version; }
+ function publish(){render();bus.postMessage({kind:'state',state});}
+ function valid(s){return s&&typeof s.ready==='boolean'&&Number.isSafeInteger(s.ticks)&&s.ticks>=0&&Number.isSafeInteger(s.version)&&s.version>=0;}
+ function edit(ready){state={...state,ready,version:state.version+1};publish();$('status').textContent='Order updated here and broadcast to the other tabs.';}
+ bus.onmessage=({data})=>{
+  if(!data||typeof data!=='object')return;
+  if(data.kind==='hello'&&leader)publish();
+  if(data.kind==='edit'&&leader&&typeof data.ready==='boolean')edit(data.ready);
+  if(data.kind==='state'&&!leader&&valid(data.state)){state=data.state;received=true;render();$('status').textContent='Current order received from the coordinator.';}
+ };
+ function requestEdit(ready){if(leader)edit(ready);else{bus.postMessage({kind:'edit',ready});$('status').textContent='Change requested; waiting for the coordinator.';}}
+ $('ready').onclick=()=>requestEdit(true);$('reset').onclick=()=>requestEdit(false);
+ $('role').textContent='Listener';bus.postMessage({kind:'hello'});
+ // The pending callback promise keeps the lock held without a blocking loop.
+ navigator.locks.request('vb-native-orders-coordinator-v1',async()=>{
+  leader=true;$('role').textContent='Coordinator';$('status').textContent=received?'Responsibility transferred; keeping the latest received order.':'This tab coordinates the simulated work.';publish();
+  const interval=setInterval(()=>{state={...state,ticks:state.ticks+1};publish();},2000);
+  try{await new Promise(()=>{});}finally{clearInterval(interval);leader=false;}
+ }).catch(()=>{$('capability').textContent='The coordinator lock could not be acquired. Check browser permissions and context, then reload both test tabs.';});
+}
+if(!('popover'in HTMLElement.prototype)){$('actions-trigger').hidden=true;$('actions').removeAttribute('popover');}
+</script>
+</html>

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-27",
+  "source": "https://www.youtube.com/watch?v=I6tOlNK_HS4",
+  "implementation": "Our reduced native-browser order-board adaptation; not creator original",
+  "browser": "151.0.7922.34",
+  "environment": "Windows; headless Playwright Chromium; two and three pages in one profile; loopback static server",
+  "checks": [
+    "one coordinator and one listener",
+    "listener edit reflected in both pages",
+    "coordinator closure and takeover",
+    "counter advances after takeover",
+    "late join receives current snapshot",
+    "subsequent reverse edit reflected",
+    "popover opens and Escape dismisses",
+    "390px layout without horizontal overflow",
+    "guide desktop/mobile render",
+    "file URL displays required localhost instructions",
+    "no script errors"
+  ],
+  "limits": [
+    "synthetic exercise only",
+    "no human usability or learning result",
+    "no real backend, persistence or conflict qualification",
+    "no suspended-tab or multi-device qualification",
+    "other talk capabilities not executed"
+  ],
+  "passed": true
+}
