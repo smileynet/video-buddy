@@ -1,6 +1,6 @@
 # Work plan
 
-Ticket state projection, updated 2026-10-27. Ticket files are the detailed execution record.
+Ticket state projection, updated 2026-10-28. Ticket files are the detailed execution record.
 
 Tickets **42/43 review artifacts complete**: [personal listening and source-first teaching](architecture/spikes/blind-listening-review.md). Rate anonymous audio and save/export a private preference. Primary teaching, optional builds and model qualification are separated; no human response was collected by the agent. Ticket18 remains a reader/layout question.
 
@@ -14,8 +14,11 @@ Ticket **15 bounded comparison complete**: [audio-model review findings](archite
 
 Ticket **36 comparison complete**: [revision-boundary results](architecture/spikes/revision-boundary-results.md) separate 180 development frames from 509 locked validation frames. Preferred packets solved development but retained only2–3/4 terminal validation states; settled runs and the grid reached4/4 at cap4. Other-source UI reached3/3 visually via fallback, with inexact writing. No new default or integration. Ticket 25 is closed with an evidence-linked synthesis and explicit unresolved limits; broader tracking research is deliberately deferred to 37. Ticket 35 owns the production selector failure. Review28 consumes the negative/conditional verdict and still depends on the remaining spikes.
 
+Ticket **44 follow-up exploration open**: [concept-linked research and multi-source guides](../.tickets/44-knowledge-management-exploration.md). Independent knowledge-management workstream; evaluate learner pathways, provenance, related-topic research and reusable supporting documentation before choosing project/integration boundaries. It does not block review28.
+
 | id | title | status |
 |---|---|---|
+| 44 | Explore concept-linked research and multi-source learning guides | open |
 | 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
 | 21 | Measure guide versus note usability with a fresh task performer | open |
 | 26 | Compare ordered frames and video input for action evidence | open |
