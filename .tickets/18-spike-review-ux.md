@@ -112,3 +112,7 @@ User-authorized Qwen3-TTS/Chatterbox-Turbo execution now has docs/architecture/s
 ## Source-first and personal listening review
 
 Tickets42/43 add private blind-label listening and refocus primary A/B content on the video. Implementation is a separate optional companion, partly executed only at the local TTS component. Source worked walkthroughs remain primary when that is the source type. UI tests used synthetic responses; no human results manufactured. Personal records stay private until shared. Layout, learning, example execution and model preference are distinct evidence. Prototype/companion pinned be4cbf793bedcd4ca21885ade9eec86053aed4a9. See docs/architecture/spikes/blind-listening-review.md.
+
+## HTML deliverable clarification — October 28, 2026
+
+User explicitly clarified that learning guides should be rich HTML. The installed and tracked video-guide skill now requires HTML as the primary deliverable, review of existing guides before drafting, responsive reading hierarchy, keyboard disclosures and presentation checks. Project guidance and templates are synchronized; portable references retain conditional Video Buddy CLI handling. Skill validators and pre-commit passed. This format decision is a user preference, not evidence that one A/B layout improves learning. Reader observations remain pending; ticket18 stays in_progress. Ticket45 captures the unfinished Claude Code HTML lesson separately from the completed skill correction.

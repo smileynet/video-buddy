@@ -1,5 +1,7 @@
 # {{What this helps you understand or do}}
 
+<!-- Output: use this Markdown as the content outline for a rich, responsive HTML learning guide by default. Preserve source-note finalization separately; deliver the HTML and its assets as the reader-facing artifact unless another format is explicitly requested. -->
+
 <!-- Author instructions: infer the goal. Choose ONE body below, delete unused blocks and all comments. Internal source classifications and skills stay out of reader headings. -->
 
 Source: [{{creator and video}}]({{video_url}}). Prepared {{readable_date}} for {{audience / situation}}.

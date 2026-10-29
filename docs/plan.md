@@ -2,6 +2,8 @@
 
 Ticket state projection, updated 2026-10-28. Ticket files are the detailed execution record.
 
+Ticket **45 HTML guide follow-up open**: the Claude Code video P3TCZ2xrvbo has a finalized Markdown source note; its rich HTML teaching artifact remains to publish. The user clarified HTML as the default. Installed/tracked video-guide skill, project authoring and templates now state that contract. Continue the existing guide workstream before broadening scope; ticket18 still awaits reader evidence. Pre-existing diarization/CLI changes were outside this session and remain uncommitted for their owner to reconcile.
+
 Tickets **42/43 review artifacts complete**: [personal listening and source-first teaching](architecture/spikes/blind-listening-review.md). Rate anonymous audio and save/export a private preference. Primary teaching, optional builds and model qualification are separated; no human response was collected by the agent. Ticket18 remains a reader/layout question.
 
 Ticket **41 bounded local narration comparison complete**: [findings and listening evidence](architecture/spikes/local-narration-results.md). Both candidates ran four cases on the same paragraphs/reference. Chatterbox warm generation was faster; Qwen used less process RAM. No human quality winner; machine-text disagreement remains for listening review. Guide/dashboard updated; no production engine/default integration.
@@ -19,7 +21,8 @@ Ticket **44 follow-up exploration open**: [concept-linked research and multi-sou
 | id | title | status |
 |---|---|---|
 | 44 | Explore concept-linked research and multi-source learning guides | open |
-| 18 | Compare Markdown and adjacent-evidence review for blocked steps | open |
+| 18 | Compare Markdown and adjacent-evidence review for blocked steps | in_progress |
+| 45 | Publish the Claude Code learning guide as rich HTML | open |
 | 21 | Measure guide versus note usability with a fresh task performer | open |
 | 26 | Compare ordered frames and video input for action evidence | open |
 | 27 | Qualify source acquisition and recovery before integration | open |

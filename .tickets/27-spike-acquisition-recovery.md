@@ -46,3 +46,7 @@ Record raw outputs, exact versions/configuration, failures and a per-job disposi
 ### State-store scope boundary
 
 S5 used one global Windows writer lock and immediate process-exit injection. Its 20/20 observations do not qualify Linux locks, network filesystems, power loss, multi-source throughput, or edits beyond a sidecar. Test per-source concurrent acquisition for the intended deployment; record unsupported platforms. Reopen the store choice only if these actual requirements invalidate the bounded file approach.
+
+## Additional acquisition observation — October 28, 2026
+
+During intake of public video P3TCZ2xrvbo, default ingest downloaded video/audio, then failed because no OCR engine was installed. Retrying the CLI with --ocr off downloaded media again before completing frames/correlation/render. The agent directly inspected selected frames instead. Include this missing-optional-engine/configuration retry in the existing acquisition/recovery qualification; determine whether configuration preflight or retained-media reuse avoids repeat acquisition. This single observation does not establish a general cache bug or justify changing production download behavior during wrap-up.

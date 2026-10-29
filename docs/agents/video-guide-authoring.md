@@ -2,6 +2,10 @@
 
 Use this workflow when a user wants to learn from a video and apply its ideas or procedure. Use [the guide template](../templates/video-guide.md); adapt its shape to the source and the user's goal. Learning from a guide and executing an implementation are distinct activities.
 
+## Required learning-guide output
+
+Deliver teaching/application guides as rich, responsive HTML by default, following the video-guide skill's HTML deliverable contract. Before authoring, inspect existing guides such as `docs/guides/native-browser/guide.html` and its README; review fixtures and runnable companions have separate purposes. Use the Markdown template as a content outline. Finish the CLI's source-note contract, then publish the HTML lesson with its assets in the established guide location and return its path as the primary result. An explicitly requested alternative format overrides this default; ordinary intake/digest still produces notes.
+
 ## Agent decisions and reader pathways
 
 Infer format from the user's goal. Source types, artifact classes, skills and CLI stages are internal decisions. Give the reader one useful next action. Use the separate [reader experience contract](video-guide-user-pathways.md) for navigation, recovery and optional branches. Ordinary intake/digest retains its note workflow unless teaching/application help is requested.
