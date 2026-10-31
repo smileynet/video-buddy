@@ -48,3 +48,7 @@ User-authorized Qwen3-TTS/Chatterbox-Turbo execution now has docs/architecture/s
 ## Source-first and personal listening review
 
 Tickets42/43 add private blind-label listening and refocus primary A/B content on the video. Implementation is a separate optional companion, partly executed only at the local TTS component. Source worked walkthroughs remain primary when that is the source type. UI tests used synthetic responses; no human results manufactured. Personal records stay private until shared. Layout, learning, example execution and model preference are distinct evidence. Prototype/companion pinned be4cbf793bedcd4ca21885ade9eec86053aed4a9. See docs/architecture/spikes/blind-listening-review.md.
+
+## Learning Library follow-up (31 October 2026)
+
+Learning Library local ticket 15 prepares observation of understanding, finding shared guidance again and returning to the task using its approved conceptual reader. Coordinate protocol patterns with that work; do not count its machine checks or human file-opening confirmation as task learning. Keep this existing guide-versus-note comparison scoped to its counterbalanced tasks. Portable guidance follow-up is ticket 46.
